@@ -4,6 +4,8 @@
 
 ## 从这里开始
 
+- **设计系统总提示词**：[中文完整原文（含 Claude Design 方法与跨类型研究规则）](prompts/design-system-master-prompt.zh-CN.md)
+
 - **MiMo-inspired / Rational Technical Humanism**：[最新 v1.3 研究](languages/mimo/v1.3/MiMo_Design_Language_Research_v1.3.md) · [可编辑实验室](languages/mimo/v1.3/MiMo_Design_Grammar_Lab_v1.3.html) · [六场景预览](languages/mimo/v1.3/preview/six_scenarios_v1.3.png) · [复用 CSS / Profile](languages/mimo/v1.3/kit) · [v1.3 ZIP](packages/mimo-v1.3.zip)
 - **MiMo 历史版本**：[v1.0](languages/mimo/v1.0) · [v1.1](languages/mimo/v1.1) · [v1.2](languages/mimo/v1.2)
 - **瑞士信息设计**：[研究与使用入口](languages/swiss-information/v1.0/README.md) · [完整设计语言](languages/swiss-information/v1.0/DESIGN_LANGUAGE.md) · [样板](languages/swiss-information/v1.0/specimen.html) · [预览](languages/swiss-information/v1.0/design-preview.png) · [ZIP](packages/swiss-information-v1.0.zip)
