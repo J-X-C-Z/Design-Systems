@@ -1,8 +1,8 @@
-"""Package original design language deliverables and record reproducible checksums.
+"""Index canonical design language deliverables and record reproducible checksums.
 Run from any working directory. Does not upload or alter any external repository.
 """
 from pathlib import Path
-import hashlib, json, zipfile, shutil
+import hashlib, json
 R=Path(__file__).resolve().parents[1]
 report=json.loads((R/'preview/validation.json').read_text())
 main=R/'dist/MiMo_Design_Language_v2.0.html'
@@ -84,17 +84,8 @@ for p in paths:
  if p.suffix.lower()in ['.ttf','.otf','.woff','.woff2','.ttc']:raise RuntimeError('Font binary not allowed in package')
  if p.suffix=='.json':json.loads(p.read_text())
 checks=[{'path':p.relative_to(R).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}for p in paths]
-manifest={'languageId':'personal.mimo-inspired','version':'2.0.0','releaseDate':'2026-10-10','status':'completed-personal-design-language','officialXiaomiSystem':False,'branches':2,'scenes':3,'motionResources':10,'signatureResources':5,'editableSceneExamples':6,'fontFiles':0,'spIntegrated':False,'mcpInstalled':False,'runtimeExternalDependencies':0,'browserTest':summary,'htmlSha256':report['sourceSha256'],'files':checks,'manifestNote':'Manifest/checksum index exclude themselves. ZIP archive is not part of inner checksum list.'}
+manifest={'languageId':'personal.mimo-inspired','version':'2.0.0','releaseDate':'2026-10-10','status':'completed-personal-design-language','officialXiaomiSystem':False,'branches':2,'scenes':3,'motionResources':10,'signatureResources':5,'editableSceneExamples':6,'fontFiles':0,'spIntegrated':False,'mcpInstalled':False,'runtimeExternalDependencies':0,'browserTest':summary,'htmlSha256':report['sourceSha256'],'files':checks,'manifestNote':'Manifest/checksum index exclude themselves. Only the canonical v2.0 tree is retained; no ZIP or duplicate copies are generated.'}
 (R/'RELEASE_MANIFEST.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 (R/'SHA256SUMS.txt').write_text('\n'.join(x['sha256']+'  '+x['path']for x in checks)+'\n')
-zip_path=R.parent/'MiMo_Design_Language_Complete_v2.0.zip'
-with zipfile.ZipFile(zip_path,'w',zipfile.ZIP_DEFLATED,compresslevel=9)as z:
- for p in paths+[R/'RELEASE_MANIFEST.json',R/'SHA256SUMS.txt']:
-  z.write(p,'MiMo_Design_Language_v2.0/'+p.relative_to(R).as_posix())
-# Stable user-facing copies; only after artifact bytes exist.
-for src,dest in [(main,'MiMo_Design_Language_v2.0.html'),(R/'docs/DESIGN_LANGUAGE.md','MiMo_Design_Language_v2.0.md'),(R/'docs/MOTION.md','MiMo_Motion_Language_v2.0.md'),(R/'preview/six-scenarios.png','MiMo_Design_Language_Overview_v2.0.png'),(R/'preview/motion-contact-sheet.png','MiMo_Signature_Motion_v2.0.png'),(R/'docs/VALIDATION.md','MiMo_Validation_v2.0.md')]:
- shutil.copyfile(src,R.parent/dest)
-with zipfile.ZipFile(zip_path) as z:
- assert z.testzip()is None
- print('Package verified:',len(z.namelist()),'files;',zip_path.stat().st_size,'bytes')
+print('Canonical release index verified:',len(checks),'files;',R)
 print(json.dumps(manifest['browserTest']))

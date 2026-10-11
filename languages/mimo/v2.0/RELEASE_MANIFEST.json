@@ -28,8 +28,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1437,
-      "sha256": "c91024c07bac562573bd725021083debe44927faab4282dfabed4d8a03a72f28"
+      "bytes": 1601,
+      "sha256": "a17d5514611cb544b3172e101b48374a028f9865250ea1c83ff93949b6286eb1"
     },
     {
       "path": "LICENSE_AND_PROVENANCE.md",
@@ -38,8 +38,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3298,
-      "sha256": "46abb0364f0d5fe9631f65cb504ff8795c210237ddce62f867b82abf5f90ab2a"
+      "bytes": 4124,
+      "sha256": "6d5ce4dcad79fbdcc708316f50f742739fa4c7c078dce7cc443393cd80a98072"
     },
     {
       "path": "adapters/SP_ADAPTATION.md",
@@ -373,8 +373,8 @@
     },
     {
       "path": "src/package_release.py",
-      "bytes": 8258,
-      "sha256": "f89accdcbdf66811dc46b575f254f67acacf012f4834614add8f88d13377b2c3"
+      "bytes": 7455,
+      "sha256": "92f4f44bd2087e98f7cfbd621a4ac426bc9e89a36990416822258fc1ffdcfcba"
     },
     {
       "path": "src/render.py",
@@ -392,5 +392,5 @@
       "sha256": "9bd48d7aa6d564906a5a2db658d2842623ec2d097c0f9309c05ce9b8bf103761"
     }
   ],
-  "manifestNote": "Manifest/checksum index exclude themselves. ZIP archive is not part of inner checksum list."
+  "manifestNote": "Manifest/checksum index exclude themselves. Only the canonical v2.0 tree is retained; no ZIP or duplicate copies are generated."
 }

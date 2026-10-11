@@ -6,11 +6,23 @@
 
 ## 开始使用
 
-打开 **`dist/MiMo_Design_Language_v2.0.html`**：设计理念、双分支、三场景、十种可控动效、语义色彩、组件状态、局部文字编辑、项目 JSON 与完整 HTML 导出均在同一文件中。
+打开[交互展示台](dist/MiMo_Design_Language_v2.0.html)：设计理念、双分支、三场景、十种可控动效、语义色彩、组件状态、局部文字编辑、项目 JSON 与完整 HTML 导出均在同一文件中。
 
 从 **`docs/DESIGN_LANGUAGE.md`** 阅读完整规范。直接复用 **`kit/`**，或将整个资源库交给本地 AI，从 **`ai/AI_CONTEXT.md`** 开始按需检索。
 
-**图片与可编辑实例**：`preview/research.light.png` 对应 `examples/research.light.html`，其余场景与暗色版本同理。`preview/six-scenarios.png` 汇总六个实际渲染。`preview/motion-contact-sheet.png` 展示五种标志性动效的关键帧；播放请使用 HTML。
+## 样例展示在哪里
+
+[六场景静态预览](preview/six-scenarios.png)汇总原作者实际渲染，[动效关键帧](preview/motion-contact-sheet.png)展示五种标志性动效；播放请使用 HTML。
+
+| 场景 | 浅色样例 | 暗色样例 |
+| --- | --- | --- |
+| Research | [research.light.html](examples/research.light.html) | [research.dark.html](examples/research.dark.html) |
+| Developer | [developer.light.html](examples/developer.light.html) | [developer.dark.html](examples/developer.dark.html) |
+| Workspace | [workspace.light.html](examples/workspace.light.html) | [workspace.dark.html](examples/workspace.dark.html) |
+
+GitHub 显示 HTML 源码；打开文件后使用 **Download raw file** 保存，再在本机浏览器打开。展示台与六个样例都自包含，无需运行构建。当前没有部署在线演示；本地双击的验证边界见下方说明。
+
+本仓库仅保存此 `v2.0` 规范目录；不另存根目录重复文件、MiMo ZIP 或旧版本目录。历史副本可从 Git 历史恢复。`preview/research.light.png` 等单页截图与同名 HTML 配对。
 
 ## 本版包含
 

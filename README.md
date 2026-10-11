@@ -15,23 +15,30 @@
 
 - **设计系统总提示词**：[中文完整原文（含 Claude Design 方法与跨类型研究规则）](prompts/design-system-master-prompt.zh-CN.md)
 
-- **MiMo-inspired v2.0**：[最新使用入口](languages/mimo/v2.0/README.md) · [完整语言规范](languages/mimo/v2.0/docs/DESIGN_LANGUAGE.md) · [交互展示台](languages/mimo/v2.0/dist/MiMo_Design_Language_v2.0.html) · [六个独立样例](languages/mimo/v2.0/examples) · [动效资源](languages/mimo/v2.0/kit) · [v2.0 ZIP](packages/mimo-v2.0.zip)
-- **MiMo-inspired v1.3**：[v1.3 研究](languages/mimo/v1.3/MiMo_Design_Language_Research_v1.3.md) · [可编辑实验室](languages/mimo/v1.3/MiMo_Design_Grammar_Lab_v1.3.html) · [六场景预览](languages/mimo/v1.3/preview/six_scenarios_v1.3.png) · [复用 CSS / Profile](languages/mimo/v1.3/kit) · [v1.3 ZIP](packages/mimo-v1.3.zip)
-- **MiMo 历史版本**：[v1.0](languages/mimo/v1.0) · [v1.1](languages/mimo/v1.1) · [v1.2](languages/mimo/v1.2)
+- **MiMo-inspired v2.0**：[使用入口](languages/mimo/v2.0/README.md) · [完整语言规范](languages/mimo/v2.0/docs/DESIGN_LANGUAGE.md) · [交互展示台](languages/mimo/v2.0/dist/MiMo_Design_Language_v2.0.html) · [六场景静态预览](languages/mimo/v2.0/preview/six-scenarios.png) · [动效资源](languages/mimo/v2.0/kit)。仅保留这一份完整规范目录，旧版和分发副本可从 Git 历史恢复。
 - **瑞士信息设计**：[研究与使用入口](languages/swiss-information/v1.0/README.md) · [完整设计语言](languages/swiss-information/v1.0/DESIGN_LANGUAGE.md) · [样板](languages/swiss-information/v1.0/specimen.html) · [预览](languages/swiss-information/v1.0/design-preview.png) · [ZIP](packages/swiss-information-v1.0.zip)
 - **第二批增量研究 Batch 02**：[12 套研究档案与索引](research/batch02/00_INDEX.md) · [完整合并报告](research/batch02/Design_Language_Incremental_Research_Batch02_2026-10-10.md) · [ZIP](packages/design-language-batch02.zip)；研究阶段，尚无可编辑样例。
 - **设计资源调研**：[PPT 风格、模板与 Design Skills 资源库](research/slide-design-resources-2026-10.md)
 - **SP 适配与讨论**：[主题与设计语言框架 v0.5](adaptations/superior-point/theme-framework-v0.5.md)
 - **归档说明**：[版本、核查与权利边界](ARCHIVE_NOTES.md) · [文件校验值](SHA256SUMS.txt)
 
-HTML 在 GitHub 中显示源码。下载对应 ZIP，解压后在浏览器打开 HTML；此仓库未部署在线演示。
+## MiMo 样例展示
+
+先看[六场景静态预览](languages/mimo/v2.0/preview/six-scenarios.png)或[动效关键帧](languages/mimo/v2.0/preview/motion-contact-sheet.png)。交互展示台在 [dist/MiMo_Design_Language_v2.0.html](languages/mimo/v2.0/dist/MiMo_Design_Language_v2.0.html)，六个独立样例在下表：
+
+| 场景 | 浅色 | 暗色 |
+| --- | --- | --- |
+| 研究阅读 Research | [research.light.html](languages/mimo/v2.0/examples/research.light.html) | [research.dark.html](languages/mimo/v2.0/examples/research.dark.html) |
+| 开发工具 Developer | [developer.light.html](languages/mimo/v2.0/examples/developer.light.html) | [developer.dark.html](languages/mimo/v2.0/examples/developer.dark.html) |
+| 工作区 Workspace | [workspace.light.html](languages/mimo/v2.0/examples/workspace.light.html) | [workspace.dark.html](languages/mimo/v2.0/examples/workspace.dark.html) |
+
+HTML 在 GitHub 中显示源码。打开上述文件后使用 **Download raw file** 保存 HTML，再在本机浏览器打开；展示台和六个样例均为自包含文件。其他语言可下载对应 ZIP 后打开样例。此仓库未部署在线演示。
 
 ## 状态说明
 
 MiMo 为独立研究与原创候选资源，非小米官方设计系统；最新实际归档版本为 v2.0。瑞士包为 v1.0 候选研究。已有资料中的测试记录按原文保留，不代表本次独立重新验收。
 
 - MiMo v2.0 原作者报告：72 项检查、48 组响应式场景、50 个语义色组合，使用 Chromium `set_content`；本次归档未独立重新验收，直接导航及跨设备验证仍有边界。[原报告](languages/mimo/v2.0/docs/VALIDATION.md)
-- MiMo v1.3 原记录：Chromium `set_content` 路线检查；直接 file/localhost 导航未验证。
 - 瑞士包：已有静态、纯函数与结构检查；真实浏览器渲染及交互验收未完成。
 - SP 框架为讨论整合稿，不是已实现功能说明。
 
