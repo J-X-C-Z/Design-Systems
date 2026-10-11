@@ -27,6 +27,8 @@
 
 - **瑞士信息设计候选**：[使用与边界](candidates/swiss-information/IMPLEMENTATION.md) · [四页可编辑 HTML](candidates/swiss-information/index.html) · [研究复核](candidates/swiss-information/RESEARCH-REVIEW.md) · [浏览器记录与未验收项](candidates/swiss-information/QA-RESULTS.md)。仅归档，待用户重判；原瑞士信息设计样例的“差”标签及二级适配状态保持，不替换原样例、不计为新语言，不据有限验收升级成熟度或评为好，未计入 SP 集成。
 
+- **精密工业候选**：[使用、研究复核与边界](candidates/precision-industrial/IMPLEMENTATION.md) · [四页可编辑 HTML](candidates/precision-industrial/index.html) · [浏览器记录与未验收项](candidates/precision-industrial/QA-RESULTS.md)。仅归档，待用户重判；原精密工业样例的“差”标签及二级适配状态保持，不替换原样例、不计为新语言，不据有限验收升级成熟度或评为好，未计入 SP 集成。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。

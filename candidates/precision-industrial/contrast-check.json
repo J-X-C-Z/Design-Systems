@@ -1,0 +1,8 @@
+{
+  "paper": "#f3f0e7",
+  "defaultTextPairs": {
+    "#20221f": 14.068,
+    "#a34b25": 5.133
+  },
+  "note": "Computed sRGB pairs only; not a full accessibility certification."
+}
