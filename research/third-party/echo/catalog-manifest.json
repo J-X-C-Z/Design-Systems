@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "echo-singularity-log",
+  "provider": "Echo · 观察者 / OBSERVER",
+  "name": "Echo：复古终端 × 新粗野主义档案",
+  "resource_type": "website_design_case_study",
+  "source_tag": "三方参考",
+  "tag": "三方参考",
+  "level": 3,
+  "stage": "只是确认方向",
+  "analysis_author": "AI整理",
+  "independent_language": false,
+  "counts_as_language": false,
+  "description": "以奶油纸底、橙黄状态色、零圆角硬边与CRT终端，将人机小说组织为可检索的系统档案。",
+  "url": "https://echo.lubeiluchen.cc/",
+  "source_url": "https://echo.lubeiluchen.cc/",
+  "observed_at": "2026-10-11",
+  "analysis": "README.md",
+  "tokens": "tokens-candidates.json",
+  "components_motion": "components-motion.md",
+  "sources": "SOURCE-LINKS.md",
+  "preview": {
+    "source_url": "https://echo.lubeiluchen.cc/",
+    "kind": "external_source_link",
+    "usage": "Public archive links to original site; private research screenshot is excluded."
+  },
+  "related_language_ids": [
+    "batch02-03",
+    "precision-industrial",
+    "editorial-magazine"
+  ],
+  "matching_basis": [
+    "batch02-03: terminal metaphors and system status, but with graphical cards rather than a pure character interface",
+    "precision-industrial: labels, numbering, state lights and modular equipment panels",
+    "editorial-magazine: metadata, strong heading hierarchy and single-column reading"
+  ],
+  "copyright": {
+    "site_credit": "© 2025 观察者 / OBSERVER. All rights reserved.",
+    "open_source_license_verified": false,
+    "license_status": "No site license or real source-repository link found in observed navigation",
+    "not_a_license": [
+      "Fictional worldbuilding describes Project Echo as open source",
+      "Tailwind vendor license comment does not license the site"
+    ],
+    "reuse_boundary": "Independent analysis and measured facts only. Screenshots retain third-party rights and are research excerpts for the existing private catalog. No site code, novel full text, independent portrait/audio/logo assets are included. Public redistribution or commercial asset reuse requires separate rights review."
+  },
+  "verification": {
+    "desktop_actual": true,
+    "viewport": [
+      1180,
+      757
+    ],
+    "key_views": [
+      "outline",
+      "characters",
+      "timeline",
+      "worldbuilding",
+      "chapter list",
+      "chapter reader",
+      "terminal",
+      "dark mode",
+      "CRT off"
+    ],
+    "mobile_actual": false,
+    "mobile_css_inspected": true,
+    "forms_submitted": false,
+    "chat_messages_sent": false
+  }
+}

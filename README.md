@@ -45,6 +45,8 @@
 
 [Dashi PPT · 12 主题](research/third-party/dashi-ppt/README.md) · [Watermelon · 1 平台＋18 子资源](research/third-party/watermelon/RESEARCH.md) · [网页浏览与筛选](web/reference-collections.html) · [归档整合与验证边界](research/third-party/INCREMENT_NOTES.md)。全部为三方参考、三级，不计入 22 个本地语言；仅原创中文摘要和官方链接，保留 Dashi 主体 AGPL-3.0／导出引擎专有例外及 Watermelon MIT／Inspired By 归属边界，不含上游运行代码或素材。
 
+[Echo 网站设计语言研究](research/third-party/echo/README.md) · [分类 manifest](research/third-party/echo/catalog-manifest.json)：复古终端与新粗野主义的档案交叉案例，三方参考／三级，AI 整理；不计为新增本地语言。仅原创研究和原站链接，不含截图、小说原文或上游代码。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。
