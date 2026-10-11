@@ -1,0 +1,35 @@
+{
+  "version": "ED-PHOTO-01",
+  "crops": {
+    "cover": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    "crop": {
+      "x": 0.35,
+      "y": 0.3,
+      "w": 0.6,
+      "h": 0.48
+    },
+    "tail": {
+      "x": 0,
+      "y": 0.35,
+      "w": 1,
+      "h": 0.3
+    }
+  },
+  "sourceDimensions": {
+    "A": {
+      "width": 1448,
+      "height": 1086,
+      "sourceKind": "ai-generated"
+    },
+    "B": {
+      "width": 1536,
+      "height": 1024,
+      "sourceKind": "ai-generated"
+    }
+  }
+}

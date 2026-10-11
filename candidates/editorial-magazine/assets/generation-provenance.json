@@ -1,0 +1,41 @@
+{
+  "schema": "concept-image-provenance-v1",
+  "generated_date_utc": "2026-10-11",
+  "method": "普通ChatGPT网页版聊天；dot云端Chrome；通过页面下载原始PNG",
+  "ui_reasoning_intensity": "中，第2项，共5项（两次提交前均已核实）",
+  "image_model_ui_label": null,
+  "image_model_verification": "界面未显示底层图像模型，未确认image2.5",
+  "identity": "AI生成原创摄影感概念图，非实拍、非现场记录、非观察结果",
+  "photographer": null,
+  "location": null,
+  "capture_date": null,
+  "prompts_file": "generation-prompts.txt",
+  "assets": [
+    {
+      "label": "A",
+      "file": "boundary-a.png",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 2828459,
+      "sha256": "1e44b8a9fdc195783fb7dc83e057278667b63e2257eae139036b9ebd924fbee4",
+      "downloaded_at_utc": "2026-10-11T07:51:40Z",
+      "pixel_review": "已检查原像素：明亮岩面从右下进入、左上暗水有反光层次，中央水岩边界清晰；无文字/地标，适合同源局部裁切。",
+      "relationship": "A完整幅与局部必须同源，裁切不得重绘",
+      "distributed_file": "a.png"
+    },
+    {
+      "label": "B",
+      "file": "water-b.png",
+      "format": "PNG",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2041420,
+      "sha256": "696bbd7110559a58a7ff1d788a3e73d6e4b0a784043310c1a8d0cc330d460332",
+      "downloaded_at_utc": "2026-10-11T07:54:02Z",
+      "pixel_review": "已检查原像素：独立中深灰水面与不规则反光，中央带有疏密明暗，适合尾图；无岸/天空/地标。",
+      "relationship": "与A无现场、地点、时间或前后关系",
+      "distributed_file": "b.png"
+    }
+  ]
+}

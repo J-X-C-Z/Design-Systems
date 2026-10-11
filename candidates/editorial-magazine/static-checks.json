@@ -1,0 +1,15 @@
+{
+  "pages": 4,
+  "sameAssetAViews": 3,
+  "assetBViews": 1,
+  "normalizedSourceCrop": true,
+  "fullViewUncropped": true,
+  "imageReplacementResetsCropAndIdentity": true,
+  "BOMAndEarlyCharset": true,
+  "safeLessThanSerialization": true,
+  "visualQA": "See independent QA-RESULTS.md; not inferred from static tests",
+  "assetsIntegrated": {
+    "A": "1448x1086",
+    "B": "1536x1024"
+  }
+}

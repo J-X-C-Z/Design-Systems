@@ -29,6 +29,8 @@
 
 - **精密工业候选**：[使用、研究复核与边界](candidates/precision-industrial/IMPLEMENTATION.md) · [四页可编辑 HTML](candidates/precision-industrial/index.html) · [浏览器记录与未验收项](candidates/precision-industrial/QA-RESULTS.md)。仅归档，待用户重判；原精密工业样例的“差”标签及二级适配状态保持，不替换原样例、不计为新语言，不据有限验收升级成熟度或评为好，未计入 SP 集成。
 
+- **编辑杂志候选**：[使用与边界](candidates/editorial-magazine/IMPLEMENTATION.md) · [四页可编辑 HTML](candidates/editorial-magazine/index.html) · [研究与源图复核](candidates/editorial-magazine/RESEARCH-REVIEW.md) · [浏览器记录与未验收项](candidates/editorial-magazine/QA-RESULTS.md) · [概念图来源记录](candidates/editorial-magazine/assets/generation-provenance.json)。两张图为原创 AI 概念图，非现场照片，底层图像模型未确认。仅归档，待用户重判；原编辑杂志样例的“差”标签及二级适配状态保持，不替换原样例、不计为新语言，不据有限验收升级成熟度或评为好，未计入 SP 集成。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。

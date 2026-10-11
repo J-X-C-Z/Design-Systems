@@ -1,0 +1,16 @@
+{
+  "A": {
+    "src": "assets/a.png",
+    "width": 1448,
+    "height": 1086,
+    "sourceKind": "ai-generated",
+    "name": "boundary-a.png"
+  },
+  "B": {
+    "src": "assets/b.png",
+    "width": 1536,
+    "height": 1024,
+    "sourceKind": "ai-generated",
+    "name": "water-b.png"
+  }
+}
