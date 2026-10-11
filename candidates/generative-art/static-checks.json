@@ -1,0 +1,30 @@
+{
+  "status": "static checks only; not visual QA",
+  "deterministic": true,
+  "consumesAll35": true,
+  "visible31": true,
+  "empty": [
+    9,
+    10,
+    17,
+    24
+  ],
+  "singleParameterComparison": true,
+  "invalidSeedRejected": true,
+  "pages": 4,
+  "ledgerRows": 12,
+  "defaultOutputHashes": [
+    {
+      "a": 0,
+      "sha256": "f216dda9c614bd536f75f82920d2842dedc96790f0e8d9c3943a9fb40b45a5d0"
+    },
+    {
+      "a": 8,
+      "sha256": "9cbfa91eb437343f4c64dc98c923405b046b9a0b450aaf88e9026e7a8a851ea4"
+    },
+    {
+      "a": 16,
+      "sha256": "b6cf5585134794931ae612f54aa99603fdaf279cd6f365725ef1f13efa150382"
+    }
+  ]
+}

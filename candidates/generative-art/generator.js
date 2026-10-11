@@ -1,0 +1,8 @@
+/* Original GA-GRAPHIC-01 implementation. Math.round ties toward +Infinity; negative zero normalized. */
+const GAGraphic=(()=>{
+const empty=[9,10,17,24],round=(v,n)=>{const x=Math.round(v*10**n)/10**n;return Object.is(x,-0)?0:x},f=v=>round(v,3).toFixed(3);
+function generate(seed,a){if(!Number.isInteger(seed)||seed<1||seed>4294967295)throw Error('seed必须为1至4294967295的整数');if(![0,8,16].includes(a))throw Error('偏移上限只能为0、8、16');let x=seed>>>0;return Array.from({length:35},(_,k)=>{x^=x<<13;x^=x>>>17;x^=x<<5;x>>>=0;const u=2*x/4294967296-1,d=round(a*u,4),cx=36+72*(k%7),cy=36+72*Math.floor(k/7);return {k,u,d,empty:empty.includes(k),path:`M${f(cx-18)} ${f(cy-9)} H${f(cx+d)} V${f(cy+9)} H${f(cx+18)}`}})}
+function svg(seed,a,mode='full',color='#202421'){const data=generate(seed,a),indices=mode==='strip'?[0,1,2,3,4,5,6]:mode==='unit'?[5]:mode==='mark'?[0]:data.filter(x=>!x.empty).map(x=>x.k),box=mode==='strip'?'0 0 504 72':mode==='unit'?'360 0 72 72':mode==='mark'?'0 0 72 72':'0 0 504 360';return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box}" role="img" aria-label="规则绘图，偏移上限${a}，不对应现场数据" fill="none" stroke="${color}" stroke-width="2.4" stroke-linecap="butt" stroke-linejoin="miter">${indices.map(k=>`<path data-k="${k}" d="${data[k].path}"/>`).join('')}</svg>`}
+function record(seed){return {version:'GA-GRAPHIC-01',seed,amplitudes:[0,8,16],columns:7,rows:5,empty:[...empty],width:504,height:360,cell:72,strokeWidth:2.4,displacementPrecision:4,coordinatePrecision:3,rounding:'Math.round ties toward +Infinity; negative zero normalized',random:'xorshift32; consume all 35 indices including empty',mapping:'artistic only; no observation data mapping'}}
+return {generate,svg,record};})();
+if(typeof module!=='undefined')module.exports=GAGraphic;
