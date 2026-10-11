@@ -1,0 +1,391 @@
+{
+  "date": "2026-10-10",
+  "method": "Node VM pure JavaScript/template tests, not browser or DOM event execution",
+  "checks": [
+    {
+      "name": "JavaScript syntax parses",
+      "status": "passed"
+    },
+    {
+      "name": "embedded fixture exactly matches standalone data",
+      "status": "passed"
+    },
+    {
+      "name": "four stable IDs",
+      "status": "passed"
+    },
+    {
+      "name": "total duration 175",
+      "status": "passed"
+    },
+    {
+      "name": "capacity fields sum to 240",
+      "status": "passed"
+    },
+    {
+      "name": "time sorting",
+      "status": "passed"
+    },
+    {
+      "name": "duration stable tie sorting",
+      "status": "passed"
+    },
+    {
+      "name": "capacity sorting",
+      "status": "passed"
+    },
+    {
+      "name": "filter 网格",
+      "status": "passed"
+    },
+    {
+      "name": "filter TYPE",
+      "status": "passed"
+    },
+    {
+      "name": "filter 01",
+      "status": "passed"
+    },
+    {
+      "name": "filter   阅读  ",
+      "status": "passed"
+    },
+    {
+      "name": "filter <script>",
+      "status": "passed"
+    },
+    {
+      "name": "filter reading",
+      "status": "passed"
+    },
+    {
+      "name": "query does not execute as markup",
+      "status": "passed"
+    },
+    {
+      "name": "template emits content order research",
+      "status": "passed"
+    },
+    {
+      "name": "template emits content order directory",
+      "status": "passed"
+    },
+    {
+      "name": "template emits content order data",
+      "status": "passed"
+    },
+    {
+      "name": "template emits content order poster",
+      "status": "passed"
+    },
+    {
+      "name": "template emits content poster research",
+      "status": "passed"
+    },
+    {
+      "name": "template emits content poster directory",
+      "status": "passed"
+    },
+    {
+      "name": "template emits content poster data",
+      "status": "passed"
+    },
+    {
+      "name": "template emits content poster poster",
+      "status": "passed"
+    },
+    {
+      "name": "chart values and shared scale minutes",
+      "status": "passed"
+    },
+    {
+      "name": "chart values and shared scale capacity",
+      "status": "passed"
+    },
+    {
+      "name": "empty-result template has clear action",
+      "status": "passed"
+    },
+    {
+      "name": "sorting leaves source dataset unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "system/user reduce OR predicate",
+      "status": "passed"
+    },
+    {
+      "name": "motion timing references correct candidate duration",
+      "status": "passed"
+    },
+    {
+      "name": "no external script stylesheet or image resources",
+      "status": "passed"
+    },
+    {
+      "name": "no network calls in implementation",
+      "status": "passed"
+    },
+    {
+      "name": "media queries for reduced motion and mobile",
+      "status": "passed"
+    },
+    {
+      "name": "native fallback exists",
+      "status": "passed"
+    },
+    {
+      "name": "static shell has unique IDs",
+      "status": "passed"
+    },
+    {
+      "name": "single h1 in page shell",
+      "status": "passed"
+    },
+    {
+      "name": "no inline event attributes",
+      "status": "passed"
+    },
+    {
+      "name": "checkbox labels enclose inputs",
+      "status": "passed"
+    },
+    {
+      "name": "all page shell buttons have visible labels",
+      "status": "passed"
+    },
+    {
+      "name": "external links use noopener",
+      "status": "passed"
+    },
+    {
+      "name": "viewport and language specified",
+      "status": "passed"
+    },
+    {
+      "name": "generated markup IDs unique poster-directory",
+      "status": "passed"
+    },
+    {
+      "name": "generated content has heading poster-directory",
+      "status": "passed"
+    },
+    {
+      "name": "select has wrapping label poster-directory sort",
+      "status": "passed"
+    },
+    {
+      "name": "generated markup IDs unique order-poster",
+      "status": "passed"
+    },
+    {
+      "name": "generated content has heading order-poster",
+      "status": "passed"
+    },
+    {
+      "name": "generated markup IDs unique order-directory",
+      "status": "passed"
+    },
+    {
+      "name": "generated content has heading order-directory",
+      "status": "passed"
+    },
+    {
+      "name": "select has wrapping label order-directory sort",
+      "status": "passed"
+    },
+    {
+      "name": "generated markup IDs unique poster-poster",
+      "status": "passed"
+    },
+    {
+      "name": "generated content has heading poster-poster",
+      "status": "passed"
+    },
+    {
+      "name": "generated markup IDs unique order-data",
+      "status": "passed"
+    },
+    {
+      "name": "generated content has heading order-data",
+      "status": "passed"
+    },
+    {
+      "name": "select has wrapping label order-data sort",
+      "status": "passed"
+    },
+    {
+      "name": "select has wrapping label order-data metric",
+      "status": "passed"
+    },
+    {
+      "name": "data table caption and headers order-data",
+      "status": "passed"
+    },
+    {
+      "name": "generated markup IDs unique poster-data",
+      "status": "passed"
+    },
+    {
+      "name": "generated content has heading poster-data",
+      "status": "passed"
+    },
+    {
+      "name": "select has wrapping label poster-data sort",
+      "status": "passed"
+    },
+    {
+      "name": "select has wrapping label poster-data metric",
+      "status": "passed"
+    },
+    {
+      "name": "data table caption and headers poster-data",
+      "status": "passed"
+    },
+    {
+      "name": "generated markup IDs unique poster-research",
+      "status": "passed"
+    },
+    {
+      "name": "generated content has heading poster-research",
+      "status": "passed"
+    },
+    {
+      "name": "generated markup IDs unique order-research",
+      "status": "passed"
+    },
+    {
+      "name": "generated content has heading order-research",
+      "status": "passed"
+    },
+    {
+      "name": "SVG parses as XML",
+      "status": "passed"
+    },
+    {
+      "name": "SVG has accessible title and description",
+      "status": "passed"
+    },
+    {
+      "name": "contrast ink on canvas",
+      "status": "passed",
+      "ratio": 16.282
+    },
+    {
+      "name": "contrast inkMuted on canvas",
+      "status": "passed",
+      "ratio": 6.492
+    },
+    {
+      "name": "contrast accent on canvas",
+      "status": "passed",
+      "ratio": 5.361
+    },
+    {
+      "name": "contrast onAccent on accent",
+      "status": "passed",
+      "ratio": 6.013
+    },
+    {
+      "name": "contrast focus on canvas",
+      "status": "passed",
+      "ratio": 7.897
+    },
+    {
+      "name": "contrast success on canvas",
+      "status": "passed",
+      "ratio": 6.897
+    },
+    {
+      "name": "contrast caution on canvas",
+      "status": "passed",
+      "ratio": 6.331
+    },
+    {
+      "name": "contrast inkMuted on surface",
+      "status": "passed",
+      "ratio": 7.281
+    }
+  ],
+  "browser": {
+    "status": "blocked-before-launch",
+    "attempts": 2,
+    "reason": "Chromium process singleton socket() denied by cloud environment; allowed permission retry had same result",
+    "renderingPerformed": false
+  },
+  "notTested": [
+    "Actual browser layout and screenshots",
+    "Real DOM event and keyboard interaction",
+    "Responsive visual overflow",
+    "Screen reader",
+    "Real device/platform font layout",
+    "Print layout"
+  ],
+  "contrastPairs": [
+    {
+      "foreground": "ink",
+      "background": "canvas",
+      "ratio": 16.282,
+      "minimumTested": 4.5
+    },
+    {
+      "foreground": "inkMuted",
+      "background": "canvas",
+      "ratio": 6.492,
+      "minimumTested": 4.5
+    },
+    {
+      "foreground": "accent",
+      "background": "canvas",
+      "ratio": 5.361,
+      "minimumTested": 4.5
+    },
+    {
+      "foreground": "onAccent",
+      "background": "accent",
+      "ratio": 6.013,
+      "minimumTested": 4.5
+    },
+    {
+      "foreground": "focus",
+      "background": "canvas",
+      "ratio": 7.897,
+      "minimumTested": 4.5
+    },
+    {
+      "foreground": "success",
+      "background": "canvas",
+      "ratio": 6.897,
+      "minimumTested": 4.5
+    },
+    {
+      "foreground": "caution",
+      "background": "canvas",
+      "ratio": 6.331,
+      "minimumTested": 4.5
+    },
+    {
+      "foreground": "inkMuted",
+      "background": "surface",
+      "ratio": 7.281,
+      "minimumTested": 4.5
+    }
+  ],
+  "staticPreview": {
+    "status": "generated and visually inspected",
+    "files": [
+      "design-preview.svg",
+      "design-preview.png"
+    ],
+    "method": "Original code-generated static design board, not rendered from the interactive HTML and not a browser screenshot",
+    "dimensions": [
+      1800,
+      1510
+    ]
+  },
+  "summary": {
+    "passed": 74,
+    "failed": 0,
+    "browserChecks": "not run"
+  }
+}

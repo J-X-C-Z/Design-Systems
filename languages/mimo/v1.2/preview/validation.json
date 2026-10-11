@@ -1,0 +1,18 @@
+{
+  "file": "MiMo_Design_Language_Lab_v1.2.html",
+  "tests": [
+    "desktop HTML inline scripts run in isolated Chromium",
+    "6 scene/mode combinations",
+    "candidate contrast passes all 3 roles each visual mode",
+    "behavior contextual switching",
+    "animation replay and reset",
+    "download JSON profile offline",
+    "no desktop horizontal overflow",
+    "mobile 390px no horizontal overflow",
+    "mobile tab switching",
+    "reduce motion retains visible content",
+    "mobile HTML renders in isolated Chromium"
+  ],
+  "consoleErrors": [],
+  "result": "passed"
+}

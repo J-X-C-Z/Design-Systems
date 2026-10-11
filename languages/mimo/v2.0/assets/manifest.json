@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "resources": [
+    {
+      "id": "mimo.graphic.quiet-contour",
+      "path": "quiet-contour.svg",
+      "origin": "original",
+      "themeBinding": "currentColor",
+      "editable": "SVG paths",
+      "reuse": "shared",
+      "fontFiles": false
+    },
+    {
+      "id": "mimo.graphic.evidence-flow",
+      "path": "evidence-flow.svg",
+      "origin": "original",
+      "themeBinding": "currentColor",
+      "editable": "SVG paths",
+      "reuse": "shared",
+      "fontFiles": false
+    },
+    {
+      "id": "mimo.graphic.focus-frame",
+      "path": "focus-frame.svg",
+      "origin": "original",
+      "themeBinding": "currentColor",
+      "editable": "SVG paths",
+      "reuse": "shared",
+      "fontFiles": false
+    },
+    {
+      "id": "mimo.graphic.index-rule",
+      "path": "index-rule.svg",
+      "origin": "original",
+      "themeBinding": "currentColor",
+      "editable": "SVG paths",
+      "reuse": "shared",
+      "fontFiles": false
+    }
+  ]
+}

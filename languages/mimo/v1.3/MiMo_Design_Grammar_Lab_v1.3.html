@@ -1,0 +1,206 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RTH / MiMo-inspired Design Grammar v1.3</title>
+<meta name="description" content="Independent MiMo-inspired design grammar: 2 modes × 3 contexts, editable examples, reference ledger and stress tests. Not an official Xiaomi design system.">
+<style>
+/* RTH — Rational Technical Humanism; independent MiMo-inspired ORIGINAL design study.
+   These values are candidate design decisions, NOT official Xiaomi CSS. v1.3 */
+:root,[data-rth-mode="light"]{
+  color-scheme:light;
+  --rth-canvas:#f6f5f1;--rth-surface:#ffffff;--rth-raised:#ebece8;
+  --rth-ink:#171a19;--rth-muted:#606763;--rth-rule:#d5d8d2;
+  --rth-accent:#9f5935;--rth-accent-quiet:#e6c7b1;
+  --rth-action:#202321;--rth-action-ink:#ffffff;--rth-focus:#476c9e;
+  --rth-serif:Georgia,'Times New Roman',serif;
+  --rth-sans:Inter,'Segoe UI',Arial,'PingFang SC','Microsoft Yahei',sans-serif;
+  --rth-mono:ui-monospace,'SFMono-Regular',Consolas,'Liberation Mono',monospace;
+  --rth-space:clamp(16px,3.2vw,45px);--rth-max:1520px;
+  --rth-ease:cubic-bezier(.22,.78,.22,1);
+}
+[data-rth-mode="dark"]{
+  color-scheme:dark;
+  --rth-canvas:#101418;--rth-surface:#191f25;--rth-raised:#242d34;
+  --rth-ink:#f2f4f4;--rth-muted:#b0b9bf;--rth-rule:#38454e;
+  --rth-accent:#dfa77f;--rth-accent-quiet:#4b372b;
+  --rth-action:#ecf0f1;--rth-action-ink:#151a1f;--rth-focus:#9cb8ee;
+}
+.rth-scope{background:var(--rth-canvas);color:var(--rth-ink);font-family:var(--rth-sans);line-height:1.55}
+.rth-scope *{box-sizing:border-box}.rth-scope button,.rth-scope input,.rth-scope textarea{font:inherit}
+.rth-scope :is(button,a,input,textarea):focus-visible{outline:2px solid var(--rth-focus);outline-offset:3px}
+.rth-scope .rth-meta{font:650 10px/1.55 var(--rth-mono);letter-spacing:.11em;text-transform:uppercase;color:var(--rth-muted)}
+.rth-scope .rth-headline{font-weight:690;letter-spacing:-.077em;line-height:.95;font-size:clamp(42px,6.25vw,100px);margin:0}
+.rth-scope .rth-body{font-size:clamp(13px,1.2vw,16px);line-height:1.85;color:var(--rth-muted)}
+.rth-scope .rth-rule{height:1px;background:var(--rth-rule)}
+.rth-scope .rth-link-row{display:flex;align-items:center;gap:18px;padding:15px 0;border-bottom:1px solid var(--rth-rule);text-decoration:none;color:inherit}
+.rth-scope .rth-link-row .rth-count{font:12px var(--rth-mono);color:var(--rth-muted)}
+.rth-scope .rth-link-row strong{flex:1;min-width:0;font-weight:590;font-size:13px}
+.rth-scope .rth-link-row .rth-arrow{font-size:22px;transform:translateX(0);transition:transform .2s var(--rth-ease)}
+.rth-scope .rth-link-row:is(:hover,:focus-visible) .rth-arrow{transform:translateX(6px)}
+.rth-scope .rth-command{display:flex;gap:10px;align-items:center;border:1px solid var(--rth-rule);background:var(--rth-surface);padding:10px 10px 10px 16px}
+.rth-scope .rth-command code{font:12px/1.6 var(--rth-mono);white-space:nowrap;overflow:auto;min-width:0;flex:1}
+.rth-scope .rth-command button,.rth-scope .rth-pill{background:var(--rth-raised);border:1px solid var(--rth-rule);color:var(--rth-ink);padding:9px 12px;border-radius:3px;cursor:pointer}
+.rth-scope .rth-quiet-card{background:var(--rth-surface);border:1px solid var(--rth-rule);padding:20px}
+.rth-scope .rth-action{border:1px solid var(--rth-action);background:var(--rth-action);color:var(--rth-action-ink);padding:11px 14px;cursor:pointer;border-radius:3px}
+.rth-scope .rth-workbox{border:1px solid var(--rth-rule);border-radius:8px;background:var(--rth-surface);padding:18px}
+.rth-scope .rth-workbox textarea{resize:vertical;min-height:70px;border:0;background:transparent;color:var(--rth-ink);width:100%;outline:none}
+.rth-scope .rth-subtle{color:var(--rth-muted)}
+.rth-scope [data-rth-appearing]{animation:rth-enter .42s var(--rth-ease) both}
+@keyframes rth-enter{from{transform:translateY(9px);opacity:.45}to{transform:translateY(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){.rth-scope *{animation-duration:0.001ms!important;transition-duration:0.001ms!important}}
+.rth-scope[data-rth-reduced="true"] *{animation-duration:0.001ms!important;transition-duration:0.001ms!important}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f1f0ec;color:#1a1d1a;font-family:Inter,'Segoe UI',Arial,'PingFang SC',sans-serif;-webkit-font-smoothing:antialiased}
+button{cursor:pointer}button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid #5577a9;outline-offset:3px}
+.wrap{max-width:1520px;padding:0 clamp(20px,3vw,56px);margin:auto}
+.mast{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px;border-bottom:1px solid #deded8}
+.wordmark{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}.sigil{background:#222826;color:white;width:29px;height:29px;display:grid;place-items:center;font-size:12px;font-weight:800}
+.wordmark small{display:block;font:650 9px var(--rth-mono,monospace);color:#737875;letter-spacing:.15em;margin-top:3px}.wordmark strong{font-size:12px}
+.mast nav{display:flex;align-items:center;gap:27px}.mast nav a{color:#4b524f;text-decoration:none;font-size:12px}.mast nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.hero-out{padding:85px 0 62px;border-bottom:1px solid #dadad4;display:grid;grid-template-columns:1.2fr .6fr;align-items:end;gap:25px}
+.eyebrow{font:650 10px var(--rth-mono,monospace);letter-spacing:.15em;color:#666d69}
+.hero-out h1{font-size:clamp(60px,7.7vw,126px);line-height:.91;letter-spacing:-.078em;margin:28px 0 24px;font-weight:675}
+.hero-out h1 em{font-style:normal;color:#969d98}.hero-out .lede{font-size:14px;color:#5a645e;line-height:1.9;max-width:680px}
+.hero-aside{max-width:290px;margin-left:auto;border-top:1px solid #171a19;padding:20px 0 0;align-self:end}
+.hero-aside strong{font:400 67px/.9 Georgia,serif;letter-spacing:-.06em}.hero-aside p{color:#646a65;font-size:12px;line-height:1.85}
+.number-head{display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:25px;align-items:start;margin:60px 0 28px}
+.number-head .n{font:400 57px/.9 Georgia,serif;letter-spacing:-.09em}.number-head h2{font-size:clamp(30px,3vw,43px);letter-spacing:-.055em;line-height:1.12;margin:0 0 9px}.number-head p{max-width:750px;color:#686c69;line-height:1.8;font-size:13px;margin:0}
+.number-head .endnote{font:550 9px var(--rth-mono,monospace);color:#8b918c;letter-spacing:.1em;text-align:right}
+.panel-controls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:13px}
+.group-controls{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.pill-group{display:flex;flex-wrap:wrap;align-items:center;gap:3px;border:1px solid #d2d3cd;border-radius:6px;background:#e7e8e3;padding:4px}
+.pill-group button{border:0;background:transparent;color:#59605b;padding:10px 12px;font-size:11px;border-radius:3px}
+.pill-group button[aria-pressed="true"]{background:#252b28;color:#fff}
+.secondary-action{border:1px solid #d2d3cd;background:transparent;border-radius:4px;padding:11px 13px;font-size:11px;color:#3b423e}
+.secondary-action[aria-pressed="true"]{background:#252b28;color:#fff}
+.mini-label{font:650 9px var(--rth-mono,monospace);color:#6b716c;text-transform:uppercase;letter-spacing:.1em;margin-right:4px}
+.labs{display:grid;grid-template-columns:minmax(0,1fr);gap:13px}
+.labs[data-comparison="true"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+.specimen{min-width:0;border:1px solid #cfd3cd;min-height:500px;overflow:hidden;position:relative}
+.specimen .spec-top{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 23px;border-bottom:1px solid var(--rth-rule);font:650 10px var(--rth-mono);letter-spacing:.07em}
+.specimen .spec-top span+span{color:var(--rth-muted)}
+.scene{display:none;min-height:449px}.scene.is-active{display:block}
+.spec-body{padding:clamp(23px,3vw,50px);min-height:444px}
+.research-grid,.developer-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:7%;align-items:center}
+.spec-body h3{font-size:clamp(39px,4.5vw,82px);letter-spacing:-.073em;line-height:.98;margin:14px 0 22px;font-weight:690;overflow-wrap:anywhere}
+.labs[data-comparison="true"] .spec-body h3{font-size:clamp(34px,3vw,56px)}
+.spec-body .descr{font-size:13px;color:var(--rth-muted);line-height:1.84;max-width:520px;margin-bottom:20px}
+.research-index{min-width:0}.research-figure{height:180px;border:1px solid var(--rth-rule);background:var(--rth-surface);margin-bottom:15px;position:relative;overflow:hidden}
+.research-figure svg{width:100%;height:100%}.research-figure path.graphline{stroke:var(--rth-accent)}
+.research-figure .gridline{stroke:var(--rth-rule)}
+.research-figure .figure-caption{position:absolute;left:10px;top:10px;font:600 9px var(--rth-mono);color:var(--rth-muted)}
+.developer-terminal{border:1px solid var(--rth-rule);border-radius:6px;background:var(--rth-surface);overflow:hidden;min-width:0;box-shadow:0 20px 40px rgba(20,20,25,.06)}
+.terminal-head{padding:13px;border-bottom:1px solid var(--rth-rule);font:11px var(--rth-mono);color:var(--rth-muted)}
+.terminal-lines{padding:20px 18px;font:12px/2.2 var(--rth-mono);overflow:auto}.terminal-lines .success{color:var(--rth-accent)}
+.work-ui{display:grid;grid-template-columns:145px minmax(0,1fr) 160px;min-height:400px;border:1px solid var(--rth-rule);background:var(--rth-surface);border-radius:6px;overflow:hidden}
+.work-nav{padding:20px 11px;border-right:1px solid var(--rth-rule)}.work-nav strong{font-size:13px;display:block;margin-bottom:26px}.work-nav a{display:block;text-decoration:none;color:var(--rth-muted);font-size:12px;padding:10px;border-radius:4px}.work-nav .selected{background:var(--rth-raised);color:var(--rth-ink)}
+.work-main{display:flex;justify-content:center;align-items:center;flex-direction:column;padding:25px;min-width:0}.work-main h3{font-size:clamp(26px,2.5vw,42px);margin-bottom:7px;text-align:center}.work-main .descr{text-align:center;margin-bottom:17px}
+.work-main .rth-workbox{width:100%;max-width:480px}.work-meta{padding:18px 14px;border-left:1px solid var(--rth-rule)}.work-meta .metric{padding:14px 0;border-bottom:1px solid var(--rth-rule);font-size:11px}.work-meta .metric strong{display:block;font:500 25px Georgia,serif;margin-bottom:4px}
+.work-actions{display:flex;align-items:center;gap:9px;justify-content:space-between}.work-actions .rth-meta{font-size:9px}
+.intro-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0 40px}
+.intro-strip article{padding:20px;min-height:140px;border:1px solid #d4d6d0;background:#f8f8f5}.intro-strip b{font-size:13px;display:block;margin:15px 0 7px}.intro-strip p{margin:0;color:#646e66;font-size:11px;line-height:1.7}.intro-strip label{font:650 10px var(--rth-mono,monospace);color:#a16a4b}
+.stress-area{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:35px}.stress-card{border:1px solid #d4d6d0;padding:22px;min-width:0;overflow:hidden;background:#fafaf7}.stress-card h3{font-size:24px;line-height:1.15;letter-spacing:-.05em;overflow-wrap:anywhere}.stress-card p{font-size:13px;color:#59615b;line-height:1.85;overflow-wrap:anywhere}
+.audit-table{border-collapse:collapse;width:100%;margin:10px 0 20px;font-size:12px}.audit-table th,.audit-table td{border-bottom:1px solid #d3d7d0;padding:13px 8px;text-align:left}.audit-table th{font:700 10px var(--rth-mono,monospace);text-transform:uppercase;color:#737b75}.audit-table .pass{color:#26734f;font-weight:700}
+.evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:45px}.evidence-grid article{border:1px solid #d4d6d0;padding:21px;background:#fafaf7;min-width:0}.evidence-grid span{font:650 10px var(--rth-mono,monospace);color:#a16a4b}.evidence-grid h3{font-size:17px;margin:15px 0 9px;letter-spacing:-.04em}.evidence-grid p{font-size:12px;line-height:1.85;color:#66706a}.evidence-grid a{font-size:11px;color:#454f4b}
+.footer{border-top:1px solid #d4d6d0;padding:23px 0 40px;display:flex;justify-content:space-between;gap:15px;font-size:11px;color:#6b746e}
+#toast{margin:11px 0;font-size:12px;color:#526253;min-height:20px}
+[data-reduced="true"] .rth-scope *,[data-reduced="true"] .rth-scope *:before{animation-duration:0.001ms!important;transition-duration:0.001ms!important}
+@media(max-width:950px){.labs[data-comparison="true"]{grid-template-columns:1fr}.research-grid,.developer-grid{grid-template-columns:1fr;gap:20px}.research-figure{height:110px}.work-ui{grid-template-columns:105px minmax(0,1fr)}.work-meta{display:none}.hero-out{grid-template-columns:1fr}.hero-aside{margin:0}.spec-body{padding:26px}.spec-body h3{font-size:clamp(38px,5vw,65px)}}
+@media(max-width:620px){.mast nav{display:none}.hero-out{padding:50px 0}.hero-out h1{font-size:clamp(50px,12vw,75px)}.number-head{grid-template-columns:48px 1fr;gap:12px;margin:44px 0 20px}.number-head .n{font-size:46px}.number-head .endnote{display:none}.panel-controls{justify-content:flex-start}.pill-group button{padding:10px 9px}.intro-strip,.stress-area,.evidence-grid{grid-template-columns:1fr}.specimen{min-height:0}.spec-top{padding:12px 16px!important}.spec-body{padding:20px;min-height:0}.spec-body h3{font-size:clamp(38px,9vw,58px)}.research-figure{height:115px}.work-ui{grid-template-columns:1fr;min-height:0}.work-nav,.work-meta{display:none}.work-main{padding:25px 16px}.footer{flex-direction:column}.hero-aside strong{font-size:50px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0.001ms!important;transition-duration:0.001ms!important;scroll-behavior:auto!important}}
+
+</style></head><body id="page"><div class="wrap">
+<header class="mast"><a class="wordmark" href="#top"><span class="sigil">R</span><span><strong>RATIONAL TECHNICAL HUMANISM</strong><small>INDEPENDENT DESIGN ARCHIVE</small></span></a><nav aria-label="页面导航"><a href="#grammar">Grammar</a><a href="#scenes">Specimens</a><a href="#proof">Stress tests</a><a href="#evidence">Evidence</a></nav></header>
+<section class="hero-out" id="top"><div><div class="eyebrow">DESIGN LANGUAGE RESEARCH / MIMO INSPIRED / V1.3</div><h1>One language.<br><em>Many contexts.</em></h1><p class="lede">提炼稳定的设计判断，而不是复刻某个网页。让文字承担结构，让真实操作成为视觉，让动效解释状态；跨研究、开发与工作区保持同一种设计身份。</p></div><div class="hero-aside"><strong>02 × 03</strong><p>两种视觉模式、三种内容场景。共享语义规则，不共享僵硬模板。所有参数为独立设计研究候选值。</p></div></section>
+<section id="grammar"><div class="number-head"><span class="n">01</span><div><h2>先确定设计基因，而不是颜色。</h2><p>从官方页面能验证的行为出发，提炼不依赖 Logo 与具体排版模板的稳定语言。</p></div><div class="endnote">STRUCTURE / MEANING / DIRECTION</div></div>
+<div class="intro-strip"><article><label>01 / TYPOGRAPHY</label><b>文字就是结构</b><p>标题承担视觉焦点，编号与细线建立阅读路径。中文英文可以自由换行，不要求复刻固定坐标。</p></article><article><label>02 / TOOLS</label><b>真实操作就是内容</b><p>命令、任务输入、数据与结果优先于装饰；技术感来自可读、可执行、可验证的动作。</p></article><article><label>03 / MOVEMENT</label><b>动画解释变化</b><p>方向、反馈、进度、信息关系是动效的理由。可关闭动画，但不能抹去状态本身。</p></article></div></section>
+<section id="scenes"><div class="number-head"><span class="n">02</span><div><h2>一门语言，六种表达。</h2><p>切换同一份场景内容的视觉模式；也可以开启对照，验证不改变信息结构时是否仍然成立。</p></div><div class="endnote" id="status-line">LIGHT / RESEARCH / STANDARD</div></div>
+<div class="panel-controls"><div class="group-controls"><span class="mini-label">SCENE</span><div class="pill-group"><button data-set-scene="research" aria-pressed="true">Research</button><button data-set-scene="developer" aria-pressed="false">Developer</button><button data-set-scene="workspace" aria-pressed="false">Workspace</button></div></div><div class="group-controls"><span class="mini-label">VISUAL MODE</span><div class="pill-group"><button data-set-mode="light" aria-pressed="true">Rational</button><button data-set-mode="dark" aria-pressed="false">Dark Tech</button></div><button id="compare-toggle" class="secondary-action" aria-pressed="false">并排对照</button></div></div>
+<div class="labs" id="labs" data-comparison="false"><article class="specimen rth-scope" data-rth-mode="light" data-main-specimen="primary"><header class="spec-top"><span>RTH / ORIGINAL SPECIMEN</span><span data-scene-label>RESEARCH</span></header>
+<section class="scene is-active" data-scene-instance="research"><div class="spec-body research-grid">
+ <div><div class="rth-meta" style="color:var(--rth-accent)">01 / RESEARCH — EDITORIAL</div><h3 data-copy-text>Ideas need room to breathe.</h3><p class="descr" data-copy-desc>好的研究值得被认真阅读，而不是被过度包装。</p><div class="rth-meta">THESIS / FIELD NOTE / 2026</div></div>
+ <div class="research-index"><div class="research-figure"><div class="figure-caption">FIG. 01 / EXPLANATION FLOW</div><svg viewBox="0 0 400 170" role="img" aria-label="原创研究曲线示意图"><g fill="none" stroke-width="1"><path class="gridline" d="M0 35H400M0 80H400M0 125H400M80 0V170M160 0V170M240 0V170M320 0V170"/></g><path class="graphline" fill="none" stroke-width="2.6" d="M4 150C52 149 65 108 113 118S165 66 207 71S259 100 301 47S357 38 396 12"/></svg></div>
+  <a class="rth-link-row" href="#grammar"><span class="rth-count">01</span><strong>Define the central question</strong><span class="rth-arrow">↗</span></a>
+  <a class="rth-link-row" href="#grammar"><span class="rth-count">02</span><strong>Provide visible evidence</strong><span class="rth-arrow">↗</span></a>
+  <a class="rth-link-row" href="#grammar"><span class="rth-count">03</span><strong>Connect the next idea</strong><span class="rth-arrow">↗</span></a>
+ </div></div></section>
+<section class="scene" data-scene-instance="developer"><div class="spec-body developer-grid">
+ <div><div class="rth-meta" style="color:var(--rth-accent)">02 / DEVELOPER — HUMANIST</div><h3 data-copy-text>Build what matters.</h3><p class="descr" data-copy-desc>清楚地告诉使用者如何开始、运行、检查以及完成。</p><div class="rth-command"><code>npm create meaningful-interface</code><button data-command-copy type="button">复制命令</button></div></div>
+ <div class="developer-terminal"><div class="terminal-head">● &nbsp; project / setup / inspectable steps</div><div class="terminal-lines"><div><span class="rth-subtle">$</span> npm run initialize</div><div class="success">✓ Create project structure</div><div class="success">✓ Apply semantic tokens</div><div class="success">✓ Validate readable contrast</div><div><span class="rth-subtle">$</span> npm run preview</div><div class="rth-subtle">Local preview ready → 127.0.0.1</div></div></div>
+</div></section>
+<section class="scene" data-scene-instance="workspace"><div class="spec-body" style="padding:clamp(12px,2.4vw,28px)"><div class="work-ui">
+ <aside class="work-nav"><strong>Personal Lab</strong><a href="#scenes" class="selected">＋ &nbsp; New task</a><a href="#scenes">◷ &nbsp; History</a><a href="#scenes">▣ &nbsp; Library</a><a href="#scenes">⚙ &nbsp; Settings</a></aside>
+ <div class="work-main"><div class="rth-meta" style="color:var(--rth-accent);margin-bottom:20px">03 / AI WORKSPACE</div><h3 data-copy-text>What will you make?</h3><p class="descr" data-copy-desc>将输入作为真正的焦点，让任务状态清晰可见。</p><div class="rth-workbox"><textarea aria-label="输入设计任务" placeholder="描述你想完成的任务……"></textarea><div class="work-actions"><span class="rth-meta" data-task-feedback>MODEL / LOCAL SPECIMEN</span><button type="button" class="rth-action" data-task-trigger>发送 ↗</button></div></div></div>
+ <aside class="work-meta"><div class="rth-meta">STATUS</div><div class="metric"><strong>03</strong>Components ready</div><div class="metric"><strong>02</strong>Visual modes</div><div class="metric"><strong>01</strong>One language</div></aside>
+</div></div></section>
+</article><article class="specimen rth-scope" data-rth-mode="dark" data-main-specimen="secondary"><header class="spec-top"><span>RTH / ORIGINAL SPECIMEN</span><span data-scene-label>RESEARCH</span></header>
+<section class="scene is-active" data-scene-instance="research"><div class="spec-body research-grid">
+ <div><div class="rth-meta" style="color:var(--rth-accent)">01 / RESEARCH — EDITORIAL</div><h3 data-copy-text>Ideas need room to breathe.</h3><p class="descr" data-copy-desc>好的研究值得被认真阅读，而不是被过度包装。</p><div class="rth-meta">THESIS / FIELD NOTE / 2026</div></div>
+ <div class="research-index"><div class="research-figure"><div class="figure-caption">FIG. 01 / EXPLANATION FLOW</div><svg viewBox="0 0 400 170" role="img" aria-label="原创研究曲线示意图"><g fill="none" stroke-width="1"><path class="gridline" d="M0 35H400M0 80H400M0 125H400M80 0V170M160 0V170M240 0V170M320 0V170"/></g><path class="graphline" fill="none" stroke-width="2.6" d="M4 150C52 149 65 108 113 118S165 66 207 71S259 100 301 47S357 38 396 12"/></svg></div>
+  <a class="rth-link-row" href="#grammar"><span class="rth-count">01</span><strong>Define the central question</strong><span class="rth-arrow">↗</span></a>
+  <a class="rth-link-row" href="#grammar"><span class="rth-count">02</span><strong>Provide visible evidence</strong><span class="rth-arrow">↗</span></a>
+  <a class="rth-link-row" href="#grammar"><span class="rth-count">03</span><strong>Connect the next idea</strong><span class="rth-arrow">↗</span></a>
+ </div></div></section>
+<section class="scene" data-scene-instance="developer"><div class="spec-body developer-grid">
+ <div><div class="rth-meta" style="color:var(--rth-accent)">02 / DEVELOPER — HUMANIST</div><h3 data-copy-text>Build what matters.</h3><p class="descr" data-copy-desc>清楚地告诉使用者如何开始、运行、检查以及完成。</p><div class="rth-command"><code>npm create meaningful-interface</code><button data-command-copy type="button">复制命令</button></div></div>
+ <div class="developer-terminal"><div class="terminal-head">● &nbsp; project / setup / inspectable steps</div><div class="terminal-lines"><div><span class="rth-subtle">$</span> npm run initialize</div><div class="success">✓ Create project structure</div><div class="success">✓ Apply semantic tokens</div><div class="success">✓ Validate readable contrast</div><div><span class="rth-subtle">$</span> npm run preview</div><div class="rth-subtle">Local preview ready → 127.0.0.1</div></div></div>
+</div></section>
+<section class="scene" data-scene-instance="workspace"><div class="spec-body" style="padding:clamp(12px,2.4vw,28px)"><div class="work-ui">
+ <aside class="work-nav"><strong>Personal Lab</strong><a href="#scenes" class="selected">＋ &nbsp; New task</a><a href="#scenes">◷ &nbsp; History</a><a href="#scenes">▣ &nbsp; Library</a><a href="#scenes">⚙ &nbsp; Settings</a></aside>
+ <div class="work-main"><div class="rth-meta" style="color:var(--rth-accent);margin-bottom:20px">03 / AI WORKSPACE</div><h3 data-copy-text>What will you make?</h3><p class="descr" data-copy-desc>将输入作为真正的焦点，让任务状态清晰可见。</p><div class="rth-workbox"><textarea aria-label="输入设计任务" placeholder="描述你想完成的任务……"></textarea><div class="work-actions"><span class="rth-meta" data-task-feedback>MODEL / LOCAL SPECIMEN</span><button type="button" class="rth-action" data-task-trigger>发送 ↗</button></div></div></div>
+ <aside class="work-meta"><div class="rth-meta">STATUS</div><div class="metric"><strong>03</strong>Components ready</div><div class="metric"><strong>02</strong>Visual modes</div><div class="metric"><strong>01</strong>One language</div></aside>
+</div></div></section>
+</article></div>
+<div id="toast" role="status" aria-live="polite"></div></section>
+<section id="proof"><div class="number-head"><span class="n">03</span><div><h2>验证设计语言的适应力。</h2><p>无需靠固定版式维持风格一致性：换语言、换信息长度、换屏幕尺寸，仍要可读。</p></div><div class="endnote">STRESS / RESPONSIVE / ACCESSIBILITY</div></div>
+<div class="panel-controls"><div class="group-controls"><span class="mini-label">CONTENT</span><div class="pill-group"><button data-set-language="standard" aria-pressed="true">Standard</button><button data-set-language="chinese" aria-pressed="false">中文</button><button data-set-language="stress" aria-pressed="false">Long text</button></div></div><div class="group-controls"><button id="reduce-toggle" class="secondary-action" aria-pressed="false">减少动态效果</button><button id="export-profile" class="secondary-action">导出候选配置 ↓</button></div></div>
+<div class="stress-area"><article class="stress-card"><div class="eyebrow">TYPE / MULTILINGUAL</div><h3>Readable ideas, carefully structured.<br>清晰，是最重要的视觉秩序。</h3><p>本区用于测试混合字形、不同长度的标题和内容，而不是宣称小米官网使用了相同字体。</p></article><article class="stress-card"><div class="eyebrow">FUNCTION / REAL OUTPUT</div><h3>status: ready<br><code style="font-size:17px;letter-spacing:0">rth:validate --all</code></h3><p>工具界面应保留真实执行状态，不能用不可复制的伪代码取代核心信息。</p></article></div>
+<div class="eyebrow">CANDIDATE TEXT CONTRAST / AGAINST CANVAS</div><table class="audit-table"><thead><tr><th>视觉模式</th><th>文本角色</th><th>对比度</th><th>WCAG 4.5:1</th></tr></thead><tbody id="audit-rows"></tbody></table>
+<p style="font-size:11px;color:#6b746d">对比度仅检查候选 Token 与 Canvas 的三个组合；不代表所有组件状态均已达到可访问性标准。</p></section>
+<section id="evidence"><div class="number-head"><span class="n">04</span><div><h2>把证据和创作判断分开。</h2><p>官方直接可读的信息、基于页面的推导、个人设计资源的原创实现不得混为一谈。</p></div><div class="endnote">TRACEABILITY / NOT OFFICIAL</div></div>
+<div class="evidence-grid"><article><span>OBSERVED / OFFICIAL</span><h3>研究主页的文字与编号</h3><p>重复 M I M O、巨型标题、按序排列的论文与文章索引，在官网公开页面可确认。</p><a href="https://mimo.xiaomi.com/zh" target="_blank" rel="noopener noreferrer">官方来源 ↗</a></article><article><span>OBSERVED / OFFICIAL</span><h3>开发者页的实际操作</h3><p>MiMo Code 显示平台选择和安装命令；工作方式直接参与页面结构。</p><a href="https://mimo.xiaomi.com/coder?lang=en" target="_blank" rel="noopener noreferrer">官方来源 ↗</a></article><article><span>OBSERVED / OFFICIAL CHANGELOG</span><h3>理性人文 / 暗黑科技</h3><p>2026-07-23 Studio UI 更新明确使用这两个命名；本实验的跨场景扩展属于原创解释。</p><a href="https://mimo.mi.com/docs/zh-CN/updates/feature/studio" target="_blank" rel="noopener noreferrer">官方来源 ↗</a></article></div></section>
+<footer class="footer"><span>RTH / INDEPENDENT DESIGN LANGUAGE RESEARCH · v1.3</span><span>候选设计规范 · 不包含小米官方商标、字体或网页源码 · 离线可运行</span></footer>
+</div><script>
+
+(()=>{
+ const page=document.getElementById('page');const labs=document.getElementById('labs');
+ const palettes={
+ light:{canvas:'#F6F5F1',surface:'#FFFFFF',ink:'#171A19',muted:'#606763',accent:'#9F5935'},
+ dark:{canvas:'#101418',surface:'#191F25',ink:'#F2F4F4',muted:'#B0B9BF',accent:'#DFA77F'}
+ };
+ let scene='research',mode='light',comparison=false,reduced=false,language='standard';
+ const demos={
+ standard:{research:['Ideas need room to breathe.','好的研究值得被认真阅读，而不是被过度包装。'],developer:['Build what matters.','清楚地告诉使用者如何开始、运行、检查以及完成。'],workspace:['What will you make?','将输入作为真正的焦点，让任务状态清晰可见。']},
+ chinese:{research:['让信息有呼吸感。','好的研究应当被看见、理解和检验；页面为观点服务。'],developer:['让技术即刻可用。','安装、运行、审查、交付，每一次操作都应该直观而可靠。'],workspace:['今天想完成什么？','用简单直接的界面组织任务，而不是让装饰分散注意力。']},
+ stress:{research:['Understanding Complex Information Through Careful Visual Hierarchy','这是用于验证超长英文标题、多语言混排，以及冗长解释性段落在有限空间中可读性和换行行为的设计压力测试。'],developer:['Install, configure, and verify across your entire engineering workflow','跨平台指令与很长的标识符：superior-point-design-language-integration-extension-2026，必须避免横向溢出。'],workspace:['跨团队、跨语言和跨场景的可验证任务协同工作台','这里是一条非常长的工作请求，用于检查界面在用户输入充满整个文本框之后是否仍然能正常操作和导航。']}
+ };
+ function setPressed(q,val,attr){document.querySelectorAll(q).forEach(el=>el.setAttribute('aria-pressed',String(el.getAttribute(attr)===val)))}
+ function apply(){
+   labs.dataset.comparison=String(comparison);
+   document.querySelectorAll('[data-main-specimen]').forEach((s,i)=>{s.dataset.rthMode=comparison?(i===0?'light':'dark'):mode;s.hidden=(!comparison&&i>0);});
+   document.querySelectorAll('[data-scene-instance]').forEach(el=>{el.classList.toggle('is-active',el.dataset.sceneInstance===scene)});
+   document.querySelectorAll('[data-copy-text]').forEach(el=>el.textContent=demos[language][scene][0]);
+   document.querySelectorAll('[data-copy-desc]').forEach(el=>el.textContent=demos[language][scene][1]);
+   document.querySelectorAll('[data-scene-label]').forEach(el=>el.textContent=scene.toUpperCase());
+   setPressed('[data-set-scene]',scene,'data-set-scene');setPressed('[data-set-mode]',mode,'data-set-mode');setPressed('[data-set-language]',language,'data-set-language');
+   document.getElementById('compare-toggle').setAttribute('aria-pressed',String(comparison));
+   document.getElementById('reduce-toggle').setAttribute('aria-pressed',String(reduced));
+   page.dataset.reduced=String(reduced);
+   document.getElementById('status-line').textContent=(comparison?'LIGHT + DARK':mode.toUpperCase())+' / '+scene.toUpperCase()+' / '+language.toUpperCase();
+   updateContrast();
+ }
+ function rgb(hex){let s=hex.replace('#','');return [0,2,4].map(i=>parseInt(s.slice(i,i+2),16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4)}
+ function luminance(hex){let c=rgb(hex);return .2126*c[0]+.7152*c[1]+.0722*c[2]}
+ function contrast(a,b){let x=luminance(a),y=luminance(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05)}
+ function updateContrast(){const body=document.getElementById('audit-rows');body.innerHTML='';const modes=comparison?['light','dark']:[mode];for(const m of modes){const p=palettes[m];for(const role of ['ink','muted','accent']){const ratio=contrast(p[role],p.canvas);let tr=document.createElement('tr');let values=[m==='light'?'Rational / Light':'Dark Tech',role,ratio.toFixed(2)+':1',ratio>=4.5?'通过':'需复核'];for(let i=0;i<values.length;i++){let td=document.createElement('td');td.textContent=values[i];if(i===3&&ratio>=4.5)td.className='pass';tr.appendChild(td)}body.appendChild(tr)}}}
+ function notify(text){const t=document.getElementById('toast');t.textContent=text;}
+ document.querySelectorAll('[data-set-scene]').forEach(el=>el.addEventListener('click',()=>{scene=el.dataset.setScene;apply()}));
+ document.querySelectorAll('[data-set-mode]').forEach(el=>el.addEventListener('click',()=>{mode=el.dataset.setMode;apply()}));
+ document.querySelectorAll('[data-set-language]').forEach(el=>el.addEventListener('click',()=>{language=el.dataset.setLanguage;apply()}));
+ document.getElementById('compare-toggle').addEventListener('click',()=>{comparison=!comparison;apply()});
+ document.getElementById('reduce-toggle').addEventListener('click',()=>{reduced=!reduced;apply();notify(reduced?'减少动态效果：已启用':'减少动态效果：已关闭')});
+ async function copyValue(v){if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(v);return}const ta=document.createElement('textarea');ta.value=v;ta.style.position='fixed';ta.style.top='-9999px';document.body.appendChild(ta);ta.select();const ok=document.execCommand('copy');ta.remove();if(!ok)throw Error('clipboard not available')}
+ document.querySelectorAll('[data-command-copy]').forEach(el=>el.addEventListener('click',async()=>{try{await copyValue('npm create meaningful-interface');el.textContent='已复制 ✓';notify('命令复制成功')}catch{el.textContent='复制失败';notify('当前环境不允许复制')}setTimeout(()=>el.textContent='复制命令',1500)}));
+ document.querySelectorAll('[data-task-trigger]').forEach(el=>el.addEventListener('click',()=>{let target=el.closest('[data-main-specimen]').querySelector('[data-task-feedback]');target.textContent='已收到任务 · 正在整理设计摘要';notify('工作区操作反馈已更新')}));
+ document.getElementById('export-profile').addEventListener('click',()=>{const payload={status:'original MiMo-inspired candidate; not official Xiaomi specification',family:'rational-technical-humanism',version:'1.3.0',mode:comparison?'comparison':mode,scene,contentVariant:language,tokenSample:palettes};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='rth-design-profile-v1.3.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('候选配置已导出')});
+ apply();
+})();
+
+</script></body></html>

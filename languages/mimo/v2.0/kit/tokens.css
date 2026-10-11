@@ -1,0 +1,42 @@
+/* MiMo-inspired 2.0.0. Personal authored defaults, NOT Xiaomi source. No font files. */
+:root, [data-mimo-mode="light"], [data-mimo-branch="rational-humanistic"] {
+  color-scheme:light;
+  --mimo-canvas:#F6F5F1;
+  --mimo-surface:#FFFFFF;
+  --mimo-raised:#EBEDE7;
+  --mimo-ink:#17201B;
+  --mimo-muted:#5B675F;
+  --mimo-subtle:#606C64;
+  --mimo-rule:#D0D5CC;
+  --mimo-control:#7C897F;
+  --mimo-accent:#96512F;
+  --mimo-accent-soft:#ECD9CA;
+  --mimo-accent-ink:#703717;
+  --mimo-action:#1D2A23;
+  --mimo-on-action:#FFFFFF;
+  --mimo-focus:#315C9C;
+  --mimo-success:#21623F;
+  --mimo-warning:#805100;
+  --mimo-danger:#A02F34;
+}
+[data-mimo-mode="dark"], [data-mimo-branch="dark-tech"] {
+  color-scheme:dark;
+  --mimo-canvas:#111814;
+  --mimo-surface:#18221C;
+  --mimo-raised:#233129;
+  --mimo-ink:#F0F3EC;
+  --mimo-muted:#B0BDAF;
+  --mimo-subtle:#A1B39F;
+  --mimo-rule:#3C5143;
+  --mimo-control:#829880;
+  --mimo-accent:#E3AF86;
+  --mimo-accent-soft:#493A2D;
+  --mimo-accent-ink:#FFDCC0;
+  --mimo-action:#EDF1E8;
+  --mimo-on-action:#152019;
+  --mimo-focus:#A7C6FF;
+  --mimo-success:#A2DAB5;
+  --mimo-warning:#F0CA7F;
+  --mimo-danger:#FFAAA7;
+}
+:root {--mimo-sans:system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;--mimo-mono:ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;--mimo-ease:cubic-bezier(.22,.75,.2,1);--mimo-micro:160ms;--mimo-state:280ms;--mimo-reveal:520ms;--mimo-page-gutter:clamp(20px,4.2vw,64px);}

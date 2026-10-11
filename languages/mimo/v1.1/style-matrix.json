@@ -1,0 +1,247 @@
+{
+  "id": "personal.design-language.mimo-inspired",
+  "version": "1.1.0",
+  "status": "independent-research-hypothesis",
+  "provenance": {
+    "creator": "Independent research / not Xiaomi",
+    "asOf": "2026-10-10",
+    "sourceEvidence": {
+      "officialStyleNames": "MiMo Studio 2026-07-23 changelog: Rational Humanistic, Dark Tech",
+      "research": "https://mimo.xiaomi.com/zh",
+      "developer": "https://mimo.xiaomi.com/coder?lang=en",
+      "developerDocs": "https://mimo.xiaomi.com/mimocode/start",
+      "studioRelease": "https://mimo.mi.com/docs/zh-CN/updates/feature/studio",
+      "designMethod": "https://support.claude.com/en/articles/14604397-set-up-your-design-system-in-claude-design"
+    },
+    "notes": [
+      "The two style names are taken from a specific official MiMo Studio release. Their use as global personal-study modes is an original abstraction.",
+      "Research, Developer, Workspace are scene contexts inferred from official pages, not three official MiMo themes.",
+      "Every numeric token is a candidate for personal reuse, NOT extracted official CSS."
+    ]
+  },
+  "identity": {
+    "name": "MiMo-inspired / Rational-Technical Humanism",
+    "vision": "Make intelligence feel capable, comprehensible and close to people.",
+    "stablePrinciples": [
+      "Type as spatial architecture",
+      "Content-first hierarchy and contextual density",
+      "Indexes, rules and clear directional affordances",
+      "Tools appear as content, not as decorative metaphor",
+      "Subtle and purposeful movement"
+    ],
+    "notRequired": [
+      "specific page layouts",
+      "specific font family",
+      "brand assets",
+      "repeated wordmarks",
+      "fixed animation sequence"
+    ],
+    "aiGuidance": "Use the case studies as inspiration rather than templates. Invent compositions when they better express the actual content; preserve the design's rational clarity and human warmth."
+  },
+  "axes": {
+    "presentationMode": [
+      "rational-humanistic",
+      "dark-tech"
+    ],
+    "contentContext": [
+      "research",
+      "developer",
+      "workspace"
+    ],
+    "combination": "any mode can be used in any context; 2 modes × 3 contexts = 6 scenarios"
+  },
+  "type": {
+    "familiesCandidate": {
+      "display": "Inter, Arial, PingFang SC, Microsoft YaHei, sans-serif",
+      "body": "Inter, Arial, PingFang SC, Microsoft YaHei, sans-serif",
+      "mono": "SFMono-Regular, Consolas, Liberation Mono, monospace"
+    },
+    "roles": {
+      "display": "editorial anchor",
+      "title": "content hierarchy",
+      "body": "comfortable reading",
+      "meta": "indices / dates / categories",
+      "mono": "code, commands, parameters"
+    },
+    "metricsCandidate": {
+      "displayMaxPx": 112,
+      "bodyPx": 16,
+      "metaPx": 11,
+      "readingWidthCh": 68
+    }
+  },
+  "presentationModes": {
+    "rational-humanistic": {
+      "description": "Luminous near-white paper, precise typography, warm neutral hierarchy, extremely restrained accent.",
+      "tokensCandidate": {
+        "canvas": "#F7F6F2",
+        "surface": "#FFFFFF",
+        "surfaceAlt": "#F0F0EC",
+        "ink": "#191B1A",
+        "inkSecondary": "#626662",
+        "hairline": "#D9DAD4",
+        "action": "#202322",
+        "actionOn": "#FFFFFF",
+        "accent": "#C6784F",
+        "focus": "#5476B8",
+        "shadow": "rgba(10, 15, 13, .07)",
+        "accentText": "#985B3F"
+      },
+      "motionEnergy": "subtle",
+      "materials": [
+        "paper light",
+        "thin rules",
+        "soft negative space"
+      ]
+    },
+    "dark-tech": {
+      "description": "Deep neutral ink surfaces with crisp type and calm technical focus, not a neon cyberpunk treatment.",
+      "tokensCandidate": {
+        "canvas": "#101417",
+        "surface": "#191F24",
+        "surfaceAlt": "#252D34",
+        "ink": "#F0F3F4",
+        "inkSecondary": "#A9B2B7",
+        "hairline": "#344048",
+        "action": "#E9EEF0",
+        "actionOn": "#171B1F",
+        "accent": "#C68A62",
+        "focus": "#9FAFD4",
+        "shadow": "rgba(0, 0, 0, .18)",
+        "accentText": "#C68A62"
+      },
+      "motionEnergy": "subtle",
+      "materials": [
+        "neutral black",
+        "fine luminous lines",
+        "low saturation focus accents"
+      ]
+    }
+  },
+  "contexts": {
+    "research": {
+      "role": "Narrative/editorial stories and data exploration",
+      "composition": "Oversized display as anchor; serial indexes; alternating reading widths; high-quality content evidence",
+      "optionalComponents": [
+        "indexed-reference-row",
+        "metric-story",
+        "chapter-label",
+        "research-figure"
+      ],
+      "motion": [
+        "directional-hint",
+        "line-reveal",
+        "data-change"
+      ],
+      "antiPattern": "Repeat a three-card marketing grid on every page"
+    },
+    "developer": {
+      "role": "Coding tools, install pages, documentation",
+      "composition": "Command strip as primary action; transparent setup steps; readable terminal and code examples",
+      "optionalComponents": [
+        "command-strip",
+        "terminal",
+        "docs-index",
+        "code-example"
+      ],
+      "motion": [
+        "copy-confirmation",
+        "focus-shift",
+        "directional-hint"
+      ],
+      "antiPattern": "Decorative pseudo-code that cannot be read or copied"
+    },
+    "workspace": {
+      "role": "AI and creative production tools",
+      "composition": "Low-chrome shell with dominant task input, secondary navigation, clear result and task status",
+      "optionalComponents": [
+        "prompt-composer",
+        "task-feed",
+        "status-card",
+        "preview-panel"
+      ],
+      "motion": [
+        "focus-shift",
+        "status-change",
+        "surface-reveal"
+      ],
+      "antiPattern": "Oversized marketing headers obstruct repeated everyday operations"
+    }
+  },
+  "resourcePolicy": {
+    "layoutsOptional": true,
+    "componentsOptional": true,
+    "visualReferences": "images + editable examples",
+    "signatureAssets": "opt-in and license-safe",
+    "reusability": "cross-context, cross-mode by token mapping",
+    "designLanguageVsAppAdapter": "personal library independently defined; application integrations translate semantics, not duplicate styles",
+    "modesDoNotChangeGeometryByDefault": true
+  },
+  "motionLanguage": {
+    "identity": "Explain state, direction, cause or a transformation that matters to understanding.",
+    "examples": [
+      {
+        "name": "directional-hint",
+        "meaning": "next step affordance",
+        "target": "navigation row"
+      },
+      {
+        "name": "line-reveal",
+        "meaning": "section structure",
+        "target": "editorial boundary"
+      },
+      {
+        "name": "copy-confirmation",
+        "meaning": "completed action",
+        "target": "command"
+      },
+      {
+        "name": "focus-shift",
+        "meaning": "new working state",
+        "target": "composer and drawer"
+      },
+      {
+        "name": "data-change",
+        "meaning": "value evolved",
+        "target": "figure or metric"
+      }
+    ],
+    "timingCandidateMs": {
+      "micro": [
+        120,
+        200
+      ],
+      "local": [
+        220,
+        400
+      ],
+      "narrative": [
+        350,
+        650
+      ]
+    },
+    "reducedMotion": "decorative motion disabled; functional changes remain understandable"
+  },
+  "validation": {
+    "targetScenarios": [
+      "light research",
+      "dark research",
+      "light developer",
+      "dark developer",
+      "light workspace",
+      "dark workspace"
+    ],
+    "qualityQuestions": [
+      "Can viewers recognize the shared family without a logo?",
+      "Does changing presentationMode preserve content and semantics?",
+      "Do all scenarios remain legible, task-focused and keyboard-accessible?",
+      "Are any signature assets dependent on nonlicensed third-party material?"
+    ],
+    "gaps": [
+      "actual computed CSS",
+      "site animation recordings",
+      "official mobile breakpoint screenshots"
+    ]
+  },
+  "schemaVersion": "1.1.0"
+}

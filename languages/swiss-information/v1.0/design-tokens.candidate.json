@@ -1,0 +1,172 @@
+{
+  "name": "Swiss Information Design",
+  "version": "1.0.0-candidate",
+  "date": "2026-10-10",
+  "provenance": "D — original candidates; not official historical values, not extracted production CSS",
+  "format": "Independent resource format; no DTCG compatibility claim",
+  "units": {
+    "spacing": "px",
+    "durations": "ms",
+    "fontSize": "CSS rem unless specified"
+  },
+  "primitive": {
+    "color": {
+      "paper": "#F4F2E9",
+      "white": "#FFFFFF",
+      "black": "#151515",
+      "gray": "#575750",
+      "line": "#B8B7AE",
+      "red": "#B92F22",
+      "blue": "#173DB5",
+      "green": "#245D40",
+      "ochre": "#765114"
+    },
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96
+    ],
+    "radius": {
+      "flat": 0
+    },
+    "border": {
+      "hairline": 1,
+      "structural": 3
+    },
+    "shadow": "none"
+  },
+  "semantic": {
+    "canvas": "#F4F2E9",
+    "surface": "#FFFFFF",
+    "ink": "#151515",
+    "inkMuted": "#575750",
+    "rule": "#B8B7AE",
+    "ruleStrong": "#151515",
+    "accent": "#B92F22",
+    "onAccent": "#FFFFFF",
+    "focus": "#173DB5",
+    "success": "#245D40",
+    "caution": "#765114",
+    "disabled": "Do not infer from inkMuted; define per component"
+  },
+  "typography": {
+    "family": "Arial, \"Helvetica Neue\", Helvetica, \"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "externalFonts": false,
+    "display": {
+      "size": "clamp(3rem, 8vw, 8rem)",
+      "weight": 700,
+      "lineHeight": 1.05,
+      "latinTracking": "-0.04em",
+      "cjkTracking": "0"
+    },
+    "heading": {
+      "size": "clamp(1.75rem, 3vw, 3rem)",
+      "weight": 700,
+      "lineHeight": 1.12
+    },
+    "body": {
+      "size": "1rem",
+      "weight": 400,
+      "lineHeight": 1.65,
+      "measureCJK": "28–40 ideographic characters where possible"
+    },
+    "meta": {
+      "size": "0.8125rem",
+      "lineHeight": 1.45
+    },
+    "data": {
+      "size": "1rem",
+      "lineHeight": 1.35,
+      "numerals": "tabular-nums"
+    },
+    "index": {
+      "size": "2.25rem",
+      "lineHeight": 1
+    }
+  },
+  "layout": {
+    "referenceColumns": {
+      "wide": 12,
+      "medium": 6,
+      "narrow": 1
+    },
+    "breakpoints": {
+      "narrowMax": 719,
+      "wideMin": 1200
+    },
+    "pageGutter": "clamp(16px, 3vw, 48px)",
+    "maxWidth": 1440,
+    "readingWidth": "40em",
+    "density": {
+      "comfortable": {
+        "rowGap": 24,
+        "itemPadding": 24
+      },
+      "compact": {
+        "rowGap": 12,
+        "itemPadding": 16
+      }
+    },
+    "touchTargetMinimum": 44,
+    "notes": "44 px is this package design goal, not a blanket WCAG AA requirement."
+  },
+  "profiles": {
+    "informationOrder": {
+      "intent": "find, read, compare",
+      "accentArea": "local emphasis",
+      "composition": "stable axis with metadata rail",
+      "displayScale": 1,
+      "containers": "rules and alignment first"
+    },
+    "culturalPoster": {
+      "intent": "identify, announce, remember",
+      "accentArea": "large expressive fields permitted",
+      "composition": "one dominant title and one original geometric motif",
+      "displayScale": 1.18,
+      "containers": "stable factual information strip remains readable"
+    }
+  },
+  "motion": {
+    "feedback": 120,
+    "scene": 160,
+    "reorder": 320,
+    "ease": "cubic-bezier(0.2, 0, 0, 1)",
+    "reduce": "system reduce OR user reduce; duration 0; cancel active animations",
+    "reentry": "cancel stale animation; latest state wins",
+    "autoplay": false
+  },
+  "componentContracts": {
+    "indexedRow": [
+      "stable ID",
+      "name",
+      "time",
+      "duration",
+      "details"
+    ],
+    "compareBars": [
+      "shared zero baseline",
+      "metric unit",
+      "visible values",
+      "text table"
+    ],
+    "controls": [
+      "native elements",
+      "visible labels",
+      "focus ring",
+      "no color-only state"
+    ]
+  },
+  "compatibility": {
+    "productDependencies": [],
+    "fontLicensesIncluded": false,
+    "thirdPartyAssetsIncluded": false,
+    "darkMode": "not designed or validated in v1",
+    "print": "screen color and px values require separate print adaptation"
+  }
+}

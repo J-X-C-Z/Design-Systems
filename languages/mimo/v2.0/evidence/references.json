@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-10-10",
+  "officialCssMeasured": false,
+  "networkAttempt": "Container DNS failed for mimo.xiaomi.com; managed Chromium blocked external and file navigations. No policy bypass attempted. Official public pages inspected through web tool.",
+  "references": [
+    {
+      "id": "R01",
+      "title": "Claude Design — design system setup",
+      "url": "https://support.claude.com/en/articles/14604397-set-up-your-design-system-in-claude-design",
+      "observation": "Extract colors, typography, components and layout patterns from assets; validate with new projects; include finished examples.",
+      "evidence": "official-text",
+      "boundary": "Method reference, not proof this work ran in Claude Design."
+    },
+    {
+      "id": "R02",
+      "title": "MiMo Research",
+      "url": "https://mimo.xiaomi.com/zh",
+      "observation": "Repeated wordmark text; large greeting hierarchy in content; numbered paper/blog/action index and arrows.",
+      "evidence": "official-text",
+      "boundary": "Content structure verified; production computed styles not obtained."
+    },
+    {
+      "id": "R03",
+      "title": "MiMo Code",
+      "url": "https://mimo.xiaomi.com/coder?lang=en",
+      "observation": "Platform choice, installation command, copy confirmation and developer documentation entry.",
+      "evidence": "official-text",
+      "boundary": "Does not establish exact motion timing or all frontend states."
+    },
+    {
+      "id": "R04",
+      "title": "MiMo Code Docs",
+      "url": "https://mimo.xiaomi.com/mimocode/start",
+      "observation": "Categorized navigation, search and readable developer content.",
+      "evidence": "official-text",
+      "boundary": "Pattern evidence, not a universal website grid."
+    },
+    {
+      "id": "R05",
+      "title": "MiMo Studio feature log",
+      "url": "https://mimo.mi.com/docs/zh-CN/updates/feature/studio",
+      "observation": "2026-07-23 names Rational Humanistic / Dark Tech; later log describes audio visualization and directory scrolling.",
+      "evidence": "official-text",
+      "boundary": "Two branches in this personal library are an authored cross-product generalization."
+    },
+    {
+      "id": "R06",
+      "title": "MiMo materials research",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6-material-research/",
+      "observation": "Interactive figure has rotate, pause and reset controls, alongside numbered research narrative.",
+      "evidence": "official-text",
+      "boundary": "Only interaction existence is verified; no timing or scientific conclusions adopted."
+    },
+    {
+      "id": "R07",
+      "title": "MiMo Code feature image",
+      "url": "https://mimo.xiaomi.com/coder/assets/feature-model.png",
+      "observation": "Official image visually shows warm ground, brush-like contour, light terminal and orange emphasis.",
+      "evidence": "official-image-inspected",
+      "boundary": "Reference only; image, trademark and fonts are NOT bundled."
+    },
+    {
+      "id": "R08",
+      "title": "W3C contrast minimum",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "observation": "Normal text target 4.5:1; large text 3:1 under the relevant criterion.",
+      "evidence": "official-standard",
+      "boundary": "Our test covers listed color pairs, not total WCAG conformance."
+    },
+    {
+      "id": "R09",
+      "title": "W3C interaction animation",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html",
+      "observation": "Nonessential motion triggered by interaction can be disabled.",
+      "evidence": "official-standard",
+      "boundary": "Reduced mode is tested in original specimens, not official websites."
+    },
+    {
+      "id": "R10",
+      "title": "W3C reflow",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "observation": "Reflow without loss of content is a key responsive requirement.",
+      "evidence": "official-standard",
+      "boundary": "320 CSS px viewport tests are not a full accessibility audit."
+    },
+    {
+      "id": "R11",
+      "title": "Agent Skills specification",
+      "url": "https://agentskills.io/specification",
+      "observation": "Skill metadata, instructions and references can be separated and loaded progressively.",
+      "evidence": "official-spec",
+      "boundary": "Kit includes optional lightweight skill; MCP delivery is not automatic installation."
+    }
+  ],
+  "releaseStatus": "authored-complete; not an official-site replica",
+  "productionClaimsExcluded": [
+    "official-font-identification",
+    "official-easing-measurement",
+    "all-device-certification",
+    "SP-runtime-integration",
+    "actual-Claude-session-execution"
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "select step updates text and state",
+    "pass": true
+  },
+  {
+    "name": "play starts one animation",
+    "pass": true
+  },
+  {
+    "name": "repeat does not queue",
+    "pass": true
+  },
+  {
+    "name": "stop clears animation",
+    "pass": true
+  },
+  {
+    "name": "reduced motion static",
+    "pass": true
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "version": "2.0.0",
+  "method": "offline Chromium; paused real WAAPI controller; normalized seek",
+  "frames": [
+    {
+      "resource": "mimo.motion.index-trace",
+      "progress": 0,
+      "file": "preview/motion-index-trace-000.png"
+    },
+    {
+      "resource": "mimo.motion.index-trace",
+      "progress": 0.5,
+      "file": "preview/motion-index-trace-050.png"
+    },
+    {
+      "resource": "mimo.motion.index-trace",
+      "progress": 1,
+      "file": "preview/motion-index-trace-100.png"
+    },
+    {
+      "resource": "mimo.motion.type-unfold",
+      "progress": 0,
+      "file": "preview/motion-type-unfold-000.png"
+    },
+    {
+      "resource": "mimo.motion.type-unfold",
+      "progress": 0.5,
+      "file": "preview/motion-type-unfold-050.png"
+    },
+    {
+      "resource": "mimo.motion.type-unfold",
+      "progress": 1,
+      "file": "preview/motion-type-unfold-100.png"
+    },
+    {
+      "resource": "mimo.motion.evidence-flow",
+      "progress": 0,
+      "file": "preview/motion-evidence-flow-000.png"
+    },
+    {
+      "resource": "mimo.motion.evidence-flow",
+      "progress": 0.5,
+      "file": "preview/motion-evidence-flow-050.png"
+    },
+    {
+      "resource": "mimo.motion.evidence-flow",
+      "progress": 1,
+      "file": "preview/motion-evidence-flow-100.png"
+    },
+    {
+      "resource": "mimo.motion.focus-aperture",
+      "progress": 0,
+      "file": "preview/motion-focus-aperture-000.png"
+    },
+    {
+      "resource": "mimo.motion.focus-aperture",
+      "progress": 0.5,
+      "file": "preview/motion-focus-aperture-050.png"
+    },
+    {
+      "resource": "mimo.motion.focus-aperture",
+      "progress": 1,
+      "file": "preview/motion-focus-aperture-100.png"
+    },
+    {
+      "resource": "mimo.motion.quiet-reframe",
+      "progress": 0,
+      "file": "preview/motion-quiet-reframe-000.png"
+    },
+    {
+      "resource": "mimo.motion.quiet-reframe",
+      "progress": 0.5,
+      "file": "preview/motion-quiet-reframe-050.png"
+    },
+    {
+      "resource": "mimo.motion.quiet-reframe",
+      "progress": 1,
+      "file": "preview/motion-quiet-reframe-100.png"
+    }
+  ]
+}

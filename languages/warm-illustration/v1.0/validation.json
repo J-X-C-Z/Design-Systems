@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-11",
+  "static_and_simulated_checks": [
+    {
+      "name": "unique IDs",
+      "pass": true
+    },
+    {
+      "name": "local links resolve",
+      "pass": true
+    },
+    {
+      "name": "anchor targets exist",
+      "pass": true
+    },
+    {
+      "name": "reduced motion rule",
+      "pass": true
+    },
+    {
+      "name": "viewport metadata",
+      "pass": true
+    },
+    {
+      "name": "no external asset requests",
+      "pass": true
+    },
+    {
+      "name": "JSON parses",
+      "pass": true
+    },
+    {
+      "name": "script syntax 0",
+      "pass": true
+    },
+    {
+      "name": "select step updates text and state",
+      "pass": true
+    },
+    {
+      "name": "play starts one animation",
+      "pass": true
+    },
+    {
+      "name": "repeat does not queue",
+      "pass": true
+    },
+    {
+      "name": "stop clears animation",
+      "pass": true
+    },
+    {
+      "name": "reduced motion static",
+      "pass": true
+    }
+  ],
+  "browser_layout": "not verified",
+  "visual": "not inspected",
+  "real_device": "not tested",
+  "limitations": "Cloud shell Chromium cannot start due to socket restriction; cloud browser file protocol blocked. No bypass attempted."
+}

@@ -1,0 +1,56 @@
+/* MiMo-inspired 2.0 — optional reusable components. Load tokens.css before this.
+   CSS is intentionally namespaced; unrelated host pages are not reset. */
+.mimo-scope{box-sizing:border-box;background:var(--mimo-canvas);color:var(--mimo-ink);font-family:var(--mimo-sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+.mimo-scope *, .mimo-scope *::before,.mimo-scope *::after{box-sizing:border-box}
+.mimo-scope :is(button,input,textarea,select){font:inherit;color:inherit}
+.mimo-scope :is(button,a,input,textarea,select,summary,[contenteditable]):focus-visible{outline:2px solid var(--mimo-focus);outline-offset:4px}
+.mimo-scope [hidden]{display:none!important}
+.mimo-scope a{color:inherit;text-underline-offset:4px}
+.mimo-meta{font:500 12px/1.5 var(--mimo-mono);letter-spacing:.06em;color:var(--mimo-muted)}
+.mimo-meta[lang="en"]{text-transform:uppercase;letter-spacing:.09em}
+.mimo-display{font-weight:650;font-size:clamp(40px,6.1vw,94px);line-height:1.14;letter-spacing:-.025em;margin:0;overflow-wrap:anywhere}
+.mimo-display[lang="en"]{line-height:.98;letter-spacing:-.055em}
+.mimo-heading{font-size:clamp(26px,3vw,44px);font-weight:600;line-height:1.2;letter-spacing:-.03em;margin:0;overflow-wrap:anywhere}
+.mimo-body{font-size:16px;line-height:1.75;max-width:38em;color:var(--mimo-muted)}
+.mimo-rule{height:1px;background:var(--mimo-rule);border:0}
+.mimo-button{min-height:44px;padding:10px 17px;border-radius:4px;display:inline-flex;justify-content:center;align-items:center;gap:9px;border:1px solid var(--mimo-action);background:var(--mimo-action);color:var(--mimo-on-action)!important;cursor:pointer;font-weight:550;font-size:14px;text-decoration:none;line-height:1.4;transition:transform var(--mimo-micro) var(--mimo-ease),background-color var(--mimo-micro)}
+.mimo-button:hover{transform:translateY(-1px)}.mimo-button:active{transform:translateY(1px)}
+.mimo-button.secondary{background:transparent;color:var(--mimo-ink)!important;border-color:var(--mimo-control)}
+.mimo-button.quiet{background:transparent;color:var(--mimo-ink)!important;border-color:transparent}
+.mimo-button.danger{background:var(--mimo-danger);border-color:var(--mimo-danger);color:var(--mimo-canvas)!important}
+.mimo-button:disabled{opacity:.48;cursor:not-allowed;transform:none}.mimo-button[aria-busy="true"]{cursor:progress}
+.mimo-icon-arrow{display:inline-block;transition:transform var(--mimo-micro) var(--mimo-ease)}
+:is(a,button):is(:hover,:focus-visible) .mimo-icon-arrow{transform:translateX(5px)}
+.mimo-index-row{display:flex;align-items:center;gap:20px;min-height:66px;padding:15px 0;border-bottom:1px solid var(--mimo-rule);text-decoration:none;color:var(--mimo-ink)}
+.mimo-index-row .index{width:28px;flex-shrink:0;font:12px var(--mimo-mono);color:var(--mimo-muted)}
+.mimo-index-row .title{flex:1;min-width:0;font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+.mimo-index-row .mimo-icon-arrow{font-size:24px}.mimo-index-row small{color:var(--mimo-muted);font:12px var(--mimo-mono)}
+.mimo-command{display:flex;gap:16px;align-items:center;padding:12px 12px 12px 20px;background:var(--mimo-surface);border:1px solid var(--mimo-control);border-radius:4px}
+.mimo-command code{font:14px/1.65 var(--mimo-mono);min-width:0;flex:1;overflow-wrap:anywhere}.mimo-command button{flex-shrink:0}
+.mimo-panel{padding:24px;border:1px solid var(--mimo-rule);border-radius:8px;background:var(--mimo-surface);min-width:0}
+.mimo-field{display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:550}.mimo-field small{font-weight:400;line-height:1.5;color:var(--mimo-muted)}
+.mimo-field :is(input,textarea,select){padding:11px 13px;min-height:44px;background:var(--mimo-surface);border:1px solid var(--mimo-control);border-radius:4px;outline-offset:3px;width:100%;min-width:0}
+.mimo-field textarea{resize:vertical}.mimo-field [aria-invalid="true"]{border-color:var(--mimo-danger)}
+.mimo-error{color:var(--mimo-danger)!important}.mimo-success{color:var(--mimo-success)!important}
+.mimo-badge{font:12px/1.4 var(--mimo-mono);border:1px solid var(--mimo-control);padding:4px 8px;border-radius:4px;display:inline-flex;align-items:center;gap:6px;max-width:100%;overflow-wrap:anywhere}
+.mimo-badge.success{color:var(--mimo-success);border-color:currentColor}.mimo-badge.warning{color:var(--mimo-warning);border-color:currentColor}
+.mimo-segments{display:flex;flex-wrap:wrap;gap:3px;background:var(--mimo-raised);padding:4px;border-radius:5px;border:1px solid var(--mimo-rule)}
+.mimo-segments button{min-height:40px;padding:8px 14px;border:1px solid transparent;border-radius:3px;background:transparent;color:var(--mimo-muted);cursor:pointer;font:500 13px/1.4 var(--mimo-sans)}
+.mimo-segments button[aria-selected="true"],.mimo-segments button[aria-pressed="true"]{background:var(--mimo-action);color:var(--mimo-on-action)}
+.mimo-tabs{display:flex;gap:24px;flex-wrap:wrap;border-bottom:1px solid var(--mimo-rule)}.mimo-tabs button{min-height:44px;padding:10px 1px;border:0;border-bottom:2px solid transparent;background:none;color:var(--mimo-muted);cursor:pointer}
+.mimo-tabs button[aria-selected="true"]{border-color:var(--mimo-ink);color:var(--mimo-ink)}
+.mimo-table{border-collapse:collapse;width:100%;font-size:14px;text-align:left}.mimo-table th{font-weight:550;color:var(--mimo-muted)}.mimo-table td,.mimo-table th{padding:13px 12px;border-bottom:1px solid var(--mimo-rule);overflow-wrap:anywhere}.mimo-table caption{text-align:left;color:var(--mimo-muted);font-size:13px;padding-bottom:12px}
+.mimo-details{border-block:1px solid var(--mimo-rule);padding:12px 0}.mimo-details summary{cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;list-style:none}.mimo-details summary::after{content:'+';font-size:24px}.mimo-details[open] summary::after{content:'−'}
+.mimo-composer{background:var(--mimo-surface);border:1px solid var(--mimo-control);border-radius:14px;padding:20px;transition:border-color var(--mimo-micro)}.mimo-composer:focus-within{border-color:var(--mimo-focus)}
+.mimo-composer textarea{background:none;border:0;resize:vertical;min-height:95px;width:100%;outline:none;color:var(--mimo-ink);line-height:1.7}.mimo-composer textarea:focus-visible{outline:2px solid var(--mimo-focus);outline-offset:2px}
+.mimo-composer .tools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:16px}
+.mimo-progress{height:4px;background:var(--mimo-rule);overflow:hidden;border-radius:2px}.mimo-progress>i{display:block;height:100%;background:var(--mimo-accent);transform-origin:left;transition:width var(--mimo-state) var(--mimo-ease)}
+.mimo-dialog{padding:28px;border:1px solid var(--mimo-control);border-radius:8px;background:var(--mimo-surface);color:var(--mimo-ink);max-width:min(540px,calc(100vw - 36px));width:100%;box-shadow:0 20px 100px #0004}.mimo-dialog::backdrop{background:#0007}
+.mimo-toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--mimo-action);color:var(--mimo-on-action);border:1px solid var(--mimo-control);padding:14px 20px;border-radius:6px;z-index:30;font-size:14px;max-width:calc(100vw - 32px);box-shadow:0 8px 30px #0002}
+.mimo-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.mimo-scope [contenteditable="true"]{outline:1px dashed var(--mimo-accent);outline-offset:4px;cursor:text}
+.mimo-scope [data-fixed-ink]{color:#A45532;background:#FFF8F0;border:1px solid #A45532}
+@media(max-width:600px){.mimo-index-row{gap:12px}.mimo-index-row small{display:none}.mimo-command{padding:12px;gap:8px;align-items:flex-start}.mimo-command code{font-size:12px}.mimo-panel{padding:18px}.mimo-table td,.mimo-table th{padding:12px 7px}.mimo-tabs{gap:14px}}
+@media(prefers-reduced-motion:reduce){.mimo-scope *, .mimo-scope *::before,.mimo-scope *::after{scroll-behavior:auto!important;transition-duration:0s!important;animation-duration:0s!important;animation-iteration-count:1!important}.mimo-button:hover,.mimo-icon-arrow{transform:none!important}}
+[data-mimo-motion="reduced"] *,[data-mimo-motion="reduced"] *::before,[data-mimo-motion="reduced"] *::after{scroll-behavior:auto!important;transition-duration:0s!important;animation-duration:0s!important;animation-iteration-count:1!important}
+[data-mimo-motion="reduced"] .mimo-button:hover,[data-mimo-motion="reduced"] .mimo-icon-arrow{transform:none!important}

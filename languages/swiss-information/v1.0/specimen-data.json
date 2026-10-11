@@ -1,0 +1,49 @@
+{
+  "status": "original fictional demonstration, not a real event",
+  "title": "信息的路径",
+  "titleEnglish": "Paths of Information",
+  "date": "2026-11-14",
+  "location": "示例研究室 A",
+  "sessions": [
+    {
+      "id": "01",
+      "title": "读图与寻路",
+      "english": "Reading and wayfinding",
+      "time": "09:30",
+      "minutes": 40,
+      "capacity": 64,
+      "category": "阅读",
+      "description": "从路径、方向与视觉线索入手，检查读者如何找到下一步。"
+    },
+    {
+      "id": "02",
+      "title": "网格与目录",
+      "english": "Grids and catalogues",
+      "time": "10:20",
+      "minutes": 45,
+      "capacity": 48,
+      "category": "结构",
+      "description": "将同一内容组织成索引与比较结构，观察秩序怎样减少寻找。"
+    },
+    {
+      "id": "03",
+      "title": "字体与语言",
+      "english": "Type and language",
+      "time": "11:20",
+      "minutes": 50,
+      "capacity": 72,
+      "category": "文字",
+      "description": "以中文与英文共同测试尺度、行宽和字形覆盖，保留语言的主体性。"
+    },
+    {
+      "id": "04",
+      "title": "运动与状态",
+      "english": "Motion and state",
+      "time": "13:30",
+      "minutes": 40,
+      "capacity": 56,
+      "category": "交互",
+      "description": "只让必要的关系发生运动，并验证减少动态时信息是否仍清楚。"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "version": "1.0.0",
+  "accessDate": "2026-10-10",
+  "method": "Collect Observe Distill Cluster Translate Validate",
+  "referenceStructure": "Existing MiMo study, 365 lines read in full; visual conclusions not reused",
+  "rights": "Links only; no third-party artwork, font binaries or source code distributed",
+  "entries": [
+    {
+      "id": "R01",
+      "title": "The Vignelli Canon",
+      "url": "https://www.rit.edu/vignellicenter/sites/rit.edu.vignellicenter/files/documents/The%20Vignelli%20Canon.pdf",
+      "evidenceGrade": "A+B",
+      "sourceRole": "author text hosted by RIT",
+      "readScope": "Grid, type relationships and color paragraphs; PDF page 21 and 27 pixels inspected",
+      "locator": "PDF page 21 / printed 40; PDF page 27 / printed 52",
+      "abstractableObservation": "Choose grids according to information; coordinate text and image",
+      "limitations": "No production CSS or universal token values; full book not reviewed",
+      "localRedistribution": false
+    },
+    {
+      "id": "R02",
+      "title": "Grid systems book listing",
+      "url": "https://niggli.ch/products/rastersysteme-fur-die-visuelle-gestaltung",
+      "evidenceGrade": "A+B",
+      "sourceRole": "publisher Niggli",
+      "readScope": "Product text read; publisher cover pixels inspected",
+      "locator": "description and official cover",
+      "abstractableObservation": "Multiple grid applications; bilingual cover structure",
+      "limitations": "Not a full-book reading; no copied cover",
+      "localRedistribution": false
+    },
+    {
+      "id": "R03",
+      "title": "About Swissted",
+      "url": "https://www.swissted.com/pages/about-us",
+      "evidenceGrade": "A",
+      "sourceRole": "artist project statement",
+      "readScope": "Full relevant about text read",
+      "locator": "About Swissted",
+      "abstractableObservation": "Actual show information reinterpreted; Akzidenz-Grotesk explicitly named",
+      "limitations": "No claim every Swiss designer uses this font",
+      "localRedistribution": false
+    },
+    {
+      "id": "R04",
+      "title": "Joy Division at Lyceum Theatre 1980",
+      "url": "https://www.swissted.com/products/joy-division-at-lyceum-theatre-1980",
+      "evidenceGrade": "A+B",
+      "sourceRole": "artist official work",
+      "readScope": "Page read; official 1024px artwork downloaded for research and pixels inspected; not redistributed",
+      "locator": "product title and official artwork",
+      "abstractableObservation": "Official artwork shows multicolor overlapping geometry, lower-case main title and small factual information strip; reference only, not copied",
+      "limitations": "Never copy the artwork or imply endorsement",
+      "localRedistribution": false
+    },
+    {
+      "id": "R05",
+      "title": "Suisse font family",
+      "url": "https://www.swisstypefaces.com/fonts/suisse/",
+      "evidenceGrade": "A",
+      "sourceRole": "type foundry",
+      "readScope": "Family overview and role descriptions read",
+      "locator": "About Suisse, Screen, Mono, Technical information",
+      "abstractableObservation": "Match type roles and script coverage to purpose",
+      "limitations": "No font downloaded, licensed or embedded; marketing superlatives not adopted",
+      "localRedistribution": false
+    },
+    {
+      "id": "R06",
+      "title": "Vignelli Swiss Helvetica recipe",
+      "url": "https://github.com/Sulflower314/sulflower-web-design/blob/main/skill/sulflower-web-design/references/style-recipes/vignelli-swiss-helvetica.md",
+      "evidenceGrade": "C",
+      "sourceRole": "third-party design recipe",
+      "readScope": "Whole text retrieved through connected GitHub read",
+      "locator": "Typography, Motion, Avoid",
+      "abstractableObservation": "Useful contrasting baseline, not a historical law",
+      "limitations": "No downloaded code executed; exclusivity/static restrictions not adopted",
+      "localRedistribution": false
+    },
+    {
+      "id": "R07",
+      "title": "Grid Layout Transitions",
+      "url": "https://tympanus.net/Tutorials/GridLayoutTransitions/",
+      "evidenceGrade": "C",
+      "sourceRole": "original modern interaction demo",
+      "readScope": "Controls and structure read; source motion not measured",
+      "locator": "50–150 percent controls and filter demo link",
+      "abstractableObservation": "Modern relationship-preserving reflow as a design possibility",
+      "limitations": "Not historical Swiss evidence; no GSAP/source copied",
+      "localRedistribution": false
+    },
+    {
+      "id": "R08",
+      "title": "Contrast Minimum",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "evidenceGrade": "A",
+      "sourceRole": "W3C",
+      "readScope": "Relevant criterion and exceptions read",
+      "locator": "SC 1.4.3",
+      "abstractableObservation": "Verify foreground/background pairs",
+      "limitations": "Contrast checks alone are not accessibility certification",
+      "localRedistribution": false
+    },
+    {
+      "id": "R09",
+      "title": "Animation from Interactions",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html",
+      "evidenceGrade": "A",
+      "sourceRole": "W3C",
+      "readScope": "Relevant explanation read",
+      "locator": "SC 2.3.3",
+      "abstractableObservation": "Let users disable nonessential interaction animation",
+      "limitations": "No full AAA claim",
+      "localRedistribution": false
+    },
+    {
+      "id": "R10",
+      "title": "Reflow",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "evidenceGrade": "A",
+      "sourceRole": "W3C",
+      "readScope": "Relevant explanation read",
+      "locator": "SC 1.4.10",
+      "abstractableObservation": "Check content at narrow effective viewport",
+      "limitations": "No universal no-scroll rule for genuinely two-dimensional content",
+      "localRedistribution": false
+    },
+    {
+      "id": "R11",
+      "title": "Target Size Minimum",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "evidenceGrade": "A",
+      "sourceRole": "W3C",
+      "readScope": "Relevant explanation read",
+      "locator": "SC 2.5.8",
+      "abstractableObservation": "Keep operable targets and spacing",
+      "limitations": "Package 44 px goal is separate from WCAG AA minimum",
+      "localRedistribution": false
+    }
+  ],
+  "originalCandidates": {
+    "grade": "D",
+    "includes": [
+      "all numeric tokens",
+      "two profiles",
+      "components",
+      "motion timings",
+      "specimen implementation",
+      "fictional dataset"
+    ],
+    "claimsOfficialValues": false
+  }
+}

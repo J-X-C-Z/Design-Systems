@@ -1,0 +1,66 @@
+{
+  "languageId": "personal.mimo-inspired",
+  "version": "2.0.0",
+  "references": [
+    {
+      "id": "mimo.example.research.light",
+      "branch": "light",
+      "scene": "research",
+      "kind": "original-positive-reference",
+      "preview": "../preview/research.light.png",
+      "editableHtml": "../examples/research.light.html",
+      "editableStructure": "../examples/scene-source.json",
+      "meaning": "Editorial hierarchy, evidence and numbered direction."
+    },
+    {
+      "id": "mimo.example.research.dark",
+      "branch": "dark",
+      "scene": "research",
+      "kind": "original-positive-reference",
+      "preview": "../preview/research.dark.png",
+      "editableHtml": "../examples/research.dark.html",
+      "editableStructure": "../examples/scene-source.json",
+      "meaning": "Editorial hierarchy, evidence and numbered direction."
+    },
+    {
+      "id": "mimo.example.developer.light",
+      "branch": "light",
+      "scene": "developer",
+      "kind": "original-positive-reference",
+      "preview": "../preview/developer.light.png",
+      "editableHtml": "../examples/developer.light.html",
+      "editableStructure": "../examples/scene-source.json",
+      "meaning": "Real command copy, low-chrome code and product context."
+    },
+    {
+      "id": "mimo.example.developer.dark",
+      "branch": "dark",
+      "scene": "developer",
+      "kind": "original-positive-reference",
+      "preview": "../preview/developer.dark.png",
+      "editableHtml": "../examples/developer.dark.html",
+      "editableStructure": "../examples/scene-source.json",
+      "meaning": "Real command copy, low-chrome code and product context."
+    },
+    {
+      "id": "mimo.example.workspace.light",
+      "branch": "light",
+      "scene": "workspace",
+      "kind": "original-positive-reference",
+      "preview": "../preview/workspace.light.png",
+      "editableHtml": "../examples/workspace.light.html",
+      "editableStructure": "../examples/scene-source.json",
+      "meaning": "Focused input, explicit mock task states and persistent user control."
+    },
+    {
+      "id": "mimo.example.workspace.dark",
+      "branch": "dark",
+      "scene": "workspace",
+      "kind": "original-positive-reference",
+      "preview": "../preview/workspace.dark.png",
+      "editableHtml": "../examples/workspace.dark.html",
+      "editableStructure": "../examples/scene-source.json",
+      "meaning": "Focused input, explicit mock task states and persistent user control."
+    }
+  ]
+}

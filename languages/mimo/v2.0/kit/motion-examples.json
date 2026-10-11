@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "markup": {
+    "index-trace": "<div class=\"motion-parts\"><div class=\"trace-index\"><strong data-part=\"index\">01</strong><span>从问题，走向理解。<br><small class=\"mimo-meta\">A VISIBLE READING PATH</small></span></div><div data-part=\"rule\"></div></div>",
+    "type-unfold": "<div class=\"type-stage\" data-part=\"headline\">先看见结构。<br>再读懂细节。</div>",
+    "evidence-flow": "<div class=\"motion-parts\"><svg class=\"flow-svg\" viewBox=\"0 0 600 240\" role=\"img\" aria-label=\"三个示例节点按路径依次建立联系\"><path class=\"gridline\" fill=\"none\" d=\"M0 60H600M0 120H600M0 180H600M60 0V240M300 0V240M540 0V240\"/><path data-part=\"trace\" pathLength=\"1\" stroke-dasharray=\"1\" d=\"M60 170C140 170 180 70 300 70S430 170 540 170\" stroke=\"currentColor\" stroke-width=\"3\" fill=\"none\"/><circle data-part=\"node1\" cx=\"60\" cy=\"170\" r=\"12\"/><circle data-part=\"node2\" cx=\"300\" cy=\"70\" r=\"12\"/><circle data-part=\"node3\" cx=\"540\" cy=\"170\" r=\"12\"/></svg><div class=\"flow-labels\"><span>01 / 问题</span><span>02 / 证据</span><span>03 / 洞见</span></div></div>",
+    "focus-aperture": "<div class=\"aperture-card\"><span class=\"cross\" aria-hidden=\"true\">＋</span><div data-part=\"aperture\">Focus on<br>what matters.</div></div>",
+    "quiet-reframe": "<div class=\"reframe-group\"><div data-part=\"reframe\"><span class=\"mimo-meta\">SAME OBJECT</span><br>身份保持。<br>状态改变。</div><div data-part=\"context\">01 / CONTEXT<br>位置变化解释关系，<br>不创建无意义副本。</div></div>",
+    "directional-hint": "<div class=\"direction-stage\"><span>沿着线索继续阅读</span><span data-part=\"arrow\" aria-hidden=\"true\">↗</span></div>",
+    "surface-resolve": "<div class=\"demo-surface\" data-part=\"surface\"><div class=\"mimo-meta\">CONTEXTUAL SURFACE</div><h4>只在需要时出现。</h4><p>局部层级帮助理解状态，完成操作后回归平静。</p></div>",
+    "command-confirm": "<div class=\"confirm-stage\"><svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><circle cx=\"32\" cy=\"32\" r=\"27\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\".4\"/><path data-part=\"check\" pathLength=\"1\" stroke-dasharray=\"1\" d=\"M19 32l9 9 18-20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></svg><div data-part=\"confirmation\"><p>操作完成</p><span class=\"mimo-meta\">MOTION SAMPLE ONLY</span></div></div>",
+    "state-relay": "<div class=\"relay-stage\"><div class=\"relay-labels\"><span data-part=\"state1\"><small>01</small>理解意图</span><span data-part=\"state2\"><small>02</small>建立结构</span><span data-part=\"state3\"><small>03</small>呈现结果</span></div><div class=\"relay-track\"><div data-part=\"progress\"></div></div><div class=\"mimo-meta\">示例进度，不代表服务端执行。</div></div>",
+    "data-reconcile": "<div class=\"data-stage\"><div class=\"data-row\"><span>样例 A</span><i data-part=\"bar1\" style=\"width:78%\"></i><span>78</span></div><div class=\"data-row\"><span>样例 B</span><i data-part=\"bar2\" style=\"width:55%\"></i><span>55</span></div><div class=\"data-row\"><span>样例 C</span><i data-part=\"bar3\" style=\"width:90%\"></i><span>90</span></div><div class=\"mimo-meta\">固定 0–100 标尺 · 全部为示例数据</div></div>"
+  }
+}

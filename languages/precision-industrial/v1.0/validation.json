@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-11",
+  "method": "Node VM execution with minimal DOM mock; static source checks. Not a browser.",
+  "checks": [
+    {
+      "name": "initial readout",
+      "pass": true
+    },
+    {
+      "name": "running locks input",
+      "pass": true
+    },
+    {
+      "name": "success range",
+      "pass": true
+    },
+    {
+      "name": "cancel clears timer",
+      "pass": true
+    },
+    {
+      "name": "outside range state",
+      "pass": true
+    },
+    {
+      "name": "background cancels",
+      "pass": true
+    },
+    {
+      "name": "reduced motion present",
+      "pass": true
+    },
+    {
+      "name": "external asset-free",
+      "pass": true
+    },
+    {
+      "name": "required ids unique",
+      "pass": true
+    }
+  ],
+  "browser": {
+    "attempted": true,
+    "passed": false,
+    "reason": "Chromium process socket() failed: Operation not permitted, including approved retry."
+  },
+  "visual": {
+    "performed": false
+  },
+  "realDevice": {
+    "performed": false
+  }
+}

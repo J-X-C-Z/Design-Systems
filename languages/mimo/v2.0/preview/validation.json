@@ -1,0 +1,1171 @@
+{
+  "version": "2.0.0",
+  "date": "2026-10-10",
+  "method": "exact HTML bytes; set_content; managed offline Chromium",
+  "limitations": [
+    "file:// blocked by managed policy",
+    "No physical Windows/macOS/Safari/Firefox testing",
+    "Clipboard branches use mocks, not OS clipboard proof",
+    "Listed token contrast pairs only, not complete WCAG conformance"
+  ],
+  "checks": [
+    {
+      "name": "semantic contrast pairs",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no external runtime script, stylesheet or font",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "library boot with ten motion resources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "48 responsive combinations",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "skin preserves content geometry overrides and paused timeline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "explicit style and local overrides",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "snapshot is detached and versioned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek index-trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause index-trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish index-trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek type-unfold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause type-unfold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish type-unfold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek evidence-flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause evidence-flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish evidence-flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek focus-aperture",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause focus-aperture",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish focus-aperture",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek quiet-reframe",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause quiet-reframe",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish quiet-reframe",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek directional-hint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause directional-hint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish directional-hint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek surface-resolve",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause surface-resolve",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish surface-resolve",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek command-confirm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause command-confirm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish command-confirm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek state-relay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause state-relay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish state-relay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seek data-reconcile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pause data-reconcile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finish data-reconcile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replacing animations does not accumulate instances",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced index-trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced type-unfold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced evidence-flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced focus-aperture",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced quiet-reframe",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced directional-hint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced surface-resolve",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced command-confirm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced state-relay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced data-reconcile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "system reduced motion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "keyboard tab navigation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dialog focus contained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dialog Escape restores focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid input state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input correction retains data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "copy success branch mock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "copy failure branch mock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task cancellation clears timers and retains input",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local simulation labelled on completion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid import atomic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "literal JSON prototype key rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted import stays plain text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "JSON roundtrip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable HTML roundtrip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HTML export escapes script-ending input",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standalone developer.dark.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standalone developer.light.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standalone research.dark.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standalone research.light.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standalone workspace.dark.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standalone workspace.light.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no JavaScript exceptions",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no external runtime requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "responsive": [
+    {
+      "width": 1440,
+      "mode": "light",
+      "scene": "research",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "light",
+      "scene": "research",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "light",
+      "scene": "developer",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "light",
+      "scene": "developer",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "light",
+      "scene": "workspace",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "light",
+      "scene": "workspace",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "dark",
+      "scene": "research",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "dark",
+      "scene": "research",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "dark",
+      "scene": "developer",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "dark",
+      "scene": "developer",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "dark",
+      "scene": "workspace",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1440,
+      "mode": "dark",
+      "scene": "workspace",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "light",
+      "scene": "research",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "light",
+      "scene": "research",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "light",
+      "scene": "developer",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "light",
+      "scene": "developer",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "light",
+      "scene": "workspace",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "light",
+      "scene": "workspace",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "dark",
+      "scene": "research",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "dark",
+      "scene": "research",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "dark",
+      "scene": "developer",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "dark",
+      "scene": "developer",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "dark",
+      "scene": "workspace",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 1024,
+      "mode": "dark",
+      "scene": "workspace",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "scene": "research",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "scene": "research",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "scene": "developer",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "scene": "developer",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "scene": "workspace",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "scene": "workspace",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "scene": "research",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "scene": "research",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "scene": "developer",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "scene": "developer",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "scene": "workspace",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "scene": "workspace",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "light",
+      "scene": "research",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "light",
+      "scene": "research",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "light",
+      "scene": "developer",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "light",
+      "scene": "developer",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "light",
+      "scene": "workspace",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "light",
+      "scene": "workspace",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "dark",
+      "scene": "research",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "dark",
+      "scene": "research",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "dark",
+      "scene": "developer",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "dark",
+      "scene": "developer",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "dark",
+      "scene": "workspace",
+      "longText": false,
+      "passed": true,
+      "overflow": null
+    },
+    {
+      "width": 320,
+      "mode": "dark",
+      "scene": "workspace",
+      "longText": true,
+      "passed": true,
+      "overflow": null
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "contrast": [
+    {
+      "branch": "rational-humanistic",
+      "fg": "ink",
+      "bg": "canvas",
+      "ratio": 15.291,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "ink",
+      "bg": "surface",
+      "ratio": 16.682,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "ink",
+      "bg": "raised",
+      "ratio": 14.14,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "muted",
+      "bg": "canvas",
+      "ratio": 5.422,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "muted",
+      "bg": "surface",
+      "ratio": 5.915,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "muted",
+      "bg": "raised",
+      "ratio": 5.014,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "subtle",
+      "bg": "canvas",
+      "ratio": 5.031,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "subtle",
+      "bg": "surface",
+      "ratio": 5.488,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "subtle",
+      "bg": "raised",
+      "ratio": 4.652,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "accent",
+      "bg": "canvas",
+      "ratio": 5.477,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "accent",
+      "bg": "surface",
+      "ratio": 5.975,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "accent",
+      "bg": "raised",
+      "ratio": 5.064,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "success",
+      "bg": "canvas",
+      "ratio": 6.676,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "success",
+      "bg": "surface",
+      "ratio": 7.283,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "success",
+      "bg": "raised",
+      "ratio": 6.173,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "warning",
+      "bg": "canvas",
+      "ratio": 6.22,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "warning",
+      "bg": "surface",
+      "ratio": 6.786,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "warning",
+      "bg": "raised",
+      "ratio": 5.752,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "danger",
+      "bg": "canvas",
+      "ratio": 6.523,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "danger",
+      "bg": "surface",
+      "ratio": 7.116,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "danger",
+      "bg": "raised",
+      "ratio": 6.032,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "onAction",
+      "bg": "action",
+      "ratio": 14.918,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "control",
+      "bg": "surface",
+      "ratio": 3.657,
+      "target": 3,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "focus",
+      "bg": "canvas",
+      "ratio": 6.128,
+      "target": 3,
+      "passed": true
+    },
+    {
+      "branch": "rational-humanistic",
+      "fg": "accentInk",
+      "bg": "accentSoft",
+      "ratio": 6.826,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "ink",
+      "bg": "canvas",
+      "ratio": 16.089,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "ink",
+      "bg": "surface",
+      "ratio": 14.588,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "ink",
+      "bg": "raised",
+      "ratio": 12.144,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "muted",
+      "bg": "canvas",
+      "ratio": 9.226,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "muted",
+      "bg": "surface",
+      "ratio": 8.365,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "muted",
+      "bg": "raised",
+      "ratio": 6.964,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "subtle",
+      "bg": "canvas",
+      "ratio": 8.127,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "subtle",
+      "bg": "surface",
+      "ratio": 7.368,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "subtle",
+      "bg": "raised",
+      "ratio": 6.134,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "accent",
+      "bg": "canvas",
+      "ratio": 9.224,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "accent",
+      "bg": "surface",
+      "ratio": 8.364,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "accent",
+      "bg": "raised",
+      "ratio": 6.963,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "success",
+      "bg": "canvas",
+      "ratio": 11.362,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "success",
+      "bg": "surface",
+      "ratio": 10.302,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "success",
+      "bg": "raised",
+      "ratio": 8.577,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "warning",
+      "bg": "canvas",
+      "ratio": 11.557,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "warning",
+      "bg": "surface",
+      "ratio": 10.479,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "warning",
+      "bg": "raised",
+      "ratio": 8.724,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "danger",
+      "bg": "canvas",
+      "ratio": 9.926,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "danger",
+      "bg": "surface",
+      "ratio": 9.0,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "danger",
+      "bg": "raised",
+      "ratio": 7.493,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "onAction",
+      "bg": "action",
+      "ratio": 14.649,
+      "target": 4.5,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "control",
+      "bg": "surface",
+      "ratio": 5.257,
+      "target": 3,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "focus",
+      "bg": "canvas",
+      "ratio": 10.446,
+      "target": 3,
+      "passed": true
+    },
+    {
+      "branch": "dark-tech",
+      "fg": "accentInk",
+      "bg": "accentSoft",
+      "ratio": 8.436,
+      "target": 4.5,
+      "passed": true
+    }
+  ],
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36",
+  "summary": {
+    "passed": 72,
+    "failed": 0,
+    "responsiveCases": 48,
+    "contrastPairs": 50
+  },
+  "sourceSha256": "05ad916f0c173299b8a4a4e7e021568d2deedfd519b079b76790376c9717ef9f"
+}
