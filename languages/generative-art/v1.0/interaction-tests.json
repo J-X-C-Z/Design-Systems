@@ -1,0 +1,82 @@
+[
+  {
+    "name": "same input identical",
+    "pass": true
+  },
+  {
+    "name": "different seed varies",
+    "pass": true
+  },
+  {
+    "name": "clamp bounds",
+    "pass": true
+  },
+  {
+    "name": "invalid input finite",
+    "pass": true
+  },
+  {
+    "name": "bounds 0/24/0",
+    "pass": true
+  },
+  {
+    "name": "bounds 0/24/80",
+    "pass": true
+  },
+  {
+    "name": "bounds 0/72/0",
+    "pass": true
+  },
+  {
+    "name": "bounds 0/72/80",
+    "pass": true
+  },
+  {
+    "name": "bounds 1/24/0",
+    "pass": true
+  },
+  {
+    "name": "bounds 1/24/80",
+    "pass": true
+  },
+  {
+    "name": "bounds 1/72/0",
+    "pass": true
+  },
+  {
+    "name": "bounds 1/72/80",
+    "pass": true
+  },
+  {
+    "name": "bounds 42/24/0",
+    "pass": true
+  },
+  {
+    "name": "bounds 42/24/80",
+    "pass": true
+  },
+  {
+    "name": "bounds 42/72/0",
+    "pass": true
+  },
+  {
+    "name": "bounds 42/72/80",
+    "pass": true
+  },
+  {
+    "name": "bounds 4294967295/24/0",
+    "pass": true
+  },
+  {
+    "name": "bounds 4294967295/24/80",
+    "pass": true
+  },
+  {
+    "name": "bounds 4294967295/72/0",
+    "pass": true
+  },
+  {
+    "name": "bounds 4294967295/72/80",
+    "pass": true
+  }
+]

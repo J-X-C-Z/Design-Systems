@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-11",
+  "static_and_simulated_checks": [
+    {
+      "name": "unique IDs",
+      "pass": true
+    },
+    {
+      "name": "local links resolve",
+      "pass": true
+    },
+    {
+      "name": "anchor targets exist",
+      "pass": true
+    },
+    {
+      "name": "reduced motion rule",
+      "pass": true
+    },
+    {
+      "name": "viewport metadata",
+      "pass": true
+    },
+    {
+      "name": "no external asset requests",
+      "pass": true
+    },
+    {
+      "name": "JSON parses",
+      "pass": true
+    },
+    {
+      "name": "script syntax 0",
+      "pass": true
+    },
+    {
+      "name": "same input identical",
+      "pass": true
+    },
+    {
+      "name": "different seed varies",
+      "pass": true
+    },
+    {
+      "name": "clamp bounds",
+      "pass": true
+    },
+    {
+      "name": "invalid input finite",
+      "pass": true
+    },
+    {
+      "name": "bounds 0/24/0",
+      "pass": true
+    },
+    {
+      "name": "bounds 0/24/80",
+      "pass": true
+    },
+    {
+      "name": "bounds 0/72/0",
+      "pass": true
+    },
+    {
+      "name": "bounds 0/72/80",
+      "pass": true
+    },
+    {
+      "name": "bounds 1/24/0",
+      "pass": true
+    },
+    {
+      "name": "bounds 1/24/80",
+      "pass": true
+    },
+    {
+      "name": "bounds 1/72/0",
+      "pass": true
+    },
+    {
+      "name": "bounds 1/72/80",
+      "pass": true
+    },
+    {
+      "name": "bounds 42/24/0",
+      "pass": true
+    },
+    {
+      "name": "bounds 42/24/80",
+      "pass": true
+    },
+    {
+      "name": "bounds 42/72/0",
+      "pass": true
+    },
+    {
+      "name": "bounds 42/72/80",
+      "pass": true
+    },
+    {
+      "name": "bounds 4294967295/24/0",
+      "pass": true
+    },
+    {
+      "name": "bounds 4294967295/24/80",
+      "pass": true
+    },
+    {
+      "name": "bounds 4294967295/72/0",
+      "pass": true
+    },
+    {
+      "name": "bounds 4294967295/72/80",
+      "pass": true
+    }
+  ],
+  "browser_layout": "not verified",
+  "visual": "Three exported SVGs rendered with MuPDF and visually inspected; HTML not inspected",
+  "real_device": "not tested",
+  "limitations": "Cloud shell Chromium cannot start due to socket restriction; cloud browser file protocol blocked. No bypass attempted."
+}

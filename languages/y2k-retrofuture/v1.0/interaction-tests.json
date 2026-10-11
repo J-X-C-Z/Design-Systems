@@ -1,0 +1,22 @@
+[
+  {
+    "name": "chapter selection immediate",
+    "pass": true
+  },
+  {
+    "name": "profile leaves content unchanged",
+    "pass": true
+  },
+  {
+    "name": "replay replaces timer",
+    "pass": true
+  },
+  {
+    "name": "stop clears sweep",
+    "pass": true
+  },
+  {
+    "name": "reduced motion immediate",
+    "pass": true
+  }
+]

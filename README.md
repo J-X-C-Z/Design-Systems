@@ -7,6 +7,11 @@
 - **精密工业 v1.0**：[规范与样例入口](languages/precision-industrial/v1.0/README.md) · [ZIP](packages/precision-industrial-v1.0.zip)
 - **编辑杂志 v1.0**：[规范与样例入口](languages/editorial-magazine/v1.0/README.md) · [ZIP](packages/editorial-magazine-v1.0.zip)
 - **温暖插画 v1.0**：[规范与样例入口](languages/warm-illustration/v1.0/README.md) · [ZIP](packages/warm-illustration-v1.0.zip)
+- **实验拼贴 v1.0**：[规范与样例](languages/experimental-collage/v1.0/README.md) · [ZIP](packages/experimental-collage-v1.0.zip)
+- **生成艺术 v1.0**：[规范与样例](languages/generative-art/v1.0/README.md) · [ZIP](packages/generative-art-v1.0.zip)
+- **沉浸空间 v1.0**：[规范与样例](languages/immersive-space/v1.0/README.md) · [ZIP](packages/immersive-space-v1.0.zip)
+- **Y2K 复古未来 v1.0**：[规范与样例](languages/y2k-retrofuture/v1.0/README.md) · [ZIP](packages/y2k-retrofuture-v1.0.zip)
+- **世纪中期现代 v1.0**：[规范与样例](languages/midcentury-modern/v1.0/README.md) · [ZIP](packages/midcentury-modern-v1.0.zip)
 
 - **设计系统总提示词**：[中文完整原文（含 Claude Design 方法与跨类型研究规则）](prompts/design-system-master-prompt.zh-CN.md)
 
@@ -35,3 +40,5 @@ MiMo 为独立研究与原创候选资源，非小米官方设计系统；最新
 保留原 Library 文件。本仓库不包含 SP 或 Orialis 产品完整源码。
 
 新增三套已提供研究规范、原创资产与可编辑离线样例；静态/脚本检查已执行，真实浏览器布局与交互验收未完成，详见各自 VALIDATION.md。
+
+后五套 v1.0 已增量归档，含研究规范、候选参数、可编辑离线实现与各自验证记录。八套原记录合计 112 项静态、模拟 DOM 与生成器检查；生成艺术、沉浸空间、Y2K 与世纪中期现代共 9 幅 SVG 已实际渲染并查看，详见相应 SVG_REVIEW.md。本次上传仅独立核对文件与校验值；HTML 浏览器布局、真实键盘操作与设备验收仍未完成，不能将静态图像检查视为网页视觉验收。

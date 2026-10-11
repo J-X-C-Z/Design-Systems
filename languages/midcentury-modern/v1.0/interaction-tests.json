@@ -1,0 +1,22 @@
+[
+  {
+    "name": "composition 1",
+    "pass": true
+  },
+  {
+    "name": "composition 2",
+    "pass": true
+  },
+  {
+    "name": "composition 0",
+    "pass": true
+  },
+  {
+    "name": "composition 2",
+    "pass": true
+  },
+  {
+    "name": "reset original arrangement",
+    "pass": true
+  }
+]

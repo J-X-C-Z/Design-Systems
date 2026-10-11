@@ -1,0 +1,18 @@
+[
+  {
+    "name": "advance to juxtaposition",
+    "pass": true
+  },
+  {
+    "name": "upper boundary clamped",
+    "pass": true
+  },
+  {
+    "name": "back restores relation",
+    "pass": true
+  },
+  {
+    "name": "reset and lower boundary",
+    "pass": true
+  }
+]

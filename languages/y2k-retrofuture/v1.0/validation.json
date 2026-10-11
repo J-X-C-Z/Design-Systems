@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-11",
+  "static_and_simulated_checks": [
+    {
+      "name": "unique IDs",
+      "pass": true
+    },
+    {
+      "name": "local links resolve",
+      "pass": true
+    },
+    {
+      "name": "anchor targets exist",
+      "pass": true
+    },
+    {
+      "name": "reduced motion rule",
+      "pass": true
+    },
+    {
+      "name": "viewport metadata",
+      "pass": true
+    },
+    {
+      "name": "no external asset requests",
+      "pass": true
+    },
+    {
+      "name": "JSON parses",
+      "pass": true
+    },
+    {
+      "name": "script syntax 0",
+      "pass": true
+    },
+    {
+      "name": "chapter selection immediate",
+      "pass": true
+    },
+    {
+      "name": "profile leaves content unchanged",
+      "pass": true
+    },
+    {
+      "name": "replay replaces timer",
+      "pass": true
+    },
+    {
+      "name": "stop clears sweep",
+      "pass": true
+    },
+    {
+      "name": "reduced motion immediate",
+      "pass": true
+    }
+  ],
+  "browser_layout": "not verified",
+  "visual": "Orbital SVG rendered and inspected with MuPDF; HTML unverified",
+  "real_device": "not tested",
+  "limitations": "Cloud shell Chromium cannot start due to socket restriction; cloud browser file protocol blocked. No bypass attempted."
+}
