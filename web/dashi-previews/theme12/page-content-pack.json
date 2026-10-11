@@ -1,0 +1,182 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "音乐活动概念发布",
+        "title": {
+          "full": "让独立声音被听见",
+          "short": "让独立声音被听见"
+        },
+        "summary": {
+          "full": "音乐活动概念发布。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "音乐活动概念发布 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "音乐活动概念发布",
+              "short": "音乐活动概念发布"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "活动策划",
+              "short": "活动策划"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "三段演出共90分钟",
+        "title": {
+          "full": "用三段现场构建听觉节奏",
+          "short": "用三段现场构建听觉节奏"
+        },
+        "summary": {
+          "full": "序曲20分钟、共振45分钟、回声25分钟，共90分钟。纯虚构演出结构，不表示真实活动安排。",
+          "short": "段落时长 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "序曲",
+            "detail": {
+              "full": "演出时长",
+              "short": "演出时长"
+            },
+            "value": 20,
+            "displayValue": "20",
+            "unit": "分钟",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "共振",
+            "detail": {
+              "full": "演出时长",
+              "short": "演出时长"
+            },
+            "value": 45,
+            "displayValue": "45",
+            "unit": "分钟",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "回声",
+            "detail": {
+              "full": "演出时长",
+              "short": "演出时长"
+            },
+            "value": 25,
+            "displayValue": "25",
+            "unit": "分钟",
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [
+          {
+            "id": "fact-1",
+            "label": "序曲",
+            "value": 20,
+            "displayValue": "20",
+            "unit": "分钟"
+          },
+          {
+            "id": "fact-2",
+            "label": "共振",
+            "value": 45,
+            "displayValue": "45",
+            "unit": "分钟"
+          },
+          {
+            "id": "fact-3",
+            "label": "回声",
+            "value": 25,
+            "displayValue": "25",
+            "unit": "分钟"
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "序曲开场，共演推进，回声收束",
+        "title": {
+          "full": "让余韵留在现场",
+          "short": "让余韵留在现场"
+        },
+        "summary": {
+          "full": "低频序曲打开空间；现场共演推进情绪；返场回声留下记忆。本页为概念演示。",
+          "short": "序曲开场，共演推进，回声收束"
+        },
+        "items": [
+          {
+            "id": "action-1",
+            "label": "开场",
+            "detail": {
+              "full": "低频序曲打开空间",
+              "short": "低频序曲打开空间"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "action-2",
+            "label": "共演",
+            "detail": {
+              "full": "现场共演推进情绪",
+              "short": "现场共演推进情绪"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "action-3",
+            "label": "返场",
+            "detail": {
+              "full": "返场回声留下记忆",
+              "short": "返场回声留下记忆"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

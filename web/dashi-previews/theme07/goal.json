@@ -1,0 +1,1271 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "可步行社区观察",
+  "goal": "公共空间研究样例",
+  "themePack": "theme07",
+  "pageCount": 3,
+  "randomSeed": "theme07-20261011-sample",
+  "workflowRunId": "20261011155804846-ccfb67a5",
+  "slides": [
+    {
+      "id": "cover",
+      "content": {
+        "presentation": {
+          "pageIntent": "cover",
+          "coreMessage": "公共空间研究样例",
+          "title": {
+            "full": "可步行社区观察",
+            "short": "可步行社区观察"
+          },
+          "summary": {
+            "full": "公共空间研究样例；纯虚构演示。",
+            "short": "公共空间研究样例 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "用途",
+              "detail": {
+                "full": "公共空间研究样例",
+                "short": "公共空间研究样例"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "受众",
+              "detail": {
+                "full": "研究机构",
+                "short": "研究机构"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "性质",
+              "detail": {
+                "full": "纯概念演示",
+                "short": "纯概念演示"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme07_page016",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "sub": "presentation.summary.full",
+            "closing": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "keywords",
+              "keywordCount",
+              "index",
+              "title",
+              "lead",
+              "eyebrow",
+              "sub",
+              "closing"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "keywords",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "keywordCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "index",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme07_page007",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "sub": "presentation.summary.full",
+            "closing": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "chapters",
+              "cardCount",
+              "title",
+              "lead",
+              "eyebrow",
+              "sub",
+              "closing"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "chapters",
+                  "fields": [
+                    {
+                      "key": "no",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "zh",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme07_page013",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "sub": "presentation.summary.full",
+            "chainTitle": "presentation.pageIntent",
+            "closing": "presentation.items[0].label",
+            "imageRatio": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "risks",
+              "cardCount",
+              "imageCount",
+              "title",
+              "lead",
+              "eyebrow",
+              "sub",
+              "chainTitle",
+              "closing",
+              "imageRatio"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "risks",
+                  "fields": [
+                    {
+                      "key": "node",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "公共空间研究样例",
+              "audience": "公共空间研究团队",
+              "narrativeRole": "界定社区步行观察范围",
+              "emphasis": "研究摘要与范围清楚分层",
+              "rationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "content": {
+        "presentation": {
+          "pageIntent": "metrics",
+          "coreMessage": "遮阴覆盖评分有待改善",
+          "title": {
+            "full": "把观察证据与解释分开",
+            "short": "把观察证据与解释分开"
+          },
+          "summary": {
+            "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "观察评分 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "道路连续",
+              "detail": {
+                "full": "评分",
+                "short": "评分"
+              },
+              "value": 72,
+              "displayValue": "72",
+              "unit": "分",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "遮阴覆盖",
+              "detail": {
+                "full": "评分",
+                "short": "评分"
+              },
+              "value": 56,
+              "displayValue": "56",
+              "unit": "分",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "停留设施",
+              "detail": {
+                "full": "评分",
+                "short": "评分"
+              },
+              "value": 64,
+              "displayValue": "64",
+              "unit": "分",
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [
+            {
+              "id": "fact-1",
+              "label": "道路连续",
+              "value": 72,
+              "displayValue": "72",
+              "unit": "分"
+            },
+            {
+              "id": "fact-2",
+              "label": "遮阴覆盖",
+              "value": 56,
+              "displayValue": "56",
+              "unit": "分"
+            },
+            {
+              "id": "fact-3",
+              "label": "停留设施",
+              "value": 64,
+              "displayValue": "64",
+              "unit": "分"
+            }
+          ],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme07_page050",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "segment": "presentation.pageIntent",
+            "titleTail": "presentation.items[0].label",
+            "closing": "presentation.items[1].label",
+            "badge": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "cards",
+              "cardCount",
+              "statLine",
+              "panelTitle",
+              "imageCount",
+              "title",
+              "lead",
+              "eyebrow",
+              "segment",
+              "titleTail",
+              "closing",
+              "badge"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "cards[3]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "cards",
+                  "fields": [
+                    {
+                      "key": "glyph",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "label",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "value",
+                      "semantic": "displayValue"
+                    },
+                    {
+                      "key": "unit",
+                      "semantic": "unit"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "statLine",
+                  "value": ""
+                },
+                {
+                  "path": "panelTitle",
+                  "value": ""
+                },
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme07_page071",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "segment": "presentation.pageIntent",
+            "titleTail": "presentation.items[0].label",
+            "closing": "presentation.items[1].label",
+            "badge": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "cards",
+              "cardCount",
+              "statLine",
+              "listTitle",
+              "contactTitle",
+              "contacts",
+              "showContact",
+              "imageCount",
+              "title",
+              "lead",
+              "eyebrow",
+              "segment",
+              "titleTail",
+              "closing",
+              "badge"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "cards[3]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "cards",
+                  "fields": [
+                    {
+                      "key": "label",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "statLine",
+                  "value": ""
+                },
+                {
+                  "path": "listTitle",
+                  "value": ""
+                },
+                {
+                  "path": "contactTitle",
+                  "value": ""
+                },
+                {
+                  "path": "contacts",
+                  "value": []
+                },
+                {
+                  "path": "showContact",
+                  "value": false
+                },
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme07_page013",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "sub": "presentation.items[0].detail.short",
+            "chainTitle": "presentation.pageIntent",
+            "closing": "presentation.items[0].label",
+            "imageRatio": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "risks",
+              "cardCount",
+              "imageCount",
+              "title",
+              "lead",
+              "eyebrow",
+              "sub",
+              "chainTitle",
+              "closing",
+              "imageRatio"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-1",
+              "fact-2"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "risks[0]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "risks[4]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "risks",
+                  "fields": [
+                    {
+                      "key": "node",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "chart-first",
+                      "sourceIds": [
+                        "fact-1"
+                      ]
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "遮阴覆盖评分有待改善",
+              "audience": "公共空间研究团队",
+              "narrativeRole": "比较三类公共空间观察评分",
+              "emphasis": "72/56/64分统一口径",
+              "rationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-chart-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-chart-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-chart-core",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "subtitle"
+              },
+              {
+                "id": "bespoke-chart-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 5,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "caption"
+              },
+              {
+                "id": "bespoke-chart-plot",
+                "type": "chart",
+                "grid": {
+                  "column": 5,
+                  "row": 1,
+                  "width": 8,
+                  "height": 8
+                },
+                "chartType": "bar",
+                "showValues": true
+              },
+              {
+                "id": "bespoke-chart-facts",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 4,
+                  "height": 3
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[5].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[5].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[5].items[2]"
+              }
+            ],
+            "chartBindings": [
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "elements[4].data[0]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-2"
+                ],
+                "target": "elements[4].data[1]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "elements[4].data[2]"
+              }
+            ],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].text": "presentation.coreMessage",
+            "elements[3].text": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "content": {
+        "presentation": {
+          "pageIntent": "statement",
+          "coreMessage": "记录范围，分开推断，列明疑问",
+          "title": {
+            "full": "让证据可以复核",
+            "short": "让证据可以复核"
+          },
+          "summary": {
+            "full": "记录观察范围；区分事实与假设；列出复核问题。本页为概念演示。",
+            "short": "记录范围，分开推断，列明疑问"
+          },
+          "items": [
+            {
+              "id": "action-1",
+              "label": "范围",
+              "detail": {
+                "full": "记录观察范围",
+                "short": "记录观察范围"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "action-2",
+              "label": "推断",
+              "detail": {
+                "full": "区分事实与假设",
+                "short": "区分事实与假设"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "action-3",
+              "label": "复核",
+              "detail": {
+                "full": "列明待核问题",
+                "short": "列明待核问题"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme07_page071",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.pageIntent",
+            "segment": "presentation.items[0].label",
+            "titleTail": "presentation.items[1].label",
+            "closing": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "cards",
+              "cardCount",
+              "statLine",
+              "badge",
+              "listTitle",
+              "contactTitle",
+              "contacts",
+              "showContact",
+              "imageCount",
+              "title",
+              "lead",
+              "eyebrow",
+              "segment",
+              "titleTail",
+              "closing"
+            ],
+            "projectedItemIds": [
+              "action-1",
+              "action-2",
+              "action-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "cards",
+                  "fields": [
+                    {
+                      "key": "label",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-1"
+                    },
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-3"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "statLine",
+                  "value": ""
+                },
+                {
+                  "path": "badge",
+                  "value": ""
+                },
+                {
+                  "path": "listTitle",
+                  "value": ""
+                },
+                {
+                  "path": "contactTitle",
+                  "value": ""
+                },
+                {
+                  "path": "contacts",
+                  "value": []
+                },
+                {
+                  "path": "showContact",
+                  "value": false
+                },
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme07_page016",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.pageIntent",
+            "sub": "presentation.summary.full",
+            "closing": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "keywords",
+              "keywordCount",
+              "index",
+              "title",
+              "lead",
+              "eyebrow",
+              "sub",
+              "closing"
+            ],
+            "projectedItemIds": [
+              "action-3",
+              "action-2",
+              "action-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "keywords",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-3"
+                    },
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-1"
+                    }
+                  ],
+                  "countPath": "keywordCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "index",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme07_page013",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.pageIntent",
+            "sub": "presentation.summary.full",
+            "chainTitle": "presentation.items[0].label",
+            "closing": "presentation.items[1].label",
+            "imageRatio": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "risks",
+              "cardCount",
+              "imageCount",
+              "title",
+              "lead",
+              "eyebrow",
+              "sub",
+              "chainTitle",
+              "closing",
+              "imageRatio"
+            ],
+            "projectedItemIds": [
+              "action-3",
+              "action-2",
+              "action-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "risks",
+                  "fields": [
+                    {
+                      "key": "node",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-3"
+                    },
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-1"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "记录范围，分开推断，列明疑问",
+              "audience": "公共空间研究团队",
+              "narrativeRole": "区分观察与解释并提出复核路径",
+              "emphasis": "证据与结论保持冷白留白",
+              "rationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "action-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "action-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "action-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    }
+  ]
+}

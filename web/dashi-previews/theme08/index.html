@@ -1,0 +1,515 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;font-src 'none';connect-src 'none';base-uri 'none';form-action 'none'"><title>材料的第二种生命 · Dashi theme08</title><style></style><style>
+*{box-sizing:border-box}body{margin:0;background:#e5e7eb;color:#202329;font:14px system-ui,sans-serif}.reader-header{padding:14px 22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border-bottom:1px solid #ccd0d6}.reader-header a{color:inherit}.reader-header small{color:#555}.reader-header select{font:inherit;padding:10px;border:1px solid #bbb;border-radius:5px;max-width:100%}.reader-main{max-width:1600px;margin:auto;padding:20px}.frame{position:relative;aspect-ratio:16/9;margin:0 0 24px;background:#fff;overflow:hidden;box-shadow:0 5px 20px #0002}.canvas{width:1920px;height:1080px;position:absolute;transform-origin:top left;overflow:hidden}.slide{width:1920px;height:1080px;position:relative;overflow:hidden}.slide>*{max-width:100%}.reader-footer{padding:20px 24px;line-height:1.8;background:white}.text-readout{max-width:1100px;margin:auto;padding:24px;background:white;line-height:1.8}.text-readout h2{font-size:20px}.text-readout li{margin:6px 0}.text-readout p{overflow-wrap:anywhere}a:focus-visible,select:focus-visible{outline:3px solid #2563eb;outline-offset:3px}@media(max-width:600px){.reader-header{padding:12px;gap:10px}.reader-header small{flex-basis:100%;line-height:1.7}.reader-main{padding:10px}.frame{margin-bottom:14px}.text-readout{padding:18px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style><style>
+        .acl-cx{ position:absolute; inset:0; overflow:hidden; font-family:var(--acl-font-cn);
+          color:var(--acl-ink); display:flex; }
+        .acl-cx--ink{ color:var(--acl-paper); }
+
+        /* ── left color panel with giant vertical index ── */
+        .acl-cx__rail{ flex:0 0 430px; position:relative; overflow:hidden;
+          background:var(--acl-ink); color:var(--acl-paper); display:flex; flex-direction:column;
+          justify-content:space-between; padding:74px 0 60px; transition:flex-basis .3s; }
+        .acl-cx__railtop{ writing-mode:vertical-rl; transform:rotate(180deg); margin:0 auto;
+          font-family:var(--acl-font-mono); font-weight:700; font-size:24px; letter-spacing:.34em;
+          text-transform:uppercase; }
+        .acl-cx__index{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+          font-family:var(--acl-font-num); font-size:183px; line-height:.7; letter-spacing:-.04em;
+          opacity:.96; }
+        .acl-cx__railfoot{ position:relative; z-index:2; margin:0 auto; }
+
+        /* ── main area ── */
+        .acl-cx__main{ flex:1; position:relative; padding:92px 110px 84px 90px; display:flex;
+          flex-direction:column; justify-content:center; min-width:0; }
+        .acl-cx__eyebrow{ display:inline-flex; align-self:flex-start; align-items:center; gap:14px;
+          font-family:var(--acl-font-mono); font-weight:700; font-size:26px; letter-spacing:.18em;
+          text-transform:uppercase; color:var(--acl-ink); background:var(--acl-yellow);
+          padding:9px 18px; transform:rotate(-1.4deg); box-shadow:3px 4px 0 rgba(22,21,15,.2); }
+        .acl-cx__h{ font-weight:900; font-size:128px; line-height:.92; margin:24px 0 0;
+          letter-spacing:-.012em; }
+        .acl-cx__sub{ font-family:var(--acl-font-hand); font-size:48px; margin-top:16px; }
+        .acl-cx--ink .acl-cx__sub{ color:var(--acl-paper); }
+
+        .acl-cx__list{ display:flex; flex-direction:column; margin-top:48px; max-width:1020px;
+          border-top:2px solid rgba(22,21,15,.18); }
+        .acl-cx--ink .acl-cx__list{ border-top-color:rgba(251,250,244,.22); }
+        .acl-cx__item{ display:flex; align-items:center; gap:24px; padding:15px 4px;
+          border-bottom:2px solid rgba(22,21,15,.18); }
+        .acl-cx--ink .acl-cx__item{ border-bottom-color:rgba(251,250,244,.22); }
+        .acl-cx__no{ font-family:var(--acl-font-num); font-size:40px; line-height:.8; flex:0 0 70px;
+          color:var(--acl-ink); opacity:.32; }
+        .acl-cx--ink .acl-cx__no{ color:var(--acl-yellow); opacity:.9; }
+        .acl-cx__kw{ font-weight:900; font-size:38px; letter-spacing:-.01em; }
+        .acl-cx__dot{ margin-left:auto; width:16px; height:16px; flex:0 0 auto; }
+        .acl-cx__item:first-child .acl-cx__no{ opacity:1; color:var(--acl-pink); }
+        .acl-cx__item:first-child .acl-cx__kw{ position:relative; }
+
+        .acl-cx__foot{ position:absolute; left:90px; bottom:50px; display:flex; align-items:center;
+          gap:14px; font-family:var(--acl-font-hand); font-size:30px; }
+        .acl-cx--ink .acl-cx__foot{ color:var(--acl-paper); }
+        @media (prefers-reduced-motion:no-preference){
+          [data-deck-active] .acl-cx__index{ animation:acl-cx-pop .65s cubic-bezier(.2,.9,.3,1.15) both; }
+          [data-deck-active] .acl-cx__h{ animation:acl-cx-in .55s cubic-bezier(.2,.8,.2,1) both; animation-delay:.1s; }
+          [data-deck-active] .acl-cx__item{ animation:acl-cx-in .5s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--i,0) * .08s + .32s); }
+        }
+        @keyframes acl-cx-pop{ from{ opacity:0; transform:translate(-50%,-46%) scale(.9); } to{ opacity:.96; } }
+        @keyframes acl-cx-in{ from{ opacity:0; transform:translateY(22px); } to{ opacity:1; transform:none; } }
+      
+
+        .acl-cp{ position:absolute; inset:0; overflow:hidden; font-family:var(--acl-font-cn);
+          color:var(--acl-ink); padding:92px 110px 84px; display:flex; flex-direction:column;
+          justify-content:center; }
+        .acl-cp--ink{ color:var(--acl-paper); }
+        .acl-cp__ghost{ position:absolute; right:-30px; bottom:-160px; font-family:var(--acl-font-num);
+          font-size:760px; line-height:.7; color:var(--acl-ink); opacity:.07; z-index:0;
+          pointer-events:none; user-select:none; }
+        .acl-cp--ink .acl-cp__ghost{ color:var(--acl-yellow); opacity:.1; }
+
+        .acl-cp__inner{ position:relative; z-index:1; }
+        .acl-cp__eyebrow{ display:inline-flex; align-items:center; gap:14px;
+          font-family:var(--acl-font-mono); font-weight:700; font-size:26px; letter-spacing:.18em;
+          text-transform:uppercase; color:var(--acl-ink); background:var(--acl-yellow);
+          padding:9px 18px; transform:rotate(-1.6deg); box-shadow:3px 4px 0 rgba(22,21,15,.2); }
+        .acl-cp--ink .acl-cp__eyebrow{ background:var(--acl-yellow); }
+        .acl-cp__numrow{ display:flex; align-items:flex-start; gap:42px; margin-top:26px; }
+        .acl-cp__index{ font-family:var(--acl-font-num); font-size:300px; line-height:.74;
+          flex:0 0 auto; letter-spacing:-.02em; }
+        .acl-cp--ink .acl-cp__index{ color:var(--acl-yellow); }
+        .acl-cp__titles{ display:flex; flex-direction:column; justify-content:center; padding-top:18px; }
+        .acl-cp__h{ font-weight:900; font-size:118px; line-height:.94; margin:0; letter-spacing:-.01em; }
+        .acl-cp__sub{ font-family:var(--acl-font-hand); font-size:46px; margin-top:14px;
+          color:var(--acl-ink); }
+        .acl-cp--ink .acl-cp__sub{ color:var(--acl-paper); }
+        .acl-cp__noindex .acl-cp__h{ font-size:148px; }
+
+        .acl-cp__chips{ display:flex; flex-wrap:wrap; gap:16px; margin-top:46px; align-items:center; }
+        .acl-cp__chip{ font-family:var(--acl-font-mono); font-weight:700; font-size:24px;
+          letter-spacing:.02em; padding:12px 22px; border:3px solid var(--acl-ink);
+          background:var(--acl-paper); color:var(--acl-ink); box-shadow:3px 4px 0 rgba(22,21,15,.18); }
+        .acl-cp__chip:nth-child(3n+1){ transform:rotate(-1.8deg); }
+        .acl-cp__chip:nth-child(3n+2){ transform:rotate(1.5deg); }
+        .acl-cp--ink .acl-cp__chip{ border-color:var(--acl-paper); }
+
+        .acl-cp__foot{ position:absolute; left:110px; bottom:64px; z-index:1; display:flex;
+          align-items:center; gap:14px; font-family:var(--acl-font-hand); font-size:30px; }
+        .acl-cp--ink .acl-cp__foot{ color:var(--acl-paper); }
+        @media (prefers-reduced-motion:no-preference){
+          [data-deck-active] .acl-cp__index{ animation:acl-cp-pop .6s cubic-bezier(.2,.9,.3,1.2) both; }
+          [data-deck-active] .acl-cp__h{ animation:acl-cp-in .55s cubic-bezier(.2,.8,.2,1) both; animation-delay:.08s; }
+          [data-deck-active] .acl-cp__chip{ animation:acl-cp-in .45s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--i,0) * .07s + .3s); }
+        }
+        @keyframes acl-cp-pop{ from{ opacity:0; transform:translateY(30px) scale(.92); } to{ opacity:1; transform:none; } }
+        @keyframes acl-cp-in{ from{ opacity:0; transform:translateY(20px); } to{ opacity:1; transform:none; } }
+      
+
+        .acl-ch{ position:absolute; inset:0; overflow:hidden; font-family:var(--acl-font-cn);
+          color:var(--acl-ink); padding:84px 100px 80px; display:flex; flex-direction:column; }
+        .acl-ch__head{ display:flex; align-items:flex-end; gap:30px; }
+        .acl-ch__eyebrow{ font-family:var(--acl-font-mono); font-weight:700; font-size:24px;
+          letter-spacing:.16em; text-transform:uppercase; color:rgba(22,21,15,.55); margin-bottom:10px; }
+        .acl-ch__h{ font-weight:900; font-size:88px; line-height:.95; margin:0; }
+        .acl-ch__sub{ font-family:var(--acl-font-hand); font-size:34px; margin-bottom:8px; }
+        .acl-ch__row{ flex:1; display:flex; gap:20px; align-items:stretch; margin-top:56px;
+          padding-bottom:20px; }
+        .acl-ch__card{ flex:1 1 0; min-width:0; background:var(--acl-paper); border:3px solid var(--acl-ink);
+          box-shadow:5px 7px 0 rgba(22,21,15,.15); padding:26px 22px; display:flex;
+          flex-direction:column; gap:16px; position:relative; transition:transform .25s;
+          align-self:center; height:84%; }
+        .acl-ch__card:nth-child(even){ transform:rotate(-1.4deg); }
+        .acl-ch__card:nth-child(odd){ transform:rotate(1.1deg); }
+        .acl-ch__num{ font-family:var(--acl-font-num); font-size:62px; line-height:.82; }
+        .acl-ch__bar{ width:46px; height:7px; background:var(--acl-ink); }
+        .acl-ch__name{ font-weight:900; font-size:33px; line-height:1.12; margin-top:auto; }
+        .acl-ch__en{ font-family:var(--acl-font-mono); font-size:15px; letter-spacing:.05em;
+          text-transform:uppercase; color:rgba(22,21,15,.55); }
+        .acl-ch__card--focus{ background:var(--acl-ink); color:var(--acl-paper);
+          transform:scale(1.06) rotate(-1.5deg) !important; height:96%;
+          box-shadow:8px 11px 0 rgba(22,21,15,.3); z-index:3; }
+        .acl-ch__card--focus .acl-ch__bar{ background:var(--acl-yellow); }
+        .acl-ch__card--focus .acl-ch__num{ color:var(--acl-yellow); }
+        .acl-ch__card--focus .acl-ch__en{ color:rgba(255,255,255,.6); }
+        .acl-ch__fx{ position:absolute; top:-16px; right:-12px; z-index:4; }
+        .acl-ch__foot{ display:flex; align-items:center; gap:16px; font-family:var(--acl-font-hand);
+          font-size:30px; margin-top:8px; }
+      
+
+        .acl-sp{ position:absolute; inset:0; overflow:hidden; font-family:var(--acl-font-cn);
+          color:var(--acl-ink); padding:78px 100px 70px; display:flex; flex-direction:column; }
+        .acl-sp__head{ display:flex; align-items:flex-end; gap:26px; flex:0 0 auto; }
+        .acl-sp__eyebrow{ font-family:var(--acl-font-mono); font-weight:700; font-size:24px;
+          letter-spacing:.16em; text-transform:uppercase; color:rgba(22,21,15,.55); margin-bottom:10px; }
+        .acl-sp__h{ font-weight:900; font-size:80px; line-height:.95; margin:0; }
+        .acl-sp__sub{ font-family:var(--acl-font-mono); font-weight:700; font-size:22px;
+          padding:8px 14px; background:var(--acl-ink); color:var(--acl-yellow); transform:rotate(-2deg);  white-space:nowrap;}
+        .acl-sp__summary{ margin-left:auto; max-width:500px; font-weight:700; font-size:24px;
+          line-height:1.4; text-align:right; text-wrap:balance; }
+        .acl-sp__summary b{ background:var(--acl-blue); padding:0 .14em; box-decoration-break:clone;
+          -webkit-box-decoration-break:clone;  white-space:nowrap;}
+
+        /* ── supply-chain ribbon ── */
+        .acl-sp__chain{ display:flex; align-items:stretch; gap:0; margin-top:26px; flex:0 0 auto; }
+        .acl-sp__node{ flex:1; position:relative; display:flex; flex-direction:column; justify-content:center;
+          background:var(--acl-paper); border:3px solid var(--acl-ink); padding:18px 22px 17px; transition:.25s; }
+        .acl-sp__node:not(:last-child){ margin-right:34px; }
+        .acl-sp__node:not(:last-child)::after{ content:""; position:absolute; right:-34px; top:50%;
+          width:34px; height:0; border-top:3px dashed var(--acl-ink); transform:translateY(-50%); }
+        .acl-sp__node:not(:last-child)::before{ content:""; position:absolute; right:-13px; top:50%;
+          width:0; height:0; border-left:13px solid var(--acl-ink);
+          border-top:9px solid transparent; border-bottom:9px solid transparent; transform:translateY(-50%); z-index:2; }
+        .acl-sp__node .ni{ font-family:var(--acl-font-mono); font-size:13px; letter-spacing:.06em;
+          color:rgba(22,21,15,.5); }
+        .acl-sp__node .nn{ font-weight:900; font-size:30px; line-height:1.04; margin-top:4px; }
+        .acl-sp__node .ne{ font-family:var(--acl-font-mono); font-size:12px; letter-spacing:.03em;
+          text-transform:uppercase; color:rgba(22,21,15,.5); margin-top:4px; }
+        .acl-sp__node--focus{ background:var(--acl-ink); color:var(--acl-paper); transform:translateY(-6px);
+          box-shadow:6px 10px 0 rgba(22,21,15,.18); }
+        .acl-sp__node--focus .ni, .acl-sp__node--focus .ne{ color:rgba(255,255,255,.6); }
+        .acl-sp__node--dim{ opacity:.5; }
+
+        .acl-sp__body{ flex:1; display:flex; gap:34px; margin-top:30px; min-height:0; }
+
+        /* share ring cards (left) */
+        .acl-sp__shares{ flex:0 0 520px; display:flex; flex-direction:column; gap:18px; }
+        .acl-sp__card{ flex:1; display:flex; align-items:center; gap:26px; background:var(--acl-paper);
+          border:3px solid var(--acl-ink); box-shadow:6px 8px 0 rgba(22,21,15,.14); padding:18px 28px; }
+        .acl-sp__ring{ flex:0 0 132px; position:relative; }
+        .acl-sp__ringsvg{ width:132px; height:132px; display:block; }
+        .acl-sp__ringval{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+          font-family:var(--acl-font-num); font-size:42px; }
+        .acl-sp__ringval em{ font-style:normal; font-size:20px; margin-left:1px; opacity:.6; }
+        .acl-sp__cardtxt .cn{ font-weight:900; font-size:34px; line-height:1.04; }
+        .acl-sp__cardtxt .ce{ font-family:var(--acl-font-mono); font-size:13px; letter-spacing:.05em;
+          text-transform:uppercase; color:rgba(22,21,15,.5); margin-top:5px; }
+        .acl-sp__cardtxt .cd{ font-weight:700; font-size:18px; line-height:1.35; color:rgba(22,21,15,.62);
+          margin-top:8px; max-width:300px; }
+
+        /* collage stage (right) */
+        .acl-sp__stage{ flex:1; position:relative; min-width:0; }
+        .acl-sp__slot{ position:absolute; }
+        .acl-sp__empty{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+          font-family:var(--acl-font-hand); font-size:34px; color:rgba(22,21,15,.4); transform:rotate(-4deg); }
+
+        .acl-sp__foot{ display:flex; align-items:center; gap:14px; font-family:var(--acl-font-hand);
+          font-size:28px; margin-top:14px; flex:0 0 auto; }
+        @media (prefers-reduced-motion:no-preference){
+          [data-deck-active] .acl-sp__node{ animation:acl-sp-pop .42s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--i,0) * .08s + .15s); }
+          [data-deck-active] .acl-sp__card{ animation:acl-sp-rise .5s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--j,0) * .1s + .4s); }
+          [data-deck-active] .acl-sp__arc{ animation:acl-sp-draw 1s ease both; }
+        }
+        @keyframes acl-sp-pop{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:none; } }
+        @keyframes acl-sp-rise{ from{ opacity:0; transform:translateX(-16px); } to{ opacity:1; transform:none; } }
+        @keyframes acl-sp-draw{ from{ stroke-dashoffset:var(--c); } }
+      
+
+        .acl-q5{ position:absolute; inset:0; overflow:hidden; font-family:var(--acl-font-cn);
+          color:var(--acl-ink); padding:78px 110px 70px; display:flex; flex-direction:column; }
+        .acl-q5--ink{ color:var(--acl-paper); }
+
+        .acl-q5__mark{ position:absolute; left:36px; top:-130px; font-family:var(--acl-font-num);
+          font-size:540px; line-height:.7; color:var(--acl-pink); opacity:.16; z-index:0;
+          pointer-events:none; user-select:none; }
+        .acl-q5--ink .acl-q5__mark{ color:var(--acl-yellow); opacity:.13; }
+
+        .acl-q5__top{ display:flex; align-items:center; gap:18px; flex:0 0 auto; z-index:2; }
+        .acl-q5__eyebrow{ font-family:var(--acl-font-mono); font-weight:700; font-size:24px;
+          letter-spacing:.18em; text-transform:uppercase; color:rgba(22,21,15,.55); }
+        .acl-q5--ink .acl-q5__eyebrow{ color:rgba(251,250,244,.6); }
+        .acl-q5__rule{ flex:1; height:0; border-top:3px solid currentColor; opacity:.45; }
+        .acl-q5__kicker{ font-family:var(--acl-font-mono); font-weight:700; font-size:18px;
+          padding:7px 13px; background:var(--acl-ink); color:var(--acl-yellow); transform:rotate(-2deg); white-space:nowrap; }
+        .acl-q5--ink .acl-q5__kicker{ background:var(--acl-yellow); color:var(--acl-ink); }
+
+        .acl-q5__body{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:10px;
+          position:relative; z-index:1; }
+        .acl-q5__label{ font-family:var(--acl-font-mono); font-weight:700; font-size:22px; letter-spacing:.08em;
+          text-transform:uppercase; color:rgba(22,21,15,.5); display:flex; align-items:center; gap:14px;
+          margin-bottom:18px; }
+        .acl-q5--ink .acl-q5__label{ color:rgba(251,250,244,.55); }
+        .acl-q5__label::before{ content:""; width:54px; height:7px; background:var(--acl-pink); }
+        .acl-q5--ink .acl-q5__label::before{ background:var(--acl-yellow); }
+
+        /* alternating highlight bands -> two colour fields */
+        .acl-q5__line{ display:inline-block; width:max-content; max-width:100%; font-weight:900;
+          line-height:1.18; letter-spacing:-.01em; font-size:96px; padding:.02em .2em; margin:0;
+          box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+        .acl-q5__line--a{ background:var(--acl-ink); color:var(--acl-paper); transform:rotate(-.6deg); }
+        .acl-q5--ink .acl-q5__line--a{ background:rgba(251,250,244,.1); color:var(--acl-paper); }
+        .acl-q5__line--b{ background:var(--acl-blue); color:var(--acl-ink); transform:rotate(.5deg); }
+        .acl-q5__line--focus{ background:var(--acl-pink); color:var(--acl-paper); font-size:118px;
+          box-shadow:9px 11px 0 rgba(22,21,15,.18); transform:rotate(-1deg); position:relative; }
+        .acl-q5__linefx{ position:absolute; top:-30px; right:-54px; z-index:3; }
+
+        .acl-q5__foot{ flex:0 0 auto; display:flex; align-items:flex-end; gap:30px; z-index:2;
+          padding-top:22px; margin-top:8px; border-top:3px solid rgba(22,21,15,.22); }
+        .acl-q5--ink .acl-q5__foot{ border-color:rgba(251,250,244,.28); }
+        .acl-q5__supports{ display:flex; gap:30px; flex:1; min-width:0; }
+        .acl-q5__s{ display:flex; gap:14px; align-items:flex-start; min-width:0; flex:1; }
+        .acl-q5__sn{ font-family:var(--acl-font-num); font-size:48px; line-height:.8; flex:0 0 auto;
+          color:var(--acl-pink); }
+        .acl-q5--ink .acl-q5__sn{ color:var(--acl-yellow); }
+        .acl-q5__st{ font-weight:700; font-size:21px; line-height:1.36; padding-top:5px; }
+        .acl-q5__s--focus .acl-q5__sn{ color:var(--acl-ink); background:var(--acl-yellow); padding:0 .12em; }
+        .acl-q5--ink .acl-q5__s--focus .acl-q5__sn{ color:var(--acl-ink); }
+        .acl-q5__sign{ flex:0 0 auto; display:flex; align-items:center; gap:14px;
+          font-family:var(--acl-font-mono); font-size:18px; letter-spacing:.04em; color:rgba(22,21,15,.55); }
+        .acl-q5--ink .acl-q5__sign{ color:rgba(251,250,244,.55); }
+
+        @media (prefers-reduced-motion:no-preference){
+          [data-deck-active] .acl-q5__line{ animation:acl-q5-in .55s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--i,0) * .12s + .08s); }
+          [data-deck-active] .acl-q5__s{ animation:acl-q5-in .45s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--i,0) * .08s + .5s); }
+        }
+        @keyframes acl-q5-in{ from{ opacity:0; transform:translateY(24px); } to{ opacity:1; } }
+      
+
+        .acl-vd{ position:absolute; inset:0; overflow:hidden; font-family:var(--acl-font-cn);
+          color:var(--acl-ink); padding:80px 110px 72px; display:flex; flex-direction:column; }
+        .acl-vd--ink{ color:var(--acl-paper); }
+
+        /* ── header rail ── */
+        .acl-vd__top{ display:flex; align-items:center; gap:18px; flex:0 0 auto; z-index:2; }
+        .acl-vd__eyebrow{ font-family:var(--acl-font-mono); font-weight:700; font-size:24px;
+          letter-spacing:.2em; text-transform:uppercase; color:rgba(22,21,15,.55); }
+        .acl-vd--ink .acl-vd__eyebrow{ color:rgba(251,250,244,.6); }
+        .acl-vd__rule{ flex:1; height:0; border-top:3px solid currentColor; opacity:.45; }
+        .acl-vd__kicker{ font-family:var(--acl-font-mono); font-weight:700; font-size:18px;
+          padding:7px 13px; background:var(--acl-ink); color:var(--acl-yellow);
+          transform:rotate(-2deg); white-space:nowrap; }
+        .acl-vd--ink .acl-vd__kicker{ background:var(--acl-yellow); color:var(--acl-ink); }
+
+        /* ── giant ghost closing-mark behind ── */
+        .acl-vd__ghost{ position:absolute; right:60px; bottom:-120px; font-family:var(--acl-font-num);
+          font-size:560px; line-height:.62; color:var(--acl-pink); opacity:.14; z-index:0;
+          pointer-events:none; user-select:none; }
+        .acl-vd--ink .acl-vd__ghost{ color:var(--acl-yellow); opacity:.12; }
+
+        /* ── body: stacked clause lines ── */
+        .acl-vd__body{ flex:1; display:flex; flex-direction:column; justify-content:center;
+          position:relative; z-index:1; gap:6px; }
+        .acl-vd__label{ font-family:var(--acl-font-mono); font-weight:700; font-size:22px;
+          letter-spacing:.08em; text-transform:uppercase; color:rgba(22,21,15,.5);
+          display:flex; align-items:center; gap:14px; margin-bottom:24px; }
+        .acl-vd--ink .acl-vd__label{ color:rgba(251,250,244,.55); }
+        .acl-vd__label::before{ content:""; width:54px; height:7px; background:var(--acl-pink);
+          display:inline-block; }
+        .acl-vd--ink .acl-vd__label::before{ background:var(--acl-yellow); }
+
+        .acl-vd__line{ position:relative; font-weight:900; line-height:1.02; letter-spacing:-.01em;
+          margin:0; width:max-content; max-width:100%; }
+        .acl-vd__line--set{ font-size:92px; color:rgba(22,21,15,.78); }
+        .acl-vd--ink .acl-vd__line--set{ color:rgba(251,250,244,.82); }
+        .acl-vd__line--punch{ font-size:150px; }
+
+        /* emphasis · band (skewed fill that reads like a stamped marker swipe) */
+        .acl-vd__band{ position:relative; display:inline-block; padding:.04em .22em .08em .14em;
+          color:var(--acl-paper); background:var(--acl-ink); transform:rotate(-1.4deg);
+          box-shadow:10px 12px 0 rgba(22,21,15,.18);
+          clip-path:polygon(0 6%, 100% 0, 99% 92%, 1% 100%); }
+        .acl-vd--ink .acl-vd__band{ background:var(--acl-yellow); color:var(--acl-ink);
+          box-shadow:10px 12px 0 rgba(0,0,0,.4); }
+        .acl-vd__band--alt{ background:var(--acl-pink); color:var(--acl-paper); }
+
+        /* emphasis · underline (hand-drawn double stroke) */
+        .acl-vd__under{ position:relative; display:inline-block; padding:0 .06em .12em; }
+        .acl-vd__under::after{ content:""; position:absolute; left:-.04em; right:-.08em; bottom:.02em;
+          height:.16em; background:var(--acl-pink);
+          clip-path:polygon(0 22%,100% 0,100% 78%,0 100%); }
+        .acl-vd--ink .acl-vd__under::after{ background:var(--acl-yellow); }
+
+        .acl-vd__linefx{ position:absolute; top:-34px; right:-58px; z-index:3; }
+
+        /* ── verdict seal stamp ── */
+        .acl-vd__seal{ position:absolute; top:128px; right:96px; width:230px; height:230px;
+          border-radius:50%; border:5px solid var(--acl-ink); display:grid; place-items:center;
+          text-align:center; transform:rotate(-13deg); z-index:2;
+          box-shadow:0 0 0 9px rgba(22,21,15,.08); background:transparent; }
+        .acl-vd--ink .acl-vd__seal{ border-color:var(--acl-yellow); box-shadow:0 0 0 9px rgba(236,239,53,.08); }
+        .acl-vd__sealring{ position:absolute; inset:14px; border-radius:50%;
+          border:2px dashed rgba(22,21,15,.4); }
+        .acl-vd--ink .acl-vd__sealring{ border-color:rgba(251,250,244,.4); }
+        .acl-vd__sealwrap{ display:flex; flex-direction:column; align-items:center; gap:7px;
+          padding:0 18px; }
+        .acl-vd__sealtop{ font-weight:900; font-size:46px; line-height:.94; white-space:pre-line; }
+        .acl-vd__sealdiv{ width:64px; height:3px; background:currentColor; opacity:.55; }
+        .acl-vd__sealbot{ font-family:var(--acl-font-mono); font-weight:700; font-size:14px;
+          letter-spacing:.16em; text-transform:uppercase; }
+        .acl-vd__sealfx{ position:absolute; top:-22px; left:-26px; z-index:4; }
+
+        /* ── foot: supports + signature ── */
+        .acl-vd__foot{ flex:0 0 auto; display:flex; align-items:flex-end; gap:30px; z-index:2;
+          padding-top:22px; border-top:3px solid rgba(22,21,15,.22); }
+        .acl-vd--ink .acl-vd__foot{ border-color:rgba(251,250,244,.28); }
+        .acl-vd__supports{ display:flex; gap:16px; flex:1; min-width:0; }
+        .acl-vd__chip{ display:flex; align-items:center; gap:13px; min-width:0; }
+        .acl-vd__chipn{ flex:0 0 auto; width:40px; height:40px; transform:rotate(45deg);
+          background:var(--acl-ink); display:grid; place-items:center; }
+        .acl-vd--ink .acl-vd__chipn{ background:var(--acl-yellow); }
+        .acl-vd__chipn span{ transform:rotate(-45deg); font-family:var(--acl-font-num); font-size:20px;
+          line-height:1; color:var(--acl-yellow); }
+        .acl-vd--ink .acl-vd__chipn span{ color:var(--acl-ink); }
+        .acl-vd__chiptxt{ display:flex; flex-direction:column; min-width:0; }
+        .acl-vd__chiptxt b{ font-weight:900; font-size:25px; line-height:1.04; }
+        .acl-vd__chiptxt span{ font-family:var(--acl-font-mono); font-size:12px; letter-spacing:.06em;
+          text-transform:uppercase; color:rgba(22,21,15,.5); }
+        .acl-vd--ink .acl-vd__chiptxt span{ color:rgba(251,250,244,.5); }
+        .acl-vd__sign{ flex:0 0 auto; display:flex; align-items:center; gap:14px;
+          font-family:var(--acl-font-mono); font-size:18px; letter-spacing:.04em;
+          color:rgba(22,21,15,.58); }
+        .acl-vd--ink .acl-vd__sign{ color:rgba(251,250,244,.58); }
+
+        @media (prefers-reduced-motion:no-preference){
+          [data-deck-active] .acl-vd__line{ animation:acl-vd-in .6s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--i,0) * .12s + .08s); }
+          [data-deck-active] .acl-vd__seal{ animation:acl-vd-stamp .5s cubic-bezier(.3,1.5,.5,1) both;
+            animation-delay:.5s; }
+          [data-deck-active] .acl-vd__chip{ animation:acl-vd-in .45s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--i,0) * .08s + .5s); }
+        }
+        @keyframes acl-vd-in{ from{ opacity:0; transform:translateY(26px); } to{ opacity:1; transform:none; } }
+        @keyframes acl-vd-stamp{ from{ opacity:0; transform:rotate(-13deg) scale(1.5); }
+          to{ opacity:1; transform:rotate(-13deg) scale(1); } }
+      
+
+      .acl-root{ 
+  --acl-yellow:#ECEF35;
+  --acl-lilac:#E7E6EE;
+  --acl-ink:#16150F;
+  --acl-pink:#FF3D97;
+  --acl-red:#E83B22;
+  --acl-blue:#8DBEEC;
+  --acl-paper:#FBFAF4;
+  --acl-font-cn:"Noto Sans SC",-apple-system,sans-serif;
+  --acl-font-num:"Anton","Noto Sans SC",sans-serif;
+  --acl-font-mono:"Noto Sans SC",-apple-system,sans-serif;
+  --acl-font-hand:"Noto Sans SC",-apple-system,sans-serif;
+ }
+      .acl-root *{ box-sizing:border-box; }
+
+      /* ── doodles ─────────────────────────────── */
+      .acl-doodle{ position:absolute; pointer-events:none; color:var(--acl-ink);
+        animation:acl-wiggle 6s ease-in-out infinite; transform-origin:center; }
+      .acl-doodle--spark{ color:var(--acl-ink); }
+      @keyframes acl-wiggle{ 0%,100%{ transform:rotate(var(--r,0deg)); }
+        50%{ transform:rotate(calc(var(--r,0deg) + 2deg)); } }
+      @media (prefers-reduced-motion:reduce){ .acl-doodle{ animation:none; } }
+
+      /* ── inline marker highlight ─────────────── */
+      .acl-hl{ background:var(--acl-blue); padding:0 .14em; white-space:nowrap;
+        box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+
+      /* ── sticker label (one- or two-tone) ────── */
+      .acl-sticker{ display:inline-flex; align-items:stretch; line-height:1;
+        font-family:var(--acl-font-mono); font-weight:700; white-space:nowrap;
+        box-shadow:2px 3px 0 rgba(22,21,15,.18); }
+      .acl-sticker b, .acl-sticker span{ padding:7px 11px 6px; display:flex;
+        align-items:center; font-weight:700; }
+      .acl-sticker b{ color:var(--acl-ink); }
+      .acl-sticker span{ font-weight:400; }
+
+      /* ── meta tag (data chip) ────────────────── */
+      .acl-metatag{ display:flex; flex-direction:column; gap:3px; }
+      .acl-metatag .k{ font-family:var(--acl-font-mono); font-size:15px;
+        letter-spacing:.08em; text-transform:uppercase; color:rgba(22,21,15,.5); }
+      .acl-metatag .v{ font-family:var(--acl-font-cn); font-weight:700;
+        font-size:26px; color:var(--acl-ink); }
+
+      /* ── adaptive image slot ─────────────────── */
+      .acl-slot{ position:relative; display:inline-block; transition:width .3s,height .3s; }
+      .acl-slot__frame{ position:relative; width:100%; height:100%; overflow:hidden;
+        background:var(--acl-paper); border:8px solid var(--acl-paper);
+        box-shadow:4px 6px 0 rgba(22,21,15,.2), 0 10px 26px rgba(22,21,15,.14); }
+      .acl-slot__img{ width:100%; height:100%; object-fit:cover; display:block; }
+      .acl-slot__empty{ position:absolute; inset:0; display:flex; flex-direction:column;
+        align-items:center; justify-content:center; gap:6px; cursor:pointer;
+        background:var(--acl-paper);
+        border:1.5px dashed rgba(22,21,15,.25); }
+      .acl-slot__icon{ opacity:.45; color:rgba(22,21,15,.85); }
+      .acl-slot__cap{ font-family:var(--acl-font-cn); font-size:13px; font-weight:500;
+        letter-spacing:.01em; color:rgba(22,21,15,.85); text-align:center; padding:0 8px;
+        max-width:90%; }
+      .acl-slot__sub{ font-family:var(--acl-font-cn); font-size:11px;
+        color:rgba(22,21,15,.62); }
+      .acl-slot__sub u{ text-underline-offset:2px; text-decoration-color:rgba(22,21,15,.25); }
+      .acl-slot__empty:hover .acl-slot__sub u{ color:rgba(22,21,15,.85);
+        text-decoration-color:currentColor; }
+      .acl-slot--drag .acl-slot__empty{ background:var(--acl-yellow);
+        border-color:var(--acl-ink); }
+      .acl-slot__sticker{ position:absolute; left:50%; bottom:-14px; transform:translateX(-50%);
+        z-index:3; }
+      .acl-slot__hint{ position:absolute; top:7px; right:7px; z-index:3; opacity:0;
+        font-family:var(--acl-font-mono); font-size:11px; letter-spacing:.04em;
+        background:var(--acl-ink); color:var(--acl-paper); padding:3px 6px;
+        transition:opacity .15s; }
+      .acl-slot:hover .acl-slot__hint{ opacity:.9; }
+    
+
+        .acl-c4{ position:absolute; inset:0; overflow:hidden; font-family:var(--acl-font-cn);
+          color:var(--acl-ink); padding:88px 100px 80px; display:flex; flex-direction:column; }
+        .acl-c4--ink{ color:var(--acl-paper); }
+
+        /* giant solid-tint stencil index, bleeding off the right edge */
+        .acl-c4__ghost{ position:absolute; right:-36px; top:50%; transform:translateY(-52%);
+          font-family:var(--acl-font-num); font-size:660px; line-height:.62; letter-spacing:-.04em;
+          color:rgba(236,239,53,.12); z-index:0; pointer-events:none; }
+
+        .acl-c4__head{ position:relative; z-index:2; display:flex; align-items:center; gap:20px; }
+        .acl-c4__eyebrow{ display:inline-flex; align-items:center; gap:14px; font-family:var(--acl-font-mono);
+          font-weight:700; font-size:25px; letter-spacing:.18em; text-transform:uppercase;
+          color:var(--acl-ink); background:var(--acl-yellow); padding:10px 18px; transform:rotate(-1.4deg);
+          box-shadow:3px 4px 0 rgba(22,21,15,.2); }
+        .acl-c4__kicker{ font-family:var(--acl-font-cn); font-weight:700; font-size:30px; line-height:1.1;
+          opacity:.9; color:rgba(22,21,15,.72); }
+        .acl-c4--ink .acl-c4__kicker{ color:rgba(251,250,244,.7); }
+
+        .acl-c4__mid{ position:relative; z-index:2; flex:1; display:flex; flex-direction:column;
+          justify-content:center; }
+        .acl-c4__h{ font-weight:900; font-size:120px; line-height:1.42; letter-spacing:-.018em; margin:0; }
+        .acl-c4__h .mk{ display:inline-block; line-height:1; background:var(--acl-pink); color:var(--acl-ink);
+          padding:.04em .1em; transform:rotate(-1deg); margin-top:.12em; }
+        .acl-c4__sub{ font-family:var(--acl-font-mono); font-weight:700; font-size:26px; letter-spacing:.04em;
+          text-transform:uppercase; margin-top:24px; color:rgba(22,21,15,.6); }
+        .acl-c4--ink .acl-c4__sub{ color:var(--acl-yellow); }
+
+        /* keyword filmstrip */
+        .acl-c4__strip{ position:relative; z-index:2; display:flex; gap:18px; flex-wrap:wrap; margin-top:6px; }
+        .acl-c4__tile{ position:relative; display:flex; align-items:center; gap:16px; padding:16px 26px 16px 20px;
+          background:var(--acl-paper); border:3px solid var(--acl-ink); box-shadow:5px 6px 0 rgba(22,21,15,.18);
+          transition:transform .25s, background .25s, color .25s; }
+        .acl-c4__tile .no{ font-family:var(--acl-font-num); font-size:42px; line-height:.8; color:var(--acl-pink); }
+        .acl-c4__tile .kw{ font-weight:900; font-size:34px; line-height:1; letter-spacing:-.01em; color:var(--acl-ink); }
+        .acl-c4__tile--focus{ background:var(--acl-ink); transform:rotate(-2deg) translateY(-4px); }
+        .acl-c4__tile--focus .kw{ color:var(--acl-paper); }
+        .acl-c4__tile--focus .no{ color:var(--acl-yellow); }
+        .acl-c4--ink .acl-c4__tile--focus{ background:var(--acl-yellow); }
+        .acl-c4--ink .acl-c4__tile--focus .kw{ color:var(--acl-ink); }
+        .acl-c4--ink .acl-c4__tile--focus .no{ color:var(--acl-pink); }
+        .acl-c4__tfx{ position:absolute; right:-16px; top:-22px; z-index:4; }
+
+        .acl-c4__foot{ position:relative; z-index:2; display:flex; align-items:center; gap:16px;
+          font-family:var(--acl-font-cn); font-weight:600; font-size:26px; margin-top:42px; color:rgba(22,21,15,.7); }
+        .acl-c4--ink .acl-c4__foot{ color:var(--acl-paper); }
+
+        @media (prefers-reduced-motion:no-preference){
+          [data-deck-active] .acl-c4__ghost{ animation:acl-c4-ghost .7s cubic-bezier(.2,.9,.3,1.1) both; }
+          [data-deck-active] .acl-c4__h{ animation:acl-c4-in .55s cubic-bezier(.2,.8,.2,1) both; animation-delay:.08s; }
+          [data-deck-active] .acl-c4__tile{ animation:acl-c4-in .5s cubic-bezier(.2,.8,.2,1) both;
+            animation-delay:calc(var(--i,0) * .07s + .3s); }
+        }
+        @keyframes acl-c4-ghost{ from{ opacity:0; transform:translate(40px,-52%); } to{ opacity:1; } }
+        @keyframes acl-c4-in{ from{ opacity:0; transform:translateY(24px); } to{ opacity:1; transform:none; } }
+      </style></head><body><header class="reader-header"><a href="../index.html">← Dashi 分类</a><b>黑金实验风</b><select aria-label="跳转方案"><option value="page-1">1 · 模板 1</option><option value="page-2">1 · 模板 2</option><option value="page-3">1 · 模板 3</option><option value="page-4">1 · 定制</option><option value="page-5">2 · 模板 1</option><option value="page-6">2 · 模板 2</option><option value="page-7">2 · 模板 3</option><option value="page-8">2 · 定制</option><option value="page-9">3 · 模板 1</option><option value="page-10">3 · 模板 2</option><option value="page-11">3 · 模板 3</option><option value="page-12">3 · 定制</option></select><small>真实模板 · 3+1 / HTML 只读适配 · 演示内容与数据</small></header><main class="reader-main"><article class="frame" id="page-1"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page007"><div class="acl-root acl-ch" style="background:linear-gradient(168deg, #F4F66C 0%, #ECEF35 44%, #E2E62A 100%)"><div class="acl-ch__head"><div><div class="acl-ch__eyebrow">循环材料概念提案 · 演示数据</div><h1 class="acl-ch__h">材料的第二种生命</h1></div><div class="acl-ch__sub">循环材料概念提案</div><svg class="acl-doodle  " viewBox="0 0 84 60" width="84" height="60" aria-hidden="true" style="--r:6deg;position:static"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 Q40 6 73 37"></path><path d="M57 32 L73 37 L67 21"></path></g></svg></div><div class="acl-ch__row"><div class="acl-ch__card"><div class="acl-ch__num" style="color:var(--acl-pink)">01</div><div class="acl-ch__bar"></div><div class="acl-ch__name">用途 · 循环材料概念提案</div><div class="acl-ch__en"></div></div><div class="acl-ch__card acl-ch__card--focus"><div class="acl-ch__fx"><span class="acl-sticker" style="transform:rotate(8deg);font-size:16px"><b style="background:var(--acl-yellow)">用途</b></span></div><div class="acl-ch__num">02</div><div class="acl-ch__bar"></div><div class="acl-ch__name">受众 · 创意总监</div><div class="acl-ch__en"></div></div><div class="acl-ch__card"><div class="acl-ch__num" style="color:var(--acl-red)">03</div><div class="acl-ch__bar"></div><div class="acl-ch__name">性质 · 纯概念演示</div><div class="acl-ch__en"></div></div></div><div class="acl-ch__foot"><svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="48" height="34.285714285714285" aria-hidden="true" style="--r:0deg;position:static"><g fill="var(--acl-pink)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg><span>cover</span></div></div></section></div></article>
+<article class="frame" id="page-2"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page084"><div class="acl-root acl-q5" style="background:linear-gradient(165deg, #F4F66C 0%, #ECEF35 46%, #E2E62A 100%)"><div class="acl-q5__mark" aria-hidden="true">“</div><div class="acl-q5__top"><div class="acl-q5__eyebrow">循环材料概念提案 · 演示数据</div><div class="acl-q5__rule"></div><div class="acl-q5__kicker">材料的第二种生命</div></div><div class="acl-q5__body"><div class="acl-q5__label">cover</div><h2 class="acl-q5__line acl-q5__line--focus" style="--i:0">性质 · 纯概念演示<span class="acl-q5__linefx"><svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="66" height="47.142857142857146" aria-hidden="true" style="--r:10deg;position:static"><g fill="var(--acl-yellow)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></span></h2><h2 class="acl-q5__line acl-q5__line--b" style="--i:1">受众 · 创意总监</h2><h2 class="acl-q5__line acl-q5__line--a" style="--i:2">用途 · 循环材料概念提案</h2></div><div class="acl-q5__foot"><div class="acl-q5__sign"><svg class="acl-doodle  " viewBox="0 0 84 60" width="48" height="34.285714285714285" aria-hidden="true" style="--r:0deg;color:var(--acl-ink);position:static"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M58 18 C48 8, 24 10, 20 28 C17 44, 40 52, 56 42"></path><path d="M49 53 L56 42 L43 43"></path></g></svg><span>循环材料概念提案</span></div></div></div></section></div></article>
+<article class="frame" id="page-3"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page028"><div class="acl-root acl-cx" style="background:linear-gradient(168deg, #F4F66C 0%, #ECEF35 44%, #E2E62A 100%)"><div class="acl-cx__rail"><div class="acl-cx__railtop">循环材料概念提案 · 演示数据</div><div class="acl-cx__index" aria-hidden="true">cover</div><div class="acl-cx__railfoot"><svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="40" height="28.571428571428573" aria-hidden="true" style="--r:0deg;position:static"><g fill="var(--acl-yellow)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></div></div><div class="acl-cx__main"><div class="acl-cx__eyebrow">循环材料概念提案 · 演示数据<svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="26" height="18.571428571428573" aria-hidden="true" style="--r:0deg;position:static"><g fill="var(--acl-ink)" stroke="none" stroke-width="0" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></div><h1 class="acl-cx__h">材料的第二种生命</h1><div class="acl-cx__sub">循环材料概念提案</div><div class="acl-cx__list"><div class="acl-cx__item" style="--i:0"><span class="acl-cx__no">01</span><span class="acl-cx__kw">受众 · 创意总监</span><svg class="acl-doodle acl-doodle--spark acl-cx__dot" viewBox="0 0 84 60" width="26" height="18.571428571428573" aria-hidden="true" style="--r:0deg;position:static;margin-left:auto"><g fill="var(--acl-pink)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 49 C7 35, 7 15, 21 15 C26 15, 27 21, 27 24 C27 21, 28 15, 33 15 C47 15, 47 35, 27 49 Z"></path></g></svg></div><div class="acl-cx__item" style="--i:1"><span class="acl-cx__no">02</span><span class="acl-cx__kw">性质 · 纯概念演示</span><svg class="acl-doodle acl-doodle--spark acl-cx__dot" viewBox="0 0 84 60" width="22" height="15.714285714285714" aria-hidden="true" style="--r:0deg;position:static;margin-left:auto"><g fill="var(--acl-yellow)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></div><div class="acl-cx__item" style="--i:2"><span class="acl-cx__no">03</span><span class="acl-cx__kw">用途 · 循环材料概念提案</span><svg class="acl-doodle acl-doodle--spark acl-cx__dot" viewBox="0 0 84 60" width="22" height="15.714285714285714" aria-hidden="true" style="--r:0deg;position:static;margin-left:auto"><g fill="var(--acl-yellow)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></div></div><div class="acl-cx__foot"><span class="acl-sticker" style="transform:rotate(-3deg);font-size:16px"><b style="background:var(--acl-yellow)">用途</b><span style="background:var(--acl-ink);color:var(--acl-paper)">cover</span></span><span>受众</span></div></div></div></section></div></article>
+<article class="frame" id="page-4"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="cover::v4" data-vm-source-slide-id="cover" data-vm-slide-key="bespoke-cover-v4" data-vm-index="0" data-vm-variant-state-id="cover::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme08" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(circle at 74% 16%,rgba(211,173,91,.18),transparent 34%),linear-gradient(150deg,#090909,#15120d);--bespoke-surface:rgba(211,173,91,.08);--bespoke-ink:#f6f0e3;--bespoke-muted:#b7ad98;--bespoke-accent:#d3ad5b;--bespoke-accent-2:#f0d59a;--bespoke-line:rgba(211,173,91,.28);--bespoke-pad:94px;--bespoke-gap:22px;--bespoke-radius:2px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(circle at 74% 16%,rgba(211,173,91,.18),transparent 34%),linear-gradient(150deg,#090909,#15120d);color:#f6f0e3;font-family:&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#d3ad5b;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#f0d59a;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:94px 94px"><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f6f0e3;text-align:left;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">cover</div></div><div data-bespoke-element="text" style="grid-column:1 / span 8;grid-row:2 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f6f0e3;text-align:left;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">材料的第二种生命</div></div><blockquote data-bespoke-element="quote" style="grid-column:1 / span 9;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(211,173,91,.08);border:1px solid rgba(211,173,91,.28);border-radius:2px;box-shadow:0 28px 80px rgba(0,0,0,.56);display:flex;flex-direction:column;justify-content:center;gap:26px;margin:0;overflow:hidden"><div aria-hidden="true" data-editable-skip="true" style="color:#d3ad5b;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;font-size:100px;font-weight:900;line-height:0.5">“</div><div data-editable-path="composition.bespoke-statement-core.text" style="color:#f6f0e3;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;font-size:42px;font-weight:760;letter-spacing:-.018em;line-height:1.24;text-align:left;text-wrap:balance;overflow-wrap:anywhere">循环材料概念提案</div><cite data-editable-path="composition.bespoke-statement-core.attribution" style="color:#b7ad98;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:20px;font-style:normal;letter-spacing:.07em">循环材料概念提案 · 演示数据</cite></blockquote><div data-bespoke-element="list" style="grid-column:10 / span 3;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(211,173,91,.08);border:1px solid rgba(211,173,91,.28);border-radius:2px;box-shadow:0 28px 80px rgba(0,0,0,.56);display:flex;flex-direction:column;gap:16px;color:#f6f0e3;overflow:hidden"><div style="display:grid;gap:12px;min-height:0;overflow:hidden"><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:0;border-top:0"><span aria-hidden="true" data-editable-skip="true" style="color:#d3ad5b;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">01</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.0.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">用途</div><div data-editable-path="composition.bespoke-statement-facts.items.0.body" style="color:#b7ad98;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">循环材料概念提案</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(211,173,91,.28)"><span aria-hidden="true" data-editable-skip="true" style="color:#d3ad5b;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">02</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.1.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">受众</div><div data-editable-path="composition.bespoke-statement-facts.items.1.body" style="color:#b7ad98;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">创意总监</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(211,173,91,.28)"><span aria-hidden="true" data-editable-skip="true" style="color:#d3ad5b;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">03</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.2.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">性质</div><div data-editable-path="composition.bespoke-statement-facts.items.2.body" style="color:#b7ad98;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">纯概念演示</div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-5"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page017"><div class="acl-root acl-cp" style="background:linear-gradient(165deg, #EFEFF6 0%, #E7E6EE 58%, #DEDCEA 100%)"><div class="acl-cp__ghost" aria-hidden="true">metrics</div><div class="acl-cp__inner"><div class="acl-cp__eyebrow">材料构成 · 演示数据<svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="26" height="18.571428571428573" aria-hidden="true" style="--r:0deg;position:static"><g fill="var(--acl-ink)" stroke="none" stroke-width="0" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></div><div class="acl-cp__numrow"><div class="acl-cp__index">metrics</div><div class="acl-cp__titles"><h1 class="acl-cp__h">用克制的形式呈现材料实验</h1><div class="acl-cp__sub">再生材料构成清晰可见</div></div></div><div class="acl-cp__chips"><svg class="acl-doodle  " viewBox="0 0 84 60" width="56" height="40" aria-hidden="true" style="--r:4deg;position:static;margin-right:4px"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15 Q37 17 72 41"></path><path d="M56 37 L72 41 L66 24"></path></g></svg><span class="acl-cp__chip" style="--i:0;background:var(--acl-pink);color:var(--acl-paper);border-color:var(--acl-ink)">玻璃 · 再生材料占比 · 48%</span><span class="acl-cp__chip" style="--i:1">金属 · 再生材料占比 · 35%</span><span class="acl-cp__chip" style="--i:2">纤维 · 再生材料占比 · 17%</span><span class="acl-cp__chip" style="--i:3">3点｜17%–48%</span></div></div><div class="acl-cp__foot"><span class="acl-sticker" style="transform:rotate(-3deg);font-size:16px"><b style="background:var(--acl-yellow)">玻璃</b><span style="background:var(--acl-ink);color:var(--acl-paper)">metrics</span></span><span>金属</span></div></div></section></div></article>
+<article class="frame" id="page-6"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page007"><div class="acl-root acl-ch" style="background:linear-gradient(168deg, #F4F66C 0%, #ECEF35 44%, #E2E62A 100%)"><div class="acl-ch__head"><div><div class="acl-ch__eyebrow">材料构成 · 演示数据</div><h1 class="acl-ch__h">用克制的形式呈现材料实验</h1></div><div class="acl-ch__sub">再生材料构成清晰可见</div><svg class="acl-doodle  " viewBox="0 0 84 60" width="84" height="60" aria-hidden="true" style="--r:6deg;position:static"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 Q40 6 73 37"></path><path d="M57 32 L73 37 L67 21"></path></g></svg></div><div class="acl-ch__row"><div class="acl-ch__card"><div class="acl-ch__num" style="color:var(--acl-pink)">01</div><div class="acl-ch__bar"></div><div class="acl-ch__name">纤维 · 再生材料占比 · 17%</div><div class="acl-ch__en"></div></div><div class="acl-ch__card acl-ch__card--focus"><div class="acl-ch__fx"><span class="acl-sticker" style="transform:rotate(8deg);font-size:16px"><b style="background:var(--acl-yellow)">玻璃</b></span></div><div class="acl-ch__num">02</div><div class="acl-ch__bar"></div><div class="acl-ch__name">金属 · 再生材料占比 · 35%</div><div class="acl-ch__en"></div></div><div class="acl-ch__card"><div class="acl-ch__num" style="color:var(--acl-red)">03</div><div class="acl-ch__bar"></div><div class="acl-ch__name">玻璃 · 再生材料占比 · 48%</div><div class="acl-ch__en"></div></div><div class="acl-ch__card"><div class="acl-ch__num" style="color:var(--acl-ink)">04</div><div class="acl-ch__bar"></div><div class="acl-ch__name">3点｜17%–48%</div><div class="acl-ch__en"></div></div><div class="acl-ch__card"><div class="acl-ch__num" style="color:var(--acl-pink)">05</div><div class="acl-ch__bar"></div><div class="acl-ch__name">末值｜纤维17%</div><div class="acl-ch__en"></div></div></div><div class="acl-ch__foot"><svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="48" height="34.285714285714285" aria-hidden="true" style="--r:0deg;position:static"><g fill="var(--acl-pink)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg><span>metrics</span></div></div></section></div></article>
+<article class="frame" id="page-7"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page038"><div class="acl-root acl-sp" style="background:linear-gradient(168deg, #F4F66C 0%, #ECEF35 44%, #E2E62A 100%)"><div class="acl-sp__head"><div><div class="acl-sp__eyebrow">材料构成 · 演示数据</div><h1 class="acl-sp__h">用克制的形式呈现材料实验</h1></div><div class="acl-sp__sub">再生材料占比</div><div class="acl-sp__summary">再生材料构成清晰可见</div></div><div class="acl-sp__chain"><div class="acl-sp__node acl-sp__node--dim" style="--i:0"><div class="ni">01</div><div class="nn">玻璃 · 再生材料占比 · 48%</div><div class="ne"></div></div><div class="acl-sp__node acl-sp__node--dim" style="--i:1"><div class="ni">02</div><div class="nn">纤维 · 再生材料占比 · 17%</div><div class="ne"></div></div><div class="acl-sp__node acl-sp__node--focus" style="--i:2"><div class="ni">03</div><div class="nn">金属 · 再生材料占比 · 35%</div><div class="ne"></div></div></div><div class="acl-sp__body"><div class="acl-sp__shares"><div class="acl-sp__card" style="--j:0"><div class="acl-sp__ring"><svg class="acl-sp__ringsvg" viewBox="0 0 132 132"><circle cx="66" cy="66" r="56" fill="none" stroke="rgba(22,21,15,.12)" stroke-width="15"></circle><circle class="acl-sp__arc" cx="66" cy="66" r="56" fill="none" stroke="var(--acl-pink)" stroke-width="15" stroke-dasharray="168.89202105698726 182.96635614506957" stroke-dashoffset="0" stroke-linecap="butt" transform="rotate(-90 66 66)" style="--c:168.89202105698726"></circle></svg><div class="acl-sp__ringval">48<em>%</em></div></div><div class="acl-sp__cardtxt"><div class="cn">玻璃 · 48%</div><div class="ce"></div><div class="cd"></div></div></div><div class="acl-sp__card" style="--j:1"><div class="acl-sp__ring"><svg class="acl-sp__ringsvg" viewBox="0 0 132 132"><circle cx="66" cy="66" r="56" fill="none" stroke="rgba(22,21,15,.12)" stroke-width="15"></circle><circle class="acl-sp__arc" cx="66" cy="66" r="56" fill="none" stroke="var(--acl-blue)" stroke-width="15" stroke-dasharray="123.15043202071988 228.70794518133695" stroke-dashoffset="0" stroke-linecap="butt" transform="rotate(-90 66 66)" style="--c:123.15043202071988"></circle></svg><div class="acl-sp__ringval">35<em>%</em></div></div><div class="acl-sp__cardtxt"><div class="cn">金属 · 35%</div><div class="ce"></div><div class="cd"></div></div></div><div class="acl-sp__card" style="--j:2"><div class="acl-sp__ring"><svg class="acl-sp__ringsvg" viewBox="0 0 132 132"><circle cx="66" cy="66" r="56" fill="none" stroke="rgba(22,21,15,.12)" stroke-width="15"></circle><circle class="acl-sp__arc" cx="66" cy="66" r="56" fill="none" stroke="var(--acl-ink)" stroke-width="15" stroke-dasharray="59.815924124349664 292.04245307770714" stroke-dashoffset="0" stroke-linecap="butt" transform="rotate(-90 66 66)" style="--c:59.815924124349664"></circle></svg><div class="acl-sp__ringval">17<em>%</em></div></div><div class="acl-sp__cardtxt"><div class="cn">纤维 · 17%</div><div class="ce"></div><div class="cd"></div></div></div></div><div class="acl-sp__stage"><div class="acl-sp__empty">// 图片数量 = 0</div></div></div><div class="acl-sp__foot"><svg class="acl-doodle  " viewBox="0 0 84 60" width="56" height="40" aria-hidden="true" style="--r:0deg;position:static"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M58 18 C48 8, 24 10, 20 28 C17 44, 40 52, 56 42"></path><path d="M49 53 L56 42 L43 43"></path></g></svg><span>玻璃</span></div></div></section></div></article>
+<article class="frame" id="page-8"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="evidence::v4" data-vm-source-slide-id="evidence" data-vm-slide-key="bespoke-evidence-v4" data-vm-index="1" data-vm-variant-state-id="evidence::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme08" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(circle at 74% 16%,rgba(211,173,91,.18),transparent 34%),linear-gradient(150deg,#090909,#15120d);--bespoke-surface:rgba(211,173,91,.08);--bespoke-ink:#f6f0e3;--bespoke-muted:#b7ad98;--bespoke-accent:#d3ad5b;--bespoke-accent-2:#f0d59a;--bespoke-line:rgba(211,173,91,.28);--bespoke-pad:94px;--bespoke-gap:22px;--bespoke-radius:2px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(circle at 74% 16%,rgba(211,173,91,.18),transparent 34%),linear-gradient(150deg,#090909,#15120d);color:#f6f0e3;font-family:&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#d3ad5b;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#f0d59a;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:94px 94px"><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f6f0e3;text-align:left;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-chart-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">metrics</div></div><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:2 / span 2;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f6f0e3;text-align:left;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-chart-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">用克制的形式呈现材料实验</div></div><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:4 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f6f0e3;text-align:left;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-chart-core.text" style="font-size:38px;line-height:1.24;font-weight:650;letter-spacing:-.012em;overflow-wrap:anywhere;text-wrap:pretty">再生材料构成清晰可见</div></div><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:5 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f6f0e3;text-align:left;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-chart-summary.text" style="font-size:21px;line-height:1.4;font-weight:500;letter-spacing:.02em;overflow-wrap:anywhere;text-wrap:pretty">材料构成 · 演示数据</div></div><div data-bespoke-element="chart" data-bespoke-chart="bar" style="grid-column:5 / span 8;grid-row:1 / span 8;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(211,173,91,.08);border:1px solid rgba(211,173,91,.28);border-radius:2px;box-shadow:0 28px 80px rgba(0,0,0,.56);display:flex;flex-direction:column;gap:18px;overflow:hidden"><div style="flex:1 1 auto;min-height:0"><svg viewBox="0 0 1000 420" width="100%" height="100%" preserveAspectRatio="none" aria-hidden="true" data-editable-skip="true"><line x1="50" x2="950" y1="66" y2="66" stroke="rgba(211,173,91,.2)" stroke-width="2"></line><line x1="50" x2="950" y1="157" y2="157" stroke="rgba(211,173,91,.2)" stroke-width="2"></line><line x1="50" x2="950" y1="248" y2="248" stroke="rgba(211,173,91,.2)" stroke-width="2"></line><line x1="50" x2="950" y1="339" y2="339" stroke="rgba(211,173,91,.2)" stroke-width="2"></line><line x1="50" x2="950" y1="340" y2="340" stroke="#f6f0e3" stroke-width="2"></line><g><rect x="162" y="50" width="96" height="290" rx="0" fill="#d3ad5b"></rect><text x="210" y="38" text-anchor="middle" fill="#f6f0e3" font-size="19" font-weight="700">48%</text><text x="210" y="382" text-anchor="middle" fill="#b7ad98" font-size="20">玻璃</text></g><g><rect x="462" y="128.54166666666669" width="96" height="211.45833333333331" rx="0" fill="#f0d59a"></rect><text x="510" y="116.54166666666669" text-anchor="middle" fill="#f6f0e3" font-size="19" font-weight="700">35%</text><text x="510" y="382" text-anchor="middle" fill="#b7ad98" font-size="20">金属</text></g><g><rect x="762" y="237.29166666666666" width="96" height="102.70833333333334" rx="0" fill="#8e7040"></rect><text x="810" y="225.29166666666666" text-anchor="middle" fill="#f6f0e3" font-size="19" font-weight="700">17%</text><text x="810" y="382" text-anchor="middle" fill="#b7ad98" font-size="20">纤维</text></g></svg></div></div><div data-bespoke-element="list" style="grid-column:1 / span 4;grid-row:6 / span 3;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(211,173,91,.08);border:1px solid rgba(211,173,91,.28);border-radius:2px;box-shadow:0 28px 80px rgba(0,0,0,.56);display:flex;flex-direction:column;gap:16px;color:#f6f0e3;overflow:hidden"><div style="display:grid;gap:12px;min-height:0;overflow:hidden"><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:0;border-top:0"><span aria-hidden="true" data-editable-skip="true" style="color:#d3ad5b;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">01</span><div style="min-width:0"><div data-editable-path="composition.bespoke-chart-facts.items.0.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">玻璃</div><div data-editable-path="composition.bespoke-chart-facts.items.0.body" style="color:#b7ad98;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">再生材料占比 · 48%</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(211,173,91,.28)"><span aria-hidden="true" data-editable-skip="true" style="color:#d3ad5b;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">02</span><div style="min-width:0"><div data-editable-path="composition.bespoke-chart-facts.items.1.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">金属</div><div data-editable-path="composition.bespoke-chart-facts.items.1.body" style="color:#b7ad98;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">再生材料占比 · 35%</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(211,173,91,.28)"><span aria-hidden="true" data-editable-skip="true" style="color:#d3ad5b;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">03</span><div style="min-width:0"><div data-editable-path="composition.bespoke-chart-facts.items.2.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">纤维</div><div data-editable-path="composition.bespoke-chart-facts.items.2.body" style="color:#b7ad98;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">再生材料占比 · 17%</div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-9"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page084"><div class="acl-root acl-q5" style="background:linear-gradient(165deg, #F4F66C 0%, #ECEF35 46%, #E2E62A 100%)"><div class="acl-q5__mark" aria-hidden="true">“</div><div class="acl-q5__top"><div class="acl-q5__eyebrow">statement</div><div class="acl-q5__rule"></div><div class="acl-q5__kicker">让循环成为设计</div></div><div class="acl-q5__body"><div class="acl-q5__label"></div><h2 class="acl-q5__line acl-q5__line--focus" style="--i:0">采集肌理，重组工艺，验证体验<span class="acl-q5__linefx"><svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="66" height="47.142857142857146" aria-hidden="true" style="--r:10deg;position:static"><g fill="var(--acl-yellow)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></span></h2><h2 class="acl-q5__line acl-q5__line--b" style="--i:1">采集肌理，重组工艺，验证体验</h2><h2 class="acl-q5__line acl-q5__line--a" style="--i:2">让循环成为设计</h2></div><div class="acl-q5__foot"><div class="acl-q5__sign"><svg class="acl-doodle  " viewBox="0 0 84 60" width="48" height="34.285714285714285" aria-hidden="true" style="--r:0deg;color:var(--acl-ink);position:static"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M58 18 C48 8, 24 10, 20 28 C17 44, 40 52, 56 42"></path><path d="M49 53 L56 42 L43 43"></path></g></svg><span>采集肌理，重组工艺，验证体验</span></div></div></div></section></div></article>
+<article class="frame" id="page-10"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page074"><div class="acl-root acl-vd acl-vd--ink" style="background:radial-gradient(125% 125% at 80% 6%, #2A2820 0%, #16150F 62%, #0E0D08 100%)"><div class="acl-vd__ghost" aria-hidden="true">”</div><div class="acl-vd__top"><div class="acl-vd__eyebrow">statement</div><div class="acl-vd__rule"></div><div class="acl-vd__kicker">让循环成为设计</div></div><div class="acl-vd__seal"><div class="acl-vd__sealring"></div><div class="acl-vd__sealfx"><svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="48" height="34.285714285714285" aria-hidden="true" style="--r:-12deg;position:static"><g fill="var(--acl-yellow)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 3 L34 20 L52 21 L38 33 L43 51 L27 40 L11 51 L16 33 L2 21 L20 20 Z"></path></g></svg></div><div class="acl-vd__sealwrap"><div class="acl-vd__sealtop"></div><div class="acl-vd__sealdiv"></div><div class="acl-vd__sealbot"></div></div></div><div class="acl-vd__body"><div class="acl-vd__label"></div><h2 class="acl-vd__line acl-vd__line--set" style="--i:0">采集肌理，重组工艺，验证体验</h2><h2 class="acl-vd__line acl-vd__line--punch" style="--i:1"><span class="acl-vd__band">让循环成为设计</span><span class="acl-vd__linefx"><svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="70" height="50" aria-hidden="true" style="--r:10deg;position:static"><g fill="var(--acl-yellow)" stroke="var(--acl-ink)" stroke-width="4" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></span></h2></div><div class="acl-vd__foot"><div class="acl-vd__sign"><svg class="acl-doodle  " viewBox="0 0 84 60" width="50" height="35.714285714285715" aria-hidden="true" style="--r:0deg;position:static"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M58 18 C48 8, 24 10, 20 28 C17 44, 40 52, 56 42"></path><path d="M49 53 L56 42 L43 43"></path></g></svg><span>采集肌理，重组工艺，验证体验</span></div></div></div></section></div></article>
+<article class="frame" id="page-11"><div class="canvas"><section class="slide actual-template" data-layout="theme08_page049"><div class="acl-root acl-c4 acl-c4--ink" style="background:radial-gradient(130% 130% at 84% 16%, #2A2820 0%, #16150F 60%, #100F0A 100%)"><div class="acl-c4__ghost" aria-hidden="true"></div><div class="acl-c4__head"><div class="acl-c4__eyebrow">statement<svg class="acl-doodle acl-doodle--spark " viewBox="0 0 84 60" width="24" height="17.142857142857142" aria-hidden="true" style="--r:0deg;position:static"><g fill="var(--acl-ink)" stroke="none" stroke-width="0" stroke-linejoin="round"><path d="M27 2 C29 18, 32 21, 52 27 C32 33, 29 36, 27 52 C25 36, 22 33, 2 27 C22 21, 25 18, 27 2 Z"></path></g></svg></div><span class="acl-c4__kicker">让循环成为设计</span></div><div class="acl-c4__mid"><h1 class="acl-c4__h">采集肌理，重组工艺，验证体验<br/><span class="mk">采集肌理，重组工艺，验证体验</span></h1><div class="acl-c4__sub">采集肌理，重组工艺，验证体验</div></div><div class="acl-c4__foot"><svg class="acl-doodle  " viewBox="0 0 84 60" width="58" height="41.42857142857143" aria-hidden="true" style="--r:0deg;color:var(--acl-yellow);position:static"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M58 18 C48 8, 24 10, 20 28 C17 44, 40 52, 56 42"></path><path d="M49 53 L56 42 L43 43"></path></g></svg><span></span></div></div></section></div></article>
+<article class="frame" id="page-12"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="action::v4" data-vm-source-slide-id="action" data-vm-slide-key="bespoke-action-v4" data-vm-index="2" data-vm-variant-state-id="action::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme08" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(circle at 74% 16%,rgba(211,173,91,.18),transparent 34%),linear-gradient(150deg,#090909,#15120d);--bespoke-surface:rgba(211,173,91,.08);--bespoke-ink:#f6f0e3;--bespoke-muted:#b7ad98;--bespoke-accent:#d3ad5b;--bespoke-accent-2:#f0d59a;--bespoke-line:rgba(211,173,91,.28);--bespoke-pad:94px;--bespoke-gap:22px;--bespoke-radius:2px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(circle at 74% 16%,rgba(211,173,91,.18),transparent 34%),linear-gradient(150deg,#090909,#15120d);color:#f6f0e3;font-family:&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#d3ad5b;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#f0d59a;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:94px 94px"><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f6f0e3;text-align:left;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">statement</div></div><div data-bespoke-element="text" style="grid-column:1 / span 8;grid-row:2 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f6f0e3;text-align:left;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">让循环成为设计</div></div><blockquote data-bespoke-element="quote" style="grid-column:1 / span 12;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(211,173,91,.08);border:1px solid rgba(211,173,91,.28);border-radius:2px;box-shadow:0 28px 80px rgba(0,0,0,.56);display:flex;flex-direction:column;justify-content:center;gap:26px;margin:0;overflow:hidden"><div aria-hidden="true" data-editable-skip="true" style="color:#d3ad5b;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;font-size:100px;font-weight:900;line-height:0.5">“</div><div data-editable-path="composition.bespoke-statement-core.text" style="color:#f6f0e3;font-family:&quot;Cormorant Garamond&quot;,&quot;Noto Serif SC&quot;,&quot;Songti SC&quot;,serif;font-size:42px;font-weight:760;letter-spacing:-.018em;line-height:1.24;text-align:left;text-wrap:balance;overflow-wrap:anywhere">采集肌理，重组工艺，验证体验</div><cite data-editable-path="composition.bespoke-statement-core.attribution" style="color:#b7ad98;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:20px;font-style:normal;letter-spacing:.07em">采集肌理，重组工艺，验证体验</cite></blockquote></div></div></section></div></article></main><section class="text-readout"><h2>可读内容</h2><h3>材料的第二种生命</h3><p>循环材料概念提案。所有内容与数字均为虚构演示，不作为事实或决策依据。</p><ul><li>用途 · 循环材料概念提案</li><li>受众 · 创意总监</li><li>性质 · 纯概念演示</li></ul><h3>用克制的形式呈现材料实验</h3><p>三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。</p><ul><li>玻璃：48 % · 再生材料占比</li><li>金属：35 % · 再生材料占比</li><li>纤维：17 % · 再生材料占比</li></ul><h3>让循环成为设计</h3><p>采集材料肌理；重组制造工艺；验证使用体验。本页为概念演示。</p><ul></ul></section><footer class="reader-footer">主题与模板 © chuspeeism · <a href="https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64">固定版来源</a> · AGPL-3.0<br>本次保留真实模板与 canonical 3+1，采用独立 HTML-only 阅读外壳；无专有导出引擎、无 PPTX/PDF 导出或原生编辑保存。仅完成本页注明的验收，不代表 SP 已集成。<br><a href="../LICENSE">许可文本</a> · <a href="../SOURCE-NOTICE.md">来源及修改说明</a></footer><script>function fit(){document.querySelectorAll('.frame').forEach(f=>f.firstElementChild.style.transform='scale('+f.clientWidth/1920+')')}new ResizeObserver(fit).observe(document.querySelector('.reader-main'));fit();document.querySelector('select').addEventListener('change',e=>document.getElementById(e.target.value).scrollIntoView({behavior:'auto',block:'center'}));</script></body></html>

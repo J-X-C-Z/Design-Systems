@@ -1,0 +1,182 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "虚构产品增长复盘",
+        "title": {
+          "full": "把一次尝试变成持续使用",
+          "short": "把一次尝试变成持续使用"
+        },
+        "summary": {
+          "full": "虚构产品增长复盘。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "虚构产品增长复盘 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "虚构产品增长复盘",
+              "short": "虚构产品增长复盘"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "增长团队",
+              "short": "增长团队"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "同组用户逐步转化",
+        "title": {
+          "full": "从首次使用到持续使用",
+          "short": "从首次使用到持续使用"
+        },
+        "summary": {
+          "short": "同组人数 · 演示数据",
+          "full": "同组演示用户在三个阶段的数量为100、68、42人。纯虚构演示，不表示相互独立人群或实际业务结果。"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "首次使用",
+            "detail": {
+              "full": "演示用户数",
+              "short": "演示用户数"
+            },
+            "value": 100,
+            "displayValue": "100",
+            "unit": "人",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "完成设置",
+            "detail": {
+              "full": "演示用户数",
+              "short": "演示用户数"
+            },
+            "value": 68,
+            "displayValue": "68",
+            "unit": "人",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "持续使用",
+            "detail": {
+              "full": "演示用户数",
+              "short": "演示用户数"
+            },
+            "value": 42,
+            "displayValue": "42",
+            "unit": "人",
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [
+          {
+            "id": "fact-1",
+            "label": "首次使用",
+            "value": 100,
+            "displayValue": "100",
+            "unit": "人"
+          },
+          {
+            "id": "fact-2",
+            "label": "完成设置",
+            "value": 68,
+            "displayValue": "68",
+            "unit": "人"
+          },
+          {
+            "id": "fact-3",
+            "label": "持续使用",
+            "value": 42,
+            "displayValue": "42",
+            "unit": "人"
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "减少摩擦，解释价值，检验留存",
+        "title": {
+          "full": "让使用变成习惯",
+          "short": "让使用变成习惯"
+        },
+        "summary": {
+          "full": "减少首次操作摩擦；在关键时刻解释价值；检验持续使用原因。本页为概念演示。",
+          "short": "减少摩擦，解释价值，检验留存"
+        },
+        "items": [
+          {
+            "id": "action-1",
+            "label": "摩擦",
+            "detail": {
+              "full": "减少首次操作摩擦",
+              "short": "减少首次操作摩擦"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "action-2",
+            "label": "价值",
+            "detail": {
+              "full": "在关键时刻解释价值",
+              "short": "在关键时刻解释价值"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "action-3",
+            "label": "留存",
+            "detail": {
+              "full": "检验持续使用原因",
+              "short": "检验持续使用原因"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

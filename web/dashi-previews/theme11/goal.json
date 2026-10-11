@@ -1,0 +1,1427 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "把一次尝试变成持续使用",
+  "goal": "虚构产品增长复盘",
+  "themePack": "theme11",
+  "pageCount": 3,
+  "randomSeed": "theme11-20261011-sample",
+  "workflowRunId": "20261011163314264-71bc36d9",
+  "slides": [
+    {
+      "id": "cover",
+      "content": {
+        "presentation": {
+          "pageIntent": "cover",
+          "coreMessage": "虚构产品增长复盘",
+          "title": {
+            "full": "把一次尝试变成持续使用",
+            "short": "把一次尝试变成持续使用"
+          },
+          "summary": {
+            "full": "虚构产品增长复盘。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "虚构产品增长复盘 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "用途",
+              "detail": {
+                "full": "虚构产品增长复盘",
+                "short": "虚构产品增长复盘"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "受众",
+              "detail": {
+                "full": "增长团队",
+                "short": "增长团队"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "性质",
+              "detail": {
+                "full": "纯概念演示",
+                "short": "纯概念演示"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme11_page018",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "wordmarkSub": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.summary.short",
+            "pillarWord": "presentation.pageIntent",
+            "ghostMark": "presentation.items[0].label",
+            "railText": "presentation.items[1].label",
+            "ixNo": "presentation.items[2].label",
+            "noteHtml": "presentation.summary.full",
+            "metaLeft": "presentation.items[1].detail.short",
+            "metaMid": "presentation.items[2].detail.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "pillars",
+              "pillarCount",
+              "ixLabel",
+              "headingHtml",
+              "wordmarkSub",
+              "wordmarkLabel",
+              "pillarWord",
+              "ghostMark",
+              "railText",
+              "ixNo",
+              "noteHtml",
+              "metaLeft",
+              "metaMid"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "pillars",
+                  "fields": [
+                    {
+                      "key": "w",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "d",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "sv",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "sl",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "pillarCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "ixLabel",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme11_page052",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.summary.short",
+            "wordmarkSub": "presentation.items[1].detail.short",
+            "ghostMark": "presentation.pageIntent",
+            "railText": "presentation.items[0].label",
+            "ixNo": "presentation.items[1].label",
+            "ixLabel": "presentation.items[2].label",
+            "metaLeft": "presentation.items[2].detail.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "quotes",
+              "quoteCount",
+              "statValue",
+              "statLabel",
+              "leadRating",
+              "metaMid",
+              "headingHtml",
+              "lead",
+              "wordmarkLabel",
+              "wordmarkSub",
+              "ghostMark",
+              "railText",
+              "ixNo",
+              "ixLabel",
+              "metaLeft"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "quotes",
+                  "fields": [
+                    {
+                      "key": "q",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "nm",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "rl",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "mono",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "quoteCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "statValue",
+                  "value": ""
+                },
+                {
+                  "path": "statLabel",
+                  "value": ""
+                },
+                {
+                  "path": "leadRating",
+                  "value": ""
+                },
+                {
+                  "path": "metaMid",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme11_page067",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "wordmarkSub": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.summary.short",
+            "ghostMark": "presentation.pageIntent",
+            "railText": "presentation.items[0].label",
+            "ixNo": "presentation.items[1].label",
+            "ixLabel": "presentation.items[2].label",
+            "noteHtml": "presentation.summary.full",
+            "metaLeft": "presentation.items[1].detail.short",
+            "metaMid": "presentation.items[2].detail.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "terms",
+              "rowCount",
+              "eyebrowNo",
+              "eyebrowEn",
+              "headingHtml",
+              "wordmarkSub",
+              "wordmarkLabel",
+              "ghostMark",
+              "railText",
+              "ixNo",
+              "ixLabel",
+              "noteHtml",
+              "metaLeft",
+              "metaMid"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "terms",
+                  "fields": [
+                    {
+                      "key": "t",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "e",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "d",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "rowCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "eyebrowNo",
+                  "value": ""
+                },
+                {
+                  "path": "eyebrowEn",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "虚构产品增长复盘",
+              "audience": "增长与产品体验团队",
+              "narrativeRole": "建立虚构产品复盘主题",
+              "emphasis": "核心主张与适用语境分层",
+              "rationale": "高能增长profile为暖深底、橙红焦点、酸绿次级和中圆角高能指标板。bar展示有序阶段人数，不将100/68/42归一为构成百分比；真实paper/ink模板分支保持原样。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "content": {
+        "presentation": {
+          "pageIntent": "metrics",
+          "coreMessage": "同组用户逐步转化",
+          "title": {
+            "full": "从首次使用到持续使用",
+            "short": "从首次使用到持续使用"
+          },
+          "summary": {
+            "short": "同组人数 · 演示数据",
+            "full": "同组演示用户在三个阶段的数量为100、68、42人。纯虚构演示，不表示相互独立人群或实际业务结果。"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "首次使用",
+              "detail": {
+                "full": "演示用户数",
+                "short": "演示用户数"
+              },
+              "value": 100,
+              "displayValue": "100",
+              "unit": "人",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "完成设置",
+              "detail": {
+                "full": "演示用户数",
+                "short": "演示用户数"
+              },
+              "value": 68,
+              "displayValue": "68",
+              "unit": "人",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "持续使用",
+              "detail": {
+                "full": "演示用户数",
+                "short": "演示用户数"
+              },
+              "value": 42,
+              "displayValue": "42",
+              "unit": "人",
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [
+            {
+              "id": "fact-1",
+              "label": "首次使用",
+              "value": 100,
+              "displayValue": "100",
+              "unit": "人"
+            },
+            {
+              "id": "fact-2",
+              "label": "完成设置",
+              "value": 68,
+              "displayValue": "68",
+              "unit": "人"
+            },
+            {
+              "id": "fact-3",
+              "label": "持续使用",
+              "value": 42,
+              "displayValue": "42",
+              "unit": "人"
+            }
+          ],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme11_page035",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "footNote": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.summary.short",
+            "wordmarkSub": "presentation.items[0].detail.short",
+            "ghostMark": "presentation.pageIntent",
+            "railText": "presentation.items[0].label",
+            "ixNo": "presentation.items[1].label",
+            "ixLabel": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "rows",
+              "rowCount",
+              "leadHtml",
+              "lede",
+              "netLabel",
+              "netEn",
+              "netCostLabel",
+              "netGain",
+              "netMult",
+              "metaLeft",
+              "metaMid",
+              "colHeads",
+              "showColHeads",
+              "headingHtml",
+              "footNote",
+              "wordmarkLabel",
+              "wordmarkSub",
+              "ghostMark",
+              "railText",
+              "ixNo",
+              "ixLabel"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "rows[3]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "rows",
+                  "fields": [
+                    {
+                      "key": "it",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "cost",
+                      "semantic": "displayValue"
+                    },
+                    {
+                      "key": "gain",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "mult",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "rowCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "leadHtml",
+                  "value": ""
+                },
+                {
+                  "path": "lede",
+                  "value": ""
+                },
+                {
+                  "path": "netLabel",
+                  "value": ""
+                },
+                {
+                  "path": "netEn",
+                  "value": ""
+                },
+                {
+                  "path": "netCostLabel",
+                  "value": ""
+                },
+                {
+                  "path": "netGain",
+                  "value": ""
+                },
+                {
+                  "path": "netMult",
+                  "value": ""
+                },
+                {
+                  "path": "metaLeft",
+                  "value": ""
+                },
+                {
+                  "path": "metaMid",
+                  "value": ""
+                },
+                {
+                  "path": "colHeads",
+                  "value": []
+                },
+                {
+                  "path": "showColHeads",
+                  "value": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme11_page007",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.summary.short",
+            "wordmarkSub": "presentation.items[0].detail.short",
+            "ghostMark": "presentation.pageIntent",
+            "railText": "presentation.items[0].label",
+            "ixNo": "presentation.items[1].label",
+            "ixLabel": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "parts",
+              "itemCount",
+              "lede",
+              "metaLeft",
+              "metaMid",
+              "headingHtml",
+              "lead",
+              "wordmarkLabel",
+              "wordmarkSub",
+              "ghostMark",
+              "railText",
+              "ixNo",
+              "ixLabel"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "parts[3]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "parts[4]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "parts",
+                  "fields": [
+                    {
+                      "key": "t",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "chart-last",
+                      "sourceIds": [
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "lede",
+                  "value": ""
+                },
+                {
+                  "path": "metaLeft",
+                  "value": ""
+                },
+                {
+                  "path": "metaMid",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme11_page067",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "wordmarkSub": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.summary.short",
+            "ghostMark": "presentation.pageIntent",
+            "railText": "presentation.items[0].label",
+            "ixNo": "presentation.items[1].label",
+            "ixLabel": "presentation.items[2].label",
+            "noteHtml": "presentation.items[0].detail.short"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "terms",
+              "rowCount",
+              "eyebrowNo",
+              "eyebrowEn",
+              "metaLeft",
+              "metaMid",
+              "headingHtml",
+              "wordmarkSub",
+              "wordmarkLabel",
+              "ghostMark",
+              "railText",
+              "ixNo",
+              "ixLabel",
+              "noteHtml"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "terms[0]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "terms[4]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "terms",
+                  "fields": [
+                    {
+                      "key": "t",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "e",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "d",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-first",
+                      "sourceIds": [
+                        "fact-1"
+                      ]
+                    }
+                  ],
+                  "countPath": "rowCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "eyebrowNo",
+                  "value": ""
+                },
+                {
+                  "path": "eyebrowEn",
+                  "value": ""
+                },
+                {
+                  "path": "metaLeft",
+                  "value": ""
+                },
+                {
+                  "path": "metaMid",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "同组用户逐步转化",
+              "audience": "增长与产品体验团队",
+              "narrativeRole": "比较同组用户逐步转化人数",
+              "emphasis": "100/68/42人为同组阶段数",
+              "rationale": "高能增长profile为暖深底、橙红焦点、酸绿次级和中圆角高能指标板。bar展示有序阶段人数，不将100/68/42归一为构成百分比；真实paper/ink模板分支保持原样。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-chart-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-chart-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-chart-core",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "subtitle"
+              },
+              {
+                "id": "bespoke-chart-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 5,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "caption"
+              },
+              {
+                "id": "bespoke-chart-plot",
+                "type": "chart",
+                "grid": {
+                  "column": 5,
+                  "row": 1,
+                  "width": 8,
+                  "height": 8
+                },
+                "chartType": "bar",
+                "showValues": true
+              },
+              {
+                "id": "bespoke-chart-facts",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 4,
+                  "height": 3
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[5].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[5].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[5].items[2]"
+              }
+            ],
+            "chartBindings": [
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "elements[4].data[0]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-2"
+                ],
+                "target": "elements[4].data[1]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "elements[4].data[2]"
+              }
+            ],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].text": "presentation.coreMessage",
+            "elements[3].text": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "content": {
+        "presentation": {
+          "pageIntent": "statement",
+          "coreMessage": "减少摩擦，解释价值，检验留存",
+          "title": {
+            "full": "让使用变成习惯",
+            "short": "让使用变成习惯"
+          },
+          "summary": {
+            "full": "减少首次操作摩擦；在关键时刻解释价值；检验持续使用原因。本页为概念演示。",
+            "short": "减少摩擦，解释价值，检验留存"
+          },
+          "items": [
+            {
+              "id": "action-1",
+              "label": "摩擦",
+              "detail": {
+                "full": "减少首次操作摩擦",
+                "short": "减少首次操作摩擦"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "action-2",
+              "label": "价值",
+              "detail": {
+                "full": "在关键时刻解释价值",
+                "short": "在关键时刻解释价值"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "action-3",
+              "label": "留存",
+              "detail": {
+                "full": "检验持续使用原因",
+                "short": "检验持续使用原因"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme11_page077",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "wordmarkSub": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.pageIntent",
+            "ghostMark": "presentation.items[0].label",
+            "railText": "presentation.items[1].label",
+            "ixNo": "presentation.items[2].label",
+            "metaLeft": "presentation.items[0].detail.short",
+            "metaMid": "presentation.items[1].detail.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "steps",
+              "itemCount",
+              "ixLabel",
+              "tagText",
+              "lede",
+              "arrowGlyph",
+              "whenLeft",
+              "whenRight",
+              "headingHtml",
+              "wordmarkSub",
+              "wordmarkLabel",
+              "ghostMark",
+              "railText",
+              "ixNo",
+              "metaLeft",
+              "metaMid"
+            ],
+            "projectedItemIds": [
+              "action-1",
+              "action-2",
+              "action-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "steps",
+                  "fields": [
+                    {
+                      "key": "t",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "d",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-1"
+                    },
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-3"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "ixLabel",
+                  "value": ""
+                },
+                {
+                  "path": "tagText",
+                  "value": ""
+                },
+                {
+                  "path": "lede",
+                  "value": ""
+                },
+                {
+                  "path": "arrowGlyph",
+                  "value": ""
+                },
+                {
+                  "path": "whenLeft",
+                  "value": ""
+                },
+                {
+                  "path": "whenRight",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme11_page007",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.pageIntent",
+            "wordmarkSub": "presentation.items[0].detail.short",
+            "ghostMark": "presentation.items[0].label",
+            "railText": "presentation.items[1].label",
+            "ixNo": "presentation.items[2].label",
+            "metaLeft": "presentation.items[1].detail.short",
+            "metaMid": "presentation.items[2].detail.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "parts",
+              "itemCount",
+              "ixLabel",
+              "lede",
+              "headingHtml",
+              "lead",
+              "wordmarkLabel",
+              "wordmarkSub",
+              "ghostMark",
+              "railText",
+              "ixNo",
+              "metaLeft",
+              "metaMid"
+            ],
+            "projectedItemIds": [
+              "action-3",
+              "action-2",
+              "action-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "parts",
+                  "fields": [
+                    {
+                      "key": "t",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-3"
+                    },
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-1"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "ixLabel",
+                  "value": ""
+                },
+                {
+                  "path": "lede",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme11_page018",
+          "contentMap": {
+            "headingHtml": "presentation.title.short",
+            "wordmarkSub": "presentation.coreMessage",
+            "wordmarkLabel": "presentation.pageIntent",
+            "pillarWord": "presentation.items[0].label",
+            "ghostMark": "presentation.items[1].label",
+            "railText": "presentation.items[2].label",
+            "noteHtml": "presentation.summary.full",
+            "metaLeft": "presentation.items[0].detail.short",
+            "metaMid": "presentation.items[1].detail.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "pillars",
+              "pillarCount",
+              "ixNo",
+              "ixLabel",
+              "headingHtml",
+              "wordmarkSub",
+              "wordmarkLabel",
+              "pillarWord",
+              "ghostMark",
+              "railText",
+              "noteHtml",
+              "metaLeft",
+              "metaMid"
+            ],
+            "projectedItemIds": [
+              "action-2",
+              "action-1",
+              "action-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "pillars",
+                  "fields": [
+                    {
+                      "key": "w",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "d",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "sv",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "sl",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-1"
+                    },
+                    {
+                      "sourceId": "action-3"
+                    }
+                  ],
+                  "countPath": "pillarCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "ixNo",
+                  "value": ""
+                },
+                {
+                  "path": "ixLabel",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "减少摩擦，解释价值，检验留存",
+              "audience": "增长与产品体验团队",
+              "narrativeRole": "以摩擦价值留存三项行动收束",
+              "emphasis": "橙红焦点与酸绿次级呼应",
+              "rationale": "高能增长profile为暖深底、橙红焦点、酸绿次级和中圆角高能指标板。bar展示有序阶段人数，不将100/68/42归一为构成百分比；真实paper/ink模板分支保持原样。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "action-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "action-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "action-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    }
+  ]
+}

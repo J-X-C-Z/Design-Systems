@@ -1,0 +1,8 @@
+import fs from 'node:fs';import {validateGoalSpec} from './scripts/validate-goal-spec.mjs';
+const root='dashi-style-previews/theme04/',g=JSON.parse(fs.readFileSync(root+'goal.json')),pack=JSON.parse(fs.readFileSync(root+'page-content-pack.json'));
+// A vertical annotation in the actual cover clips long disclaimers; shorten canonical copy, not template geometry.
+g.slides[0].content.presentation.summary.full='随身饮品概念；纯虚构演示。';pack.pages[0].presentation.summary.full=g.slides[0].content.presentation.summary.full;
+// Flavour preference is categorical: a bar, not a time-trend connecting line.
+g.slides[1].variants[3].composition.elements.find(e=>e.type==='chart').chartType='bar';g.slides[1].variants[3].composition.designIntent.rationale+=' 口味属于离散分类，定制图表采用bar，不能暗示时间趋势。';
+const comp=g.slides[1].variants[3].composition;comp.elements.find(e=>e.id==='bespoke-chart-core').grid.height=1;comp.elements.find(e=>e.id==='bespoke-chart-summary').grid.row=5;Object.assign(comp.elements.find(e=>e.id==='bespoke-chart-facts').grid,{row:6,height:3});
+const errs=validateGoalSpec(g);if(errs.length)throw Error(errs.join('\n'));fs.writeFileSync(root+'goal.json',JSON.stringify(g,null,2));fs.writeFileSync(root+'page-content-pack.json',JSON.stringify(pack,null,2));

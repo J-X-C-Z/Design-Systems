@@ -1,0 +1,200 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "三片社区，共享阅读时光",
+        "title": {
+          "full": "城市阅读，结构观察",
+          "short": "城市阅读，结构观察"
+        },
+        "summary": {
+          "full": "甲、乙、丙三个虚构社区分别设8、5、3处公共阅读点；全部为演示数据。",
+          "short": "16处公共阅读点 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "甲社区",
+            "value": 8,
+            "displayValue": "8",
+            "unit": "处",
+            "detail": {
+              "full": "公共阅读点",
+              "short": "公共阅读点"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "乙社区",
+            "value": 5,
+            "displayValue": "5",
+            "unit": "处",
+            "detail": {
+              "full": "公共阅读点",
+              "short": "公共阅读点"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "丙社区",
+            "value": 3,
+            "displayValue": "3",
+            "unit": "处",
+            "detail": {
+              "full": "公共阅读点",
+              "short": "公共阅读点"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "三个观察点共同说明本页主题",
+        "title": {
+          "full": "借阅量集中于三个主要时段",
+          "short": "借阅量集中于三个主要时段"
+        },
+        "summary": {
+          "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "三个观察点共同说明本页主题 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "晨间",
+            "detail": {
+              "full": "借阅占比",
+              "short": "借阅占比"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 24,
+            "displayValue": "24",
+            "unit": "%"
+          },
+          {
+            "id": "fact-2",
+            "label": "午间",
+            "detail": {
+              "full": "借阅占比",
+              "short": "借阅占比"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 31,
+            "displayValue": "31",
+            "unit": "%"
+          },
+          {
+            "id": "fact-3",
+            "label": "晚间",
+            "detail": {
+              "full": "借阅占比",
+              "short": "借阅占比"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 45,
+            "displayValue": "45",
+            "unit": "%"
+          }
+        ],
+        "chartData": [
+          {
+            "id": "fact-1",
+            "label": "晨间",
+            "value": 24,
+            "displayValue": "24",
+            "unit": "%"
+          },
+          {
+            "id": "fact-2",
+            "label": "午间",
+            "value": 31,
+            "displayValue": "31",
+            "unit": "%"
+          },
+          {
+            "id": "fact-3",
+            "label": "晚间",
+            "value": 45,
+            "displayValue": "45",
+            "unit": "%"
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "明确口径，比较结构，保留异常",
+        "title": {
+          "full": "让口径先于结论",
+          "short": "让口径先于结论"
+        },
+        "summary": {
+          "full": "标明统计口径；比较时段结构；保留异常记录。本页为概念演示。",
+          "short": "明确口径，比较结构，保留异常"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "采集",
+            "value": 20,
+            "displayValue": "20",
+            "unit": "分钟",
+            "detail": {
+              "full": "统一观察窗口",
+              "short": "统一观察窗口"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "复核",
+            "value": 15,
+            "displayValue": "15",
+            "unit": "分钟",
+            "detail": {
+              "full": "交叉核对记录",
+              "short": "交叉核对记录"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "归档",
+            "value": 10,
+            "displayValue": "10",
+            "unit": "分钟",
+            "detail": {
+              "full": "保留异常说明",
+              "short": "保留异常说明"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

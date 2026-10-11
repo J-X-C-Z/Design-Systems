@@ -1,0 +1,37 @@
+{
+  "theme": "theme04",
+  "checked_at": "2026-10-11T15:39:00Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chromium",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "checks": [
+    "12 desktop+narrow visually inspected",
+    "all12 navigation choices",
+    "no document horizontal overflow",
+    "no text outside slide canvas",
+    "42/35/23% categorical values preserved",
+    "schema/copy passed",
+    "internal overflow ancestor intersection checked for bespoke text, not only whole-canvas bounds"
+  ],
+  "limitations": [
+    "small native labels remain small at390px; readable canonical text provided",
+    "system fallback fonts; not physical mobile or native SP editor QA"
+  ],
+  "fixes": [
+    "shortened canonical vertical cover annotation to fit unchanged actual template",
+    "restricted bespoke categorical chart changed from line to bar",
+    "expanded bespoke facts card from2 to3gridrows; clipping-aware DOM confirms all38 source text bounds visible"
+  ],
+  "screenshot_method": "desktop full-viewport captures plus recorded DOM rectangles and screenshot scaling; source viewport captures retained",
+  "private_build_identifier_withheld": true
+}

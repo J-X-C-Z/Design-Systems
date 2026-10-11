@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "collection": "Dashi PPT 预览",
+  "source_tag": "三方参考",
+  "level": 3,
+  "classification_manifest": "../web/dashi-previews/manifest.json",
+  "preview_index": "../web/dashi-previews/index.html",
+  "theme_count": 12,
+  "html_variants": 144,
+  "sp_samples": 12,
+  "sp_pages": 36,
+  "sp_objects": 752,
+  "native_sp_acceptance": "not_verified",
+  "local_language_count_unchanged": 22,
+  "branch": "design/dashi-ppt-previews"
+}

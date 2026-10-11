@@ -47,6 +47,12 @@
 
 [Echo 网站设计语言研究](research/third-party/echo/README.md) · [分类 manifest](research/third-party/echo/catalog-manifest.json)：复古终端与新粗野主义的档案交叉案例，三方参考／三级，AI 整理；不计为新增本地语言。仅原创研究和原站链接，不含截图、小说原文或上游代码。
 
+## Dashi PPT 独立预览分支
+
+本分支 `design/dashi-ppt-previews` 单独归档 [12 套主题预览](web/dashi-previews/index.html)与[独立分类清单](classification/dashi-previews.json)，仍属三方参考／三级，不计入 22 个本地语言。每套 3 个逻辑页、每页 3 个真实模板＋1 个受限组合，共 144 个 HTML 方案。
+
+[SP 样例入口](web/dashi-previews/sp-samples/index.html)含 12 套、36 页、752 个独立对象；源 DOM 校准与原包限定桌面／390px 检查属于供应方既有证据。本次仅核对公开归档、结构、链接与哈希，原生 SP 导入、编辑、保存重开及 PPTX 保真仍未验收。转换源码按要求剔除 vendor-work，精简包不承诺独立重建；[公开范围与许可说明](web/dashi-previews/ARCHIVE-SCOPE.md)。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。

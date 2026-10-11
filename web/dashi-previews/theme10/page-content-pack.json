@@ -1,0 +1,182 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "虚构行业指数观察",
+        "title": {
+          "full": "看清结构，再看变化",
+          "short": "看清结构，再看变化"
+        },
+        "summary": {
+          "full": "虚构行业指数观察。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "虚构行业指数观察 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "虚构行业指数观察",
+              "short": "虚构行业指数观察"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "行业研究员",
+              "short": "行业研究员"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "指数由100点升至114点",
+        "title": {
+          "full": "区分指数点位与结构贡献",
+          "short": "区分指数点位与结构贡献"
+        },
+        "summary": {
+          "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "三期指数 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "基期",
+            "detail": {
+              "full": "指数点",
+              "short": "指数点"
+            },
+            "value": 100,
+            "displayValue": "100",
+            "unit": "点",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "第二期",
+            "detail": {
+              "full": "指数点",
+              "short": "指数点"
+            },
+            "value": 108,
+            "displayValue": "108",
+            "unit": "点",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "第三期",
+            "detail": {
+              "full": "指数点",
+              "short": "指数点"
+            },
+            "value": 114,
+            "displayValue": "114",
+            "unit": "点",
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [
+          {
+            "id": "fact-1",
+            "label": "基期",
+            "value": 100,
+            "displayValue": "100",
+            "unit": "点"
+          },
+          {
+            "id": "fact-2",
+            "label": "第二期",
+            "value": 108,
+            "displayValue": "108",
+            "unit": "点"
+          },
+          {
+            "id": "fact-3",
+            "label": "第三期",
+            "value": 114,
+            "displayValue": "114",
+            "unit": "点"
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "公开口径，对比结构，说明限制",
+        "title": {
+          "full": "让变化有据可查",
+          "short": "让变化有据可查"
+        },
+        "summary": {
+          "full": "公开计算口径；比较结构变化；说明样本限制。本页为概念演示。",
+          "short": "公开口径，对比结构，说明限制"
+        },
+        "items": [
+          {
+            "id": "action-1",
+            "label": "口径",
+            "detail": {
+              "full": "公开计算口径",
+              "short": "公开计算口径"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "action-2",
+            "label": "结构",
+            "detail": {
+              "full": "比较结构变化",
+              "short": "比较结构变化"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "action-3",
+            "label": "限制",
+            "detail": {
+              "full": "说明样本限制",
+              "short": "说明样本限制"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,1303 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "从单点效率到全链协同",
+  "goal": "制造产业链分析样例",
+  "themePack": "theme06",
+  "pageCount": 3,
+  "randomSeed": "theme06-20261011-sample",
+  "workflowRunId": "20261011154952714-50ea764c",
+  "slides": [
+    {
+      "id": "cover",
+      "content": {
+        "presentation": {
+          "pageIntent": "cover",
+          "coreMessage": "制造产业链分析样例",
+          "title": {
+            "full": "从单点效率到全链协同",
+            "short": "从单点效率到全链协同"
+          },
+          "summary": {
+            "full": "制造产业链分析样例。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "制造产业链分析样例 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "用途",
+              "detail": {
+                "full": "制造产业链分析样例",
+                "short": "制造产业链分析样例"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "受众",
+              "detail": {
+                "full": "战略团队",
+                "short": "战略团队"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "性质",
+              "detail": {
+                "full": "纯概念演示",
+                "short": "纯概念演示"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme06_page008",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "subhead": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent",
+            "goal": "presentation.items[0].label",
+            "closing": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "layers",
+              "cardCount",
+              "title",
+              "subhead",
+              "eyebrowId",
+              "eyebrowLabel",
+              "goal",
+              "closing"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "layers",
+                  "fields": [
+                    {
+                      "key": "name",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "axis",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme06_page072",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "subhead": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent",
+            "closing": "presentation.items[0].label",
+            "watchTag": "presentation.items[1].label",
+            "thesis": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "phases",
+              "phaseCount",
+              "railCaption",
+              "watchCaption",
+              "metricCaption",
+              "footRight",
+              "watchList",
+              "watchCount",
+              "metrics",
+              "metricCount",
+              "title",
+              "subhead",
+              "eyebrowId",
+              "eyebrowLabel",
+              "closing",
+              "watchTag",
+              "thesis"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "phases",
+                  "fields": [
+                    {
+                      "key": "when",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "name",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ],
+                  "countPath": "phaseCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "railCaption",
+                  "value": ""
+                },
+                {
+                  "path": "watchCaption",
+                  "value": ""
+                },
+                {
+                  "path": "metricCaption",
+                  "value": ""
+                },
+                {
+                  "path": "footRight",
+                  "value": ""
+                },
+                {
+                  "path": "watchList",
+                  "value": []
+                },
+                {
+                  "path": "watchCount",
+                  "value": 0
+                },
+                {
+                  "path": "metrics",
+                  "value": []
+                },
+                {
+                  "path": "metricCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme06_page080",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "subhead": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent",
+            "chapterNo": "presentation.items[0].label",
+            "closing": "presentation.items[1].label",
+            "watermark": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "keywords",
+              "keywordCount",
+              "chapterLabel",
+              "title",
+              "subhead",
+              "eyebrowId",
+              "eyebrowLabel",
+              "chapterNo",
+              "closing",
+              "watermark"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "keywords",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "keywordCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "chapterLabel",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "制造产业链分析样例",
+              "audience": "供应链与运营分析团队",
+              "narrativeRole": "建立系统关系的范围",
+              "emphasis": "节点与关系清楚分层",
+              "rationale": "遵循深色图谱风的近黑底、青柠关系线、小圆角暗面板与高对比数字，受限composition内用bar比较离散环节，避免误当百分比。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "content": {
+        "presentation": {
+          "pageIntent": "metrics",
+          "coreMessage": "原料环节占用最多时间",
+          "title": {
+            "full": "瓶颈应沿供应链逐层定位",
+            "short": "瓶颈应沿供应链逐层定位"
+          },
+          "summary": {
+            "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "周转时间 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "原料",
+              "detail": {
+                "full": "周转天数",
+                "short": "周转天数"
+              },
+              "value": 18,
+              "displayValue": "18",
+              "unit": "天",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "加工",
+              "detail": {
+                "full": "周转天数",
+                "short": "周转天数"
+              },
+              "value": 9,
+              "displayValue": "9",
+              "unit": "天",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "配送",
+              "detail": {
+                "full": "周转天数",
+                "short": "周转天数"
+              },
+              "value": 4,
+              "displayValue": "4",
+              "unit": "天",
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [
+            {
+              "id": "fact-1",
+              "label": "原料",
+              "value": 18,
+              "displayValue": "18",
+              "unit": "天"
+            },
+            {
+              "id": "fact-2",
+              "label": "加工",
+              "value": 9,
+              "displayValue": "9",
+              "unit": "天"
+            },
+            {
+              "id": "fact-3",
+              "label": "配送",
+              "value": 4,
+              "displayValue": "4",
+              "unit": "天"
+            }
+          ],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme06_page077",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "subhead": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent",
+            "closing": "presentation.items[0].label",
+            "watermark": "presentation.items[1].label",
+            "thesis": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "stats",
+              "statCount",
+              "footRight",
+              "title",
+              "subhead",
+              "eyebrowId",
+              "eyebrowLabel",
+              "closing",
+              "watermark",
+              "thesis"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "stats[3]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "stats",
+                  "fields": [
+                    {
+                      "key": "v",
+                      "semantic": "displayValue"
+                    },
+                    {
+                      "key": "k",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "statCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "footRight",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme06_page070",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "subhead": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent",
+            "closing": "presentation.items[0].label",
+            "stanceTag": "presentation.items[1].label",
+            "dirTag": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "directions",
+              "cardCount",
+              "directionUnit",
+              "thesis",
+              "watchCaption",
+              "railCaption",
+              "footRight",
+              "watch",
+              "watchCount",
+              "mediaSlotCount",
+              "title",
+              "subhead",
+              "eyebrowId",
+              "eyebrowLabel",
+              "closing",
+              "stanceTag",
+              "dirTag"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "directions[3]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "directions[4]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "directions",
+                  "fields": [
+                    {
+                      "key": "name",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "tag",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "chart-last",
+                      "sourceIds": [
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "directionUnit",
+                  "value": ""
+                },
+                {
+                  "path": "thesis",
+                  "value": ""
+                },
+                {
+                  "path": "watchCaption",
+                  "value": ""
+                },
+                {
+                  "path": "railCaption",
+                  "value": ""
+                },
+                {
+                  "path": "footRight",
+                  "value": ""
+                },
+                {
+                  "path": "watch",
+                  "value": []
+                },
+                {
+                  "path": "watchCount",
+                  "value": 0
+                },
+                {
+                  "path": "mediaSlotCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme06_page083",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "subhead": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent",
+            "closing": "presentation.items[0].label",
+            "watchTag": "presentation.items[1].label",
+            "thesis": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "phases",
+              "phaseCount",
+              "railCaption",
+              "watchCaption",
+              "metricCaption",
+              "footRight",
+              "watchList",
+              "watchCount",
+              "metrics",
+              "metricCount",
+              "title",
+              "subhead",
+              "eyebrowId",
+              "eyebrowLabel",
+              "closing",
+              "watchTag",
+              "thesis"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-1",
+              "fact-3"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "phases[0]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "phases",
+                  "fields": [
+                    {
+                      "key": "when",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "name",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "phaseCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "railCaption",
+                  "value": ""
+                },
+                {
+                  "path": "watchCaption",
+                  "value": ""
+                },
+                {
+                  "path": "metricCaption",
+                  "value": ""
+                },
+                {
+                  "path": "footRight",
+                  "value": ""
+                },
+                {
+                  "path": "watchList",
+                  "value": []
+                },
+                {
+                  "path": "watchCount",
+                  "value": 0
+                },
+                {
+                  "path": "metrics",
+                  "value": []
+                },
+                {
+                  "path": "metricCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "原料环节占用最多时间",
+              "audience": "供应链与运营分析团队",
+              "narrativeRole": "比较原料加工配送的周转天数",
+              "emphasis": "18/9/4天口径统一",
+              "rationale": "遵循深色图谱风的近黑底、青柠关系线、小圆角暗面板与高对比数字，受限composition内用bar比较离散环节，避免误当百分比。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-chart-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-chart-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-chart-core",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "subtitle"
+              },
+              {
+                "id": "bespoke-chart-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 5,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "caption"
+              },
+              {
+                "id": "bespoke-chart-plot",
+                "type": "chart",
+                "grid": {
+                  "column": 5,
+                  "row": 1,
+                  "width": 8,
+                  "height": 8
+                },
+                "chartType": "bar",
+                "showValues": true
+              },
+              {
+                "id": "bespoke-chart-facts",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 4,
+                  "height": 3
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[5].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[5].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[5].items[2]"
+              }
+            ],
+            "chartBindings": [
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "elements[4].data[0]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-2"
+                ],
+                "target": "elements[4].data[1]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "elements[4].data[2]"
+              }
+            ],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].text": "presentation.coreMessage",
+            "elements[3].text": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "content": {
+        "presentation": {
+          "pageIntent": "statement",
+          "coreMessage": "协同周转",
+          "title": {
+            "full": "供需同行",
+            "short": "供需同行"
+          },
+          "summary": {
+            "full": "识别供给约束；追踪加工周转；同步交付节点。本页为概念演示。",
+            "short": "同步交付"
+          },
+          "items": [],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme06_page008",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "subhead": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "layers",
+              "cardCount",
+              "goal",
+              "closing",
+              "title",
+              "subhead",
+              "eyebrowId",
+              "eyebrowLabel"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "layers",
+                  "fields": [
+                    {
+                      "key": "name",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "axis",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "goal",
+                  "value": ""
+                },
+                {
+                  "path": "closing",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme06_page079",
+          "contentMap": {
+            "quote": "presentation.title.short",
+            "source": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "kicker",
+              "watermark",
+              "endLabel",
+              "meta",
+              "metaCount",
+              "quote",
+              "source",
+              "eyebrowId",
+              "eyebrowLabel"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [],
+              "values": [
+                {
+                  "path": "kicker",
+                  "value": ""
+                },
+                {
+                  "path": "watermark",
+                  "value": ""
+                },
+                {
+                  "path": "endLabel",
+                  "value": ""
+                },
+                {
+                  "path": "meta",
+                  "value": []
+                },
+                {
+                  "path": "metaCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme06_page083",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "subhead": "presentation.coreMessage",
+            "eyebrowId": "presentation.summary.short",
+            "eyebrowLabel": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "phases",
+              "phaseCount",
+              "closing",
+              "watchTag",
+              "thesis",
+              "railCaption",
+              "watchCaption",
+              "metricCaption",
+              "footRight",
+              "watchList",
+              "watchCount",
+              "metrics",
+              "metricCount",
+              "title",
+              "subhead",
+              "eyebrowId",
+              "eyebrowLabel"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "phases",
+                  "fields": [
+                    {
+                      "key": "when",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "name",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ],
+                  "countPath": "phaseCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "closing",
+                  "value": ""
+                },
+                {
+                  "path": "watchTag",
+                  "value": ""
+                },
+                {
+                  "path": "thesis",
+                  "value": ""
+                },
+                {
+                  "path": "railCaption",
+                  "value": ""
+                },
+                {
+                  "path": "watchCaption",
+                  "value": ""
+                },
+                {
+                  "path": "metricCaption",
+                  "value": ""
+                },
+                {
+                  "path": "footRight",
+                  "value": ""
+                },
+                {
+                  "path": "watchList",
+                  "value": []
+                },
+                {
+                  "path": "watchCount",
+                  "value": 0
+                },
+                {
+                  "path": "metrics",
+                  "value": []
+                },
+                {
+                  "path": "metricCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "协同周转",
+              "audience": "供应链与运营分析团队",
+              "narrativeRole": "以链路视角定位改进顺序",
+              "emphasis": "主张保留足够暗场留白",
+              "rationale": "遵循深色图谱风的近黑底、青柠关系线、小圆角暗面板与高对比数字，受限composition内用bar比较离散环节，避免误当百分比。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 12,
+                  "height": 5
+                }
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    }
+  ]
+}

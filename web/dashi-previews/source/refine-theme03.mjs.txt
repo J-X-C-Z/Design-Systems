@@ -1,0 +1,6 @@
+import fs from 'node:fs';import {listLayoutsForContentPacks,materializeTemplateProjection} from './scripts/workflow/layout-query.mjs';import {validateGoalSpec} from './scripts/validate-goal-spec.mjs';
+const file='dashi-style-previews/theme03/goal.json',g=JSON.parse(fs.readFileSync(file));const page=g.slides[1],c=listLayoutsForContentPacks({theme:'theme03',pages:[page.content],limit:50,seed:g.randomSeed})[0].find(x=>x.layout==='theme03_page036');const p=materializeTemplateProjection(c,page.content.presentation,1);page.variants[1]={id:'v2',kind:'template',layout:c.layout,contentMap:p.contentMap,projection:{chartMode:p.projectionPlan.chartMode,contentPaths:p.contentPaths,projectedItemIds:p.projectedItemIds,chartBindings:p.chartBindings,structure:p.structure}};
+// Throughput is not percentage. Replace the clamping percent-gauge with a true text/sequence layout.
+// Bespoke semantic tone is allowed; use the theme's lime secondary to keep 100 events/s legible on dark panels.
+page.variants[3].composition.elements.find(e=>e.id==='bespoke-metric-value-2').tone='positive';page.variants[3].composition.designIntent.rationale+=' 次级指标使用原主题positive青柠tone，避免蓝字在暗面板上低对比。';
+const errors=validateGoalSpec(g);if(errors.length)throw Error(errors.join('\n'));fs.writeFileSync(file,JSON.stringify(g,null,2));

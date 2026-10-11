@@ -1,0 +1,5 @@
+/* Unmodified background rules from fixed upstream assets/template-swiss.html, AGPL-3.0. */
+.bg-blue{background:radial-gradient(125% 135% at 16% 102%,#5a8dff 0%,#2f6bff 20%,#1d4ad8 40%,#122e93 60%,#08164a 80%,#03081e 100%)}
+.bg-deep{background:radial-gradient(115% 120% at 24% 90%,#224bd6 0%,#15369f 26%,#0c205f 50%,#070f38 72%,#03071a 100%)}
+.bg-electric{background:radial-gradient(120% 130% at 28% 102%,#5f8eff 0%,#386df3 20%,#2350d6 38%,#1638a0 56%,#0c2160 74%,#050e36 90%,#02060f 100%)}
+.bg-night{background:radial-gradient(125% 120% at 78% 8%,#1c3aa8 0%,#142b78 22%,#0b1a4c 44%,#060f30 66%,#03081c 84%,#01030c 100%)}

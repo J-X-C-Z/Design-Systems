@@ -1,0 +1,41 @@
+{
+  "theme": "theme07",
+  "checked_at": "2026-10-11T16:09:37Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chromium",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "checks": [
+    "12 desktop+narrow visuals",
+    "12 navigation choices",
+    "no horizontal overflow",
+    "all nondecorative text clipping checked",
+    "72/56/64分 and all3 final actions retained",
+    "schema/copy passed",
+    "47 final bespoke source texts calibrated with no clipping"
+  ],
+  "exceptions": [
+    "page2 toc-card-watermark intentionally bleeds; normal labels are fully visible"
+  ],
+  "fixes": [
+    "replace quote structures with missing central canonical content",
+    "replace fixed % unit and categorical line chart structures",
+    "add3 meaningful final action items",
+    "cover full summary shortened and overlap removed"
+  ],
+  "limitations": [
+    "actual dark section branch retained alongside cold-white report templates",
+    "upstream nonfocus risk-card secondary labels are low contrast; canonical readable section retained",
+    "system fonts, no physicalmobile or nativeSP UI acceptance"
+  ],
+  "private_build_identifier_withheld": true
+}

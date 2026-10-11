@@ -1,0 +1,5 @@
+import fs from 'node:fs';import {listLayoutsForContentPacks,materializeTemplateProjection} from './scripts/workflow/layout-query.mjs';import {validateGoalSpec} from './scripts/validate-goal-spec.mjs';
+const f='dashi-style-previews/theme02/goal.json',g=JSON.parse(fs.readFileSync(f));
+// Takeaways has a present-mode rail; HTML-only initial states must show all three required facts.
+const page=g.slides[1],c=listLayoutsForContentPacks({theme:'theme02',pages:[page.content],limit:50,seed:g.randomSeed})[0].find(x=>x.layout==='theme02_page056');const p=materializeTemplateProjection(c,page.content.presentation,2);page.variants[2]={id:'v3',kind:'template',layout:c.layout,contentMap:p.contentMap,projection:{chartMode:p.projectionPlan.chartMode,contentPaths:p.contentPaths,projectedItemIds:p.projectedItemIds,chartBindings:p.chartBindings,structure:p.structure}};
+const e=validateGoalSpec(g);if(e.length)throw Error(e.join('\n'));fs.writeFileSync(f,JSON.stringify(g,null,2));

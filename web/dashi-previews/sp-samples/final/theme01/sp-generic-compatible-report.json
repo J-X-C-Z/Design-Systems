@@ -1,0 +1,53 @@
+{
+  "format": "dashi-sp-generic-compatibility-report",
+  "schemaVersion": 1,
+  "theme": "theme01",
+  "baseDocumentId": "dashi-theme01-bespoke-v4-a6863f184f0b",
+  "baseSampleSha256": "50326a637852dd015fc543f0843ff9ec4ec53fa18ef11d08562f9234125b1d7d",
+  "derivedDocumentId": "dashi-theme01-bespoke-v4-a6863f184f0b-generic-compatible-v1",
+  "sourceFaithfulDocumentUnchanged": true,
+  "spProductChanged": false,
+  "upstreamTemplatesChanged": false,
+  "change": {
+    "slideId": "theme01-evidence-v4",
+    "elementId": "theme01-evidence-v4-12-detail",
+    "text": "归档完整率",
+    "property": "y",
+    "before": {
+      "x": 79.333333,
+      "y": 311.468889,
+      "w": 434.552083,
+      "h": 20.531111
+    },
+    "after": {
+      "x": 79.333333,
+      "y": 319.468889,
+      "w": 434.552083,
+      "h": 20.531111
+    },
+    "deltaTargetPixels": 8,
+    "deltaSourceEquivalentPixels": 12
+  },
+  "why": "Changing h does not change generic SVG text placement. Changing lineHeight has no effect because the generic renderer ignores it. Moving the single detail text down by 8 target pixels adds a readable gap within the existing panel. This intentionally departs from source DOM geometry and therefore is a separate variant.",
+  "nativeEditorQA": "not_run",
+  "slideDiffCheck": "passed: after restoring this one y field all three slides exactly equal base slides",
+  "validation": {
+    "main": {
+      "schema": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "canonicalNativeCanonical": "passed",
+      "genericHTMLExportImport": "passed exact equality"
+    },
+    "pr3": {
+      "schema": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "canonicalNativeCanonical": "passed"
+    }
+  }
+}

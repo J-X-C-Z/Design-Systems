@@ -1,0 +1,129 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "轻量协作产品发布",
+        "title": {
+          "full": "一处收拢，轻装协作",
+          "short": "一处收拢，轻装协作"
+        },
+        "summary": {
+          "full": "轻量协作产品发布。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "轻量协作产品发布 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "轻量协作产品发布",
+              "short": "轻量协作产品发布"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "产品经理",
+              "short": "产品经理"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "三个观察点共同说明本页主题",
+        "title": {
+          "full": "启动更轻，协作更顺",
+          "short": "启动更轻，协作更顺"
+        },
+        "summary": {
+          "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "三个观察点共同说明本页主题 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "快速建档",
+            "detail": {
+              "full": "流程时长减少",
+              "short": "流程时长减少"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 32,
+            "displayValue": "32",
+            "unit": "%"
+          },
+          {
+            "id": "fact-2",
+            "label": "资料归集",
+            "detail": {
+              "full": "归档完整率",
+              "short": "归档完整率"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 86,
+            "displayValue": "86",
+            "unit": "%"
+          },
+          {
+            "id": "fact-3",
+            "label": "协作覆盖",
+            "detail": {
+              "full": "团队使用率",
+              "short": "团队使用率"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 74,
+            "displayValue": "74",
+            "unit": "%"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "资料统一，交接清晰",
+        "title": {
+          "full": "让交接自然发生",
+          "short": "让交接自然发生"
+        },
+        "summary": {
+          "full": "精简首次使用路径；建立统一资料入口；保留清楚的状态反馈。本页为概念演示。",
+          "short": "资料统一，交接清晰"
+        },
+        "items": [],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

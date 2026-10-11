@@ -1,0 +1,45 @@
+{
+  "theme": "theme10",
+  "checked_at": "2026-10-11T17:00:42Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chrome, independent tabs90/91",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "checks": [
+    "12 desktop+narrow visuals",
+    "12 navigation choices",
+    "no horizontal overflow",
+    "nondecorative text not clipped",
+    "Pages5/6/7 all visibly contain100/108/114点 and matching period labels",
+    "Bespoke three-period line chart100→108→114 accurate",
+    "47 final bespoke source texts DOM calibrated without clipping"
+  ],
+  "bespoke_clipped_text": [],
+  "exceptions": [],
+  "fixes": [
+    "Restored CSS for every selected native template family",
+    "Replaced concatenated giant cover support text with native prominent title structure",
+    "Removed fixed many-bar decoration unrelated to the actual three values",
+    "Assigned ticker structure to a three-fact projection so the middle108-point observation remains visible"
+  ],
+  "limitations": [
+    "system fonts",
+    "390px iframe viewport, not physical-phone touch QA",
+    "Page5 native title+ticker structure intentionally retains substantial negative space",
+    "native SP UI not inspected"
+  ],
+  "thumbnail_recommendation": {
+    "file": "desktop-06.jpg",
+    "reason": "Actual browser screenshot of distinctive blue/cyan/gold hexagonal cards with all three source values"
+  },
+  "private_build_identifier_withheld": true
+}

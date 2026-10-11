@@ -1,0 +1,10 @@
+{
+  "format": "dashi-sp-native-ui-qa",
+  "theme": "theme01",
+  "sourceSampleSha256": "50326a637852dd015fc543f0843ff9ec4ec53fa18ef11d08562f9234125b1d7d",
+  "status": "BLOCKED / NOT VERIFIED",
+  "importCompletion": "unknown",
+  "nativeEditorVisualEditSaveReopen": "not_verified",
+  "evidenceScope": "The supplied attempt timed out during approval; subsequent read-only follow-up established no import result. Private browser inventory and project identity withheld.",
+  "caution": "No success/failure inference and no blind import retry."
+}

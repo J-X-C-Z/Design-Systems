@@ -1,0 +1,8 @@
+// Static extraction only: preserve the reviewed CSS template literal used by the style-only React effect.
+// No React effects, browser editor code, or export components are executed here.
+import fs from 'node:fs';
+const source=fs.readFileSync('dashi-style-previews/vendor-work/dist/theme-runtime/theme02.module.mjs','utf8');
+const start=source.indexOf('Jd=`')+4,end=source.indexOf('`;function $()',start);if(start<4||end<start)throw Error('Pinned CSS boundary changed');
+let css=source.slice(start,end).replaceAll('${C}','gxn-theme');if(css.includes('${'))throw Error('Unexpected interpolation');
+css=css.replace(/\\u([0-9a-fA-F]{4})/g,(_,x)=>String.fromCharCode(parseInt(x,16))).replace(/\\x([0-9a-fA-F]{2})/g,(_,x)=>String.fromCharCode(parseInt(x,16))).replaceAll('\\`','`').replaceAll('\\\\','\\');
+fs.writeFileSync('dashi-style-previews/vendor-work/theme02-static.css',css);console.log(css.length);

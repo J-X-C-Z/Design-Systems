@@ -1,0 +1,1138 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "从接口到可靠系统",
+  "goal": "事件驱动架构说明",
+  "themePack": "theme03",
+  "pageCount": 3,
+  "randomSeed": "theme03-20261011-sample",
+  "workflowRunId": "20261011151341479-8031cc5c",
+  "slides": [
+    {
+      "id": "cover",
+      "content": {
+        "presentation": {
+          "pageIntent": "cover",
+          "coreMessage": "事件驱动架构说明",
+          "title": {
+            "full": "从接口到可靠系统",
+            "short": "从接口到可靠系统"
+          },
+          "summary": {
+            "full": "事件驱动架构说明。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "事件驱动架构说明 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "用途",
+              "detail": {
+                "full": "事件驱动架构说明",
+                "short": "事件驱动架构说明"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "受众",
+              "detail": {
+                "full": "工程师",
+                "short": "工程师"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "性质",
+              "detail": {
+                "full": "纯概念演示",
+                "short": "纯概念演示"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page038",
+          "contentMap": {
+            "copy.t005": "presentation.title.short",
+            "copy.t006": "presentation.coreMessage",
+            "copy.t001": "presentation.summary.short",
+            "copy.t002": "presentation.pageIntent",
+            "copy.t003": "presentation.items[0].label",
+            "copy.t004": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "takeaways",
+              "itemCount",
+              "copy.t005",
+              "copy.t006",
+              "copy.t001",
+              "copy.t002",
+              "copy.t003",
+              "copy.t004"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "takeaways",
+                  "fields": [
+                    {
+                      "key": "idx",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "axis",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "key",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page044",
+          "contentMap": {
+            "copy.t014": "presentation.title.short",
+            "copy.t004": "presentation.coreMessage",
+            "copy.t001": "presentation.summary.short",
+            "copy.t002": "presentation.pageIntent",
+            "copy.t003": "presentation.items[0].label",
+            "copy.t005": "presentation.items[1].label",
+            "copy.t006": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "stages",
+              "copy.t007",
+              "copy.t008",
+              "copy.t009",
+              "copy.t010",
+              "copy.t011",
+              "copy.t012",
+              "copy.t013",
+              "copy.t014",
+              "copy.t004",
+              "copy.t001",
+              "copy.t002",
+              "copy.t003",
+              "copy.t005",
+              "copy.t006"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "stages",
+                  "fields": [
+                    {
+                      "key": "cn",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "dir",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "copy.t007",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t008",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t009",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t010",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t011",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t012",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t013",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page019",
+          "contentMap": {
+            "copy.t006": "presentation.title.short",
+            "copy.t008": "presentation.coreMessage",
+            "copy.t001": "presentation.summary.short",
+            "copy.t002": "presentation.pageIntent",
+            "copy.t003": "presentation.items[0].label",
+            "copy.t004": "presentation.items[1].label",
+            "copy.t005": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "stats",
+              "statCount",
+              "copy.t007",
+              "copy.t012",
+              "imageCount",
+              "copy.t006",
+              "copy.t008",
+              "copy.t001",
+              "copy.t002",
+              "copy.t003",
+              "copy.t004",
+              "copy.t005"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "stats",
+                  "fields": [
+                    {
+                      "key": "num",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "unit",
+                      "semantic": "unit"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "statCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "copy.t007",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t012",
+                  "value": ""
+                },
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "事件驱动架构说明",
+              "audience": "工程师",
+              "narrativeRole": "建立开发者工具的范围",
+              "emphasis": "深色终端式字体层级",
+              "rationale": "使用深浅代码风的真实网格、等宽标记、冷色强调与面板规则；本组保留原生默认深色分支，不以重涂别的主题代替。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "content": {
+        "presentation": {
+          "pageIntent": "metrics",
+          "coreMessage": "同一测试口径下处理容量逐轮增加",
+          "title": {
+            "full": "从稳定处理到容量提升",
+            "short": "处理容量逐轮提升"
+          },
+          "summary": {
+            "full": "在统一压测口径下，三轮演示的处理容量依次为80、100与120事件/秒。所有数值为虚构演示。",
+            "short": "统一压测口径 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "基线方案",
+              "detail": {
+                "full": "每秒成功处理事件数",
+                "short": "处理容量"
+              },
+              "value": 80,
+              "displayValue": "80",
+              "unit": "事件/秒",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "并行方案",
+              "detail": {
+                "full": "每秒成功处理事件数",
+                "short": "处理容量"
+              },
+              "value": 100,
+              "displayValue": "100",
+              "unit": "事件/秒",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "批处理方案",
+              "detail": {
+                "full": "每秒成功处理事件数",
+                "short": "处理容量"
+              },
+              "value": 120,
+              "displayValue": "120",
+              "unit": "事件/秒",
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page007",
+          "contentMap": {
+            "kicker": "presentation.title.short",
+            "leadBody": "presentation.coreMessage",
+            "eyebrow": "presentation.title.full",
+            "leadTitle": "presentation.summary.short",
+            "leadNote": "presentation.items[0].detail.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "cards",
+              "cardCount",
+              "diagramStyle",
+              "kicker",
+              "leadBody",
+              "eyebrow",
+              "leadTitle",
+              "leadNote"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "cards",
+                  "fields": [
+                    {
+                      "key": "idx",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "name",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "dim",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "diagramStyle",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page036",
+          "contentMap": {
+            "copy.t005": "presentation.title.short",
+            "copy.t002": "presentation.coreMessage",
+            "copy.t001": "presentation.title.full",
+            "copy.t003": "presentation.summary.short",
+            "copy.t004": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "phases",
+              "itemCount",
+              "copy.t005",
+              "copy.t002",
+              "copy.t001",
+              "copy.t003",
+              "copy.t004"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "phases",
+                  "fields": [
+                    {
+                      "key": "span",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "tag",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "head",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "body",
+                      "semantic": "detail"
+                    },
+                    {
+                      "key": "cue",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page018",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "eyebrow": "presentation.title.full",
+            "kicker": "presentation.summary.short",
+            "caseTag": "presentation.pageIntent",
+            "quoteBody": "presentation.summary.full",
+            "quoteAttribution": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "milestones",
+              "imageCount",
+              "title",
+              "lead",
+              "eyebrow",
+              "kicker",
+              "caseTag",
+              "quoteBody",
+              "quoteAttribution"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "milestones",
+                  "fields": [
+                    {
+                      "key": "time",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "label",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "detail",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "support:title"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "同一测试口径下处理容量逐轮增加",
+              "audience": "工程师",
+              "narrativeRole": "用相同吞吐量单位比较三个阶段",
+              "emphasis": "80、100、120事件/秒，保留统一口径",
+              "rationale": "使用深浅代码风的真实网格、等宽标记、冷色强调与面板规则；本组保留原生默认深色分支，不以重涂别的主题代替。 次级指标使用原主题positive青柠tone，避免蓝字在暗面板上低对比。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-metric-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 3,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-metric-title",
+                "type": "text",
+                "grid": {
+                  "column": 4,
+                  "row": 1,
+                  "width": 9,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-metric-core",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "subtitle"
+              },
+              {
+                "id": "bespoke-metric-summary",
+                "type": "text",
+                "grid": {
+                  "column": 9,
+                  "row": 2,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "caption"
+              },
+              {
+                "id": "bespoke-metric-value-1",
+                "type": "metric",
+                "grid": {
+                  "column": 6,
+                  "row": 3,
+                  "width": 7,
+                  "height": 5
+                },
+                "tone": "inverse"
+              },
+              {
+                "id": "bespoke-metric-value-2",
+                "type": "metric",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 5,
+                  "height": 2
+                },
+                "tone": "positive"
+              },
+              {
+                "id": "bespoke-metric-facts",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 5,
+                  "width": 5,
+                  "height": 3
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[4]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[5]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[6].items[0]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].text": "presentation.coreMessage",
+            "elements[3].text": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "content": {
+        "presentation": {
+          "pageIntent": "statement",
+          "coreMessage": "定义契约，隔离失败，回放验证",
+          "title": {
+            "full": "让复杂度留在边界内",
+            "short": "让复杂度留在边界内"
+          },
+          "summary": {
+            "full": "定义事件契约；隔离消费失败；回放验证结果。本页为概念演示。",
+            "short": "定义契约，隔离失败，回放验证"
+          },
+          "items": [],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page074",
+          "contentMap": {
+            "copy.t008": "presentation.title.short",
+            "copy.t010": "presentation.coreMessage",
+            "copy.t001": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "stages",
+              "stageCount",
+              "copy.t002",
+              "copy.t003",
+              "copy.t004",
+              "copy.t005",
+              "copy.t006",
+              "copy.t007",
+              "copy.t009",
+              "copy.t008",
+              "copy.t010",
+              "copy.t001"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "stages",
+                  "fields": [
+                    {
+                      "key": "tag",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    }
+                  ],
+                  "countPath": "stageCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "copy.t002",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t003",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t004",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t005",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t006",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t007",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t009",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page049",
+          "contentMap": {
+            "copy.t006": "presentation.title.short",
+            "copy.t004": "presentation.coreMessage",
+            "copy.t001": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "layers",
+              "layerCount",
+              "copy.t002",
+              "copy.t003",
+              "copy.t005",
+              "copy.t006",
+              "copy.t004",
+              "copy.t001"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "layers",
+                  "fields": [
+                    {
+                      "key": "cn",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    }
+                  ],
+                  "countPath": "layerCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "copy.t002",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t003",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t005",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page036",
+          "contentMap": {
+            "copy.t005": "presentation.title.short",
+            "copy.t002": "presentation.coreMessage",
+            "copy.t001": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "phases",
+              "itemCount",
+              "copy.t003",
+              "copy.t004",
+              "copy.t005",
+              "copy.t002",
+              "copy.t001"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "phases",
+                  "fields": [
+                    {
+                      "key": "span",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "tag",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "head",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "body",
+                      "semantic": "detail"
+                    },
+                    {
+                      "key": "cue",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "copy.t003",
+                  "value": ""
+                },
+                {
+                  "path": "copy.t004",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "定义契约，隔离失败，回放验证",
+              "audience": "工程师",
+              "narrativeRole": "收束到可重复的执行路径",
+              "emphasis": "以留白区分主张与行动",
+              "rationale": "使用深浅代码风的真实网格、等宽标记、冷色强调与面板规则；本组保留原生默认深色分支，不以重涂别的主题代替。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 12,
+                  "height": 5
+                }
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    }
+  ]
+}

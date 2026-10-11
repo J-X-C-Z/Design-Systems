@@ -1,0 +1,1126 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "材料的第二种生命",
+  "goal": "循环材料概念提案",
+  "themePack": "theme08",
+  "pageCount": 3,
+  "randomSeed": "theme08-20261011-sample",
+  "workflowRunId": "20261011160953751-324d8516",
+  "slides": [
+    {
+      "id": "cover",
+      "content": {
+        "presentation": {
+          "pageIntent": "cover",
+          "coreMessage": "循环材料概念提案",
+          "title": {
+            "full": "材料的第二种生命",
+            "short": "材料的第二种生命"
+          },
+          "summary": {
+            "full": "循环材料概念提案。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "循环材料概念提案 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "用途",
+              "detail": {
+                "full": "循环材料概念提案",
+                "short": "循环材料概念提案"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "受众",
+              "detail": {
+                "full": "创意总监",
+                "short": "创意总监"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "性质",
+              "detail": {
+                "full": "纯概念演示",
+                "short": "纯概念演示"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme08_page007",
+          "contentMap": {
+            "headline": "presentation.title.short",
+            "subheadline": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "closingLine": "presentation.pageIntent",
+            "focusBadgeLabel": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "chapters",
+              "cardCount",
+              "headline",
+              "subheadline",
+              "eyebrow",
+              "closingLine",
+              "focusBadgeLabel"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "chapters",
+                  "fields": [
+                    {
+                      "key": "name",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme08_page084",
+          "contentMap": {
+            "kicker": "presentation.title.short",
+            "source": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "label": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "lines",
+              "supports",
+              "supportCount",
+              "kicker",
+              "source",
+              "eyebrow",
+              "label"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "lines",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "supports",
+                  "value": []
+                },
+                {
+                  "path": "supportCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme08_page028",
+          "contentMap": {
+            "headline": "presentation.title.short",
+            "subheadline": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "indexLabel": "presentation.pageIntent",
+            "chapterStickerLabel": "presentation.items[0].label",
+            "closingLine": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "keywords",
+              "keywordCount",
+              "headline",
+              "subheadline",
+              "eyebrow",
+              "indexLabel",
+              "chapterStickerLabel",
+              "closingLine"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "keywords",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "keywordCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "循环材料概念提案",
+              "audience": "材料设计与创意团队",
+              "narrativeRole": "建立循环材料的实验主题",
+              "emphasis": "材料主张与辅助说明分层",
+              "rationale": "定制分支沿用黑金实验profile的近黑底、金色细框、衬线标题、近直角板与克制金色bar；真实模板保留自身黑黄及浅紫分支，不强制全模板改金色。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "content": {
+        "presentation": {
+          "pageIntent": "metrics",
+          "coreMessage": "再生材料构成清晰可见",
+          "title": {
+            "full": "用克制的形式呈现材料实验",
+            "short": "用克制的形式呈现材料实验"
+          },
+          "summary": {
+            "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "材料构成 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "玻璃",
+              "detail": {
+                "full": "再生材料占比",
+                "short": "再生材料占比"
+              },
+              "value": 48,
+              "displayValue": "48",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "金属",
+              "detail": {
+                "full": "再生材料占比",
+                "short": "再生材料占比"
+              },
+              "value": 35,
+              "displayValue": "35",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "纤维",
+              "detail": {
+                "full": "再生材料占比",
+                "short": "再生材料占比"
+              },
+              "value": 17,
+              "displayValue": "17",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [
+            {
+              "id": "fact-1",
+              "label": "玻璃",
+              "value": 48,
+              "displayValue": "48",
+              "unit": "%"
+            },
+            {
+              "id": "fact-2",
+              "label": "金属",
+              "value": 35,
+              "displayValue": "35",
+              "unit": "%"
+            },
+            {
+              "id": "fact-3",
+              "label": "纤维",
+              "value": 17,
+              "displayValue": "17",
+              "unit": "%"
+            }
+          ],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme08_page017",
+          "contentMap": {
+            "headline": "presentation.title.short",
+            "subheadline": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "indexLabel": "presentation.pageIntent",
+            "chapterStickerLabel": "presentation.items[0].label",
+            "closingLine": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "keywords",
+              "keywordCount",
+              "headline",
+              "subheadline",
+              "eyebrow",
+              "indexLabel",
+              "chapterStickerLabel",
+              "closingLine"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "keywords[3]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "keywords",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "keywordCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme08_page007",
+          "contentMap": {
+            "headline": "presentation.title.short",
+            "subheadline": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "closingLine": "presentation.pageIntent",
+            "focusBadgeLabel": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "chapters",
+              "cardCount",
+              "headline",
+              "subheadline",
+              "eyebrow",
+              "closingLine",
+              "focusBadgeLabel"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "chapters[3]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "chapters[4]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "chapters",
+                  "fields": [
+                    {
+                      "key": "name",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "chart-last",
+                      "sourceIds": [
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme08_page038",
+          "contentMap": {
+            "headline": "presentation.title.short",
+            "summary": "presentation.coreMessage",
+            "eyebrow": "presentation.summary.short",
+            "subheadline": "presentation.items[0].detail.short",
+            "scarceStickerLabel": "presentation.pageIntent",
+            "closingLine": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "full",
+            "contentPaths": [
+              "chain",
+              "chainCount",
+              "shares",
+              "shareCount",
+              "scarceStickerSub",
+              "mediaCount",
+              "headline",
+              "summary",
+              "eyebrow",
+              "subheadline",
+              "scarceStickerLabel",
+              "closingLine"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-3",
+              "fact-2"
+            ],
+            "chartBindings": [
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "shares[0]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-2"
+                ],
+                "target": "shares[1]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "shares[2]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "chain",
+                  "fields": [
+                    {
+                      "key": "t",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "s",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    }
+                  ],
+                  "countPath": "chainCount"
+                },
+                {
+                  "path": "shares",
+                  "fields": [
+                    {
+                      "key": "k",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "v",
+                      "semantic": "value"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "chart:fact-1"
+                    },
+                    {
+                      "sourceId": "chart:fact-2"
+                    },
+                    {
+                      "sourceId": "chart:fact-3"
+                    }
+                  ],
+                  "countPath": "shareCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "scarceStickerSub",
+                  "value": ""
+                },
+                {
+                  "path": "mediaCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "再生材料构成清晰可见",
+              "audience": "材料设计与创意团队",
+              "narrativeRole": "比较三种再生材料构成",
+              "emphasis": "48/35/17%占比明确",
+              "rationale": "定制分支沿用黑金实验profile的近黑底、金色细框、衬线标题、近直角板与克制金色bar；真实模板保留自身黑黄及浅紫分支，不强制全模板改金色。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-chart-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-chart-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-chart-core",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "subtitle"
+              },
+              {
+                "id": "bespoke-chart-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 5,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "caption"
+              },
+              {
+                "id": "bespoke-chart-plot",
+                "type": "chart",
+                "grid": {
+                  "column": 5,
+                  "row": 1,
+                  "width": 8,
+                  "height": 8
+                },
+                "chartType": "bar",
+                "showValues": true
+              },
+              {
+                "id": "bespoke-chart-facts",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 4,
+                  "height": 3
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[5].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[5].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[5].items[2]"
+              }
+            ],
+            "chartBindings": [
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "elements[4].data[0]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-2"
+                ],
+                "target": "elements[4].data[1]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "elements[4].data[2]"
+              }
+            ],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].text": "presentation.coreMessage",
+            "elements[3].text": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "content": {
+        "presentation": {
+          "pageIntent": "statement",
+          "coreMessage": "采集肌理，重组工艺，验证体验",
+          "title": {
+            "full": "让循环成为设计",
+            "short": "让循环成为设计"
+          },
+          "summary": {
+            "full": "采集材料肌理；重组制造工艺；验证使用体验。本页为概念演示。",
+            "short": "采集肌理，重组工艺，验证体验"
+          },
+          "items": [],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme08_page084",
+          "contentMap": {
+            "kicker": "presentation.title.short",
+            "source": "presentation.coreMessage",
+            "eyebrow": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "lines",
+              "label",
+              "supports",
+              "supportCount",
+              "kicker",
+              "source",
+              "eyebrow"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "lines",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "label",
+                  "value": ""
+                },
+                {
+                  "path": "supports",
+                  "value": []
+                },
+                {
+                  "path": "supportCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme08_page074",
+          "contentMap": {
+            "kicker": "presentation.title.short",
+            "source": "presentation.coreMessage",
+            "eyebrow": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "lines",
+              "label",
+              "sealTop",
+              "sealBottom",
+              "supports",
+              "supportCount",
+              "kicker",
+              "source",
+              "eyebrow"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "lines",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "label",
+                  "value": ""
+                },
+                {
+                  "path": "sealTop",
+                  "value": ""
+                },
+                {
+                  "path": "sealBottom",
+                  "value": ""
+                },
+                {
+                  "path": "supports",
+                  "value": []
+                },
+                {
+                  "path": "supportCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme08_page049",
+          "contentMap": {
+            "kicker": "presentation.title.short",
+            "subheadline": "presentation.coreMessage",
+            "eyebrow": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "headlineLines",
+              "indexLabel",
+              "closingLine",
+              "chapterFocusStickerLabel",
+              "keywords",
+              "keywordCount",
+              "kicker",
+              "subheadline",
+              "eyebrow"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "headlineLines",
+                  "fields": [
+                    {
+                      "key": null,
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "indexLabel",
+                  "value": ""
+                },
+                {
+                  "path": "closingLine",
+                  "value": ""
+                },
+                {
+                  "path": "chapterFocusStickerLabel",
+                  "value": ""
+                },
+                {
+                  "path": "keywords",
+                  "value": []
+                },
+                {
+                  "path": "keywordCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "采集肌理，重组工艺，验证体验",
+              "audience": "材料设计与创意团队",
+              "narrativeRole": "以肌理工艺体验收束设计路径",
+              "emphasis": "衬线主张保留大幅暗场留白",
+              "rationale": "定制分支沿用黑金实验profile的近黑底、金色细框、衬线标题、近直角板与克制金色bar；真实模板保留自身黑黄及浅紫分支，不强制全模板改金色。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 12,
+                  "height": 5
+                }
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    }
+  ]
+}

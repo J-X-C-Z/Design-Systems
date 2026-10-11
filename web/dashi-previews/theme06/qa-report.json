@@ -1,0 +1,39 @@
+{
+  "theme": "theme06",
+  "checked_at": "2026-10-11T15:57:35Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chromium",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "checks": [
+    "12 desktop+narrow visuals",
+    "12navigationchoices",
+    "no horizontal overflow",
+    "all38bespoke source texts fully visible",
+    "all native nondecorative text clipping checked",
+    "18/9/4天 retained, no percent transformation",
+    "schema/copy passed"
+  ],
+  "exceptions": [
+    "page5 kx-wm and kx-rcp-ghost oversized watermark/index intentionally bleed; not factual values"
+  ],
+  "fixes": [
+    "canonical closing shortened for vertical template",
+    "bar for categorical stage-duration comparison;3row facts card"
+  ],
+  "limitations": [
+    "real upstream light directory branch retained alongside dark graph branch",
+    "system fonts; readable text needed for small390pxlabels",
+    "no physicalmobile or nativeSP UI acceptance"
+  ],
+  "private_build_identifier_withheld": true
+}

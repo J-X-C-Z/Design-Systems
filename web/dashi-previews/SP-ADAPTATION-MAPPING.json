@@ -1,0 +1,2004 @@
+{
+  "format": "dashi-to-sp-adaptation-mapping-plan",
+  "plan_schema_version": 1,
+  "as_of": "2026-10-11",
+  "status": "plan_only",
+  "is_sp_document": false,
+  "is_sp_theme_package": false,
+  "executed_upstream": false,
+  "executed_sp_conversion": false,
+  "modified_sp_product": false,
+  "sources": {
+    "dashi_commit": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+    "sp_main_commit": "5314ac9bd71b98e93852ec990146d77c98b7f361",
+    "sp_pr3_candidate_commit": "24ea406fa52df32e3a618ee804af0c0cf1fa7abf"
+  },
+  "sp_state": {
+    "main_has_canonical_schema_v1": true,
+    "main_has_pr3_theme_library": false,
+    "pr3_deployed": false,
+    "pr3_theme_format": "superior-point-theme",
+    "pr3_theme_schema_version": 1,
+    "theme_ref_fields": [
+      "id",
+      "version",
+      "hash",
+      "snapshot"
+    ],
+    "theme_mcp_tools": [
+      "sp_list_themes",
+      "sp_get_theme",
+      "sp_preview_theme",
+      "sp_apply_theme",
+      "sp_save_theme"
+    ],
+    "builtin_count": 6,
+    "builtins_origin": "Original Superior Point designs, not Dashi templates."
+  },
+  "target_canvas": {
+    "width": 1280,
+    "height": 720,
+    "ratio": "16:9",
+    "source_width": null,
+    "source_height": null,
+    "source_expectation_unverified": {
+      "width": 1920,
+      "height": 1080
+    },
+    "scaling_rule": "Uniform fit from measured source canvas; never independently stretch axes. If source is exactly 1920×1080, scale is 2/3."
+  },
+  "application_whitelist": [
+    "fontFamily",
+    "fontSize",
+    "fontWeight",
+    "bold",
+    "lineHeight",
+    "color",
+    "fill",
+    "stroke",
+    "strokeWidth",
+    "radius",
+    "chartColor",
+    "align"
+  ],
+  "non_applied_geometry": [
+    "x",
+    "y",
+    "w",
+    "h",
+    "shape",
+    "cornerRadius",
+    "padding",
+    "gap",
+    "columns"
+  ],
+  "other_non_applied_effects": [
+    "shadow",
+    "filter",
+    "backdropFilter",
+    "gradient",
+    "series palette",
+    "CSS",
+    "HTML",
+    "external assets"
+  ],
+  "preserve_mode_warning": "Existing explicit fields with no matching prior theme binding are treated as manual. Adding themeRole alone does not authorize overriding them. Create truthful baselines only for generated styles; reset requires separate confirmation.",
+  "canonical_minimum_fields": {
+    "document": [
+      "format=superior-point",
+      "schemaVersion=1",
+      "id",
+      "title",
+      "revision",
+      "canvas",
+      "slides",
+      "assets",
+      "metadata.createdAt",
+      "metadata.updatedAt",
+      "extensions"
+    ],
+    "element": [
+      "id",
+      "type",
+      "x",
+      "y",
+      "w",
+      "h"
+    ]
+  },
+  "future_conversion_gates": [
+    "Read selected source template and verify dimensions",
+    "Obtain actual authorized rendered variants",
+    "Extract supported objects without upstream runtime/CSS payload",
+    "Preserve all visible copy and data semantics",
+    "Validate canonical schema and global ID uniqueness",
+    "Round-trip canonical/native/canonical with semantic equality checks",
+    "Visually inspect actual native editor and actual export",
+    "Check manual overrides/undo/CAS when adding optional theme application",
+    "Disclose fallback layers and unverified PPTX support"
+  ],
+  "styles": [
+    {
+      "theme_key": "theme01",
+      "upstream_display_name": "轻拟态风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 84,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme01/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme01/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#172033",
+          "muted": "#647086",
+          "accent": "#5b8def",
+          "accent2": "#46b083",
+          "surface": "rgba(255,255,255,.68)",
+          "line": "rgba(23,32,51,.13)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "fontBody": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 88,
+          "gap": 22,
+          "radius": 30
+        },
+        "chart_series_colors": [
+          "#5b8def",
+          "#46b083",
+          "#e0a23a",
+          "#7a5ae0"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#EEF3FB",
+          "surface": "#FAFBFE",
+          "text": "#172033",
+          "muted": "#647086",
+          "accent": "#5B8DEF",
+          "accent2": "#46B083",
+          "line": "#D2D8E1"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#FFFFFFAD",
+          "muted": "#647086",
+          "line": "#17203321"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 88,
+          "gap_source": 22,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 30,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "编辑式双栏 / 居中 / 便当格",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "保留卡片层级和留白；把柔影作为单独装饰层，不能仅换蓝色就视作拟态。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme01_page001",
+            "slot": "cover-editorial"
+          },
+          {
+            "key": "theme01_page002",
+            "slot": "cover-minimal"
+          },
+          {
+            "key": "theme01_page003",
+            "slot": "cover-bento"
+          },
+          {
+            "key": "theme01_page004",
+            "slot": "cover-masthead"
+          },
+          {
+            "key": "theme01_page005",
+            "slot": "cover"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "KPI text",
+        "flat group"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "一处收拢，轻装协作",
+        "evidence_title": "启动更轻，协作更顺",
+        "chart_policy": "Independent KPI text only; no shared axis because the metrics/units differ.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "双向柔影",
+          "径向光晕",
+          "半透明层叠"
+        ]
+      },
+      "special_notes": []
+    },
+    {
+      "theme_key": "theme02",
+      "upstream_display_name": "炫光紫绿风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 74,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme02/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme02/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#f7f4ff",
+          "muted": "#b6aec6",
+          "accent": "#c7ff3f",
+          "accent2": "#a24dff",
+          "surface": "rgba(94,61,134,.26)",
+          "line": "rgba(235,226,255,.18)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "fontBody": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 92,
+          "gap": 22,
+          "radius": 24
+        },
+        "chart_series_colors": [
+          "#c7ff3f",
+          "#a24dff",
+          "#37d6c6",
+          "#ff6ea8"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#120C23",
+          "surface": "#26193D",
+          "text": "#F7F4FF",
+          "muted": "#B6AEC6",
+          "accent": "#C7FF3F",
+          "accent2": "#A24DFF",
+          "line": "#39334B"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#5E3D8642",
+          "muted": "#B6AEC6",
+          "line": "#EBE2FF2E"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 92,
+          "gap_source": 22,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 24,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "聚光封面 / 大数 / 海报 / 模块网格",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "保留焦点与字号对比；28毫秒、12小时、94%作为独立指标，不能共享数轴。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme02_page001",
+            "slot": "cover"
+          },
+          {
+            "key": "theme02_page002",
+            "slot": "coverbeam"
+          },
+          {
+            "key": "theme02_page003",
+            "slot": "coverfigure"
+          },
+          {
+            "key": "theme02_page004",
+            "slot": "coverposter"
+          },
+          {
+            "key": "theme02_page005",
+            "slot": "coverpanel"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "KPI text",
+        "flat group"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "把感知，变成行动",
+        "evidence_title": "低延时反馈支撑现场决策",
+        "chart_policy": "Independent KPI text only; no shared axis because the metrics/units differ.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "紫绿光晕",
+          "玻璃内高光",
+          "景深阴影"
+        ]
+      },
+      "special_notes": []
+    },
+    {
+      "theme_key": "theme03",
+      "upstream_display_name": "深浅代码风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 77,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme03/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme03/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#f3f2ee",
+          "muted": "#b8b6b0",
+          "accent": "#2742ec",
+          "accent2": "#c2f53d",
+          "surface": "#24231f",
+          "line": "rgba(243,242,238,.22)"
+        },
+        "background_kind": "solid",
+        "font_stacks": {
+          "fontDisplay": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "fontBody": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 92,
+          "gap": 20,
+          "radius": 0
+        },
+        "chart_series_colors": [
+          "#2742ec",
+          "#c2f53d",
+          "#f3f2ee",
+          "#77756f"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#161513",
+          "surface": "#24231F",
+          "text": "#F3F2EE",
+          "muted": "#B8B6B0",
+          "accent": "#2742EC",
+          "accent2": "#C2F53D",
+          "line": "#474643"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#24231F",
+          "muted": "#B8B6B0",
+          "line": "#F3F2EE38"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 92,
+          "gap_source": 20,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 0,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "横向封面 / 海报 / 网格 / 技术流程",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "直角硬边可直接画矩形；偏移硬影用背景形状重建；技术流程用connector和文字。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme03_page001",
+            "slot": "cover"
+          },
+          {
+            "key": "theme03_page002",
+            "slot": "coverband"
+          },
+          {
+            "key": "theme03_page003",
+            "slot": "coverposter"
+          },
+          {
+            "key": "theme03_page004",
+            "slot": "covergrid"
+          },
+          {
+            "key": "theme03_page005",
+            "slot": "coverimage"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "connector",
+        "KPI text"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "从接口到可靠系统",
+        "evidence_title": "用可观测边界约束复杂度",
+        "chart_policy": "Independent KPI text only; no shared axis because the metrics/units differ.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "需重建的硬影",
+          "等宽字体实际可用性"
+        ]
+      },
+      "special_notes": []
+    },
+    {
+      "theme_key": "theme04",
+      "upstream_display_name": "玻璃糖果风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 74,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme04/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme04/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#ffffff",
+          "muted": "#aaaeb8",
+          "accent": "#27e021",
+          "accent2": "#ffc700",
+          "surface": "rgba(255,255,255,.09)",
+          "line": "rgba(255,255,255,.18)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontBody": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 82,
+          "gap": 20,
+          "radius": 28
+        },
+        "chart_series_colors": [
+          "#27e021",
+          "#ffc700",
+          "#ff2a8b",
+          "#45b8ff"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#050506",
+          "surface": "#1C1C1C",
+          "text": "#FFFFFF",
+          "muted": "#AAAEB8",
+          "accent": "#27E021",
+          "accent2": "#FFC700",
+          "line": "#323233"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#FFFFFF17",
+          "muted": "#AAAEB8",
+          "line": "#FFFFFF2E"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 82,
+          "gap_source": 20,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 28,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "Hero / 索引 / Ghost / 便当格",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "保持糖果色多分类，不强制统一单色柱图；偏好占比可用三色形状条和独立标签。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme04_page001",
+            "slot": "coverHero"
+          },
+          {
+            "key": "theme04_page002",
+            "slot": "coverIndex"
+          },
+          {
+            "key": "theme04_page003",
+            "slot": "coverGhost"
+          },
+          {
+            "key": "theme04_page004",
+            "slot": "coverBento"
+          },
+          {
+            "key": "theme04_page005",
+            "slot": "agenda"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "bar chart or editable bars",
+        "flat group"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "把日常，玩出新鲜",
+        "evidence_title": "三种口味，三种生活节奏",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "玻璃透射",
+          "多光源",
+          "内高光",
+          "多色图表主题覆盖"
+        ]
+      },
+      "special_notes": []
+    },
+    {
+      "theme_key": "theme05",
+      "upstream_display_name": "色谱图表风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 94,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme05/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme05/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#14130f",
+          "muted": "#8a8576",
+          "accent": "#d8402e",
+          "accent2": "#2c44a0",
+          "surface": "#e9e4d6",
+          "line": "#c4bfae"
+        },
+        "background_kind": "solid",
+        "font_stacks": {
+          "fontDisplay": "\"Arimo\",\"Noto Sans SC\",\"PingFang SC\",sans-serif",
+          "fontBody": "\"Arimo\",\"Noto Sans SC\",\"PingFang SC\",sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 72,
+          "gap": 18,
+          "radius": 0
+        },
+        "chart_series_colors": [
+          "#d8402e",
+          "#1a1814",
+          "#3d3a32",
+          "#8a8576"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#E9E4D6",
+          "surface": "#E9E4D6",
+          "text": "#14130F",
+          "muted": "#8A8576",
+          "accent": "#D8402E",
+          "accent2": "#2C44A0",
+          "line": "#C4BFAE"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#E9E4D6",
+          "muted": "#8A8576",
+          "line": "#C4BFAE"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 72,
+          "gap_source": 18,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 0,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "编辑封面 / 规格 / 网格 / 密集报表",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "优先保留直角、纸底、细线、分栏和色谱的分类语义；表格跨renderer样式需单独验收。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme05_page001",
+            "slot": "excover1"
+          },
+          {
+            "key": "theme05_page002",
+            "slot": "excover2"
+          },
+          {
+            "key": "theme05_page003",
+            "slot": "excover3"
+          },
+          {
+            "key": "theme05_page004",
+            "slot": "excover4"
+          },
+          {
+            "key": "theme05_page005",
+            "slot": "cover"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "line",
+        "table or cell shapes",
+        "bar chart"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "城市阅读，结构观察",
+        "evidence_title": "借阅量集中于三个主要时段",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "精细表格排版",
+          "七色色谱不会自动映射到chart"
+        ]
+      },
+      "special_notes": [
+        "theme05 has padX=72, padY=60, hairline=1, strongRule=3; preserve axis-specific inset in canonical geometry rather than collapse to a single pageInset."
+      ]
+    },
+    {
+      "theme_key": "theme06",
+      "upstream_display_name": "深色图谱风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 83,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme06/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme06/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#f4f5ed",
+          "muted": "#a6aa99",
+          "accent": "#c8f135",
+          "accent2": "#65d3d6",
+          "surface": "#171914",
+          "line": "rgba(200,241,53,.2)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "fontBody": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 88,
+          "gap": 20,
+          "radius": 4
+        },
+        "chart_series_colors": [
+          "#c8f135",
+          "#65d3d6",
+          "#f4f5ed",
+          "#ff8d57"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#0C0C0C",
+          "surface": "#171914",
+          "text": "#F4F5ED",
+          "muted": "#A6AA99",
+          "accent": "#C8F135",
+          "accent2": "#65D3D6",
+          "line": "#323A14"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#171914",
+          "muted": "#A6AA99",
+          "line": "#C8F13533"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 88,
+          "gap_source": 20,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 4,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "多型封面 / 摘要 / 目录 / 产业链",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "信息密度与流向关系必须在canonical中显式建模；不能把theme spacing当自动布局器。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme06_page001",
+            "slot": "coverA"
+          },
+          {
+            "key": "theme06_page002",
+            "slot": "coverB"
+          },
+          {
+            "key": "theme06_page003",
+            "slot": "coverC"
+          },
+          {
+            "key": "theme06_page004",
+            "slot": "coverD"
+          },
+          {
+            "key": "theme06_page005",
+            "slot": "cover"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "connector",
+        "bar chart",
+        "flat group"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "从单点效率到全链协同",
+        "evidence_title": "瓶颈应沿供应链逐层定位",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "暗色光晕",
+          "低圆角差异",
+          "复杂产业/资本图谱"
+        ]
+      },
+      "special_notes": []
+    },
+    {
+      "theme_key": "theme07",
+      "upstream_display_name": "冷白调研风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 71,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme07/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme07/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#17221e",
+          "muted": "#68766f",
+          "accent": "#235c4b",
+          "accent2": "#b7dc36",
+          "surface": "#ffffff",
+          "line": "#cbd4cf"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "fontBody": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 94,
+          "gap": 20,
+          "radius": 12
+        },
+        "chart_series_colors": [
+          "#235c4b",
+          "#b7dc36",
+          "#5e8f7f",
+          "#d7a548"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#F4F6F4",
+          "surface": "#FFFFFF",
+          "text": "#17221E",
+          "muted": "#68766F",
+          "accent": "#235C4B",
+          "accent2": "#B7DC36",
+          "line": "#CBD4CF"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#FFFFFF",
+          "muted": "#68766F",
+          "line": "#CBD4CF"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 94,
+          "gap_source": 20,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 12,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "精简封面 / 供应链 / 趋势 / 策略",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "适合首轮canonical试点；保留冷白/深绿、方法与证据标签，媒体去饱和需另测。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme07_page001",
+            "slot": "cover-lean-page"
+          },
+          {
+            "key": "theme07_page002",
+            "slot": "cover-supply-chain-page"
+          },
+          {
+            "key": "theme07_page003",
+            "slot": "cover-retail-trend-page"
+          },
+          {
+            "key": "theme07_page004",
+            "slot": "cover-supply-strategy-page"
+          },
+          {
+            "key": "theme07_page005",
+            "slot": "cover-page"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "bar chart",
+        "table or cell shapes"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "可步行社区观察",
+        "evidence_title": "把观察证据与解释分开",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "轻渐变",
+          "柔影",
+          "低饱和图片处理"
+        ]
+      },
+      "special_notes": []
+    },
+    {
+      "theme_key": "theme08",
+      "upstream_display_name": "黑金实验风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 84,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme08/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme08/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#f6f0e3",
+          "muted": "#b7ad98",
+          "accent": "#d3ad5b",
+          "accent2": "#f0d59a",
+          "surface": "rgba(211,173,91,.08)",
+          "line": "rgba(211,173,91,.28)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Cormorant Garamond\",\"Noto Serif SC\",\"Songti SC\",serif",
+          "fontBody": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 94,
+          "gap": 22,
+          "radius": 2
+        },
+        "chart_series_colors": [
+          "#d3ad5b",
+          "#f0d59a",
+          "#8e7040",
+          "#f6f0e3"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#090909",
+          "surface": "#19160F",
+          "text": "#F6F0E3",
+          "muted": "#B7AD98",
+          "accent": "#D3AD5B",
+          "accent2": "#F0D59A",
+          "line": "#413720"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#D3AD5B14",
+          "muted": "#B7AD98",
+          "line": "#D3AD5B47"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 94,
+          "gap_source": 22,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 2,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "补充封面 / 双栏 / 品牌实验",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "按选中模板实测，不预设每页黑金；page002 metadata明示电光黄/淡紫灰，与bespoke黑金不同。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme08_page001",
+            "slot": "sup1"
+          },
+          {
+            "key": "theme08_page002",
+            "slot": "sup2"
+          },
+          {
+            "key": "theme08_page003",
+            "slot": "sup3"
+          },
+          {
+            "key": "theme08_page004",
+            "slot": "cv2c"
+          },
+          {
+            "key": "theme08_page005",
+            "slot": "p1"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "line",
+        "bar chart or editable bars"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "材料的第二种生命",
+        "evidence_title": "用克制的形式呈现材料实验",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "衬线字体",
+          "细金边",
+          "渐变光晕",
+          "模板与bespoke分支异构"
+        ]
+      },
+      "special_notes": [
+        "theme08_page002 metadata offers electric-yellow/pale-lavender surfaces; do not replace those templates with bespoke black/gold."
+      ]
+    },
+    {
+      "theme_key": "theme09",
+      "upstream_display_name": "深蓝杂志风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 111,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme09/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme09/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#f4f1e9",
+          "muted": "#9eabba",
+          "accent": "#f06c45",
+          "accent2": "#79a8d8",
+          "surface": "#10243d",
+          "line": "rgba(217,229,241,.18)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Noto Serif SC\",\"Songti SC\",serif",
+          "fontBody": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 92,
+          "gap": 20,
+          "radius": 8
+        },
+        "chart_series_colors": [
+          "#f06c45",
+          "#79a8d8",
+          "#d5b876",
+          "#6f9c86"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#07162B",
+          "surface": "#10243D",
+          "text": "#F4F1E9",
+          "muted": "#9EABBA",
+          "accent": "#F06C45",
+          "accent2": "#79A8D8",
+          "line": "#2D3B4F"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#10243D",
+          "muted": "#9EABBA",
+          "line": "#D9E5F12E"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 92,
+          "gap_source": 20,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 8,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "刊头 / 对角 / 卷宗 / 分层 / 图像窗",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "保留衬线刊头与非对称栏宽；深蓝/橙只属于已核验bespoke，不覆盖模板原样。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme09_page001",
+            "slot": "covermast"
+          },
+          {
+            "key": "theme09_page002",
+            "slot": "coverdiag"
+          },
+          {
+            "key": "theme09_page003",
+            "slot": "coverdossier"
+          },
+          {
+            "key": "theme09_page004",
+            "slot": "coverstrata"
+          },
+          {
+            "key": "theme09_page005",
+            "slot": "coveraperture"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "line",
+        "bar chart or editable bars",
+        "image when authorized"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "一座书店的慢时间",
+        "evidence_title": "空间让阅读成为日常相遇",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "衬线字度量",
+          "媒体遮罩",
+          "渐变光晕",
+          "复杂编排"
+        ]
+      },
+      "special_notes": []
+    },
+    {
+      "theme_key": "theme10",
+      "upstream_display_name": "金色指数风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 95,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme10/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme10/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#f2f3f6",
+          "muted": "rgba(242,243,246,.72)",
+          "accent": "#5479e8",
+          "accent2": "#c79062",
+          "surface": "rgba(255,255,255,.06)",
+          "line": "rgba(242,243,246,.2)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"IBM Plex Sans\",\"Noto Sans SC\",system-ui,sans-serif",
+          "fontBody": "\"IBM Plex Sans\",\"Noto Sans SC\",system-ui,sans-serif",
+          "fontMono": "\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 96,
+          "gap": 20,
+          "radius": 18
+        },
+        "chart_series_colors": [
+          "#5b80ea",
+          "#46a6d0",
+          "#3fb39a",
+          "#d7a85b",
+          "#d27d58",
+          "#9a82dc"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#13161D",
+          "surface": "#21242A",
+          "text": "#F2F3F6",
+          "muted": "#B4B5BA",
+          "accent": "#5479E8",
+          "accent2": "#C79062",
+          "line": "#404248"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#FFFFFF0F",
+          "muted": "#F2F3F6B8",
+          "line": "#F2F3F633"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 96,
+          "gap_source": 20,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 18,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "暮色 / 旷野 / 氛围字 / 地平线 / 指数",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "bespoke按冷蓝+暖铜映射；基期100、108、114保留为指数点，不能误写百分比。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme10_page001",
+            "slot": "coverdusk"
+          },
+          {
+            "key": "theme10_page002",
+            "slot": "coverfield"
+          },
+          {
+            "key": "theme10_page003",
+            "slot": "coveratmostype"
+          },
+          {
+            "key": "theme10_page004",
+            "slot": "coverhorizon"
+          },
+          {
+            "key": "theme10_page005",
+            "slot": "cover"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "line",
+        "bar chart or editable trend"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "看清结构，再看变化",
+        "evidence_title": "区分指数点位与结构贡献",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "蓝铜双径向渐变",
+          "Plex字体",
+          "半透明面板",
+          "不支持的金融复杂图表"
+        ]
+      },
+      "special_notes": [
+        "Official name mentions gold; verified bespoke accents are blue #5479E8 and copper #C79062."
+      ]
+    },
+    {
+      "theme_key": "theme11",
+      "upstream_display_name": "高能增长风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 87,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme11/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme11/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#fff7ed",
+          "muted": "#b9aa9e",
+          "accent": "#ff5b32",
+          "accent2": "#c2f53d",
+          "surface": "#201d1a",
+          "line": "rgba(255,247,237,.17)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "fontBody": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 86,
+          "gap": 20,
+          "radius": 18
+        },
+        "chart_series_colors": [
+          "#ff5b32",
+          "#c2f53d",
+          "#ffb347",
+          "#59c3c3"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#11100F",
+          "surface": "#201D1A",
+          "text": "#FFF7ED",
+          "muted": "#B9AA9E",
+          "accent": "#FF5B32",
+          "accent2": "#C2F53D",
+          "line": "#393734"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#201D1A",
+          "muted": "#B9AA9E",
+          "line": "#FFF7ED2B"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 86,
+          "gap_source": 20,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 18,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "高能路演 / 指标 / 转化步骤",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "橙红主重点、酸绿次重点；100→68→42同单位可做独立条形或结构化转化图，禁止凭空补转化率。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme11_page001",
+            "slot": "page1"
+          },
+          {
+            "key": "theme11_page002",
+            "slot": "page2"
+          },
+          {
+            "key": "theme11_page003",
+            "slot": "page3"
+          },
+          {
+            "key": "theme11_page004",
+            "slot": "page4"
+          },
+          {
+            "key": "theme11_page005",
+            "slot": "page5"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "connector",
+        "bar chart or editable bars"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "把一次尝试变成持续使用",
+        "evidence_title": "留存改善比单次触达更重要",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "暖色光晕",
+          "中圆角",
+          "视觉大数与文字自动换行"
+        ]
+      },
+      "special_notes": []
+    },
+    {
+      "theme_key": "theme12",
+      "upstream_display_name": "声波霓虹风",
+      "status": "static_design_only_not_an_sp_theme_package_or_editable_document",
+      "source_scope": {
+        "metadata_templates": "Unselected. Read actual selected template and rendered variant before extracting styles or geometry.",
+        "bespoke_profile": "Verified fixed-commit facts for bespoke branch only.",
+        "upstream_layout_count": 86,
+        "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+        "selected_template_ids": null,
+        "selected_variant_ids": null
+      },
+      "sources": {
+        "metadata": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme12/metadata.js",
+        "bespoke_profile": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/bespoke/theme-profiles.mjs",
+        "page_content_pack": "theme12/page-content-pack.json"
+      },
+      "profile_facts": {
+        "palette": {
+          "ink": "#fff7fb",
+          "muted": "#c0b3bd",
+          "accent": "#27d6dd",
+          "accent2": "#e83a9b",
+          "surface": "rgba(255,255,255,.08)",
+          "line": "rgba(255,247,251,.18)"
+        },
+        "background_kind": "gradient",
+        "font_stacks": {
+          "fontDisplay": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontBody": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "fontMono": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace"
+        },
+        "spacing_source_units": {
+          "pad": 88,
+          "gap": 20,
+          "radius": 26
+        },
+        "chart_series_colors": [
+          "#27d6dd",
+          "#e83a9b",
+          "#f0a23b",
+          "#8c6ff0"
+        ]
+      },
+      "proposed_bespoke_token_mapping": {
+        "meaning": "Design proposal, not exact source appearance and not validated package.",
+        "flattened_solid_colors": {
+          "background": "#171018",
+          "surface": "#29232A",
+          "text": "#FFF7FB",
+          "muted": "#C0B3BD",
+          "accent": "#27D6DD",
+          "accent2": "#E83A9B",
+          "line": "#413A41"
+        },
+        "flattening_policy": "Gradient base selected deliberately; rgba composited over this single base for baseline portability. All glow, backdrop and optical blending differences remain visible gaps.",
+        "alpha_color_alternative": {
+          "surface": "#FFFFFF14",
+          "muted": "#C0B3BD",
+          "line": "#FFF7FB2E"
+        },
+        "typography": {
+          "title_from": "fontDisplay",
+          "body_from": "fontBody",
+          "caption_from": "fontBody",
+          "mono_from": "fontMono",
+          "font_size": null,
+          "font_weight": null,
+          "line_height": null,
+          "resolve_at": "Measure actual authorized output; profile does not supply complete typography scale.",
+          "fallback_policy": "Declare nonempty fallback and font reference license. Current application uses fontFamily only; fallback array is not automatically joined. Generic SVG substitutes Arial."
+        },
+        "spacing": {
+          "pageInset_source": 88,
+          "gap_source": 20,
+          "scale_to_sp": "Multiply by 1280 / measured_source_width only after actual dimensions verified; keep theme05 padX/padY separately."
+        },
+        "components": {
+          "panel_radius_source": 26,
+          "panel_radius_policy": "Proposed theme components.panel.radius only drives generic radius; canonical native geometry additionally needs roundRect + cornerRadius. No automatic synchronization exists.",
+          "secondary_accent_policy": "Create explicit role such as accent2 with components.accent2.fill/stroke. colors.accent2 alone is inert for ordinary shapes.",
+          "chart_policy": "Theme chart uses one chartColor, not profile series palette; use editable primitive bars for exact multicolor categorical design."
+        }
+      },
+      "layout_mapping": {
+        "families_from_registry": "字形 / 声波 / 图像 / 网格 / 宣言",
+        "mapping": "Canonical objects with measured absolute geometry, not theme.layouts coordinate arrays.",
+        "preserve_rule": "将波形/唱片/票券拆成可编辑几何只保证结构近似；不得把时长样例冒充真实音频波形。",
+        "registry_examples_not_selected": [
+          {
+            "key": "theme12_page001",
+            "slot": "coverType"
+          },
+          {
+            "key": "theme12_page002",
+            "slot": "coverWave"
+          },
+          {
+            "key": "theme12_page003",
+            "slot": "coverImage"
+          },
+          {
+            "key": "theme12_page004",
+            "slot": "coverGrid"
+          },
+          {
+            "key": "theme12_page005",
+            "slot": "manifesto"
+          }
+        ],
+        "theme_layout_kinds_proposed": [
+          "cover",
+          "data",
+          "content"
+        ],
+        "intended_logical_pages": [
+          "cover",
+          "evidence",
+          "action"
+        ],
+        "intended_variant_count_per_page": 4,
+        "intended_variants": "three structure-distinct upstream templates plus one constrained bespoke, all pending actual selection and render"
+      },
+      "editable_object_plan": [
+        "text",
+        "shape",
+        "line",
+        "bar chart or editable duration blocks"
+      ],
+      "data_semantics": {
+        "existing_sample_title": "让独立声音被听见",
+        "evidence_title": "用三段现场构建听觉节奏",
+        "chart_policy": "Same-unit values are eligible for a native single-series chart after preserving labels/units; prefer editable shapes if layout or series colors require it.",
+        "content_must_remain": "Exact approved PageContentPack values, display values, labels, full/short copy provenance and fictional-data notice.",
+        "do_not_infer": [
+          "percent suffix not stated in source",
+          "new rates or financial interpretation",
+          "unprovided images or real-world claims"
+        ]
+      },
+      "assessment": {
+        "token_mapping": "partial; palette and font references are extractable; full material/typography unresolved",
+        "layout_mapping": "requires per-variant measured converter; theme application cannot relayout",
+        "editable_objects": "high for text and basic geometry, conditional for charts/tables/media",
+        "main_compatible_path": "canonical JSON generation and independent import",
+        "pr3_optional_path": "separate verified v1 theme package + explicit themeRole/bindings; only after candidate deployment",
+        "visual_fidelity": "unverified; no completed SP conversion",
+        "material_gaps": [
+          "真实波形/复杂曲线",
+          "霓虹光晕",
+          "玻璃材质",
+          "模板浅深模式差异"
+        ]
+      },
+      "special_notes": [
+        "Template light/dark controls must be read per selection; bespoke dark cyan/magenta is not a universal template specification."
+      ]
+    }
+  ],
+  "renderer_caveats": [
+    "Generic rectangles and ellipses omit stroke-width; only line-like primitives use strokeWidth.",
+    "Generic text forces Arial, differs in wrapping/weight/line spacing.",
+    "Native rounded shapes require roundRect+cornerRadius; generic uses radius; no adapter synchronization.",
+    "main generic chart uses fill; PR3 generic chart prefers chartColor; both use fixed dark labels."
+  ]
+}

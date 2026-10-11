@@ -1,0 +1,195 @@
+
+.gxn-theme{
+  /* ── color ── */
+  --gxn-bg: #07090b;
+  --gxn-accent: #2fe07f;
+  --gxn-accent-2: #b9f24a;
+  --gxn-accent-cool: #4ea2ff;
+  --gxn-glow: 47,224,127;
+  --gxn-text: #eef3f1;
+  --gxn-dim: rgba(238,243,241,0.58);
+  --gxn-faint: rgba(238,243,241,0.34);
+  --gxn-line: rgba(255,255,255,0.09);
+  --gxn-panel-a: rgba(255,255,255,0.055);
+  --gxn-panel-b: rgba(255,255,255,0.012);
+
+  /* ── type ── */
+  --gxn-font-display: 'Space Grotesk','Noto Sans SC',-apple-system,sans-serif;
+  --gxn-font-sans: 'Noto Sans SC','Space Grotesk',-apple-system,sans-serif;
+  --gxn-font-mono: 'Space Mono',ui-monospace,'SFMono-Regular',monospace;
+  --gxn-fs-display: 82px;
+  --gxn-fs-h1: 58px;
+  --gxn-fs-h2: 40px;
+  --gxn-fs-h3: 32px;
+  --gxn-fs-body: 28px;
+  --gxn-fs-label: 24px;
+  --gxn-fs-stat: 112px;
+
+  /* ── space ── */
+  --gxn-px: 108px;
+  --gxn-py: 88px;
+  --gxn-gap: 32px;
+  --gxn-radius: 24px;
+
+  font-family: var(--gxn-font-sans);
+  color: var(--gxn-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── slide frame ── */
+.gxn-theme.gxn-slide{
+  position:absolute; inset:0; width:100%; height:100%;
+  box-sizing:border-box;
+  background:
+    radial-gradient(1200px 760px at 84% -14%, rgba(var(--gxn-glow),0.14), transparent 60%),
+    radial-gradient(960px 680px at -8% 116%, rgba(78,162,255,0.10), transparent 60%),
+    var(--gxn-bg);
+  overflow:hidden;
+}
+.gxn-slide *{ box-sizing:border-box; }
+/* faint dot grid texture */
+.gxn-slide::before{
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background-image: radial-gradient(rgba(255,255,255,0.045) 1px, transparent 1.4px);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(120% 120% at 50% 40%, #000 30%, transparent 86%);
+  opacity:.7;
+}
+.gxn-pad{ position:absolute; inset:0; padding: var(--gxn-py) var(--gxn-px); display:flex; flex-direction:column; }
+
+/* ── header lockup (parallel across slides) ── */
+.gxn-kicker{
+  display:inline-flex; align-items:center; gap:12px;
+  font-family:var(--gxn-font-mono); font-size:var(--gxn-fs-label);
+  letter-spacing:.18em; text-transform:uppercase; color:var(--gxn-accent);
+  text-shadow:0 0 18px rgba(var(--gxn-glow),0.55);
+  margin:0;
+}
+.gxn-kicker::before{
+  content:''; width:34px; height:2px; border-radius:2px;
+  background:linear-gradient(90deg,var(--gxn-accent),transparent);
+  box-shadow:0 0 14px rgba(var(--gxn-glow),0.8);
+}
+.gxn-title{
+  font-family:var(--gxn-font-sans); font-weight:700; font-size:var(--gxn-fs-h1);
+  line-height:1.08; letter-spacing:-0.01em; margin:0; color:var(--gxn-text);
+}
+.gxn-title .gxn-em{ color:var(--gxn-accent); text-shadow:0 0 26px rgba(var(--gxn-glow),0.5); }
+.gxn-sub{ font-size:var(--gxn-fs-h3); color:var(--gxn-dim); margin:0; font-weight:400; line-height:1.4; }
+
+/* ── panels / cards ── */
+/* Panels adopt the "炫光 / rim-glow" technique (studied from the ticket card):
+   a radial wash that darkens the centre and tints the edge, an INSET rim
+   bloom that hugs the rounded-rect border like backlit glass, and — on focus —
+   a brighter inner rim plus an outer halo. Re-tinted from the source's violet
+   to the deck's green accent so it stays on-theme. */
+.gxn-panel{
+  position:relative; border-radius:var(--gxn-radius);
+  background:
+    radial-gradient(132% 132% at 50% 50%, rgba(255,255,255,0) 58%, rgba(var(--gxn-glow),0.035) 90%, rgba(var(--gxn-glow),0.085) 100%),
+    linear-gradient(165deg,var(--gxn-panel-a),var(--gxn-panel-b));
+  border:1px solid var(--gxn-line);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    inset 0 0 42px -16px rgba(var(--gxn-glow),0.20),
+    0 26px 60px -40px rgba(0,0,0,0.9);
+  transition: border-color .35s ease, box-shadow .35s ease, background .35s ease, transform .35s ease;
+}
+.gxn-panel.is-focus{
+  border-color: transparent;
+  background:
+    radial-gradient(130% 130% at 50% 44%, rgba(7,9,11,0) 46%, rgba(var(--gxn-glow),0.07) 82%, rgba(var(--gxn-glow),0.16) 100%),
+    linear-gradient(165deg,var(--gxn-panel-a),var(--gxn-panel-b));
+  box-shadow:
+    inset 0 0 0 1.5px rgba(var(--gxn-glow),0.62),     /* crisp rim line   */
+    inset 0 0 30px -4px rgba(var(--gxn-glow),0.46),   /* tight inner bloom */
+    inset 0 0 96px 8px rgba(var(--gxn-glow),0.14),    /* soft falloff      */
+    0 0 84px -8px rgba(var(--gxn-glow),0.60),         /* outer halo        */
+    0 26px 70px -42px rgba(0,0,0,0.9);
+}
+.gxn-panel.is-dim{ opacity:.46; filter:saturate(.7); }
+
+.gxn-mono{ font-family:var(--gxn-font-mono); letter-spacing:.04em; }
+.gxn-num{ font-family:var(--gxn-font-display); font-variant-numeric:tabular-nums lining-nums; font-feature-settings:"tnum" 1; }
+
+/* index chip */
+.gxn-index{
+  font-family:var(--gxn-font-mono); font-size:var(--gxn-fs-label);
+  color:var(--gxn-faint); letter-spacing:.1em;
+}
+
+/* legend */
+.gxn-legend{ display:flex; flex-direction:column; gap:18px; }
+.gxn-legend-row{ display:flex; align-items:center; gap:16px; transition:opacity .3s ease; }
+.gxn-legend-row.is-dim{ opacity:.4; }
+.gxn-dot{ width:16px; height:16px; border-radius:5px; flex:0 0 auto; box-shadow:0 0 16px -2px currentColor; }
+
+/* image slot */
+.gxn-slot{
+  position:relative; overflow:hidden; border-radius:18px;
+  background:
+    repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 12px, rgba(255,255,255,0.015) 12px 24px);
+  border:1px solid var(--gxn-line);
+  display:flex; align-items:center; justify-content:center;
+}
+.gxn-slot.is-filled{ background:#0b0d10; border-color:rgba(var(--gxn-glow),0.3);
+  box-shadow:0 0 56px -22px rgba(var(--gxn-glow),0.6); }
+.gxn-slot img,.gxn-slot video{ width:100%; height:100%; object-fit:cover; display:block; }
+.gxn-slot-cap{ font-family:var(--gxn-font-mono); font-size:24px; color:var(--gxn-faint);
+  letter-spacing:.06em; text-align:center; padding:10px; }
+.gxn-slot-btn{
+  position:absolute; appearance:none; border:0; cursor:pointer; font-family:var(--gxn-font-mono);
+}
+.gxn-slot-add{ inset:0; width:100%; height:100%; background:transparent; color:var(--gxn-dim); }
+.gxn-slot-add:hover{ background:rgba(var(--gxn-glow),0.05); color:var(--gxn-accent); }
+.gxn-slot-clear{
+  top:10px; right:10px; width:30px; height:30px; border-radius:50%;
+  background:rgba(0,0,0,0.55); color:#fff; font-size:15px; line-height:1;
+  backdrop-filter:blur(8px); display:none; align-items:center; justify-content:center;
+}
+.gxn-slot.is-filled:hover .gxn-slot-clear{ display:flex; }
+/* focused image slot — accent ring + halo (used by gallery/showcase) */
+.gxn-slot.is-focus{
+  border-color: var(--gxn-accent);
+  box-shadow:
+    inset 0 0 0 2px rgba(var(--gxn-glow),0.55),
+    0 0 64px -16px rgba(var(--gxn-glow),0.72);
+}
+/* caption overlay on a filled slot */
+.gxn-slot-overlay{
+  position:absolute; left:0; right:0; bottom:0; z-index:2;
+  display:flex; align-items:center; gap:12px; padding:18px 20px;
+  background:linear-gradient(to top, rgba(4,6,8,0.82), rgba(4,6,8,0.32) 62%, transparent);
+  pointer-events:none;
+}
+.gxn-slot-overlay .gxn-cap-idx{
+  font-family:var(--gxn-font-mono); font-size:24px; line-height:1; color:var(--gxn-accent);
+  text-shadow:0 0 16px rgba(var(--gxn-glow),0.7);
+}
+.gxn-slot-overlay .gxn-cap-txt{
+  font-family:var(--gxn-font-sans); font-weight:500; font-size:24px; color:#f3f6f4; letter-spacing:.01em;
+}
+
+/* entrance — visible end-state is base; animate from hidden only when active */
+@media (prefers-reduced-motion: no-preference){
+  [data-deck-active] .gxn-rise{ animation: gxn-rise .62s cubic-bezier(.2,.7,.25,1) both; }
+  [data-deck-active] .gxn-rise-2{ animation: gxn-rise .62s cubic-bezier(.2,.7,.25,1) .08s both; }
+  [data-deck-active] .gxn-rise-3{ animation: gxn-rise .62s cubic-bezier(.2,.7,.25,1) .16s both; }
+  [data-deck-active] .gxn-rise-4{ animation: gxn-rise .62s cubic-bezier(.2,.7,.25,1) .24s both; }
+}
+@keyframes gxn-rise{ from{ opacity:0; transform:translateY(22px); } to{ opacity:1; transform:none; } }
+
+/* ── flowing neon sphere (hub orb, shared by relation slides) ──
+   A filled accent gradient over an opaque base; .is-flow drifts the gradient
+   so the orb's surface appears to flow. Scheme-aware via the accent vars. */
+.gxn-sphere{
+  background: linear-gradient(125deg, var(--gxn-accent) 0%, var(--gxn-accent-2) 44%, var(--gxn-accent) 100%);
+  background-size: 100% 100%;
+}
+.gxn-sphere.is-flow{
+  background-size: 240% 240%;
+  animation: gxn-sphere-flow 7s ease-in-out infinite alternate;
+}
+@keyframes gxn-sphere-flow{ 0%{ background-position:0% 50%; } 100%{ background-position:100% 50%; } }
+@media (prefers-reduced-motion: reduce){ .gxn-sphere.is-flow{ animation:none; } }

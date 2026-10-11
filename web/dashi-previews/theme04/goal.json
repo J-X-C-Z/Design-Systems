@@ -1,0 +1,1286 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "把日常，玩出新鲜",
+  "goal": "随身饮品概念提案",
+  "themePack": "theme04",
+  "pageCount": 3,
+  "randomSeed": "theme04-20261011-sample",
+  "workflowRunId": "20261011152222781-b4cc92bf",
+  "slides": [
+    {
+      "id": "cover",
+      "content": {
+        "presentation": {
+          "pageIntent": "cover",
+          "coreMessage": "随身饮品概念提案",
+          "title": {
+            "full": "把日常，玩出新鲜",
+            "short": "把日常，玩出新鲜"
+          },
+          "summary": {
+            "full": "随身饮品概念；纯虚构演示。",
+            "short": "随身饮品概念提案 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "用途",
+              "detail": {
+                "full": "随身饮品概念提案",
+                "short": "随身饮品概念提案"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "受众",
+              "detail": {
+                "full": "消费品牌团队",
+                "short": "消费品牌团队"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "性质",
+              "detail": {
+                "full": "纯概念演示",
+                "short": "纯概念演示"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme04_page005",
+          "contentMap": {
+            "kicker": "presentation.title.short",
+            "footnote": "presentation.coreMessage",
+            "titleLine1": "presentation.summary.short",
+            "titleKeyword": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "items",
+              "itemCount",
+              "kicker",
+              "footnote",
+              "titleLine1",
+              "titleKeyword"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "items",
+                  "fields": [
+                    {
+                      "key": "tag",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "caption",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme04_page002",
+          "contentMap": {
+            "brand": "presentation.title.short",
+            "sub": "presentation.coreMessage",
+            "brandZh": "presentation.summary.short",
+            "issueVol": "presentation.pageIntent",
+            "issueYr": "presentation.items[0].label",
+            "eyebrow": "presentation.items[1].label",
+            "titleLead": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "items",
+              "itemCount",
+              "issueNo",
+              "titleKeyword",
+              "titleTail",
+              "brand",
+              "sub",
+              "brandZh",
+              "issueVol",
+              "issueYr",
+              "eyebrow",
+              "titleLead"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "items",
+                  "fields": [
+                    {
+                      "key": "tag",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "head",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "sub",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "issueNo",
+                  "value": ""
+                },
+                {
+                  "path": "titleKeyword",
+                  "value": ""
+                },
+                {
+                  "path": "titleTail",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme04_page001",
+          "contentMap": {
+            "brand": "presentation.title.short",
+            "sub": "presentation.coreMessage",
+            "brandZh": "presentation.summary.short",
+            "eyebrow": "presentation.pageIntent",
+            "titleLead": "presentation.items[0].label",
+            "titleKeyword": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "stats",
+              "statCount",
+              "brand",
+              "sub",
+              "brandZh",
+              "eyebrow",
+              "titleLead",
+              "titleKeyword"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "stats",
+                  "fields": [
+                    {
+                      "key": "n",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "l",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "statCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "随身饮品概念提案",
+              "audience": "年轻化消费品牌团队",
+              "narrativeRole": "介绍随身饮品概念",
+              "emphasis": "透明材料与糖果色对照",
+              "rationale": "沿用玻璃糖果风深色玻璃面板、多色高光与大圆角，受限12×8网格只承载原创演示内容。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "content": {
+        "presentation": {
+          "pageIntent": "metrics",
+          "coreMessage": "三个观察点共同说明本页主题",
+          "title": {
+            "full": "三种口味，三种生活节奏",
+            "short": "三种口味，三种生活节奏"
+          },
+          "summary": {
+            "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "三个观察点共同说明本页主题 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "青柠",
+              "detail": {
+                "full": "偏好占比",
+                "short": "偏好占比"
+              },
+              "value": 42,
+              "displayValue": "42",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "莓果",
+              "detail": {
+                "full": "偏好占比",
+                "short": "偏好占比"
+              },
+              "value": 35,
+              "displayValue": "35",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "柚子",
+              "detail": {
+                "full": "偏好占比",
+                "short": "偏好占比"
+              },
+              "value": 23,
+              "displayValue": "23",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [
+            {
+              "id": "fact-1",
+              "label": "青柠",
+              "value": 42,
+              "displayValue": "42",
+              "unit": "%"
+            },
+            {
+              "id": "fact-2",
+              "label": "莓果",
+              "value": 35,
+              "displayValue": "35",
+              "unit": "%"
+            },
+            {
+              "id": "fact-3",
+              "label": "柚子",
+              "value": 23,
+              "displayValue": "23",
+              "unit": "%"
+            }
+          ],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme04_page050",
+          "contentMap": {
+            "quote": "presentation.title.short",
+            "pill": "presentation.coreMessage",
+            "copy.text001": "presentation.pageIntent",
+            "kicker": "presentation.summary.short",
+            "name": "presentation.items[0].label",
+            "tagline": "presentation.items[1].label",
+            "quoteCite": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "milestones",
+              "milestoneCount",
+              "mediaPlaceholder1",
+              "mediaPlaceholder2",
+              "mediaCount",
+              "quote",
+              "pill",
+              "copy.text001",
+              "kicker",
+              "name",
+              "tagline",
+              "quoteCite"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "milestones[3]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "milestones",
+                  "fields": [
+                    {
+                      "key": "date",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "metric",
+                      "semantic": "displayValue"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "milestoneCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "mediaPlaceholder1",
+                  "value": ""
+                },
+                {
+                  "path": "mediaPlaceholder2",
+                  "value": ""
+                },
+                {
+                  "path": "mediaCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme04_page051",
+          "contentMap": {
+            "copy.text013": "presentation.title.short",
+            "copy.placeholder001": "presentation.coreMessage",
+            "copy.text001": "presentation.pageIntent",
+            "copy.text002": "presentation.items[0].label",
+            "copy.text003": "presentation.items[1].label",
+            "copy.text004": "presentation.items[2].label",
+            "copy.text009": "presentation.summary.short"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "factsData",
+              "statCount",
+              "copy.text005",
+              "copy.text006",
+              "copy.text007",
+              "copy.text008",
+              "copy.text010",
+              "copy.text011",
+              "copy.text012",
+              "mediaCount",
+              "copy.text013",
+              "copy.placeholder001",
+              "copy.text001",
+              "copy.text002",
+              "copy.text003",
+              "copy.text004",
+              "copy.text009"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "factsData[3]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "factsData",
+                  "fields": [
+                    {
+                      "key": "k",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "v",
+                      "semantic": "displayValue"
+                    },
+                    {
+                      "key": "u",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "statCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "copy.text005",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text006",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text007",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text008",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text010",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text011",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text012",
+                  "value": ""
+                },
+                {
+                  "path": "mediaCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme04_page067",
+          "contentMap": {
+            "copy.text005": "presentation.title.short",
+            "copy.text001": "presentation.coreMessage",
+            "copy.text002": "presentation.pageIntent",
+            "copy.text003": "presentation.items[0].label",
+            "copy.text004": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "nodesData",
+              "copy.text005",
+              "copy.text001",
+              "copy.text002",
+              "copy.text003",
+              "copy.text004"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "nodesData[0]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "nodesData[4]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "nodesData[5]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "nodesData",
+                  "fields": [
+                    {
+                      "key": "tag",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "name",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "val",
+                      "semantic": "displayValue"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-first",
+                      "sourceIds": [
+                        "fact-1"
+                      ]
+                    },
+                    {
+                      "sourceId": "chart-last",
+                      "sourceIds": [
+                        "fact-3"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "三个观察点共同说明本页主题",
+              "audience": "年轻化消费品牌团队",
+              "narrativeRole": "比较统一口径的体验指标",
+              "emphasis": "数值与百分比单位并列",
+              "rationale": "沿用玻璃糖果风深色玻璃面板、多色高光与大圆角，受限12×8网格只承载原创演示内容。 口味属于离散分类，定制图表采用bar，不能暗示时间趋势。 口味属于离散分类，定制图表采用bar，不能暗示时间趋势。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-chart-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-chart-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-chart-core",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "subtitle"
+              },
+              {
+                "id": "bespoke-chart-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 5,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "caption"
+              },
+              {
+                "id": "bespoke-chart-plot",
+                "type": "chart",
+                "grid": {
+                  "column": 5,
+                  "row": 1,
+                  "width": 8,
+                  "height": 8
+                },
+                "chartType": "bar",
+                "showValues": true
+              },
+              {
+                "id": "bespoke-chart-facts",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 4,
+                  "height": 3
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[5].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[5].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[5].items[2]"
+              }
+            ],
+            "chartBindings": [
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "elements[4].data[0]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-2"
+                ],
+                "target": "elements[4].data[1]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "elements[4].data[2]"
+              }
+            ],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].text": "presentation.coreMessage",
+            "elements[3].text": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "content": {
+        "presentation": {
+          "pageIntent": "statement",
+          "coreMessage": "通勤唤醒，午后放松，聚会分享",
+          "title": {
+            "full": "让新鲜融入日常",
+            "short": "让新鲜融入日常"
+          },
+          "summary": {
+            "full": "通勤时刻轻唤醒；午后休息换心情；朋友聚会共分享。本页为概念演示。",
+            "short": "通勤唤醒，午后放松，聚会分享"
+          },
+          "items": [],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme04_page031",
+          "contentMap": {
+            "copy.text016": "presentation.title.short",
+            "copy.text007": "presentation.coreMessage",
+            "copy.text001": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "metricsData",
+              "copy.text002",
+              "copy.text003",
+              "copy.text004",
+              "copy.text005",
+              "copy.text006",
+              "copy.text008",
+              "copy.text009",
+              "copy.text010",
+              "copy.text011",
+              "copy.text012",
+              "copy.text013",
+              "copy.text014",
+              "copy.text015",
+              "copy.text016",
+              "copy.text007",
+              "copy.text001"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "metricsData",
+                  "fields": [
+                    {
+                      "key": "k",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "d",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "u",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "dir",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "copy.text002",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text003",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text004",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text005",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text006",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text008",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text009",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text010",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text011",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text012",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text013",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text014",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text015",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme04_page007",
+          "contentMap": {
+            "copy.text001": "presentation.title.short",
+            "copy.placeholder001": "presentation.coreMessage",
+            "copy.text002": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "dimsData",
+              "copy.text003",
+              "copy.text004",
+              "copy.text005",
+              "copy.text006",
+              "copy.text007",
+              "copy.text008",
+              "copy.text009",
+              "mediaCount",
+              "copy.text001",
+              "copy.placeholder001",
+              "copy.text002"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "dimsData",
+                  "fields": [
+                    {
+                      "key": "tag",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "axis",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "copy.text003",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text004",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text005",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text006",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text007",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text008",
+                  "value": ""
+                },
+                {
+                  "path": "copy.text009",
+                  "value": ""
+                },
+                {
+                  "path": "mediaCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme04_page048",
+          "contentMap": {
+            "copy.text001": "presentation.title.short",
+            "copy.text002": "presentation.coreMessage",
+            "copy.text003": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "panelsData",
+              "mediaCount",
+              "copy.text001",
+              "copy.text002",
+              "copy.text003"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "panelsData",
+                  "fields": [
+                    {
+                      "key": "no",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "zh",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    },
+                    {
+                      "key": "glyph",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ]
+                }
+              ],
+              "values": [
+                {
+                  "path": "mediaCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "通勤唤醒，午后放松，聚会分享",
+              "audience": "年轻化消费品牌团队",
+              "narrativeRole": "总结配方与触点的轻量策略",
+              "emphasis": "主张简洁，保留呼吸空间",
+              "rationale": "沿用玻璃糖果风深色玻璃面板、多色高光与大圆角，受限12×8网格只承载原创演示内容。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 12,
+                  "height": 5
+                }
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    }
+  ]
+}

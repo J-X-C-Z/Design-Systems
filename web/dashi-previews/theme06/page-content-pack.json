@@ -1,0 +1,151 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "制造产业链分析样例",
+        "title": {
+          "full": "从单点效率到全链协同",
+          "short": "从单点效率到全链协同"
+        },
+        "summary": {
+          "full": "制造产业链分析样例。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "制造产业链分析样例 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "制造产业链分析样例",
+              "short": "制造产业链分析样例"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "战略团队",
+              "short": "战略团队"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "原料环节占用最多时间",
+        "title": {
+          "full": "瓶颈应沿供应链逐层定位",
+          "short": "瓶颈应沿供应链逐层定位"
+        },
+        "summary": {
+          "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "周转时间 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "原料",
+            "detail": {
+              "full": "周转天数",
+              "short": "周转天数"
+            },
+            "value": 18,
+            "displayValue": "18",
+            "unit": "天",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "加工",
+            "detail": {
+              "full": "周转天数",
+              "short": "周转天数"
+            },
+            "value": 9,
+            "displayValue": "9",
+            "unit": "天",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "配送",
+            "detail": {
+              "full": "周转天数",
+              "short": "周转天数"
+            },
+            "value": 4,
+            "displayValue": "4",
+            "unit": "天",
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [
+          {
+            "id": "fact-1",
+            "label": "原料",
+            "value": 18,
+            "displayValue": "18",
+            "unit": "天"
+          },
+          {
+            "id": "fact-2",
+            "label": "加工",
+            "value": 9,
+            "displayValue": "9",
+            "unit": "天"
+          },
+          {
+            "id": "fact-3",
+            "label": "配送",
+            "value": 4,
+            "displayValue": "4",
+            "unit": "天"
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "协同周转",
+        "title": {
+          "full": "供需同行",
+          "short": "供需同行"
+        },
+        "summary": {
+          "full": "识别供给约束；追踪加工周转；同步交付节点。本页为概念演示。",
+          "short": "同步交付"
+        },
+        "items": [],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

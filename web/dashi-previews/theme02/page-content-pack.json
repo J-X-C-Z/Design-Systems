@@ -1,0 +1,129 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "边缘机器人概念发布",
+        "title": {
+          "full": "把感知，变成行动",
+          "short": "把感知，变成行动"
+        },
+        "summary": {
+          "full": "边缘机器人概念发布。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "边缘机器人概念发布 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "边缘机器人概念发布",
+              "short": "边缘机器人概念发布"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "技术负责人",
+              "short": "技术负责人"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "同一任务集的完成率逐轮提升",
+        "title": {
+          "full": "三轮测试，逐步提升完成率",
+          "short": "任务完成率稳步提升"
+        },
+        "summary": {
+          "full": "在相同任务集上，三轮概念测试的完成率从86%提升到94%。所有数值为虚构演示。",
+          "short": "相同任务集 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "首轮测试",
+            "detail": {
+              "full": "相同任务集完成率",
+              "short": "任务完成率"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 86,
+            "displayValue": "86",
+            "unit": "%"
+          },
+          {
+            "id": "fact-2",
+            "label": "二轮测试",
+            "detail": {
+              "full": "相同任务集完成率",
+              "short": "任务完成率"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 91,
+            "displayValue": "91",
+            "unit": "%"
+          },
+          {
+            "id": "fact-3",
+            "label": "三轮测试",
+            "detail": {
+              "full": "相同任务集完成率",
+              "short": "任务完成率"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 94,
+            "displayValue": "94",
+            "unit": "%"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "感知变化，规划动作，验证反馈",
+        "title": {
+          "full": "让反馈形成闭环",
+          "short": "让反馈形成闭环"
+        },
+        "summary": {
+          "full": "感知环境变化；规划候选动作；验证执行反馈。本页为概念演示。",
+          "short": "感知变化，规划动作，验证反馈"
+        },
+        "items": [],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

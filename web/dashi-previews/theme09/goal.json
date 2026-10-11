@@ -1,0 +1,1165 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "一座书店的慢时间",
+  "goal": "城市文化品牌专题",
+  "themePack": "theme09",
+  "pageCount": 3,
+  "randomSeed": "theme09-20261011-sample",
+  "workflowRunId": "20261011161521366-8602c0a6",
+  "slides": [
+    {
+      "id": "cover",
+      "content": {
+        "presentation": {
+          "pageIntent": "cover",
+          "coreMessage": "城市文化品牌专题",
+          "title": {
+            "full": "一座书店的慢时间",
+            "short": "一座书店的慢时间"
+          },
+          "summary": {
+            "full": "城市文化品牌专题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "城市文化品牌专题 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "用途",
+              "detail": {
+                "full": "城市文化品牌专题",
+                "short": "城市文化品牌专题"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "受众",
+              "detail": {
+                "full": "媒体编辑",
+                "short": "媒体编辑"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "性质",
+              "detail": {
+                "full": "纯概念演示",
+                "short": "纯概念演示"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme09_page068",
+          "contentMap": {
+            "core.text": "presentation.title.short",
+            "head.no": "presentation.coreMessage",
+            "head.en": "presentation.summary.short",
+            "head.cn": "presentation.pageIntent",
+            "core.tag": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "sets",
+              "setCount",
+              "aside.tag",
+              "aside.text",
+              "core.text",
+              "head.no",
+              "head.en",
+              "head.cn",
+              "core.tag"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "sets",
+                  "fields": [
+                    {
+                      "key": "label",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "setCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "aside.tag",
+                  "value": ""
+                },
+                {
+                  "path": "aside.text",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme09_page029",
+          "contentMap": {
+            "headEn": "presentation.title.short",
+            "summary.text": "presentation.coreMessage",
+            "summary.tag": "presentation.summary.short",
+            "headCn": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "items",
+              "itemCount",
+              "headEn",
+              "summary.text",
+              "summary.tag",
+              "headCn"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "items",
+                  "fields": [
+                    {
+                      "key": "dim",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme09_page102",
+          "contentMap": {
+            "lead.text": "presentation.title.short",
+            "head.no": "presentation.coreMessage",
+            "head.en": "presentation.summary.short",
+            "head.cn": "presentation.pageIntent",
+            "lead.tag": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "items",
+              "itemCount",
+              "lead.text",
+              "head.no",
+              "head.en",
+              "head.cn",
+              "lead.tag"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "items",
+                  "fields": [
+                    {
+                      "key": "title",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "城市文化品牌专题",
+              "audience": "城市文化媒体编辑",
+              "narrativeRole": "用杂志式刊头建立街角书店专题",
+              "emphasis": "主标题与编辑注记清楚分层",
+              "rationale": "深蓝杂志profile采用衬线标题、无衬线正文、暖橙重点、蓝灰辅助色与细线注记。受限composition以bar比较活动构成；真实编辑模板保留分屏、篇章卡和括弧归纳结构。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "content": {
+        "presentation": {
+          "pageIntent": "metrics",
+          "coreMessage": "阅读构成主体",
+          "title": {
+            "full": "空间让阅读成为日常相遇",
+            "short": "空间让阅读成为日常相遇"
+          },
+          "summary": {
+            "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "活动构成 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "阅读",
+              "detail": {
+                "full": "空间活动占比",
+                "short": "空间活动占比"
+              },
+              "value": 55,
+              "displayValue": "55",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "讲座",
+              "detail": {
+                "full": "空间活动占比",
+                "short": "空间活动占比"
+              },
+              "value": 25,
+              "displayValue": "25",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "工作坊",
+              "detail": {
+                "full": "空间活动占比",
+                "short": "空间活动占比"
+              },
+              "value": 20,
+              "displayValue": "20",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [
+            {
+              "id": "fact-1",
+              "label": "阅读",
+              "value": 55,
+              "displayValue": "55",
+              "unit": "%"
+            },
+            {
+              "id": "fact-2",
+              "label": "讲座",
+              "value": 25,
+              "displayValue": "25",
+              "unit": "%"
+            },
+            {
+              "id": "fact-3",
+              "label": "工作坊",
+              "value": 20,
+              "displayValue": "20",
+              "unit": "%"
+            }
+          ],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme09_page107",
+          "contentMap": {
+            "head.no": "presentation.title.short",
+            "note": "presentation.coreMessage",
+            "head.en": "presentation.summary.short",
+            "head.cn": "presentation.pageIntent",
+            "portraitsLabel": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "members",
+              "memberCount",
+              "asideTag",
+              "imgCount",
+              "head.no",
+              "note",
+              "head.en",
+              "head.cn",
+              "portraitsLabel"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "members[3]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "members",
+                  "fields": [
+                    {
+                      "key": "name",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "role",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "en",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "memberCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "asideTag",
+                  "value": ""
+                },
+                {
+                  "path": "imgCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme09_page102",
+          "contentMap": {
+            "lead.text": "presentation.title.short",
+            "head.no": "presentation.coreMessage",
+            "head.en": "presentation.summary.short",
+            "head.cn": "presentation.pageIntent",
+            "lead.tag": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "items",
+              "itemCount",
+              "lead.text",
+              "head.no",
+              "head.en",
+              "head.cn",
+              "lead.tag"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "items[3]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "items[4]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "items",
+                  "fields": [
+                    {
+                      "key": "title",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "chart-last",
+                      "sourceIds": [
+                        "fact-3"
+                      ]
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme09_page032",
+          "contentMap": {
+            "conclusion.text": "presentation.title.short",
+            "conclusion.note": "presentation.coreMessage",
+            "head.en": "presentation.summary.short",
+            "head.cn": "presentation.pageIntent",
+            "conclusion.tag": "presentation.items[0].label"
+          },
+          "projection": {
+            "chartMode": "summary",
+            "contentPaths": [
+              "items",
+              "itemCount",
+              "head.no",
+              "conclusion.text",
+              "conclusion.note",
+              "head.en",
+              "head.cn",
+              "conclusion.tag"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1",
+                  "fact-2",
+                  "fact-3"
+                ],
+                "target": "items[0]"
+              },
+              {
+                "mode": "summary",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "items[4]"
+              }
+            ],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "items",
+                  "fields": [
+                    {
+                      "key": "text",
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "chart-summary",
+                      "sourceIds": [
+                        "fact-1",
+                        "fact-2",
+                        "fact-3"
+                      ]
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "chart-first",
+                      "sourceIds": [
+                        "fact-1"
+                      ]
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "head.no",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "阅读构成主体",
+              "audience": "城市文化媒体编辑",
+              "narrativeRole": "以活动占比解释空间使用构成",
+              "emphasis": "55/25/20%分类占比保真",
+              "rationale": "深蓝杂志profile采用衬线标题、无衬线正文、暖橙重点、蓝灰辅助色与细线注记。受限composition以bar比较活动构成；真实编辑模板保留分屏、篇章卡和括弧归纳结构。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-chart-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-chart-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-chart-core",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "subtitle"
+              },
+              {
+                "id": "bespoke-chart-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 5,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "caption"
+              },
+              {
+                "id": "bespoke-chart-plot",
+                "type": "chart",
+                "grid": {
+                  "column": 5,
+                  "row": 1,
+                  "width": 8,
+                  "height": 8
+                },
+                "chartType": "bar",
+                "showValues": true
+              },
+              {
+                "id": "bespoke-chart-facts",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 4,
+                  "height": 3
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[5].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[5].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[5].items[2]"
+              }
+            ],
+            "chartBindings": [
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-1"
+                ],
+                "target": "elements[4].data[0]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-2"
+                ],
+                "target": "elements[4].data[1]"
+              },
+              {
+                "mode": "point",
+                "sourceIds": [
+                  "fact-3"
+                ],
+                "target": "elements[4].data[2]"
+              }
+            ],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].text": "presentation.coreMessage",
+            "elements[3].text": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "content": {
+        "presentation": {
+          "pageIntent": "statement",
+          "coreMessage": "进入空间，发现故事，建立联系",
+          "title": {
+            "full": "让相遇继续发生",
+            "short": "让相遇继续发生"
+          },
+          "summary": {
+            "full": "从街角进入空间；从书架发现故事；从活动建立联系。本页为概念演示。",
+            "short": "进入空间，发现故事，建立联系"
+          },
+          "items": [
+            {
+              "id": "action-1",
+              "label": "空间",
+              "detail": {
+                "full": "从街角进入空间",
+                "short": "从街角进入空间"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "action-2",
+              "label": "故事",
+              "detail": {
+                "full": "从书架发现故事",
+                "short": "从书架发现故事"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "action-3",
+              "label": "联系",
+              "detail": {
+                "full": "从活动建立联系",
+                "short": "从活动建立联系"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme09_page102",
+          "contentMap": {
+            "lead.text": "presentation.title.short",
+            "head.no": "presentation.coreMessage",
+            "head.en": "presentation.pageIntent",
+            "head.cn": "presentation.items[0].label",
+            "lead.tag": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "items",
+              "itemCount",
+              "lead.text",
+              "head.no",
+              "head.en",
+              "head.cn",
+              "lead.tag"
+            ],
+            "projectedItemIds": [
+              "action-1",
+              "action-2",
+              "action-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "items",
+                  "fields": [
+                    {
+                      "key": "title",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-1"
+                    },
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-3"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme09_page032",
+          "contentMap": {
+            "conclusion.text": "presentation.title.short",
+            "conclusion.note": "presentation.coreMessage",
+            "head.en": "presentation.pageIntent",
+            "head.cn": "presentation.items[0].label",
+            "conclusion.tag": "presentation.items[1].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "items",
+              "itemCount",
+              "head.no",
+              "conclusion.text",
+              "conclusion.note",
+              "head.en",
+              "head.cn",
+              "conclusion.tag"
+            ],
+            "projectedItemIds": [
+              "action-3",
+              "action-2",
+              "action-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "items",
+                  "fields": [
+                    {
+                      "key": "text",
+                      "semantic": "label"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-3"
+                    },
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-1"
+                    }
+                  ],
+                  "countPath": "itemCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "head.no",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme09_page104",
+          "contentMap": {
+            "outcome.text": "presentation.title.short",
+            "head.no": "presentation.coreMessage",
+            "head.en": "presentation.pageIntent",
+            "head.cn": "presentation.items[0].label",
+            "outcome.tag": "presentation.items[0].detail.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "steps",
+              "stepCount",
+              "outcome.text",
+              "head.no",
+              "head.en",
+              "head.cn",
+              "outcome.tag"
+            ],
+            "projectedItemIds": [
+              "action-2",
+              "action-1",
+              "action-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "steps",
+                  "fields": [
+                    {
+                      "key": "title",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "action-2"
+                    },
+                    {
+                      "sourceId": "action-1"
+                    },
+                    {
+                      "sourceId": "action-3"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ],
+                  "countPath": "stepCount"
+                }
+              ],
+              "values": []
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "进入空间，发现故事，建立联系",
+              "audience": "城市文化媒体编辑",
+              "narrativeRole": "以空间故事和人际联系收束专题",
+              "emphasis": "衬线主张与深蓝留白呼应",
+              "rationale": "深蓝杂志profile采用衬线标题、无衬线正文、暖橙重点、蓝灰辅助色与细线注记。受限composition以bar比较活动构成；真实编辑模板保留分屏、篇章卡和括弧归纳结构。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "action-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "action-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "action-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "公共空间研究样例",
+        "title": {
+          "full": "可步行社区观察",
+          "short": "可步行社区观察"
+        },
+        "summary": {
+          "full": "公共空间研究样例；纯虚构演示。",
+          "short": "公共空间研究样例 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "公共空间研究样例",
+              "short": "公共空间研究样例"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "研究机构",
+              "short": "研究机构"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "遮阴覆盖评分有待改善",
+        "title": {
+          "full": "把观察证据与解释分开",
+          "short": "把观察证据与解释分开"
+        },
+        "summary": {
+          "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "观察评分 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "道路连续",
+            "detail": {
+              "full": "评分",
+              "short": "评分"
+            },
+            "value": 72,
+            "displayValue": "72",
+            "unit": "分",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "遮阴覆盖",
+            "detail": {
+              "full": "评分",
+              "short": "评分"
+            },
+            "value": 56,
+            "displayValue": "56",
+            "unit": "分",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "停留设施",
+            "detail": {
+              "full": "评分",
+              "short": "评分"
+            },
+            "value": 64,
+            "displayValue": "64",
+            "unit": "分",
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [
+          {
+            "id": "fact-1",
+            "label": "道路连续",
+            "value": 72,
+            "displayValue": "72",
+            "unit": "分"
+          },
+          {
+            "id": "fact-2",
+            "label": "遮阴覆盖",
+            "value": 56,
+            "displayValue": "56",
+            "unit": "分"
+          },
+          {
+            "id": "fact-3",
+            "label": "停留设施",
+            "value": 64,
+            "displayValue": "64",
+            "unit": "分"
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "记录范围，分开推断，列明疑问",
+        "title": {
+          "full": "让证据可以复核",
+          "short": "让证据可以复核"
+        },
+        "summary": {
+          "full": "记录观察范围；区分事实与假设；列出复核问题。本页为概念演示。",
+          "short": "记录范围，分开推断，列明疑问"
+        },
+        "items": [
+          {
+            "id": "action-1",
+            "label": "范围",
+            "detail": {
+              "full": "记录观察范围",
+              "short": "记录观察范围"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "action-2",
+            "label": "推断",
+            "detail": {
+              "full": "区分事实与假设",
+              "short": "区分事实与假设"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "action-3",
+            "label": "复核",
+            "detail": {
+              "full": "列明待核问题",
+              "short": "列明待核问题"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

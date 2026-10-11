@@ -1,0 +1,1010 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;font-src 'none';connect-src 'none';base-uri 'none';form-action 'none'"><title>把感知，变成行动 · Dashi theme02</title><style>
+.gxn-theme{
+  /* ── color ── */
+  --gxn-bg: #07090b;
+  --gxn-accent: #2fe07f;
+  --gxn-accent-2: #b9f24a;
+  --gxn-accent-cool: #4ea2ff;
+  --gxn-glow: 47,224,127;
+  --gxn-text: #eef3f1;
+  --gxn-dim: rgba(238,243,241,0.58);
+  --gxn-faint: rgba(238,243,241,0.34);
+  --gxn-line: rgba(255,255,255,0.09);
+  --gxn-panel-a: rgba(255,255,255,0.055);
+  --gxn-panel-b: rgba(255,255,255,0.012);
+
+  /* ── type ── */
+  --gxn-font-display: 'Space Grotesk','Noto Sans SC',-apple-system,sans-serif;
+  --gxn-font-sans: 'Noto Sans SC','Space Grotesk',-apple-system,sans-serif;
+  --gxn-font-mono: 'Space Mono',ui-monospace,'SFMono-Regular',monospace;
+  --gxn-fs-display: 82px;
+  --gxn-fs-h1: 58px;
+  --gxn-fs-h2: 40px;
+  --gxn-fs-h3: 32px;
+  --gxn-fs-body: 28px;
+  --gxn-fs-label: 24px;
+  --gxn-fs-stat: 112px;
+
+  /* ── space ── */
+  --gxn-px: 108px;
+  --gxn-py: 88px;
+  --gxn-gap: 32px;
+  --gxn-radius: 24px;
+
+  font-family: var(--gxn-font-sans);
+  color: var(--gxn-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── slide frame ── */
+.gxn-theme.gxn-slide{
+  position:absolute; inset:0; width:100%; height:100%;
+  box-sizing:border-box;
+  background:
+    radial-gradient(1200px 760px at 84% -14%, rgba(var(--gxn-glow),0.14), transparent 60%),
+    radial-gradient(960px 680px at -8% 116%, rgba(78,162,255,0.10), transparent 60%),
+    var(--gxn-bg);
+  overflow:hidden;
+}
+.gxn-slide *{ box-sizing:border-box; }
+/* faint dot grid texture */
+.gxn-slide::before{
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background-image: radial-gradient(rgba(255,255,255,0.045) 1px, transparent 1.4px);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(120% 120% at 50% 40%, #000 30%, transparent 86%);
+  opacity:.7;
+}
+.gxn-pad{ position:absolute; inset:0; padding: var(--gxn-py) var(--gxn-px); display:flex; flex-direction:column; }
+
+/* ── header lockup (parallel across slides) ── */
+.gxn-kicker{
+  display:inline-flex; align-items:center; gap:12px;
+  font-family:var(--gxn-font-mono); font-size:var(--gxn-fs-label);
+  letter-spacing:.18em; text-transform:uppercase; color:var(--gxn-accent);
+  text-shadow:0 0 18px rgba(var(--gxn-glow),0.55);
+  margin:0;
+}
+.gxn-kicker::before{
+  content:''; width:34px; height:2px; border-radius:2px;
+  background:linear-gradient(90deg,var(--gxn-accent),transparent);
+  box-shadow:0 0 14px rgba(var(--gxn-glow),0.8);
+}
+.gxn-title{
+  font-family:var(--gxn-font-sans); font-weight:700; font-size:var(--gxn-fs-h1);
+  line-height:1.08; letter-spacing:-0.01em; margin:0; color:var(--gxn-text);
+}
+.gxn-title .gxn-em{ color:var(--gxn-accent); text-shadow:0 0 26px rgba(var(--gxn-glow),0.5); }
+.gxn-sub{ font-size:var(--gxn-fs-h3); color:var(--gxn-dim); margin:0; font-weight:400; line-height:1.4; }
+
+/* ── panels / cards ── */
+/* Panels adopt the "炫光 / rim-glow" technique (studied from the ticket card):
+   a radial wash that darkens the centre and tints the edge, an INSET rim
+   bloom that hugs the rounded-rect border like backlit glass, and — on focus —
+   a brighter inner rim plus an outer halo. Re-tinted from the source's violet
+   to the deck's green accent so it stays on-theme. */
+.gxn-panel{
+  position:relative; border-radius:var(--gxn-radius);
+  background:
+    radial-gradient(132% 132% at 50% 50%, rgba(255,255,255,0) 58%, rgba(var(--gxn-glow),0.035) 90%, rgba(var(--gxn-glow),0.085) 100%),
+    linear-gradient(165deg,var(--gxn-panel-a),var(--gxn-panel-b));
+  border:1px solid var(--gxn-line);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    inset 0 0 42px -16px rgba(var(--gxn-glow),0.20),
+    0 26px 60px -40px rgba(0,0,0,0.9);
+  transition: border-color .35s ease, box-shadow .35s ease, background .35s ease, transform .35s ease;
+}
+.gxn-panel.is-focus{
+  border-color: transparent;
+  background:
+    radial-gradient(130% 130% at 50% 44%, rgba(7,9,11,0) 46%, rgba(var(--gxn-glow),0.07) 82%, rgba(var(--gxn-glow),0.16) 100%),
+    linear-gradient(165deg,var(--gxn-panel-a),var(--gxn-panel-b));
+  box-shadow:
+    inset 0 0 0 1.5px rgba(var(--gxn-glow),0.62),     /* crisp rim line   */
+    inset 0 0 30px -4px rgba(var(--gxn-glow),0.46),   /* tight inner bloom */
+    inset 0 0 96px 8px rgba(var(--gxn-glow),0.14),    /* soft falloff      */
+    0 0 84px -8px rgba(var(--gxn-glow),0.60),         /* outer halo        */
+    0 26px 70px -42px rgba(0,0,0,0.9);
+}
+.gxn-panel.is-dim{ opacity:.46; filter:saturate(.7); }
+
+.gxn-mono{ font-family:var(--gxn-font-mono); letter-spacing:.04em; }
+.gxn-num{ font-family:var(--gxn-font-display); font-variant-numeric:tabular-nums lining-nums; font-feature-settings:"tnum" 1; }
+
+/* index chip */
+.gxn-index{
+  font-family:var(--gxn-font-mono); font-size:var(--gxn-fs-label);
+  color:var(--gxn-faint); letter-spacing:.1em;
+}
+
+/* legend */
+.gxn-legend{ display:flex; flex-direction:column; gap:18px; }
+.gxn-legend-row{ display:flex; align-items:center; gap:16px; transition:opacity .3s ease; }
+.gxn-legend-row.is-dim{ opacity:.4; }
+.gxn-dot{ width:16px; height:16px; border-radius:5px; flex:0 0 auto; box-shadow:0 0 16px -2px currentColor; }
+
+/* image slot */
+.gxn-slot{
+  position:relative; overflow:hidden; border-radius:18px;
+  background:
+    repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 12px, rgba(255,255,255,0.015) 12px 24px);
+  border:1px solid var(--gxn-line);
+  display:flex; align-items:center; justify-content:center;
+}
+.gxn-slot.is-filled{ background:#0b0d10; border-color:rgba(var(--gxn-glow),0.3);
+  box-shadow:0 0 56px -22px rgba(var(--gxn-glow),0.6); }
+.gxn-slot img,.gxn-slot video{ width:100%; height:100%; object-fit:cover; display:block; }
+.gxn-slot-cap{ font-family:var(--gxn-font-mono); font-size:24px; color:var(--gxn-faint);
+  letter-spacing:.06em; text-align:center; padding:10px; }
+.gxn-slot-btn{
+  position:absolute; appearance:none; border:0; cursor:pointer; font-family:var(--gxn-font-mono);
+}
+.gxn-slot-add{ inset:0; width:100%; height:100%; background:transparent; color:var(--gxn-dim); }
+.gxn-slot-add:hover{ background:rgba(var(--gxn-glow),0.05); color:var(--gxn-accent); }
+.gxn-slot-clear{
+  top:10px; right:10px; width:30px; height:30px; border-radius:50%;
+  background:rgba(0,0,0,0.55); color:#fff; font-size:15px; line-height:1;
+  backdrop-filter:blur(8px); display:none; align-items:center; justify-content:center;
+}
+.gxn-slot.is-filled:hover .gxn-slot-clear{ display:flex; }
+/* focused image slot — accent ring + halo (used by gallery/showcase) */
+.gxn-slot.is-focus{
+  border-color: var(--gxn-accent);
+  box-shadow:
+    inset 0 0 0 2px rgba(var(--gxn-glow),0.55),
+    0 0 64px -16px rgba(var(--gxn-glow),0.72);
+}
+/* caption overlay on a filled slot */
+.gxn-slot-overlay{
+  position:absolute; left:0; right:0; bottom:0; z-index:2;
+  display:flex; align-items:center; gap:12px; padding:18px 20px;
+  background:linear-gradient(to top, rgba(4,6,8,0.82), rgba(4,6,8,0.32) 62%, transparent);
+  pointer-events:none;
+}
+.gxn-slot-overlay .gxn-cap-idx{
+  font-family:var(--gxn-font-mono); font-size:24px; line-height:1; color:var(--gxn-accent);
+  text-shadow:0 0 16px rgba(var(--gxn-glow),0.7);
+}
+.gxn-slot-overlay .gxn-cap-txt{
+  font-family:var(--gxn-font-sans); font-weight:500; font-size:24px; color:#f3f6f4; letter-spacing:.01em;
+}
+
+/* entrance — visible end-state is base; animate from hidden only when active */
+@media (prefers-reduced-motion: no-preference){
+  [data-deck-active] .gxn-rise{ animation: gxn-rise .62s cubic-bezier(.2,.7,.25,1) both; }
+  [data-deck-active] .gxn-rise-2{ animation: gxn-rise .62s cubic-bezier(.2,.7,.25,1) .08s both; }
+  [data-deck-active] .gxn-rise-3{ animation: gxn-rise .62s cubic-bezier(.2,.7,.25,1) .16s both; }
+  [data-deck-active] .gxn-rise-4{ animation: gxn-rise .62s cubic-bezier(.2,.7,.25,1) .24s both; }
+}
+@keyframes gxn-rise{ from{ opacity:0; transform:translateY(22px); } to{ opacity:1; transform:none; } }
+
+/* ── flowing neon sphere (hub orb, shared by relation slides) ──
+   A filled accent gradient over an opaque base; .is-flow drifts the gradient
+   so the orb's surface appears to flow. Scheme-aware via the accent vars. */
+.gxn-sphere{
+  background: linear-gradient(125deg, var(--gxn-accent) 0%, var(--gxn-accent-2) 44%, var(--gxn-accent) 100%);
+  background-size: 100% 100%;
+}
+.gxn-sphere.is-flow{
+  background-size: 240% 240%;
+  animation: gxn-sphere-flow 7s ease-in-out infinite alternate;
+}
+@keyframes gxn-sphere-flow{ 0%{ background-position:0% 50%; } 100%{ background-position:100% 50%; } }
+@media (prefers-reduced-motion: reduce){ .gxn-sphere.is-flow{ animation:none; } }
+</style><style>
+*{box-sizing:border-box}body{margin:0;background:#e5e7eb;color:#202329;font:14px system-ui,sans-serif}.reader-header{padding:14px 22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border-bottom:1px solid #ccd0d6}.reader-header a{color:inherit}.reader-header small{color:#555}.reader-header select{font:inherit;padding:10px;border:1px solid #bbb;border-radius:5px;max-width:100%}.reader-main{max-width:1600px;margin:auto;padding:20px}.frame{position:relative;aspect-ratio:16/9;margin:0 0 24px;background:#fff;overflow:hidden;box-shadow:0 5px 20px #0002}.canvas{width:1920px;height:1080px;position:absolute;transform-origin:top left;overflow:hidden}.slide{width:1920px;height:1080px;position:relative;overflow:hidden}.slide>*{max-width:100%}.reader-footer{padding:20px 24px;line-height:1.8;background:white}.text-readout{max-width:1100px;margin:auto;padding:24px;background:white;line-height:1.8}.text-readout h2{font-size:20px}.text-readout li{margin:6px 0}.text-readout p{overflow-wrap:anywhere}a:focus-visible,select:focus-visible{outline:3px solid #2563eb;outline-offset:3px}@media(max-width:600px){.reader-header{padding:12px;gap:10px}.reader-header small{flex-basis:100%;line-height:1.7}.reader-main{padding:10px}.frame{margin-bottom:14px}.text-readout{padding:18px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style></head><body><header class="reader-header"><a href="../index.html">← Dashi 分类</a><b>炫光紫绿风</b><select aria-label="跳转方案"><option value="page-1">1 · 模板 1</option><option value="page-2">1 · 模板 2</option><option value="page-3">1 · 模板 3</option><option value="page-4">1 · 定制</option><option value="page-5">2 · 模板 1</option><option value="page-6">2 · 模板 2</option><option value="page-7">2 · 模板 3</option><option value="page-8">2 · 定制</option><option value="page-9">3 · 模板 1</option><option value="page-10">3 · 模板 2</option><option value="page-11">3 · 模板 3</option><option value="page-12">3 · 定制</option></select><small>真实模板 · 3+1 / HTML 只读适配 · 演示内容与数据</small></header><main class="reader-main"><article class="frame" id="page-1"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page071"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad"><header class="gxn-rise" style="display:flex;flex-direction:column;gap:22px"><div style="display:flex;align-items:center;justify-content:space-between"><p class="gxn-kicker">边缘机器人概念发布 · 演示数据</p><span class="gxn-index">07 / 40</span></div><h1 class="gxn-title">把感知，变成行动<span class="gxn-em">cover</span></h1></header><p class="gxn-sub gxn-rise" style="margin-top:16px;max-width:1240px">边缘机器人概念发布</p><div class="gxn-rise-2" style="flex:1;margin-top:8px;min-height:0;display:grid;grid-template-columns:1.12fr 0.88fr;gap:56px;align-items:center"><div style="height:100%;min-height:0;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 760 680" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display:block;overflow:visible"><defs><filter id="R5q-g" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7" result="b"></feGaussianBlur><feMerge><feMergeNode in="b"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><g style="mix-blend-mode:screen"><circle cx="380" cy="236" r="162" fill="#2fe07f" fill-opacity="0.15" stroke="#2fe07f" stroke-width="2.5" stroke-opacity="1" filter="url(#R5q-g)"></circle><circle cx="276.08" cy="416" r="162" fill="#b9f24a" fill-opacity="0.15" stroke="#b9f24a" stroke-width="2.5" stroke-opacity="1" filter="url(#R5q-g)"></circle><circle cx="483.92" cy="416" r="162" fill="#2fe0c4" fill-opacity="0.15" stroke="#2fe0c4" stroke-width="2.5" stroke-opacity="1" filter="url(#R5q-g)"></circle></g><g opacity="1"><text x="380" y="40" text-anchor="middle" font-family="&#x27;Noto Sans SC&#x27;,sans-serif" font-weight="700" font-size="34" fill="#eef3f1">用途</text><text x="380" y="64" text-anchor="middle" font-family="&#x27;Space Mono&#x27;,monospace" font-size="20" fill="rgba(238,243,241,0.55)">边缘机器人概念发布</text></g><g opacity="1"><text x="132.32083726362933" y="529.0018260602602" text-anchor="middle" font-family="&#x27;Noto Sans SC&#x27;,sans-serif" font-weight="700" font-size="34" fill="#eef3f1">受众</text><text x="132.32083726362933" y="555.0018260602602" text-anchor="middle" font-family="&#x27;Space Mono&#x27;,monospace" font-size="20" fill="rgba(238,243,241,0.55)">技术负责人</text></g><g opacity="1"><text x="627.6791627363707" y="529.0018260602602" text-anchor="middle" font-family="&#x27;Noto Sans SC&#x27;,sans-serif" font-weight="700" font-size="34" fill="#eef3f1">性质</text><text x="627.6791627363707" y="555.0018260602602" text-anchor="middle" font-family="&#x27;Space Mono&#x27;,monospace" font-size="20" fill="rgba(238,243,241,0.55)">纯概念演示</text></g><g filter="url(#R5q-g)"><circle cx="380" cy="356" r="56" fill="rgba(7,9,11,0.82)" stroke="#2fe07f" stroke-width="2.5"></circle><text x="380" y="356" text-anchor="middle" dominant-baseline="middle" font-family="&#x27;Noto Sans SC&#x27;,sans-serif" font-weight="700" font-size="25" fill="#2fe07f" style="filter:none">用途</text></g></svg></div><div style="display:flex;flex-direction:column;gap:22px;min-width:0"><div class="gxn-panel is-focus" style="padding:28px 32px;display:flex;flex-direction:column;gap:8px"><span class="gxn-mono" style="font-size:22px;color:var(--gxn-accent);letter-spacing:0.06em">受众</span><span class="gxn-num gxn-aurora-num" style="font-size:46px;font-weight:700;line-height:1.1;color:var(--gxn-accent)">用途</span><span style="font-size:25px;color:var(--gxn-dim);line-height:1.5">技术负责人</span></div><ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px"><li style="display:flex;align-items:flex-start;gap:16px;opacity:1;transition:opacity .3s"><span class="gxn-dot" style="color:#2fe07f;background:#2fe07f;margin-top:8px"></span><div style="display:flex;flex-direction:column;gap:2px;min-width:0"><span style="font-size:30px;font-weight:700;color:var(--gxn-text)">用途</span><span class="gxn-mono" style="font-size:22px;color:var(--gxn-faint)">边缘机器人概念发布</span></div></li><li style="display:flex;align-items:flex-start;gap:16px;opacity:1;transition:opacity .3s"><span class="gxn-dot" style="color:#b9f24a;background:#b9f24a;margin-top:8px"></span><div style="display:flex;flex-direction:column;gap:2px;min-width:0"><span style="font-size:30px;font-weight:700;color:var(--gxn-text)">受众</span><span class="gxn-mono" style="font-size:22px;color:var(--gxn-faint)">技术负责人</span></div></li><li style="display:flex;align-items:flex-start;gap:16px;opacity:1;transition:opacity .3s"><span class="gxn-dot" style="color:#2fe0c4;background:#2fe0c4;margin-top:8px"></span><div style="display:flex;flex-direction:column;gap:2px;min-width:0"><span style="font-size:30px;font-weight:700;color:var(--gxn-text)">性质</span><span class="gxn-mono" style="font-size:22px;color:var(--gxn-faint)">纯概念演示</span></div></li></ul></div></div><div class="gxn-rise-3" style="margin-top:14px"><span style="font-size:26px;color:var(--gxn-dim)">性质</span></div></div></div></div></section></div></article>
+<article class="frame" id="page-2"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page053"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad"><header class="gxn-rise" style="display:flex;flex-direction:column;gap:22px"><div style="display:flex;align-items:center;justify-content:space-between"><p class="gxn-kicker">边缘机器人概念发布 · 演示数据</p><span class="gxn-index"></span></div><h1 class="gxn-title">把感知，变成行动<span class="gxn-em">cover</span></h1><p class="gxn-sub" style="max-width:1180px">边缘机器人概念发布</p></header><div class="gxn-rise-2" style="flex:1;margin-top:40px;min-height:0;position:relative"><div style="position:relative;height:100%;display:grid;gap:30px;grid-template-columns:repeat(4, 1fr);align-items:stretch"><div class="gxn-panel is-dim" style="display:flex;flex-direction:column;padding:18px;gap:16px;min-height:0"><div style="display:flex;flex-direction:column;gap:10px;flex:1;justify-content:center"><div style="display:flex;align-items:center;gap:14px"><span class="gxn-num" style="font-size:30px;font-weight:700;line-height:1;color:var(--gxn-faint);text-shadow:none">01</span><span class="gxn-mono" style="font-size:22px;letter-spacing:.06em;color:var(--gxn-accent)">性质</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:38px;line-height:1.15;color:var(--gxn-text)"></h3><p style="margin:0;font-size:26px;line-height:1.45;color:var(--gxn-dim)">纯概念演示</p></div></div><div class="gxn-panel is-dim" style="display:flex;flex-direction:column;padding:18px;gap:16px;min-height:0"><div style="display:flex;flex-direction:column;gap:10px;flex:1;justify-content:center"><div style="display:flex;align-items:center;gap:14px"><span class="gxn-num" style="font-size:30px;font-weight:700;line-height:1;color:var(--gxn-faint);text-shadow:none">02</span><span class="gxn-mono" style="font-size:22px;letter-spacing:.06em;color:var(--gxn-accent)">受众</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:38px;line-height:1.15;color:var(--gxn-text)"></h3><p style="margin:0;font-size:26px;line-height:1.45;color:var(--gxn-dim)">技术负责人</p></div></div><div class="gxn-panel is-focus" style="display:flex;flex-direction:column;padding:18px;gap:16px;min-height:0"><div style="display:flex;flex-direction:column;gap:10px;flex:1;justify-content:center"><div style="display:flex;align-items:center;gap:14px"><span class="gxn-num" style="font-size:30px;font-weight:700;line-height:1;color:var(--gxn-accent);text-shadow:0 0 22px rgba(var(--gxn-glow),0.6)">03</span><span class="gxn-mono" style="font-size:22px;letter-spacing:.06em;color:var(--gxn-accent)">用途</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:38px;line-height:1.15;color:var(--gxn-text)"></h3><p style="margin:0;font-size:26px;line-height:1.45;color:var(--gxn-dim)">边缘机器人概念发布</p></div></div><div class="gxn-panel is-dim" style="display:flex;flex-direction:column;padding:18px;gap:16px;min-height:0"><div style="display:flex;flex-direction:column;gap:10px;flex:1;justify-content:center"><div style="display:flex;align-items:center;gap:14px"><span class="gxn-num" style="font-size:30px;font-weight:700;line-height:1;color:var(--gxn-faint);text-shadow:none">04</span><span class="gxn-mono" style="font-size:22px;letter-spacing:.06em;color:var(--gxn-accent)">边缘机器人概念发布 · 演示数据</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:38px;line-height:1.15;color:var(--gxn-text)"></h3><p style="margin:0;font-size:26px;line-height:1.45;color:var(--gxn-dim)">边缘机器人概念发布。所有内容与数字均为虚构演示，不作为事实或决策依据。</p></div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-3"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page027"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad"><header class="gxn-rise" style="display:flex;flex-direction:column;gap:22px"><div style="display:flex;align-items:center;justify-content:space-between"><p class="gxn-kicker">边缘机器人概念发布 · 演示数据</p><span class="gxn-index">18 / 31</span></div><h1 class="gxn-title">把感知，变成行动<span class="gxn-em">cover</span></h1></header><p class="gxn-sub gxn-rise" style="margin-top:18px;max-width:1240px">边缘机器人概念发布</p><div class="gxn-rise-2" style="flex:1;margin-top:34px;min-height:0;display:grid;grid-template-columns:repeat(4, 1fr);gap:28px"><article class="gxn-panel" style="position:relative;overflow:hidden;display:flex;flex-direction:column;padding:18px;gap:18px;min-height:0;opacity:1;transition:opacity .3s ease"><div class="gxn-slot" style="flex:1;min-height:0;border-radius:16px"><span class="gxn-slot-cap">受众</span></div><div style="display:flex;flex-direction:column;gap:12px;padding:2px 8px 8px;flex:0 0 168px;min-height:168px;height:168px"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-size:32px;font-weight:700;line-height:1.1;color:var(--gxn-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">受众</h3></div><p style="margin:0;font-size:25px;line-height:1.5;color:var(--gxn-dim);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden">技术负责人</p></div></article><article class="gxn-panel" style="position:relative;overflow:hidden;display:flex;flex-direction:column;padding:18px;gap:18px;min-height:0;opacity:1;transition:opacity .3s ease"><div class="gxn-slot" style="flex:1;min-height:0;border-radius:16px"><span class="gxn-slot-cap">性质</span></div><div style="display:flex;flex-direction:column;gap:12px;padding:2px 8px 8px;flex:0 0 168px;min-height:168px;height:168px"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-size:32px;font-weight:700;line-height:1.1;color:var(--gxn-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">性质</h3></div><p style="margin:0;font-size:25px;line-height:1.5;color:var(--gxn-dim);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden">纯概念演示</p></div></article><article class="gxn-panel" style="position:relative;overflow:hidden;display:flex;flex-direction:column;padding:18px;gap:18px;min-height:0;opacity:1;transition:opacity .3s ease"><div class="gxn-slot" style="flex:1;min-height:0;border-radius:16px"><span class="gxn-slot-cap">用途</span></div><div style="display:flex;flex-direction:column;gap:12px;padding:2px 8px 8px;flex:0 0 168px;min-height:168px;height:168px"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-size:32px;font-weight:700;line-height:1.1;color:var(--gxn-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">用途</h3></div><p style="margin:0;font-size:25px;line-height:1.5;color:var(--gxn-dim);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden">边缘机器人概念发布</p></div></article><article class="gxn-panel" style="position:relative;overflow:hidden;display:flex;flex-direction:column;padding:18px;gap:18px;min-height:0;opacity:1;transition:opacity .3s ease"><div class="gxn-slot" style="flex:1;min-height:0;border-radius:16px"><span class="gxn-slot-cap">边缘机器人概念发布 · 演示数据</span></div><div style="display:flex;flex-direction:column;gap:12px;padding:2px 8px 8px;flex:0 0 168px;min-height:168px;height:168px"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-size:32px;font-weight:700;line-height:1.1;color:var(--gxn-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">边缘机器人概念发布 · 演示数据</h3></div><p style="margin:0;font-size:25px;line-height:1.5;color:var(--gxn-dim);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden">边缘机器人概念发布。所有内容与数字均为虚构演示，不作为事实或决策依据。</p></div></article></div></div></div></div></section></div></article>
+<article class="frame" id="page-4"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="cover::v4" data-vm-source-slide-id="cover" data-vm-slide-key="bespoke-cover-v4" data-vm-index="0" data-vm-variant-state-id="cover::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme02" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(circle at 78% 18%,rgba(162,77,255,.34),transparent 34%),radial-gradient(circle at 12% 86%,rgba(190,255,55,.16),transparent 30%),#120c23;--bespoke-surface:rgba(94,61,134,.26);--bespoke-ink:#f7f4ff;--bespoke-muted:#b6aec6;--bespoke-accent:#c7ff3f;--bespoke-accent-2:#a24dff;--bespoke-line:rgba(235,226,255,.18);--bespoke-pad:92px;--bespoke-gap:22px;--bespoke-radius:24px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(circle at 78% 18%,rgba(162,77,255,.34),transparent 34%),radial-gradient(circle at 12% 86%,rgba(190,255,55,.16),transparent 30%),#120c23;color:#f7f4ff;font-family:&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#c7ff3f;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#a24dff;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:92px 92px"><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f7f4ff;text-align:left;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">cover</div></div><div data-bespoke-element="text" style="grid-column:1 / span 8;grid-row:2 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f7f4ff;text-align:left;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">把感知，变成行动</div></div><blockquote data-bespoke-element="quote" style="grid-column:1 / span 9;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(94,61,134,.26);border:1px solid rgba(235,226,255,.18);border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.08);display:flex;flex-direction:column;justify-content:center;gap:26px;margin:0;overflow:hidden"><div aria-hidden="true" data-editable-skip="true" style="color:#c7ff3f;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;font-size:100px;font-weight:900;line-height:0.5">“</div><div data-editable-path="composition.bespoke-statement-core.text" style="color:#f7f4ff;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;font-size:42px;font-weight:760;letter-spacing:-.018em;line-height:1.24;text-align:left;text-wrap:balance;overflow-wrap:anywhere">边缘机器人概念发布</div><cite data-editable-path="composition.bespoke-statement-core.attribution" style="color:#b6aec6;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:20px;font-style:normal;letter-spacing:.07em">边缘机器人概念发布 · 演示数据</cite></blockquote><div data-bespoke-element="list" style="grid-column:10 / span 3;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(94,61,134,.26);border:1px solid rgba(235,226,255,.18);border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.08);display:flex;flex-direction:column;gap:16px;color:#f7f4ff;overflow:hidden"><div style="display:grid;gap:12px;min-height:0;overflow:hidden"><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:0;border-top:0"><span aria-hidden="true" data-editable-skip="true" style="color:#c7ff3f;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">01</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.0.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">用途</div><div data-editable-path="composition.bespoke-statement-facts.items.0.body" style="color:#b6aec6;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">边缘机器人概念发布</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(235,226,255,.18)"><span aria-hidden="true" data-editable-skip="true" style="color:#c7ff3f;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">02</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.1.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">受众</div><div data-editable-path="composition.bespoke-statement-facts.items.1.body" style="color:#b6aec6;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">技术负责人</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(235,226,255,.18)"><span aria-hidden="true" data-editable-skip="true" style="color:#c7ff3f;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">03</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.2.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">性质</div><div data-editable-path="composition.bespoke-statement-facts.items.2.body" style="color:#b6aec6;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">纯概念演示</div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-5"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page040"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad"><div class="gxn-rise" style="flex:1;min-height:0;display:grid;grid-template-columns:1fr 0.9fr;gap:76px;align-items:stretch"><div style="display:flex;flex-direction:column;height:100%;min-height:0"><header class="gxn-rise" style="display:flex;flex-direction:column;gap:22px"><div style="display:flex;align-items:center;justify-content:space-between"><p class="gxn-kicker">三轮测试，逐步提升完成率</p><span class="gxn-index">30 / 39</span></div><h1 class="gxn-title">任务完成率稳步提升<span class="gxn-em">相同任务集 · 演示数据</span></h1></header><p class="gxn-sub" style="margin-top:16px;max-width:760px">同一任务集的完成率逐轮提升</p><div style="flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:16px;margin-top:28px"><div class="gxn-panel is-focus" style="display:flex;align-items:center;gap:20px;padding:20px 28px;opacity:1;transition:opacity .3s ease"><span style="width:16px;height:16px;border-radius:5px;background:#2fe07f;flex:0 0 auto;box-shadow:0 0 16px -1px #2fe07f"></span><div style="flex:1;min-width:0"><h3 style="margin:0;font-size:29px;font-weight:700;line-height:1.2;color:var(--gxn-accent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">首轮测试 · 86%</h3><p style="margin:5px 0 0;font-size:22px;line-height:1.35;color:var(--gxn-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">任务完成率</p></div><span class="gxn-num" style="font-size:46px;font-weight:600;color:#2fe07f;white-space:nowrap;line-height:1">86<span style="font-size:0.5em;color:var(--gxn-dim);margin-left:1px">%</span></span></div><div class="gxn-panel" style="display:flex;align-items:center;gap:20px;padding:20px 28px;opacity:0.5;transition:opacity .3s ease"><span style="width:16px;height:16px;border-radius:5px;background:#b9f24a;flex:0 0 auto;box-shadow:0 0 16px -1px #b9f24a"></span><div style="flex:1;min-width:0"><h3 style="margin:0;font-size:29px;font-weight:700;line-height:1.2;color:var(--gxn-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">二轮测试 · 91%</h3><p style="margin:5px 0 0;font-size:22px;line-height:1.35;color:var(--gxn-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">任务完成率</p></div><span class="gxn-num" style="font-size:46px;font-weight:600;color:#b9f24a;white-space:nowrap;line-height:1">91<span style="font-size:0.5em;color:var(--gxn-dim);margin-left:1px">%</span></span></div><div class="gxn-panel" style="display:flex;align-items:center;gap:20px;padding:20px 28px;opacity:0.5;transition:opacity .3s ease"><span style="width:16px;height:16px;border-radius:5px;background:#2fe0c4;flex:0 0 auto;box-shadow:0 0 16px -1px #2fe0c4"></span><div style="flex:1;min-width:0"><h3 style="margin:0;font-size:29px;font-weight:700;line-height:1.2;color:var(--gxn-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">三轮测试 · 94%</h3><p style="margin:5px 0 0;font-size:22px;line-height:1.35;color:var(--gxn-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">任务完成率</p></div><span class="gxn-num" style="font-size:46px;font-weight:600;color:#2fe0c4;white-space:nowrap;line-height:1">94<span style="font-size:0.5em;color:var(--gxn-dim);margin-left:1px">%</span></span></div></div></div><div class="gxn-rise-2" style="height:100%;min-height:0;display:flex;align-items:center;justify-content:center"><div style="height:100%;max-height:740px;aspect-ratio:1 / 1;max-width:100%"><svg viewBox="0 0 560 560" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display:block;overflow:visible"><defs><linearGradient id="R1a-arc-0" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2fe07f" stop-opacity="0.72"></stop><stop offset="100%" stop-color="#2fe07f"></stop></linearGradient><linearGradient id="R1a-arc-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b9f24a" stop-opacity="0.72"></stop><stop offset="100%" stop-color="#b9f24a"></stop></linearGradient><linearGradient id="R1a-arc-2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2fe0c4" stop-opacity="0.72"></stop><stop offset="100%" stop-color="#2fe0c4"></stop></linearGradient><filter id="R1a-g" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6" result="b"></feGaussianBlur><feMerge><feMergeNode in="b"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><g><circle cx="280" cy="280" r="216" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="28.799999999999997"></circle><circle cx="280" cy="280" r="216" fill="none" stroke="url(#R1a-arc-0)" stroke-width="31.799999999999997" stroke-linecap="round" stroke-dasharray="1167.16 1357.17" transform="rotate(-90 280 280)" opacity="1" filter="url(#R1a-g)"></circle><circle cx="113.56913956042956" cy="142.31641821428298" r="13.355999999999998" fill="#0b0f14" stroke="#2fe07f" stroke-width="3" filter="url(#R1a-g)"></circle></g><g><circle cx="280" cy="280" r="168" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="28.799999999999997"></circle><circle cx="280" cy="280" r="168" fill="none" stroke="url(#R1a-arc-1)" stroke-width="28.799999999999997" stroke-linecap="round" stroke-dasharray="960.57 1055.58" transform="rotate(-90 280 280)" opacity="0.34"></circle></g><g><circle cx="280" cy="280" r="120" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="28.799999999999997"></circle><circle cx="280" cy="280" r="120" fill="none" stroke="url(#R1a-arc-2)" stroke-width="28.799999999999997" stroke-linecap="round" stroke-dasharray="708.74 753.98" transform="rotate(-90 280 280)" opacity="0.34"></circle></g><g><text x="280" y="274" text-anchor="middle" dominant-baseline="middle" font-family="&#x27;Space Grotesk&#x27;,sans-serif" font-weight="600" font-size="104" fill="#2fe07f" style="font-variant-numeric:tabular-nums">86<tspan font-size="0.4em" dx="2" fill="rgba(238,243,241,0.6)">%</tspan></text><text x="280" y="344.48" text-anchor="middle" font-family="&#x27;Noto Sans SC&#x27;,sans-serif" font-size="24" fill="rgba(238,243,241,0.55)">首轮测试 · 86%</text></g></svg></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-6"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page058"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad"><header class="gxn-rise" style="display:flex;flex-direction:column;gap:22px"><div style="display:flex;align-items:center;justify-content:space-between"><p class="gxn-kicker">三轮测试，逐步提升完成率</p><span class="gxn-index"></span></div><h1 class="gxn-title">任务完成率稳步提升<span class="gxn-em">相同任务集 · 演示数据</span></h1><p class="gxn-sub" style="max-width:1180px">同一任务集的完成率逐轮提升</p></header><div class="gxn-rise-2" style="flex:1;margin-top:28px;display:grid;grid-template-columns:1.06fr 0.94fr;gap:56px;align-items:center;min-height:0"><div style="height:100%;min-height:0;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 860 824" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display:block;overflow:visible"><defs><linearGradient id="R3a-pf-0" x1="0" y1="0" x2="0.22" y2="1"><stop offset="0%" stop-color="#acf3cc"></stop><stop offset="42%" stop-color="#74eaaa"></stop><stop offset="100%" stop-color="#51ba80"></stop></linearGradient><linearGradient id="R3a-pf-1" x1="0" y1="0" x2="0.22" y2="1"><stop offset="0%" stop-color="#96ccaf"></stop><stop offset="42%" stop-color="#50aa79"></stop><stop offset="100%" stop-color="#308155"></stop></linearGradient><linearGradient id="R3a-pf-2" x1="0" y1="0" x2="0.22" y2="1"><stop offset="0%" stop-color="#80a691"></stop><stop offset="42%" stop-color="#2b6b47"></stop><stop offset="100%" stop-color="#0f4829"></stop></linearGradient><pattern id="R3a-hx-0" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="13" stroke="#baf5d4" stroke-width="3" stroke-opacity="0.42"></line></pattern><pattern id="R3a-hx-1" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="13" stroke="#a7d5bc" stroke-width="3" stroke-opacity="0.42"></line></pattern><pattern id="R3a-hx-2" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="13" stroke="#95b5a3" stroke-width="3" stroke-opacity="0.42"></line></pattern><linearGradient id="R3a-sheen" x1="0" y1="0" x2="0.65" y2="1"><stop offset="0%" stop-color="#ffffff" stop-opacity="0.26"></stop><stop offset="30%" stop-color="#ffffff" stop-opacity="0.06"></stop><stop offset="56%" stop-color="#ffffff" stop-opacity="0"></stop></linearGradient><linearGradient id="R3a-ish" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#000000" stop-opacity="0"></stop><stop offset="100%" stop-color="#000000" stop-opacity="0.36"></stop></linearGradient><filter id="R3a-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="34"></feGaussianBlur></filter><filter id="R3a-glow2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"></feGaussianBlur></filter><filter id="R3a-fg" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10" result="b"></feGaussianBlur><feMerge><feMergeNode in="b"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter><radialGradient id="R3a-floor" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#2fe07f" stop-opacity="0.34"></stop><stop offset="100%" stop-color="#2fe07f" stop-opacity="0"></stop></radialGradient></defs><polygon points="252.0,50.0 492.0,50.0 672.0,724.0 72.0,724.0" fill="#2fe07f" opacity="0.20" filter="url(#R3a-glow)"></polygon><polygon points="252.0,50.0 492.0,50.0 672.0,724.0 72.0,724.0" fill="#2fe07f" opacity="0.16" filter="url(#R3a-glow2)"></polygon><ellipse cx="399" cy="754" rx="315" ry="42" fill="url(#R3a-floor)"></ellipse><g opacity="1"><polygon points="614.5,508.7 672.0,724.0 726.0,691.6 668.5,476.3" fill="#0b321d"></polygon><line x1="614.4925816023739" y1="508.6666666666667" x2="672" y2="724" stroke="#719c85" stroke-opacity="0.5" stroke-width="1.4"></line><polygon points="129.5,508.7 614.5,508.7 668.5,476.3 183.5,476.3" fill="#427b5c" opacity="0.94"></polygon><polygon points="129.5,508.7 614.5,508.7 672.0,724.0 72.0,724.0" fill="url(#R3a-pf-2)"></polygon><polygon points="129.5,508.7 614.5,508.7 672.0,724.0 72.0,724.0" fill="url(#R3a-sheen)"></polygon><polygon points="84.7,676.6 659.3,676.6 672.0,724.0 72.0,724.0" fill="url(#R3a-ish)"></polygon><polygon points="129.5,508.7 614.5,508.7 672.0,724.0 72.0,724.0" fill="none" stroke="#89ad99" stroke-opacity="0.34" stroke-width="1"></polygon><line x1="129.5074183976261" y1="508.6666666666667" x2="614.4925816023739" y2="508.6666666666667" stroke="#ffffff" stroke-opacity="0.62" stroke-width="1.6"></line><text x="230.95192878338278" y="616.3333333333334" fill="#ffffff" fill-opacity="0.95" font-size="40" font-style="italic" font-weight="600" text-anchor="middle" dominant-baseline="central" style="font-family:&#x27;Space Grotesk&#x27;, sans-serif;letter-spacing:0.02em;paint-order:stroke;stroke:rgba(0,0,0,0.18);stroke-width:3">01</text><text x="420.82433234421364" y="616.3333333333334" fill="#ffffff" fill-opacity="0.97" font-size="31" font-weight="500" text-anchor="middle" dominant-baseline="central" style="font-family:&#x27;Noto Sans SC&#x27;, sans-serif;letter-spacing:0.04em;paint-order:stroke;stroke:rgba(0,0,0,0.18);stroke-width:3"></text></g><g opacity="1"><polygon points="553.2,279.3 610.8,494.7 664.8,462.3 607.2,246.9" fill="#225a3b"></polygon><line x1="553.2462908011869" y1="279.33333333333337" x2="610.7537091988131" y2="494.66666666666674" stroke="#8ac7a6" stroke-opacity="0.5" stroke-width="1.4"></line><polygon points="190.8,279.3 553.2,279.3 607.2,246.9 244.8,246.9" fill="#63b488" opacity="0.94"></polygon><polygon points="190.8,279.3 553.2,279.3 610.8,494.7 133.2,494.7" fill="url(#R3a-pf-1)"></polygon><polygon points="190.8,279.3 553.2,279.3 610.8,494.7 133.2,494.7" fill="url(#R3a-sheen)"></polygon><polygon points="145.9,447.3 598.1,447.3 610.8,494.7 133.2,494.7" fill="url(#R3a-ish)"></polygon><polygon points="190.8,279.3 553.2,279.3 610.8,494.7 133.2,494.7" fill="none" stroke="#9ed0b5" stroke-opacity="0.34" stroke-width="1"></polygon><line x1="190.75370919881306" y1="279.33333333333337" x2="553.2462908011869" y2="279.33333333333337" stroke="#ffffff" stroke-opacity="0.62" stroke-width="1.6"></line><text x="262.8" y="387.00000000000006" fill="#ffffff" fill-opacity="0.95" font-size="40" font-style="italic" font-weight="600" text-anchor="middle" dominant-baseline="central" style="font-family:&#x27;Space Grotesk&#x27;, sans-serif;letter-spacing:0.02em;paint-order:stroke;stroke:rgba(0,0,0,0.18);stroke-width:3">02</text><text x="409.8" y="387.00000000000006" fill="#ffffff" fill-opacity="0.97" font-size="31" font-weight="500" text-anchor="middle" dominant-baseline="central" style="font-family:&#x27;Noto Sans SC&#x27;, sans-serif;letter-spacing:0.04em;paint-order:stroke;stroke:rgba(0,0,0,0.18);stroke-width:3"></text></g><g opacity="1"><polygon points="492.0,50.0 549.5,265.3 603.5,232.9 546.0,17.6" fill="#39825a"></polygon><line x1="492" y1="50" x2="549.5074183976261" y2="265.33333333333337" stroke="#a3f1c6" stroke-opacity="0.5" stroke-width="1.4"></line><polygon points="252.0,50.0 492.0,50.0 546.0,17.6 306.0,17.6" fill="#84edb3" opacity="0.94"></polygon><polygon points="252.0,50.0 492.0,50.0 549.5,265.3 194.5,265.3" fill="url(#R3a-pf-0)"></polygon><polygon points="252.0,50.0 492.0,50.0 549.5,265.3 194.5,265.3" fill="url(#R3a-sheen)"></polygon><polygon points="207.1,218.0 536.9,218.0 549.5,265.3 194.5,265.3" fill="url(#R3a-ish)"></polygon><polygon points="252.0,50.0 492.0,50.0 549.5,265.3 194.5,265.3" fill="none" stroke="#b2f4d0" stroke-opacity="0.34" stroke-width="1"></polygon><line x1="252" y1="50" x2="492" y2="50" stroke="#ffffff" stroke-opacity="0.62" stroke-width="1.6"></line><text x="294.6480712166172" y="157.66666666666669" fill="#ffffff" fill-opacity="0.95" font-size="40" font-style="italic" font-weight="600" text-anchor="middle" dominant-baseline="central" style="font-family:&#x27;Space Grotesk&#x27;, sans-serif;letter-spacing:0.02em;paint-order:stroke;stroke:rgba(0,0,0,0.18);stroke-width:3">03</text><text x="398.7756676557864" y="157.66666666666669" fill="#ffffff" fill-opacity="0.97" font-size="31" font-weight="500" text-anchor="middle" dominant-baseline="central" style="font-family:&#x27;Noto Sans SC&#x27;, sans-serif;letter-spacing:0.04em;paint-order:stroke;stroke:rgba(0,0,0,0.18);stroke-width:3"></text></g></svg></div><div style="display:flex;flex-direction:column;gap:18px;justify-content:center;min-height:0"><div class="gxn-panel" style="padding:22px 30px;display:flex;align-items:center;gap:24px"><span class="gxn-num" style="font-size:44px;font-weight:700;line-height:1;flex:0 0 auto;font-style:italic;color:var(--gxn-accent);text-shadow:0 0 22px rgba(var(--gxn-glow),0.45)">03</span><div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div style="display:flex;align-items:center;gap:14px"><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:32px;color:var(--gxn-text)"></h3><span class="gxn-mono" style="font-size:20px;padding:3px 12px;border-radius:999px;color:var(--gxn-accent);border:1px solid var(--gxn-line)">三轮测试 · 94%</span></div><p style="margin:0;font-size:25px;line-height:1.45;color:var(--gxn-dim)">任务完成率</p></div></div><div class="gxn-panel" style="padding:22px 30px;display:flex;align-items:center;gap:24px"><span class="gxn-num" style="font-size:44px;font-weight:700;line-height:1;flex:0 0 auto;font-style:italic;color:var(--gxn-accent);text-shadow:0 0 22px rgba(var(--gxn-glow),0.45)">02</span><div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div style="display:flex;align-items:center;gap:14px"><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:32px;color:var(--gxn-text)"></h3><span class="gxn-mono" style="font-size:20px;padding:3px 12px;border-radius:999px;color:var(--gxn-accent);border:1px solid var(--gxn-line)">二轮测试 · 91%</span></div><p style="margin:0;font-size:25px;line-height:1.45;color:var(--gxn-dim)">任务完成率</p></div></div><div class="gxn-panel" style="padding:22px 30px;display:flex;align-items:center;gap:24px"><span class="gxn-num" style="font-size:44px;font-weight:700;line-height:1;flex:0 0 auto;font-style:italic;color:var(--gxn-accent);text-shadow:0 0 22px rgba(var(--gxn-glow),0.45)">01</span><div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div style="display:flex;align-items:center;gap:14px"><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:32px;color:var(--gxn-text)"></h3><span class="gxn-mono" style="font-size:20px;padding:3px 12px;border-radius:999px;color:var(--gxn-accent);border:1px solid var(--gxn-line)">首轮测试 · 86%</span></div><p style="margin:0;font-size:25px;line-height:1.45;color:var(--gxn-dim)">任务完成率</p></div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-7"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page056"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad"><header class="gxn-rise" style="display:flex;flex-direction:column;gap:22px"><div style="display:flex;align-items:center;justify-content:space-between"><p class="gxn-kicker">三轮测试，逐步提升完成率</p><span class="gxn-index"></span></div><h1 class="gxn-title">任务完成率稳步提升<span class="gxn-em">相同任务集 · 演示数据</span></h1><p class="gxn-sub" style="max-width:1180px">同一任务集的完成率逐轮提升</p></header><div class="gxn-rise-2" style="flex:1;margin-top:44px;min-height:0;display:flex;flex-direction:column"><div style="flex:1;min-height:0;display:grid;gap:30px;grid-template-columns:repeat(3, 1fr);align-items:stretch"><div class="gxn-panel" style="display:flex;flex-direction:column;padding:34px 36px;gap:18px"><div style="display:flex;align-items:center;justify-content:space-between"><span class="gxn-mono" style="font-size:24px;letter-spacing:.06em;color:var(--gxn-accent)">三轮测试 · 94%</span><span class="gxn-num" style="font-size:30px;font-weight:700;color:var(--gxn-faint)">01</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:42px;line-height:1.1;color:var(--gxn-text)"></h3><p style="margin:0;font-size:var(--gxn-fs-body);line-height:1.5;color:var(--gxn-dim)">任务完成率</p></div><div class="gxn-panel" style="display:flex;flex-direction:column;padding:34px 36px;gap:18px"><div style="display:flex;align-items:center;justify-content:space-between"><span class="gxn-mono" style="font-size:24px;letter-spacing:.06em;color:var(--gxn-accent)">二轮测试 · 91%</span><span class="gxn-num" style="font-size:30px;font-weight:700;color:var(--gxn-faint)">02</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:42px;line-height:1.1;color:var(--gxn-text)"></h3><p style="margin:0;font-size:var(--gxn-fs-body);line-height:1.5;color:var(--gxn-dim)">任务完成率</p></div><div class="gxn-panel" style="display:flex;flex-direction:column;padding:34px 36px;gap:18px"><div style="display:flex;align-items:center;justify-content:space-between"><span class="gxn-mono" style="font-size:24px;letter-spacing:.06em;color:var(--gxn-accent)">首轮测试 · 86%</span><span class="gxn-num" style="font-size:30px;font-weight:700;color:var(--gxn-faint)">03</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:42px;line-height:1.1;color:var(--gxn-text)"></h3><p style="margin:0;font-size:var(--gxn-fs-body);line-height:1.5;color:var(--gxn-dim)">任务完成率</p></div></div><div style="position:relative;height:70px;margin-top:30px"><div style="position:absolute;left:16.666666666666668%;right:16.666666666666668%;top:50%;height:4px;transform:translateY(-50%);border-radius:4px;background:linear-gradient(90deg, rgba(var(--gxn-glow),0.15), var(--gxn-accent));box-shadow:0 0 18px -2px rgba(var(--gxn-glow),0.7)"></div><div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(3, 1fr);align-items:center"><div style="display:flex;justify-content:center"><span style="width:20px;height:20px;border-radius:50%;background:var(--gxn-bg);border:4px solid var(--gxn-accent);box-shadow:0 0 20px -2px rgba(var(--gxn-glow),0.9);transition:all .3s ease;opacity:1"></span></div><div style="display:flex;justify-content:center"><span style="width:20px;height:20px;border-radius:50%;background:var(--gxn-bg);border:4px solid var(--gxn-accent);box-shadow:0 0 20px -2px rgba(var(--gxn-glow),0.9);transition:all .3s ease;opacity:1"></span></div><div style="display:flex;justify-content:center"><span style="width:20px;height:20px;border-radius:50%;background:var(--gxn-bg);border:4px solid var(--gxn-accent);box-shadow:0 0 20px -2px rgba(var(--gxn-glow),0.9);transition:all .3s ease;opacity:1"></span></div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-8"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="evidence::v4" data-vm-source-slide-id="evidence" data-vm-slide-key="bespoke-evidence-v4" data-vm-index="1" data-vm-variant-state-id="evidence::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme02" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(circle at 78% 18%,rgba(162,77,255,.34),transparent 34%),radial-gradient(circle at 12% 86%,rgba(190,255,55,.16),transparent 30%),#120c23;--bespoke-surface:rgba(94,61,134,.26);--bespoke-ink:#f7f4ff;--bespoke-muted:#b6aec6;--bespoke-accent:#c7ff3f;--bespoke-accent-2:#a24dff;--bespoke-line:rgba(235,226,255,.18);--bespoke-pad:92px;--bespoke-gap:22px;--bespoke-radius:24px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(circle at 78% 18%,rgba(162,77,255,.34),transparent 34%),radial-gradient(circle at 12% 86%,rgba(190,255,55,.16),transparent 30%),#120c23;color:#f7f4ff;font-family:&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#c7ff3f;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#a24dff;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:92px 92px"><div data-bespoke-element="text" style="grid-column:1 / span 3;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f7f4ff;text-align:left;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-metric-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">metrics</div></div><div data-bespoke-element="text" style="grid-column:4 / span 9;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f7f4ff;text-align:left;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-metric-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">任务完成率稳步提升</div></div><div data-bespoke-element="text" style="grid-column:1 / span 8;grid-row:2 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f7f4ff;text-align:left;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-metric-core.text" style="font-size:38px;line-height:1.24;font-weight:650;letter-spacing:-.012em;overflow-wrap:anywhere;text-wrap:pretty">同一任务集的完成率逐轮提升</div></div><div data-bespoke-element="text" style="grid-column:9 / span 4;grid-row:2 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f7f4ff;text-align:left;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-metric-summary.text" style="font-size:21px;line-height:1.4;font-weight:500;letter-spacing:.02em;overflow-wrap:anywhere;text-wrap:pretty">相同任务集 · 演示数据</div></div><div data-bespoke-element="metric" style="grid-column:6 / span 7;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(94,61,134,.26);border:1px solid rgba(235,226,255,.18);border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.08);display:flex;flex-direction:column;justify-content:space-between;color:#f7f4ff;overflow:hidden"><div data-editable-path="composition.bespoke-metric-value-1.label" style="color:#b6aec6;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:19px;font-weight:700;letter-spacing:.12em;line-height:1.2;text-transform:uppercase">首轮测试</div><div style="display:flex;align-items:baseline;gap:14px;min-width:0"><strong data-editable-path="composition.bespoke-metric-value-1.value" style="color:#ffffff;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;font-size:88px;font-weight:900;letter-spacing:-.045em;line-height:0.9;overflow-wrap:anywhere">86%</strong></div><div data-editable-path="composition.bespoke-metric-value-1.detail" style="color:#b6aec6;font-size:22px;line-height:1.4;overflow-wrap:anywhere">任务完成率</div></div><div data-bespoke-element="metric" style="grid-column:1 / span 5;grid-row:3 / span 2;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(94,61,134,.26);border:1px solid rgba(235,226,255,.18);border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.08);display:flex;flex-direction:column;justify-content:space-between;color:#f7f4ff;overflow:hidden"><div data-editable-path="composition.bespoke-metric-value-2.label" style="color:#b6aec6;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:19px;font-weight:700;letter-spacing:.12em;line-height:1.2;text-transform:uppercase">二轮测试</div><div style="display:flex;align-items:baseline;gap:14px;min-width:0"><strong data-editable-path="composition.bespoke-metric-value-2.value" style="color:#c7ff3f;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;font-size:88px;font-weight:900;letter-spacing:-.045em;line-height:0.9;overflow-wrap:anywhere">91%</strong></div><div data-editable-path="composition.bespoke-metric-value-2.detail" style="color:#b6aec6;font-size:22px;line-height:1.4;overflow-wrap:anywhere">任务完成率</div></div><div data-bespoke-element="list" style="grid-column:1 / span 5;grid-row:5 / span 3;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(94,61,134,.26);border:1px solid rgba(235,226,255,.18);border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.08);display:flex;flex-direction:column;gap:16px;color:#f7f4ff;overflow:hidden"><div style="display:grid;gap:12px;min-height:0;overflow:hidden"><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:0;border-top:0"><span aria-hidden="true" data-editable-skip="true" style="color:#c7ff3f;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">01</span><div style="min-width:0"><div data-editable-path="composition.bespoke-metric-facts.items.0.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">三轮测试</div><div data-editable-path="composition.bespoke-metric-facts.items.0.body" style="color:#b6aec6;font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">任务完成率 · 94%</div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-9"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page056"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad"><header class="gxn-rise" style="display:flex;flex-direction:column;gap:22px"><div style="display:flex;align-items:center;justify-content:space-between"><p class="gxn-kicker">statement</p><span class="gxn-index"></span></div><h1 class="gxn-title">让反馈形成闭环</h1><p class="gxn-sub" style="max-width:1180px">感知变化，规划动作，验证反馈</p></header><div class="gxn-rise-2" style="flex:1;margin-top:44px;min-height:0;display:flex;flex-direction:column"><div style="flex:1;min-height:0;display:grid;gap:30px;grid-template-columns:repeat(2, 1fr);align-items:stretch"><div class="gxn-panel" style="display:flex;flex-direction:column;padding:34px 36px;gap:18px"><div style="display:flex;align-items:center;justify-content:space-between"><span class="gxn-mono" style="font-size:24px;letter-spacing:.06em;color:var(--gxn-accent)">感知变化，规划动作，验证反馈</span><span class="gxn-num" style="font-size:30px;font-weight:700;color:var(--gxn-faint)">01</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:42px;line-height:1.1;color:var(--gxn-text)"></h3><p style="margin:0;font-size:var(--gxn-fs-body);line-height:1.5;color:var(--gxn-dim)"></p></div><div class="gxn-panel" style="display:flex;flex-direction:column;padding:34px 36px;gap:18px"><div style="display:flex;align-items:center;justify-content:space-between"><span class="gxn-mono" style="font-size:24px;letter-spacing:.06em;color:var(--gxn-accent)">感知变化，规划动作，验证反馈</span><span class="gxn-num" style="font-size:30px;font-weight:700;color:var(--gxn-faint)">02</span></div><h3 style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:42px;line-height:1.1;color:var(--gxn-text)"></h3><p style="margin:0;font-size:var(--gxn-fs-body);line-height:1.5;color:var(--gxn-dim)"></p></div></div><div style="position:relative;height:70px;margin-top:30px"><div style="position:absolute;left:25%;right:25%;top:50%;height:4px;transform:translateY(-50%);border-radius:4px;background:linear-gradient(90deg, rgba(var(--gxn-glow),0.15), var(--gxn-accent));box-shadow:0 0 18px -2px rgba(var(--gxn-glow),0.7)"></div><div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(2, 1fr);align-items:center"><div style="display:flex;justify-content:center"><span style="width:20px;height:20px;border-radius:50%;background:var(--gxn-bg);border:4px solid var(--gxn-accent);box-shadow:0 0 20px -2px rgba(var(--gxn-glow),0.9);transition:all .3s ease;opacity:1"></span></div><div style="display:flex;justify-content:center"><span style="width:20px;height:20px;border-radius:50%;background:var(--gxn-bg);border:4px solid var(--gxn-accent);box-shadow:0 0 20px -2px rgba(var(--gxn-glow),0.9);transition:all .3s ease;opacity:1"></span></div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-10"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page055"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad" style="justify-content:center"><div style="display:flex;flex-direction:column;gap:40px;max-width:1560px"><p class="gxn-kicker gxn-rise">让反馈形成闭环</p><div style="display:flex;flex-direction:column"><div class="gxn-rise-2" style="display:flex;gap:36px;align-items:flex-start;padding:34px 0;border-top:none;opacity:1;transition:opacity .3s ease"><span class="gxn-num" style="flex:0 0 auto;font-size:53.36px;font-weight:700;line-height:1;color:var(--gxn-faint);text-shadow:none;min-width:86px">01</span><div style="display:flex;flex-direction:column;gap:12px;min-width:0"><span class="gxn-mono" style="font-size:26px;letter-spacing:.08em;color:var(--gxn-accent)">感知变化，规划动作，验证反馈</span><p style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:58px;line-height:1.24;letter-spacing:-0.01em;color:var(--gxn-text);text-wrap:pretty"></p></div></div><div class="gxn-rise-2" style="display:flex;gap:36px;align-items:flex-start;padding:34px 0;border-top:1px solid var(--gxn-line);opacity:1;transition:opacity .3s ease"><span class="gxn-num" style="flex:0 0 auto;font-size:53.36px;font-weight:700;line-height:1;color:var(--gxn-faint);text-shadow:none;min-width:86px">02</span><div style="display:flex;flex-direction:column;gap:12px;min-width:0"><span class="gxn-mono" style="font-size:26px;letter-spacing:.08em;color:var(--gxn-accent)">让反馈形成闭环</span><p style="margin:0;font-family:var(--gxn-font-sans);font-weight:700;font-size:58px;line-height:1.24;letter-spacing:-0.01em;color:var(--gxn-text);text-wrap:pretty"></p></div></div></div><div class="gxn-rise-3" style="display:flex;align-items:center;gap:20px"><span style="width:64px;height:3px;border-radius:3px;flex:0 0 auto;background:linear-gradient(90deg, var(--gxn-accent), transparent);box-shadow:0 0 14px rgba(var(--gxn-glow),0.8)"></span><span class="gxn-mono" style="font-size:var(--gxn-fs-h3);color:var(--gxn-dim);letter-spacing:.02em">感知变化，规划动作，验证反馈</span></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-11"><div class="canvas"><section class="slide actual-template" data-layout="theme02_page066"><style>
+@property --gxn-ba { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  --gxn-accent:#a8f6cd;
+  --gxn-glow:47,224,127;
+  --gxn-text:#eafff4;
+  --gxn-dim:rgba(234,255,244,0.82);
+  --gxn-faint:rgba(234,255,244,0.56);
+  position:relative;
+  border-color:transparent;
+  /* even dark fill — depth only; the rim is entirely inset box-shadow */
+  background:
+    radial-gradient(135% 135% at 50% 42%, #0a1d13 0%, #06110b 64%, #06110b 100%),
+    #06110b;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65);
+  animation: gxn-ticket-breath-47-224-127-55 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes gxn-ticket-breath-47-224-127-55{
+  from{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.532),
+    inset 0 0 39px -2px rgba(47,224,127,0.481),
+    inset 0 0 117px 9px rgba(47,224,127,0.292),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+  to{ box-shadow:
+    inset 0 0 0 1.5px rgba(47,224,127,0.614),
+    inset 0 0 53px -2px rgba(47,224,127,0.635),
+    inset 0 0 135px 13px rgba(47,224,127,0.374),
+    0 24px 60px -28px rgba(0,0,0,0.65); }
+}
+/* sliding light around the stroke — masked conic ring, animated angle */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{
+  content:''; position:absolute; inset:0; border-radius:inherit;
+  padding:1.5px; pointer-events:none;
+  background: conic-gradient(from var(--gxn-ba),
+    rgba(47,224,127,0) 0deg, rgba(47,224,127,0) 64deg,
+    rgba(47,224,127,0.85) 86deg, #9bf3c4 92deg, rgba(47,224,127,0.85) 98deg,
+    rgba(47,224,127,0) 120deg, rgba(47,224,127,0) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: gxn-ticket-slide 3.6s linear infinite;
+}
+@keyframes gxn-ticket-slide{ to{ --gxn-ba: 360deg; } }
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{ animation:none; }
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus::after{ animation:none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{
+  background-image: linear-gradient(110deg, #2fe07f, #b9f24a, #2fe0c4, #4ea2ff, #9b7dff, #2fe07f);
+  background-size: 240% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent !important; color: transparent !important;
+  animation: gxn-aurora-text 12.00s ease-in-out infinite alternate;
+}
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em{ text-shadow: 0 0 32px rgba(var(--gxn-glow), 0.32); }
+/* a focal number's trailing unit / suffix span keeps its own muted color —
+   only the figure itself flows. (child opts out of the gradient clip) */
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num > span{
+  -webkit-text-fill-color: currentColor !important;
+  background: none;
+}
+@keyframes gxn-aurora-text{
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce){
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-em,
+  .theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-aurora-num{ animation: none; }
+}
+
+.theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d .gxn-theme .gxn-panel.is-focus{
+  transform:
+    perspective(1100px)
+    translate3d(var(--gxn-mx,0px), var(--gxn-my,0px), 0)
+    rotateX(var(--gxn-rx,0deg)) rotateY(var(--gxn-ry,0deg));
+  transition: transform .16s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+/* NOTE: magnet hover is a pointer-driven micro-interaction (follows the cursor,
+   no autonomous/looping motion), so it is intentionally exempt from
+   prefers-reduced-motion. Autonomous loops (ticket breath, neon flow, aurora,
+   entrance rise) remain gated by reduce-motion elsewhere in this file. */
+</style><div class="theme02-deck-scope-005b00220067007200650065006e0022002c0022007400690063006b006500740022002c00350035002c0074007200750065002c0074007200750065002c0031005d" style="position:absolute;inset:0;width:100%;height:100%"><div class="gxn-theme gxn-slide"><div class="gxn-pad" style="overflow:hidden"><div style="position:relative;z-index:1"><header class="gxn-rise" style="display:flex;flex-direction:column;gap:22px"><div style="display:flex;align-items:center;justify-content:space-between"><p class="gxn-kicker">statement</p><span class="gxn-index"></span></div><h1 class="gxn-title">让反馈形成闭环</h1></header><p class="gxn-sub gxn-rise" style="margin-top:20px;max-width:1320px">感知变化，规划动作，验证反馈</p></div><div class="gxn-rise-2" style="position:relative;z-index:1;flex:1;margin-top:6px;display:flex;align-items:center;justify-content:center;gap:0;min-height:0"><div class="gxn-panel" style="width:372px;height:372px;border-radius:50%;flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:0 46px;text-align:center;opacity:0.5;transition:opacity .3s ease"><div style="width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid rgba(var(--gxn-glow),0.5);box-shadow:none"><span style="width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%, var(--gxn-accent-2), var(--gxn-accent));box-shadow:0 0 16px -2px rgba(var(--gxn-glow),0.9)"></span></div><span class="gxn-mono" style="font-size:22px;color:var(--gxn-faint);letter-spacing:.12em">感知变化，规划动作，验证反馈</span><span style="font-size:42px;font-weight:700;color:var(--gxn-text);line-height:1.1"></span><span style="font-size:23px;line-height:1.45;color:var(--gxn-dim)"></span></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-width:60px;position:relative"><div style="position:absolute;left:-10px;right:-10px;top:50%;height:2px;background:linear-gradient(90deg, rgba(var(--gxn-glow),0.15), rgba(var(--gxn-glow),0.6), rgba(var(--gxn-glow),0.15))"></div></div><div class="gxn-panel" style="width:372px;height:372px;border-radius:50%;flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:0 46px;text-align:center;opacity:0.5;transition:opacity .3s ease"><div style="width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid rgba(var(--gxn-glow),0.5);box-shadow:none"><span style="width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%, var(--gxn-accent-2), var(--gxn-accent));box-shadow:0 0 16px -2px rgba(var(--gxn-glow),0.9)"></span></div><span class="gxn-mono" style="font-size:22px;color:var(--gxn-faint);letter-spacing:.12em">感知变化，规划动作，验证反馈</span><span style="font-size:42px;font-weight:700;color:var(--gxn-text);line-height:1.1"></span><span style="font-size:23px;line-height:1.45;color:var(--gxn-dim)"></span></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-width:60px;position:relative"><div style="position:absolute;left:-10px;right:-10px;top:50%;height:2px;background:linear-gradient(90deg, rgba(var(--gxn-glow),0.15), rgba(var(--gxn-glow),0.6), rgba(var(--gxn-glow),0.15))"></div></div><div class="gxn-panel is-focus" style="width:372px;height:372px;border-radius:50%;flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:0 46px;text-align:center;opacity:1;transition:opacity .3s ease"><div style="width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid var(--gxn-accent);box-shadow:0 0 26px -4px rgba(var(--gxn-glow),0.8)"><span style="width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%, var(--gxn-accent-2), var(--gxn-accent));box-shadow:0 0 16px -2px rgba(var(--gxn-glow),0.9)"></span></div><span class="gxn-mono" style="font-size:22px;color:var(--gxn-faint);letter-spacing:.12em">让反馈形成闭环</span><span style="font-size:42px;font-weight:700;color:var(--gxn-accent);line-height:1.1"></span><span style="font-size:23px;line-height:1.45;color:var(--gxn-dim)"></span></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-12"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="action::v4" data-vm-source-slide-id="action" data-vm-slide-key="bespoke-action-v4" data-vm-index="2" data-vm-variant-state-id="action::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme02" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(circle at 78% 18%,rgba(162,77,255,.34),transparent 34%),radial-gradient(circle at 12% 86%,rgba(190,255,55,.16),transparent 30%),#120c23;--bespoke-surface:rgba(94,61,134,.26);--bespoke-ink:#f7f4ff;--bespoke-muted:#b6aec6;--bespoke-accent:#c7ff3f;--bespoke-accent-2:#a24dff;--bespoke-line:rgba(235,226,255,.18);--bespoke-pad:92px;--bespoke-gap:22px;--bespoke-radius:24px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(circle at 78% 18%,rgba(162,77,255,.34),transparent 34%),radial-gradient(circle at 12% 86%,rgba(190,255,55,.16),transparent 30%),#120c23;color:#f7f4ff;font-family:&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#c7ff3f;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#a24dff;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:92px 92px"><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f7f4ff;text-align:left;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">statement</div></div><div data-bespoke-element="text" style="grid-column:1 / span 8;grid-row:2 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f7f4ff;text-align:left;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">让反馈形成闭环</div></div><blockquote data-bespoke-element="quote" style="grid-column:1 / span 12;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(94,61,134,.26);border:1px solid rgba(235,226,255,.18);border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.08);display:flex;flex-direction:column;justify-content:center;gap:26px;margin:0;overflow:hidden"><div aria-hidden="true" data-editable-skip="true" style="color:#c7ff3f;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;font-size:100px;font-weight:900;line-height:0.5">“</div><div data-editable-path="composition.bespoke-statement-core.text" style="color:#f7f4ff;font-family:&quot;Archivo&quot;,&quot;Noto Sans SC&quot;,&quot;PingFang SC&quot;,system-ui,sans-serif;font-size:42px;font-weight:760;letter-spacing:-.018em;line-height:1.24;text-align:left;text-wrap:balance;overflow-wrap:anywhere">感知变化，规划动作，验证反馈</div><cite data-editable-path="composition.bespoke-statement-core.attribution" style="color:#b6aec6;font-family:&quot;Space Mono&quot;,&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:20px;font-style:normal;letter-spacing:.07em">感知变化，规划动作，验证反馈</cite></blockquote></div></div></section></div></article></main><section class="text-readout"><h2>可读内容</h2><h3>把感知，变成行动</h3><p>边缘机器人概念发布。所有内容与数字均为虚构演示，不作为事实或决策依据。</p><ul><li>用途 · 边缘机器人概念发布</li><li>受众 · 技术负责人</li><li>性质 · 纯概念演示</li></ul><h3>三轮测试，逐步提升完成率</h3><p>在相同任务集上，三轮概念测试的完成率从86%提升到94%。所有数值为虚构演示。</p><ul><li>首轮测试：86 % · 相同任务集完成率</li><li>二轮测试：91 % · 相同任务集完成率</li><li>三轮测试：94 % · 相同任务集完成率</li></ul><h3>让反馈形成闭环</h3><p>感知环境变化；规划候选动作；验证执行反馈。本页为概念演示。</p><ul></ul></section><footer class="reader-footer">主题与模板 © chuspeeism · <a href="https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64">固定版来源</a> · AGPL-3.0<br>本次保留真实模板与 canonical 3+1，采用独立 HTML-only 阅读外壳；无专有导出引擎、无 PPTX/PDF 导出或原生编辑保存。仅完成本页注明的验收，不代表 SP 已集成。<br><a href="../LICENSE">许可文本</a> · <a href="../SOURCE-NOTICE.md">来源及修改说明</a></footer><script>function fit(){document.querySelectorAll('.frame').forEach(f=>f.firstElementChild.style.transform='scale('+f.clientWidth/1920+')')}new ResizeObserver(fit).observe(document.querySelector('.reader-main'));fit();document.querySelector('select').addEventListener('change',e=>document.getElementById(e.target.value).scrollIntoView({behavior:'auto',block:'center'}));</script></body></html>

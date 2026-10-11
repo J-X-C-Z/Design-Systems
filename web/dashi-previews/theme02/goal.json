@@ -1,0 +1,1061 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "把感知，变成行动",
+  "goal": "边缘机器人概念发布",
+  "themePack": "theme02",
+  "pageCount": 3,
+  "randomSeed": "theme02-20261011-sample",
+  "workflowRunId": "20261011150110797-8eb8cab4",
+  "slides": [
+    {
+      "id": "cover",
+      "content": {
+        "presentation": {
+          "pageIntent": "cover",
+          "coreMessage": "边缘机器人概念发布",
+          "title": {
+            "full": "把感知，变成行动",
+            "short": "把感知，变成行动"
+          },
+          "summary": {
+            "full": "边缘机器人概念发布。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+            "short": "边缘机器人概念发布 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "用途",
+              "detail": {
+                "full": "边缘机器人概念发布",
+                "short": "边缘机器人概念发布"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "受众",
+              "detail": {
+                "full": "技术负责人",
+                "short": "技术负责人"
+              },
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "性质",
+              "detail": {
+                "full": "纯概念演示",
+                "short": "纯概念演示"
+              },
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme02_page071",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "kicker": "presentation.summary.short",
+            "titleEm": "presentation.pageIntent",
+            "centerLabel": "presentation.items[0].label",
+            "centerSub": "presentation.items[1].detail.short",
+            "centerKicker": "presentation.items[1].label",
+            "insightText": "presentation.items[2].label"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "sets",
+              "setCount",
+              "index",
+              "pairs",
+              "showPairs",
+              "title",
+              "lead",
+              "kicker",
+              "titleEm",
+              "centerLabel",
+              "centerSub",
+              "centerKicker",
+              "insightText"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "sets",
+                  "fields": [
+                    {
+                      "key": "label",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "sub",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "setCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "index",
+                  "value": ""
+                },
+                {
+                  "path": "pairs",
+                  "value": []
+                },
+                {
+                  "path": "showPairs",
+                  "value": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme02_page053",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "kicker": "presentation.summary.short",
+            "titleEm": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "steps",
+              "stepCount",
+              "index",
+              "imageCount",
+              "title",
+              "lead",
+              "kicker",
+              "titleEm"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "steps",
+                  "fields": [
+                    {
+                      "key": "tag",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ],
+                  "countPath": "stepCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "index",
+                  "value": ""
+                },
+                {
+                  "path": "imageCount",
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme02_page027",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "kicker": "presentation.summary.short",
+            "titleEm": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "cards",
+              "cardCount",
+              "index",
+              "title",
+              "lead",
+              "kicker",
+              "titleEm"
+            ],
+            "projectedItemIds": [
+              "fact-2",
+              "fact-3",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "cards",
+                  "fields": [
+                    {
+                      "key": "title",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    },
+                    {
+                      "key": "tag",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "support:summary"
+                    }
+                  ],
+                  "countPath": "cardCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "index",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "边缘机器人概念发布",
+              "audience": "机器人项目技术负责人",
+              "narrativeRole": "给出概念范围",
+              "emphasis": "紫色场域与荧光绿的单一焦点",
+              "rationale": "遵循炫光紫绿风的深紫底、荧光绿强调与半透明圆角面板，使用上游受限网格和主题token。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 9,
+                  "height": 5
+                }
+              },
+              {
+                "id": "bespoke-statement-facts",
+                "type": "list",
+                "grid": {
+                  "column": 10,
+                  "row": 3,
+                  "width": 3,
+                  "height": 5
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[3].items[0]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[3].items[1]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[3].items[2]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "content": {
+        "presentation": {
+          "pageIntent": "metrics",
+          "coreMessage": "同一任务集的完成率逐轮提升",
+          "title": {
+            "full": "三轮测试，逐步提升完成率",
+            "short": "任务完成率稳步提升"
+          },
+          "summary": {
+            "full": "在相同任务集上，三轮概念测试的完成率从86%提升到94%。所有数值为虚构演示。",
+            "short": "相同任务集 · 演示数据"
+          },
+          "items": [
+            {
+              "id": "fact-1",
+              "label": "首轮测试",
+              "detail": {
+                "full": "相同任务集完成率",
+                "short": "任务完成率"
+              },
+              "value": 86,
+              "displayValue": "86",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-2",
+              "label": "二轮测试",
+              "detail": {
+                "full": "相同任务集完成率",
+                "short": "任务完成率"
+              },
+              "value": 91,
+              "displayValue": "91",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            },
+            {
+              "id": "fact-3",
+              "label": "三轮测试",
+              "detail": {
+                "full": "相同任务集完成率",
+                "short": "任务完成率"
+              },
+              "value": 94,
+              "displayValue": "94",
+              "unit": "%",
+              "required": true,
+              "priority": "high"
+            }
+          ],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme02_page040",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "kicker": "presentation.title.full",
+            "titleEm": "presentation.summary.short",
+            "avgCenterLabel": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "gauges",
+              "gaugeCount",
+              "rateLabel",
+              "index",
+              "title",
+              "lead",
+              "kicker",
+              "titleEm",
+              "avgCenterLabel"
+            ],
+            "projectedItemIds": [
+              "fact-1",
+              "fact-2",
+              "fact-3"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "gauges",
+                  "fields": [
+                    {
+                      "key": "label",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "value",
+                      "semantic": "value"
+                    },
+                    {
+                      "key": "note",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-1"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-3"
+                    }
+                  ],
+                  "countPath": "gaugeCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "rateLabel",
+                  "value": ""
+                },
+                {
+                  "path": "index",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme02_page058",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "kicker": "presentation.title.full",
+            "titleEm": "presentation.summary.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "tiers",
+              "tierCount",
+              "index",
+              "title",
+              "lead",
+              "kicker",
+              "titleEm"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "tiers",
+                  "fields": [
+                    {
+                      "key": "tag",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "tierCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "index",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme02_page056",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "kicker": "presentation.title.full",
+            "titleEm": "presentation.summary.short"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "phases",
+              "phaseCount",
+              "index",
+              "title",
+              "lead",
+              "kicker",
+              "titleEm"
+            ],
+            "projectedItemIds": [
+              "fact-3",
+              "fact-2",
+              "fact-1"
+            ],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "phases",
+                  "fields": [
+                    {
+                      "key": "period",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "fact-3"
+                    },
+                    {
+                      "sourceId": "fact-2"
+                    },
+                    {
+                      "sourceId": "fact-1"
+                    }
+                  ],
+                  "countPath": "phaseCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "index",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "同一任务集的完成率逐轮提升",
+              "audience": "机器人项目技术负责人",
+              "narrativeRole": "比较共同单位的任务完成率",
+              "emphasis": "86%、91%、94%口径一致",
+              "rationale": "遵循炫光紫绿风的深紫底、荧光绿强调与半透明圆角面板，使用上游受限网格和主题token。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-metric-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 3,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-metric-title",
+                "type": "text",
+                "grid": {
+                  "column": 4,
+                  "row": 1,
+                  "width": 9,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-metric-core",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "subtitle"
+              },
+              {
+                "id": "bespoke-metric-summary",
+                "type": "text",
+                "grid": {
+                  "column": 9,
+                  "row": 2,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "caption"
+              },
+              {
+                "id": "bespoke-metric-value-1",
+                "type": "metric",
+                "grid": {
+                  "column": 6,
+                  "row": 3,
+                  "width": 7,
+                  "height": 5
+                },
+                "tone": "inverse"
+              },
+              {
+                "id": "bespoke-metric-value-2",
+                "type": "metric",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 5,
+                  "height": 2
+                },
+                "tone": "accent"
+              },
+              {
+                "id": "bespoke-metric-facts",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 5,
+                  "width": 5,
+                  "height": 3
+                },
+                "ordered": true
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [
+              {
+                "id": "fact-1",
+                "target": "elements[4]"
+              },
+              {
+                "id": "fact-2",
+                "target": "elements[5]"
+              },
+              {
+                "id": "fact-3",
+                "target": "elements[6].items[0]"
+              }
+            ],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].text": "presentation.coreMessage",
+            "elements[3].text": "presentation.summary.short"
+          }
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "content": {
+        "presentation": {
+          "pageIntent": "statement",
+          "coreMessage": "感知变化，规划动作，验证反馈",
+          "title": {
+            "full": "让反馈形成闭环",
+            "short": "让反馈形成闭环"
+          },
+          "summary": {
+            "full": "感知环境变化；规划候选动作；验证执行反馈。本页为概念演示。",
+            "short": "感知变化，规划动作，验证反馈"
+          },
+          "items": [],
+          "chartData": [],
+          "media": []
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme02_page056",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "kicker": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "phases",
+              "phaseCount",
+              "titleEm",
+              "index",
+              "title",
+              "lead",
+              "kicker"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "phases",
+                  "fields": [
+                    {
+                      "key": "period",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "title",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    }
+                  ],
+                  "countPath": "phaseCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "titleEm",
+                  "value": ""
+                },
+                {
+                  "path": "index",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme02_page055",
+          "contentMap": {
+            "kicker": "presentation.title.short",
+            "footnote": "presentation.coreMessage"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "claims",
+              "claimCount",
+              "index",
+              "kicker",
+              "footnote"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "claims",
+                  "fields": [
+                    {
+                      "key": "key",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "lead",
+                      "semantic": "detail"
+                    },
+                    {
+                      "key": "em",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "tail",
+                      "semantic": "optional"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ],
+                  "countPath": "claimCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "index",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme02_page066",
+          "contentMap": {
+            "title": "presentation.title.short",
+            "lead": "presentation.coreMessage",
+            "kicker": "presentation.pageIntent"
+          },
+          "projection": {
+            "chartMode": "none",
+            "contentPaths": [
+              "nodes",
+              "nodeCount",
+              "titleEm",
+              "index",
+              "ghost",
+              "connectors",
+              "showConnectors",
+              "title",
+              "lead",
+              "kicker"
+            ],
+            "projectedItemIds": [],
+            "chartBindings": [],
+            "structure": {
+              "arrays": [
+                {
+                  "path": "nodes",
+                  "fields": [
+                    {
+                      "key": "tag",
+                      "semantic": "label"
+                    },
+                    {
+                      "key": "label",
+                      "semantic": "optional"
+                    },
+                    {
+                      "key": "desc",
+                      "semantic": "detail"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "sourceId": "support:summary-short"
+                    },
+                    {
+                      "sourceId": "support:core"
+                    },
+                    {
+                      "sourceId": "support:title-short"
+                    }
+                  ],
+                  "countPath": "nodeCount"
+                }
+              ],
+              "values": [
+                {
+                  "path": "titleEm",
+                  "value": ""
+                },
+                {
+                  "path": "index",
+                  "value": ""
+                },
+                {
+                  "path": "ghost",
+                  "value": ""
+                },
+                {
+                  "path": "connectors",
+                  "value": []
+                },
+                {
+                  "path": "showConnectors",
+                  "value": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "感知变化，规划动作，验证反馈",
+              "audience": "机器人项目技术负责人",
+              "narrativeRole": "解释边缘感知到行动的收束主张",
+              "emphasis": "留出暗场空间强化结论",
+              "rationale": "遵循炫光紫绿风的深紫底、荧光绿强调与半透明圆角面板，使用上游受限网格和主题token。"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "bespoke-statement-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 4,
+                  "height": 1
+                },
+                "role": "kicker"
+              },
+              {
+                "id": "bespoke-statement-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 8,
+                  "height": 1
+                },
+                "role": "title"
+              },
+              {
+                "id": "bespoke-statement-core",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 3,
+                  "width": 12,
+                  "height": 5
+                }
+              }
+            ]
+          },
+          "projection": {
+            "itemBindings": [],
+            "chartBindings": [],
+            "mediaBindings": []
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.pageIntent",
+            "elements[1].text": "presentation.title.short",
+            "elements[2].quote": "presentation.coreMessage",
+            "elements[2].attribution": "presentation.summary.short"
+          }
+        }
+      ]
+    }
+  ]
+}

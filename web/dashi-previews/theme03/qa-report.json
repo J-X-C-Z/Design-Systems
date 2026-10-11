@@ -1,0 +1,38 @@
+{
+  "theme": "theme03",
+  "checked_at": "2026-10-11T15:22:00Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chromium",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "checks": [
+    "all12desktop+narrow visually reviewed",
+    "navigation all12variants",
+    "no horizontal overflow",
+    "no content text outside canvas",
+    "80/100/120 events-per-second preserved",
+    "schema/copy passed"
+  ],
+  "limitations": [
+    "preserves upstream dark branch and its dim secondary labels; no full accessibility contrast certification",
+    "narrow slides require readable canonical text below",
+    "no physical mobile or upstream editor/export test"
+  ],
+  "fixes": [
+    "replaced percent-clamping gauge with compatible real sequence template",
+    "bespoke second metric uses existing positive lime tone for readable contrast"
+  ],
+  "screenshot_method": "full-viewport source images and recorded DOM rectangles, cropped with actual screenshot scaling",
+  "internal_bespoke_clipping": "fresh2026-10-11T15:47DOM:32source texts, all clipping ancestors clear",
+  "private_build_identifier_withheld": true,
+  "publication_delta": "本公开包未附上游3D装饰图片，已省略8个装饰图片节点；正文与方案保留。此归档调整未重新做浏览器视觉验收。"
+}

@@ -1,0 +1,400 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';img-src data:;font-src 'none';connect-src 'none';base-uri 'none';form-action 'none'"><title>看清结构，再看变化 · Dashi theme10</title><style>/* Fixed Dashi theme10 CSS literals, AGPL-3.0; no effects executed. */
+
+  .stp-root{position:relative;width:100%;height:100%;background:var(--ds-bg,#0d0e11);color:var(--ds-ink,#f2f3f6);
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;flex-direction:column;font-family:var(--font-sans);}
+  .stp-head{margin-bottom:48px;}
+  .stp-overline{font-family:var(--font-mono);font-size:26px;letter-spacing:.16em;color:var(--ds-faint,rgba(242,243,246,.42));}
+  .stp-title{font-size:62px;font-weight:300;margin:14px 0 0;line-height:1.06;}
+  .stp-row{flex:1;min-height:0;display:grid;gap:56px;align-content:center;}
+  .stp-step{display:flex;flex-direction:column;transition:opacity .25s;}
+  .stp-step.is-dim{opacity:.34;}
+  .stp-numwrap{position:relative;display:flex;align-items:center;margin-bottom:28px;}
+  .stp-num{font-family:var(--font-mono);font-size:96px;font-weight:400;line-height:.9;letter-spacing:-.02em;
+    color:var(--ds-accent,#6f9bd8);font-variant-numeric:tabular-nums;}
+  .stp-step.is-dim .stp-num{color:var(--ds-faint,rgba(242,243,246,.4));}
+  .stp-conn{position:absolute;left:130px;right:-56px;top:50%;height:1.5px;
+    background:var(--ds-line,rgba(242,243,246,.2));}
+  .stp-conn::after{content:"";position:absolute;right:0;top:50%;width:7px;height:7px;
+    border-top:1.5px solid var(--ds-line,rgba(242,243,246,.3));border-right:1.5px solid var(--ds-line,rgba(242,243,246,.3));
+    transform:translateY(-50%) rotate(45deg);}
+  .stp-step-title{font-size:36px;font-weight:300;margin:0 0 16px;line-height:1.1;}
+  .stp-step.is-focus .stp-step-title{color:var(--ds-accent,#6f9bd8);}
+  .stp-desc{font-size:26px;font-weight:300;line-height:1.55;margin:0;max-width:22ch;
+    color:var(--ds-muted,rgba(242,243,246,.62));text-wrap:pretty;}
+  
+
+  .pcp-root{position:relative;width:100%;height:100%;background:var(--ds-bg,#0d0e11);color:var(--ds-ink,#f2f3f6);
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;gap:0;font-family:var(--font-sans);}
+  .pcp-lead{flex:0 0 46%;display:flex;flex-direction:column;padding-right:88px;min-width:0;
+    border-right:1px solid var(--ds-line,rgba(242,243,246,.13));}
+  .pcp-overline{font-family:var(--font-mono);font-size:26px;letter-spacing:.16em;color:var(--ds-faint,rgba(242,243,246,.42));}
+  .pcp-title{font-size:60px;font-weight:300;margin:16px 0 0;line-height:1.06;letter-spacing:.01em;}
+  .pcp-spot{margin-top:auto;position:relative;}
+  .pcp-ghost{display:block;font-family:var(--font-mono);font-size:200px;line-height:.72;font-weight:200;
+    letter-spacing:-.04em;color:var(--ds-accent,#6f9bd8);opacity:.9;margin-bottom:28px;}
+  .pcp-spot-head{font-size:50px;font-weight:300;margin:0 0 22px;line-height:1.1;text-wrap:balance;max-width:640px;}
+  .pcp-spot-body{font-size:27px;line-height:1.6;font-weight:300;color:var(--ds-muted,rgba(242,243,246,.62));
+    margin:0;max-width:600px;text-wrap:pretty;}
+  .pcp-index{flex:1;list-style:none;margin:0;padding:0 0 0 88px;display:flex;flex-direction:column;
+    justify-content:center;min-width:0;}
+  .pcp-irow{display:flex;align-items:center;gap:40px;padding:34px 8px 34px 0;position:relative;
+    border-top:1px solid var(--ds-line,rgba(242,243,246,.13));transition:opacity .25s,padding .25s;}
+  .pcp-index > .pcp-irow:last-child{border-bottom:1px solid var(--ds-line,rgba(242,243,246,.13));}
+  .pcp-inum{font-family:var(--font-mono);font-size:30px;font-weight:400;letter-spacing:.02em;
+    color:var(--ds-faint,rgba(242,243,246,.4));flex:0 0 auto;font-variant-numeric:tabular-nums;}
+  .pcp-ihead{flex:1;font-size:40px;font-weight:300;line-height:1.12;min-width:0;text-wrap:balance;}
+  .pcp-imark{flex:0 0 auto;width:9px;height:9px;border-radius:50%;background:var(--ds-faint,rgba(242,243,246,.28));}
+  .pcp-irow.is-lead{padding-left:22px;}
+  .pcp-irow.is-lead::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:3px;
+    background:var(--ds-accent,#6f9bd8);}
+  .pcp-irow:not(.is-lead){opacity:.62;}
+  .pcp-irow.is-lead .pcp-inum,.pcp-irow.is-lead .pcp-ihead{color:var(--ds-accent,#6f9bd8);}
+  .pcp-irow.is-lead .pcp-ihead{font-weight:400;}
+  .pcp-irow.is-lead .pcp-imark{background:var(--ds-accent,#6f9bd8);}
+  
+
+  .ckl-root{position:relative;width:100%;height:100%;background:var(--ds-bg,#0d0e11);color:var(--ds-ink,#f2f3f6);
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;flex-direction:column;font-family:var(--font-sans);}
+  .ckl-head{margin-bottom:40px;}
+  .ckl-overline{font-family:var(--font-mono);font-size:26px;letter-spacing:.16em;color:var(--ds-faint,rgba(242,243,246,.42));}
+  .ckl-topline{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-top:14px;}
+  .ckl-title{font-size:60px;font-weight:300;margin:0;line-height:1.06;}
+  .ckl-counter{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;}
+  .ckl-counter-num{font-size:56px;font-weight:300;font-variant-numeric:tabular-nums;line-height:1;color:var(--ds-accent,#6f9bd8);}
+  .ckl-counter-sl{font-size:30px;color:var(--ds-faint,rgba(242,243,246,.4));}
+  .ckl-counter-lab{font-family:var(--font-mono);font-size:24px;letter-spacing:.04em;color:var(--ds-faint,rgba(242,243,246,.5));}
+  .ckl-grid{flex:1;min-height:0;display:grid;gap:20px 56px;align-content:center;}
+  .ckl-item{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:26px;
+    padding:22px 4px;border-top:1px solid var(--ds-line,rgba(242,243,246,.12));}
+  .ckl-box{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    font-size:26px;color:#0c1118;box-shadow:inset 0 0 0 2px var(--ds-line,rgba(242,243,246,.28));}
+  .ckl-item.is-done .ckl-box{color:#fff;background:linear-gradient(135deg,var(--ds-accent-2,#8fa8e6),var(--ds-accent,#5479e8));
+    }
+  .ckl-text{display:flex;flex-direction:column;gap:4px;min-width:0;}
+  .ckl-task{font-size:31px;font-weight:300;}
+  .ckl-outcome{font-family:var(--font-mono);font-size:24px;letter-spacing:.02em;color:var(--ds-faint,rgba(242,243,246,.5));}
+  .ckl-tag{font-family:var(--font-mono);font-size:24px;letter-spacing:.06em;white-space:nowrap;padding:5px 14px;border-radius:999px;
+    color:var(--ds-faint,rgba(242,243,246,.5));box-shadow:inset 0 0 0 1px var(--ds-line,rgba(242,243,246,.18));}
+  .ckl-item.is-done .ckl-tag{color:var(--ds-accent,#6f9bd8);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ds-accent,#6f9bd8) 55%,transparent);}
+  .ckl-root.is-single-compact .ckl-head{margin-bottom:24px;}
+  .ckl-root.is-single-compact .ckl-title{font-size:52px;}
+  .ckl-root.is-single-compact .ckl-counter-num{font-size:44px;}
+  .ckl-root.is-single-compact .ckl-counter-sl{font-size:24px;}
+  .ckl-root.is-single-compact .ckl-counter-lab{font-size:20px;}
+  .ckl-root.is-single-compact .ckl-grid{gap:8px;align-content:center;}
+  .ckl-root.is-single-compact .ckl-item{gap:18px;padding:10px 4px;}
+  .ckl-root.is-single-compact .ckl-box{width:34px;height:34px;border-radius:9px;font-size:21px;}
+  .ckl-root.is-single-compact .ckl-task{font-size:26px;line-height:1.08;}
+  .ckl-root.is-single-compact .ckl-outcome{font-size:18px;line-height:1.1;}
+  .ckl-root.is-single-compact .ckl-tag{font-size:19px;line-height:1.1;padding:4px 11px;}
+  
+
+  .sch-root{position:relative;width:100%;height:100%;background:var(--ds-bg,#0d0e11);color:var(--ds-ink,#f2f3f6);
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;flex-direction:column;font-family:var(--font-sans);}
+  .sch-head{margin-bottom:34px;}
+  .sch-overline{font-family:var(--font-mono);font-size:26px;letter-spacing:.16em;color:var(--ds-faint,rgba(242,243,246,.42));}
+  .sch-title{font-size:60px;font-weight:300;margin:14px 0 0;line-height:1.06;}
+  .sch-table{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:flex-start;}
+  .sch-thead,.sch-row,.sch-total{display:grid;grid-template-columns:80px 1.1fr 2fr 1fr 1.3fr;align-items:center;
+    column-gap:32px;padding:0 12px;}
+  .sch-thead.no-note,.sch-row.no-note,.sch-total.no-note{grid-template-columns:80px 1.2fr 2.4fr 1fr;}
+  .sch-thead{padding-bottom:14px;border-bottom:1px solid var(--ds-line,rgba(242,243,246,.18));}
+  .sch-th{font-family:var(--font-mono);font-size:23px;letter-spacing:.1em;color:var(--ds-faint,rgba(242,243,246,.44));text-transform:uppercase;}
+  .sch-col-rate,.sch-th.sch-col-rate{text-align:right;}
+  .sch-body{flex:0 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:flex-start;}
+  .sch-body > .sch-group:first-child{padding-top:6px;}
+  .sch-group{font-family:var(--font-mono);font-size:21px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ds-accent,#5479e8);padding:var(--sch-gp,22px) 12px 8px;}
+  .sch-row{padding-top:var(--sch-rp,18px);padding-bottom:var(--sch-rp,18px);border-bottom:1px solid var(--ds-line,rgba(242,243,246,.09));
+    transition:opacity .25s ease,background .2s ease;}
+  .sch-body > .sch-row:last-child{border-bottom:0;}
+  .sch-row.is-dim{opacity:.36;}
+  .sch-row.is-focus{background:var(--ds-card,rgba(255,255,255,.05));border-radius:10px;
+    box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ds-accent,#5479e8) 40%,transparent);}
+  .sch-idx{font-family:var(--font-mono);font-size:24px;color:var(--ds-faint,rgba(242,243,246,.4));font-variant-numeric:tabular-nums;}
+  .sch-item{font-size:var(--sch-item,32px);font-weight:400;}
+  .sch-desc{font-size:var(--sch-desc,27px);font-weight:300;color:var(--ds-muted,rgba(242,243,246,.7));}
+  .sch-rate{font-family:var(--font-mono);font-size:var(--sch-item,32px);font-variant-numeric:tabular-nums;text-align:right;letter-spacing:.01em;}
+  .sch-row.is-focus .sch-rate{color:var(--ds-accent,#5479e8);}
+  .sch-note{font-family:var(--font-mono);font-size:23px;color:var(--ds-faint,rgba(242,243,246,.5));}
+  .sch-total{margin-top:10px;padding-top:12px;border-top:2px solid var(--ds-line,rgba(242,243,246,.24));}
+  .sch-total-lab{font-size:30px;font-weight:400;grid-column:2 / span 1;}
+  .sch-total-val{font-family:var(--font-mono);font-size:46px;font-weight:300;text-align:right;color:var(--ds-accent,#5479e8);font-variant-numeric:tabular-nums;}
+  
+
+  .shw-root{position:relative;width:100%;height:100%;background:var(--ds-bg,#0d0e11);color:#f4f4f2;
+    overflow:hidden;font-family:var(--font-sans);}
+  .shw-img{position:absolute;inset:0;}
+  .shw-scrim{position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg, rgba(8,9,11,calc(var(--shw-sc)*.45)) 0%, rgba(8,9,11,calc(var(--shw-sc)*.12)) 38%, rgba(8,9,11,calc(var(--shw-sc)*.78)) 100%);}
+  .shw-text{position:absolute;z-index:3;max-width:62%;}
+  .shw-root.pos-bl .shw-text{left:var(--pad-x,120px);bottom:230px;}
+  .shw-root.pos-center .shw-text{left:50%;top:46%;transform:translate(-50%,-50%);text-align:center;max-width:80%;}
+  .shw-overline{font-family:var(--font-mono);font-size:27px;letter-spacing:.18em;color:rgba(244,244,242,.78);}
+  .shw-title{font-size:96px;font-weight:300;margin:20px 0 0;line-height:1.0;letter-spacing:-.015em;text-wrap:balance;}
+  .shw-ticker{position:absolute;left:0;right:0;bottom:0;z-index:3;display:flex;
+    background:linear-gradient(180deg, rgba(8,9,11,0) 0%, rgba(8,9,11,.55) 100%);
+    border-top:1px solid rgba(244,244,242,.16);
+    padding:34px var(--pad-x,120px) 40px;gap:64px;backdrop-filter:blur(3px);}
+  .shw-root.pos-center .shw-ticker{justify-content:center;text-align:center;}
+  .shw-tick{display:flex;flex-direction:column;gap:8px;padding-right:64px;border-right:1px solid rgba(244,244,242,.16);}
+  .shw-root.pos-center .shw-tick{align-items:center;padding:0 48px;}
+  .shw-tick:last-child{border-right:0;}
+  .shw-tick-val{font-size:54px;font-weight:300;font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.01em;}
+  .shw-tick-lab{font-family:var(--font-mono);font-size:23px;letter-spacing:.05em;color:rgba(244,244,242,.7);}
+  
+
+  .vnn-root{position:relative;width:100%;height:100%;background:var(--ds-bg,#0d0e11);color:var(--ds-ink,#f2f3f6);
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;flex-direction:column;font-family:var(--font-sans);}
+  .vnn-head{margin-bottom:24px;}
+  .vnn-overline{font-family:var(--font-mono);font-size:26px;letter-spacing:.16em;color:var(--ds-faint,rgba(242,243,246,.42));}
+  .vnn-title{font-size:58px;font-weight:300;margin:16px 0 0;line-height:1.12;text-wrap:balance;max-width:1280px;}
+  .vnn-body{flex:1;min-height:0;display:grid;grid-template-columns:auto 1fr;gap:90px;align-items:center;}
+  .vnn-body-solo{grid-template-columns:1fr;justify-items:center;}
+  .vnn-stage{position:relative;flex:0 0 auto;}
+  .vnn-disc{position:absolute;border-radius:50%;border:2px solid currentColor;transition:opacity .3s ease;}
+  .vnn-center{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .vnn-cdot{width:18px;height:18px;border-radius:50%;background:var(--ds-ink,#f2f3f6);box-shadow:0 0 0 7px rgba(84,121,232,.22);}
+  .vnn-clabel{font-family:var(--font-mono);font-size:24px;letter-spacing:.1em;color:var(--ds-ink,#f2f3f6);white-space:nowrap;}
+  .vnn-dlabel{position:absolute;transform:translate(-50%,-50%);font-size:32px;font-weight:300;white-space:nowrap;
+    transition:opacity .25s ease;}
+  .vnn-dlabel.is-dim{opacity:.34;}
+  .vnn-legend{display:flex;flex-direction:column;gap:44px;min-width:0;}
+  .vnn-rows{display:flex;flex-direction:column;gap:30px;}
+  .vnn-row{display:grid;grid-template-columns:26px 1fr;align-items:start;gap:24px;transition:opacity .25s ease;}
+  .vnn-row.is-dim{opacity:.4;}
+  .vnn-sw{width:26px;height:26px;border-radius:50%;margin-top:6px;}
+  .vnn-meta{display:flex;flex-direction:column;gap:5px;min-width:0;}
+  .vnn-name{font-size:36px;font-weight:300;}
+  .vnn-note{font-size:24px;font-weight:300;line-height:1.4;color:var(--ds-muted,rgba(242,243,246,.62));text-wrap:pretty;}
+  .vnn-cbox{display:flex;flex-direction:column;gap:10px;padding:30px 34px;border-radius:18px;
+    background:var(--ds-grad-soft,linear-gradient(110deg,rgba(51,64,92,.3),rgba(200,150,107,.3)));
+    box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ds-accent,#5479e8) 34%,transparent);}
+  .vnn-ctag{font-family:var(--font-mono);font-size:24px;letter-spacing:.1em;color:var(--ds-accent,#5479e8);}
+  .vnn-cnote{font-size:27px;font-weight:300;line-height:1.4;text-wrap:pretty;}
+  
+
+  .hiv-root{position:relative;width:100%;height:100%;background:var(--ds-bg,#0d0e11);color:var(--ds-ink,#f2f3f6);
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;flex-direction:column;font-family:var(--font-sans);}
+  .hiv-head{margin-bottom:18px;}
+  .hiv-overline{font-family:var(--font-mono);font-size:26px;letter-spacing:.16em;color:var(--ds-faint,rgba(242,243,246,.42));}
+  .hiv-title{font-size:56px;font-weight:300;margin:14px 0 0;line-height:1.1;}
+  .hiv-combwrap{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;}
+  .hiv-comb{display:flex;flex-direction:column;}
+  .hiv-row{display:flex;gap:20px;}
+  .hiv-row.is-offset{margin-top:-74px;margin-left:160px;}
+  .hiv-hex{width:300px;height:346px;flex:0 0 auto;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;gap:8px;text-align:center;padding:0 30px;
+    clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+    background:var(--ds-card,rgba(255,255,255,.05));
+    box-shadow:inset 0 0 0 1px var(--ds-line,rgba(242,243,246,.12));
+    transition:opacity .3s ease,transform .3s ease;}
+  /* clip-path can't render a ring border, so draw an inner hex outline via a pseudo overlay */
+  .hiv-hex{position:relative;}
+  .hiv-hex.is-dim{opacity:.34;}
+  .hiv-hex.is-lead{background:var(--ds-grad,linear-gradient(118deg,#14233b,#236560 66%,#48b3a6));color:#f4f6f5;}
+  .hiv-hex.is-hot{background:linear-gradient(150deg,var(--ds-c1) 0%,var(--ds-c3) 58%,var(--ds-c4) 100%);color:#fff;}
+  .hiv-kicker{font-family:var(--font-mono);font-size:28px;letter-spacing:.18em;opacity:.78;}
+  .hiv-leadline{font-size:38px;font-weight:300;line-height:1.18;white-space:pre-line;}
+  .hiv-val{font-family:var(--font-mono);font-size:72px;font-weight:300;line-height:1;letter-spacing:-.01em;
+    font-variant-numeric:tabular-nums;display:flex;align-items:baseline;gap:6px;}
+  .hiv-unit{font-size:26px;letter-spacing:.04em;opacity:.62;}
+  .hiv-hex.is-hot .hiv-unit{opacity:.7;}
+  .hiv-label{font-size:27px;font-weight:300;color:var(--ds-muted,rgba(242,243,246,.66));line-height:1.2;}
+  .hiv-hex.is-hot .hiv-label{color:rgba(255,255,255,.82);}
+  
+
+  .cdsk-root{position:relative;width:100%;height:100%;overflow:hidden;font-family:var(--font-sans);
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;flex-direction:column;}
+  .cdsk-grain{position:absolute;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .cdsk-top{position:relative;z-index:1;font-family:var(--font-mono);font-size:25px;letter-spacing:.24em;white-space:nowrap;}
+  .cdsk-body{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:center;max-width:1240px;padding-bottom:40px;}
+  .cdsk-root.align-center .cdsk-body{align-items:center;text-align:center;max-width:none;}
+  .cdsk-kicker{font-family:var(--font-mono);font-size:26px;letter-spacing:.18em;color:var(--cdsk-sub);}
+  .cdsk-rule{width:96px;height:3px;border-radius:2px;background:var(--cdsk-accent);margin:36px 0;}
+  .cdsk-title{margin:0;font-size:152px;line-height:1.0;font-weight:300;letter-spacing:-.01em;display:flex;flex-direction:column;}
+  .cdsk-sub{margin:44px 0 0;font-size:34px;line-height:1.5;font-weight:300;color:var(--cdsk-sub);display:flex;flex-direction:column;}
+  .cdsk-foot{position:relative;z-index:1;display:flex;justify-content:space-between;padding-top:24px;
+    border-top:1px solid var(--cdsk-line);font-family:var(--font-mono);font-size:24px;letter-spacing:.14em;color:var(--cdsk-foot);}
+  .cdsk-foot span{white-space:nowrap;}
+  
+
+  .cfld-root{position:relative;width:100%;height:100%;overflow:hidden;display:flex;
+    background:#070809;color:#f3f4f6;font-family:var(--font-sans);}
+  .cfld-panel{position:relative;z-index:2;flex:none;height:100%;background:#070809;
+    padding:var(--pad-y,96px) clamp(80px,5vw,116px);display:flex;flex-direction:column;}
+  .cfld-word{font-family:var(--font-mono);font-size:25px;letter-spacing:.24em;color:rgba(243,244,246,.6);white-space:nowrap;}
+  .cfld-mid{flex:1;display:flex;flex-direction:column;justify-content:center;}
+  .cfld-kicker{font-family:var(--font-mono);font-size:25px;letter-spacing:.16em;color:rgba(243,244,246,.55);}
+  .cfld-rule{width:88px;height:3px;border-radius:2px;background:#7e9bf0;margin:32px 0;}
+  .cfld-title{margin:0;font-size:128px;line-height:1.0;font-weight:300;letter-spacing:-.01em;display:flex;flex-direction:column;}
+  .cfld-sub{margin:38px 0 0;font-size:31px;line-height:1.5;font-weight:300;color:rgba(243,244,246,.6);max-width:660px;}
+  .cfld-foot{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:24px;
+    letter-spacing:.14em;color:rgba(243,244,246,.5);}
+  .cfld-foot span{white-space:nowrap;} .cfld-foot-r{color:#7e9bf0;}
+  .cfld-field{position:relative;flex:1;height:100%;}
+  .cfld-grain{position:absolute;inset:0;pointer-events:none;opacity:.45;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  
+
+  .caty-root{position:relative;width:100%;height:100%;overflow:hidden;font-family:var(--font-sans);color:#f4f5f6;
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;flex-direction:column;}
+  .caty-grain{position:absolute;inset:0;pointer-events:none;opacity:.4;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .caty-kicker{position:relative;z-index:1;font-family:var(--font-mono);font-size:26px;letter-spacing:.2em;
+    color:rgba(244,245,246,.82);}
+  .caty-body{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:30px;}
+  .caty-rule{width:96px;height:3px;border-radius:2px;background:#7e9bf0;margin-bottom:40px;}
+  .caty-title{margin:0;font-size:176px;line-height:.98;font-weight:300;letter-spacing:-.015em;
+    display:flex;flex-direction:column;text-shadow:0 2px 50px rgba(8,11,15,.22);}
+  .caty-sub{margin:40px 0 0;font-size:34px;line-height:1.5;font-weight:300;color:rgba(20,22,26,.66);max-width:1000px;}
+  .caty-foot{position:relative;z-index:1;display:flex;justify-content:space-between;padding-top:22px;
+    border-top:1px solid rgba(20,22,26,.18);
+    font-family:var(--font-mono);font-size:24px;letter-spacing:.14em;color:rgba(20,22,26,.6);}
+  .caty-foot-r{color:rgba(20,22,26,.78);}
+  .caty-foot span{white-space:nowrap;}
+  
+
+  .chrz-root{position:relative;width:100%;height:100%;overflow:hidden;font-family:var(--font-sans);display:flex;flex-direction:column;}
+  .chrz-grain{position:absolute;inset:0;pointer-events:none;opacity:.4;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .chrz-sky{position:relative;color:#f3f4f6;padding:var(--pad-y,96px) var(--pad-x,120px);
+    display:flex;flex-direction:column;justify-content:space-between;}
+  .chrz-word{position:relative;z-index:1;font-family:var(--font-mono);font-size:25px;letter-spacing:.24em;color:rgba(243,244,246,.62);white-space:nowrap;}
+  .chrz-titlewrap{position:relative;z-index:1;}
+  .chrz-kicker{font-family:var(--font-mono);font-size:26px;letter-spacing:.18em;color:rgba(243,244,246,.66);}
+  .chrz-rule{display:block;width:96px;height:3px;border-radius:2px;background:var(--chrz-rule);margin:30px 0;}
+  .chrz-title{margin:0;font-size:150px;line-height:.98;font-weight:300;letter-spacing:-.01em;display:flex;flex-direction:column;}
+  .chrz-band{position:relative;padding:0 var(--pad-x,120px) 64px;display:flex;flex-direction:column;justify-content:space-between;}
+  .chrz-sub{position:relative;z-index:1;margin:46px 0 0;font-size:34px;line-height:1.45;font-weight:400;color:var(--chrz-inksub);max-width:1100px;text-shadow:0 1px 16px rgba(255,235,210,.3);}
+  .chrz-foot{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;
+    font-family:var(--font-mono);font-size:24px;letter-spacing:.14em;color:var(--chrz-ink);}
+  .chrz-foot span{white-space:nowrap;} .chrz-foot-r{color:var(--chrz-inksub);}
+  
+
+  .cd-root{position:relative;width:100%;height:100%;overflow:hidden;font-family:var(--font-sans);
+    background:#060708;color:#f3f4f6;
+    padding:var(--pad-y,96px) var(--pad-x,120px);display:flex;flex-direction:column;gap:48px;}
+  .cd-card{position:relative;flex:1;min-height:0;border-radius:32px;overflow:hidden;
+    box-shadow:0 30px 80px rgba(0,0,0,.5);}
+  .cd-grad{position:absolute;inset:0;background:var(--cd-grad);}
+  .cd-card-grain{position:absolute;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .cd-card-body{position:absolute;left:64px;right:64px;bottom:60px;z-index:2;color:#f7f4ef;}
+  .cd-kicker{font-family:var(--font-mono);font-size:25px;letter-spacing:.18em;color:rgba(247,244,239,.82);margin-bottom:24px;}
+  .cd-title{margin:0;font-size:104px;font-weight:300;line-height:1;letter-spacing:-.01em;}
+  .cd-sub{margin:28px 0 0;font-size:30px;font-weight:300;line-height:1.5;color:rgba(247,244,239,.86);max-width:1000px;text-wrap:pretty;}
+  .cd-strip{display:flex;align-items:stretch;flex:0 0 auto;}
+  .cd-cell{flex:1;display:flex;flex-direction:column;gap:14px;padding:6px 40px;
+    border-left:1px solid rgba(243,244,246,.14);}
+  .cd-cell:first-child{padding-left:0;border-left:0;}
+  .cd-cell-label{font-family:var(--font-mono);font-size:24px;letter-spacing:.12em;color:rgba(243,244,246,.55);}
+  .cd-cell-pct{font-size:62px;font-weight:300;line-height:1;letter-spacing:-.01em;font-variant-numeric:tabular-nums;}
+  .cd-cell-note{font-family:var(--font-mono);font-size:24px;letter-spacing:.04em;color:rgba(243,244,246,.5);}
+  .cd-foot{display:flex;justify-content:space-between;flex:0 0 auto;
+    font-family:var(--font-mono);font-size:24px;letter-spacing:.14em;color:rgba(243,244,246,.5);}
+  .cd-foot-r{color:rgba(243,244,246,.7);}
+  .cd-foot span{white-space:nowrap;}
+  
+.deck-theme,.deck-theme *{box-sizing:border-box;}
+@keyframes ds-rise{from{opacity:0;translate:0 28px;}to{opacity:1;translate:0 0;}}
+  @keyframes ds-fadein{from{opacity:0;}to{opacity:1;}}
+  @media (prefers-reduced-motion:no-preference){
+    [data-deck-active] .ds-anim{
+      animation:ds-rise 640ms cubic-bezier(.22,.61,.36,1) both;
+      animation-delay:var(--ds-d,0ms);will-change:opacity,translate;}
+    [data-deck-active] .ds-fade{
+      animation:ds-fadein 720ms ease both;
+      animation-delay:var(--ds-d,0ms);will-change:opacity;}
+  }
+
+.deck-theme{
+    --ds-bg:radial-gradient(120% 95% at 86% -8%, rgba(92,128,234,.26) 0%, rgba(92,128,234,0) 52%), radial-gradient(115% 95% at -2% 108%, rgba(199,144,98,.24) 0%, rgba(199,144,98,0) 54%), linear-gradient(157deg,#13161d 0%,#0c0d11 56%,#090a0d 100%);
+    --ds-bg-soft:#16181d;
+    --ds-panel:#f3f3f0;
+    --ds-panel-ink:#101216;
+    --ds-ink:#f2f3f6;
+    --ds-muted:rgba(242,243,246,.74);
+    --ds-faint:rgba(242,243,246,.54);
+    --ds-line:rgba(242,243,246,.2);
+    --ds-card:rgba(255,255,255,.06);
+    --ds-accent:#5479e8;
+    --ds-accent-2:#8fa8e6;
+    /* Categorical series palette — a harmonious cool→warm sweep along the brand's
+       own blue→copper axis (plus one periwinkle) so multi-series charts get
+       variety without leaving the family. Tuned luminous for near-black bg. */
+    --ds-c1:#5b80ea;
+    --ds-c2:#46a6d0;
+    --ds-c3:#3fb39a;
+    --ds-c4:#d7a85b;
+    --ds-c5:#d27d58;
+    --ds-c6:#9a82dc;
+    /* Soft (translucent) companions for fills/areas/cells. */
+    --ds-c1-soft:rgba(91,128,234,.22);
+    --ds-c2-soft:rgba(70,166,208,.22);
+    --ds-c3-soft:rgba(63,179,154,.22);
+    --ds-c4-soft:rgba(215,168,91,.22);
+    --ds-c5-soft:rgba(210,125,88,.22);
+    --ds-c6-soft:rgba(154,130,220,.22);
+    /* Vertical gradient for hero bars/areas — accent deepening downward. */
+    --ds-grad-bar:linear-gradient(180deg,#6f93ef 0%,#5479e8 52%,#3f57b8 100%);
+    --ds-grad-cool:linear-gradient(120deg,#5b80ea 0%,#46a6d0 50%,#3fb39a 100%);
+    --ds-grad-warm:linear-gradient(120deg,#d7a85b 0%,#d27d58 100%);
+    /* warm blue→copper gradient kept for cover / section card backgrounds */
+    --ds-grad:linear-gradient(118deg,#1c2740 0%,#33405c 28%,#6f5a4c 66%,#c8966b 100%);
+    --ds-grad-soft:linear-gradient(118deg,rgba(51,64,92,.32) 0%,rgba(111,90,76,.30) 60%,rgba(200,150,107,.34) 100%);
+    --font-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
+    --font-sans:'IBM Plex Sans','Noto Sans SC',system-ui,-apple-system,sans-serif;
+    /* slide frame scale (1920×1080) */
+    --pad-x:120px;
+    --pad-y:96px;
+  }
+
+  /* Light surface: overrides the token set locally so any token-driven slide flips
+     to a warm off-white with dark ink. Applied by the controller via a wrapper. */
+  .deck-theme.tone-light{
+    --ds-bg:radial-gradient(110% 90% at 90% -6%, rgba(98,130,192,.22) 0%, rgba(98,130,192,0) 52%), radial-gradient(110% 90% at 0% 108%, rgba(199,144,98,.26) 0%, rgba(199,144,98,0) 54%), linear-gradient(157deg,#f5f4f0 0%,#ece9e3 100%);
+    --ds-bg-soft:#e4e3de;
+    --ds-ink:#15161a;
+    --ds-muted:rgba(21,22,26,.62);
+    --ds-faint:rgba(21,22,26,.42);
+    --ds-line:rgba(21,22,26,.13);
+    --ds-card:rgba(21,22,26,.05);
+    --ds-panel:#15161a;
+    --ds-panel-ink:#f1f0ec;
+    --ds-accent:#3457c4;
+    --ds-accent-2:#5d7fc8;
+    --ds-c1:#3a5fc8;
+    --ds-c2:#1f86ad;
+    --ds-c3:#1f9277;
+    --ds-c4:#b5852f;
+    --ds-c5:#bd6236;
+    --ds-c6:#7459bf;
+    --ds-c1-soft:rgba(58,95,200,.18);
+    --ds-c2-soft:rgba(31,134,173,.18);
+    --ds-c3-soft:rgba(31,146,119,.18);
+    --ds-c4-soft:rgba(181,133,47,.18);
+    --ds-c5-soft:rgba(189,98,54,.18);
+    --ds-c6-soft:rgba(116,89,191,.18);
+    --ds-grad-bar:linear-gradient(180deg,#4a6dd0 0%,#3457c4 52%,#283f93 100%);
+    --ds-grad-cool:linear-gradient(120deg,#3a5fc8 0%,#1f86ad 50%,#1f9277 100%);
+    --ds-grad-warm:linear-gradient(120deg,#b5852f 0%,#bd6236 100%);
+    --ds-grad:linear-gradient(118deg,#2b3650 0%,#4a4a52 30%,#8a6849 68%,#bd824a 100%);
+    --ds-grad-soft:linear-gradient(118deg,rgba(52,87,196,.12) 0%,rgba(138,104,73,.12) 58%,rgba(189,130,74,.18) 100%);
+  }
+  .ds-slidewrap{width:100%;height:100%;}
+</style><style>
+*{box-sizing:border-box}body{margin:0;background:#e5e7eb;color:#202329;font:14px system-ui,sans-serif}.reader-header{padding:14px 22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border-bottom:1px solid #ccd0d6}.reader-header a{color:inherit}.reader-header small{color:#555}.reader-header select{font:inherit;padding:10px;border:1px solid #bbb;border-radius:5px;max-width:100%}.reader-main{max-width:1600px;margin:auto;padding:20px}.frame{position:relative;aspect-ratio:16/9;margin:0 0 24px;background:#fff;overflow:hidden;box-shadow:0 5px 20px #0002}.canvas{width:1920px;height:1080px;position:absolute;transform-origin:top left;overflow:hidden}.slide{width:1920px;height:1080px;position:relative;overflow:hidden}.slide>*{max-width:100%}.reader-footer{padding:20px 24px;line-height:1.8;background:white}.text-readout{max-width:1100px;margin:auto;padding:24px;background:white;line-height:1.8}.text-readout h2{font-size:20px}.text-readout li{margin:6px 0}.text-readout p{overflow-wrap:anywhere}a:focus-visible,select:focus-visible{outline:3px solid #2563eb;outline-offset:3px}@media(max-width:600px){.reader-header{padding:12px;gap:10px}.reader-header small{flex-basis:100%;line-height:1.7}.reader-main{padding:10px}.frame{margin-bottom:14px}.text-readout{padding:18px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style><style></style></head><body><header class="reader-header"><a href="../index.html">← Dashi 分类</a><b>金色指数风</b><select aria-label="跳转方案"><option value="page-1">1 · 模板 1</option><option value="page-2">1 · 模板 2</option><option value="page-3">1 · 模板 3</option><option value="page-4">1 · 定制</option><option value="page-5">2 · 模板 1</option><option value="page-6">2 · 模板 2</option><option value="page-7">2 · 模板 3</option><option value="page-8">2 · 定制</option><option value="page-9">3 · 模板 1</option><option value="page-10">3 · 模板 2</option><option value="page-11">3 · 模板 3</option><option value="page-12">3 · 定制</option></select><small>真实模板 · 3+1 / HTML 只读适配 · 演示内容与数据</small></header><main class="reader-main"><article class="frame" id="page-1"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page086"><div class="ds-slidewrap deck-theme"><div class="vnn-root"><div class="vnn-head"><div class="vnn-overline">虚构行业指数观察 · 演示数据</div><h2 class="vnn-title">看清结构，再看变化</h2></div><div class="vnn-body "><div class="vnn-stage" style="width:620px;height:620px"><span class="vnn-disc" style="left:132px;top:46px;width:356px;height:356px;color:var(--ds-c1);border-color:var(--ds-c1);background:radial-gradient(circle at 50% 42%, var(--ds-c1) 0%, color-mix(in srgb, var(--ds-c1) 55%, transparent) 46%, transparent 72%);mix-blend-mode:screen;opacity:0.8"></span><span class="vnn-disc" style="left:46px;top:224px;width:356px;height:356px;color:var(--ds-c4);border-color:var(--ds-c4);background:radial-gradient(circle at 50% 42%, var(--ds-c4) 0%, color-mix(in srgb, var(--ds-c4) 55%, transparent) 46%, transparent 72%);mix-blend-mode:screen;opacity:0.8"></span><span class="vnn-disc" style="left:218px;top:224px;width:356px;height:356px;color:var(--ds-c3);border-color:var(--ds-c3);background:radial-gradient(circle at 50% 42%, var(--ds-c3) 0%, color-mix(in srgb, var(--ds-c3) 55%, transparent) 46%, transparent 72%);mix-blend-mode:screen;opacity:0.8"></span><span class="vnn-center" style="left:310px;top:350px"><span class="vnn-cdot"></span><span class="vnn-clabel">cover</span></span><span class="vnn-dlabel " style="left:310px;top:150px;color:var(--ds-c1)">用途</span><span class="vnn-dlabel " style="left:150px;top:452px;color:var(--ds-c4)">受众</span><span class="vnn-dlabel " style="left:470px;top:452px;color:var(--ds-c3)">性质</span></div><div class="vnn-legend"><div class="vnn-rows"><div class="vnn-row "><span class="vnn-sw" style="background:var(--ds-c1)"></span><div class="vnn-meta"><span class="vnn-name">用途</span><span class="vnn-note">虚构行业指数观察</span></div></div><div class="vnn-row "><span class="vnn-sw" style="background:var(--ds-c4)"></span><div class="vnn-meta"><span class="vnn-name">受众</span><span class="vnn-note">行业研究员</span></div></div><div class="vnn-row "><span class="vnn-sw" style="background:var(--ds-c3)"></span><div class="vnn-meta"><span class="vnn-name">性质</span><span class="vnn-note">纯概念演示</span></div></div></div><div class="vnn-cbox"><span class="vnn-ctag">cover</span><span class="vnn-cnote">虚构行业指数观察</span></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-2"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page037"><div class="ds-slidewrap deck-theme tone-light"><div class="pcp-root"><div class="pcp-lead"><div class="pcp-overline">虚构行业指数观察</div><h2 class="pcp-title">看清结构，再看变化</h2><div class="pcp-spot"><span class="pcp-ghost">01</span><h3 class="pcp-spot-head">性质</h3><p class="pcp-spot-body">纯概念演示</p></div></div><ol class="pcp-index"><li class="pcp-irow is-lead"><span class="pcp-inum">01</span><span class="pcp-ihead">性质</span><span class="pcp-imark" aria-hidden="true"></span></li><li class="pcp-irow "><span class="pcp-inum">02</span><span class="pcp-ihead">受众</span><span class="pcp-imark" aria-hidden="true"></span></li><li class="pcp-irow "><span class="pcp-inum">03</span><span class="pcp-ihead">用途</span><span class="pcp-imark" aria-hidden="true"></span></li><li class="pcp-irow "><span class="pcp-inum">04</span><span class="pcp-ihead">虚构行业指数观察 · 演示数据</span><span class="pcp-imark" aria-hidden="true"></span></li></ol></div></div></section></div></article>
+<article class="frame" id="page-3"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page033"><div class="ds-slidewrap deck-theme tone-light"><div class="stp-root"><div class="stp-head"><div class="stp-overline">虚构行业指数观察</div><h2 class="stp-title">看清结构，再看变化</h2></div><div class="stp-row" style="grid-template-columns:repeat(4, 1fr)"><div class="stp-step  "><div class="stp-numwrap"><span class="stp-num">01</span><span class="stp-conn" aria-hidden="true"></span></div><h3 class="stp-step-title">受众</h3><p class="stp-desc">行业研究员</p></div><div class="stp-step  "><div class="stp-numwrap"><span class="stp-num">02</span><span class="stp-conn" aria-hidden="true"></span></div><h3 class="stp-step-title">性质</h3><p class="stp-desc">纯概念演示</p></div><div class="stp-step  "><div class="stp-numwrap"><span class="stp-num">03</span><span class="stp-conn" aria-hidden="true"></span></div><h3 class="stp-step-title">用途</h3><p class="stp-desc">虚构行业指数观察</p></div><div class="stp-step  "><div class="stp-numwrap"><span class="stp-num">04</span></div><h3 class="stp-step-title">虚构行业指数观察 · 演示数据</h3><p class="stp-desc">虚构行业指数观察。所有内容与数字均为虚构演示，不作为事实或决策依据。</p></div></div></div></div></section></div></article>
+<article class="frame" id="page-4"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="cover::v4" data-vm-source-slide-id="cover" data-vm-slide-key="bespoke-cover-v4" data-vm-index="0" data-vm-variant-state-id="cover::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme10" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(120% 95% at 86% -8%,rgba(92,128,234,.26),transparent 52%),radial-gradient(115% 95% at -2% 108%,rgba(199,144,98,.24),transparent 54%),linear-gradient(157deg,#13161d 0%,#090a0d 100%);--bespoke-surface:rgba(255,255,255,.06);--bespoke-ink:#f2f3f6;--bespoke-muted:rgba(242,243,246,.72);--bespoke-accent:#5479e8;--bespoke-accent-2:#c79062;--bespoke-line:rgba(242,243,246,.2);--bespoke-pad:96px;--bespoke-gap:20px;--bespoke-radius:18px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(120% 95% at 86% -8%,rgba(92,128,234,.26),transparent 52%),radial-gradient(115% 95% at -2% 108%,rgba(199,144,98,.24),transparent 54%),linear-gradient(157deg,#13161d 0%,#090a0d 100%);color:#f2f3f6;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#5479e8;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#c79062;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:96px 96px"><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f2f3f6;text-align:left;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">cover</div></div><div data-bespoke-element="text" style="grid-column:1 / span 8;grid-row:2 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f2f3f6;text-align:left;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">看清结构，再看变化</div></div><blockquote data-bespoke-element="quote" style="grid-column:1 / span 9;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(255,255,255,.06);border:1px solid rgba(242,243,246,.2);border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.38);display:flex;flex-direction:column;justify-content:center;gap:26px;margin:0;overflow:hidden"><div aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;font-size:100px;font-weight:900;line-height:0.5">“</div><div data-editable-path="composition.bespoke-statement-core.text" style="color:#f2f3f6;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;font-size:42px;font-weight:760;letter-spacing:-.018em;line-height:1.24;text-align:left;text-wrap:balance;overflow-wrap:anywhere">虚构行业指数观察</div><cite data-editable-path="composition.bespoke-statement-core.attribution" style="color:rgba(242,243,246,.72);font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:20px;font-style:normal;letter-spacing:.07em">虚构行业指数观察 · 演示数据</cite></blockquote><div data-bespoke-element="list" style="grid-column:10 / span 3;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(255,255,255,.06);border:1px solid rgba(242,243,246,.2);border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.38);display:flex;flex-direction:column;gap:16px;color:#f2f3f6;overflow:hidden"><div style="display:grid;gap:12px;min-height:0;overflow:hidden"><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:0;border-top:0"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">01</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.0.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">用途</div><div data-editable-path="composition.bespoke-statement-facts.items.0.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">虚构行业指数观察</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(242,243,246,.2)"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">02</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.1.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">受众</div><div data-editable-path="composition.bespoke-statement-facts.items.1.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">行业研究员</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(242,243,246,.2)"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">03</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.2.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">性质</div><div data-editable-path="composition.bespoke-statement-facts.items.2.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">纯概念演示</div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-5"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page078"><div class="ds-slidewrap deck-theme"><div class="shw-root pos-bl"><div class="shw-img"><div class="bt-unicorn-frame" data-unicorn-json-file-path="assets/unicorn/moving_into_remix_scene.json" data-unicorn-scale="1" data-unicorn-dpi="1.5" data-unicorn-sdk-url="assets/vendor/unicornstudio.umd.js" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;overflow:hidden;background:#05070b;--unicorn-accent:var(--ds-accent,#6f9bd8)"><div class="bt-unicorn-scene" style="position:absolute;inset:0;width:100%;height:100%"></div></div></div><div class="shw-scrim" style="--shw-sc:0.6"></div><div class="shw-text"><div class="shw-overline">指数由100点升至114点</div><h2 class="shw-title">区分指数点位与结构贡献</h2></div><div class="shw-ticker"><div class="shw-tick"><span class="shw-tick-val">100点</span><span class="shw-tick-lab">基期 · 指数点 · 100点</span></div><div class="shw-tick"><span class="shw-tick-val">108点</span><span class="shw-tick-lab">第二期 · 指数点 · 108点</span></div><div class="shw-tick"><span class="shw-tick-val">114点</span><span class="shw-tick-lab">第三期 · 指数点 · 114点</span></div></div></div></div></section></div></article>
+<article class="frame" id="page-6"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page091"><div class="ds-slidewrap deck-theme"><div class="hiv-root"><div class="hiv-head"><div class="hiv-overline">指数由100点升至114点</div><h2 class="hiv-title">区分指数点位与结构贡献</h2></div><div class="hiv-combwrap"><div class="hiv-comb"><div class="hiv-row"><div class="hiv-hex is-lead"><span class="hiv-kicker">三期指数 · 演示数据</span><span class="hiv-leadline">metrics</span></div><div class="hiv-hex  " style="background:var(--ds-c1-soft)"><span class="hiv-val" style="color:var(--ds-c1)">114<span class="hiv-unit">点</span></span><span class="hiv-label">第三期 · 指数点</span></div><div class="hiv-hex  " style="background:var(--ds-c2-soft)"><span class="hiv-val" style="color:var(--ds-c2)">108<span class="hiv-unit">点</span></span><span class="hiv-label">第二期 · 指数点</span></div></div><div class="hiv-row is-offset"><div class="hiv-hex  " style="background:var(--ds-c3-soft)"><span class="hiv-val" style="color:var(--ds-c3)">100<span class="hiv-unit">点</span></span><span class="hiv-label">基期 · 指数点</span></div><div class="hiv-hex  " style="background:var(--ds-c4-soft)"><span class="hiv-val" style="color:var(--ds-c4)"><span class="hiv-unit"></span></span><span class="hiv-label">3点｜100点–114点</span></div><div class="hiv-hex  " style="background:var(--ds-c5-soft)"><span class="hiv-val" style="color:var(--ds-c5)"><span class="hiv-unit"></span></span><span class="hiv-label">末值｜第三期114点</span></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-7"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page075"><div class="ds-slidewrap deck-theme tone-light"><div class="sch-root"><div class="sch-head"><div class="sch-overline">三期指数 · 演示数据</div><h2 class="sch-title">区分指数点位与结构贡献</h2></div><div class="sch-table" style="--sch-rp:9px;--sch-gp:9px;--sch-item:32px;--sch-desc:27px"><div class="sch-thead "><span class="sch-th sch-col-idx">#</span><span class="sch-th">metrics</span><span class="sch-th">指数由100点升至114点</span><span class="sch-th sch-col-rate"></span><span class="sch-th sch-col-note">指数点</span></div><div class="sch-body"><div class="sch-group">3点｜100点–114点</div><div class="sch-row   "><span class="sch-idx">01</span><span class="sch-item"></span><span class="sch-desc"></span><span class="sch-rate"></span><span class="sch-note"></span></div><div class="sch-group">基期 · 100点</div><div class="sch-row   "><span class="sch-idx">02</span><span class="sch-item"></span><span class="sch-desc">指数点</span><span class="sch-rate">100点</span><span class="sch-note"></span></div><div class="sch-group">第三期 · 114点</div><div class="sch-row   "><span class="sch-idx">03</span><span class="sch-item"></span><span class="sch-desc">指数点</span><span class="sch-rate">114点</span><span class="sch-note"></span></div><div class="sch-group">第二期 · 108点</div><div class="sch-row   "><span class="sch-idx">04</span><span class="sch-item"></span><span class="sch-desc">指数点</span><span class="sch-rate">108点</span><span class="sch-note"></span></div><div class="sch-group">首值｜基期100点</div><div class="sch-row   "><span class="sch-idx">05</span><span class="sch-item"></span><span class="sch-desc"></span><span class="sch-rate"></span><span class="sch-note"></span></div><div class="sch-group">末值｜第三期114点</div><div class="sch-row   "><span class="sch-idx">06</span><span class="sch-item"></span><span class="sch-desc"></span><span class="sch-rate"></span><span class="sch-note"></span></div></div><div class="sch-total "><span class="sch-idx"></span><span class="sch-total-lab">基期</span><span></span><span class="sch-total-val"></span><span></span></div></div></div></div></section></div></article>
+<article class="frame" id="page-8"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="evidence::v4" data-vm-source-slide-id="evidence" data-vm-slide-key="bespoke-evidence-v4" data-vm-index="1" data-vm-variant-state-id="evidence::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme10" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(120% 95% at 86% -8%,rgba(92,128,234,.26),transparent 52%),radial-gradient(115% 95% at -2% 108%,rgba(199,144,98,.24),transparent 54%),linear-gradient(157deg,#13161d 0%,#090a0d 100%);--bespoke-surface:rgba(255,255,255,.06);--bespoke-ink:#f2f3f6;--bespoke-muted:rgba(242,243,246,.72);--bespoke-accent:#5479e8;--bespoke-accent-2:#c79062;--bespoke-line:rgba(242,243,246,.2);--bespoke-pad:96px;--bespoke-gap:20px;--bespoke-radius:18px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(120% 95% at 86% -8%,rgba(92,128,234,.26),transparent 52%),radial-gradient(115% 95% at -2% 108%,rgba(199,144,98,.24),transparent 54%),linear-gradient(157deg,#13161d 0%,#090a0d 100%);color:#f2f3f6;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#5479e8;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#c79062;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:96px 96px"><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f2f3f6;text-align:left;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-chart-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">metrics</div></div><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:2 / span 2;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f2f3f6;text-align:left;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-chart-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">区分指数点位与结构贡献</div></div><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:4 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f2f3f6;text-align:left;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-chart-core.text" style="font-size:38px;line-height:1.24;font-weight:650;letter-spacing:-.012em;overflow-wrap:anywhere;text-wrap:pretty">指数由100点升至114点</div></div><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:5 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f2f3f6;text-align:left;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-chart-summary.text" style="font-size:21px;line-height:1.4;font-weight:500;letter-spacing:.02em;overflow-wrap:anywhere;text-wrap:pretty">三期指数 · 演示数据</div></div><div data-bespoke-element="chart" data-bespoke-chart="line" style="grid-column:5 / span 8;grid-row:1 / span 8;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(255,255,255,.06);border:1px solid rgba(242,243,246,.2);border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.38);display:flex;flex-direction:column;gap:18px;overflow:hidden"><div style="flex:1 1 auto;min-height:0"><svg viewBox="0 0 1000 420" width="100%" height="100%" preserveAspectRatio="none" aria-hidden="true" data-editable-skip="true"><line x1="50" x2="950" y1="66" y2="66" stroke="rgba(242,243,246,.16)" stroke-width="2"></line><line x1="50" x2="950" y1="157" y2="157" stroke="rgba(242,243,246,.16)" stroke-width="2"></line><line x1="50" x2="950" y1="248" y2="248" stroke="rgba(242,243,246,.16)" stroke-width="2"></line><line x1="50" x2="950" y1="339" y2="339" stroke="rgba(242,243,246,.16)" stroke-width="2"></line><line x1="50" x2="950" y1="340" y2="340" stroke="#f2f3f6" stroke-width="2"></line><polyline points="70,85.61403508771932 500,65.26315789473688 930,50" fill="none" stroke="#5b80ea" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"></polyline><g><circle cx="70" cy="85.61403508771932" r="9" fill="#5b80ea"></circle><text x="70" y="67.61403508771932" text-anchor="middle" fill="#f2f3f6" font-size="18" font-weight="700">100 点</text><text x="70" y="382" text-anchor="middle" fill="rgba(242,243,246,.68)" font-size="20">基期</text></g><g><circle cx="500" cy="65.26315789473688" r="9" fill="#46a6d0"></circle><text x="500" y="47.26315789473688" text-anchor="middle" fill="#f2f3f6" font-size="18" font-weight="700">108 点</text><text x="500" y="382" text-anchor="middle" fill="rgba(242,243,246,.68)" font-size="20">第二期</text></g><g><circle cx="930" cy="50" r="9" fill="#3fb39a"></circle><text x="930" y="32" text-anchor="middle" fill="#f2f3f6" font-size="18" font-weight="700">114 点</text><text x="930" y="382" text-anchor="middle" fill="rgba(242,243,246,.68)" font-size="20">第三期</text></g></svg></div></div><div data-bespoke-element="list" style="grid-column:1 / span 4;grid-row:6 / span 3;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(255,255,255,.06);border:1px solid rgba(242,243,246,.2);border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.38);display:flex;flex-direction:column;gap:16px;color:#f2f3f6;overflow:hidden"><div style="display:grid;gap:12px;min-height:0;overflow:hidden"><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:0;border-top:0"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">01</span><div style="min-width:0"><div data-editable-path="composition.bespoke-chart-facts.items.0.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">基期</div><div data-editable-path="composition.bespoke-chart-facts.items.0.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">指数点 · 100点</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(242,243,246,.2)"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">02</span><div style="min-width:0"><div data-editable-path="composition.bespoke-chart-facts.items.1.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">第二期</div><div data-editable-path="composition.bespoke-chart-facts.items.1.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">指数点 · 108点</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(242,243,246,.2)"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">03</span><div style="min-width:0"><div data-editable-path="composition.bespoke-chart-facts.items.2.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">第三期</div><div data-editable-path="composition.bespoke-chart-facts.items.2.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">指数点 · 114点</div></div></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-9"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page033"><div class="ds-slidewrap deck-theme tone-light"><div class="stp-root"><div class="stp-head"><div class="stp-overline">公开口径，对比结构，说明限制</div><h2 class="stp-title">让变化有据可查</h2></div><div class="stp-row" style="grid-template-columns:repeat(3, 1fr)"><div class="stp-step  "><div class="stp-numwrap"><span class="stp-num">01</span><span class="stp-conn" aria-hidden="true"></span></div><h3 class="stp-step-title">口径</h3><p class="stp-desc">公开计算口径</p></div><div class="stp-step  "><div class="stp-numwrap"><span class="stp-num">02</span><span class="stp-conn" aria-hidden="true"></span></div><h3 class="stp-step-title">结构</h3><p class="stp-desc">比较结构变化</p></div><div class="stp-step  "><div class="stp-numwrap"><span class="stp-num">03</span></div><h3 class="stp-step-title">限制</h3><p class="stp-desc">说明样本限制</p></div></div></div></div></section></div></article>
+<article class="frame" id="page-10"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page086"><div class="ds-slidewrap deck-theme"><div class="vnn-root"><div class="vnn-head"><div class="vnn-overline">statement</div><h2 class="vnn-title">让变化有据可查</h2></div><div class="vnn-body "><div class="vnn-stage" style="width:620px;height:620px"><span class="vnn-disc" style="left:132px;top:46px;width:356px;height:356px;color:var(--ds-c1);border-color:var(--ds-c1);background:radial-gradient(circle at 50% 42%, var(--ds-c1) 0%, color-mix(in srgb, var(--ds-c1) 55%, transparent) 46%, transparent 72%);mix-blend-mode:screen;opacity:0.8"></span><span class="vnn-disc" style="left:46px;top:224px;width:356px;height:356px;color:var(--ds-c4);border-color:var(--ds-c4);background:radial-gradient(circle at 50% 42%, var(--ds-c4) 0%, color-mix(in srgb, var(--ds-c4) 55%, transparent) 46%, transparent 72%);mix-blend-mode:screen;opacity:0.8"></span><span class="vnn-disc" style="left:218px;top:224px;width:356px;height:356px;color:var(--ds-c3);border-color:var(--ds-c3);background:radial-gradient(circle at 50% 42%, var(--ds-c3) 0%, color-mix(in srgb, var(--ds-c3) 55%, transparent) 46%, transparent 72%);mix-blend-mode:screen;opacity:0.8"></span><span class="vnn-center" style="left:310px;top:350px"><span class="vnn-cdot"></span><span class="vnn-clabel">口径</span></span><span class="vnn-dlabel " style="left:310px;top:150px;color:var(--ds-c1)">限制</span><span class="vnn-dlabel " style="left:150px;top:452px;color:var(--ds-c4)">结构</span><span class="vnn-dlabel " style="left:470px;top:452px;color:var(--ds-c3)">口径</span></div><div class="vnn-legend"><div class="vnn-rows"><div class="vnn-row "><span class="vnn-sw" style="background:var(--ds-c1)"></span><div class="vnn-meta"><span class="vnn-name">限制</span><span class="vnn-note">说明样本限制</span></div></div><div class="vnn-row "><span class="vnn-sw" style="background:var(--ds-c4)"></span><div class="vnn-meta"><span class="vnn-name">结构</span><span class="vnn-note">比较结构变化</span></div></div><div class="vnn-row "><span class="vnn-sw" style="background:var(--ds-c3)"></span><div class="vnn-meta"><span class="vnn-name">口径</span><span class="vnn-note">公开计算口径</span></div></div></div><div class="vnn-cbox"><span class="vnn-ctag">口径</span><span class="vnn-cnote">公开口径，对比结构，说明限制</span></div></div></div></div></div></section></div></article>
+<article class="frame" id="page-11"><div class="canvas"><section class="slide actual-template" data-layout="theme10_page071"><div class="ds-slidewrap deck-theme tone-light"><div class="ckl-root "><div class="ckl-head"><div class="ckl-overline">公开口径，对比结构，说明限制</div><div class="ckl-topline"><h2 class="ckl-title">让变化有据可查</h2><div class="ckl-counter"><span class="ckl-counter-num">1<span class="ckl-counter-sl">/3</span></span><span class="ckl-counter-lab"></span></div></div></div><div class="ckl-grid" style="grid-template-columns:repeat(2, 1fr)"><div class="ckl-item "><span class="ckl-box" aria-hidden="true"></span><div class="ckl-text"><span class="ckl-task">口径 · 公开计算口径</span><span class="ckl-outcome"></span></div><span class="ckl-tag">口径</span></div><div class="ckl-item "><span class="ckl-box" aria-hidden="true"></span><div class="ckl-text"><span class="ckl-task">结构 · 比较结构变化</span><span class="ckl-outcome"></span></div><span class="ckl-tag">口径</span></div><div class="ckl-item is-done"><span class="ckl-box" aria-hidden="true">✓</span><div class="ckl-text"><span class="ckl-task">限制 · 说明样本限制</span><span class="ckl-outcome"></span></div><span class="ckl-tag">statement</span></div></div></div></div></section></div></article>
+<article class="frame" id="page-12"><div class="canvas"><section class="slide bespoke-slide" data-vm-slide-id="action::v4" data-vm-source-slide-id="action" data-vm-slide-key="bespoke-action-v4" data-vm-index="2" data-vm-variant-state-id="action::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="4" data-vm-variant-kind="bespoke" data-vm-variant-mode="comparison" data-theme-pack="theme10" data-label="Agent 定制方案" aria-label="Agent 定制方案"><div class="bespoke-root" style="--bespoke-bg:radial-gradient(120% 95% at 86% -8%,rgba(92,128,234,.26),transparent 52%),radial-gradient(115% 95% at -2% 108%,rgba(199,144,98,.24),transparent 54%),linear-gradient(157deg,#13161d 0%,#090a0d 100%);--bespoke-surface:rgba(255,255,255,.06);--bespoke-ink:#f2f3f6;--bespoke-muted:rgba(242,243,246,.72);--bespoke-accent:#5479e8;--bespoke-accent-2:#c79062;--bespoke-line:rgba(242,243,246,.2);--bespoke-pad:96px;--bespoke-gap:20px;--bespoke-radius:18px;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale,1));transform-origin:top left;isolation:isolate;background:radial-gradient(120% 95% at 86% -8%,rgba(92,128,234,.26),transparent 52%),radial-gradient(115% 95% at -2% 108%,rgba(199,144,98,.24),transparent 54%),linear-gradient(157deg,#13161d 0%,#090a0d 100%);color:#f2f3f6;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;-webkit-font-smoothing:antialiased"><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#5479e8;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;top:-240px;right:-150px"></div><div aria-hidden="true" data-editable-skip="true" style="position:absolute;width:620px;height:620px;border-radius:50%;background:#c79062;filter:blur(130px);opacity:0.1;pointer-events:none;z-index:0;bottom:-280px;left:-170px"></div><div class="bespoke-grid" style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:var(--bespoke-gap);padding:96px 96px"><div data-bespoke-element="text" style="grid-column:1 / span 4;grid-row:1 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f2f3f6;text-align:left;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-kicker.text" style="font-size:21px;line-height:1.2;font-weight:780;letter-spacing:.15em;text-transform:uppercase;overflow-wrap:anywhere;text-wrap:pretty">statement</div></div><div data-bespoke-element="text" style="grid-column:1 / span 8;grid-row:2 / span 1;min-width:0;min-height:0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;color:#f2f3f6;text-align:left;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;padding-top:0;padding-bottom:0;overflow:hidden"><div data-editable-path="composition.bespoke-statement-title.text" style="font-size:76px;line-height:1.02;font-weight:900;letter-spacing:-.035em;overflow-wrap:anywhere;text-wrap:balance">让变化有据可查</div></div><blockquote data-bespoke-element="quote" style="grid-column:1 / span 9;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(255,255,255,.06);border:1px solid rgba(242,243,246,.2);border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.38);display:flex;flex-direction:column;justify-content:center;gap:26px;margin:0;overflow:hidden"><div aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;font-size:100px;font-weight:900;line-height:0.5">“</div><div data-editable-path="composition.bespoke-statement-core.text" style="color:#f2f3f6;font-family:&quot;IBM Plex Sans&quot;,&quot;Noto Sans SC&quot;,system-ui,sans-serif;font-size:42px;font-weight:760;letter-spacing:-.018em;line-height:1.24;text-align:left;text-wrap:balance;overflow-wrap:anywhere">公开口径，对比结构，说明限制</div><cite data-editable-path="composition.bespoke-statement-core.attribution" style="color:rgba(242,243,246,.72);font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:20px;font-style:normal;letter-spacing:.07em">公开口径，对比结构，说明限制</cite></blockquote><div data-bespoke-element="list" style="grid-column:10 / span 3;grid-row:3 / span 5;min-width:0;min-height:0;position:relative;z-index:2;padding:30px;background:rgba(255,255,255,.06);border:1px solid rgba(242,243,246,.2);border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.38);display:flex;flex-direction:column;gap:16px;color:#f2f3f6;overflow:hidden"><div style="display:grid;gap:12px;min-height:0;overflow:hidden"><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:0;border-top:0"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">01</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.0.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">口径</div><div data-editable-path="composition.bespoke-statement-facts.items.0.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">公开计算口径</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(242,243,246,.2)"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">02</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.1.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">结构</div><div data-editable-path="composition.bespoke-statement-facts.items.1.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">比较结构变化</div></div></div><div style="display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding-top:12px;border-top:1px solid rgba(242,243,246,.2)"><span aria-hidden="true" data-editable-skip="true" style="color:#5479e8;font-family:&quot;IBM Plex Mono&quot;,ui-monospace,SFMono-Regular,monospace;font-size:18px;font-weight:800;line-height:1.45">03</span><div style="min-width:0"><div data-editable-path="composition.bespoke-statement-facts.items.2.title" style="font-size:25px;font-weight:720;line-height:1.3;overflow-wrap:anywhere">限制</div><div data-editable-path="composition.bespoke-statement-facts.items.2.body" style="color:rgba(242,243,246,.72);font-size:20px;line-height:1.42;margin-top:5px;overflow-wrap:anywhere">说明样本限制</div></div></div></div></div></div></div></section></div></article></main><section class="text-readout"><h2>可读内容</h2><h3>看清结构，再看变化</h3><p>虚构行业指数观察。所有内容与数字均为虚构演示，不作为事实或决策依据。</p><ul><li>用途 · 虚构行业指数观察</li><li>受众 · 行业研究员</li><li>性质 · 纯概念演示</li></ul><h3>区分指数点位与结构贡献</h3><p>三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。</p><ul><li>基期：100 点 · 指数点</li><li>第二期：108 点 · 指数点</li><li>第三期：114 点 · 指数点</li></ul><h3>让变化有据可查</h3><p>公开计算口径；比较结构变化；说明样本限制。本页为概念演示。</p><ul><li>口径 · 公开计算口径</li><li>结构 · 比较结构变化</li><li>限制 · 说明样本限制</li></ul></section><footer class="reader-footer">主题与模板 © chuspeeism · <a href="https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64">固定版来源</a> · AGPL-3.0<br>本次保留真实模板与 canonical 3+1，采用独立 HTML-only 阅读外壳；无专有导出引擎、无 PPTX/PDF 导出或原生编辑保存。仅完成本页注明的验收，不代表 SP 已集成。<br><a href="../LICENSE">许可文本</a> · <a href="../SOURCE-NOTICE.md">来源及修改说明</a></footer><script>function fit(){document.querySelectorAll('.frame').forEach(f=>f.firstElementChild.style.transform='scale('+f.clientWidth/1920+')')}new ResizeObserver(fit).observe(document.querySelector('.reader-main'));fit();document.querySelector('select').addEventListener('change',e=>document.getElementById(e.target.value).scrollIntoView({behavior:'auto',block:'center'}));</script></body></html>

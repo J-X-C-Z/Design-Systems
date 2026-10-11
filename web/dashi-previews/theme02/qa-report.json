@@ -1,0 +1,41 @@
+{
+  "theme": "theme02",
+  "checked_at": "2026-10-11T15:13:00Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chromium",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "checks": [
+    "all12desktop+narrow reviewed",
+    "12selectoptions navigated",
+    "no horizontal overflow",
+    "no content text outside canvas",
+    "each evidence variant retains 86/91/94 percentages",
+    "schema/copy passed"
+  ],
+  "limitations": [
+    "native templates use actual green-neon branch; bespoke uses upstream purple/lime profile",
+    "upstream dimmed nonfocused panels intentionally retain low contrast; narrow slides require readable text section below",
+    "upstream decorative index labels are retained and do not count sample slides",
+    "CSS effects retained; pointer/editor/React effects excluded",
+    "not a physical phone or native SP visual test"
+  ],
+  "fixes": [
+    "static extraction of style-only useEffect CSS",
+    "restore raw CSS characters after SSR",
+    "reader shell selectors scoped away from native header/main/footer",
+    "replace present-mode-only Takeaways with genuine Roadmap showing all required facts"
+  ],
+  "screenshot_method": "full-viewport source images and recorded DOM rectangles, cropped with actual screenshot scaling",
+  "internal_bespoke_clipping": "fresh2026-10-11T15:47DOM:32source texts, all clipping ancestors clear",
+  "private_build_identifier_withheld": true
+}

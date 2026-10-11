@@ -1,0 +1,148 @@
+{
+  "checked_at": "2026-10-11T17:01:08Z",
+  "themes": 12,
+  "physical_slides": 144,
+  "final_desktop_screenshots": 144,
+  "final_narrow_screenshots": 144,
+  "native_sp_ui_verified": false,
+  "reports": [
+    {
+      "theme": "theme01",
+      "report": "theme01/qa/rev4/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [
+        "page9 oversized decorative opening quote intentionally crosses canvas boundary",
+        "390px iframe is responsive browser QA, not physical mobile/touch testing",
+        "small slide text remains small at 390px; canonical readable text is provided below slides",
+        "server-rendered initial states only; upstream animated/editor/export functions excluded"
+      ],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme02",
+      "report": "theme02/qa/rev3/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme03",
+      "report": "theme03/qa/rev2/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme04",
+      "report": "theme04/qa/rev3/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme05",
+      "report": "theme05/qa/rev1/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme06",
+      "report": "theme06/qa/rev2/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [
+        "page5 kx-wm and kx-rcp-ghost oversized watermark/index intentionally bleed; not factual values"
+      ],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme07",
+      "report": "theme07/qa/rev3/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [
+        "page2 toc-card-watermark intentionally bleeds; normal labels are fully visible"
+      ],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme08",
+      "report": "theme08/qa/rev2/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [
+        "page5 metrics ghost and pages2/9/10 giant quote marks intentionally bleed"
+      ],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme09",
+      "report": "theme09/qa/rev3/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [
+        "pages2/3/6/9 oversized quotation marks intentionally clipped"
+      ],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme10",
+      "report": "theme10/qa/rev4/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme11",
+      "report": "theme11/qa/rev2/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [
+        "Oversized ign-ghost background words intentionally bleed"
+      ],
+      "private_build_identifier_withheld": true
+    },
+    {
+      "theme": "theme12",
+      "report": "theme12/qa/rev1/report.json",
+      "physical_slides": 12,
+      "desktop_screenshots": 12,
+      "narrow_screenshots": 12,
+      "status": "passed_with_documented_scope",
+      "exceptions": [
+        "pages2/6/10 oversized quotation marks intentionally clipped",
+        "pages7/9/11 decorative background sequence numbers intentionally clipped; readable small sequence labels remain complete"
+      ],
+      "private_build_identifier_withheld": true
+    }
+  ]
+}

@@ -1,0 +1,5660 @@
+{
+  "format": "dashi-to-sp-bespoke-mapping-report",
+  "schemaVersion": 1,
+  "theme": "theme07",
+  "createdAt": "2026-10-11T17:01:05.954Z",
+  "sourceCommits": {
+    "dashi": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+    "main": "5314ac9bd71b98e93852ec990146d77c98b7f361",
+    "pr3": "24ea406fa52df32e3a618ee804af0c0cf1fa7abf"
+  },
+  "sourceGoalSha256": "96f1297569d21ce7c4323f374822ee2353f50dba117d46ba265865c91617f747",
+  "scope": "Three actual canonical v4 compositions only; v1–v3 upstream templates are NOT converted",
+  "canvas": {
+    "source": {
+      "width": 1920,
+      "height": 1080,
+      "evidence": "BespokeSlide.jsx rootStyle fixed width/height"
+    },
+    "target": {
+      "width": 1280,
+      "height": 720
+    },
+    "scale": 0.6666666666666666,
+    "columns": 12,
+    "rows": 8
+  },
+  "sourceLicense": "Dashi source AGPL-3.0; source and modification notices remain required",
+  "spDeployment": "No SP product change, API write, theme install or production deployment",
+  "geometryStatus": "All v4 grids checked against actual rendered source DOM; text boxes and line breaks reconciled to browser measurements. SP native rendering still unverified.",
+  "slides": [
+    {
+      "sourceLogicalId": "cover",
+      "sourceVariantId": "v4",
+      "sourceLayoutRationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。",
+      "sourceComposition": {
+        "designIntent": {
+          "objective": "公共空间研究样例",
+          "audience": "公共空间研究团队",
+          "narrativeRole": "界定社区步行观察范围",
+          "emphasis": "研究摘要与范围清楚分层",
+          "rationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。"
+        },
+        "background": "default",
+        "elements": [
+          {
+            "id": "bespoke-statement-kicker",
+            "type": "text",
+            "grid": {
+              "column": 1,
+              "row": 1,
+              "width": 4,
+              "height": 1
+            },
+            "role": "kicker",
+            "text": "cover"
+          },
+          {
+            "id": "bespoke-statement-title",
+            "type": "text",
+            "grid": {
+              "column": 1,
+              "row": 2,
+              "width": 8,
+              "height": 1
+            },
+            "role": "title",
+            "text": "可步行社区观察"
+          },
+          {
+            "id": "bespoke-statement-core",
+            "type": "quote",
+            "grid": {
+              "column": 1,
+              "row": 3,
+              "width": 9,
+              "height": 5
+            },
+            "quote": "公共空间研究样例",
+            "attribution": "公共空间研究样例 · 演示数据"
+          },
+          {
+            "id": "bespoke-statement-facts",
+            "type": "list",
+            "grid": {
+              "column": 10,
+              "row": 3,
+              "width": 3,
+              "height": 5
+            },
+            "ordered": true,
+            "items": [
+              {
+                "sourceId": "fact-1",
+                "title": "用途",
+                "body": "公共空间研究样例"
+              },
+              {
+                "sourceId": "fact-2",
+                "title": "受众",
+                "body": "研究机构"
+              },
+              {
+                "sourceId": "fact-3",
+                "title": "性质",
+                "body": "纯概念演示"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceCanvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "profile": {
+        "padX": 94,
+        "padY": 94,
+        "gap": 20,
+        "radius": 12
+      },
+      "flatBackground": "#F4F6F4",
+      "objects": [
+        {
+          "sourceElementId": "bespoke-statement-kicker",
+          "sourceElementType": "text",
+          "sourceGrid": {
+            "column": 1,
+            "row": 1,
+            "width": 4,
+            "height": 1
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 94,
+            "w": 564,
+            "h": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-cover-v4-1-kicker",
+          "sourceElementId": "bespoke-statement-kicker",
+          "sourceElementType": "text",
+          "sourceBounds": {
+            "h": 25.1875,
+            "w": 564,
+            "x": 94,
+            "y": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 16.791667
+          },
+          "sourceText": "cover",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 780,
+          "sourceFontSize": 21,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0.15,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 94,
+            "y": 94,
+            "w": 564,
+            "h": 94
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 25.1875,
+              "w": 564,
+              "x": 94,
+              "y": 94
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-kicker.text",
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 21,
+            "fontWeight": "780",
+            "letterSpacing": "3.15px",
+            "lineHeight": "25.2px",
+            "lines": [
+              "cover"
+            ],
+            "renderedText": "COVER",
+            "text": "cover",
+            "textAlign": "left",
+            "textTransform": "uppercase",
+            "visibleBounds": {
+              "h": 25.1875,
+              "w": 564,
+              "x": 94,
+              "y": 94
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-statement-title",
+          "sourceElementType": "text",
+          "sourceGrid": {
+            "column": 1,
+            "row": 2,
+            "width": 8,
+            "height": 1
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 208,
+            "w": 1148,
+            "h": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 765.333333,
+            "h": 62.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-cover-v4-2-title",
+          "sourceElementId": "bespoke-statement-title",
+          "sourceElementType": "text",
+          "sourceBounds": {
+            "h": 77.515833,
+            "w": 1148,
+            "x": 94,
+            "y": 208
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 765.333333,
+            "h": 51.677222
+          },
+          "sourceText": "可步行社区观察",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 900,
+          "sourceFontSize": 76,
+          "sourceLineHeight": 1.02,
+          "sourceLetterSpacingEm": -0.035,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 94,
+            "y": 208,
+            "w": 1148,
+            "h": 94
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 77.515833,
+              "w": 1148,
+              "x": 94,
+              "y": 208
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-title.text",
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 76,
+            "fontWeight": "900",
+            "letterSpacing": "-2.66px",
+            "lineHeight": "77.52px",
+            "lines": [
+              "可步行社区观察"
+            ],
+            "renderedText": "可步行社区观察",
+            "text": "可步行社区观察",
+            "textAlign": "left",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 77.51583299999999,
+              "w": 1148,
+              "x": 94,
+              "y": 208
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceGrid": {
+            "column": 1,
+            "row": 3,
+            "width": 9,
+            "height": 5
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 322,
+            "w": 1294,
+            "h": 550
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 214.666667,
+            "w": 862.666667,
+            "h": 366.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-cover-v4-3-panel",
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceBounds": {
+            "x": 94,
+            "y": 322,
+            "w": 1294,
+            "h": 550
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 214.666667,
+            "w": 862.666667,
+            "h": 366.666667
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-4-quotation-mark",
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceBounds": {
+            "h": 50,
+            "w": 1232,
+            "x": 125,
+            "y": 505.453333
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 336.968889,
+            "w": 821.333333,
+            "h": 33.333333
+          },
+          "sourceText": "“",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 900,
+          "sourceFontSize": 100,
+          "sourceLineHeight": 0.5,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 507.96000000000004,
+            "w": 1232,
+            "h": 50
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 50,
+              "w": 1232,
+              "x": 125,
+              "y": 505.453333
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 100,
+            "fontWeight": "900",
+            "letterSpacing": "normal",
+            "lineHeight": "50px",
+            "lines": [
+              "“"
+            ],
+            "renderedText": "“",
+            "text": "“",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 49.99999999999994,
+              "w": 1232,
+              "x": 125,
+              "y": 505.453333
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-5-quote",
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceBounds": {
+            "h": 52.078333,
+            "w": 1232,
+            "x": 125,
+            "y": 581.453333
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 387.635555,
+            "w": 821.333333,
+            "h": 34.718889
+          },
+          "sourceText": "公共空间研究样例",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 760,
+          "sourceFontSize": 42,
+          "sourceLineHeight": 1.24,
+          "sourceLetterSpacingEm": -0.018,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 583.96,
+            "w": 1232,
+            "h": 52.08
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 52.078333,
+              "w": 1232,
+              "x": 125,
+              "y": 581.453333
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-core.text",
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 42,
+            "fontWeight": "760",
+            "letterSpacing": "-0.756px",
+            "lineHeight": "52.08px",
+            "lines": [
+              "公共空间研究样例"
+            ],
+            "renderedText": "公共空间研究样例",
+            "text": "公共空间研究样例",
+            "textAlign": "left",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 52.07833300000004,
+              "w": 1232,
+              "x": 125,
+              "y": 581.453333
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-6-attribution",
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceBounds": {
+            "h": 29,
+            "w": 1232,
+            "x": 125,
+            "y": 659.531667
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 439.687778,
+            "w": 821.333333,
+            "h": 19.333333
+          },
+          "sourceText": "公共空间研究样例 · 演示数据",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0.07,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 662.0400000000001,
+            "w": 1232,
+            "h": 24
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 29,
+              "w": 1232,
+              "x": 125,
+              "y": 659.531667
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-statement-core.attribution",
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "1.4px",
+            "lineHeight": "normal",
+            "lines": [
+              "公共空间研究样例 · 演示数据"
+            ],
+            "renderedText": "公共空间研究样例 · 演示数据",
+            "text": "公共空间研究样例 · 演示数据",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 29,
+              "w": 1232,
+              "x": 125,
+              "y": 659.531667
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceGrid": {
+            "column": 10,
+            "row": 3,
+            "width": 3,
+            "height": 5
+          },
+          "sourceBounds": {
+            "x": 1408,
+            "y": 322,
+            "w": 418,
+            "h": 550
+          },
+          "targetBounds": {
+            "x": 938.666667,
+            "y": 214.666667,
+            "w": 278.666667,
+            "h": 366.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-cover-v4-7-panel",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 1408,
+            "y": 322,
+            "w": 418,
+            "h": 550
+          },
+          "targetBounds": {
+            "x": 938.666667,
+            "y": 214.666667,
+            "w": 278.666667,
+            "h": 366.666667
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-8-list-1-number",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.093333,
+            "w": 30,
+            "x": 1439,
+            "y": 353
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 235.333333,
+            "w": 20,
+            "h": 17.395555
+          },
+          "sourceText": "01",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 353,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.093333,
+              "w": 30,
+              "x": 1439,
+              "y": 353
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "01"
+            ],
+            "renderedText": "01",
+            "text": "01",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.09333300000003,
+              "w": 30,
+              "x": 1439,
+              "y": 353
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-9-list-1-title",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 314,
+            "x": 1481,
+            "y": 353
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 235.333333,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "sourceText": "用途",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 353,
+            "w": 314,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 353
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-facts.items.0.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "用途"
+            ],
+            "renderedText": "用途",
+            "text": "用途",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 353
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-10-list-1-body",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.390833,
+            "w": 314,
+            "x": 1481,
+            "y": 390.5
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 260.333333,
+            "w": 209.333333,
+            "h": 18.927222
+          },
+          "sourceText": "公共空间研究样例",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 390.5,
+            "w": 314,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.390833,
+              "w": 314,
+              "x": 1481,
+              "y": 390.5
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-statement-facts.items.0.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "公共空间研究样例"
+            ],
+            "renderedText": "公共空间研究样例",
+            "text": "公共空间研究样例",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.390832999999983,
+              "w": 314,
+              "x": 1481,
+              "y": 390.5
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-11-list-separator-1",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 1439,
+            "y": 430.890833,
+            "w": 356,
+            "h": 1
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 287.260555,
+            "w": 237.333333,
+            "h": 0.666667
+          },
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 430.9,
+            "w": 356,
+            "h": 1
+          },
+          "geometry": "measured rendered source DOM border"
+        },
+        {
+          "targetId": "theme07-cover-v4-12-list-2-number",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.093333,
+            "w": 30,
+            "x": 1439,
+            "y": 443.890833
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 295.927222,
+            "w": 20,
+            "h": 17.395555
+          },
+          "sourceText": "02",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 443.9,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.093333,
+              "w": 30,
+              "x": 1439,
+              "y": 443.890833
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "02"
+            ],
+            "renderedText": "02",
+            "text": "02",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.093332999999973,
+              "w": 30,
+              "x": 1439,
+              "y": 443.890833
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-13-list-2-title",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 314,
+            "x": 1481,
+            "y": 443.890833
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 295.927222,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "sourceText": "受众",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 443.9,
+            "w": 314,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 443.890833
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-facts.items.1.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "受众"
+            ],
+            "renderedText": "受众",
+            "text": "受众",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 443.890833
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-14-list-2-body",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.390833,
+            "w": 314,
+            "x": 1481,
+            "y": 481.390833
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 320.927222,
+            "w": 209.333333,
+            "h": 18.927222
+          },
+          "sourceText": "研究机构",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 481.4,
+            "w": 314,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.390833,
+              "w": 314,
+              "x": 1481,
+              "y": 481.390833
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-statement-facts.items.1.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "研究机构"
+            ],
+            "renderedText": "研究机构",
+            "text": "研究机构",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.390832999999983,
+              "w": 314,
+              "x": 1481,
+              "y": 481.390833
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-15-list-separator-2",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 1439,
+            "y": 521.781667,
+            "w": 356,
+            "h": 1
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 347.854445,
+            "w": 237.333333,
+            "h": 0.666667
+          },
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 521.8,
+            "w": 356,
+            "h": 1
+          },
+          "geometry": "measured rendered source DOM border"
+        },
+        {
+          "targetId": "theme07-cover-v4-16-list-3-number",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.093333,
+            "w": 30,
+            "x": 1439,
+            "y": 534.781667
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 356.521111,
+            "w": 20,
+            "h": 17.395555
+          },
+          "sourceText": "03",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 534.8,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.093333,
+              "w": 30,
+              "x": 1439,
+              "y": 534.781667
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "03"
+            ],
+            "renderedText": "03",
+            "text": "03",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.09333300000003,
+              "w": 30,
+              "x": 1439,
+              "y": 534.781667
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-17-list-3-title",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 314,
+            "x": 1481,
+            "y": 534.781667
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 356.521111,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "sourceText": "性质",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 534.8,
+            "w": 314,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 534.781667
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-facts.items.2.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "性质"
+            ],
+            "renderedText": "性质",
+            "text": "性质",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 534.781667
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-18-list-3-body",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.39,
+            "w": 314,
+            "x": 1481,
+            "y": 572.281667
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 381.521111,
+            "w": 209.333333,
+            "h": 18.926667
+          },
+          "sourceText": "纯概念演示",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 572.3,
+            "w": 314,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.39,
+              "w": 314,
+              "x": 1481,
+              "y": 572.281667
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-statement-facts.items.2.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "纯概念演示"
+            ],
+            "renderedText": "纯概念演示",
+            "text": "纯概念演示",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.389999999999983,
+              "w": 314,
+              "x": 1481,
+              "y": 572.281667
+            }
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-19-conversion-disclosure",
+          "sourceElementId": null,
+          "sourceElementType": "decoration",
+          "sourceBounds": {
+            "x": 94,
+            "y": 1038,
+            "w": 1600,
+            "h": 20
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 692,
+            "w": 1066.666667,
+            "h": 13.333333
+          },
+          "sourceText": "虚构演示 · Dashi v4 → SP 结构样例",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 13,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "estimated CJK/Latin advance; not DOM-measured",
+          "estimatedLines": 1
+        }
+      ],
+      "sourceFacts": [
+        "可步行社区观察",
+        "公共空间研究样例",
+        "用途",
+        "受众",
+        "性质"
+      ],
+      "sourceChartFacts": [],
+      "domGeometryCheck": [
+        {
+          "sourceElementId": "bespoke-statement-kicker",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-statement-title",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-statement-core",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-statement-facts",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        }
+      ],
+      "domTextMatches": [
+        {
+          "targetId": "theme07-cover-v4-1-kicker",
+          "sourceText": "cover",
+          "originalTargetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "measuredTargetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 16.791667
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-2-title",
+          "sourceText": "可步行社区观察",
+          "originalTargetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 765.333333,
+            "h": 62.666667
+          },
+          "measuredTargetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 765.333333,
+            "h": 51.677222
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-4-quotation-mark",
+          "sourceText": "“",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 338.64,
+            "w": 821.333333,
+            "h": 33.333333
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 336.968889,
+            "w": 821.333333,
+            "h": 33.333333
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-5-quote",
+          "sourceText": "公共空间研究样例",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 389.306667,
+            "w": 821.333333,
+            "h": 34.72
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 387.635555,
+            "w": 821.333333,
+            "h": 34.718889
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-6-attribution",
+          "sourceText": "公共空间研究样例 · 演示数据",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 441.36,
+            "w": 821.333333,
+            "h": 16
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 439.687778,
+            "w": 821.333333,
+            "h": 19.333333
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-8-list-1-number",
+          "sourceText": "01",
+          "originalTargetBounds": {
+            "x": 959.333333,
+            "y": 235.333333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 959.333333,
+            "y": 235.333333,
+            "w": 20,
+            "h": 17.395555
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-9-list-1-title",
+          "sourceText": "用途",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 235.333333,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 235.333333,
+            "w": 209.333333,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-10-list-1-body",
+          "sourceText": "公共空间研究样例",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 260.333333,
+            "w": 209.333333,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 260.333333,
+            "w": 209.333333,
+            "h": 18.927222
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-12-list-2-number",
+          "sourceText": "02",
+          "originalTargetBounds": {
+            "x": 959.333333,
+            "y": 295.933333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 959.333333,
+            "y": 295.927222,
+            "w": 20,
+            "h": 17.395555
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-13-list-2-title",
+          "sourceText": "受众",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 295.933333,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 295.927222,
+            "w": 209.333333,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-14-list-2-body",
+          "sourceText": "研究机构",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 320.933333,
+            "w": 209.333333,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 320.927222,
+            "w": 209.333333,
+            "h": 18.927222
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-16-list-3-number",
+          "sourceText": "03",
+          "originalTargetBounds": {
+            "x": 959.333333,
+            "y": 356.533333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 959.333333,
+            "y": 356.521111,
+            "w": 20,
+            "h": 17.395555
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-17-list-3-title",
+          "sourceText": "性质",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 356.533333,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 356.521111,
+            "w": 209.333333,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-cover-v4-18-list-3-body",
+          "sourceText": "纯概念演示",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 381.533333,
+            "w": 209.333333,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 381.521111,
+            "w": 209.333333,
+            "h": 18.926667
+          }
+        }
+      ],
+      "contentCheck": {
+        "missingFacts": [],
+        "unitsPreserved": true
+      }
+    },
+    {
+      "sourceLogicalId": "evidence",
+      "sourceVariantId": "v4",
+      "sourceLayoutRationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。",
+      "sourceComposition": {
+        "designIntent": {
+          "objective": "遮阴覆盖评分有待改善",
+          "audience": "公共空间研究团队",
+          "narrativeRole": "比较三类公共空间观察评分",
+          "emphasis": "72/56/64分统一口径",
+          "rationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。"
+        },
+        "background": "default",
+        "elements": [
+          {
+            "id": "bespoke-chart-kicker",
+            "type": "text",
+            "grid": {
+              "column": 1,
+              "row": 1,
+              "width": 4,
+              "height": 1
+            },
+            "role": "kicker",
+            "text": "metrics"
+          },
+          {
+            "id": "bespoke-chart-title",
+            "type": "text",
+            "grid": {
+              "column": 1,
+              "row": 2,
+              "width": 4,
+              "height": 2
+            },
+            "role": "title",
+            "text": "把观察证据与解释分开"
+          },
+          {
+            "id": "bespoke-chart-core",
+            "type": "text",
+            "grid": {
+              "column": 1,
+              "row": 4,
+              "width": 4,
+              "height": 1
+            },
+            "role": "subtitle",
+            "text": "遮阴覆盖评分有待改善"
+          },
+          {
+            "id": "bespoke-chart-summary",
+            "type": "text",
+            "grid": {
+              "column": 1,
+              "row": 5,
+              "width": 4,
+              "height": 1
+            },
+            "role": "caption",
+            "text": "观察评分 · 演示数据"
+          },
+          {
+            "id": "bespoke-chart-plot",
+            "type": "chart",
+            "grid": {
+              "column": 5,
+              "row": 1,
+              "width": 8,
+              "height": 8
+            },
+            "chartType": "bar",
+            "showValues": true,
+            "data": [
+              {
+                "sourceId": "fact-1",
+                "label": "道路连续",
+                "value": 72,
+                "displayValue": "72",
+                "unit": "分"
+              },
+              {
+                "sourceId": "fact-2",
+                "label": "遮阴覆盖",
+                "value": 56,
+                "displayValue": "56",
+                "unit": "分"
+              },
+              {
+                "sourceId": "fact-3",
+                "label": "停留设施",
+                "value": 64,
+                "displayValue": "64",
+                "unit": "分"
+              }
+            ]
+          },
+          {
+            "id": "bespoke-chart-facts",
+            "type": "list",
+            "grid": {
+              "column": 1,
+              "row": 6,
+              "width": 4,
+              "height": 3
+            },
+            "ordered": true,
+            "items": [
+              {
+                "sourceId": "fact-1",
+                "title": "道路连续",
+                "body": "评分 · 72分"
+              },
+              {
+                "sourceId": "fact-2",
+                "title": "遮阴覆盖",
+                "body": "评分 · 56分"
+              },
+              {
+                "sourceId": "fact-3",
+                "title": "停留设施",
+                "body": "评分 · 64分"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceCanvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "profile": {
+        "padX": 94,
+        "padY": 94,
+        "gap": 20,
+        "radius": 12
+      },
+      "flatBackground": "#F4F6F4",
+      "objects": [
+        {
+          "sourceElementId": "bespoke-chart-kicker",
+          "sourceElementType": "text",
+          "sourceGrid": {
+            "column": 1,
+            "row": 1,
+            "width": 4,
+            "height": 1
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 94,
+            "w": 564,
+            "h": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-evidence-v4-1-kicker",
+          "sourceElementId": "bespoke-chart-kicker",
+          "sourceElementType": "text",
+          "sourceBounds": {
+            "h": 25.1875,
+            "w": 564,
+            "x": 94,
+            "y": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 16.791667
+          },
+          "sourceText": "metrics",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 780,
+          "sourceFontSize": 21,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0.15,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 94,
+            "y": 94,
+            "w": 564,
+            "h": 94
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 25.1875,
+              "w": 564,
+              "x": 94,
+              "y": 94
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-chart-kicker.text",
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 21,
+            "fontWeight": "780",
+            "letterSpacing": "3.15px",
+            "lineHeight": "25.2px",
+            "lines": [
+              "metrics"
+            ],
+            "renderedText": "METRICS",
+            "text": "metrics",
+            "textAlign": "left",
+            "textTransform": "uppercase",
+            "visibleBounds": {
+              "h": 25.1875,
+              "w": 564,
+              "x": 94,
+              "y": 94
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-chart-title",
+          "sourceElementType": "text",
+          "sourceGrid": {
+            "column": 1,
+            "row": 2,
+            "width": 4,
+            "height": 2
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 208,
+            "w": 564,
+            "h": 208
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 376,
+            "h": 138.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-evidence-v4-2-title",
+          "sourceElementId": "bespoke-chart-title",
+          "sourceElementType": "text",
+          "sourceBounds": {
+            "h": 155.03125,
+            "w": 564,
+            "x": 94,
+            "y": 208
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 376,
+            "h": 103.354167
+          },
+          "sourceText": "把观察证据与解释分开",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 900,
+          "sourceFontSize": 76,
+          "sourceLineHeight": 1.02,
+          "sourceLetterSpacingEm": -0.035,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 2,
+          "estimatedSourceBounds": {
+            "x": 94,
+            "y": 208,
+            "w": 564,
+            "h": 208
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 155.03125,
+              "w": 564,
+              "x": 94,
+              "y": 208
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-chart-title.text",
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 76,
+            "fontWeight": "900",
+            "letterSpacing": "-2.66px",
+            "lineHeight": "77.52px",
+            "lines": [
+              "把观察证据",
+              "与解释分开"
+            ],
+            "renderedText": "把观察证据与解释分开",
+            "text": "把观察证据与解释分开",
+            "textAlign": "left",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 155.03125,
+              "w": 564,
+              "x": 94,
+              "y": 208
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-chart-core",
+          "sourceElementType": "text",
+          "sourceGrid": {
+            "column": 1,
+            "row": 4,
+            "width": 4,
+            "height": 1
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 436,
+            "w": 564,
+            "h": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 290.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-evidence-v4-3-subtitle",
+          "sourceElementId": "bespoke-chart-core",
+          "sourceElementType": "text",
+          "sourceBounds": {
+            "h": 47.109167,
+            "w": 564,
+            "x": 94,
+            "y": 436
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 290.666667,
+            "w": 376,
+            "h": 31.406111
+          },
+          "sourceText": "遮阴覆盖评分有待改善",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 650,
+          "sourceFontSize": 38,
+          "sourceLineHeight": 1.24,
+          "sourceLetterSpacingEm": -0.012,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 94,
+            "y": 436,
+            "w": 564,
+            "h": 94
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 47.109167,
+              "w": 564,
+              "x": 94,
+              "y": 436
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-chart-core.text",
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 38,
+            "fontWeight": "650",
+            "letterSpacing": "-0.456px",
+            "lineHeight": "47.12px",
+            "lines": [
+              "遮阴覆盖评分有待改善"
+            ],
+            "renderedText": "遮阴覆盖评分有待改善",
+            "text": "遮阴覆盖评分有待改善",
+            "textAlign": "left",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 47.109167000000014,
+              "w": 564,
+              "x": 94,
+              "y": 436
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-chart-summary",
+          "sourceElementType": "text",
+          "sourceGrid": {
+            "column": 1,
+            "row": 5,
+            "width": 4,
+            "height": 1
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 550,
+            "w": 564,
+            "h": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 366.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-evidence-v4-4-caption",
+          "sourceElementId": "bespoke-chart-summary",
+          "sourceElementType": "text",
+          "sourceBounds": {
+            "h": 29.390833,
+            "w": 564,
+            "x": 94,
+            "y": 550
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 366.666667,
+            "w": 376,
+            "h": 19.593889
+          },
+          "sourceText": "观察评分 · 演示数据",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 500,
+          "sourceFontSize": 21,
+          "sourceLineHeight": 1.4,
+          "sourceLetterSpacingEm": 0.02,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 94,
+            "y": 550,
+            "w": 564,
+            "h": 94
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 29.390833,
+              "w": 564,
+              "x": 94,
+              "y": 550
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-chart-summary.text",
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 21,
+            "fontWeight": "500",
+            "letterSpacing": "0.42px",
+            "lineHeight": "29.4px",
+            "lines": [
+              "观察评分 · 演示数据"
+            ],
+            "renderedText": "观察评分 · 演示数据",
+            "text": "观察评分 · 演示数据",
+            "textAlign": "left",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 29.390833000000043,
+              "w": 564,
+              "x": 94,
+              "y": 550
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceGrid": {
+            "column": 5,
+            "row": 1,
+            "width": 8,
+            "height": 8
+          },
+          "sourceBounds": {
+            "x": 678,
+            "y": 94,
+            "w": 1148,
+            "h": 892
+          },
+          "targetBounds": {
+            "x": 452,
+            "y": 62.666667,
+            "w": 765.333333,
+            "h": 594.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-evidence-v4-5-panel",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 678,
+            "y": 94,
+            "w": 1148,
+            "h": 892
+          },
+          "targetBounds": {
+            "x": 452,
+            "y": 62.666667,
+            "w": 765.333333,
+            "h": 594.666667
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-6-chart-grid",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 763.3,
+            "y": 253.45238095238096,
+            "w": 977.4000000000001,
+            "h": 3.9523809523809526
+          },
+          "targetBounds": {
+            "x": 508.866667,
+            "y": 168.968254,
+            "w": 651.6,
+            "h": 2.634921
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-7-chart-grid",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 763.3,
+            "y": 433.2857142857143,
+            "w": 977.4000000000001,
+            "h": 3.9523809523809526
+          },
+          "targetBounds": {
+            "x": 508.866667,
+            "y": 288.857143,
+            "w": 651.6,
+            "h": 2.634921
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-8-chart-grid",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 763.3,
+            "y": 613.1190476190476,
+            "w": 977.4000000000001,
+            "h": 3.9523809523809526
+          },
+          "targetBounds": {
+            "x": 508.866667,
+            "y": 408.746032,
+            "w": 651.6,
+            "h": 2.634921
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-9-chart-grid",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 763.3,
+            "y": 792.952380952381,
+            "w": 977.4000000000001,
+            "h": 3.9523809523809526
+          },
+          "targetBounds": {
+            "x": 508.866667,
+            "y": 528.634921,
+            "w": 651.6,
+            "h": 2.634921
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-10-chart-baseline",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 763.3,
+            "y": 794.9285714285714,
+            "w": 977.4000000000001,
+            "h": 3.9523809523809526
+          },
+          "targetBounds": {
+            "x": 508.866667,
+            "y": 529.952381,
+            "w": 651.6,
+            "h": 2.634921
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-11-bar-1",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 884.932,
+            "y": 223.8095238095238,
+            "w": 104.256,
+            "h": 573.0952380952381
+          },
+          "targetBounds": {
+            "x": 589.954667,
+            "y": 149.206349,
+            "w": 69.504,
+            "h": 382.063492
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-12-chart-label-1",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "h": 53.294167,
+            "w": 86.840313,
+            "x": 893.639896,
+            "y": 837.765417
+          },
+          "targetBounds": {
+            "x": 595.759931,
+            "y": 558.510278,
+            "w": 57.893542,
+            "h": 35.529445
+          },
+          "sourceText": "道路连续",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 21.720000000000002,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 828.46,
+            "y": 840.3809523809524,
+            "w": 217.20000000000002,
+            "h": 47.42857142857143
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 53.294167,
+              "w": 86.840313,
+              "x": 893.639896,
+              "y": 837.765417
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": null,
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "normal",
+            "lines": [
+              "道路连续"
+            ],
+            "renderedText": "道路连续",
+            "text": "道路连续",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 53.294167000000016,
+              "w": 86.84031300000004,
+              "x": 893.639896,
+              "y": 837.765417
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-13-chart-value-1",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "h": 50.815417,
+            "w": 49.581979,
+            "x": 912.269063,
+            "y": 160.434583
+          },
+          "targetBounds": {
+            "x": 608.179375,
+            "y": 106.956389,
+            "w": 33.054653,
+            "h": 33.876945
+          },
+          "sourceText": "72 分",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 700,
+          "sourceFontSize": 20.634,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 828.46,
+            "y": 162.54761904761904,
+            "w": 217.20000000000002,
+            "h": 47.42857142857143
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 50.815417,
+              "w": 49.581979,
+              "x": 912.269063,
+              "y": 160.434583
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": null,
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 19,
+            "fontWeight": "700",
+            "letterSpacing": "normal",
+            "lineHeight": "normal",
+            "lines": [
+              "72 分"
+            ],
+            "renderedText": "72 分",
+            "text": "72 分",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 50.815417,
+              "w": 49.58197900000005,
+              "x": 912.269063,
+              "y": 160.434583
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-14-bar-2",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 1210.732,
+            "y": 351.16402116402116,
+            "w": 104.256,
+            "h": 445.7407407407408
+          },
+          "targetBounds": {
+            "x": 807.154667,
+            "y": 234.109347,
+            "w": 69.504,
+            "h": 297.160494
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-15-chart-label-2",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "h": 53.294167,
+            "w": 86.840208,
+            "x": 1219.439896,
+            "y": 837.765417
+          },
+          "targetBounds": {
+            "x": 812.959931,
+            "y": 558.510278,
+            "w": 57.893472,
+            "h": 35.529445
+          },
+          "sourceText": "遮阴覆盖",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 21.720000000000002,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1154.26,
+            "y": 840.3809523809524,
+            "w": 217.20000000000002,
+            "h": 47.42857142857143
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 53.294167,
+              "w": 86.840208,
+              "x": 1219.439896,
+              "y": 837.765417
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": null,
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "normal",
+            "lines": [
+              "遮阴覆盖"
+            ],
+            "renderedText": "遮阴覆盖",
+            "text": "遮阴覆盖",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 53.294167000000016,
+              "w": 86.84020800000008,
+              "x": 1219.439896,
+              "y": 837.765417
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-16-chart-value-2",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "h": 50.815,
+            "w": 49.581979,
+            "x": 1238.069063,
+            "y": 287.789167
+          },
+          "targetBounds": {
+            "x": 825.379375,
+            "y": 191.859445,
+            "w": 33.054653,
+            "h": 33.876667
+          },
+          "sourceText": "56 分",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 700,
+          "sourceFontSize": 20.634,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1154.26,
+            "y": 289.90211640211635,
+            "w": 217.20000000000002,
+            "h": 47.42857142857143
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 50.815,
+              "w": 49.581979,
+              "x": 1238.069063,
+              "y": 287.789167
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": null,
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 19,
+            "fontWeight": "700",
+            "letterSpacing": "normal",
+            "lineHeight": "normal",
+            "lines": [
+              "56 分"
+            ],
+            "renderedText": "56 分",
+            "text": "56 分",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 50.815,
+              "w": 49.58197900000005,
+              "x": 1238.069063,
+              "y": 287.789167
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-17-bar-3",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "x": 1536.5320000000002,
+            "y": 287.4867724867725,
+            "w": 104.256,
+            "h": 509.4179894179894
+          },
+          "targetBounds": {
+            "x": 1024.354667,
+            "y": 191.657848,
+            "w": 69.504,
+            "h": 339.611993
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-18-chart-label-3",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "h": 53.294167,
+            "w": 86.840313,
+            "x": 1545.239896,
+            "y": 837.765417
+          },
+          "targetBounds": {
+            "x": 1030.159931,
+            "y": 558.510278,
+            "w": 57.893542,
+            "h": 35.529445
+          },
+          "sourceText": "停留设施",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 21.720000000000002,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1480.06,
+            "y": 840.3809523809524,
+            "w": 217.20000000000002,
+            "h": 47.42857142857143
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 53.294167,
+              "w": 86.840313,
+              "x": 1545.239896,
+              "y": 837.765417
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": null,
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "normal",
+            "lines": [
+              "停留设施"
+            ],
+            "renderedText": "停留设施",
+            "text": "停留设施",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 53.294167000000016,
+              "w": 86.84031299999992,
+              "x": 1545.239896,
+              "y": 837.765417
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-19-chart-value-3",
+          "sourceElementId": "bespoke-chart-plot",
+          "sourceElementType": "chart",
+          "sourceBounds": {
+            "h": 50.815417,
+            "w": 49.582083,
+            "x": 1563.868854,
+            "y": 224.111667
+          },
+          "targetBounds": {
+            "x": 1042.579236,
+            "y": 149.407778,
+            "w": 33.054722,
+            "h": 33.876945
+          },
+          "sourceText": "64 分",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 700,
+          "sourceFontSize": 20.634,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1480.06,
+            "y": 226.22486772486775,
+            "w": 217.20000000000002,
+            "h": 47.42857142857143
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 50.815417,
+              "w": 49.582083,
+              "x": 1563.868854,
+              "y": 224.111667
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": null,
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 19,
+            "fontWeight": "700",
+            "letterSpacing": "normal",
+            "lineHeight": "normal",
+            "lines": [
+              "64 分"
+            ],
+            "renderedText": "64 分",
+            "text": "64 分",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 50.815417000000025,
+              "w": 49.58208300000001,
+              "x": 1563.868854,
+              "y": 224.111667
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceGrid": {
+            "column": 1,
+            "row": 6,
+            "width": 4,
+            "height": 3
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 664,
+            "w": 564,
+            "h": 322
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 442.666667,
+            "w": 376,
+            "h": 214.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-evidence-v4-20-panel",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 94,
+            "y": 664,
+            "w": 564,
+            "h": 322
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 442.666667,
+            "w": 376,
+            "h": 214.666667
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-21-list-1-number",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.09375,
+            "w": 30,
+            "x": 125,
+            "y": 695
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 463.333333,
+            "w": 20,
+            "h": 17.395833
+          },
+          "sourceText": "01",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 695,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 125,
+              "y": 695
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "01"
+            ],
+            "renderedText": "01",
+            "text": "01",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 125,
+              "y": 695
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-22-list-1-title",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 460,
+            "x": 167,
+            "y": 695
+          },
+          "targetBounds": {
+            "x": 111.333333,
+            "y": 463.333333,
+            "w": 306.666667,
+            "h": 21.666667
+          },
+          "sourceText": "道路连续",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 167,
+            "y": 695,
+            "w": 460,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 460,
+              "x": 167,
+              "y": 695
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-chart-facts.items.0.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "道路连续"
+            ],
+            "renderedText": "道路连续",
+            "text": "道路连续",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 460,
+              "x": 167,
+              "y": 695
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-23-list-1-body",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.390833,
+            "w": 460,
+            "x": 167,
+            "y": 732.5
+          },
+          "targetBounds": {
+            "x": 111.333333,
+            "y": 488.333333,
+            "w": 306.666667,
+            "h": 18.927222
+          },
+          "sourceText": "评分 · 72分",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 167,
+            "y": 732.5,
+            "w": 460,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.390833,
+              "w": 460,
+              "x": 167,
+              "y": 732.5
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-chart-facts.items.0.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "评分 · 72分"
+            ],
+            "renderedText": "评分 · 72分",
+            "text": "评分 · 72分",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.390833000000043,
+              "w": 460,
+              "x": 167,
+              "y": 732.5
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-24-list-separator-1",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 125,
+            "y": 772.890833,
+            "w": 502,
+            "h": 1
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 515.260555,
+            "w": 334.666667,
+            "h": 0.666667
+          },
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 772.9,
+            "w": 502,
+            "h": 1
+          },
+          "geometry": "measured rendered source DOM border"
+        },
+        {
+          "targetId": "theme07-evidence-v4-25-list-2-number",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.093333,
+            "w": 30,
+            "x": 125,
+            "y": 785.890833
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 523.927222,
+            "w": 20,
+            "h": 17.395555
+          },
+          "sourceText": "02",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 785.9,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.093333,
+              "w": 30,
+              "x": 125,
+              "y": 785.890833
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "02"
+            ],
+            "renderedText": "02",
+            "text": "02",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.09333300000003,
+              "w": 30,
+              "x": 125,
+              "y": 785.890833
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-26-list-2-title",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 460,
+            "x": 167,
+            "y": 785.890833
+          },
+          "targetBounds": {
+            "x": 111.333333,
+            "y": 523.927222,
+            "w": 306.666667,
+            "h": 21.666667
+          },
+          "sourceText": "遮阴覆盖",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 167,
+            "y": 785.9,
+            "w": 460,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 460,
+              "x": 167,
+              "y": 785.890833
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-chart-facts.items.1.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "遮阴覆盖"
+            ],
+            "renderedText": "遮阴覆盖",
+            "text": "遮阴覆盖",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 460,
+              "x": 167,
+              "y": 785.890833
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-27-list-2-body",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.390417,
+            "w": 460,
+            "x": 167,
+            "y": 823.390833
+          },
+          "targetBounds": {
+            "x": 111.333333,
+            "y": 548.927222,
+            "w": 306.666667,
+            "h": 18.926945
+          },
+          "sourceText": "评分 · 56分",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 167,
+            "y": 823.4,
+            "w": 460,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.390417,
+              "w": 460,
+              "x": 167,
+              "y": 823.390833
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-chart-facts.items.1.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "评分 · 56分"
+            ],
+            "renderedText": "评分 · 56分",
+            "text": "评分 · 56分",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.390416999999957,
+              "w": 460,
+              "x": 167,
+              "y": 823.390833
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-28-list-separator-2",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 125,
+            "y": 863.78125,
+            "w": 502,
+            "h": 1
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 575.854167,
+            "w": 334.666667,
+            "h": 0.666667
+          },
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 863.8,
+            "w": 502,
+            "h": 1
+          },
+          "geometry": "measured rendered source DOM border"
+        },
+        {
+          "targetId": "theme07-evidence-v4-29-list-3-number",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.09375,
+            "w": 30,
+            "x": 125,
+            "y": 876.78125
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 584.520833,
+            "w": 20,
+            "h": 17.395833
+          },
+          "sourceText": "03",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 876.8,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 125,
+              "y": 876.78125
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "03"
+            ],
+            "renderedText": "03",
+            "text": "03",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 125,
+              "y": 876.78125
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-30-list-3-title",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 460,
+            "x": 167,
+            "y": 876.78125
+          },
+          "targetBounds": {
+            "x": 111.333333,
+            "y": 584.520833,
+            "w": 306.666667,
+            "h": 21.666667
+          },
+          "sourceText": "停留设施",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 167,
+            "y": 876.8,
+            "w": 460,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 460,
+              "x": 167,
+              "y": 876.78125
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-chart-facts.items.2.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "停留设施"
+            ],
+            "renderedText": "停留设施",
+            "text": "停留设施",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 460,
+              "x": 167,
+              "y": 876.78125
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-31-list-3-body",
+          "sourceElementId": "bespoke-chart-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.390625,
+            "w": 460,
+            "x": 167,
+            "y": 914.28125
+          },
+          "targetBounds": {
+            "x": 111.333333,
+            "y": 609.520833,
+            "w": 306.666667,
+            "h": 18.927083
+          },
+          "sourceText": "评分 · 64分",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 167,
+            "y": 914.3,
+            "w": 460,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.390625,
+              "w": 460,
+              "x": 167,
+              "y": 914.28125
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-chart-facts.items.2.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "评分 · 64分"
+            ],
+            "renderedText": "评分 · 64分",
+            "text": "评分 · 64分",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.390625,
+              "w": 460,
+              "x": 167,
+              "y": 914.28125
+            }
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-32-conversion-disclosure",
+          "sourceElementId": null,
+          "sourceElementType": "decoration",
+          "sourceBounds": {
+            "x": 94,
+            "y": 1038,
+            "w": 1600,
+            "h": 20
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 692,
+            "w": 1066.666667,
+            "h": 13.333333
+          },
+          "sourceText": "虚构演示 · Dashi v4 → SP 结构样例",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 13,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "estimated CJK/Latin advance; not DOM-measured",
+          "estimatedLines": 1
+        }
+      ],
+      "sourceFacts": [
+        "把观察证据与解释分开",
+        "遮阴覆盖评分有待改善",
+        "道路连续",
+        "72分",
+        "遮阴覆盖",
+        "56分",
+        "停留设施",
+        "64分"
+      ],
+      "sourceChartFacts": [
+        "道路连续",
+        "72分",
+        "遮阴覆盖",
+        "56分",
+        "停留设施",
+        "64分"
+      ],
+      "chartSemantics": [
+        {
+          "sourceElementId": "bespoke-chart-plot",
+          "type": "bar",
+          "data": [
+            {
+              "sourceId": "fact-1",
+              "label": "道路连续",
+              "value": 72,
+              "displayValue": "72",
+              "unit": "分"
+            },
+            {
+              "sourceId": "fact-2",
+              "label": "遮阴覆盖",
+              "value": 56,
+              "displayValue": "56",
+              "unit": "分"
+            },
+            {
+              "sourceId": "fact-3",
+              "label": "停留设施",
+              "value": 64,
+              "displayValue": "64",
+              "unit": "分"
+            }
+          ],
+          "target": "editable graphic primitives, not native data-driven chart"
+        }
+      ],
+      "domGeometryCheck": [
+        {
+          "sourceElementId": "bespoke-chart-kicker",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-chart-title",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-chart-core",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-chart-summary",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-chart-plot",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-chart-facts",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        }
+      ],
+      "domTextMatches": [
+        {
+          "targetId": "theme07-evidence-v4-1-kicker",
+          "sourceText": "metrics",
+          "originalTargetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "measuredTargetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 16.791667
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-2-title",
+          "sourceText": "把观察证据与解释分开",
+          "originalTargetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 376,
+            "h": 138.666667
+          },
+          "measuredTargetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 376,
+            "h": 103.354167
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-3-subtitle",
+          "sourceText": "遮阴覆盖评分有待改善",
+          "originalTargetBounds": {
+            "x": 62.666667,
+            "y": 290.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "measuredTargetBounds": {
+            "x": 62.666667,
+            "y": 290.666667,
+            "w": 376,
+            "h": 31.406111
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-4-caption",
+          "sourceText": "观察评分 · 演示数据",
+          "originalTargetBounds": {
+            "x": 62.666667,
+            "y": 366.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "measuredTargetBounds": {
+            "x": 62.666667,
+            "y": 366.666667,
+            "w": 376,
+            "h": 19.593889
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-12-chart-label-1",
+          "sourceText": "道路连续",
+          "originalTargetBounds": {
+            "x": 552.306667,
+            "y": 560.253968,
+            "w": 144.8,
+            "h": 31.619048
+          },
+          "measuredTargetBounds": {
+            "x": 595.759931,
+            "y": 558.510278,
+            "w": 57.893542,
+            "h": 35.529445
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-13-chart-value-1",
+          "sourceText": "72 分",
+          "originalTargetBounds": {
+            "x": 552.306667,
+            "y": 108.365079,
+            "w": 144.8,
+            "h": 31.619048
+          },
+          "measuredTargetBounds": {
+            "x": 608.179375,
+            "y": 106.956389,
+            "w": 33.054653,
+            "h": 33.876945
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-15-chart-label-2",
+          "sourceText": "遮阴覆盖",
+          "originalTargetBounds": {
+            "x": 769.506667,
+            "y": 560.253968,
+            "w": 144.8,
+            "h": 31.619048
+          },
+          "measuredTargetBounds": {
+            "x": 812.959931,
+            "y": 558.510278,
+            "w": 57.893472,
+            "h": 35.529445
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-16-chart-value-2",
+          "sourceText": "56 分",
+          "originalTargetBounds": {
+            "x": 769.506667,
+            "y": 193.268078,
+            "w": 144.8,
+            "h": 31.619048
+          },
+          "measuredTargetBounds": {
+            "x": 825.379375,
+            "y": 191.859445,
+            "w": 33.054653,
+            "h": 33.876667
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-18-chart-label-3",
+          "sourceText": "停留设施",
+          "originalTargetBounds": {
+            "x": 986.706667,
+            "y": 560.253968,
+            "w": 144.8,
+            "h": 31.619048
+          },
+          "measuredTargetBounds": {
+            "x": 1030.159931,
+            "y": 558.510278,
+            "w": 57.893542,
+            "h": 35.529445
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-19-chart-value-3",
+          "sourceText": "64 分",
+          "originalTargetBounds": {
+            "x": 986.706667,
+            "y": 150.816578,
+            "w": 144.8,
+            "h": 31.619048
+          },
+          "measuredTargetBounds": {
+            "x": 1042.579236,
+            "y": 149.407778,
+            "w": 33.054722,
+            "h": 33.876945
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-21-list-1-number",
+          "sourceText": "01",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 463.333333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 463.333333,
+            "w": 20,
+            "h": 17.395833
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-22-list-1-title",
+          "sourceText": "道路连续",
+          "originalTargetBounds": {
+            "x": 111.333333,
+            "y": 463.333333,
+            "w": 306.666667,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 111.333333,
+            "y": 463.333333,
+            "w": 306.666667,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-23-list-1-body",
+          "sourceText": "评分 · 72分",
+          "originalTargetBounds": {
+            "x": 111.333333,
+            "y": 488.333333,
+            "w": 306.666667,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 111.333333,
+            "y": 488.333333,
+            "w": 306.666667,
+            "h": 18.927222
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-25-list-2-number",
+          "sourceText": "02",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 523.933333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 523.927222,
+            "w": 20,
+            "h": 17.395555
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-26-list-2-title",
+          "sourceText": "遮阴覆盖",
+          "originalTargetBounds": {
+            "x": 111.333333,
+            "y": 523.933333,
+            "w": 306.666667,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 111.333333,
+            "y": 523.927222,
+            "w": 306.666667,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-27-list-2-body",
+          "sourceText": "评分 · 56分",
+          "originalTargetBounds": {
+            "x": 111.333333,
+            "y": 548.933333,
+            "w": 306.666667,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 111.333333,
+            "y": 548.927222,
+            "w": 306.666667,
+            "h": 18.926945
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-29-list-3-number",
+          "sourceText": "03",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 584.533333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 584.520833,
+            "w": 20,
+            "h": 17.395833
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-30-list-3-title",
+          "sourceText": "停留设施",
+          "originalTargetBounds": {
+            "x": 111.333333,
+            "y": 584.533333,
+            "w": 306.666667,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 111.333333,
+            "y": 584.520833,
+            "w": 306.666667,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-evidence-v4-31-list-3-body",
+          "sourceText": "评分 · 64分",
+          "originalTargetBounds": {
+            "x": 111.333333,
+            "y": 609.533333,
+            "w": 306.666667,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 111.333333,
+            "y": 609.520833,
+            "w": 306.666667,
+            "h": 18.927083
+          }
+        }
+      ],
+      "contentCheck": {
+        "missingFacts": [],
+        "unitsPreserved": true
+      }
+    },
+    {
+      "sourceLogicalId": "action",
+      "sourceVariantId": "v4",
+      "sourceLayoutRationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。",
+      "sourceComposition": {
+        "designIntent": {
+          "objective": "记录范围，分开推断，列明疑问",
+          "audience": "公共空间研究团队",
+          "narrativeRole": "区分观察与解释并提出复核路径",
+          "emphasis": "证据与结论保持冷白留白",
+          "rationale": "遵循冷白调研风的浅灰绿底、深绿标题、低饱和边界与克制圆角，使用报告式注释层级和离散评分bar，避免百分比或财务单位误读。"
+        },
+        "background": "default",
+        "elements": [
+          {
+            "id": "bespoke-statement-kicker",
+            "type": "text",
+            "grid": {
+              "column": 1,
+              "row": 1,
+              "width": 4,
+              "height": 1
+            },
+            "role": "kicker",
+            "text": "statement"
+          },
+          {
+            "id": "bespoke-statement-title",
+            "type": "text",
+            "grid": {
+              "column": 1,
+              "row": 2,
+              "width": 8,
+              "height": 1
+            },
+            "role": "title",
+            "text": "让证据可以复核"
+          },
+          {
+            "id": "bespoke-statement-core",
+            "type": "quote",
+            "grid": {
+              "column": 1,
+              "row": 3,
+              "width": 9,
+              "height": 5
+            },
+            "quote": "记录范围，分开推断，列明疑问",
+            "attribution": "记录范围，分开推断，列明疑问"
+          },
+          {
+            "id": "bespoke-statement-facts",
+            "type": "list",
+            "grid": {
+              "column": 10,
+              "row": 3,
+              "width": 3,
+              "height": 5
+            },
+            "ordered": true,
+            "items": [
+              {
+                "sourceId": "action-1",
+                "title": "范围",
+                "body": "记录观察范围"
+              },
+              {
+                "sourceId": "action-2",
+                "title": "推断",
+                "body": "区分事实与假设"
+              },
+              {
+                "sourceId": "action-3",
+                "title": "复核",
+                "body": "列明待核问题"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceCanvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "profile": {
+        "padX": 94,
+        "padY": 94,
+        "gap": 20,
+        "radius": 12
+      },
+      "flatBackground": "#F4F6F4",
+      "objects": [
+        {
+          "sourceElementId": "bespoke-statement-kicker",
+          "sourceElementType": "text",
+          "sourceGrid": {
+            "column": 1,
+            "row": 1,
+            "width": 4,
+            "height": 1
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 94,
+            "w": 564,
+            "h": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-action-v4-1-kicker",
+          "sourceElementId": "bespoke-statement-kicker",
+          "sourceElementType": "text",
+          "sourceBounds": {
+            "h": 25.1875,
+            "w": 564,
+            "x": 94,
+            "y": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 16.791667
+          },
+          "sourceText": "statement",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 780,
+          "sourceFontSize": 21,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0.15,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 94,
+            "y": 94,
+            "w": 564,
+            "h": 94
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 25.1875,
+              "w": 564,
+              "x": 94,
+              "y": 94
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-kicker.text",
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 21,
+            "fontWeight": "780",
+            "letterSpacing": "3.15px",
+            "lineHeight": "25.2px",
+            "lines": [
+              "statement"
+            ],
+            "renderedText": "STATEMENT",
+            "text": "statement",
+            "textAlign": "left",
+            "textTransform": "uppercase",
+            "visibleBounds": {
+              "h": 25.1875,
+              "w": 564,
+              "x": 94,
+              "y": 94
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-statement-title",
+          "sourceElementType": "text",
+          "sourceGrid": {
+            "column": 1,
+            "row": 2,
+            "width": 8,
+            "height": 1
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 208,
+            "w": 1148,
+            "h": 94
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 765.333333,
+            "h": 62.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-action-v4-2-title",
+          "sourceElementId": "bespoke-statement-title",
+          "sourceElementType": "text",
+          "sourceBounds": {
+            "h": 77.515625,
+            "w": 1148,
+            "x": 94,
+            "y": 208
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 765.333333,
+            "h": 51.677083
+          },
+          "sourceText": "让证据可以复核",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 900,
+          "sourceFontSize": 76,
+          "sourceLineHeight": 1.02,
+          "sourceLetterSpacingEm": -0.035,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 94,
+            "y": 208,
+            "w": 1148,
+            "h": 94
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 77.515625,
+              "w": 1148,
+              "x": 94,
+              "y": 208
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-title.text",
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 76,
+            "fontWeight": "900",
+            "letterSpacing": "-2.66px",
+            "lineHeight": "77.52px",
+            "lines": [
+              "让证据可以复核"
+            ],
+            "renderedText": "让证据可以复核",
+            "text": "让证据可以复核",
+            "textAlign": "left",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 77.515625,
+              "w": 1148,
+              "x": 94,
+              "y": 208
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceGrid": {
+            "column": 1,
+            "row": 3,
+            "width": 9,
+            "height": 5
+          },
+          "sourceBounds": {
+            "x": 94,
+            "y": 322,
+            "w": 1294,
+            "h": 550
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 214.666667,
+            "w": 862.666667,
+            "h": 366.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-action-v4-3-panel",
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceBounds": {
+            "x": 94,
+            "y": 322,
+            "w": 1294,
+            "h": 550
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 214.666667,
+            "w": 862.666667,
+            "h": 366.666667
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-4-quotation-mark",
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceBounds": {
+            "h": 50,
+            "w": 1232,
+            "x": 125,
+            "y": 505.453125
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 336.96875,
+            "w": 821.333333,
+            "h": 33.333333
+          },
+          "sourceText": "“",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 900,
+          "sourceFontSize": 100,
+          "sourceLineHeight": 0.5,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 507.96000000000004,
+            "w": 1232,
+            "h": 50
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 50,
+              "w": 1232,
+              "x": 125,
+              "y": 505.453125
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 100,
+            "fontWeight": "900",
+            "letterSpacing": "normal",
+            "lineHeight": "50px",
+            "lines": [
+              "“"
+            ],
+            "renderedText": "“",
+            "text": "“",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 50,
+              "w": 1232,
+              "x": 125,
+              "y": 505.453125
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-5-quote",
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceBounds": {
+            "h": 52.078125,
+            "w": 1232,
+            "x": 125,
+            "y": 581.453125
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 387.635417,
+            "w": 821.333333,
+            "h": 34.71875
+          },
+          "sourceText": "记录范围，分开推断，列明疑问",
+          "sourceFontStack": "\"Archivo\",\"Noto Sans SC\",\"PingFang SC\",system-ui,sans-serif",
+          "sourceFontWeight": 760,
+          "sourceFontSize": 42,
+          "sourceLineHeight": 1.24,
+          "sourceLetterSpacingEm": -0.018,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 583.96,
+            "w": 1232,
+            "h": 52.08
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 52.078125,
+              "w": 1232,
+              "x": 125,
+              "y": 581.453125
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-core.text",
+            "fontFamily": "Archivo, \"Noto Sans SC\", \"PingFang SC\", system-ui, sans-serif",
+            "fontSize": 42,
+            "fontWeight": "760",
+            "letterSpacing": "-0.756px",
+            "lineHeight": "52.08px",
+            "lines": [
+              "记录范围，分开推断，列明疑问"
+            ],
+            "renderedText": "记录范围，分开推断，列明疑问",
+            "text": "记录范围，分开推断，列明疑问",
+            "textAlign": "left",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 52.078125,
+              "w": 1232,
+              "x": 125,
+              "y": 581.453125
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-6-attribution",
+          "sourceElementId": "bespoke-statement-core",
+          "sourceElementType": "quote",
+          "sourceBounds": {
+            "h": 29,
+            "w": 1232,
+            "x": 125,
+            "y": 659.53125
+          },
+          "targetBounds": {
+            "x": 83.333333,
+            "y": 439.6875,
+            "w": 821.333333,
+            "h": 19.333333
+          },
+          "sourceText": "记录范围，分开推断，列明疑问",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.2,
+          "sourceLetterSpacingEm": 0.07,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 125,
+            "y": 662.0400000000001,
+            "w": 1232,
+            "h": 24
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 29,
+              "w": 1232,
+              "x": 125,
+              "y": 659.53125
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-statement-core.attribution",
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "1.4px",
+            "lineHeight": "normal",
+            "lines": [
+              "记录范围，分开推断，列明疑问"
+            ],
+            "renderedText": "记录范围，分开推断，列明疑问",
+            "text": "记录范围，分开推断，列明疑问",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 29,
+              "w": 1232,
+              "x": 125,
+              "y": 659.53125
+            }
+          }
+        },
+        {
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceGrid": {
+            "column": 10,
+            "row": 3,
+            "width": 3,
+            "height": 5
+          },
+          "sourceBounds": {
+            "x": 1408,
+            "y": 322,
+            "w": 418,
+            "h": 550
+          },
+          "targetBounds": {
+            "x": 938.666667,
+            "y": 214.666667,
+            "w": 278.666667,
+            "h": 366.666667
+          },
+          "geometry": "exact grid formula",
+          "targetId": null
+        },
+        {
+          "targetId": "theme07-action-v4-7-panel",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 1408,
+            "y": 322,
+            "w": 418,
+            "h": 550
+          },
+          "targetBounds": {
+            "x": 938.666667,
+            "y": 214.666667,
+            "w": 278.666667,
+            "h": 366.666667
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-8-list-1-number",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.09375,
+            "w": 30,
+            "x": 1439,
+            "y": 353
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 235.333333,
+            "w": 20,
+            "h": 17.395833
+          },
+          "sourceText": "01",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 353,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 1439,
+              "y": 353
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "01"
+            ],
+            "renderedText": "01",
+            "text": "01",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 1439,
+              "y": 353
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-9-list-1-title",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 314,
+            "x": 1481,
+            "y": 353
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 235.333333,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "sourceText": "范围",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 353,
+            "w": 314,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 353
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-facts.items.0.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "范围"
+            ],
+            "renderedText": "范围",
+            "text": "范围",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 353
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-10-list-1-body",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.390625,
+            "w": 314,
+            "x": 1481,
+            "y": 390.5
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 260.333333,
+            "w": 209.333333,
+            "h": 18.927083
+          },
+          "sourceText": "记录观察范围",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 390.5,
+            "w": 314,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.390625,
+              "w": 314,
+              "x": 1481,
+              "y": 390.5
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-statement-facts.items.0.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "记录观察范围"
+            ],
+            "renderedText": "记录观察范围",
+            "text": "记录观察范围",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.390625,
+              "w": 314,
+              "x": 1481,
+              "y": 390.5
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-11-list-separator-1",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 1439,
+            "y": 430.890625,
+            "w": 356,
+            "h": 1
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 287.260417,
+            "w": 237.333333,
+            "h": 0.666667
+          },
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 430.9,
+            "w": 356,
+            "h": 1
+          },
+          "geometry": "measured rendered source DOM border"
+        },
+        {
+          "targetId": "theme07-action-v4-12-list-2-number",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.09375,
+            "w": 30,
+            "x": 1439,
+            "y": 443.890625
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 295.927083,
+            "w": 20,
+            "h": 17.395833
+          },
+          "sourceText": "02",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 443.9,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 1439,
+              "y": 443.890625
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "02"
+            ],
+            "renderedText": "02",
+            "text": "02",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 1439,
+              "y": 443.890625
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-13-list-2-title",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 314,
+            "x": 1481,
+            "y": 443.890625
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 295.927083,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "sourceText": "推断",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 443.9,
+            "w": 314,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 443.890625
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-facts.items.1.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "推断"
+            ],
+            "renderedText": "推断",
+            "text": "推断",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 443.890625
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-14-list-2-body",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.390625,
+            "w": 314,
+            "x": 1481,
+            "y": 481.390625
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 320.927083,
+            "w": 209.333333,
+            "h": 18.927083
+          },
+          "sourceText": "区分事实与假设",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 481.4,
+            "w": 314,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.390625,
+              "w": 314,
+              "x": 1481,
+              "y": 481.390625
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-statement-facts.items.1.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "区分事实与假设"
+            ],
+            "renderedText": "区分事实与假设",
+            "text": "区分事实与假设",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.390625,
+              "w": 314,
+              "x": 1481,
+              "y": 481.390625
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-15-list-separator-2",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "x": 1439,
+            "y": 521.78125,
+            "w": 356,
+            "h": 1
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 347.854167,
+            "w": 237.333333,
+            "h": 0.666667
+          },
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 521.8,
+            "w": 356,
+            "h": 1
+          },
+          "geometry": "measured rendered source DOM border"
+        },
+        {
+          "targetId": "theme07-action-v4-16-list-3-number",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 26.09375,
+            "w": 30,
+            "x": 1439,
+            "y": 534.78125
+          },
+          "targetBounds": {
+            "x": 959.333333,
+            "y": 356.520833,
+            "w": 20,
+            "h": 17.395833
+          },
+          "sourceText": "03",
+          "sourceFontStack": "\"Space Mono\",\"IBM Plex Mono\",ui-monospace,SFMono-Regular,monospace",
+          "sourceFontWeight": 800,
+          "sourceFontSize": 18,
+          "sourceLineHeight": 1.45,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1439,
+            "y": 534.8,
+            "w": 30,
+            "h": 26.099999999999998
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 1439,
+              "y": 534.78125
+            },
+            "clippedBy": [],
+            "color": "rgb(35, 92, 75)",
+            "editablePath": null,
+            "fontFamily": "\"Space Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, monospace",
+            "fontSize": 18,
+            "fontWeight": "800",
+            "letterSpacing": "normal",
+            "lineHeight": "26.1px",
+            "lines": [
+              "03"
+            ],
+            "renderedText": "03",
+            "text": "03",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 26.09375,
+              "w": 30,
+              "x": 1439,
+              "y": 534.78125
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-17-list-3-title",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 32.5,
+            "w": 314,
+            "x": 1481,
+            "y": 534.78125
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 356.520833,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "sourceText": "复核",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 720,
+          "sourceFontSize": 25,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 534.8,
+            "w": 314,
+            "h": 32.5
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 534.78125
+            },
+            "clippedBy": [],
+            "color": "rgb(23, 34, 30)",
+            "editablePath": "composition.bespoke-statement-facts.items.2.title",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 25,
+            "fontWeight": "720",
+            "letterSpacing": "normal",
+            "lineHeight": "32.5px",
+            "lines": [
+              "复核"
+            ],
+            "renderedText": "复核",
+            "text": "复核",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 32.5,
+              "w": 314,
+              "x": 1481,
+              "y": 534.78125
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-18-list-3-body",
+          "sourceElementId": "bespoke-statement-facts",
+          "sourceElementType": "list",
+          "sourceBounds": {
+            "h": 28.390625,
+            "w": 314,
+            "x": 1481,
+            "y": 572.28125
+          },
+          "targetBounds": {
+            "x": 987.333333,
+            "y": 381.520833,
+            "w": 209.333333,
+            "h": 18.927083
+          },
+          "sourceText": "列明待核问题",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 20,
+          "sourceLineHeight": 1.42,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "source browser Range line measurement",
+          "estimatedLines": 1,
+          "estimatedSourceBounds": {
+            "x": 1481,
+            "y": 572.3,
+            "w": 314,
+            "h": 28.4
+          },
+          "geometry": "measured rendered source DOM",
+          "sourceMeasuredStyle": {
+            "bounds": {
+              "h": 28.390625,
+              "w": 314,
+              "x": 1481,
+              "y": 572.28125
+            },
+            "clippedBy": [],
+            "color": "rgb(104, 118, 111)",
+            "editablePath": "composition.bespoke-statement-facts.items.2.body",
+            "fontFamily": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "letterSpacing": "normal",
+            "lineHeight": "28.4px",
+            "lines": [
+              "列明待核问题"
+            ],
+            "renderedText": "列明待核问题",
+            "text": "列明待核问题",
+            "textAlign": "start",
+            "textTransform": "none",
+            "visibleBounds": {
+              "h": 28.390625,
+              "w": 314,
+              "x": 1481,
+              "y": 572.28125
+            }
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-19-conversion-disclosure",
+          "sourceElementId": null,
+          "sourceElementType": "decoration",
+          "sourceBounds": {
+            "x": 94,
+            "y": 1038,
+            "w": 1600,
+            "h": 20
+          },
+          "targetBounds": {
+            "x": 62.666667,
+            "y": 692,
+            "w": 1066.666667,
+            "h": 13.333333
+          },
+          "sourceText": "虚构演示 · Dashi v4 → SP 结构样例",
+          "sourceFontStack": "\"Noto Sans SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif",
+          "sourceFontWeight": 400,
+          "sourceFontSize": 13,
+          "sourceLineHeight": 1.3,
+          "sourceLetterSpacingEm": 0,
+          "wrapMethod": "estimated CJK/Latin advance; not DOM-measured",
+          "estimatedLines": 1
+        }
+      ],
+      "sourceFacts": [
+        "让证据可以复核",
+        "记录范围，分开推断，列明疑问",
+        "范围",
+        "推断",
+        "复核"
+      ],
+      "sourceChartFacts": [],
+      "domGeometryCheck": [
+        {
+          "sourceElementId": "bespoke-statement-kicker",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-statement-title",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-statement-core",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        },
+        {
+          "sourceElementId": "bespoke-statement-facts",
+          "maxDifferenceSourcePixels": 0,
+          "passed": true
+        }
+      ],
+      "domTextMatches": [
+        {
+          "targetId": "theme07-action-v4-1-kicker",
+          "sourceText": "statement",
+          "originalTargetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 62.666667
+          },
+          "measuredTargetBounds": {
+            "x": 62.666667,
+            "y": 62.666667,
+            "w": 376,
+            "h": 16.791667
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-2-title",
+          "sourceText": "让证据可以复核",
+          "originalTargetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 765.333333,
+            "h": 62.666667
+          },
+          "measuredTargetBounds": {
+            "x": 62.666667,
+            "y": 138.666667,
+            "w": 765.333333,
+            "h": 51.677083
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-4-quotation-mark",
+          "sourceText": "“",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 338.64,
+            "w": 821.333333,
+            "h": 33.333333
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 336.96875,
+            "w": 821.333333,
+            "h": 33.333333
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-5-quote",
+          "sourceText": "记录范围，分开推断，列明疑问",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 389.306667,
+            "w": 821.333333,
+            "h": 34.72
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 387.635417,
+            "w": 821.333333,
+            "h": 34.71875
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-6-attribution",
+          "sourceText": "记录范围，分开推断，列明疑问",
+          "originalTargetBounds": {
+            "x": 83.333333,
+            "y": 441.36,
+            "w": 821.333333,
+            "h": 16
+          },
+          "measuredTargetBounds": {
+            "x": 83.333333,
+            "y": 439.6875,
+            "w": 821.333333,
+            "h": 19.333333
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-8-list-1-number",
+          "sourceText": "01",
+          "originalTargetBounds": {
+            "x": 959.333333,
+            "y": 235.333333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 959.333333,
+            "y": 235.333333,
+            "w": 20,
+            "h": 17.395833
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-9-list-1-title",
+          "sourceText": "范围",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 235.333333,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 235.333333,
+            "w": 209.333333,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-10-list-1-body",
+          "sourceText": "记录观察范围",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 260.333333,
+            "w": 209.333333,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 260.333333,
+            "w": 209.333333,
+            "h": 18.927083
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-12-list-2-number",
+          "sourceText": "02",
+          "originalTargetBounds": {
+            "x": 959.333333,
+            "y": 295.933333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 959.333333,
+            "y": 295.927083,
+            "w": 20,
+            "h": 17.395833
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-13-list-2-title",
+          "sourceText": "推断",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 295.933333,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 295.927083,
+            "w": 209.333333,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-14-list-2-body",
+          "sourceText": "区分事实与假设",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 320.933333,
+            "w": 209.333333,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 320.927083,
+            "w": 209.333333,
+            "h": 18.927083
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-16-list-3-number",
+          "sourceText": "03",
+          "originalTargetBounds": {
+            "x": 959.333333,
+            "y": 356.533333,
+            "w": 20,
+            "h": 17.4
+          },
+          "measuredTargetBounds": {
+            "x": 959.333333,
+            "y": 356.520833,
+            "w": 20,
+            "h": 17.395833
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-17-list-3-title",
+          "sourceText": "复核",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 356.533333,
+            "w": 209.333333,
+            "h": 21.666667
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 356.520833,
+            "w": 209.333333,
+            "h": 21.666667
+          }
+        },
+        {
+          "targetId": "theme07-action-v4-18-list-3-body",
+          "sourceText": "列明待核问题",
+          "originalTargetBounds": {
+            "x": 987.333333,
+            "y": 381.533333,
+            "w": 209.333333,
+            "h": 18.933333
+          },
+          "measuredTargetBounds": {
+            "x": 987.333333,
+            "y": 381.520833,
+            "w": 209.333333,
+            "h": 18.927083
+          }
+        }
+      ],
+      "contentCheck": {
+        "missingFacts": [],
+        "unitsPreserved": true
+      }
+    }
+  ],
+  "lossManifest": [
+    {
+      "scope": "all-slides",
+      "property": "typography.fontWeight",
+      "handling": "quantized",
+      "detail": "SP native text uses bold 750 or normal 400 and generic SVG uses 700/400; source weights remain in source mapping."
+    },
+    {
+      "scope": "all-slides",
+      "property": "fontFamily",
+      "handling": "primary-family-only",
+      "detail": "SP native renderer quotes the whole fontFamily string, so source CSS fallback stack cannot safely be passed as a single family. Primary family retained; no fonts embedded or installed; device fallback unverified."
+    },
+    {
+      "scope": "all-slides",
+      "property": "textWrap / text metrics",
+      "handling": "source DOM measured; SP typography unverified",
+      "detail": "Source rendered text boxes and line breaks reconciled to actual browser DOM. SP native font availability, font weight quantization, baseline and clipping remain unverified."
+    },
+    {
+      "scope": "all-slides",
+      "property": "transparent surfaces",
+      "handling": "composited flat color",
+      "detail": "RGBA surfaces/lines are composited on disclosed flat slide background; gradient and optical blending are not preserved."
+    },
+    {
+      "scope": "all-slides",
+      "property": "generic renderer",
+      "handling": "known renderer gaps",
+      "detail": "Generic SVG uses Arial, ignores text alignment, custom line height, some stroke widths and native roundRect. Adapter validation is not visual validation."
+    },
+    {
+      "scope": "theme07-cover-v4",
+      "property": "background gradient",
+      "handling": "flat background",
+      "detail": "Source linear-gradient(145deg,#f4f6f4 0%,#e9eeeb 100%); flattened to #F4F6F4."
+    },
+    {
+      "scope": "theme07-cover-v4",
+      "property": "ambient blur",
+      "handling": "omitted",
+      "detail": "Two source 620×620 ambient circles with blur(130px) and opacity .1 omitted."
+    },
+    {
+      "scope": "theme07-cover-v4/bespoke-statement-core",
+      "property": "boxShadow",
+      "handling": "omitted",
+      "detail": "0 18px 52px rgba(35,66,54,.11)"
+    },
+    {
+      "scope": "theme07-cover-v4/bespoke-statement-facts",
+      "property": "boxShadow",
+      "handling": "omitted",
+      "detail": "0 18px 52px rgba(35,66,54,.11)"
+    },
+    {
+      "scope": "theme07-evidence-v4",
+      "property": "background gradient",
+      "handling": "flat background",
+      "detail": "Source linear-gradient(145deg,#f4f6f4 0%,#e9eeeb 100%); flattened to #F4F6F4."
+    },
+    {
+      "scope": "theme07-evidence-v4",
+      "property": "ambient blur",
+      "handling": "omitted",
+      "detail": "Two source 620×620 ambient circles with blur(130px) and opacity .1 omitted."
+    },
+    {
+      "scope": "theme07-evidence-v4/bespoke-chart-plot",
+      "property": "boxShadow",
+      "handling": "omitted",
+      "detail": "0 18px 52px rgba(35,66,54,.11)"
+    },
+    {
+      "scope": "theme07-evidence-v4/bespoke-chart-plot",
+      "property": "SVG preserveAspectRatio none text",
+      "handling": "uniform font approximation",
+      "detail": "Chart geometric coordinates are source-scaled. SVG nonuniformly stretched text is approximated by uniform font size; source chart data is retained verbatim."
+    },
+    {
+      "scope": "theme07-evidence-v4/bespoke-chart-plot",
+      "property": "SVG nonuniform bar corner radius",
+      "handling": "uniform-radius approximation",
+      "detail": "Source SVG stretches rx/ry independently; SP roundRect uses a single cornerRadius. Smaller scaled radius is used and source data retained."
+    },
+    {
+      "scope": "theme07-evidence-v4/bespoke-chart-facts",
+      "property": "boxShadow",
+      "handling": "omitted",
+      "detail": "0 18px 52px rgba(35,66,54,.11)"
+    },
+    {
+      "scope": "theme07-action-v4",
+      "property": "background gradient",
+      "handling": "flat background",
+      "detail": "Source linear-gradient(145deg,#f4f6f4 0%,#e9eeeb 100%); flattened to #F4F6F4."
+    },
+    {
+      "scope": "theme07-action-v4",
+      "property": "ambient blur",
+      "handling": "omitted",
+      "detail": "Two source 620×620 ambient circles with blur(130px) and opacity .1 omitted."
+    },
+    {
+      "scope": "theme07-action-v4/bespoke-statement-core",
+      "property": "boxShadow",
+      "handling": "omitted",
+      "detail": "0 18px 52px rgba(35,66,54,.11)"
+    },
+    {
+      "scope": "theme07-action-v4/bespoke-statement-facts",
+      "property": "boxShadow",
+      "handling": "omitted",
+      "detail": "0 18px 52px rgba(35,66,54,.11)"
+    },
+    {
+      "scope": "all-slides",
+      "property": "native minimum object extent",
+      "handling": "renderer limitation",
+      "detail": "6 canonical objects have width/height below 2 target pixels. Pinned native objectNode clamps rendered boxes to at least 2 px, so hairlines may become thicker. Canonical fractional geometry is retained; no product code is changed."
+    }
+  ],
+  "validation": {
+    "main": {
+      "commit": "5314ac9bd71b98e93852ec990146d77c98b7f361",
+      "schema": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "coreImport": "passed",
+      "canonicalNativeCanonical": "passed; all source-defined fields equal, adapter-added defaults allowed",
+      "serializedSaveReopen": "passed in pure Core",
+      "editableTextMutation": "passed in Core",
+      "undo": "passed in Core",
+      "editableShapeCount": 20,
+      "nativeObjectCount": 70,
+      "browserEditorInteraction": "not_run",
+      "genericHTMLExportImport": "passed exact full document equality",
+      "genericRenderCompatibility": {
+        "hasKnownGaps": true,
+        "warnings": [
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-1-kicker",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-2-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-3-panel",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-4-quotation-mark",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-5-quote",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-6-attribution",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-7-panel",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-8-list-1-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-9-list-1-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-10-list-1-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-12-list-2-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-13-list-2-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-14-list-2-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-16-list-3-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-17-list-3-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-18-list-3-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-cover-v4",
+            "elementId": "theme07-cover-v4-19-conversion-disclosure",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-1-kicker",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-2-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-3-subtitle",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-4-caption",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-5-panel",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-11-bar-1",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-12-chart-label-1",
+            "properties": [
+              "fontFamily",
+              "align"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-13-chart-value-1",
+            "properties": [
+              "fontFamily",
+              "align"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-14-bar-2",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-15-chart-label-2",
+            "properties": [
+              "fontFamily",
+              "align"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-16-chart-value-2",
+            "properties": [
+              "fontFamily",
+              "align"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-17-bar-3",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-18-chart-label-3",
+            "properties": [
+              "fontFamily",
+              "align"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-19-chart-value-3",
+            "properties": [
+              "fontFamily",
+              "align"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-20-panel",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-21-list-1-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-22-list-1-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-23-list-1-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-25-list-2-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-26-list-2-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-27-list-2-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-29-list-3-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-30-list-3-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-31-list-3-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-evidence-v4",
+            "elementId": "theme07-evidence-v4-32-conversion-disclosure",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-1-kicker",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-2-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-3-panel",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-4-quotation-mark",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-5-quote",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-6-attribution",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-7-panel",
+            "properties": [
+              "shape"
+            ],
+            "message": "This shape is shown as a basic rectangle"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-8-list-1-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-9-list-1-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-10-list-1-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-12-list-2-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-13-list-2-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-14-list-2-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-16-list-3-number",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-17-list-3-title",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-18-list-3-body",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          },
+          {
+            "code": "RENDER_UNSUPPORTED",
+            "slideId": "theme07-action-v4",
+            "elementId": "theme07-action-v4-19-conversion-disclosure",
+            "properties": [
+              "fontFamily"
+            ],
+            "message": "Text formatting needs the authoritative editor renderer"
+          }
+        ],
+        "scope": "Known generic-renderer gaps only; not a complete visual-fidelity check",
+        "limitations": [
+          "Generic framework preview only; the authoritative editor adapter is not integrated.",
+          "Plain multiline text and system fonts; rich text, custom fonts, crop, groups, arbitrary SVG and complex charts are unsupported.",
+          "Basic rectangles, ellipses, lines/connectors, raster images, plain tables and bar charts only.",
+          "Reveal page navigation/transitions and ordered appear fragments only; complex timelines and triggers are preserved but not played."
+        ]
+      }
+    },
+    "pr3": {
+      "commit": "24ea406fa52df32e3a618ee804af0c0cf1fa7abf",
+      "schema": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "coreImport": "passed",
+      "canonicalNativeCanonical": "passed; all source-defined fields equal, adapter-added defaults allowed",
+      "serializedSaveReopen": "passed in pure Core",
+      "editableTextMutation": "passed in Core",
+      "undo": "passed in Core",
+      "editableShapeCount": 20,
+      "nativeObjectCount": 70,
+      "browserEditorInteraction": "not_run"
+    }
+  },
+  "nativeEditorVisualQA": "not_run",
+  "pptxQA": "not_run",
+  "fontsDownloadedOrEmbedded": false,
+  "deliveryClass": "source-dom-calibrated",
+  "localSanityCheck": "passed finite geometry, canvas bounds, unique IDs and source fact coverage; this is not the official SP validator",
+  "sourceDomMeasurement": {
+    "path": "bespoke-dom-measurements.json",
+    "sha256": "d6c14c2d10603a59712e076357829b41dac98cea06eef82fb92dc01738cbd78b",
+    "matchedTextObjects": 47
+  },
+  "statistics": {
+    "slides": 3,
+    "elements": 70,
+    "types": {
+      "text": 50,
+      "shape": 20
+    },
+    "assets": 0,
+    "rasterizedSlides": 0,
+    "nativeDataDrivenCharts": 0,
+    "bytes": 25313
+  }
+}

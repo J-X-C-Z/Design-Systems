@@ -1,0 +1,27 @@
+--- dashi-style-previews/vendor-work/scripts/workflow/layout-query.upstream.mjs	2026-10-11 09:35:48.381453067 -0700
++++ dashi-style-previews/vendor-work/scripts/workflow/layout-query.mjs	2026-10-11 09:35:48.404322514 -0700
+@@ -838,6 +838,7 @@
+ function primaryArrayFields(layout) {
+   return (layout?.fillPlan?.arrays || []).filter(field => (
+     !String(field?.key || '').includes('[]')
++    && !isTheme11NavigationField(layout, field)
+     && arrayDepth(field?.itemShape) <= 1
+   ));
+ }
+@@ -1116,9 +1117,16 @@
+   return selected;
+ }
+ 
++// Local HTML-only adapter fix: navigation labels are structural chrome, not a fact container.
++// Preserve upstream navItems and navCurrent values/visuals; do not reassign business facts into navigation.
++function isTheme11NavigationField(layout, field) {
++  return String(layout?.layout || '').startsWith('theme11_') && arrayRegionKey(field?.key) === 'navItems';
++}
++
+ function businessArrayRegions(layout) {
+   const regions = new Map();
+   for (const field of layout?.fillPlan?.arrays || []) {
++    if (isTheme11NavigationField(layout, field)) continue;
+     const key = arrayRegionKey(field.key);
+     if (!key) continue;
+     const current = regions.get(key);

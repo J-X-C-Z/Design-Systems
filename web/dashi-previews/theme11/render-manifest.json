@@ -1,0 +1,35 @@
+{
+  "theme": "theme11",
+  "slideCount": 12,
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "renderer": "upstream-components-with-readonly-html-adapter",
+  "sourceCommit": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+  "layouts": [
+    [
+      "theme11_page018",
+      "theme11_page052",
+      "theme11_page067",
+      "bespoke"
+    ],
+    [
+      "theme11_page035",
+      "theme11_page007",
+      "theme11_page067",
+      "bespoke"
+    ],
+    [
+      "theme11_page077",
+      "theme11_page007",
+      "theme11_page018",
+      "bespoke"
+    ]
+  ],
+  "limitations": [
+    "No upstream editor/hydration/export runtime",
+    "Server-rendered component states; dynamic effects not executed",
+    "No claim of SP import or theme installation"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "theme": "theme05",
+  "checked_at": "2026-10-11T15:49:00Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chromium",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "screenshot_method": "full-viewport source plus DOM rectangle and pixel-scale crop",
+  "checks": [
+    "all12desktop+narrow visually inspected",
+    "all12navigation",
+    "no horizontal overflow or text outside canvas",
+    "45bespoke source texts have no clipping ancestor intersection loss",
+    "8/5/3处,24/31/45%,20/15/10分钟 preserved",
+    "schema/copy passed; no original finance default residue"
+  ],
+  "fixes": [
+    "matched complete numeric canonical content to compatible genuinely different templates",
+    "kept identicalCSS onlyat final cascade occurrence",
+    "bespoke categories usebar and3row facts card"
+  ],
+  "limitations": [
+    "upstream decorative02chaptermarker retained",
+    "system fonts, small slide labels at390px with readable text provided",
+    "not nativeSP UI or physicalmobile testing"
+  ],
+  "private_build_identifier_withheld": true
+}

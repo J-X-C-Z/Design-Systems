@@ -1,0 +1,151 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "循环材料概念提案",
+        "title": {
+          "full": "材料的第二种生命",
+          "short": "材料的第二种生命"
+        },
+        "summary": {
+          "full": "循环材料概念提案。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "循环材料概念提案 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "循环材料概念提案",
+              "short": "循环材料概念提案"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "创意总监",
+              "short": "创意总监"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "再生材料构成清晰可见",
+        "title": {
+          "full": "用克制的形式呈现材料实验",
+          "short": "用克制的形式呈现材料实验"
+        },
+        "summary": {
+          "full": "三个观察点共同说明本页主题。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "材料构成 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "玻璃",
+            "detail": {
+              "full": "再生材料占比",
+              "short": "再生材料占比"
+            },
+            "value": 48,
+            "displayValue": "48",
+            "unit": "%",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "金属",
+            "detail": {
+              "full": "再生材料占比",
+              "short": "再生材料占比"
+            },
+            "value": 35,
+            "displayValue": "35",
+            "unit": "%",
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "纤维",
+            "detail": {
+              "full": "再生材料占比",
+              "short": "再生材料占比"
+            },
+            "value": 17,
+            "displayValue": "17",
+            "unit": "%",
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [
+          {
+            "id": "fact-1",
+            "label": "玻璃",
+            "value": 48,
+            "displayValue": "48",
+            "unit": "%"
+          },
+          {
+            "id": "fact-2",
+            "label": "金属",
+            "value": 35,
+            "displayValue": "35",
+            "unit": "%"
+          },
+          {
+            "id": "fact-3",
+            "label": "纤维",
+            "value": 17,
+            "displayValue": "17",
+            "unit": "%"
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "采集肌理，重组工艺，验证体验",
+        "title": {
+          "full": "让循环成为设计",
+          "short": "让循环成为设计"
+        },
+        "summary": {
+          "full": "采集材料肌理；重组制造工艺；验证使用体验。本页为概念演示。",
+          "short": "采集肌理，重组工艺，验证体验"
+        },
+        "items": [],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

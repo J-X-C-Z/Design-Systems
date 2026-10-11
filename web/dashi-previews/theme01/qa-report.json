@@ -1,0 +1,43 @@
+{
+  "theme": "theme01",
+  "checked_at": "2026-10-11T15:00:43Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chromium",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "narrow_document_scroll_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "checks": [
+    "12 pages visually inspected in desktop and narrow iframe",
+    "all 12 select options navigated",
+    "no horizontal document overflow",
+    "no content text outside slide bounds",
+    "32%,86%,74% retained in evidence views",
+    "three real template variants plus one bespoke per logical page",
+    "schema and canonical copy validation passed"
+  ],
+  "exceptions": [
+    "page9 oversized decorative opening quote intentionally crosses canvas boundary",
+    "390px iframe is responsive browser QA, not physical mobile/touch testing",
+    "small slide text remains small at 390px; canonical readable text is provided below slides",
+    "server-rendered initial states only; upstream animated/editor/export functions excluded"
+  ],
+  "fixes": [
+    "captured original injected shared styles during SSR",
+    "removed dark editorial branch from light preview",
+    "fixed bespoke inverse text on light surface",
+    "removed numeric step values that became charts",
+    "replaced overflowing template009 with compatible real templates083/058"
+  ],
+  "screenshot_method": "full-viewport source images and recorded DOM rectangles, cropped with actual screenshot scaling",
+  "internal_bespoke_clipping": "fresh2026-10-11T15:47DOM:32source texts, all clipping ancestors clear",
+  "private_build_identifier_withheld": true
+}

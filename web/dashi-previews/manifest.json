@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+  "collection": "Dashi PPT",
+  "classification": "三方资源 / Dashi PPT 独立分支",
+  "local_language_count_unchanged": 22,
+  "status": "12_html_themes_visual_checked_12_sp_samples_source_dom_calibrated",
+  "styles": [
+    {
+      "id": "dashi-theme01",
+      "name": "轻拟态风",
+      "theme_key": "theme01",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme01/index.html",
+      "thumbnail_path": "theme01/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme01",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 84,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme01/sp-sample.json",
+      "qa_report_path": "theme01/qa-report.json",
+      "limitations": []
+    },
+    {
+      "id": "dashi-theme02",
+      "name": "炫光紫绿风",
+      "theme_key": "theme02",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme02/index.html",
+      "thumbnail_path": "theme02/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme02",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 74,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme02/sp-sample.json",
+      "qa_report_path": "theme02/qa-report.json",
+      "limitations": [
+        "native templates use actual green-neon branch; bespoke uses upstream purple/lime profile",
+        "upstream dimmed nonfocused panels intentionally retain low contrast; narrow slides require readable text section below",
+        "upstream decorative index labels are retained and do not count sample slides",
+        "CSS effects retained; pointer/editor/React effects excluded",
+        "not a physical phone or native SP visual test"
+      ]
+    },
+    {
+      "id": "dashi-theme03",
+      "name": "深浅代码风",
+      "theme_key": "theme03",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme03/index.html",
+      "thumbnail_path": "theme03/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme03",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 77,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme03/sp-sample.json",
+      "qa_report_path": "theme03/qa-report.json",
+      "limitations": [
+        "preserves upstream dark branch and its dim secondary labels; no full accessibility contrast certification",
+        "narrow slides require readable canonical text below",
+        "no physical mobile or upstream editor/export test",
+        "本公开包未附上游3D装饰图片，已省略8个装饰图片节点；正文与方案保留。此归档调整未重新做浏览器视觉验收。"
+      ]
+    },
+    {
+      "id": "dashi-theme04",
+      "name": "玻璃糖果风",
+      "theme_key": "theme04",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme04/index.html",
+      "thumbnail_path": "theme04/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme04",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 74,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme04/sp-sample.json",
+      "qa_report_path": "theme04/qa-report.json",
+      "limitations": [
+        "small native labels remain small at390px; readable canonical text provided",
+        "system fallback fonts; not physical mobile or native SP editor QA"
+      ]
+    },
+    {
+      "id": "dashi-theme05",
+      "name": "色谱图表风",
+      "theme_key": "theme05",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme05/index.html",
+      "thumbnail_path": "theme05/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme05",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 94,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme05/sp-sample.json",
+      "qa_report_path": "theme05/qa-report.json",
+      "limitations": [
+        "upstream decorative02chaptermarker retained",
+        "system fonts, small slide labels at390px with readable text provided",
+        "not nativeSP UI or physicalmobile testing"
+      ]
+    },
+    {
+      "id": "dashi-theme06",
+      "name": "深色图谱风",
+      "theme_key": "theme06",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme06/index.html",
+      "thumbnail_path": "theme06/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme06",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 83,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme06/sp-sample.json",
+      "qa_report_path": "theme06/qa-report.json",
+      "limitations": [
+        "real upstream light directory branch retained alongside dark graph branch",
+        "system fonts; readable text needed for small390pxlabels",
+        "no physicalmobile or nativeSP UI acceptance"
+      ]
+    },
+    {
+      "id": "dashi-theme07",
+      "name": "冷白调研风",
+      "theme_key": "theme07",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme07/index.html",
+      "thumbnail_path": "theme07/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme07",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 71,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme07/sp-sample.json",
+      "qa_report_path": "theme07/qa-report.json",
+      "limitations": [
+        "actual dark section branch retained alongside cold-white report templates",
+        "upstream nonfocus risk-card secondary labels are low contrast; canonical readable section retained",
+        "system fonts, no physicalmobile or nativeSP UI acceptance"
+      ]
+    },
+    {
+      "id": "dashi-theme08",
+      "name": "黑金实验风",
+      "theme_key": "theme08",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme08/index.html",
+      "thumbnail_path": "theme08/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme08",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 84,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme08/sp-sample.json",
+      "qa_report_path": "theme08/qa-report.json",
+      "limitations": [
+        "real black/yellow/lavender template branches distinct from black/gold bespoke",
+        "upstream zero-image marker retained for media-free supply template",
+        "system fonts, no physicalmobile or nativeSP UI acceptance"
+      ]
+    },
+    {
+      "id": "dashi-theme09",
+      "name": "深蓝杂志风",
+      "theme_key": "theme09",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme09/index.html",
+      "thumbnail_path": "theme09/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme09",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 111,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme09/sp-sample.json",
+      "qa_report_path": "theme09/qa-report.json",
+      "limitations": [
+        "system fonts",
+        "390px iframe viewport, not physical-phone touch QA",
+        "native SP UI not inspected"
+      ]
+    },
+    {
+      "id": "dashi-theme10",
+      "name": "金色指数风",
+      "theme_key": "theme10",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme10/index.html",
+      "thumbnail_path": "theme10/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme10",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 95,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme10/sp-sample.json",
+      "qa_report_path": "theme10/qa-report.json",
+      "limitations": [
+        "system fonts",
+        "390px iframe viewport, not physical-phone touch QA",
+        "Page5 native title+ticker structure intentionally retains substantial negative space",
+        "native SP UI not inspected"
+      ]
+    },
+    {
+      "id": "dashi-theme11",
+      "name": "高能增长风",
+      "theme_key": "theme11",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme11/index.html",
+      "thumbnail_path": "theme11/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme11",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 87,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme11/sp-sample.json",
+      "qa_report_path": "theme11/qa-report.json",
+      "limitations": [
+        "system fonts",
+        "390px iframe viewport, not physical-phone touch QA",
+        "native SP UI not inspected"
+      ]
+    },
+    {
+      "id": "dashi-theme12",
+      "name": "声波霓虹风",
+      "theme_key": "theme12",
+      "level": 3,
+      "status": "HTML限定范围检查完成；SP可编辑结构已源DOM校准，原生SP未验证",
+      "preview_path": "theme12/index.html",
+      "thumbnail_path": "theme12/thumbnail.jpg",
+      "source_url": "https://github.com/chuspeeism/dashi-ppt-skill/tree/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/skills/dashi-ppt/project/src/components/themes/theme12",
+      "license": "AGPL-3.0（导出引擎另有专有许可）",
+      "test_scope": "3+1/schema/copy；12桌面+12窄屏实拍；正文与内部裁切、事实/单位语义；SP固定main/PR3结构测试及源DOM校准，原生UI未验",
+      "upstream_layout_count": 86,
+      "capabilities": {
+        "html_preview": "checked_desktop_and_390px",
+        "sp_structured_sample": "source_dom_calibrated",
+        "sp_native_editor": "not_verified",
+        "production_theme_system": "not_integrated"
+      },
+      "sp_sample_path": "sp-samples/final/theme12/sp-sample.json",
+      "qa_report_path": "theme12/qa-report.json",
+      "limitations": [
+        "system fonts",
+        "390px iframe viewport, not physical-phone touch QA",
+        "native SP UI not inspected"
+      ]
+    }
+  ],
+  "checked_at": "2026-10-11T17:01:08Z",
+  "publication_validation": {
+    "scope": "file, structural and link checks only; no fresh browser visual acceptance",
+    "theme03_decorative_nodes_omitted": 8,
+    "source_archive": "vendor-work excluded; not standalone reproducible"
+  }
+}

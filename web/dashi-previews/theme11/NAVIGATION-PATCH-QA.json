@@ -1,0 +1,181 @@
+{
+  "scope": "theme11 navItems only; do not treat navigation as required business content",
+  "preserves": [
+    "navItems defaults",
+    "navCurrent defaults",
+    "template component code",
+    "required canonical items",
+    "all other themes"
+  ],
+  "themes": [
+    {
+      "theme": "theme01",
+      "before_candidates": [
+        15,
+        39,
+        19
+      ],
+      "after_candidates": [
+        15,
+        39,
+        19
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme02",
+      "before_candidates": [
+        24,
+        38,
+        27
+      ],
+      "after_candidates": [
+        24,
+        38,
+        27
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme03",
+      "before_candidates": [
+        17,
+        28,
+        15
+      ],
+      "after_candidates": [
+        17,
+        28,
+        15
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme04",
+      "before_candidates": [
+        14,
+        15,
+        13
+      ],
+      "after_candidates": [
+        14,
+        15,
+        13
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme05",
+      "before_candidates": [
+        35,
+        23,
+        36
+      ],
+      "after_candidates": [
+        35,
+        23,
+        36
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme06",
+      "before_candidates": [
+        12,
+        11,
+        11
+      ],
+      "after_candidates": [
+        12,
+        11,
+        11
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme07",
+      "before_candidates": [
+        9,
+        13,
+        10
+      ],
+      "after_candidates": [
+        9,
+        13,
+        10
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme08",
+      "before_candidates": [
+        8,
+        6,
+        11
+      ],
+      "after_candidates": [
+        8,
+        6,
+        11
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme09",
+      "before_candidates": [
+        21,
+        18,
+        21
+      ],
+      "after_candidates": [
+        21,
+        18,
+        21
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme10",
+      "before_candidates": [
+        12,
+        26,
+        13
+      ],
+      "after_candidates": [
+        12,
+        26,
+        13
+      ],
+      "unchanged": true
+    },
+    {
+      "theme": "theme11",
+      "before_candidates": [
+        1,
+        2,
+        2
+      ],
+      "after_candidates": [
+        24,
+        26,
+        25
+      ],
+      "unchanged": false,
+      "navigation_not_rebound": true
+    },
+    {
+      "theme": "theme12",
+      "before_candidates": [
+        16,
+        18,
+        16
+      ],
+      "after_candidates": [
+        16,
+        18,
+        16
+      ],
+      "unchanged": true
+    }
+  ]
+}

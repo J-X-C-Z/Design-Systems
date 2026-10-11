@@ -1,0 +1,129 @@
+{
+  "pages": [
+    {
+      "id": "cover",
+      "presentation": {
+        "pageIntent": "cover",
+        "coreMessage": "事件驱动架构说明",
+        "title": {
+          "full": "从接口到可靠系统",
+          "short": "从接口到可靠系统"
+        },
+        "summary": {
+          "full": "事件驱动架构说明。所有内容与数字均为虚构演示，不作为事实或决策依据。",
+          "short": "事件驱动架构说明 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "用途",
+            "detail": {
+              "full": "事件驱动架构说明",
+              "short": "事件驱动架构说明"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-2",
+            "label": "受众",
+            "detail": {
+              "full": "工程师",
+              "short": "工程师"
+            },
+            "required": true,
+            "priority": "high"
+          },
+          {
+            "id": "fact-3",
+            "label": "性质",
+            "detail": {
+              "full": "纯概念演示",
+              "short": "纯概念演示"
+            },
+            "required": true,
+            "priority": "high"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "evidence",
+      "presentation": {
+        "pageIntent": "metrics",
+        "coreMessage": "同一测试口径下处理容量逐轮增加",
+        "title": {
+          "full": "从稳定处理到容量提升",
+          "short": "处理容量逐轮提升"
+        },
+        "summary": {
+          "full": "在统一压测口径下，三轮演示的处理容量依次为80、100与120事件/秒。所有数值为虚构演示。",
+          "short": "统一压测口径 · 演示数据"
+        },
+        "items": [
+          {
+            "id": "fact-1",
+            "label": "基线方案",
+            "detail": {
+              "full": "每秒成功处理事件数",
+              "short": "处理容量"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 80,
+            "displayValue": "80",
+            "unit": "事件/秒"
+          },
+          {
+            "id": "fact-2",
+            "label": "并行方案",
+            "detail": {
+              "full": "每秒成功处理事件数",
+              "short": "处理容量"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 100,
+            "displayValue": "100",
+            "unit": "事件/秒"
+          },
+          {
+            "id": "fact-3",
+            "label": "批处理方案",
+            "detail": {
+              "full": "每秒成功处理事件数",
+              "short": "处理容量"
+            },
+            "required": true,
+            "priority": "high",
+            "value": 120,
+            "displayValue": "120",
+            "unit": "事件/秒"
+          }
+        ],
+        "chartData": [],
+        "media": []
+      }
+    },
+    {
+      "id": "action",
+      "presentation": {
+        "pageIntent": "statement",
+        "coreMessage": "定义契约，隔离失败，回放验证",
+        "title": {
+          "full": "让复杂度留在边界内",
+          "short": "让复杂度留在边界内"
+        },
+        "summary": {
+          "full": "定义事件契约；隔离消费失败；回放验证结果。本页为概念演示。",
+          "short": "定义契约，隔离失败，回放验证"
+        },
+        "items": [],
+        "chartData": [],
+        "media": []
+      }
+    }
+  ]
+}

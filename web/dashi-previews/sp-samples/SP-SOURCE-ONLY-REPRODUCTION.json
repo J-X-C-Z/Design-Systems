@@ -1,0 +1,78 @@
+{
+  "format": "dashi-sp-source-only-reproduction-check",
+  "executedAt": "2026-10-11T17:01:07.051585+00:00",
+  "scope": "12 source-DOM-calibrated canonical JSON files plus theme01 separate compatible variant",
+  "result": "passed byte-for-byte equality",
+  "environment": "fresh empty directory; existing Node 24; no network or new packages",
+  "spSourcesIncluded": false,
+  "officialTestsInRebuiltReports": "not_run",
+  "genericHtmlGenerated": false,
+  "files": [
+    {
+      "path": "theme01/sp-sample.json",
+      "sha256": "50326a637852dd015fc543f0843ff9ec4ec53fa18ef11d08562f9234125b1d7d",
+      "byteEquality": true
+    },
+    {
+      "path": "theme01/sp-sample-generic-compatible.json",
+      "sha256": "676366f9f5192ffccb5c0e1bc21c3b6ef99b342821c03b06b8d4922910d262a6",
+      "byteEquality": true
+    },
+    {
+      "path": "theme02/sp-sample.json",
+      "sha256": "2e3eb6660fa05f97c9914a2803b8b07ca680f5f626b75ee9a57ad24a95d1deb9",
+      "byteEquality": true
+    },
+    {
+      "path": "theme03/sp-sample.json",
+      "sha256": "fc8df9b0b84a3a99991936bc8cbaf5a044ddf193d725ab56446437b2aa7ee0cc",
+      "byteEquality": true
+    },
+    {
+      "path": "theme04/sp-sample.json",
+      "sha256": "7cc0401ff2522ea132f1671c87c767ce6a3384fb4d4313e5a253545cf435639f",
+      "byteEquality": true
+    },
+    {
+      "path": "theme05/sp-sample.json",
+      "sha256": "d09a20e53d4dd9bfa8df3d84962cb0276a7e406d42963f80e8de3d9c953b45e4",
+      "byteEquality": true
+    },
+    {
+      "path": "theme06/sp-sample.json",
+      "sha256": "aac62f813c17a46d24da60e345ad688785deb82d52e1f6ab8a501e70752a70ba",
+      "byteEquality": true
+    },
+    {
+      "path": "theme07/sp-sample.json",
+      "sha256": "f9b44e6a153dfb6825d6338007231006abe7b86276d85af76eef1b814f967425",
+      "byteEquality": true
+    },
+    {
+      "path": "theme08/sp-sample.json",
+      "sha256": "0e06ab4ff77989e2f3b22e251ca3f21977242f4998292a60844b9db5c6bfe478",
+      "byteEquality": true
+    },
+    {
+      "path": "theme09/sp-sample.json",
+      "sha256": "a6d57cc7b99b2c0135b3b9fb5e1d29dfb5899d0bfb38793bd85c3f28fd5ef0a2",
+      "byteEquality": true
+    },
+    {
+      "path": "theme10/sp-sample.json",
+      "sha256": "c3d0927c7b9991a0801538ea37aea3da93d956f26788a070d6c5364213575592",
+      "byteEquality": true
+    },
+    {
+      "path": "theme11/sp-sample.json",
+      "sha256": "296af500696413e774bad440c2dacfb44a4c0a10a700c788a52d0de8b0ecd6ec",
+      "byteEquality": true
+    },
+    {
+      "path": "theme12/sp-sample.json",
+      "sha256": "3dfe7e7e6967069c1e7d2cedccac0792f4e67dd750699aab4d7511644238af82",
+      "byteEquality": true
+    }
+  ],
+  "publicArchiveScope": "Historical full isolated input only. Public conversion ZIP omits vendor-work and is not standalone reproducible."
+}

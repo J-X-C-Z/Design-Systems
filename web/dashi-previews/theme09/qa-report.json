@@ -1,0 +1,38 @@
+{
+  "theme": "theme09",
+  "checked_at": "2026-10-11T16:50:34Z",
+  "status": "passed_with_documented_scope",
+  "browser": "dot cloud Chrome, independent tabs90/91",
+  "desktop_viewport": [
+    1180,
+    757
+  ],
+  "narrow_iframe_width": 390,
+  "narrow_document_client_width": 375,
+  "physical_slides": 12,
+  "screenshots": {
+    "desktop": 12,
+    "narrow_full_viewport": 12
+  },
+  "checks": [
+    "12 desktop+narrow visuals",
+    "12 navigation choices",
+    "no horizontal overflow",
+    "nondecorative text not clipped",
+    "55/25/20% preserved",
+    "47 final bespoke source texts DOM calibrated without clipping"
+  ],
+  "exceptions": [
+    "pages2/3/6/9 oversized quotation marks intentionally clipped"
+  ],
+  "limitations": [
+    "system fonts",
+    "390px iframe viewport, not physical-phone touch QA",
+    "native SP UI not inspected"
+  ],
+  "thumbnail_recommendation": {
+    "file": "desktop-03.jpg",
+    "reason": "Actual browser screenshot showing distinctive template palette and legible content"
+  },
+  "private_build_identifier_withheld": true
+}
