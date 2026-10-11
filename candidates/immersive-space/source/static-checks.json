@@ -1,0 +1,19 @@
+{
+  "language": "immersive-space",
+  "static_only": true,
+  "text_keys": 29,
+  "shape_count": 14,
+  "shape_counts": {
+    "a": 4,
+    "b": 4,
+    "c": 3,
+    "d": 3
+  },
+  "static_svg_polygons": 14,
+  "all_text_keys_present": true,
+  "no_images": true,
+  "no_animation": true,
+  "old_quality": "差",
+  "old_level": 2,
+  "browser_qa": "See ../QA-RESULTS.md; static results are not visual proof"
+}
