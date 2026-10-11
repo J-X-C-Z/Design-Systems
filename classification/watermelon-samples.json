@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "collection": "Watermelon / Gridline SP 样例",
+  "resource_id": "watermelon-gridline-dashboard",
+  "source_tag": "三方参考",
+  "level": 3,
+  "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "preview_path": "../web/watermelon-samples/gridline/index.html",
+  "sample_path": "../web/watermelon-samples/gridline/sp-sample.json",
+  "source_notice_path": "../web/watermelon-samples/gridline/SOURCE-NOTICE.md",
+  "qa_scope_path": "../web/watermelon-samples/gridline/ARCHIVE-SCOPE.md",
+  "download_path": "../packages/watermelon-gridline-sp-sample.zip",
+  "slides": 5,
+  "independent_objects": 193,
+  "local_language_count_unchanged": 22,
+  "html_browser_edit_export": "supplied_bounded_acceptance",
+  "native_sp_import": "not_verified",
+  "native_sp_save_export": "not_verified",
+  "pptx": "not_verified"
+}

@@ -47,6 +47,12 @@
 
 [Echo 网站设计语言研究](research/third-party/echo/README.md) · [分类 manifest](research/third-party/echo/catalog-manifest.json)：复古终端与新粗野主义的档案交叉案例，三方参考／三级，AI 整理；不计为新增本地语言。仅原创研究和原站链接，不含截图、小说原文或上游代码。
 
+## Watermelon / Gridline 原创 SP 样例
+
+[5 页离线预览与文字编辑／JSON 导出](web/watermelon-samples/gridline/index.html) · [canonical JSON](web/watermelon-samples/gridline/sp-sample.json) · [完整原包](packages/watermelon-gridline-sp-sample.zip) · [独立分类](classification/watermelon-samples.json)。193 个独立文字／形状对象，以 Gridline Dashboard 亮色分支为参考，项目和数据均为原创虚构演示；三方参考／三级，22 个本地语言计数不变。
+
+原包的浏览器与编辑导出检查，以及固定 main／PR3 的结构和模型往返检查，按供应方限定证据保留。本次只核对归档、结构、重建、链接和哈希；原生 SP 导入、编辑保存再导出及 PPTX 保真仍未验收。[公开范围与验证边界](web/watermelon-samples/gridline/ARCHIVE-SCOPE.md) · [来源许可](web/watermelon-samples/gridline/SOURCE-NOTICE.md)。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。

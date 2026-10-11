@@ -1,0 +1,46 @@
+{
+  "nativeImport": "not_verified",
+  "browserRenderer": "original_not_SP",
+  "versions": {
+    "main": {
+      "schema": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "roundtripSchema": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "textPreserved": true,
+      "counts": [
+        24,
+        45,
+        57,
+        41,
+        26
+      ]
+    },
+    "pr3": {
+      "schema": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "roundtripSchema": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "textPreserved": true,
+      "counts": [
+        24,
+        45,
+        57,
+        41,
+        26
+      ]
+    }
+  }
+}

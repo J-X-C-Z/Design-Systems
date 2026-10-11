@@ -1,0 +1,11 @@
+{
+  "slides": 5,
+  "elements": 193,
+  "all_ids_unique": true,
+  "no_external_assets": true,
+  "months_sum_MWh": 42,
+  "building_reduction_mean": 18.400000000000002,
+  "completeness_mean": 97.6,
+  "negative_or_outside": [],
+  "fontweight_invalid": []
+}

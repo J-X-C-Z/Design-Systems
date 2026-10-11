@@ -17,6 +17,8 @@ function run(inline){
   for(const file of ['catalog-data.js','reference-collections-data.js','reference-preview-data.js','reference-collections.js'])vm.runInContext(fs.readFileSync(file,'utf8'),context);
   const count=n=>check(()=>assert(get('#collection-status').textContent.startsWith(n+' 个参考条目')));
   count(31);check(()=>assert.equal(get('#collection-grid').images.length,28));
+  check(()=>assert.equal((get('#collection-grid').innerHTML.match(/href="watermelon-samples\/gridline\/"/g)||[]).length,1));
+  check(()=>assert(fs.existsSync('watermelon-samples/gridline/index.html')));
   check(()=>assert.equal((get('#collection-grid').innerHTML.match(/<strong>暂无准确展示图<\/strong>/g)||[]).length,3));
   check(()=>assert.equal((get('#collection-grid').innerHTML.match(/官方代表图（范围已注明）/g)||[]).length,3));
   check(()=>assert(get('#collection-grid').innerHTML.includes(inline?'<h3>':'<h2>')));
