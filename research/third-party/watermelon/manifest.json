@@ -1,0 +1,899 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-11",
+  "title": "Watermelon 官方源码参考目录",
+  "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "source_commit_date": "2026-10-11T08:45:59Z",
+  "scope": "1个第三方平台及18个子资源条目；只保存原创中文归纳与精确来源链接，不镜像第三方代码/图片/字体，不增加独立风格数。",
+  "verification": "GitHub连接器读取仓库、README、MIT LICENSE、完整非截断树、元数据、CSS及抽样组件源码。",
+  "inventory": {
+    "providers": 1,
+    "resources": 19,
+    "dashboard_examples": 12,
+    "landing_templates": 1,
+    "animated_metadata_files": 131,
+    "block_metadata_files": 189,
+    "block_category_directories": 22,
+    "component_category_directories": 30
+  },
+  "license": {
+    "spdx": "MIT",
+    "source": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE",
+    "attribution_policy_source": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/pages/copyright.tsx"
+  },
+  "resources": [
+    {
+      "id": "watermelon-platform",
+      "name": "Watermelon UI 资源平台",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform",
+      "preview_url": null,
+      "description": "React、TypeScript、Tailwind CSS 与 Motion 的组件、动效、页面区块、仪表盘和模板资源目录。",
+      "distinctive_rules": [
+        "以 MDX 元数据配合共置源码组织资源",
+        "提供源码注册表与检索接口；不是单一视觉风格"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "platform",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "README.md",
+      "limitations": [
+        "仅核实官方仓库文本及文件结构，未安装、运行或视觉验收；不计为新增独立设计风格。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "已读取来源",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/README.md"
+        }
+      ],
+      "homepage": "https://ui.watermelon.sh",
+      "counts_as_provider": true
+    },
+    {
+      "id": "watermelon-polish-guide",
+      "name": "界面细节与动效规范",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/skills/make-interfaces-feel-better/SKILL.md",
+      "preview_url": null,
+      "description": "可用于界面评审的排版、表面、动效和性能规范。",
+      "distinctive_rules": [
+        "嵌套圆角依据内圆角加内边距计算",
+        "动态数值使用等宽数字，标题均衡换行",
+        "规范建议可中断交互动画、精确声明过渡属性、克制使用 will-change",
+        "规范建议40×40px最小命中区；不能据此声称所有组件已符合"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "design-guidance",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "skills/make-interfaces-feel-better/SKILL.md",
+      "limitations": [
+        "这是项目提供的设计工程建议，不是通用无障碍认证；src/components/ui/button.tsx 存在小于40px的变体及 transition-all，规范与实现需逐项校核。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "已读取来源",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/skills/make-interfaces-feel-better/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "watermelon-theme-tokens",
+      "name": "Watermelon 基础亮暗主题 Tokens",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/index.css",
+      "preview_url": null,
+      "description": "平台基础 CSS 语义色、图表色、圆角、字体及响应式断点。",
+      "distinctive_rules": [
+        "Inter Variable 无衬线字体",
+        "主色 oklch(76.8% 0.233 130.85)，亮暗背景分别为 oklch(1 0 0) 与 oklch(0.145 0 0)",
+        "基础圆角0.625rem；派生圆角按偏移量计算",
+        "sm/md/lg/xl/2xl 断点为640/768/1200/1440/1600px"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "theme-reference",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/index.css",
+      "limitations": [
+        "Tokens 已读，不表示其对比度、响应式或打印/PPT输出通过本库测试。",
+        "全局CSS含隐藏滚动条规则；不建议未经可用性检查照搬。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "已读取来源",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/index.css"
+        }
+      ]
+    },
+    {
+      "id": "watermelon-base-components",
+      "name": "基础 UI 组件实现",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/ui/button.tsx",
+      "preview_url": null,
+      "description": "以按钮变体为已读样例，连接基础组件目录。",
+      "distinctive_rules": [
+        "按钮语义变体包括 default、outline、secondary、ghost、destructive、link",
+        "使用 CSS 语义 tokens 和大小变体"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "component-collection",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/components/ui/button.tsx",
+      "limitations": [
+        "仅核实官方仓库文本及文件结构，未安装、运行或视觉验收；不计为新增独立设计风格。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "已读按钮源码",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/ui/button.tsx"
+        },
+        {
+          "name": "组件目录",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/tree/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/ui"
+        },
+        {
+          "name": "Base UI组件目录",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/tree/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui"
+        }
+      ],
+      "inventory_note": "仓库含30个 components 类别目录；未逐个运行验收。"
+    },
+    {
+      "id": "watermelon-animated-components",
+      "name": "动效与渐进展开组件",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/registry/card-split-accordian.mdx",
+      "preview_url": null,
+      "description": "131个动效 MDX 条目的目录；抽查 Card Split Accordian 和 Shimmer Button。",
+      "distinctive_rules": [
+        "Card Split Accordian 通过展开态重组卡片边缘并揭示详情，源码含弹簧过渡",
+        "提供 original/base 源码路径及注册表安装描述",
+        "Shimmer Button 为悬停闪光按钮参考"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "component-collection",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/registry/card-split-accordian.mdx",
+      "limitations": [
+        "仅核实官方仓库文本及文件结构，未安装、运行或视觉验收；不计为新增独立设计风格。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE",
+        "inspired_by": [
+          {
+            "name": "nitishkmrk — Card Split Accordian",
+            "url": "https://khagwal.com/interactions/"
+          },
+          {
+            "name": "Aceternity UI — Shimmer Button",
+            "url": "https://ui.aceternity.com"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Card Split Accordian 元数据及归属",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/registry/card-split-accordian.mdx"
+        },
+        {
+          "name": "Card Split Accordian base源码",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/animated-components/card-split-accordian/base.tsx"
+        },
+        {
+          "name": "Shimmer Button 元数据及归属",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/registry/shimmer-button.mdx"
+        }
+      ],
+      "inventory_note": "131为固定提交树中 registry/*.mdx 文件数量，不等同131已适配组件。"
+    },
+    {
+      "id": "watermelon-page-blocks",
+      "name": "页面区块目录与 Bento 样例",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/blocks/bento/bento-01/bento-01.mdx",
+      "preview_url": null,
+      "description": "22个区块类别、189个MDX条目；抽查两个 Bento 功能展示区块。",
+      "distinctive_rules": [
+        "区块按 hero、pricing、auth、bento、navigation 等页面职责分类",
+        "Bento 1/2 用分区网格组织多个功能或内容项"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "block-collection",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/blocks/bento/bento-01/bento-01.mdx",
+      "limitations": [
+        "仅核实官方仓库文本及文件结构，未安装、运行或视觉验收；不计为新增独立设计风格。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "Bento 1元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/blocks/bento/bento-01/bento-01.mdx"
+        },
+        {
+          "name": "Bento 2元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/blocks/bento/bento-02/bento-02.mdx"
+        },
+        {
+          "name": "区块目录",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/tree/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/blocks"
+        }
+      ],
+      "inventory_note": "22为类别目录数，189为MDX文件数；未把所有条目声明为独立风格或已完成适配。"
+    },
+    {
+      "id": "watermelon-agndex-dashboard",
+      "name": "Agndex Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/agndex-dashboard/agndex-dashboard.mdx",
+      "preview_url": null,
+      "description": "开发者门户：搜索索引、API凭据、账单和项目设置。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(0.68 0.17 336.255)；oklch(0.711 0.165 336.255)",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/agndex-dashboard/agndex-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/agndex-dashboard/agndex-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/agndex-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/agndex-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-astrix-dashboard",
+      "name": "Astrix Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/astrix-dashboard/astrix-dashboard.mdx",
+      "preview_url": null,
+      "description": "贸易合规工作台：AI分类指标、流水线及HS编码复核。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(0.6959 0.204 43.335)",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/astrix-dashboard/astrix-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/astrix-dashboard/astrix-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/astrix-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/astrix-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-bionis-dashboard",
+      "name": "Bionis Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/bionis-dashboard/bionis-dashboard.mdx",
+      "preview_url": null,
+      "description": "健康分析界面：睡眠、恢复、活动与身体指标；仅作界面参考。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(0 0 0)；oklch(0.922 0 0)",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/bionis-dashboard/bionis-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/bionis-dashboard/bionis-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/bionis-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/bionis-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-capitalio-dashboard",
+      "name": "Capitalio Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/capitalio-dashboard/capitalio-dashboard.mdx",
+      "preview_url": null,
+      "description": "财富管理界面：资产组合分析、配置、持仓及周期筛选；仅作界面参考。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(0.613082 0.211962 256.3304)",
+        "基础圆角：0.5rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/capitalio-dashboard/capitalio-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/capitalio-dashboard/capitalio-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/capitalio-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/capitalio-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-demostack-dashboard",
+      "name": "Demostack Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/demostack-dashboard/demostack-dashboard.mdx",
+      "preview_url": null,
+      "description": "产品演示工作台：组织切换、资源发现与团队筛选。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(0.458 0.216 276.933)；oklch(0.680 0.158 276.935)",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/demostack-dashboard/demostack-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/demostack-dashboard/demostack-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/demostack-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/demostack-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-gridline-dashboard",
+      "name": "Gridline Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/gridline-dashboard/gridline-dashboard.mdx",
+      "preview_url": null,
+      "description": "电网管理工作台：网络建模、资产灵活性、规划与运行。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：#0ab1ba",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/gridline-dashboard/gridline-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/gridline-dashboard/gridline-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/gridline-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/gridline-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-jobtracker-dashboard",
+      "name": "Jobtracker Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/jobtracker-dashboard/jobtracker-dashboard.mdx",
+      "preview_url": null,
+      "description": "工作管理界面：客户记录、任务流程、估算和拖拽条目。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：#ea580b"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/jobtracker-dashboard/jobtracker-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/jobtracker-dashboard/jobtracker-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/jobtracker-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/jobtracker-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-library-dashboard",
+      "name": "Library Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/library-dashboard/library-dashboard.mdx",
+      "preview_url": null,
+      "description": "图书馆管理界面：馆藏指标、流通图表与分馆切换。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：#ff5150",
+        "基础圆角：0.5rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/library-dashboard/library-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/library-dashboard/library-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/library-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/library-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-medesk-dashboard",
+      "name": "Medesk Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/medesk-dashboard/medesk-dashboard.mdx",
+      "preview_url": null,
+      "description": "医疗运营界面：预约、员工表现、部门负荷和患者流量；仅作界面参考。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(0.205 0 0)；oklch(0.922 0 0)",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/medesk-dashboard/medesk-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/medesk-dashboard/medesk-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/medesk-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/medesk-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-portfolio-dashboard",
+      "name": "Portfolio Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/portfolio-dashboard/portfolio-dashboard.mdx",
+      "preview_url": null,
+      "description": "保险保单组合界面：保单、理赔、保费、续保及风险。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(68.5% 0.169 237.323)",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/portfolio-dashboard/portfolio-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。",
+        "上游元数据共用 task-management-dashboard 缩略图/视频；本目录不使用该缩略图冒充样例预览。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/portfolio-dashboard/portfolio-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/portfolio-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/portfolio-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-tallie-dashboard",
+      "name": "Tallie Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/tallie-dashboard/tallie-dashboard.mdx",
+      "preview_url": null,
+      "description": "费用审计工作台：异常跟踪、交易复核和实时状态。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(0 0 0)；oklch(0.922 0 0)",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/tallie-dashboard/tallie-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/tallie-dashboard/tallie-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/tallie-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/tallie-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-web3-dashboard",
+      "name": "Web3 Dashboard",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/web3-dashboard/web3-dashboard.mdx",
+      "preview_url": null,
+      "description": "DeFi界面：净资产、收益指标、借贷、质押与市场面板；仅作界面参考。",
+      "distinctive_rules": [
+        "样例自带共置 CSS 语义变量及演示入口",
+        "主色定义：oklch(89.7% 0.196 126.665)",
+        "基础圆角：0.625rem"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "dashboard-example",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/dashboards/web3-dashboard/web3-dashboard.mdx",
+      "limitations": [
+        "已读元数据和主题CSS，未执行该样例；业务数据及功能不能视为生产可用。",
+        "上游元数据共用 task-management-dashboard 缩略图/视频；本目录不使用该缩略图冒充样例预览。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "样例元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/web3-dashboard/web3-dashboard.mdx"
+        },
+        {
+          "name": "已读取主题CSS",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/web3-dashboard/dashboard.css"
+        },
+        {
+          "name": "演示源码（已核实路径）",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/web3-dashboard/demo.tsx"
+        }
+      ],
+      "theme_tokens_verified": true
+    },
+    {
+      "id": "watermelon-landing-01",
+      "name": "Landing Page 01 暗色落地页",
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/templates/landing-01/landing-01.mdx",
+      "preview_url": null,
+      "description": "一个暗色营销落地页模板，含动效首屏、指标、功能、Bento、证言及页脚。",
+      "distinctive_rules": [
+        "demo 强制 dark 且背景为 #101010",
+        "实际组合 Navbar、Hero、Stats、Features、三个Bento区块、Testimonial、Footer"
+      ],
+      "source_tag": "三方参考",
+      "level": 3,
+      "stage": "仅参考，未完成本仓库适配",
+      "resource_type": "page-template",
+      "license_limitations": [
+        "仓库根 LICENSE 为 MIT，Copyright (c) 2026 Watermelon Platform Contributors；复用代码或实质部分必须保留版权及许可声明。",
+        "MIT 不自动授予第三方图片、字体、商标或被致敬设计的独立权利；逐项核查并保留 Inspired By。"
+      ],
+      "overlap_language_ids": [],
+      "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+      "path": "src/data/contents/templates/landing-01/landing-01.mdx",
+      "limitations": [
+        "上游模板MDX的install为空；不宣称可一键安装或已验证导出。"
+      ],
+      "attribution": {
+        "author": "Watermelon Platform Contributors",
+        "repository": "https://github.com/WatermelonCorp/watermelon-platform",
+        "license": "MIT",
+        "license_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+      },
+      "sources": [
+        {
+          "name": "模板元数据",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/templates/landing-01/landing-01.mdx"
+        },
+        {
+          "name": "已读演示组合源码",
+          "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/templates/landing-01/demo.tsx"
+        }
+      ]
+    }
+  ],
+  "styles": []
+}

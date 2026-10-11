@@ -1,0 +1,85 @@
+{
+  "as_of": "2026-10-11",
+  "source_revision": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+  "theme_count": 12,
+  "metadata_page_count": 1020,
+  "local_language_count_unchanged": 22,
+  "theme_tree_checks": [
+    {
+      "id": "dashi-theme01",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme02",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme03",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme04",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme05",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme06",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme07",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme08",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme09",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme10",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme11",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    },
+    {
+      "id": "dashi-theme12",
+      "theme_dir": true,
+      "metadata": true,
+      "runtime": true
+    }
+  ],
+  "manifest_assertions": "passed",
+  "visual_preview_status": "not independently rendered; links verified against official README and release assets",
+  "upstream_code_execution": "not run",
+  "third_party_files_copied": false
+}

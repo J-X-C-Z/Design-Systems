@@ -14,7 +14,7 @@
 
 ## 当前效果评价
 
-按用户对当前十套效果的评价，MiMo 与其余九套已有样例独立标记 **差**，机器数据字段为 `qualityTag: 差`。该字段评价当前效果质量，不改变来源 tag 或二级适配等级；人工精修仍只有 MiMo。12 套研究方向与全部三方参考不带此标签。网页在卡片、详情和独立效果评价筛选中展示它。
+用户于 2026-10-11 将原十项“差”统一迁移为初始一星：`initialRating: 1`，并以 `historicalQualityTag: 差` 保留历史。网页可继续改星及写评语，仅存于当前浏览器；一次性迁移后不复位后续星级。评价独立于来源和适配等级；人工精修仍只有 MiMo，12 套研究方向与三方参考不自动评分。
 
 ## 数量
 
@@ -64,6 +64,8 @@
 - [候选、分支与表现技术](classification/other-candidates.md)：保留24条原始处置，不强行升级成新语言。
 - [机器可读分类清单](classification/catalog.json)：tag、level、例子、证据、缺口与reference_ids。
 - 提示词、SP架构讨论、合并报告和校验/打包文件为辅助材料；不额外计成语言。分发ZIP继承所属目录的分类和等级。
+
+三方资源集新增 [Dashi PPT 12 主题](research/third-party/dashi-ppt/README.md) 与 [Watermelon 1 平台＋18 子资源](research/third-party/watermelon/RESEARCH.md)，全部三级且不计入本地语言。详见 [整合边界](research/third-party/INCREMENT_NOTES.md)。
 
 ## 后续升级
 

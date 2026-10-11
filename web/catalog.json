@@ -59,8 +59,9 @@
         "ref-542fdaa365",
         "ref-ee418d8caa"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "swiss-information",
@@ -90,8 +91,9 @@
         "ref-ee418d8caa",
         "ref-0bc2230aa5"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "precision-industrial",
@@ -114,8 +116,9 @@
         "ref-ce940848d6",
         "ref-91a11caffe"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "editorial-magazine",
@@ -138,8 +141,9 @@
         "ref-f48c9340b9",
         "ref-b4c84132fd"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "warm-illustration",
@@ -162,8 +166,9 @@
         "ref-017aff1fee",
         "ref-eaba464acc"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "experimental-collage",
@@ -187,8 +192,9 @@
         "ref-c7c7f0c17c",
         "ref-7f221362d0"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "generative-art",
@@ -211,8 +217,9 @@
         "ref-8d3a896e92",
         "ref-4787161f27"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "immersive-space",
@@ -235,8 +242,9 @@
         "ref-0e0b2de9d0",
         "ref-ed42d07dd0"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "y2k-retrofuture",
@@ -260,8 +268,9 @@
         "ref-0a71bf7249",
         "ref-d053e0880b"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "midcentury-modern",
@@ -285,8 +294,9 @@
         "ref-34345bd528",
         "ref-c3612cfbfa"
       ],
-      "qualityTag": "差",
-      "qualityAssessment": "用户对当前效果的评价；独立于来源与适配等级"
+      "qualityAssessment": "用户于2026-10-11将原“差”评价统一改为一星；与来源及适配等级独立。",
+      "initialRating": 1,
+      "historicalQualityTag": "差"
     },
     {
       "id": "batch02-01",
@@ -3424,6 +3434,28 @@
     {
       "path": "research/batch02/",
       "role": "合并报告、分档和共享索引不重复计数"
+    }
+  ],
+  "external_collections": [
+    {
+      "id": "dashi-themes",
+      "name": "Dashi PPT · 12主题",
+      "tag": "三方参考",
+      "level": 3,
+      "manifest": "research/third-party/dashi-ppt/manifest.json",
+      "styles": 12,
+      "counts_as_local_languages": false,
+      "parent_reference_id": "curated-dashi-ppt"
+    },
+    {
+      "id": "watermelon-resources",
+      "name": "Watermelon · 1平台18子资源",
+      "tag": "三方参考",
+      "level": 3,
+      "manifest": "research/third-party/watermelon/manifest.json",
+      "resources": 19,
+      "providers": 1,
+      "counts_as_local_languages": false
     }
   ]
 }
