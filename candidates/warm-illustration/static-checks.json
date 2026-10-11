@@ -1,0 +1,8 @@
+{
+  "pages": 4,
+  "independentRasterAssets": 3,
+  "fullAspectPreserved": true,
+  "noCroppedIdentityOrTimelineClaim": true,
+  "sourceReplacementDowngraded": true,
+  "actualQA": "See QA-RESULTS.md: functional checks pass; style limitations remain"
+}

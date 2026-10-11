@@ -1,0 +1,26 @@
+{
+  "A": {
+    "src": "assets/a.png",
+    "width": 2172,
+    "height": 724,
+    "sourceKind": "ai-generated",
+    "name": "landscape-a.png",
+    "description": "虚构水边地景，灰蓝水面与陆侧步道相接，小型成年人位于护栏内侧"
+  },
+  "B": {
+    "src": "assets/b.png",
+    "width": 1254,
+    "height": 1254,
+    "sourceKind": "ai-generated",
+    "name": "objects-b.png",
+    "description": "斜置的空白本子、单支铅笔及合拢的苔绿资料夹，作为准备状态的视觉比喻"
+  },
+  "C": {
+    "src": "assets/c.png",
+    "width": 1254,
+    "height": 1254,
+    "sourceKind": "ai-generated",
+    "name": "character-c-v2.png",
+    "description": "一位普通成年人自然持着合拢本子，站在小块地面上；独立叙事小景，无人物或轮次对应"
+  }
+}

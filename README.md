@@ -31,6 +31,8 @@
 
 - **编辑杂志候选**：[使用与边界](candidates/editorial-magazine/IMPLEMENTATION.md) · [四页可编辑 HTML](candidates/editorial-magazine/index.html) · [研究与源图复核](candidates/editorial-magazine/RESEARCH-REVIEW.md) · [浏览器记录与未验收项](candidates/editorial-magazine/QA-RESULTS.md) · [概念图来源记录](candidates/editorial-magazine/assets/generation-provenance.json)。两张图为原创 AI 概念图，非现场照片，底层图像模型未确认。仅归档，待用户重判；原编辑杂志样例的“差”标签及二级适配状态保持，不替换原样例、不计为新语言，不据有限验收升级成熟度或评为好，未计入 SP 集成。
 
+- **温暖插画改进候选**：[使用与风格局限](candidates/warm-illustration/IMPLEMENTATION.md) · [四页可编辑 HTML](candidates/warm-illustration/index.html) · [研究与源图复核](candidates/warm-illustration/RESEARCH-REVIEW.md) · [功能 QA 与未验收项](candidates/warm-illustration/QA-RESULTS.md) · [概念插画来源记录](candidates/warm-illustration/assets/generation-provenance.json)。所测功能 QA 通过；人物动画化、轻微明暗及人物图背景矩形边界仍是风格缺陷，未严格视觉达标。三张图为原创 AI 概念插画，模型未确认。仅归档，待用户重判；原“差”标签及二级适配状态保持，不替换原样例、不计为新语言、不升级成熟度，未计入 SP 集成。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。

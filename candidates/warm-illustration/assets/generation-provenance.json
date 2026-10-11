@@ -1,0 +1,87 @@
+{
+  "schema": "concept-image-provenance-v1",
+  "generated_date_utc": "2026-10-11",
+  "method": "普通ChatGPT网页chat，dot云端Chrome，原图下载",
+  "ui_reasoning_intensity": "Medium，第2项，共5项；A/B/C及C-v2提交前均核验",
+  "image_model_ui_label": null,
+  "image_model_verification": "未显示底层图像模型，未确认image2.5",
+  "identity": "AI生成原创概念插画，非手绘署名、非现场记录、非观察结果",
+  "artist": null,
+  "location": null,
+  "prompts_file": "generation-prompts.txt",
+  "relationship": "A/B/C独立生成，无同人、同地、时序或轮次对应",
+  "assets": [
+    {
+      "label": "A",
+      "file": "landscape-a.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "mode": "RGB",
+      "alpha_range": null,
+      "sha256": "42196171dfa18219e62a2025fb8391960e9db62841847fd0cbb351302a30cc4c",
+      "bytes": 1515271,
+      "downloaded_at_utc": "2026-10-11T08:27:47Z",
+      "pixel_review": "完整3:1地景；人物位于护栏陆侧，水/步道关系清楚，成人比例，无字/器材。略有柔和色调和植物细节，比纯色面brief丰富；不做科学图解。",
+      "included_in_distribution": true,
+      "distributed_file": "a.png"
+    },
+    {
+      "label": "B",
+      "file": "objects-b.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "alpha_range": null,
+      "sha256": "0f33ab7dff3099ac7bfb4df03d5d4c1e2ec101dc5ab6780af405b5b34d630925",
+      "bytes": 1152776,
+      "downloaded_at_utc": "2026-10-11T08:30:49Z",
+      "pixel_review": "完整方图；空白打开本子、单尖铅笔、苔绿资料夹可辨，无文字与额外物件，非设备清单。",
+      "included_in_distribution": true,
+      "distributed_file": "b.png"
+    },
+    {
+      "label": "C",
+      "file": "discarded/character-c-v1.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "01865aa29ed6fda3eb71d488c78b63fee3aec1186d2b8f0fdafdc0cbe22eea39",
+      "bytes": 492397,
+      "downloaded_at_utc": "2026-10-11T08:34:46Z",
+      "pixel_review": "成人安静持合本，手/本接触合理，脚与小地面关系可读；真透明alpha。深色查看器边缘有少量彩边，暖白排版需验。实际约4:5，不拉伸为1:1。",
+      "status": "discarded-not-active",
+      "rejection_reason": "脸部偏动画，衣裤明暗/密褶与鞋细节过多，透明边缘彩边；不作最终选片",
+      "included_in_distribution": false
+    },
+    {
+      "label": "C-v2",
+      "file": "character-c-v2.png",
+      "status": "active-candidate-with-style-limitations",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "format": "PNG",
+      "bytes": 1125134,
+      "sha256": "2cf745e2fd2b0c49a5af9c43c6658989f028a252ad611e0b3036fa6ed46a9a62",
+      "downloaded_at_utc": "2026-10-11T08:40:21Z",
+      "ui_reasoning_intensity": "Medium，第2项，共5项，提交前确认",
+      "pixel_review": "一次定向修订。消除透明彩边、鞋带针织与密褶；衣裤较平、地面不规则。脸部仍偏柔和动画，衣裤仍有轻微明暗，不称严格平面语言通过。",
+      "background_corner_rgb": [
+        249,
+        245,
+        234
+      ],
+      "background_note": "不透明暖白，但非严格#FAF7ED；实际版面接缝待检查",
+      "revision_limit": "仅一次定向修订，未无限生图迭代",
+      "included_in_distribution": true,
+      "distributed_file": "c.png"
+    }
+  ]
+}
