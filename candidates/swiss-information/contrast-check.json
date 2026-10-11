@@ -1,0 +1,8 @@
+{
+  "paper": "#f7f7f3",
+  "textPairs": {
+    "#151515": 17.003,
+    "#b32624": 6.073
+  },
+  "note": "Default sRGB pairs, not full WCAG certification."
+}
