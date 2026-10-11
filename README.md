@@ -35,6 +35,8 @@
 
 - **沉浸空间候选**：[使用入口](candidates/immersive-space/README.md) · [四页可编辑 HTML](candidates/immersive-space/immersive-space-editable.html) · [实现与边界](candidates/immersive-space/IMPLEMENTATION.md) · [研究复核](candidates/immersive-space/RESEARCH-REVIEW.md) · [功能 QA 与未验收项](candidates/immersive-space/QA-RESULTS.md)。仅报告所测功能通过；空间深度感为有限目视判断，不代表普遍用户知觉实验。仅归档，待用户重判；原“差”标签及二级适配状态保持，不替换原样例、不计为新语言、不升级成熟度，未计入 SP 集成。
 
+- **Y2K 复古未来候选**：[使用入口](candidates/y2k-retrofuture/README.md) · [四页可编辑 HTML](candidates/y2k-retrofuture/y2k-retrofuture-editable.html) · [实现与边界](candidates/y2k-retrofuture/IMPLEMENTATION.md) · [研究复核](candidates/y2k-retrofuture/RESEARCH-REVIEW.md) · [功能与有限视觉检查](candidates/y2k-retrofuture/QA-RESULTS.md)。仅记录报告覆盖的功能与有限视觉检查通过；完整构图检查为页面等比缩小，非原像素打印或设备验收，不代表覆盖所有 Y2K 分支。仅归档，待用户重判；原“差”标签及二级适配状态保持，不替换原样例、不计为新语言、不升级评价或成熟度，未计入 SP 集成。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。

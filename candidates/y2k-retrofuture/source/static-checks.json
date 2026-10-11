@@ -1,0 +1,13 @@
+{
+  "static_only": true,
+  "text_keys": 33,
+  "independent_shapes": 10,
+  "static_paths": 10,
+  "mobile_mast_px": 18,
+  "no_images": true,
+  "no_animation": true,
+  "old_quality": "差",
+  "old_level": 2,
+  "browser_evidence": "See separate QA-RESULTS.md",
+  "browser_qa": "See ../QA-RESULTS.md; static results are not visual proof"
+}
