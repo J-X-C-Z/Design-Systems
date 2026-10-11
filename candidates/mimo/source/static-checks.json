@@ -1,0 +1,20 @@
+{
+  "static_only": true,
+  "text_keys": 32,
+  "line_objects": 4,
+  "canonical_unchanged_files": 85,
+  "colors_exact_from_v2": true,
+  "contrast": {
+    "rational-humanistic": {
+      "ink_canvas": 15.291,
+      "muted_canvas": 5.422,
+      "accentInk_accentSoft": 6.826
+    },
+    "dark-tech": {
+      "ink_canvas": 16.089,
+      "muted_canvas": 9.226,
+      "accentInk_accentSoft": 8.436
+    }
+  },
+  "limits": "Default role pairs only; not a full accessibility audit; explicit overrides need fresh checks"
+}

@@ -37,6 +37,8 @@
 
 - **Y2K 复古未来候选**：[使用入口](candidates/y2k-retrofuture/README.md) · [四页可编辑 HTML](candidates/y2k-retrofuture/y2k-retrofuture-editable.html) · [实现与边界](candidates/y2k-retrofuture/IMPLEMENTATION.md) · [研究复核](candidates/y2k-retrofuture/RESEARCH-REVIEW.md) · [功能与有限视觉检查](candidates/y2k-retrofuture/QA-RESULTS.md)。仅记录报告覆盖的功能与有限视觉检查通过；完整构图检查为页面等比缩小，非原像素打印或设备验收，不代表覆盖所有 Y2K 分支。仅归档，待用户重判；原“差”标签及二级适配状态保持，不替换原样例、不计为新语言、不升级评价或成熟度，未计入 SP 集成。
 
+- **MiMo 平面应用候选（AI 制作）**：[应用入口](candidates/mimo/README.md) · [四页可编辑 HTML](candidates/mimo/mimo-application-editable.html) · [实现与继承边界](candidates/mimo/IMPLEMENTATION.md) · [研究复核](candidates/mimo/RESEARCH-REVIEW.md) · [有限功能 QA 与未验收项](candidates/mimo/QA-RESULTS.md)。唯一规范仍为 [languages/mimo/v2.0](languages/mimo/v2.0/README.md)，原规范来源仍是人工精修；本目录仅为 AI 制作的应用，不创建第二份规范、新语言或新版本。原“差”标签及二级状态保持，待用户判断，不升级评价，未计入 SP 集成。包内“85 文件未变”为原环境作者记录；本仓库规范目录当前 76 个现有文件已独立核验未变。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。
