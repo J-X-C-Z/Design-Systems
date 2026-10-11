@@ -1,0 +1,42 @@
+[
+  {
+    "asset_id": "coast-a",
+    "source_kind": "AI-generated concept photography",
+    "generator": "ChatGPT ordinary web chat",
+    "model_as_reported": "Not displayed in image UI; no verified image2.5 claim",
+    "chat_thinking_intensity": "Medium (second of five options), verified before submission",
+    "generated_at_utc": "2026-10-11T03:55:45Z",
+    "downloaded_at_utc": "2026-10-11T03:56:08Z",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "b65b55d8a32629753393bad81f359986577701376771276b16cba544acc41b53",
+    "edits": "None; full downloaded master",
+    "license_status": "AI-generated via user-authorized ChatGPT account. Not asserted CC0; governed by applicable user account terms. No assurance of copyright status across jurisdictions.",
+    "visual_review": "Viewed full downloaded image: black-and-white rock coast, diagonal from lower left toward upper right, detailed rock fractures and wave textures, no people, text, logos, or collage layout. Includes narrow horizon and distant vegetation. Suitable as distant-scale base.",
+    "prompt_record": "generation-prompts.txt",
+    "timing_note": "UTC times are observed completion/download times, not server generation metadata.",
+    "source_description": "User-authorized ordinary ChatGPT web conversation; Medium selected. Private conversation identifier excluded from distributable archive."
+  },
+  {
+    "asset_id": "tide-b",
+    "source_kind": "AI-generated concept photography",
+    "generator": "ChatGPT ordinary web chat",
+    "model_as_reported": "Not displayed in image UI; no verified image2.5 claim",
+    "chat_thinking_intensity": "Medium (second of five options), verified before submission",
+    "generated_at_utc": "2026-10-11T03:57:25Z",
+    "downloaded_at_utc": "2026-10-11T03:57:40Z",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "sha256": "fd9c17d0933b537628b45ef5c3afc7a3319e0334fbee9212439d640bb246ff97",
+    "edits": "None; full downloaded master",
+    "license_status": "AI-generated via user-authorized ChatGPT account. Not asserted CC0; governed by applicable user account terms. No assurance of copyright status across jurisdictions.",
+    "visual_review": "Viewed full downloaded image: hand-scale wet textured rock, distinct sand grains, subdued mud green/cool grey thin water channel running lower left to upper right. No horizon, people, text, logos, or collage. Clearly different material scale from A, not a crop of A.",
+    "prompt_record": "generation-prompts.txt",
+    "timing_note": "UTC times are observed completion/download times, not server generation metadata.",
+    "source_description": "User-authorized ordinary ChatGPT web conversation; Medium selected. Private conversation identifier excluded from distributable archive."
+  }
+]

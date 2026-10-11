@@ -18,6 +18,10 @@
 
 **当前效果评价：差。** 按用户评价，MiMo 与其余九套已有样例均独立标记 `qualityTag: 差`；这是当前效果评价，不改来源标签或二级适配等级。12 套研究方向和三方参考不带此标签，网页提供单独的效果评价筛选。
 
+## 独立重审候选
+
+- **实验拼贴候选**：[说明与研究入口](candidates/experimental-collage/README.md) · [四页可编辑 HTML](candidates/experimental-collage/index.html) · [浏览器记录与未验收项](candidates/experimental-collage/BROWSER_QA.md)。仅归档，待用户重判；原实验拼贴样例的“差”标签及二级适配状态保持，不替换原样例、不计为新语言，也不标为正式通过。
+
 ## 风格总览网页
 
 [静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。
