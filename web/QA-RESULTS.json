@@ -1,0 +1,15 @@
+{
+  "passed": 15,
+  "scope": "JS data/filter/detail logic via DOM stub; no real browser rendering",
+  "canonicalCounts": {
+    "languages": 22,
+    "human_refined_languages": 1,
+    "ai_collected_languages": 21,
+    "level_1_languages": 0,
+    "level_2_languages": 10,
+    "level_3_languages": 12,
+    "third_party_reference_urls": 172,
+    "third_party_reference_level": 3,
+    "nonlanguage_candidate_records": 24
+  }
+}

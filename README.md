@@ -2,6 +2,28 @@
 
 设计语言研究与可复用资源归档。通用设计资源与 Superior Point（SP）适配讨论分开存放。
 
+## 分类与适配等级
+
+按主来源分为 **人工精修、ai 搜集、三方参考**；人工精修仅 MiMo。tag 与成熟度分别记录。
+
+- **一级：所有适配都完成**。当前 0 套。
+- **二级：完成初步适配**。当前 10 套：MiMo（人工精修），以及瑞士信息设计、精密工业、编辑杂志、温暖插画、实验拼贴、生成艺术、沉浸空间、Y2K复古未来、世纪中期现代（ai 搜集）。
+- **三级：只是确认方向**。Batch02 的12套独立研究；尚无本仓库可编辑样例和可执行适配包。外部三方参考也列三级/仅参考，不重复计入语言数量。
+
+[完整分类、依据与待适配缺口](CLASSIFICATION.md) · [三方参考索引](classification/third-party-references.md) · [机器可读清单](classification/catalog.json)
+
+[14 项精选三方参考与核验说明](research/curated-third-party-design-references-2026-10-11.md) · [精选参考数据](classification/curated-references.json)。14 项独立资源与 172 个原始 URL 索引分别统计，不相加为风格数量，也不计入 22 套本地方向。
+
+现有样例和部分测试说明初步适配成立；真实浏览器、目标设备、适用媒介与产品集成尚有缺口，因此没有将 MiMo 或其他语言提前标成一级。
+
+**当前效果评价：差。** 按用户评价，MiMo 与其余九套已有样例均独立标记 `qualityTag: 差`；这是当前效果评价，不改来源标签或二级适配等级。12 套研究方向和三方参考不带此标签，网页提供单独的效果评价筛选。
+
+## 风格总览网页
+
+[静态网页目录](web/) · [网页入口 index.html](web/index.html) · [本地查看说明](web/README.md)。网页支持搜索、来源与等级筛选、语言样例预览、14 项精选三方参考和可折叠的 172 条外链索引；资料引用现有语言与研究目录。
+
+下载仓库源码后，在仓库根目录运行 `python3 -m http.server 8000 --bind 127.0.0.1`，浏览器打开 http://127.0.0.1:8000/web/ 。不需要安装依赖或执行构建；此公共仓库未启用 GitHub Pages。
+
 ## 从这里开始
 
 - **精密工业 v1.0**：[规范与样例入口](languages/precision-industrial/v1.0/README.md) · [ZIP](packages/precision-industrial-v1.0.zip)
@@ -32,7 +54,7 @@
 | 开发工具 Developer | [developer.light.html](languages/mimo/v2.0/examples/developer.light.html) | [developer.dark.html](languages/mimo/v2.0/examples/developer.dark.html) |
 | 工作区 Workspace | [workspace.light.html](languages/mimo/v2.0/examples/workspace.light.html) | [workspace.dark.html](languages/mimo/v2.0/examples/workspace.dark.html) |
 
-HTML 在 GitHub 中显示源码。打开上述文件后使用 **Download raw file** 保存 HTML，再在本机浏览器打开；展示台和六个样例均为自包含文件。其他语言可下载对应 ZIP 后打开样例。此仓库未部署在线演示。
+HTML 在 GitHub 中显示源码。打开上述文件后使用 **Download raw file** 保存 HTML，再在本机浏览器打开；展示台和六个样例均为自包含文件。其他语言可下载对应 ZIP 后打开样例。此公共仓库未启用 GitHub Pages，风格总览的本地查看方法见上方。
 
 ## 状态说明
 
