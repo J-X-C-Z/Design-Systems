@@ -1,0 +1,770 @@
+{
+  "verified_at": "2026-10-11T13:08:00Z",
+  "scope": "Dashi 12 + Watermelon 19 existing resources",
+  "counts": {
+    "total": 31,
+    "official_exact_remote": 23,
+    "official_representative_remote": 3,
+    "official_page_captures": 2,
+    "unavailable": 3
+  },
+  "image_policy": "真实官方远程素材与实际官网截图；无AI生成图。代表图明确标识范围。",
+  "resources": [
+    {
+      "id": "dashi-theme01",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme01.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme01 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "浅色四格预览：紫色桑基图、浅灰/白色信息卡、目录。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:4ae46cb2656924a67cf1f9b2bd3fb9c4c124d8af8bcf6ac169bafbe5950880a9"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme02",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme02.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme02 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "近黑四格预览：荧光绿曲线/桑基图、绿色卡片与970大数字。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:2558670e34f647b68c4e1eb3e9deaf45a44749d441366cca8f36ec545583fe75"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme03",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme03.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme03 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "深色四格预览：蓝紫桑基图、SWOT板块、32大数字。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:3b0bdee94454411cfd170b23df132ac6e066068776556b04d99d1ca79eaacd88"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme04",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme04.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme04 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "黑底四格预览：黄绿雷达、彩色漏斗、绿/黄/粉/蓝小卡。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:3527e28f0ec8e57915ef183d62286dc9e017c8b2b74722ae2401a45eb31bf393"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme05",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme05.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme05 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "米色四格预览：浅绿雷达、绿/红/蓝色块与10亿大数字。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:aa66c12df0b6dba0634def967001d43dd0a02fe1313584a16126b6bd93524ba6"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme06",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme06.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme06 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "黑白四格预览：青黄雷达、荧光黄绿强调和一个浅色卡片面板。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:e3dc7491cc0d0fb35d394b71cf1a8ad9067426820cfd82227f26f54351f0e5b0"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme07",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme07.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme07 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "白色四格预览：绿条瀑布图、轻边框模块和数字信息。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:d86d297a590802788584c9ac63f481ee874090e6749005cdd5ece145f995fa67"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme08",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme08.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme08 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "鲜黄四格预览：瀑布图、黑白风险模型、时间线和窄目录卡。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:c9ec4020c9c907dcde211cbaf77e8a027a4f2802f497ef4c93910e87ba9afcca"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme09",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme09.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme09 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "深蓝四格预览：雷达、蓝色大面板、绿色卡片及CONTENTS。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:e3257310b02f5d2addabefc4c4f53fec3b7c54fb9d7e1494bb9bd8a8ddfe93ae"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme10",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme10.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme10 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "深色渐变与浅色混合四格预览：桑基图、218%大数字、目录。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:210515fa8bb01537f439edc5d2bfa333290bf28395aaf38f02c19af64faece65"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme11",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme11.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme11 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "近黑四格预览：橙色折线、橙色圆点关系、雷达及增长数字。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:8c5f83b3d87c99fa414ed5c111c8a9637cd323b1c7a008dac7409ae505b808b5"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "dashi-theme12",
+      "image_url": "https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme12.jpg",
+      "source_page": "https://github.com/chuspeeism/dashi-ppt-skill/blob/21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64/README.md",
+      "attribution": "官方预览 © chuspeeism / Dashi PPT Skill",
+      "preview_kind": "official-exact",
+      "caption": "theme12 官方内页预览 · 原图来自 Dashi PPT Skill",
+      "verification": {
+        "source_mapping": "固定提交 README 的 img src、alt、相邻 theme ID 与 Release asset 三方一致。",
+        "visual_check": "已在云端浏览器实际打开官方 README，逐组目视检查对应主题图片。",
+        "observed_content": "粉色/白色与深色混合四格预览：彩色桑基、便当卡及2.4大数字。",
+        "rendered_dimensions": [
+          900,
+          513
+        ],
+        "loaded": true,
+        "release_asset_sha256": "sha256:465436d7f1ffe1d4466f40405d5b162242e09f7b0793720b04123017944ca237"
+      },
+      "limitations": [
+        "截图是作者选出的4个版式，不代表此主题全部版式或所有配色。",
+        "主题名字沿用上游；当前四格预览不一定等同此前从bespoke配置归纳的固定配色。",
+        "建议远程嵌入并链接来源；未另行确认官方图片的独立再分发许可。",
+        "未运行上游模板、运行时或专有导出引擎。"
+      ]
+    },
+    {
+      "id": "watermelon-platform",
+      "image_url": "https://ui.watermelon.sh/og-image.avif",
+      "source_page": "https://ui.watermelon.sh",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-representative",
+      "caption": "官方平台分享预览图 · 仅代表平台入口，非全部子项",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交完整仓库树包含public/og-image.avif，官网同源路径可打开。",
+        "visual_check": "已打开原图；Watermelon UI首页式黑绿视觉，Beautiful Components Built for developers。",
+        "rendered_dimensions": [
+          3388,
+          2032
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/public/og-image.avif"
+    },
+    {
+      "id": "watermelon-polish-guide",
+      "image_url": null,
+      "source_page": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/skills/make-interfaces-feel-better/SKILL.md",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "unavailable",
+      "caption": "文字规范，暂无对应视觉预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "finding": "该资源为SKILL.md文字指南，不是具有唯一截图的UI样例。"
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。"
+      ]
+    },
+    {
+      "id": "watermelon-theme-tokens",
+      "image_url": null,
+      "source_page": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/index.css",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "unavailable",
+      "caption": "主题变量参考，暂无独立视觉预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "finding": "该资源为src/index.css亮暗变量；无独立官方预览图，不能把某个业务界面冒充tokens全貌。"
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。"
+      ]
+    },
+    {
+      "id": "watermelon-base-components",
+      "image_url": "https://ui.watermelon.sh/cdn/components/button.png",
+      "source_page": "https://ui.watermelon.sh/components/button",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-representative",
+      "caption": "基础组件代表样例：Button · 非全部组件集合",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "官方分类卡渲染代码使用/cdn/components/{slug}.png；仓库树及button类别配置存在。",
+        "visual_check": "已打开原图，含Default、Secondary、Outline、Ghost、Destructive与图标按钮。",
+        "rendered_dimensions": [
+          3200,
+          2400
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/registry/component-category-card.tsx"
+    },
+    {
+      "id": "watermelon-animated-components",
+      "image_url": "https://assets.watermelon.sh/components/card-split-accordian.webp",
+      "source_page": "https://ui.watermelon.sh/animated-components/card-split-accordian",
+      "attribution": "Watermelon Platform Contributors · Inspired by nitishkmrk (https://khagwal.com/interactions/)",
+      "preview_kind": "official-representative",
+      "caption": "动效组件代表样例：Card Split Accordian · 静帧，非全部子项",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交Card Split Accordian MDX直接指定该图与Inspired By归属。",
+        "visual_check": "已打开原图，白色手风琴卡片含Interaction Design、Principles & Patterns等五行。",
+        "rendered_dimensions": [
+          640,
+          480
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "静态图片不能展示展开动画。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/registry/card-split-accordian.mdx"
+    },
+    {
+      "id": "watermelon-page-blocks",
+      "image_url": null,
+      "source_page": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/blocks/bento/bento-01/bento-01.mdx",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "unavailable",
+      "caption": "暂无对应预览：官方 Bento 1 图片链接返回404",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "rejected_image_url": "https://assets.watermelon.sh/components/watermelonoriginalassets/bento-01.webp",
+        "visual_check": "已在云端浏览器直接打开，返回Cloudflare R2 Error 404 / Object not found。"
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "不以其他区块图代替Bento 1，也不使用失效缩略图。"
+      ]
+    },
+    {
+      "id": "watermelon-agndex-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/agndex-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/agndex-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Agndex Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "AGNDEx Developer Portal，索引管理、API Keys与Billing菜单。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/agndex-dashboard/agndex-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-astrix-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/astrix-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/astrix-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Astrix Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "ASTRIX Trade Compliance Overview，分类准确率与流程管线。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/astrix-dashboard/astrix-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-bionis-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/bionis-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/bionis-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Bionis Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "Bionis Overall Wellness，心率、步数、睡眠、恢复及活动曲线。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/bionis-dashboard/bionis-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-capitalio-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/capitalio-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/capitalio-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Capitalio Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "Capitalio Portfolio Overview，净值、资产类别、风险和持仓分配。",
+        "rendered_dimensions": [
+          1920,
+          1080
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/capitalio-dashboard/capitalio-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-demostack-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/demostack-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/demostack-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Demostack Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "Demostack产品演示工作台，Create a Demostack、教程及演示库。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/demostack-dashboard/demostack-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-gridline-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/gridline-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/gridline-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Gridline Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "电网工作台，Electrical Grid Company Model、变电站列表与地图。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/gridline-dashboard/gridline-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-jobtracker-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/jobtracker-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/jobtracker-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Jobtracker Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "JOB TRACKER，客户/Jobs侧栏、Estimates费用条目表。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/jobtracker-dashboard/jobtracker-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-library-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/library-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/library-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Library Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "Library，馆藏/借阅指标、流通曲线与馆藏环图。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/library-dashboard/library-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-medesk-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/medesk-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/medesk-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Medesk Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "Medesk，预约、床位、患者满意度、部门负载图。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/medesk-dashboard/medesk-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-portfolio-dashboard",
+      "image_url": "references/previews/watermelon-portfolio-dashboard.jpg",
+      "source_page": "https://ui.watermelon.sh/dashboard/portfolio-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-page-capture",
+      "caption": "官方portfolio-dashboard路由当前显示保险保单示例 · 官网实时预览截图",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "visual_check": "已打开官方详情页，核实内嵌preview URL，再直接打开该URL并在加载完成后截图。",
+        "observed_content": "Portfolio Overview：Active policies、Premiums Collected、Open Claims、Policy Portfolio。",
+        "captured_dimensions": [
+          1180,
+          757
+        ],
+        "sha256": "1846b2673110d2dcf53d8ef8ebb1bd66f6aba38d8cb702d279affa7a5294f45d"
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "上游MDX错误复用task-management-dashboard.webp/mp4，不使用该错配缩略图。",
+        "本文件是2026-10-11官网示例的首屏截图，非官方发布的静态缩略图；包含演示数据。",
+        "未执行安装命令或仓库代码；仅查看公开官网预览。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/portfolio-dashboard/portfolio-dashboard.mdx",
+      "capture_url": "https://ui.watermelon.sh/preview/dashboard/portfolio-dashboard?reload=0"
+    },
+    {
+      "id": "watermelon-tallie-dashboard",
+      "image_url": "https://assets.watermelon.sh/components/tallie-dashboard-thumbnail.png",
+      "source_page": "https://ui.watermelon.sh/dashboard/tallie-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Tallie Dashboard 官方预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交MDX image字段与该资源slug匹配。",
+        "visual_check": "已在云端浏览器逐张打开官方远程图片并目视核验品牌和业务内容。",
+        "observed_content": "Tallie Three-Way Match Audit，审计指标和交易复核表。",
+        "rendered_dimensions": [
+          3600,
+          2025
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/tallie-dashboard/tallie-dashboard.mdx"
+    },
+    {
+      "id": "watermelon-web3-dashboard",
+      "image_url": "references/previews/watermelon-web3-dashboard.jpg",
+      "source_page": "https://ui.watermelon.sh/dashboard/web3-dashboard",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-page-capture",
+      "caption": "官方web3-dashboard路由的DeFi示例 · 官网实时预览截图",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "visual_check": "已打开官方详情页，核实内嵌preview URL，再直接打开该URL并在加载完成后截图。",
+        "observed_content": "净资产、供应/借款、Net APY、质押/金库菜单与Portfolio Performance。",
+        "captured_dimensions": [
+          1180,
+          757
+        ],
+        "sha256": "95d5825ccc9f40c2e58a3a1b42818b9a38ab582794da5d29c452e8e8ba5e613c"
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "上游MDX错误复用task-management-dashboard.webp/mp4，不使用该错配缩略图。",
+        "本文件是2026-10-11官网示例的首屏截图，非官方发布的静态缩略图；包含演示数据。",
+        "未执行安装命令或仓库代码；仅查看公开官网预览。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/dashboards/web3-dashboard/web3-dashboard.mdx",
+      "capture_url": "https://ui.watermelon.sh/preview/dashboard/web3-dashboard?reload=0"
+    },
+    {
+      "id": "watermelon-landing-01",
+      "image_url": "https://assets.watermelon.sh/templates/landing-01.avif",
+      "source_page": "https://ui.watermelon.sh/template/landing-01",
+      "attribution": "官方素材 / Watermelon Platform Contributors",
+      "preview_kind": "official-exact",
+      "caption": "Landing Page 01 官方模板首屏预览",
+      "verification": {
+        "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+        "checked_on": "2026-10-11",
+        "source_mapping": "固定提交landing-01.mdx直接指定该图。",
+        "visual_check": "已打开原图；黑色网格背景、荧光绿重点、Beautiful Components Built for builders。",
+        "rendered_dimensions": [
+          3390,
+          2030
+        ],
+        "loaded": true
+      },
+      "limitations": [
+        "仓库MIT许可不自动覆盖第三方图片、字体、商标或被参考设计的独立权利。",
+        "建议仅远程嵌入并保留来源；未重新分发该远程原图。"
+      ],
+      "source_metadata": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/templates/landing-01/landing-01.mdx"
+    }
+  ],
+  "description_corrections": [],
+  "general_findings": [
+    "现有Watermelon portfolio描述已明确为保险保单，Web3已明确为DeFi；无需修改id或业务摘要。",
+    "Dashi官方theme名字与当前四格图的直观主色可能不同，保留上游身份，勿把bespoke配置摘要当成截图颜色的承诺。"
+  ]
+}
