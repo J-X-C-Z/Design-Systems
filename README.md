@@ -21,6 +21,7 @@
 ## 独立重审候选
 
 - **实验拼贴候选**：[说明与研究入口](candidates/experimental-collage/README.md) · [四页可编辑 HTML](candidates/experimental-collage/index.html) · [浏览器记录与未验收项](candidates/experimental-collage/BROWSER_QA.md)。仅归档，待用户重判；原实验拼贴样例的“差”标签及二级适配状态保持，不替换原样例、不计为新语言，也不标为正式通过。
+- **世纪中期现代候选**：[使用与边界](candidates/midcentury-modern/IMPLEMENTATION.md) · [四页可编辑 HTML](candidates/midcentury-modern/index.html) · [研究复核](candidates/midcentury-modern/RESEARCH-REVIEW.md) · [浏览器记录与未验收项](candidates/midcentury-modern/QA-RESULTS.md)。仅归档，待用户重判；原世纪中期现代样例的“差”标签及二级适配状态保持，不替换原样例、不计为新语言，不据有限验收升级成熟度或评为好。
 
 ## 风格总览网页
 
