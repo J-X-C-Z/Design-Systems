@@ -1,0 +1,24 @@
+/* Flat Vector: opaque geometric colour fields, no gradient/glass/3D shadow. */
+.fvx-actions{--fvx-blue:#2b2bff;--fvx-coral:#ff5a4e;--fvx-yellow:#ffc62b;--fvx-mint:#2ee6a8;--fvx-cream:#fff6e9;--fvx-ink:#151433;--fvx-surface:#fff6e9;--fvx-text:#151433;--fvx-focus:#2b2bff;--fvx-quiet:#f1e3cc;color:var(--fvx-text);background:var(--fvx-surface);font-family:ui-rounded,system-ui,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.5;isolation:isolate;overflow-wrap:anywhere}
+.fvx-actions[data-mode=dark]{--fvx-surface:#151433;--fvx-text:#fff6e9;--fvx-focus:#2ee6a8;--fvx-quiet:#363357;color-scheme:dark}
+.fvx-actions *,.fvx-actions *::before,.fvx-actions *::after{box-sizing:border-box}
+.fvx-actions .fvx-pair{display:flex;flex-wrap:wrap;gap:16px;align-items:center;min-width:0;max-width:100%}
+.fvx-actions .fvx-button{appearance:none;min-height:44px;min-width:44px;max-width:100%;padding:10px 18px;border:2px solid transparent;border-radius:999px;background:var(--fvx-blue);color:var(--fvx-cream);font:inherit;font-weight:700;cursor:pointer;touch-action:manipulation;box-shadow:none;outline-offset:4px;white-space:normal;vertical-align:middle}
+.fvx-actions .fvx-face{display:inline-flex;align-items:center;justify-content:center;gap:9px;max-width:100%;min-width:0;transform-origin:center}
+.fvx-actions .fvx-label{min-width:0;overflow-wrap:anywhere}
+.fvx-actions .fvx-face>svg{flex:none;vertical-align:middle}
+.fvx-actions .fvx-outline{background:transparent;color:var(--fvx-text);border-color:currentColor}
+.fvx-actions .fvx-secondary{background:var(--fvx-quiet);color:var(--fvx-text)}
+.fvx-actions .fvx-button:focus-visible{outline:3px solid var(--fvx-focus)}
+.fvx-actions .fvx-button:disabled,.fvx-actions .fvx-button[aria-disabled=true]{cursor:not-allowed;opacity:.48}
+.fvx-actions .fvx-button:not(.fvx-explore):not(:disabled):not([aria-disabled=true]):active .fvx-face{transform:scale(.96,1.04)}
+.fvx-actions .fvx-pulse-a{animation:fvx-pop-a 380ms cubic-bezier(.34,1.56,.64,1) both}
+.fvx-actions .fvx-pulse-b{animation:fvx-pop-b 380ms cubic-bezier(.34,1.56,.64,1) both}
+.fvx-actions .fvx-explore .fvx-arrow{transition:transform 200ms ease-out}
+.fvx-actions .fvx-explore:not(:disabled):not([aria-disabled=true]):is(:hover,:focus-visible) .fvx-arrow{transform:translateX(4px) scale(1.1)}
+@keyframes fvx-pop-a{0%,100%{transform:scale(1)}18%{transform:scale(1.07,.93)}50%{transform:scale(.95,1.06)}}
+.fvx-actions[data-motion=reduce] .fvx-face,.fvx-actions[data-motion=reduce] .fvx-arrow{animation:none!important;transition:none!important;transform:none!important}
+@media(prefers-reduced-motion:reduce){.fvx-actions .fvx-face,.fvx-actions .fvx-arrow{animation:none!important;transition:none!important;transform:none!important}}
+@media(forced-colors:active){.fvx-actions .fvx-button{border-color:ButtonText;color:ButtonText;background:ButtonFace}.fvx-actions .fvx-button:disabled{opacity:1;color:GrayText;border-color:GrayText}}
+
+@keyframes fvx-pop-b{0%,100%{transform:scale(1)}18%{transform:scale(1.07,.93)}50%{transform:scale(.95,1.06)}}

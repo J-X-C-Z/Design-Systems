@@ -1,0 +1,50 @@
+/* Flat Vector: opaque solid geometry. No gradients, blur, glass, textures or 3D shadows. */
+.flatvector-selection{--fv-blue:#2b2bff;--fv-coral:#ff5a4e;--fv-yellow:#ffc62b;--fv-mint:#2ee6a8;--fv-cream:#fff6e9;--fv-ink:#151433;--fv-surface:#fff6e9;--fv-text:#151433;--fv-quiet:#e4dacb;--fv-focus:#2b2bff;background:var(--fv-surface);color:var(--fv-text);font-family:ui-rounded,system-ui,"PingFang SC",sans-serif;line-height:1.5;isolation:isolate;color-scheme:light}
+.flatvector-selection[data-mode=dark]{--fv-surface:#151433;--fv-text:#fff6e9;--fv-quiet:#4c4967;--fv-focus:#2ee6a8;color-scheme:dark}
+.flatvector-selection .flatvector-field{display:flex;align-items:center;gap:12px;min-width:0;--fv-tone:var(--fv-blue)}
+.flatvector-selection .flatvector-hit{position:relative;display:inline-grid;place-items:center;width:56px;height:48px;flex:0 0 56px;border-radius:12px}
+.flatvector-selection .flatvector-hit input{position:absolute;inset:0;margin:0;width:100%;height:100%;opacity:0;z-index:2;cursor:pointer}
+.flatvector-selection .flatvector-checkbox-art{width:40px;height:40px;overflow:visible;pointer-events:none}
+/* Dashed unchecked outline is retained because it is the exact checkbox-03 identity. */
+.flatvector-selection .flatvector-box{fill:var(--fv-quiet);stroke:var(--fv-text);stroke-width:1.5;stroke-dasharray:4 3}
+.flatvector-selection .flatvector-field[data-state=checked] .flatvector-box,.flatvector-selection .flatvector-field[data-state=mixed] .flatvector-box{fill:var(--fv-blue);stroke:none}
+.flatvector-selection .flatvector-mark{fill:var(--fv-cream);transform-origin:20px 20px}
+@keyframes flatvector-pop{0%{transform:scale(.9,1.1)}35%{transform:scale(1.1,.9)}65%{transform:scale(.96,1.04)}100%{transform:scale(1)}}
+.flatvector-selection .flatvector-hit:has(input:focus-visible){outline:3px solid var(--fv-focus);outline-offset:3px}
+.flatvector-selection .flatvector-hit:has(input[aria-invalid=true]){outline:2px dashed var(--fv-coral);outline-offset:1px}
+.flatvector-selection .flatvector-hit:has(input:disabled){opacity:.45}.flatvector-selection .flatvector-hit input:disabled{cursor:not-allowed}
+.flatvector-selection .flatvector-copy{min-width:0}.flatvector-selection .flatvector-label{font-size:15px;font-weight:700;cursor:pointer;overflow-wrap:anywhere}.flatvector-selection .flatvector-description{font-size:12px;margin:4px 0 0}
+.flatvector-selection .flatvector-switch03{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.flatvector-selection .flatvector-switch-art{position:relative;width:48px;height:28px;display:block;pointer-events:none}
+.flatvector-selection .flatvector-track{position:absolute;inset:0;background:var(--fv-quiet);border-radius:999px}
+.flatvector-selection .flatvector-field[data-state=checked] .flatvector-track{background:var(--fv-tone)}
+.flatvector-selection .flatvector-thumb{position:absolute;left:4px;top:4px;width:20px;height:20px;transition:transform 380ms cubic-bezier(.34,1.56,.64,1)}
+.flatvector-selection .flatvector-thumb-shape{display:grid;place-items:center;width:100%;height:100%;background:var(--fv-cream);border-radius:50%}
+.flatvector-selection .flatvector-thumb-shape>span{font:800 12px/16px system-ui,sans-serif;color:var(--fv-ink)}
+.flatvector-selection .flatvector-field[data-state=checked] .flatvector-thumb{transform:translateX(20px)}
+.flatvector-selection [data-tone=destructive]{--fv-tone:var(--fv-coral)}.flatvector-selection [data-tone=success]{--fv-tone:var(--fv-mint)}.flatvector-selection [data-tone=info]{--fv-tone:var(--fv-blue)}.flatvector-selection [data-tone=warning]{--fv-tone:var(--fv-yellow)}
+.flatvector-selection [data-size=sm] .flatvector-switch-art{width:36px;height:22px}
+.flatvector-selection [data-size=sm] .flatvector-thumb{width:14px;height:14px;left:4px;top:4px}
+.flatvector-selection [data-size=sm][data-state=checked] .flatvector-thumb{transform:translateX(14px)}
+.flatvector-selection [data-size=sm] .flatvector-thumb-shape>span{font-size:9px;line-height:12px}
+.flatvector-selection[data-motion=off] *,.flatvector-selection [data-motion=off] *{transition:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.flatvector-selection *{transition:none!important;animation:none!important}}
+@media(forced-colors:active){.flatvector-selection .flatvector-track{background:Canvas;border:1px solid ButtonText}.flatvector-selection .flatvector-field[data-state=checked] .flatvector-track{background:Highlight}.flatvector-selection .flatvector-thumb-shape{background:ButtonText}.flatvector-selection .flatvector-thumb-shape>span{color:Canvas}.flatvector-selection .flatvector-box{fill:Canvas;stroke:ButtonText}.flatvector-selection .flatvector-field[data-state=checked] .flatvector-box{fill:Highlight}.flatvector-selection .flatvector-mark{fill:HighlightText}}
+
+.flatvector-selection .flatvector-checkbox-art[data-feedback=true] .flatvector-mark,.flatvector-selection .flatvector-switch-art[data-feedback=true] .flatvector-thumb-shape{animation:flatvector-pop 380ms ease-out both}
+
+/* Flat solid construction: checked weekly tile and square switch. */
+.flatvector-selection{--fv-muted:#625c68}.flatvector-selection[data-mode=dark]{--fv-muted:#beb8ce}
+.flatvector-selection [data-catalog-id=checkbox-04] .flatvector-box{stroke:none}
+.flatvector-selection [data-catalog-id=checkbox-04][data-state=checked] .flatvector-label{text-decoration:line-through;color:var(--fv-muted);text-decoration-thickness:2px}
+.flatvector-selection [data-catalog-id=switch-02] .flatvector-track{border-radius:2px}
+.flatvector-selection [data-catalog-id=switch-02] .flatvector-thumb-shape{border-radius:2px}
+.flatvector-selection .weekly-block,.flatvector-selection .city-block{margin:20px 0;position:relative;background:var(--fv-yellow);color:var(--fv-ink);padding:20px;min-height:110px;display:grid;gap:18px;align-content:center;overflow:hidden}
+.flatvector-selection .weekly-block{border-radius:40px 4px 40px 4px}.flatvector-selection .weekly-block[data-complete=false]{background:var(--fv-quiet);color:var(--fv-text)}
+.flatvector-selection .weekly-block output,.flatvector-selection .city-block output{position:relative;font-weight:800;z-index:1}
+.flatvector-selection .weekly-block .task-shapes{display:flex;gap:8px;align-items:end;height:32px}.flatvector-selection .task-shapes i{display:block;background:var(--fv-blue);width:28px;height:28px;border-radius:50%}.flatvector-selection .task-shapes i:nth-child(2){background:var(--fv-coral);border-radius:0}.flatvector-selection .task-shapes i:nth-child(3){background:var(--fv-ink);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.flatvector-selection .weekly-block[data-complete=true] .task-shapes i:nth-child(2){border-radius:14px 14px 0 0}
+.flatvector-selection .city-block{background:var(--fv-mint);border-radius:4px 36px 4px 36px}
+.flatvector-selection .city-shapes{height:58px;display:flex;align-items:end;gap:10px}.flatvector-selection .city-shapes i{display:block;width:36px;height:18px;background:var(--fv-blue)}.flatvector-selection .city-shapes i:nth-child(2){height:44px;background:var(--fv-coral)}.flatvector-selection .city-shapes i:nth-child(3){height:30px;background:var(--fv-ink)}
+.flatvector-selection .city-block[data-enabled=false] .city-shapes{visibility:hidden}
+/* Preview changes remain immediate, leaving only the activated control as the moving hero. */

@@ -1,0 +1,21 @@
+/* Solid explainer tiles. Only the changed indicator makes a 380ms elastic turn. */
+.flatvector-editor-accordion{display:grid;gap:12px;color:var(--fv-text,#151433);font:inherit}
+.flatvector-editor-accordion-card{border:0;border-radius:16px;background:var(--fv-quiet,#e4dacb)}
+.flatvector-editor-accordion-card[data-state=open]{background:var(--fv-yellow,#ffc62b);color:var(--fv-ink,#151433)}
+.flatvector-editor-accordion-card>h3{margin:0;font:inherit}
+.flatvector-editor-accordion .flatvector-editor-accordion-trigger{width:100%;min-height:80px;display:grid;grid-template-columns:28px minmax(0,1fr) 48px;align-items:center;gap:12px;padding:16px;border:0;border-radius:16px;background:transparent;color:inherit;font:inherit;font-weight:800;text-align:left;cursor:pointer}
+.flatvector-editor-accordion .flatvector-editor-accordion-trigger:focus-visible{outline:3px solid var(--fv-focus,#2b2bff);outline-offset:4px}
+.flatvector-editor-accordion .flatvector-editor-accordion-trigger:disabled{opacity:.45;cursor:not-allowed}
+.flatvector-editor-accordion-number{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--fv-blue,#2b2bff);color:#fff;font:800 11px ui-monospace,monospace}
+.flatvector-editor-accordion-title{line-height:1.25;overflow-wrap:anywhere}
+.flatvector-editor-accordion-art{display:grid;place-items:center;width:48px;height:48px;position:relative;pointer-events:none}
+.flatvector-editor-accordion-axis{position:absolute;inset:0;border-radius:50%;background:var(--fv-mint,#2ee6a8)}
+.flatvector-editor-accordion-shape{display:block;width:24px;height:24px;position:relative;background:var(--fv-blue,#2b2bff);clip-path:polygon(0 0,100% 50%,0 100%);transform:rotate(0deg) scale(1,1);transform-origin:center;transition:transform 380ms cubic-bezier(.34,1.56,.64,1)}
+.flatvector-editor-accordion-card[data-state=open] .flatvector-editor-accordion-shape{transform:rotate(90deg) scale(1.1,.9)}
+.flatvector-editor-accordion-panel{padding:0 16px 20px 56px;line-height:1.6;overflow-wrap:anywhere}
+.flatvector-editor-accordion-panel[hidden]{display:none}
+.flatvector-editor-accordion-panel a{color:inherit;text-decoration:underline}
+.flatvector-editor-accordion[data-motion=off] *,[data-motion=off] .flatvector-editor-accordion *{transition:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.flatvector-editor-accordion *{transition:none!important;animation:none!important}}
+@media(max-width:360px){.flatvector-editor-accordion .flatvector-editor-accordion-trigger{padding:12px;grid-template-columns:24px minmax(0,1fr) 40px;gap:8px}.flatvector-editor-accordion-panel{padding-left:44px}}
+@media(forced-colors:active){.flatvector-editor-accordion-card{outline:1px solid CanvasText}.flatvector-editor-accordion-shape{background:ButtonText}}

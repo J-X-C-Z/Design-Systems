@@ -1,0 +1,12 @@
+/* Flat colour plane. Native focus outline is accessibility feedback, not ornament. */
+.flatvector-editor-textarea{display:grid;gap:12px;max-width:384px;color:var(--fv-text,#151433);font:inherit}
+.flatvector-editor-textarea>label{font-size:14px;font-weight:800}
+.flatvector-editor-textarea textarea{display:block;box-sizing:border-box;width:100%;min-height:112px;padding:16px;resize:vertical;border:0;border-radius:2px;background:var(--fv-quiet,#e4dacb);color:var(--fv-text,#151433);font:inherit;line-height:1.6;outline:none}
+.flatvector-editor-textarea textarea:focus-visible{outline:2px solid var(--fv-focus,#2b2bff);outline-offset:3px}
+.flatvector-editor-textarea textarea::placeholder{color:inherit;opacity:.65}
+.flatvector-editor-textarea textarea:disabled{opacity:.45;cursor:not-allowed}
+.flatvector-editor-textarea textarea[aria-invalid=true]{outline:2px solid var(--fv-coral,#ff5a4e)}
+.flatvector-editor-help{font-size:12px;line-height:1.5;margin:0}
+.flatvector-editor-error{margin:0;padding:8px 12px;background:var(--fv-coral,#ff5a4e);color:var(--fv-ink,#151433);font-size:12px}
+.flatvector-editor-textarea[data-motion=off] *,[data-motion=off] .flatvector-editor-textarea *{transition:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.flatvector-editor-textarea *{transition:none!important;animation:none!important}}

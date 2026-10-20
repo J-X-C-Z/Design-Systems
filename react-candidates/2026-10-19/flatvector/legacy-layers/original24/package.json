@@ -1,0 +1,30 @@
+{
+  "name": "@studio/flat-vector-react",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independently composed React flat-vector design language, 24 canonical IDs.",
+  "main": "src/index.jsx",
+  "sideEffects": [
+    "src/styles/flat-vector.css",
+    "src/entry.jsx"
+  ],
+  "scripts": {
+    "build": "python3 build.py --integrate",
+    "test": "python3 tests/browser.py",
+    "check": "python3 tools/check.py"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=18",
+    "python": ">=3.10"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.jsx",
+    "./bridge": "./src/entry.jsx",
+    "./style.css": "./src/styles/flat-vector.css"
+  }
+}
