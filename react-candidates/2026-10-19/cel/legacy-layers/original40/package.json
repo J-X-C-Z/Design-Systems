@@ -1,0 +1,8 @@
+{
+  "name":"@studio/cel-boil-react","version":"1.0.0","private":true,"type":"module",
+  "description":"Independent Cel Boil React extension; the seven-theme baseline is not replaced.",
+  "scripts":{"build":"node tools/build.cjs","preview":"python3 tools/serve.py","test:static":"node tests/static.cjs","test:browser":"python3 tests/browser.py"},
+  "exports":{".":"./src/index.jsx","./styles.css":"./src/styles.css","./tokens":"./src/tokens.json"},
+  "peerDependencies":{"react":">=18.2.0 <20","react-dom":">=18.2.0 <20"},
+  "engines":{"node":">=18"}
+}

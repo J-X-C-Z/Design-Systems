@@ -1,0 +1,32 @@
+.celx-selection{--celx-paper:#f4e9d0;--celx-sheet:#fff6e2;--celx-ink:#1c1613;--celx-muted:#6e5949;--celx-red:#e5402b;--celx-yellow:#ffc425;--celx-accent-ink:#160e0b;background:var(--celx-paper);color:var(--celx-ink);font:16px/1.6 system-ui,'PingFang SC','Microsoft YaHei',sans-serif;color-scheme:light;isolation:isolate;position:relative}
+.celx-selection[data-mode=dark]{--celx-paper:#211c18;--celx-sheet:#2b241f;--celx-ink:#f5ead2;--celx-muted:#c3ad93;--celx-red:#ff765d;--celx-yellow:#ffcb4d;color-scheme:dark}
+.celx-selection::before{content:'';position:absolute;inset:0;background-image:radial-gradient(var(--celx-ink) .5px,transparent .8px);background-size:9px 11px;opacity:.10;pointer-events:none;z-index:-1}
+.celx-selection *,.celx-selection *::before,.celx-selection *::after{box-sizing:border-box}
+.celx-selection .celx-field{max-width:24rem;min-width:0}
+.celx-selection .celx-control{display:flex;align-items:flex-start;gap:12px;min-height:44px;min-width:0;cursor:pointer}
+.celx-selection .celx-copy{min-width:0;overflow-wrap:anywhere;padding-top:9px}
+.celx-selection .celx-label{font-weight:600;display:block}.celx-selection .celx-description{font-size:13px;display:block;color:var(--celx-muted)}
+.celx-selection .celx-hit{position:relative;display:block;width:44px;height:44px;flex:0 0 44px}
+.celx-selection .celx-hit input{position:absolute;inset:0;margin:0;width:100%;height:100%;opacity:0;cursor:inherit;z-index:1}
+.celx-selection .celx-art{position:absolute;pointer-events:none;display:block;left:14px;top:14px;width:16px;height:16px;background:var(--celx-sheet);border-radius:3px 4px 2px 4px;color:var(--celx-ink)}
+.celx-selection .celx-hit:has(input:focus-visible){outline:3px solid var(--celx-ink);outline-offset:2px;border-radius:5px}
+.celx-selection .celx-hit input:focus-visible+.celx-art{outline:3px solid var(--celx-ink);outline-offset:6px}
+.celx-selection .celx-hit:has(input:focus-visible) .celx-art{outline:none}
+.celx-selection .celx-ink{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);overflow:visible;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round}
+.celx-selection .celx-line{opacity:0}.celx-selection .celx-line-0{opacity:1}
+.celx-selection .celx-check{width:16px;height:16px;fill:none;stroke:var(--celx-accent-ink);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:0}
+.celx-selection .celx-checkbox[data-state=checked] .celx-art{background:var(--celx-yellow);color:var(--celx-accent-ink)}
+.celx-selection .celx-checkbox[data-state=checked] .celx-check{opacity:1}
+.celx-selection .celx-switch .celx-art{width:40px;height:24px;left:2px;top:10px;background:var(--celx-yellow);border-radius:12px 11px 13px 10px;color:var(--celx-accent-ink)}
+.celx-selection .celx-switch[data-state=checked] .celx-art{background:var(--celx-red)}
+.celx-selection .celx-thumb{position:absolute;top:2px;left:1px;width:20px;height:20px;display:grid;place-items:center;background:#fff6e2;color:#1c1613;border:1.5px solid #1c1613;border-radius:49% 44% 48% 45%;transform:translateX(0);font-size:10px;line-height:1}
+.celx-selection .celx-switch[data-state=checked] .celx-thumb{transform:translateX(18px)}
+.celx-selection [dir=rtl] .celx-switch .celx-thumb,.celx-selection[dir=rtl] .celx-switch .celx-thumb{left:auto;right:1px}
+.celx-selection [dir=rtl] .celx-switch[data-state=checked] .celx-thumb,.celx-selection[dir=rtl] .celx-switch[data-state=checked] .celx-thumb{transform:translateX(-18px)}
+.celx-selection .celx-field[data-disabled=true]{opacity:.55}.celx-selection .celx-field[data-disabled=true] .celx-control{cursor:not-allowed}
+/* Four deterministic drawn contours, 12 exposures/second. Only the ink moves. */
+.celx-selection[data-motion=on] .celx-field:not([data-disabled=true]) .celx-control:is(:hover,:focus-within) .celx-line{animation:celx-exposure .333333s steps(1,end) infinite}
+.celx-selection .celx-line-1{animation-delay:-.25s!important}.celx-selection .celx-line-2{animation-delay:-.166667s!important}.celx-selection .celx-line-3{animation-delay:-.083333s!important}
+@keyframes celx-exposure{0%,24.999%{opacity:1}25%,100%{opacity:0}}
+.celx-selection[data-motion=off] *{animation:none!important;transition:none!important}.celx-selection[data-motion=off] .celx-line{opacity:0!important}.celx-selection[data-motion=off] .celx-line-0{opacity:1!important}
+@media(prefers-reduced-motion:reduce){.celx-selection *{animation:none!important;transition:none!important}.celx-selection .celx-line{opacity:0!important}.celx-selection .celx-line-0{opacity:1!important}}

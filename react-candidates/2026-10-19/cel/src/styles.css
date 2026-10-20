@@ -1,0 +1,56 @@
+.cel5-scope{--cel5-paper:#f4e9d0;--cel5-sheet:#fff6e2;--cel5-ink:#1c1613;--cel5-muted:#6e5949;--cel5-focus:#1c1613;--cel5-red:#e5402b;--cel5-yellow:#ffc425;color:var(--cel5-ink);background:var(--cel5-paper);font:16px/1.6 system-ui,'PingFang SC',sans-serif;color-scheme:light;isolation:isolate;position:relative}
+.cel5-scope[data-cel5-mode=dark]{--cel5-paper:#211c18;--cel5-sheet:#2b241f;--cel5-ink:#f5ead2;--cel5-muted:#c3ad93;--cel5-focus:#ffcb4d;color-scheme:dark}
+.cel5-scope::before{content:'';position:absolute;inset:0;background:radial-gradient(#1c1613 .5px,transparent .8px) 0 0/9px 11px;opacity:.12;mix-blend-mode:multiply;pointer-events:none;z-index:-1}
+.cel5-field{display:flex;align-items:center;gap:8px;min-width:0;color:var(--cel5-ink,#1c1613);font:inherit;--cel5-accent:#147ea7;--cel5-wash:#147ea71a}
+.cel5-field,.cel5-field *{box-sizing:border-box}
+.cel5-checkbox05-group,.cel5-switch05-group{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.cel5-hit{position:relative;display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px}
+.cel5-hit input{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:pointer;z-index:1}
+.cel5-hit:has(input:focus-visible){outline:3px solid var(--cel5-focus,#1c1613);outline-offset:2px;border-radius:6px}
+.cel5-hit input:focus-visible+svg{outline:3px solid var(--cel5-focus,#1c1613);outline-offset:4px}
+.cel5-hit:has(input:focus-visible) input+svg{outline:none}
+.cel5-field:has(input:disabled){opacity:.5}.cel5-field input:disabled{cursor:not-allowed}
+.cel5-field input[readonly]{cursor:default}
+.cel5-checkbox-art,.cel5-switch-art{overflow:visible;pointer-events:none}
+.cel5-box-fill{fill:var(--cel5-sheet,#fff6e2)}.cel5-box-line{fill:none;stroke:var(--cel5-ink,#1c1613);stroke-width:1.2;stroke-linejoin:round}
+.cel5-field[data-cel5-state=checked] .cel5-box-fill,.cel5-field[data-cel5-state=mixed] .cel5-box-fill{fill:var(--cel5-accent)}
+.cel5-mark{fill:none;stroke:#fff6e2;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cel5-field[data-cel5-tone=destructive]{--cel5-accent:#c63b2b;--cel5-wash:#c63b2b1a}
+.cel5-field[data-cel5-tone=success]{--cel5-accent:#267b67;--cel5-wash:#267b671a}
+.cel5-field[data-cel5-tone=info]{--cel5-accent:#326da6;--cel5-wash:#326da61a}
+.cel5-field[data-cel5-tone=warning]{--cel5-accent:#987414;--cel5-wash:#e5b32b33}
+.cel5-track{fill:var(--cel5-sheet,#fff6e2);stroke:var(--cel5-muted,#6e5949);stroke-width:1.2}
+.cel5-thumb-fill{fill:var(--cel5-sheet,#fff6e2)}.cel5-thumb-line{fill:none;stroke:var(--cel5-muted,#6e5949);stroke-width:1}
+.cel5-field[data-cel5-state=checked] .cel5-track{fill:var(--cel5-wash);stroke:var(--cel5-accent)}
+.cel5-field[data-cel5-state=checked] .cel5-thumb-fill{fill:var(--cel5-accent)}
+.cel5-field[data-cel5-state=checked] .cel5-thumb-line{stroke:var(--cel5-sheet,#fff6e2)}
+.cel5-scope[data-cel5-mode=dark] .cel5-field{--cel5-accent:#75c5dc;--cel5-wash:#75c5dc33}
+.cel5-scope[data-cel5-mode=dark] [data-cel5-tone=destructive]{--cel5-accent:#ff765d;--cel5-wash:#ff765d33}
+.cel5-scope[data-cel5-mode=dark] [data-cel5-tone=success]{--cel5-accent:#80c7a4;--cel5-wash:#80c7a433}
+.cel5-scope[data-cel5-mode=dark] [data-cel5-tone=info]{--cel5-accent:#8bb8e0;--cel5-wash:#8bb8e033}
+.cel5-scope[data-cel5-mode=dark] [data-cel5-tone=warning]{--cel5-accent:#ffcb4d;--cel5-wash:#ffcb4d33}
+.cel5-scope[data-cel5-mode=dark] .cel5-mark{stroke:#1c1613}
+.cel5-field:dir(rtl) .cel5-direction{transform:translateX(100%) scaleX(-1);transform-box:view-box}
+.cel5-copy{min-width:0;max-width:24rem;overflow-wrap:anywhere}.cel5-label{font-weight:600;cursor:pointer}.cel5-description{font-size:13px;color:var(--cel5-muted,#6e5949);margin:2px 0}
+.cel5-fx{position:absolute;pointer-events:none;width:56px;height:44px;left:-6px;top:-9px;overflow:visible}
+.cel5-smear{fill:#ffc425;stroke:#1c1613;stroke-width:1;opacity:.7}.cel5-sparks{stroke:#e5402b;stroke-width:2;fill:none;stroke-linecap:round}.cel5-puff{stroke:var(--cel5-ink,#1c1613);stroke-width:1.2;fill:none;stroke-linecap:round}
+.cel5-scope[data-cel5-motion=off] .cel5-fx{display:none}
+@media(prefers-reduced-motion:reduce){.cel5-fx{display:none}}
+@media(forced-colors:active){.cel5-hit{forced-color-adjust:auto}.cel5-box-line,.cel5-track,.cel5-thumb-line{stroke:CanvasText}.cel5-mark{stroke:Canvas}.cel5-field[data-cel5-state=checked] .cel5-box-fill,.cel5-field[data-cel5-state=mixed] .cel5-box-fill,.cel5-field[data-cel5-state=checked] .cel5-thumb-fill{fill:Highlight}}
+
+/* Badge bodies are separate inked cels; native hit region covers the complete label. */
+.cel6-snacks{display:flex;flex-wrap:wrap;gap:10px;align-items:start}
+.cel6-snack{position:relative;min-height:44px;min-width:74px;padding:10px 14px;border-radius:9px 7px 10px 6px;background:var(--cel5-sheet);border:1.4px solid var(--cel5-ink)}
+.cel6-snack .cel5-hit{position:absolute;inset:0;width:100%;height:100%}
+.cel6-snack .cel5-hit input{z-index:2}
+.cel6-snack .cel5-checkbox-art{position:absolute;left:8px;top:50%;transform:translateY(-50%)}
+.cel6-snack[data-cel5-state=unchecked] .cel5-checkbox-art{opacity:0}
+.cel6-snack .cel5-copy{padding:0}.cel6-snack[data-cel5-state=checked] .cel5-copy{padding-left:20px}
+.cel6-snack .cel5-label{font-size:14px;cursor:pointer}.cel6-snack:has(input:focus-visible){outline:3px solid var(--cel5-focus);outline-offset:3px}
+.cel6-snack .cel5-fx{left:0;top:4px}
+.cel6-mini-track{fill:var(--cel5-muted);stroke:none}.cel5-field[data-catalog-id=switch-06][data-cel5-state=checked] .cel6-mini-track{fill:var(--cel5-accent)}
+.cel6-mini-fill{fill:var(--cel5-sheet);stroke:var(--cel5-muted);stroke-width:1}
+.cel5-field[dir=rtl] .cel6-mini-art .cel5-direction{transform:translateX(100%) scaleX(-1);transform-box:view-box}
+.cel6-fieldnote{border:1.5px solid var(--cel5-ink);border-radius:2% 1% 3% 1%;padding:16px;margin:20px 0;background:var(--cel5-sheet)}
+.cel6-platter{display:flex;gap:18px;min-height:70px;align-items:center}.cel6-platter svg{width:58px;height:58px;overflow:visible}.cel6-platter [data-picked=false]{opacity:.25}
+@media(forced-colors:active){.cel6-mini-track{fill:ButtonText}.cel6-mini-fill{fill:Canvas;stroke:ButtonText}}
