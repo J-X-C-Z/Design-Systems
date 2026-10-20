@@ -1,0 +1,76 @@
+{
+  "accordion-08": [
+    {
+      "value": "item-1",
+      "title": "Why do students struggle to stay on track?",
+      "subtitle": "Learning Journey",
+      "content": "Students usually lose momentum when lessons, deadlines, and progress signals are scattered across too many places. A stronger learning experience makes the next step visible and keeps milestones easy to review.",
+      "icon": "graduation-cap"
+    },
+    {
+      "value": "item-2",
+      "title": "How should course materials be organized?",
+      "subtitle": "Curriculum Structure",
+      "content": "Course content works better when readings, assignments, and supporting resources are grouped by topic instead of being added as a long list. Clear structure helps learners spend more time studying and less time searching.",
+      "icon": "library-big"
+    },
+    {
+      "value": "item-3",
+      "title": "What improves collaboration in cohort programs?",
+      "subtitle": "Community Experience",
+      "content": "Cohort learning becomes stronger when discussion spaces, peer feedback, and live session notes are connected to the same workflow. Students engage more when collaboration feels like part of the course instead of an extra step.",
+      "icon": "users"
+    }
+  ],
+  "accordion-09": [
+    {
+      "value": "item-1",
+      "title": "Why are property listings going stale so quickly?",
+      "content": "Listings usually become outdated when status changes, pricing updates, and agent notes are managed in separate places. A stronger real estate workflow keeps availability, media, and listing metadata synced across every channel."
+    },
+    {
+      "value": "item-2",
+      "title": "How can brokers reduce friction during inquiry handoff?",
+      "content": "Lead handoff often breaks when inquiry details, preferred move-in dates, and follow-up history are incomplete. A better handoff flow gives every broker the right context before the first conversation starts."
+    },
+    {
+      "value": "item-3",
+      "title": "What makes scheduling property visits harder than it should be?",
+      "content": "Scheduling gets messy when agent calendars, tenant availability, and buyer interest are not aligned in one place. Clearer availability windows and confirmation updates help visits feel coordinated instead of manual."
+    }
+  ],
+  "accordion-10": [
+    {
+      "value": "item-1",
+      "title": "Why do itinerary changes create so much confusion?",
+      "content": "Travel plans usually break down when flight updates, hotel changes, and local transfers are shown in different places. A better trip experience keeps every change in one timeline so travelers understand what changed and what action is needed."
+    },
+    {
+      "value": "item-2",
+      "title": "How can booking support feel less reactive?",
+      "content": "Support works better when travelers can see booking status, policy details, and next-step guidance before they contact an agent. That context reduces repeat questions and helps teams focus on the cases that actually need intervention."
+    },
+    {
+      "value": "item-3",
+      "title": "What makes multi-city planning harder than expected?",
+      "content": "Multi-city trips become difficult when reservations, check-in windows, and local logistics are managed separately. Stronger coordination tools help people compare timing, spot conflicts, and move through the journey with less friction."
+    }
+  ],
+  "accordion-11": [
+    {
+      "value": "item-1",
+      "title": "Why do reservation updates create guest confusion?",
+      "content": "Hospitality systems often separate booking details, upgrade notes, and late arrival changes across multiple tools. A clearer reservation flow helps guests understand what changed before they arrive at the property."
+    },
+    {
+      "value": "item-2",
+      "title": "How can hotel staff handle requests more efficiently?",
+      "content": "Service requests move faster when housekeeping, concierge, and front desk teams share the same status view. That visibility reduces repeated check-ins and helps staff resolve requests without extra handoff friction."
+    },
+    {
+      "value": "item-3",
+      "title": "What causes delays during check-in peaks?",
+      "content": "Check-in bottlenecks usually happen when identity checks, payment confirmation, and room readiness are not aligned in one flow. Better pre-arrival coordination helps staff shorten wait times and reduce lobby congestion."
+    }
+  ]
+}

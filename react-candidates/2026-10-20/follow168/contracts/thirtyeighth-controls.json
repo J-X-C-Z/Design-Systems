@@ -1,0 +1,121 @@
+{
+  "version": "0.38.0-candidate.1",
+  "phase": "Declared before implementation; actual outcomes recorded separately in CURRENT-VERIFICATION.json",
+  "ids": {
+    "radio-group-11": {
+      "export": "RadioGroup11",
+      "values": [
+        "1",
+        "2"
+      ],
+      "default": "1",
+      "labels": [
+        "Basic",
+        "Premium"
+      ],
+      "prices": [
+        "Free",
+        "$5.00"
+      ],
+      "descriptions": [
+        "Get 1 project with 1 teams members.",
+        "Get 5 projects with 5 team members."
+      ],
+      "identity": "Two full-width max384px text cards,12px padding,6px corners,8px gap, subtle shadow. Native inputs visually clipped but focusable; full label activation. Visible exact titles name each radio, price/description separately described. Preserve original wording including Basic grammar. No visible circle."
+    },
+    "radio-group-12": {
+      "export": "RadioGroup12",
+      "values": [
+        "starter",
+        "pro"
+      ],
+      "default": "starter",
+      "labels": [
+        "Starter",
+        "Pro"
+      ],
+      "descriptions": [
+        "Great for personal use and small tasks.",
+        "Built for teams with advanced features."
+      ],
+      "identity": "Two centered icon cards, max200px each within max384px group. User/crown illustrative local SVGs,20px real radio BELOW content, explicit12px adapted mark.16px padding,12px gap,8px corners; one-column narrow/two-column at640px. Original svg selector versus span indicator discrepancy is documented size-intent adaptation."
+    },
+    "radio-group-13": {
+      "export": "RadioGroup13",
+      "values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "default": "1",
+      "labels": [
+        "Mobile",
+        "Tablet",
+        "Laptop",
+        "Desktop",
+        "Hybrid"
+      ],
+      "fixedDisabled": [
+        "2"
+      ],
+      "legend": "Select Device:",
+      "identity": "Native fieldset/legend and three-column device cards with 20px local outline device SVGs, visually hidden focusable radio,12px8px padding,6px corners and8px gap. Tablet is always disabled and cannot be enabled through itemProps; explicit parent value2 remains allowed and visibly checked but excluded from keyboard/focus eligibility and native submission. Visible names replace source generic device-radio-N."
+    },
+    "switch-19": {
+      "export": "Switch19",
+      "defaultChecked": true,
+      "label": "Auto sync",
+      "descriptionWhenChecked": "Changes sync instantly",
+      "descriptionWhenUnchecked": "Manual updates only",
+      "liveWhenChecked": "Auto sync is enabled",
+      "liveWhenUnchecked": "Auto sync is disabled",
+      "identity": "Rounded12px muted soft card, min256px intent with narrow-screen safe max width,16px horizontal/12px vertical padding,24px gap and distinct inset/drop shadow. Linked real native switch on right; dynamic text remains left; separate screen-reader-only aria-live polite state. No actual sync or settings side effect."
+    }
+  },
+  "radioState": {
+    "ownership": "Exact union value/defaultValue|null are exclusive; controlled owner authoritative; release preserves last committed owner. Unknown values throw. Mount default remains stable.",
+    "cancellation": "Structured select/keyboard/reset details; false/details.cancel/event.preventDefault veto. Capture epoch before user handlers; owner/config/unmount invalidates stale work; logical accepted state orders same-task requests. Restore shared native/synthetic event method descriptors.",
+    "forms": "Actual native labels/name/form/required/disabled; live final form association after reset dispatch, controlled restore, cancel and newly mounted/replaced owner protected. All defaultChecked writes before all checked.",
+    "keyboard": "Inherit repaired36 directional navigation/RTL/orientation/loop and focus veto; nonmoving edge arrow no activation; Home/End focus only; Space one real click; Enter suppresses submit; native Tab remains.",
+    "disabledFixed": "13 Tablet disabled is a source invariant, not caller-overridable. Fixed disabled still allowed as an explicit owner value but never pointer/keyboard selectable or native-submitted."
+  },
+  "switchState": {
+    "ownership": "checked/defaultChecked mutually exclusive booleans; default true. Controlled refusal keeps all text/ARIA/native checked/FormData aligned; release uses last committed checked. Native form reset restores mount default only when uncontrolled; owner is authoritative.",
+    "events": "onCheckedChange boolean plus id/reason/previousChecked/input/event/cancel. Reasons select,keyboard,reset. Return false, details.cancel or proposal preventDefault cancels. Caller native onClick/onInput/onChange remain native, not semantic substitutes. Owner captured before user callbacks, disabled/readOnly/fieldset and availability/unmount guard queued work.",
+    "keyboard": "Space performs one cancellable native click and suppresses default duplicate; Enter suppresses implicit submit; directional keys do nothing; Tab native. Explicit external focus is never stolen.",
+    "form": "Native checkbox role switch, standard name/value/form/required and actual FormData; reset live form membership/cancel/owner/mount/key-replacement model is required, including same-task reset/click order.",
+    "refs": "Forwarded ref points to native input, rootProps for wrapper; React19 cleanup and unique useId labels/descriptions; caller aria-describedby merged, visible default label unless explicit aria-labelledby caller override.",
+    "text": "Description and polite hidden status reflect committed logical owner, never optimistic rejected proposal. Descriptive status is local UI only."
+  },
+  "accessibility": {
+    "names": "Visible Basic/Premium/Starter/Pro/device names. Fieldset Select Device legend labels the device group. Native labels remain clickable even when input clipped. Switch name Auto sync, description separate from live state.",
+    "focus": "Visible whole-card :focus-visible outline, forced-colors fallback. Do not use hidden/display:none for focusable radio. No full browser AT acceptance claim."
+  },
+  "style": {
+    "scope": "New38 scoped selectors and genuine provider data-mode light/dark plus retained dark aliases. Existing source styles untouched. Local outline SVG geometry explicitly differs from upstream react-icons filled artwork, retaining meaning and placement.",
+    "contrast": "Ordinary text>=4.5; essential indicators/boundaries/focus>=3 for authored static sRGB pairs. Decorative icons not a substitute for labels. Forced-colors and reduced-motion authored."
+  },
+  "preservation": "356 prior164 sources byte-identical;5 additive entry/registry/Studio changes;one authorized36 file with three independently evidenced native rollback, public capture-owner and dispatch-frozen reset association repairs. Frozen164 unchanged; no extra canonical ID credited.",
+  "limits": [
+    "Native inputs replace upstream Radix/BaseUI internals; official full equivalence not claimed.",
+    "Original prices/descriptions are illustrative, no enrollment/payment/device operation or sync service.",
+    "Light DOM form/availability; no shadow/portal/cross-document/arbitrary CSSOM/full browser Tab-order guarantee.",
+    "Source/type/SSR/JSDOM/static CSS evidence is distinct from browser/AT/formal acceptance, all0 until separately performed.",
+    "168 final reproducible chain must inherit164 explicit selected/focus/owner terminal-state adapter; original scripts and earlier observations remain documented."
+  ],
+  "accounting": {
+    "before": 164,
+    "after": 168,
+    "remaining": 681,
+    "newCanonicalIds": 4,
+    "nestedRadioOptions": 9,
+    "nestedOptionsAreAdditionalCanonicalIds": false,
+    "formalAccepted": 0
+  },
+  "backwardRepair": "Current168 only: shared36 native canceled-click checked/FormData restore and public root/item/label capture owner snapshot. Supported by independent actual164 16/16 native cancel failures and capture372 cases/138 failures; all localized minimal text transforms reverse to original SHA. Frozen164 unchanged. The actual164 reset128/16 counterexample also authorizes dispatch-frozen association in this same36 file.",
+  "eventBoundary": "Capture owner stamp/order at component root capture before own public root/item/label handlers. External ancestor/document/window capture establishes entry owner. A stopped event still queues post-default field reconciliation.",
+  "resetAssociation": "Observe reset at owning window capture; update association through remaining event-path phases and eventPhase-gated React commits, then freeze before post-return changes. Public form-only commits do not invalidate a dispatched reset; reset-specific ownership epoch still guards value/checked, controlled-mode and other configuration takeovers. External native listeners can block entry or directDOM association observation; separately documented limited paths are not counted as full native equivalence.",
+  "knownNotPassedBoundaries": "See KNOWN-LIMITS168.md:28 representative hidden directDOM association routes differ from native;4 pre-entry stopImmediate join cases can split native/React state. These are explicit limitations, not passed equivalence cases. Public form-only paths remain supported."
+}

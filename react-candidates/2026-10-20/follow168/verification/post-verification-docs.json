@@ -1,0 +1,10 @@
+{
+  "changeKind": "Documentation-only clarification after the recorded portable execution",
+  "path": "README.md",
+  "beforeSha256": "4e920eb671fcf59c3cdc20103e119bfe6dc9686dcfd9a6961c0b110cfd2273dc",
+  "afterSha256": "b87d94a69525483f2dd9506ff7354e7438e88a37401e6b67dad7bbe5e1f1ca9b",
+  "reason": "Explicitly distinguish portable preview JavaScript bytes from frozen preview bytes while retaining actual hashes and bounded passing page results.",
+  "runtimeChanges": 0,
+  "testOrVerifierChanges": 0,
+  "testsRerunForThisDocsOnlyChange": false
+}

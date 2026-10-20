@@ -1,0 +1,29 @@
+{
+  "ids": [
+    "accordion-04",
+    "textarea-05"
+  ],
+  "originalProof": "reference/seventeenth-controls/SOURCE-PROOF.json",
+  "accordion": {
+    "multiple": true,
+    "defaultValue": [
+      "item-1"
+    ],
+    "values": [
+      "item-1",
+      "item-2",
+      "item-3"
+    ],
+    "sourceText": "full original English text retained; preview clearly labels it non-service example",
+    "form": "typebutton, no fields, native reset unchanged",
+    "keyboard": "arrow/Home/End focus only; Enter/Space native button click, not synthetic implementation"
+  },
+  "textarea": {
+    "label": "Styled textarea",
+    "placeholder": "Start typing...",
+    "defaultValue": "",
+    "focus": "emerald with dark mode ring",
+    "native": "no default name; React native controlled/uncontrolled textarea, external form/reset/required/readonly/disabled",
+    "browser": 0
+  }
+}

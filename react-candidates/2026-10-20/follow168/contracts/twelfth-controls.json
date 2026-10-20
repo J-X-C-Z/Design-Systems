@@ -1,0 +1,33 @@
+{
+  "ids": [
+    "textarea-11",
+    "pagination-05"
+  ],
+  "sourceProof": "reference/twelfth-controls/SOURCE-PROOF.json",
+  "textarea": {
+    "label": "Project summary",
+    "placeholder": " ",
+    "default": "",
+    "floating": "focus-within OR non-placeholder-shown sibling; CSS :has; focus scale.95",
+    "required": false,
+    "maxLength": null
+  },
+  "pagination": {
+    "defaultPage": 2,
+    "pageCount": 3,
+    "sourceNumberedHrefs": [
+      "#1",
+      "#2",
+      "#3"
+    ],
+    "sourceDirectionalHref": "#",
+    "sourceMode": "static presentation",
+    "extension": "optional controlled/local page interaction; count1..1000; clamping, synchronous cancel, native gestures",
+    "labels": [
+      "Prev",
+      "Next"
+    ]
+  },
+  "apiDocumentation": "PACKAGE-README.md",
+  "browser": "not_run"
+}

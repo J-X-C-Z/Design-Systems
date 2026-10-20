@@ -1,0 +1,20 @@
+[
+  {
+    "id": "radio-group-02",
+    "source_path": "src/data/contents/components/radiogroup/variant-2.tsx",
+    "evidence_copy": "sources/src/data/contents/components/radiogroup/variant-2.tsx",
+    "pinned_git_blob_sha": "98927578fdd83396eeefda4feadaa669566e5d89",
+    "sha256": "3b3fed27c8353aaa5fc0b591990a4fdd90a77c2cffe80d0b2f33ed112b8859ac",
+    "bytes": 1107,
+    "executed": false
+  },
+  {
+    "id": "collapsible-02",
+    "source_path": "src/data/contents/components/collapsible/variant-2.tsx",
+    "evidence_copy": "sources/src/data/contents/components/collapsible/variant-2.tsx",
+    "pinned_git_blob_sha": "fe9647a5d384ce31e08d0b7ea247c7867e828e0e",
+    "sha256": "61ddd7f6578c72153f0bf142c9ba0b4c0d26b4ac4bb8e42180584992fdc4f3f8",
+    "bytes": 3093,
+    "executed": false
+  }
+]

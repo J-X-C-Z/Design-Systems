@@ -1,0 +1,20 @@
+[
+  {
+    "id": "textarea-13",
+    "source_path": "src/data/contents/components/textarea/variant-13.tsx",
+    "evidence_copy": "sources/src/data/contents/components/textarea/variant-13.tsx",
+    "pinned_git_blob_sha": "c1bde7bf8e83cbf375e164c4cce2082036ca4c0d",
+    "sha256": "c74bdcd8a8d2d7f7c0bdf7dd6b1c4673cacc220d1731ae5a64240ad04a534b56",
+    "bytes": 839,
+    "executed": false
+  },
+  {
+    "id": "textarea-17",
+    "source_path": "src/data/contents/components/textarea/variant-17.tsx",
+    "evidence_copy": "sources/src/data/contents/components/textarea/variant-17.tsx",
+    "pinned_git_blob_sha": "c125684d5e7681ae06d874353acc7b0b77665079",
+    "sha256": "c65a8af7ee092215dadff9816266bf8be965aefb1b561b5304f49542fe32a119",
+    "bytes": 849,
+    "executed": false
+  }
+]

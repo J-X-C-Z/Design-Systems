@@ -1,0 +1,32 @@
+[
+  {
+    "source": "sources/src/data/contents/components/accordion/variant-5.tsx",
+    "path": "sources/src/data/contents/components/accordion/variant-5.tsx",
+    "sha256": "57257481553326685c974b6eb9ec0a965c851bf49dc70f298f3d74dd76a00024",
+    "gitBlob": "8272de25c9fcaf3319e292a2ef82adbbdfdd7783"
+  },
+  {
+    "source": "sources/src/data/contents/components/textarea/variant-9.tsx",
+    "path": "sources/src/data/contents/components/textarea/variant-9.tsx",
+    "sha256": "18a934b0354a395a5846a84587d704cda53ac7a3bf443ea4cf110f27b3cf3a39",
+    "gitBlob": "c148ffb4fcc2ac50f6a721428dff30ea48716937"
+  },
+  {
+    "source": "sources/src/components/base-ui/accordion.tsx",
+    "path": "sources/src/components/base-ui/accordion.tsx",
+    "sha256": "c76de63e9713bd5b773d07d84223990654de9148cfa8ee56e0c61738ae0dcc30",
+    "gitBlob": "fcfee5ca8ac86fd3d3be8d5dfbad4660d059b101"
+  },
+  {
+    "source": "sources/src/components/base-ui/textarea.tsx",
+    "path": "sources/src/components/base-ui/textarea.tsx",
+    "sha256": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9",
+    "gitBlob": "04d27f7d17584cd77ba7d6f2377f5be6779f1270"
+  },
+  {
+    "source": "sources/src/components/base-ui/label.tsx",
+    "path": "sources/src/components/base-ui/label.tsx",
+    "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50",
+    "gitBlob": "f752f82ba6be3cf9a1015c1d61df5de00a1eaf66"
+  }
+]

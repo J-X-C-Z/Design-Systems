@@ -1,0 +1,47 @@
+{
+  "ids": [
+    "textarea-19",
+    "breadcrumb-03"
+  ],
+  "sourceProof": "reference/tenth-controls/SOURCE-PROOF.json",
+  "textarea": {
+    "members": [
+      "compact",
+      "standard",
+      "expanded"
+    ],
+    "placeholders": [
+      "Compact input",
+      "Standard input ",
+      "Expanded input"
+    ],
+    "minimumHeights": [
+      40,
+      64,
+      80
+    ],
+    "required": false,
+    "maxLength": null,
+    "state": "independent native value/defaultValue per field",
+    "event": "native onChange observational, no cancellation transaction"
+  },
+  "breadcrumb": {
+    "defaults": [
+      "Home",
+      "Reports",
+      "Revenue Summary"
+    ],
+    "hrefs": [
+      "#",
+      "#",
+      null
+    ],
+    "currentRole": "link",
+    "currentDisabled": true,
+    "separatorRepair": "nested li to hidden span",
+    "icons": "original SVG replacing third-party lucide",
+    "navigation": "native anchors, caller cancellation preserved"
+  },
+  "apiDocumentation": "PACKAGE-README.md",
+  "browser": "not_run"
+}

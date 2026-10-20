@@ -1,0 +1,68 @@
+{
+  "version": "0.31.0-candidate.1",
+  "status": "Declared implementation contract; current verification outcome is recorded in CURRENT-VERIFICATION.json",
+  "ids": {
+    "tabs-10": {
+      "export": "Tabs10",
+      "values": [
+        "recent",
+        "shared",
+        "archive"
+      ],
+      "default": "recent",
+      "identity": "Cloud Explorer / {name}; Recent/Shared/Archive uppercase rounded rectangular 2px active outline; italic small complete prose and exact emphasis; no cloud file operations"
+    },
+    "tabs-11": {
+      "export": "Tabs11",
+      "values": [
+        "performance",
+        "infra",
+        "security"
+      ],
+      "default": "performance",
+      "identity": "Activity/server/cloud-lock icons with labels on bottom-border track; {name} Operational Metrics icon heading; dashed rounded panel; all complete original paragraphs"
+    },
+    "tabs-12": {
+      "export": "Tabs12",
+      "values": [
+        "branding",
+        "dev",
+        "ux"
+      ],
+      "default": "branding",
+      "identity": "Brush/code/apps icons + uppercase labels and active underline/top corners; Elevate your {name} heading; minimal full prose. Branding/Development/UX Design retained verbatim"
+    },
+    "tabs-13": {
+      "export": "Tabs13",
+      "values": [
+        "curriculum",
+        "lessons",
+        "certification"
+      ],
+      "default": "curriculum",
+      "identity": "Book/video/certificate icon labels with filled active top-tab silhouette; bordered rounded panel and tinted icon tile; original Curriculum/Live Lessons/Certification paragraphs preserved as illustrative text, no course enrollment/certificate promise"
+    }
+  },
+  "shared": {
+    "state": "Exclusive controlled value or mount-only defaultValue exact union|null; default first. Controlled owner authoritative; release retains latest committed; duplicate request no callback; native form reset never changes a non-field tab.",
+    "keyboard": "Automatic focus activation or manual focus-only navigation; axis/RTL arrows, Home/End, loop option; Enter/Space activation; native Tab. Skip unavailable DOM targets including disabled fieldset exceptions, hidden/inert/style/closed containers; modifiers/composition ignored.",
+    "cancellation": "User trigger callbacks, synthetic/native ancestors and proposal callback preventDefault/cancel/false can veto. Snapshot owner before caller handler; newer owner/config/disabled/unmount or explicit external focus invalidates queued actions. Preserve original event method descriptors.",
+    "lifecycle": "Hidden associated panel shells remain; inactive complete content unmounts. Focus returns conditionally only when original panel remains hidden and no explicit external focus. Newly reopened panel cancels old return; internal return never proposes automatic selection. React19 cleanup refs supported.",
+    "a11y": "Unique useId reciprocal tab/panel ARIA, roving focus, actual visible labels with decorative local SVGs. Caller native root/list/trigger/panel attributes/ref supported, structural roles/IDs/content protected.",
+    "reuse": "Import unchanged thirtieth-controls/owner.js cancellation/owner/DOM availability engine. New renderer owns four identities; no tooltip in new four.",
+    "style": "Per-ID scoped layout, all twelve original paragraphs/emphasis, responsive overflow, reduced motion and forced-color rules; old136 source unchanged except five integration files."
+  },
+  "limits": [
+    "No real browser/AT/trusted-input/rendering acceptance",
+    "Icon semantics reconstructed using local SVG paths rather than installing Tabler",
+    "Animation durations follow original intent with reduced-motion suppression; no upstream Radix internal implementation equivalence claim",
+    "All source business/service descriptions are static illustrative examples, no external transactions or services"
+  ],
+  "accounting": {
+    "before": 136,
+    "after": 140,
+    "remaining": 709,
+    "nestedPanelsAddIDs": false,
+    "formalAccepted": 0
+  }
+}

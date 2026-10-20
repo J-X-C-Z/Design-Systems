@@ -1,0 +1,31 @@
+{
+  "ids": [
+    "dialog-04",
+    "textarea-06"
+  ],
+  "sourceProof": "reference/eleventh-controls/SOURCE-PROOF.json",
+  "dialog": {
+    "defaultOpen": false,
+    "role": "dialog",
+    "back": "close",
+    "closeButton": true,
+    "readMoreDefault": "no action no close no navigation",
+    "scrollMaxHeight": "min(650px,90vh)",
+    "sourceSections": 7,
+    "sourceListItems": 13,
+    "initialFocus": "heading at top with tabindex -1",
+    "adaptation": "native HTMLDialogElement+overflow instead of Radix; nested trigger and p/div repaired",
+    "claims": "source release notes example, not package facts"
+  },
+  "textarea": {
+    "label": "Write a note",
+    "placeholder": "Jot down your thoughts...",
+    "default": "",
+    "required": false,
+    "maxLength": null,
+    "pen": "originalSVG with source sr-only Note",
+    "focusRotation": "12deg 200ms, reduced-motion cancels"
+  },
+  "apiDocumentation": "PACKAGE-README.md",
+  "browser": "not_run"
+}

@@ -1,0 +1,38 @@
+{
+  "ids": [
+    "tabs-04",
+    "breadcrumb-04"
+  ],
+  "sourceProof": "reference/sixteenth-controls/SOURCE-PROOF.json",
+  "tabs": {
+    "default": "inventory",
+    "values": [
+      "inventory",
+      "pending",
+      "shipped"
+    ],
+    "labels": [
+      "Inventory",
+      "Pending",
+      "Shipped"
+    ],
+    "counts": [
+      1,
+      4,
+      6
+    ],
+    "form": "no fields, typebutton, native reset unchanged",
+    "source": "fixed full English prose, inactive content unmounted",
+    "adaptation": "React native buttons, click instead of Radix mousedown; deferred callbacks permit ancestor cancellation; props extensions explicitly documented"
+  },
+  "breadcrumb": {
+    "links": [
+      "Library:#",
+      "Resources:#"
+    ],
+    "current": "Design Notes",
+    "source": "two dots; native links; aria-current page and disabled link role",
+    "adaptation": "decorative separator span repairs source li nested inside li; typography/tokens Follow-specific"
+  },
+  "browser": 0
+}

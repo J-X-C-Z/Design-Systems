@@ -1,0 +1,252 @@
+{
+  "runtimeSourceFilesUnmodified": 369,
+  "changes": [
+    {
+      "path": "reference/eighteenth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "86785cfb67303e747b4096da49cdc5ab9cd0a81282534dcdda291b5953c49772",
+      "portableSha256": "03a797ce271462cce85e5d52ccf81045044a7303a72541b0101dc4c011143782",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/fifteenth-controls/radix-radio-readonly/READONLY-PROOF.json",
+      "frozenSha256": "8e22ca9638a1a3832eeb8d39423f4601598f31f77d32e5c3fce988f686a64713",
+      "portableSha256": "4caf5827eba77c7225cf1c6a60e268585b96991e40632df71cbaf6793b77a574",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/nineteenth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "a9c8aa78192a8212b5b6ac1b38c24035f3f8ec0c92b7dc1380fabe5b57770461",
+      "portableSha256": "e426981322c6ef8cfb063627d93a48f6c2e27564343a7547e6c9f753104a03c7",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/seventeenth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "f66b46b525266f9bf8b695152d9005a9dfda373e592de2a9513ddc2725da7137",
+      "portableSha256": "e268647c29efdd7e9708d231cefda35664a9e94576de0a7bb17ecb6f7c3607bc",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/sixteenth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "5b126b2d6114bade4547845f14e3ca02cd9cdf3d9c648b513e8f44903a28669c",
+      "portableSha256": "7ec66039f6c4ef937ea5acd982019bd0d50614397bf38af1431294c2c7903a93",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtieth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "cabc1cb2c6c9422f75143bea30572d9feb1a8ca35e1e4ec52a64ec4190364f07",
+      "portableSha256": "279af77bbf3f504a5d3535d2ec224906530a57fb024f96d808f7daa7fb38fb1d",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtyeighth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "b5cc87bf43be7115aa1648da0ea6ab0e3a0a23d2cb601526bd120016dc791f8d",
+      "portableSha256": "e7045751c73631da1563356c3d0c335ee66553bbac9dc80ef23ee2eca3d6c49b",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtyfifth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "b963281c2a5a893f2d8df79a483ee8762d46d262439ac3c8cbd98f495c850e09",
+      "portableSha256": "c61f5848fd06888f222a4fbfec469d171f0e2d45dc3b24f219ac49202af0bde3",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtyfirst-controls/SOURCE-PROOF.json",
+      "frozenSha256": "cdefd7ee4d74012ffc011b5c0cbc2c74d47a93e65fa1ee91ce3fc25b63b8a6d4",
+      "portableSha256": "2135c3b2caf9ac71aa84fb2b7b303e951f228bde012fdfc820ce263f26151d19",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtyfourth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "79d6b636b988203be61c4506c242341e4f77a596b5f1f2317c043bb14022a232",
+      "portableSha256": "dd25af4bd14e4a0acbf3e52350e826ad5bb90be3423b8cb86574f36a113d8123",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtysecond-controls/SOURCE-PROOF.json",
+      "frozenSha256": "5fcc2824acef25df26558d19fa099e545ad5205bff47708c8f8373fb60f60b9a",
+      "portableSha256": "17d820ec5b5d583160d5c7c89e509e6c50df11da18e958eebd90177769fcc51b",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtyseventh-controls/SOURCE-PROOF.json",
+      "frozenSha256": "c7a1a05f11d91cd2b0bf7c298c6f999dc8ceb9cb06ab58ee87d71a18a5ef51ce",
+      "portableSha256": "fd57a89b28580ebca9bd3963f0533cf648d4475826ee68a401817ed108febff4",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtysixth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "5bac1a3fe6d6b86f2a868c99437e1dd36d76c530bdaac8076bbe9fc1d1716cd4",
+      "portableSha256": "530066edeb65d4d3b88e928eb762e9f92aa1a64b8fdd3fd80126476a227e9e80",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/thirtythird-controls/SOURCE-PROOF.json",
+      "frozenSha256": "02d00f4f4f053f2621af4dc56dc97d63336d6c704c406cee56f57f2485b72ba2",
+      "portableSha256": "09a37d5a19c7d88a415c9fcaa9096e5720b60b67e9abf0397c358b5b198469b1",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentieth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "c61f5dc07e59d57f9f318bea14c3b7fc9269f4b79742b5e3573f0c83aa387dac",
+      "portableSha256": "c09ecb1692e6879d6e95b8107067733d3278afca3d7eedd7f117c01020901925",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentyeighth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "c1905098c6ade30f966a54c48d6a074523acb98b54f3d35d8671b3e76ee7b5de",
+      "portableSha256": "559ffd10e6ba1c607c0d80d0c1dc554c22254eed30669451933f63db46e55ddc",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentyfifth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "6d81f78cdc3fc63f4f0e22510ed53b9211aa316b1745b2520563606fc2ae1f5e",
+      "portableSha256": "571bcffc117dfd80260741bef500da898498f59ae6be6cf3f8d1d0f28e4cf7ff",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentyfirst-controls/SOURCE-PROOF.json",
+      "frozenSha256": "28b5162c00d0d5bbca8bdec1fae9b4da4146b28b9074a892113b08dc4e5cf1a6",
+      "portableSha256": "c88bbd05f12c44c709c68073bbe340b166571fc279b7b1a7bd98577178c7ab89",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentyfourth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "3c2dea2d38113e74e85a49dbedf9fee703228c8b85a3409b765f08bac4896cb6",
+      "portableSha256": "63229af3f4c9b329da85cf6201e8eaaebf53643aa461acccabae8edb9ab65e5f",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentyninth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "f8e7e7ebd0fc6cb94271eea309fbde09de07dfb29855c4a620448c0870b5b62d",
+      "portableSha256": "0501cebea70da1a4047bf2dead1767f7c971c13f4f835428579c0d93675be10a",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentysecond-controls/SOURCE-PROOF.json",
+      "frozenSha256": "deebee2910b994ef22fac35a84f84e0c4ce2fe9c70e639014a606f43bd5659fd",
+      "portableSha256": "5b39a49140736a360b7aad07c6d2dc15268a188dacf457483f6dafadb9c7fe4d",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentyseventh-controls/SOURCE-PROOF.json",
+      "frozenSha256": "9a094ac9959a022587691eff5f59c36d2c9c8b61870e3fafd991c17974cdcbdd",
+      "portableSha256": "7a8943cde48f13802ad843b7b1a9415ddeafc0ccf1be3678dc6a7aed07faca6a",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentysixth-controls/SOURCE-PROOF.json",
+      "frozenSha256": "db5d4692babba28d360f0ed15d0aa928344d2cc7ec3563f50b87a38fd5c56dec",
+      "portableSha256": "9179ca548ec41435d7645ae0cfd79a61e999cbfb867fd36fe10273a9e2bcbf0a",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "reference/twentythird-controls/SOURCE-PROOF.json",
+      "frozenSha256": "84cd8ca86e4287ee451ffa137054e8603e433d39361176a841389cd6ea84fe46",
+      "portableSha256": "3bbde06546ca4d029fec72580531e4e9ccf344e71797caa51e12dc2af0c7debe",
+      "reason": "Remove private extraction-location metadata; retain local paths and pinned source hashes."
+    },
+    {
+      "path": "tests/reset116-all-id-order.cjs",
+      "frozenSha256": "468ec2edea1c991badfddd32c755f2d6b3c11e32860c95d05d7f47ca895690aa",
+      "portableSha256": "a224738ebc52ec584b31bdaa47cf537b4f51ac750681466597c2a75dc66c1e7a",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tests/reset116-noncancelable.cjs",
+      "frozenSha256": "abd5d6a825d4093173a1eb15b4ed53d48d23a32e8a9d5fd40b82de47a32ea17d",
+      "portableSha256": "c9917a313622c70c0f636ae09281ac2a8027ad875d1740c16cab401c4b9341b8",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tests/reset116-normalized-matrix.cjs",
+      "frozenSha256": "f00091459bee26b746c34896392ff80a2f98052d932298aedc7b228924b2dabe",
+      "portableSha256": "e018389b465409f59634e652211c4698ae13b103af28a4cad72caa6af3982072",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tests/reset116-order-matrix.cjs",
+      "frozenSha256": "e5a9b9af0dca149481b6914b6808c422397bd2b49b55c954e3d8f6f061272f3f",
+      "portableSha256": "e96b3f2aa9a0a946894405001546e704b973b751bf7f21e494bbb96edd27d587",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tests/reset116-shared-order.cjs",
+      "frozenSha256": "449b52787a21bc00509953e24b6943db4240ea5347114d2989770102acf48cd2",
+      "portableSha256": "4143a0c2544110fd5b18e9d4ef83c98215d60f3e5c2d1ba7d7d51361a9605e56",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tests/thirtyeighth-native-model.cjs",
+      "frozenSha256": "495d8adc864904c19fb67f57d49868b3e96c2cc8acc126f0e97f887277b9a012",
+      "portableSha256": "e6829b2176f99c023d45058d92fe010a3596499c63df0e016cf0f6ac02febb22",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tests/thirtyeighth-specification-independent.cjs",
+      "frozenSha256": "829585f2a3dd8e995518bbf5af24b07a806d23a3aaeebea544a4f4be46895ad1",
+      "portableSha256": "7c9a32288b301e9c8b1f09289a148c152ddaf5dce73428219466cf2d18c81f16",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tests/thirtyseventh-native-model.cjs",
+      "frozenSha256": "df12be148e968df1ae6738b58fde41993680aa031a33a7ca88aa9f44f7fccf39",
+      "portableSha256": "1544c13d9d8699a0e39e74143ff786a71c234497508f22dbf24c9dd53fc710bd",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tests/thirtysixth-native-model.cjs",
+      "frozenSha256": "28d3ce6d3fe3481f98268f425896e8b0f8150b53f9f24ccde618824eca376f97",
+      "portableSha256": "4d2791513c0fde497a21458f6c034757a5522eb6b419f90b58276d73c6a2be3a",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tools/thirtyeighth/build-direct.cjs",
+      "frozenSha256": "aef1120d3ac175a54d3beb5a15bd908a700137b6a7a1765c47676ce16df2bcda",
+      "portableSha256": "18c9083a6d4583894a13dead00b088c2be68969d3c56982b98b7d2607323c82a",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tools/thirtyeighth/build-full-direct.cjs",
+      "frozenSha256": "6fa14f16ad1d9eb8fdcd7cb9178b6b573d74b1756453c22588c9b0b63df4f29c",
+      "portableSha256": "2b411523c8071f5463017a24c7546de241b20519d3a9ac697d5ec15606b4a7c3",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tools/thirtyseventh/build-direct.cjs",
+      "frozenSha256": "7f756bda756e455f75336c7fe091cfb961d020ff67c4a0d67140c5ba7ad8e657",
+      "portableSha256": "817280d2ca8243e14c62afb865e59d05eff2ccdc787f68381414d68a275a5783",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "tools/thirtysixth/build-direct.cjs",
+      "frozenSha256": "a2d93bb9053bb1782c0e6c5c36797aef079a58390fc802518943499e26a69f5b",
+      "portableSha256": "cb4c1894266ecd8484032763a4c0cc080f351b23258f41c7d9629b61f8674bbe",
+      "reason": "Replace executor-specific dependency fallback with the checkout node_modules directory."
+    },
+    {
+      "path": "coverage-849.json",
+      "frozenSha256": "9bf4e8a326329c8a869f62b525ea2146b4f0c289279d80d7a2c173c7f820c514",
+      "portableSha256": "6b93c7b2b1e2f6e54e3f9152f96f4dcffc22bad37a1937017cccc481579e3c0c",
+      "reason": "Documented verification-only id/source_sha projection. Runtime src/catalog.json is unmodified."
+    },
+    {
+      "path": "package.json",
+      "frozenSha256": "8f15a28faf003b3ef842fcdbd39c7d8a8d8b5251a9ce2bb415c5d87210ef49ee",
+      "portableSha256": "233bf87cef9ae5655420b3b2c2f2bd60051f63385819634abbb2048813192d6e",
+      "reason": "Use explicitly scoped portable verify entrypoint and pin TypeScript/react declaration dependencies. Original package/build runtime identity remains unchanged; original lock omitted because dependency manifest changes."
+    },
+    {
+      "path": "qa/independent168/pages/audit-relay-workshop.cjs",
+      "frozenSha256": "eb7cb0917bb6e5a16329e82a460732936f27a50de26566825517ac53f0dd9d81",
+      "portableSha256": "e62f483e20974247d8b9f5fe51f9320bffc140690d4c3f7c46db618770f6f304",
+      "reason": "Replace executor-specific dependency fallback with checkout node_modules."
+    }
+  ],
+  "newFiles": "README.md, NOTICES.md, consumer/README.md, tools/portable/*, verification/*, .gitignore; these are new portable packaging documents/tooling, not frozen verification inputs.",
+  "omissions": {
+    "scope": "No node_modules, compiled build/preview output, copied ZIP/TGZ, duplicate historical archives or repeated execution logs.",
+    "fullFrozenChain": "The archived full verification entrypoint and history-dependent wrappers are intentionally not offered as runnable in this lean tree. All 177 original tests are retained, but only the named portable verification scope is supported here.",
+    "frozenMemberCount": 2175,
+    "selectedOriginalFiles": 969
+  }
+}

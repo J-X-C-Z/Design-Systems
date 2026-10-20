@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "recorded_at": "2026-10-15T06:06:23.343146+00:00",
+  "binding": "evidence/2026-10-15T06-03-59-681Z-all/next-selection.json",
+  "bindingSHA256": "f3c7c4c409709f58111ba9ec82fe1e8612432c51bd91fc37042f454512da8746",
+  "result": {
+    "suite": "next-selection",
+    "assertions": 554,
+    "scenarios": 250,
+    "ids": 7,
+    "browser": false,
+    "realIME": false,
+    "realLayout": false,
+    "nativeSpaceDefaultAction": "not simulated",
+    "status": "author-pass",
+    "react": "19.3.0",
+    "jsdomWarnings": []
+  },
+  "inputs": [
+    {
+      "path": "src/next-selection/index.jsx",
+      "bytes": 12205,
+      "sha256": "a0c63741ccfa76a23dc7e730cafe42c752be59c2d24f9fce48a3c518e3391e6d"
+    },
+    {
+      "path": "src/scalar/index.jsx",
+      "bytes": 23683,
+      "sha256": "3681416a1ae14aae101773d4128b5c6ce55500ab01c39a55f1fad92c07b8a835"
+    }
+  ],
+  "testSHA256": "22784b51a9ae5209f7a370560864307fb63cbc33a469bfdfea571c16dbd3a868",
+  "bundleSHA256": "1a52b3ae7f5cc67c05ae940a1425d832ee6dda79f6a0888b2722f72389f7abee",
+  "previousPass": "revisions/pre-click-cancellation/author-evidence.json",
+  "failedRegressionEvidence": [
+    "evidence/2026-10-15T05-24-42-775Z-scalar/scalar.json",
+    "evidence/2026-10-15T05-29-52-785Z-scalar/scalar.json"
+  ],
+  "browser": false,
+  "realIME": false,
+  "formalAcceptance": false
+}

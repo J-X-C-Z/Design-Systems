@@ -1,0 +1,29 @@
+{
+  "reference_only": true,
+  "files": [
+    {
+      "file": "reference-only://studio-seven-theme-merge-20261015/delivery/Studio-Seven-Themes-Follow456-source/adapters/batches/actions-inputs/contracts.json",
+      "sha256": "908c9c67a352316e8adabf4539ccc887629c453a0ad7a9603e1878a3f9db64ff",
+      "main_bytes_equal": true,
+      "acceptance_inherited": false
+    },
+    {
+      "file": "reference-only://studio-seven-theme-merge-20261015/delivery/Studio-Seven-Themes-Follow456-source/adapters/batches/actions-inputs/masks.js",
+      "sha256": "6993472ed03e13229cb4c6e07db9390e46fd005a59fb3c2e40b854010d853112",
+      "main_bytes_equal": true,
+      "acceptance_inherited": false
+    },
+    {
+      "file": "reference-only://studio-seven-theme-merge-20261015/delivery/Studio-Seven-Themes-Follow456-source/adapters/batches/selection/contracts.json",
+      "sha256": "e2133b5d373a5f72b0abe6188674f8ef5ebacb901fa6a3a5c0a4e761335be06f",
+      "main_bytes_equal": false,
+      "acceptance_inherited": false
+    },
+    {
+      "file": "reference-only://studio-seven-theme-merge-20261015/delivery/Studio-Seven-Themes-Follow456-source/adapters/batches/textareas-one/contracts.json",
+      "sha256": "62a440596db5fd926e65ac25c83478f4efac0998d4ff9abd0fdf97fb43a84e8b",
+      "main_bytes_equal": true,
+      "acceptance_inherited": false
+    }
+  ]
+}

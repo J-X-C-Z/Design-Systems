@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "sources": [
+    {
+      "source_path": "src/data/contents/components/button/variant-13.tsx",
+      "file": "sources/variant-13.tsx",
+      "git_blob": "d78a8304ea063b04204f874d2ff7566b8522847b",
+      "sha256": "4038b55d5ed31c8fe3438adbd329e15f928279025adadad5b4353905554c148e",
+      "bytes": 521,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-13.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-14.tsx",
+      "file": "sources/variant-14.tsx",
+      "git_blob": "f2f643c4f1c4618e53fc634b853a9a1d57d119a5",
+      "sha256": "8306deb788618bacad38353ee3d5f688df17700a084a5dd9f6030a90992a768d",
+      "bytes": 318,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-14.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-15.tsx",
+      "file": "sources/variant-15.tsx",
+      "git_blob": "c80f389cbd0cd0e70eb5aead85ebcb4871b9d9f6",
+      "sha256": "3358247857914b8f790c8e84eb129a9ed53497f95496aeac6143af34ef2eb53b",
+      "bytes": 685,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-15.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-16.tsx",
+      "file": "sources/variant-16.tsx",
+      "git_blob": "330da422c543ea868c968a9bac7596f6147ab1db",
+      "sha256": "8053f918621b26a446c0cac7c53ab3be45aadb663b1d0ac6190264a83861902c",
+      "bytes": 426,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-16.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-17.tsx",
+      "file": "sources/variant-17.tsx",
+      "git_blob": "31fd20c19ad2e3787504a1badf51c38311199c5f",
+      "sha256": "5e83301a579ebf401f666523a16d9fe452be31e34ad9b5b29e578c2796bec69a",
+      "bytes": 442,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-17.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-18.tsx",
+      "file": "sources/variant-18.tsx",
+      "git_blob": "3c95dcccde27fb96b281a41da75ea799334226b8",
+      "sha256": "ea3cf6d17b88d81379ae228b57d81e4273bc23581c13ef32024f3276e6b880e5",
+      "bytes": 814,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-18.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-19.tsx",
+      "file": "sources/variant-19.tsx",
+      "git_blob": "700c828038eac60c230b23c69c6e785feb06b8ad",
+      "sha256": "feb8c07a2269ef2ae882483a7f717c7f56211736f0e3c8c343bdf3ed1536e7df",
+      "bytes": 350,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-19.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-20.tsx",
+      "file": "sources/variant-20.tsx",
+      "git_blob": "e82b89c87fc478bbab65f35137c7c3adb7707582",
+      "sha256": "e0581f981daaf389b23dc8ac0a04fd27e6ee1cd4988e983f75708ad25fe286e2",
+      "bytes": 581,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-20.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-21.tsx",
+      "file": "sources/variant-21.tsx",
+      "git_blob": "788f189be045210e326ddb092b23052fd266f6c7",
+      "sha256": "07a17639930ef23823e59e28aede70f202530f8467d7c0cadb286abf60a52731",
+      "bytes": 932,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-21.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-22.tsx",
+      "file": "sources/variant-22.tsx",
+      "git_blob": "6b8a2dee5a863769f324e63e0520aa7c8dc8f6c4",
+      "sha256": "2605ffd4fd4dc9aac311f2817ac32da713a21e0ccb64ad792348cb4d8f4cadcb",
+      "bytes": 1503,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-22.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-23.tsx",
+      "file": "sources/variant-23.tsx",
+      "git_blob": "ea91e4743b79cddf354f89795c89607c9df1e08d",
+      "sha256": "818b5fbb9eb1ff73064d690681a94d06ece68443aa1cf25123421341e20b9a90",
+      "bytes": 507,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-23.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-24.tsx",
+      "file": "sources/variant-24.tsx",
+      "git_blob": "2af2a7a8b29be5e839f2155e821692fcb44193aa",
+      "sha256": "fd997bfa7a7c9154e9dd1e7241d9d2725180b998df689fe8c54eb005702a92c6",
+      "bytes": 565,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-24.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/components/base-ui/button.tsx",
+      "file": "sources/base-button.tsx",
+      "git_blob": "810fdb5f0e11477738c9269fb869214bf036bbb6",
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512",
+      "bytes": 3337,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/button.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/components/base-ui/badge.tsx",
+      "file": "sources/base-badge.tsx",
+      "git_blob": "cacff11dce8d09f7882da68c971b3a7e5be3e78a",
+      "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d",
+      "bytes": 1865,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/badge.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/components/base-ui/avatar.tsx",
+      "file": "sources/base-avatar.tsx",
+      "git_blob": "99f3ed25f0502ecab8da491a319b0c3018d8864e",
+      "sha256": "232a6ac077e0f98bf8fe283529a42bf4a26ca9517b34304beaa7af38000dad56",
+      "bytes": 3084,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/avatar.tsx",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/lib/utils.ts",
+      "file": "sources/utils.ts",
+      "git_blob": "649b3921a8dcbefd43d3cd9182867c8bc8783e73",
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019",
+      "bytes": 196,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/lib/utils.ts",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "LICENSE",
+      "file": "LICENSE.upstream",
+      "git_blob": "c76bf56983389c53194eecc9d088ac8de34debe1",
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0",
+      "bytes": 1089,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/index.ts",
+      "file": "sources/index.ts",
+      "git_blob": "a98247456ac86882e5017b3013e30baa3da8ddc8",
+      "sha256": "c6449443bccf9ea212059f48027cd69f6826e9dab87621d2fb2af86346f9c90f",
+      "bytes": 9942,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/index.ts",
+      "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+    }
+  ]
+}

@@ -1,0 +1,1129 @@
+{
+  "kind": "Static palette arithmetic only; browser cascade/pixel/nontext contrast still pending",
+  "paletteFileSHA256": "4a2f57e202ef88e90a041a539c2345ead94596e6b2002205b38975b29d245d0c",
+  "stylesheetSHA256": "34b68909b3d0704e58b4422ece57d5e51b933262d8994afe716a4f3ca6fd4a2a",
+  "cases": [
+    {
+      "component": "switch-03",
+      "palette": "echo/light",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#a51e1e",
+        "#fffef9"
+      ],
+      "ratio": 7.416
+    },
+    {
+      "component": "switch-03",
+      "palette": "echo/light",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#3f601d",
+        "#fffef9"
+      ],
+      "ratio": 7.166
+    },
+    {
+      "component": "switch-03",
+      "palette": "echo/light",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#135b7a",
+        "#fffef9"
+      ],
+      "ratio": 7.414
+    },
+    {
+      "component": "switch-03",
+      "palette": "echo/light",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#805300",
+        "#fffef9"
+      ],
+      "ratio": 6.591
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "echo/light",
+      "part": "checked outline/check",
+      "colors": [
+        "#c64b0c",
+        "#fffef9"
+      ],
+      "ratio": 4.713
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "echo/light",
+      "part": "invalid outline",
+      "colors": [
+        "#a51e1e",
+        "#fffef9"
+      ],
+      "ratio": 7.416
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "echo/light",
+      "part": "mixed minus",
+      "colors": [
+        "#635c52",
+        "#fffef9"
+      ],
+      "ratio": 6.533
+    },
+    {
+      "component": "textarea-02",
+      "palette": "echo/light",
+      "part": "focused border",
+      "colors": [
+        "#873909",
+        "#fffef9"
+      ],
+      "ratio": 7.94
+    },
+    {
+      "component": "switch-03",
+      "palette": "echo/dark",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#ffa7a0",
+        "#232420"
+      ],
+      "ratio": 8.394
+    },
+    {
+      "component": "switch-03",
+      "palette": "echo/dark",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#c3db92",
+        "#232420"
+      ],
+      "ratio": 10.313
+    },
+    {
+      "component": "switch-03",
+      "palette": "echo/dark",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#a6d6e8",
+        "#232420"
+      ],
+      "ratio": 9.969
+    },
+    {
+      "component": "switch-03",
+      "palette": "echo/dark",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#ebcf81",
+        "#232420"
+      ],
+      "ratio": 10.244
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "echo/dark",
+      "part": "checked outline/check",
+      "colors": [
+        "#ffb47a",
+        "#232420"
+      ],
+      "ratio": 8.97
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "echo/dark",
+      "part": "invalid outline",
+      "colors": [
+        "#ffa7a0",
+        "#232420"
+      ],
+      "ratio": 8.394
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "echo/dark",
+      "part": "mixed minus",
+      "colors": [
+        "#c1beb2",
+        "#232420"
+      ],
+      "ratio": 8.385
+    },
+    {
+      "component": "textarea-02",
+      "palette": "echo/dark",
+      "part": "focused border",
+      "colors": [
+        "#ffb47a",
+        "#232420"
+      ],
+      "ratio": 8.97
+    },
+    {
+      "component": "switch-03",
+      "palette": "bloom/light",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#af2139",
+        "#ffffff"
+      ],
+      "ratio": 6.775
+    },
+    {
+      "component": "switch-03",
+      "palette": "bloom/light",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#356314",
+        "#ffffff"
+      ],
+      "ratio": 7.128
+    },
+    {
+      "component": "switch-03",
+      "palette": "bloom/light",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#075d85",
+        "#ffffff"
+      ],
+      "ratio": 7.208
+    },
+    {
+      "component": "switch-03",
+      "palette": "bloom/light",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#805500",
+        "#ffffff"
+      ],
+      "ratio": 6.527
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "bloom/light",
+      "part": "checked outline/check",
+      "colors": [
+        "#3b700b",
+        "#ffffff"
+      ],
+      "ratio": 5.986
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "bloom/light",
+      "part": "invalid outline",
+      "colors": [
+        "#af2139",
+        "#ffffff"
+      ],
+      "ratio": 6.775
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "bloom/light",
+      "part": "mixed minus",
+      "colors": [
+        "#596650",
+        "#ffffff"
+      ],
+      "ratio": 6.103
+    },
+    {
+      "component": "textarea-02",
+      "palette": "bloom/light",
+      "part": "focused border",
+      "colors": [
+        "#196095",
+        "#ffffff"
+      ],
+      "ratio": 6.67
+    },
+    {
+      "component": "switch-03",
+      "palette": "bloom/dark",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#ffa6b3",
+        "#1d2b1f"
+      ],
+      "ratio": 8.012
+    },
+    {
+      "component": "switch-03",
+      "palette": "bloom/dark",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#a1e58b",
+        "#1d2b1f"
+      ],
+      "ratio": 9.944
+    },
+    {
+      "component": "switch-03",
+      "palette": "bloom/dark",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#8bd6ff",
+        "#1d2b1f"
+      ],
+      "ratio": 9.284
+    },
+    {
+      "component": "switch-03",
+      "palette": "bloom/dark",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#f8d16b",
+        "#1d2b1f"
+      ],
+      "ratio": 10.104
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "bloom/dark",
+      "part": "checked outline/check",
+      "colors": [
+        "#9de35f",
+        "#1d2b1f"
+      ],
+      "ratio": 9.584
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "bloom/dark",
+      "part": "invalid outline",
+      "colors": [
+        "#ffa6b3",
+        "#1d2b1f"
+      ],
+      "ratio": 8.012
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "bloom/dark",
+      "part": "mixed minus",
+      "colors": [
+        "#b8cbb0",
+        "#1d2b1f"
+      ],
+      "ratio": 8.611
+    },
+    {
+      "component": "textarea-02",
+      "palette": "bloom/dark",
+      "part": "focused border",
+      "colors": [
+        "#8bd6ff",
+        "#1d2b1f"
+      ],
+      "ratio": 9.284
+    },
+    {
+      "component": "switch-03",
+      "palette": "neuro/dark",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#fda4af",
+        "#111114"
+      ],
+      "ratio": 9.968
+    },
+    {
+      "component": "switch-03",
+      "palette": "neuro/dark",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#a8d79b",
+        "#111114"
+      ],
+      "ratio": 11.541
+    },
+    {
+      "component": "switch-03",
+      "palette": "neuro/dark",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#67e8f9",
+        "#111114"
+      ],
+      "ratio": 13.003
+    },
+    {
+      "component": "switch-03",
+      "palette": "neuro/dark",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#fbbf24",
+        "#111114"
+      ],
+      "ratio": 11.291
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "neuro/dark",
+      "part": "checked outline/check",
+      "colors": [
+        "#fbbf24",
+        "#111114"
+      ],
+      "ratio": 11.291
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "neuro/dark",
+      "part": "invalid outline",
+      "colors": [
+        "#fda4af",
+        "#111114"
+      ],
+      "ratio": 9.968
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "neuro/dark",
+      "part": "mixed minus",
+      "colors": [
+        "#a1a1aa",
+        "#111114"
+      ],
+      "ratio": 7.355
+    },
+    {
+      "component": "textarea-02",
+      "palette": "neuro/dark",
+      "part": "focused border",
+      "colors": [
+        "#fbbf24",
+        "#111114"
+      ],
+      "ratio": 11.291
+    },
+    {
+      "component": "switch-03",
+      "palette": "neuro/light",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#a32334",
+        "#fffdf7"
+      ],
+      "ratio": 7.251
+    },
+    {
+      "component": "switch-03",
+      "palette": "neuro/light",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#3e601f",
+        "#fffdf7"
+      ],
+      "ratio": 7.125
+    },
+    {
+      "component": "switch-03",
+      "palette": "neuro/light",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#155d71",
+        "#fffdf7"
+      ],
+      "ratio": 7.279
+    },
+    {
+      "component": "switch-03",
+      "palette": "neuro/light",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#805400",
+        "#fffdf7"
+      ],
+      "ratio": 6.48
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "neuro/light",
+      "part": "checked outline/check",
+      "colors": [
+        "#815000",
+        "#fffdf7"
+      ],
+      "ratio": 6.701
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "neuro/light",
+      "part": "invalid outline",
+      "colors": [
+        "#a32334",
+        "#fffdf7"
+      ],
+      "ratio": 7.251
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "neuro/light",
+      "part": "mixed minus",
+      "colors": [
+        "#666051",
+        "#fffdf7"
+      ],
+      "ratio": 6.15
+    },
+    {
+      "component": "textarea-02",
+      "palette": "neuro/light",
+      "part": "focused border",
+      "colors": [
+        "#805000",
+        "#fffdf7"
+      ],
+      "ratio": 6.735
+    },
+    {
+      "component": "switch-03",
+      "palette": "follow/light",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#a0153e",
+        "#ffffff"
+      ],
+      "ratio": 7.861
+    },
+    {
+      "component": "switch-03",
+      "palette": "follow/light",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#285336",
+        "#ffffff"
+      ],
+      "ratio": 8.821
+    },
+    {
+      "component": "switch-03",
+      "palette": "follow/light",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#244b66",
+        "#ffffff"
+      ],
+      "ratio": 9.238
+    },
+    {
+      "component": "switch-03",
+      "palette": "follow/light",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#755000",
+        "#ffffff"
+      ],
+      "ratio": 7.232
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "follow/light",
+      "part": "checked outline/check",
+      "colors": [
+        "#151515",
+        "#ffffff"
+      ],
+      "ratio": 18.261
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "follow/light",
+      "part": "invalid outline",
+      "colors": [
+        "#a0153e",
+        "#ffffff"
+      ],
+      "ratio": 7.861
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "follow/light",
+      "part": "mixed minus",
+      "colors": [
+        "#52524e",
+        "#ffffff"
+      ],
+      "ratio": 7.848
+    },
+    {
+      "component": "textarea-02",
+      "palette": "follow/light",
+      "part": "focused border",
+      "colors": [
+        "#151515",
+        "#ffffff"
+      ],
+      "ratio": 18.261
+    },
+    {
+      "component": "switch-03",
+      "palette": "follow/dark",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#ffc0d0",
+        "#20211f"
+      ],
+      "ratio": 10.551
+    },
+    {
+      "component": "switch-03",
+      "palette": "follow/dark",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#c0dfab",
+        "#20211f"
+      ],
+      "ratio": 11.076
+    },
+    {
+      "component": "switch-03",
+      "palette": "follow/dark",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#bcd7ef",
+        "#20211f"
+      ],
+      "ratio": 10.86
+    },
+    {
+      "component": "switch-03",
+      "palette": "follow/dark",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#f4d294",
+        "#20211f"
+      ],
+      "ratio": 11.159
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "follow/dark",
+      "part": "checked outline/check",
+      "colors": [
+        "#f7f7f2",
+        "#20211f"
+      ],
+      "ratio": 15.046
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "follow/dark",
+      "part": "invalid outline",
+      "colors": [
+        "#ffc0d0",
+        "#20211f"
+      ],
+      "ratio": 10.551
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "follow/dark",
+      "part": "mixed minus",
+      "colors": [
+        "#c6c8bf",
+        "#20211f"
+      ],
+      "ratio": 9.559
+    },
+    {
+      "component": "textarea-02",
+      "palette": "follow/dark",
+      "part": "focused border",
+      "colors": [
+        "#ffffff",
+        "#20211f"
+      ],
+      "ratio": 16.169
+    },
+    {
+      "component": "switch-03",
+      "palette": "wix/light",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#9e3431",
+        "#fffdf7"
+      ],
+      "ratio": 6.906
+    },
+    {
+      "component": "switch-03",
+      "palette": "wix/light",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#376045",
+        "#fffdf7"
+      ],
+      "ratio": 7.067
+    },
+    {
+      "component": "switch-03",
+      "palette": "wix/light",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#315c72",
+        "#fffdf7"
+      ],
+      "ratio": 7.108
+    },
+    {
+      "component": "switch-03",
+      "palette": "wix/light",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#765114",
+        "#fffdf7"
+      ],
+      "ratio": 6.981
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "wix/light",
+      "part": "checked outline/check",
+      "colors": [
+        "#694738",
+        "#fffdf7"
+      ],
+      "ratio": 8.068
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "wix/light",
+      "part": "invalid outline",
+      "colors": [
+        "#9e3431",
+        "#fffdf7"
+      ],
+      "ratio": 6.906
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "wix/light",
+      "part": "mixed minus",
+      "colors": [
+        "#64544b",
+        "#fffdf7"
+      ],
+      "ratio": 7.091
+    },
+    {
+      "component": "textarea-02",
+      "palette": "wix/light",
+      "part": "focused border",
+      "colors": [
+        "#201913",
+        "#fffdf7"
+      ],
+      "ratio": 17.064
+    },
+    {
+      "component": "switch-03",
+      "palette": "wix/dark",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#ffbcb1",
+        "#302721"
+      ],
+      "ratio": 9.097
+    },
+    {
+      "component": "switch-03",
+      "palette": "wix/dark",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#bad7b0",
+        "#302721"
+      ],
+      "ratio": 9.344
+    },
+    {
+      "component": "switch-03",
+      "palette": "wix/dark",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#b5d4e1",
+        "#302721"
+      ],
+      "ratio": 9.368
+    },
+    {
+      "component": "switch-03",
+      "palette": "wix/dark",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#efd18e",
+        "#302721"
+      ],
+      "ratio": 9.863
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "wix/dark",
+      "part": "checked outline/check",
+      "colors": [
+        "#e2bca4",
+        "#302721"
+      ],
+      "ratio": 8.32
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "wix/dark",
+      "part": "invalid outline",
+      "colors": [
+        "#ffbcb1",
+        "#302721"
+      ],
+      "ratio": 9.097
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "wix/dark",
+      "part": "mixed minus",
+      "colors": [
+        "#cfbfb1",
+        "#302721"
+      ],
+      "ratio": 8.165
+    },
+    {
+      "component": "textarea-02",
+      "palette": "wix/dark",
+      "part": "focused border",
+      "colors": [
+        "#f4ff8b",
+        "#302721"
+      ],
+      "ratio": 13.578
+    },
+    {
+      "component": "switch-03",
+      "palette": "maigawara/light",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#99294b",
+        "#fffdf6"
+      ],
+      "ratio": 7.44
+    },
+    {
+      "component": "switch-03",
+      "palette": "maigawara/light",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#245b2d",
+        "#fffdf6"
+      ],
+      "ratio": 7.907
+    },
+    {
+      "component": "switch-03",
+      "palette": "maigawara/light",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#33447e",
+        "#fffdf6"
+      ],
+      "ratio": 9.094
+    },
+    {
+      "component": "switch-03",
+      "palette": "maigawara/light",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#785100",
+        "#fffdf6"
+      ],
+      "ratio": 6.934
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "maigawara/light",
+      "part": "checked outline/check",
+      "colors": [
+        "#006538",
+        "#fffdf6"
+      ],
+      "ratio": 7.069
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "maigawara/light",
+      "part": "invalid outline",
+      "colors": [
+        "#99294b",
+        "#fffdf6"
+      ],
+      "ratio": 7.44
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "maigawara/light",
+      "part": "mixed minus",
+      "colors": [
+        "#536050",
+        "#fffdf6"
+      ],
+      "ratio": 6.536
+    },
+    {
+      "component": "textarea-02",
+      "palette": "maigawara/light",
+      "part": "focused border",
+      "colors": [
+        "#9b195a",
+        "#fffdf6"
+      ],
+      "ratio": 7.698
+    },
+    {
+      "component": "switch-03",
+      "palette": "maigawara/dark",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#ffb1ca",
+        "#1a3024"
+      ],
+      "ratio": 8.306
+    },
+    {
+      "component": "switch-03",
+      "palette": "maigawara/dark",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#b4e79d",
+        "#1a3024"
+      ],
+      "ratio": 9.957
+    },
+    {
+      "component": "switch-03",
+      "palette": "maigawara/dark",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#b7c4ff",
+        "#1a3024"
+      ],
+      "ratio": 8.279
+    },
+    {
+      "component": "switch-03",
+      "palette": "maigawara/dark",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#f3d18b",
+        "#1a3024"
+      ],
+      "ratio": 9.586
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "maigawara/dark",
+      "part": "checked outline/check",
+      "colors": [
+        "#eea5e8",
+        "#1a3024"
+      ],
+      "ratio": 7.494
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "maigawara/dark",
+      "part": "invalid outline",
+      "colors": [
+        "#ffb1ca",
+        "#1a3024"
+      ],
+      "ratio": 8.306
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "maigawara/dark",
+      "part": "mixed minus",
+      "colors": [
+        "#b8c6ae",
+        "#1a3024"
+      ],
+      "ratio": 7.859
+    },
+    {
+      "component": "textarea-02",
+      "palette": "maigawara/dark",
+      "part": "focused border",
+      "colors": [
+        "#ffae80",
+        "#1a3024"
+      ],
+      "ratio": 7.786
+    },
+    {
+      "component": "switch-03",
+      "palette": "goons/light",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#a02848",
+        "#ffffff"
+      ],
+      "ratio": 7.262
+    },
+    {
+      "component": "switch-03",
+      "palette": "goons/light",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#226448",
+        "#ffffff"
+      ],
+      "ratio": 7.036
+    },
+    {
+      "component": "switch-03",
+      "palette": "goons/light",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#2448bd",
+        "#ffffff"
+      ],
+      "ratio": 7.673
+    },
+    {
+      "component": "switch-03",
+      "palette": "goons/light",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#7e510d",
+        "#ffffff"
+      ],
+      "ratio": 6.841
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "goons/light",
+      "part": "checked outline/check",
+      "colors": [
+        "#2348d9",
+        "#ffffff"
+      ],
+      "ratio": 6.999
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "goons/light",
+      "part": "invalid outline",
+      "colors": [
+        "#a02848",
+        "#ffffff"
+      ],
+      "ratio": 7.262
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "goons/light",
+      "part": "mixed minus",
+      "colors": [
+        "#5a6070",
+        "#ffffff"
+      ],
+      "ratio": 6.284
+    },
+    {
+      "component": "textarea-02",
+      "palette": "goons/light",
+      "part": "focused border",
+      "colors": [
+        "#b13c08",
+        "#ffffff"
+      ],
+      "ratio": 5.967
+    },
+    {
+      "component": "switch-03",
+      "palette": "goons/dark",
+      "part": "danger checked track vs thumb",
+      "colors": [
+        "#ffadc7",
+        "#1c1f29"
+      ],
+      "ratio": 9.437
+    },
+    {
+      "component": "switch-03",
+      "palette": "goons/dark",
+      "part": "success checked track vs thumb",
+      "colors": [
+        "#93e3ba",
+        "#1c1f29"
+      ],
+      "ratio": 10.911
+    },
+    {
+      "component": "switch-03",
+      "palette": "goons/dark",
+      "part": "info checked track vs thumb",
+      "colors": [
+        "#afc4ff",
+        "#1c1f29"
+      ],
+      "ratio": 9.522
+    },
+    {
+      "component": "switch-03",
+      "palette": "goons/dark",
+      "part": "warning checked track vs thumb",
+      "colors": [
+        "#ffd28e",
+        "#1c1f29"
+      ],
+      "ratio": 11.634
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "goons/dark",
+      "part": "checked outline/check",
+      "colors": [
+        "#a7b8ff",
+        "#1c1f29"
+      ],
+      "ratio": 8.567
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "goons/dark",
+      "part": "invalid outline",
+      "colors": [
+        "#ffadc7",
+        "#1c1f29"
+      ],
+      "ratio": 9.437
+    },
+    {
+      "component": "checkbox-02",
+      "palette": "goons/dark",
+      "part": "mixed minus",
+      "colors": [
+        "#b9bfd1",
+        "#1c1f29"
+      ],
+      "ratio": 8.953
+    },
+    {
+      "component": "textarea-02",
+      "palette": "goons/dark",
+      "part": "focused border",
+      "colors": [
+        "#ffb287",
+        "#1c1f29"
+      ],
+      "ratio": 9.371
+    }
+  ],
+  "minimumRatio": 4.713,
+  "allAtLeast3": true
+}

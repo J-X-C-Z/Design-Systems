@@ -1,0 +1,37 @@
+{
+  "ids": [
+    "radio-group-02",
+    "collapsible-02"
+  ],
+  "source": "reference/fifteenth-controls/SOURCE-PROOF.json",
+  "sourceDefaults": {
+    "radio-group-02": {
+      "value": "monthly",
+      "values": [
+        "monthly",
+        "quarterly",
+        "yearly"
+      ],
+      "name": null
+    },
+    "collapsible-02": {
+      "expanded": [],
+      "folderIds": [
+        "src",
+        "src/sections",
+        "content",
+        "styles"
+      ],
+      "nestedUnmount": "uncontrolled child resets after parent closes"
+    }
+  },
+  "formSemantics": "No implicit name or FormData field; explicit name opts in; directory is not form control",
+  "adaptations": [
+    "native radios instead of Radix button+input",
+    "documented keyboard transaction handling",
+    "controlled directory map extension",
+    "original SVG icon replacements"
+  ],
+  "externalServices": false,
+  "browser": "not_run"
+}

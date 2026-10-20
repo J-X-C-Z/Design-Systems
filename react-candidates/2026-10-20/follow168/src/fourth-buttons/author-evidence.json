@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "suite": "fourth-buttons",
+  "evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+  "ids": 12,
+  "scenarios": 214,
+  "assertions": 1145,
+  "react": "19.3.0",
+  "exitCode": 0,
+  "stderrBytes": 0,
+  "jsdomWarnings": [],
+  "final_input_sha256": {
+    "index.jsx": "ac64a48069d8652ea8fd05012c7e84f388f7fee257514afc4228e425ab500fd1",
+    "styles.css": "16271bbffbb9ed4a55896a65973a48287fe6c8b754ee024d696b9acf1fb7a94f",
+    "index.d.ts": "84074652cb0312f7d4011b9ee33a63b657a155d82c8d287ec93da3f4d9f85d2e",
+    "tests/fourth-buttons-tests.cjs": "e75267f7c05cb3b83c4a2d6098ac9ab132745a00e135b5aac0f4f598ed3c597b"
+  },
+  "coverage": [
+    "12 exact source compositions and refs/native guards/names",
+    "Dynamic ownership takeover/release, same-value rejection, synchronous parent changes, reset/unmount and native/synthetic cancellation",
+    "Fixed random 1000ms simulation, exact boundary, retry/cancel/expired timer and instance isolation",
+    "Promise-only clipboard success, missing/insecure/throw/reject/invalid failures, duplicate lock, 2000ms feedback, stale result and callbacks",
+    "Focus/hover/Escape tooltip behavior and measured candidate placement/cleanup",
+    "6 stateful components in Strict/nonStrict: stable callback ref preserves external focus, identity replacement and React19 callback cleanup",
+    "Same-render ownership release+reset baseline and takeover+reset controlled value"
+  ],
+  "source_files": 18,
+  "source_blob_checks": "Freshly recomputed and exact matched; source copies retained",
+  "typecheck": "not_run; no installed tsc; no installation attempted",
+  "independent": "pending",
+  "browser": false,
+  "realKeyboard": false,
+  "realLayout": false,
+  "realClipboard": false,
+  "visual": false,
+  "scope": "Author-side React/JSDOM only; no prior native acceptance carried forward."
+}

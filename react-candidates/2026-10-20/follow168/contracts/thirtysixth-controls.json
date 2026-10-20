@@ -1,0 +1,132 @@
+{
+  "version": "0.36.0-candidate.1",
+  "phase": "Declared before implementation; all verification pending",
+  "ids": {
+    "radio-group-03": {
+      "export": "RadioGroup03",
+      "values": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "default": "light",
+      "labels": [
+        "Light Theme",
+        "Dark Theme",
+        "System Default"
+      ],
+      "identity": "Three compact vertically stacked native radios with local sun/moon/desktop SVG silhouettes, primary filled checked circle and shadow. No automatic system theme detection or document theme mutation."
+    },
+    "radio-group-04": {
+      "export": "RadioGroup04",
+      "values": [
+        "starter",
+        "team",
+        "premium"
+      ],
+      "default": "starter",
+      "labels": [
+        "Starter",
+        "Team",
+        "Premium"
+      ],
+      "prices": [
+        "Free",
+        "₹799/mo",
+        "Custom"
+      ],
+      "descriptions": [
+        "Quick setup for personal productivity",
+        "Built for collaboration and shared workflows",
+        "Full power with advanced controls and support"
+      ],
+      "identity": "Three separate rounded bordered pricing cards, start-aligned radio, bolt/users/crown icon, price at opposite edge and description below; checked tint/border/shadow plus bounded hover lift. Entire noninteractive card label activates its radio."
+    },
+    "radio-group-05": {
+      "export": "RadioGroup05",
+      "values": [
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "2",
+      "labels": [
+        "Individual",
+        "Team Workspace",
+        "Organization"
+      ],
+      "prices": [
+        "Free",
+        "₹999/mo",
+        "Custom"
+      ],
+      "badge": {
+        "value": "2",
+        "text": "Best Seller"
+      },
+      "identity": "Contiguous three-row grouped card with collapsed shared borders, only outer first/last rounding, selected inset shadow, user/users/building icons, price right and responsive Best Seller badge. Replace original plan-radio-N generic aria-label with visible item name; price and recommendation remain descriptive relationships."
+    },
+    "radio-group-06": {
+      "export": "RadioGroup06",
+      "values": [
+        "starter",
+        "pro"
+      ],
+      "default": "starter",
+      "labels": [
+        "Starter",
+        "Pro"
+      ],
+      "prices": [
+        "Free",
+        "$10/mo"
+      ],
+      "descriptions": [
+        "Good for personal projects and basic usage.",
+        "Best for teams with more features and flexibility."
+      ],
+      "identity": "Two separated full-width softly bordered cards, larger centered radio, label/price top row and description beneath; selected subtle primary tint. Both have actual native label activation."
+    }
+  },
+  "state": {
+    "ownership": "Per-variant exact string union|null; mutually exclusive value/defaultValue. Fixed mount reset baseline is source default unless defaultValue supplied. Controlled owner is authoritative; release retains last committed controlled selection, not a refused proposal. Later defaultValue changes do not replace mount baseline. Unknown values rejected.",
+    "ordering": "Capture epoch and action order before caller item handler. Synchronous owner/config changes and unmount invalidate queued actions. Accepted noncontrolled logical state bridges batched commits. Later canceled interactions must not erase earlier valid reset/click. Callback return false, details.cancel, event.preventDefault and ancestors/native event prevention veto pending selection. Exact event method descriptors restored after overlapping guards.",
+    "focus": "Roving tab stop; selected enabled item or latest user-focused enabled item, otherwise first enabled. Disabled/hidden/inert/closed ancestor and native disabled fieldset availability checked at action time. An ancestor or destination focus handler moving focus outside wins; no reclaiming after queued navigation. Destination synthetic focus preventDefault vetoes the subsequent click/selection; already moved DOM focus is not reversed. Noncancelable native focusin prevention retains native semantics.",
+    "tabEntry": "Post-commit availability and relevant live light-DOM mutations refresh the eligible tab-stop set. Only membership changes update local rendering; this never moves focus, changes selection, or clears pending work. Unrelated style/class changes with unchanged availability preserve input requests."
+  },
+  "keyboard": {
+    "default": "All four arrow keys rove and select by default; horizontal RTL direction reverses, vertical stays. Optional orientation restricts arrow axis. Home/End rove without selecting to match recovered Radix behavior, Space selects focused item through native click. Enter suppresses implicit submit without selecting, except IME composition. Optional loop=false stops at edge; default true.",
+    "guards": "Native Tab remains untouched. Modified/repeated/composing navigation does not synthesize action. User item/ancestor cancellation, updated owner, disconnected or unavailable destination prevent deferred action. Keyboard selection invokes actual input click once and respects both key and click handlers.",
+    "edge": "An arrow which cannot move focus (nonlooping edge or only one available item) does not activate the already focused option. Space can explicitly activate it."
+  },
+  "form": {
+    "native": "Actual input type=radio for every option with native name/form/required/disabled checkedness and FormData. Caller inputRef receives HTMLInputElement; root ref HTMLDivElement; React19 ref cleanup supported. Native input/change/focus/blur handlers preserved. Named multiple groups share native HTML semantics; use distinct names for independent groups.",
+    "reset": "Observe actual input.form owner including external form attribute. Noncontrolled native reset proposes mount default; controlled reset restores owner with no value proposal. Prevented reset restores accepted checkedness. Two-pass reconciliation sets every defaultChecked before any checked so named native group cannot erase current owner. Reset follows actual form ownership and leaves independent forms unchanged. Reset is allowed while disabled, matching native form reset. Recheck actual live ownership after dispatch, including form reassociation during onReset. A new controlled group mounted/replaced during onReset restores its owner after the later native default action without a fabricated callback.",
+    "boundary": "Native-input adaptation differs from original Radix button plus bubble-input internals; do not claim DOM/event implementation equivalence. Native trusted keyboard, validity UI, reset timing and browser FormData integration require browser acceptance beyond JSDOM."
+  },
+  "accessibility": {
+    "names": "Unique instance IDs and protected native label htmlFor. Group has meaningful default label with caller aria-label/labelledby override. Item accessible name defaults to exact visible title, explicit caller labelledby may override. Caller generic aria-label is not allowed to silently suppress visible title. Icons decorative; prices/descriptions/badge linked by aria-describedby. Source labels/prices are illustrative examples, not current pricing offers.",
+    "slots": "Fixed item text/content preserves identity. Typed itemProps and labelProps for exact keys expose native safe handlers/ref and attributes while protecting controlled value, type, name, form, checked, defaultChecked, id, tabIndex, role, aria-checked and label htmlFor/content."
+  },
+  "style": {
+    "scope": "Scoped radio family styles with four distinct layouts. Responsive cards, dark palette, forced-colors visibility, reduced-motion hover lift suppression, explicit text contrast and inherited page CSS isolation. No remote images, downloads or new runtime dependencies."
+  },
+  "preservation": {
+    "oldSource": "345 prior source files unchanged; five additive integration entries plus one authorized35 CSS data-mode=dark alias repair. No old JavaScript behavior change; shared30 cancellation/tooltip remain unchanged.",
+    "sourceEvidence": "Four pinned source variants plus RadioGroup/Label/Badge primitives, checked canonical gitBlob IDs."
+  },
+  "limits": [
+    "React source candidates only; no native/Flutter.",
+    "No real theme settings, billing/subscription or external side effects.",
+    "No browser/AT/formal acceptance yet; no full official equivalence claim."
+  ],
+  "accounting": {
+    "before": 156,
+    "after": 160,
+    "remaining": 689,
+    "newCanonicalIds": 4,
+    "nestedOptions": 11,
+    "nestedOptionsAreAdditionalCanonicalIds": false,
+    "formalAccepted": 0
+  }
+}

@@ -1,0 +1,23 @@
+import * as React from 'react';
+type Tabs31Owner<V extends string>={value:V|null;defaultValue?:never}|{value?:never;defaultValue?:V|null};
+type Tabs31Trigger=Omit<React.ComponentPropsWithRef<'button'>,'children'|'dangerouslySetInnerHTML'|'type'|'role'|'id'|'aria-controls'|'aria-selected'|'tabIndex'>;
+type Tabs31Panel=Omit<React.ComponentPropsWithRef<'div'>,'children'|'dangerouslySetInnerHTML'|'role'|'id'|'aria-labelledby'|'hidden'|'tabIndex'>;
+type Tabs31List=Omit<React.ComponentPropsWithRef<'div'>,'children'|'dangerouslySetInnerHTML'|'role'|'aria-label'|'aria-orientation'>;
+interface Tabs31Details<I extends string,V extends string>{id:I;previousValue:V|null;reason:'click'|'focus'|'keyboard';event:React.MouseEvent<HTMLButtonElement>|React.FocusEvent<HTMLButtonElement>|React.KeyboardEvent<HTMLButtonElement>;button:HTMLButtonElement;cancel():void;}
+type Tabs31Props<I extends string,V extends string>=Omit<React.HTMLAttributes<HTMLDivElement>,'children'|'dangerouslySetInnerHTML'|'onChange'|'defaultValue'|'dir'>&Tabs31Owner<V>&{disabled?:boolean;activationMode?:'automatic'|'manual';orientation?:'horizontal'|'vertical';dir?:'ltr'|'rtl';loop?:boolean;label?:string;triggerProps?:Partial<Record<V,Tabs31Trigger>>;listProps?:Tabs31List;panelProps?:Partial<Record<V,Tabs31Panel>>;onValueChange?:(value:V|null,details:Tabs31Details<I,V>)=>void|boolean;};
+export type Tabs10Value='recent'|'shared'|'archive';
+export type Tabs10ChangeDetails=Tabs31Details<'tabs-10',Tabs10Value>;
+export type Tabs10Props=Tabs31Props<'tabs-10',Tabs10Value>;
+export const Tabs10:React.ForwardRefExoticComponent<Tabs10Props&React.RefAttributes<HTMLDivElement>>;
+export type Tabs11Value='performance'|'infra'|'security';
+export type Tabs11ChangeDetails=Tabs31Details<'tabs-11',Tabs11Value>;
+export type Tabs11Props=Tabs31Props<'tabs-11',Tabs11Value>;
+export const Tabs11:React.ForwardRefExoticComponent<Tabs11Props&React.RefAttributes<HTMLDivElement>>;
+export type Tabs12Value='branding'|'dev'|'ux';
+export type Tabs12ChangeDetails=Tabs31Details<'tabs-12',Tabs12Value>;
+export type Tabs12Props=Tabs31Props<'tabs-12',Tabs12Value>;
+export const Tabs12:React.ForwardRefExoticComponent<Tabs12Props&React.RefAttributes<HTMLDivElement>>;
+export type Tabs13Value='curriculum'|'lessons'|'certification';
+export type Tabs13ChangeDetails=Tabs31Details<'tabs-13',Tabs13Value>;
+export type Tabs13Props=Tabs31Props<'tabs-13',Tabs13Value>;
+export const Tabs13:React.ForwardRefExoticComponent<Tabs13Props&React.RefAttributes<HTMLDivElement>>;

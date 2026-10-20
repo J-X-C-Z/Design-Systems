@@ -1,0 +1,371 @@
+{
+  "slice": "disclosure",
+  "framework": "React",
+  "componentCount": 3,
+  "sourcePin": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "sourceProof": "src/disclosure/source-verification.json",
+  "testEntry": "tests/disclosure-tests.cjs",
+  "status": "authored-static-candidates-unexecuted",
+  "items": [
+    {
+      "id": "tabs-01",
+      "export": "Tabs01",
+      "source": {
+        "canonicalId": "watermelon:components:tabs-01",
+        "sourcePath": "src/data/contents/components/tabs/variant-1.tsx",
+        "sourceURL": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/tabs/variant-1.tsx",
+        "gitBlob": "575c6c26daa62727b04b221d1459ad6d4c359a7e",
+        "sha256": "0f1026777970e459a88767b74ca42c887e4bc41275e7c9249ea0f484b317ab42",
+        "bytes": 1891,
+        "originalCopy": {
+          "items": [
+            {
+              "value": "overview",
+              "title": "Overview",
+              "content": "Get a birds-eye view of your creative project, from milestones to current progress. Keep your vision clear and your team aligned with real-time updates.",
+              "emphasis": "birds-eye view"
+            },
+            {
+              "value": "roadmap",
+              "title": "Roadmap",
+              "content": "Plan your future trajectory with a visual roadmap of upcoming features and releases. Track your long-term goals and stay ahead of the curve.",
+              "emphasis": "future trajectory"
+            },
+            {
+              "value": "backlog",
+              "title": "Backlog",
+              "content": "Manage your pending tasks and ideas. Prioritize what matters most and ensure nothing falls through the cracks as your project grows.",
+              "emphasis": "pending tasks"
+            }
+          ]
+        }
+      },
+      "framework": "Actual React function component with useState/useRef/useLayoutEffect, keyed JSX and normal React props/ref lifecycle; no native DOM mount wrapper.",
+      "stateContract": {
+        "controlled": "value/open !== undefined. Props are authoritative. undefined releases control, preserving last effective state.",
+        "default": "defaultValue/defaultOpen is initialization-only.",
+        "callback": "Synchronous request; exact false vetoes an internal uncontrolled proposal; controlled owner props remain authoritative even if callback returns false. Async return is not awaited.",
+        "commit": "Internal proposal is finalized in layout after the parent commit; current restrictions and owner revision are rechecked. Ordinary metadata preserves the proposal.",
+        "lifecycle": "Actual unmount, keyed replacement, changed controlled owner or newer request invalidates stale internal proposal. No legacy mutable getState/update API."
+      },
+      "style": "Scoped .fr7.fr7-disclosure; inherited shared tokens. Follow square geometry, wrapping full text and explicit surface/ink/accent pairings replace source rounded/blur/animation styling. Other Provider token themes are not independent ID acceptance.",
+      "form": "No editable inputs. All buttons type=button. External form.reset does not change React state or text. No fabricated business submission. Editable-field/native-value reset and composition are N/A; keyboard composition guards remain applicable.",
+      "verification": {
+        "sourceIdentity": "Seven exact saved source/primitive Git blobs independently recomputed against fixed upstream tree.",
+        "ReactRuntime": "not_run",
+        "JSXCompile": "not_run",
+        "JSDOM": "not_run",
+        "CSSOM": "not_run",
+        "browser": "not_run",
+        "visual": "not_run",
+        "independentAudit": "not_run",
+        "formalAcceptance": "pending",
+        "inheritedNativeCredit": false,
+        "inheritedOldReactCredit": false
+      },
+      "implementationFiles": [
+        "src/disclosure/index.jsx",
+        "src/disclosure/index.d.ts",
+        "src/disclosure/styles.css"
+      ],
+      "testEntry": "tests/disclosure-tests.cjs: async run(window,React,createRoot,assert,compiledExports,{flushSync})",
+      "sourceStructure": [
+        "Three tabs overview/roadmap/backlog, default overview, horizontal automatic activation.",
+        "Each paragraph preserves one emphasized phrase.",
+        "Track + paper selected tab + three associated panel elements, only selected panel visible."
+      ],
+      "props": {
+        "items": "Readonly text-only DisclosureItem[]. Missing/null content selects before/emphasis/after; explicit undefined/empty string selects empty prose.",
+        "value": "string|null; invalid/removed/disabled item normalizes to first enabled item, empty/all disabled => null.",
+        "defaultValue": "overview by default.",
+        "onValueChange": "(next, {id,previousValue,controlled,reason,event}) => void|boolean.",
+        "disabled": "Native disabled tab buttons; current panel remains readable.",
+        "activationMode": "automatic default; manual explicit extension.",
+        "dir": "ltr default; rtl explicit extension.",
+        "label": "创意项目 by default.",
+        "className": "Optional outer class.",
+        "onKeyDownCapture": "Optional interception, honored through defaultPrevented."
+      },
+      "nativeApi": {
+        "stateDomain": "value",
+        "default": "overview",
+        "closeSupported": false,
+        "closePatch": null,
+        "longTextProps": [
+          "label",
+          "items[].title",
+          "items[].content",
+          "items[].before",
+          "items[].emphasis",
+          "items[].after"
+        ],
+        "publicStateRead": "Read controlled value in parent or selected tab/panel ARIA state; no mutable imperative getState."
+      },
+      "keyboard": [
+        "ArrowLeft/Right wrap enabled controls; RTL changes direction.",
+        "Home/End select edges. Automatic focus (native/programmatic/arrow) requests once while target owns focus; manual activation uses Enter/Space.",
+        "Preserve defaultPrevented, isComposing/nativeEvent.isComposing, keyCode/nativeEvent.keyCode229 and alt/ctrl/meta/shift.",
+        "No Tab interception. External focus taken during focus/selection callbacks is not reclaimed."
+      ],
+      "enhancements": [
+        "Controlled/uncontrolled request API, exact-false veto, dynamic text items and item/global disabled.",
+        "Idempotent normalization preserves structured prose on items round trip.",
+        "Keyed React controls retain captured span nodes on metadata and same-owner changes.",
+        "Source hidden panels retain associated React DOM nodes rather than source library mount/animation lifecycle."
+      ],
+      "tests": [
+        "tabs/source-three-panels-and-emphasis",
+        "tabs/controlled-refusal-and-structured-body-roundtrip",
+        "tabs/ordinary-parent-metadata-does-not-swallow-request",
+        "tabs/controlled-parent-acceptance-and-release",
+        "tabs/callback-disables-current-target-or-unmounts",
+        "tabs/focus-and-captured-descendants-survive-metadata",
+        "tabs/keyboard-guard-IME229-modifiers-prevented",
+        "tabs/keyboard-cycle-home-end-and-disabled",
+        "tabs/dynamic-items-long-label-empty-and-multi-instance",
+        "tabs/manual-mode-rtl-and-external-focus-ownership",
+        "collections/removal-fallback-and-external-focus-not-stolen",
+        "normalization/explicit-null-undefined-empty-idempotence",
+        "sources/three-canonical-seven-blobs-and-real-react",
+        "native-form/buttons-do-not-submit-or-reset-enclosing-form",
+        "css/token-scope-contrast-pairs-fulltext-and-reducedmotion-static",
+        "sync-owner/flushSync-disable-destroy-replace-and-show-focus"
+      ]
+    },
+    {
+      "id": "accordion-01",
+      "export": "Accordion01",
+      "source": {
+        "canonicalId": "watermelon:components:accordion-01",
+        "sourcePath": "src/data/contents/components/accordion/variant-1.tsx",
+        "sourceURL": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/accordion/variant-1.tsx",
+        "gitBlob": "735bf87923f48a540a4af52276a82c112b3387ff",
+        "sha256": "5d074b267df363af2e90d69838efb679bfcf399db6466f17be512cda93a242a7",
+        "bytes": 1444,
+        "originalCopy": {
+          "items": [
+            {
+              "value": "item-1",
+              "title": "How secure is my data?",
+              "content": "We use industry-standard encryption and secure infrastructure to protect your data at every step. Your information is never shared without your consent."
+            },
+            {
+              "value": "item-2",
+              "title": "How do transactions work?",
+              "content": "Transactions are processed instantly and reflected in your account in real time. You can view detailed history and insights anytime."
+            },
+            {
+              "value": "item-3",
+              "title": "Can I manage everything in one place?",
+              "content": "Yes - track activity, manage settings, and control your account from a single, unified dashboard designed for clarity and speed."
+            }
+          ]
+        }
+      },
+      "framework": "Actual React function component with useState/useRef/useLayoutEffect, keyed JSX and normal React props/ref lifecycle; no native DOM mount wrapper.",
+      "stateContract": {
+        "controlled": "value/open !== undefined. Props are authoritative. undefined releases control, preserving last effective state.",
+        "default": "defaultValue/defaultOpen is initialization-only.",
+        "callback": "Synchronous request; exact false vetoes an internal uncontrolled proposal; controlled owner props remain authoritative even if callback returns false. Async return is not awaited.",
+        "commit": "Internal proposal is finalized in layout after the parent commit; current restrictions and owner revision are rechecked. Ordinary metadata preserves the proposal.",
+        "lifecycle": "Actual unmount, keyed replacement, changed controlled owner or newer request invalidates stale internal proposal. No legacy mutable getState/update API."
+      },
+      "style": "Scoped .fr7.fr7-disclosure; inherited shared tokens. Follow square geometry, wrapping full text and explicit surface/ink/accent pairings replace source rounded/blur/animation styling. Other Provider token themes are not independent ID acceptance.",
+      "form": "No editable inputs. All buttons type=button. External form.reset does not change React state or text. No fabricated business submission. Editable-field/native-value reset and composition are N/A; keyboard composition guards remain applicable.",
+      "verification": {
+        "sourceIdentity": "Seven exact saved source/primitive Git blobs independently recomputed against fixed upstream tree.",
+        "ReactRuntime": "not_run",
+        "JSXCompile": "not_run",
+        "JSDOM": "not_run",
+        "CSSOM": "not_run",
+        "browser": "not_run",
+        "visual": "not_run",
+        "independentAudit": "not_run",
+        "formalAcceptance": "pending",
+        "inheritedNativeCredit": false,
+        "inheritedOldReactCredit": false
+      },
+      "implementationFiles": [
+        "src/disclosure/index.jsx",
+        "src/disclosure/index.d.ts",
+        "src/disclosure/styles.css"
+      ],
+      "testEntry": "tests/disclosure-tests.cjs: async run(window,React,createRoot,assert,compiledExports,{flushSync})",
+      "sourceStructure": [
+        "Three sibling entries, multiple mode, default [item-1]; each may close and all may be open.",
+        "Leading ChevronDown/Up from exact primitive; continuous separators and indented content."
+      ],
+      "props": {
+        "items": "Readonly text-only DisclosureItem[] with stable string values.",
+        "value": "readonly string[]; effective selection is current source-order intersection, including already-open disabled items.",
+        "defaultValue": "[item-1] by default.",
+        "onValueChange": "(next, {id,previousValue,controlled,reason,event}) => void|boolean.",
+        "disabled": "Native disabled triggers; open panels stay readable. Disabled items cannot toggle.",
+        "label": "常见问题 by default.",
+        "className": "Optional outer class.",
+        "onKeyDownCapture": "Optional interception; defaultPrevented honored."
+      },
+      "nativeApi": {
+        "stateDomain": "value",
+        "default": [
+          "item-1"
+        ],
+        "closeSupported": true,
+        "closePatch": {
+          "value": []
+        },
+        "longTextProps": [
+          "label",
+          "items[].title",
+          "items[].content"
+        ],
+        "publicStateRead": "Read controlled value in parent or trigger aria-expanded; no mutable imperative getState."
+      },
+      "keyboard": [
+        "ArrowUp/Down/Home/End only move enabled trigger focus without changing expanded values.",
+        "Enter/Space toggle; repeat ignored for toggle.",
+        "Prior prevented events, IME229 and modifiers are untouched. Tab stays native."
+      ],
+      "enhancements": [
+        "Multiple-only API deliberately retains source semantics, not a generic single/multiple template.",
+        "Dynamic items/disabled/request API are explicit extensions. Current disabled target is revalidated after parent callback for both opening and closing.",
+        "Leading SVG/path nodes remain stable under metadata and expansion; only path d changes.",
+        "Panels keep keyed hidden DOM; source library animation/unmount internals are not replicated."
+      ],
+      "tests": [
+        "accordion/source-multiple-leading-chevron",
+        "accordion/controlled-refusal-and-structured-body-roundtrip",
+        "accordion/ordinary-parent-metadata-does-not-swallow-request",
+        "accordion/controlled-parent-acceptance-and-release",
+        "accordion/callback-disables-current-target-or-unmounts",
+        "accordion/focus-and-captured-descendants-survive-metadata",
+        "accordion/keyboard-guard-IME229-modifiers-prevented",
+        "accordion/keyboard-cycle-home-end-and-disabled",
+        "accordion/dynamic-items-long-label-empty-and-multi-instance",
+        "collections/removal-fallback-and-external-focus-not-stolen",
+        "sources/three-canonical-seven-blobs-and-real-react",
+        "native-form/buttons-do-not-submit-or-reset-enclosing-form",
+        "css/token-scope-contrast-pairs-fulltext-and-reducedmotion-static",
+        "sync-owner/flushSync-disable-destroy-replace-and-show-focus"
+      ]
+    },
+    {
+      "id": "dialog-01",
+      "export": "Dialog01",
+      "source": {
+        "canonicalId": "watermelon:components:dialog-01",
+        "sourcePath": "src/data/contents/components/dialog/variant-1.tsx",
+        "sourceURL": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/dialog/variant-1.tsx",
+        "gitBlob": "13f6617736089cb4939b2f93394fb050b32bf337",
+        "sha256": "e0f7364c28cf9f8bda4c9e1084935fa3aa9b80266661843cf77307c32070cb32",
+        "bytes": 2038,
+        "originalCopy": {
+          "trigger": "Alert Dialog",
+          "title": "Are you absolutely sure?",
+          "description": "This action cannot be undone. This will permanently delete your account and remove your data from our servers.",
+          "cancel": "Cancel",
+          "confirm": "Continue"
+        }
+      },
+      "framework": "Actual React function component with useState/useRef/useLayoutEffect, keyed JSX and normal React props/ref lifecycle; no native DOM mount wrapper.",
+      "stateContract": {
+        "controlled": "value/open !== undefined. Props are authoritative. undefined releases control, preserving last effective state.",
+        "default": "defaultValue/defaultOpen is initialization-only.",
+        "callback": "Synchronous request; exact false vetoes an internal uncontrolled proposal; controlled owner props remain authoritative even if callback returns false. Async return is not awaited.",
+        "commit": "Internal proposal is finalized in layout after the parent commit; current restrictions and owner revision are rechecked. Ordinary metadata preserves the proposal.",
+        "lifecycle": "Actual unmount, keyed replacement, changed controlled owner or newer request invalidates stale internal proposal. No legacy mutable getState/update API."
+      },
+      "style": "Scoped .fr7.fr7-disclosure; inherited shared tokens. Follow square geometry, wrapping full text and explicit surface/ink/accent pairings replace source rounded/blur/animation styling. Other Provider token themes are not independent ID acceptance.",
+      "form": "No editable inputs. All buttons type=button. External form.reset does not change React state or text. No fabricated business submission. Editable-field/native-value reset and composition are N/A; keyboard composition guards remain applicable.",
+      "verification": {
+        "sourceIdentity": "Seven exact saved source/primitive Git blobs independently recomputed against fixed upstream tree.",
+        "ReactRuntime": "not_run",
+        "JSXCompile": "not_run",
+        "JSDOM": "not_run",
+        "CSSOM": "not_run",
+        "browser": "not_run",
+        "visual": "not_run",
+        "independentAudit": "not_run",
+        "formalAcceptance": "pending",
+        "inheritedNativeCredit": false,
+        "inheritedOldReactCredit": false
+      },
+      "implementationFiles": [
+        "src/disclosure/index.jsx",
+        "src/disclosure/index.d.ts",
+        "src/disclosure/styles.css"
+      ],
+      "testEntry": "tests/disclosure-tests.cjs: async run(window,React,createRoot,assert,compiledExports,{flushSync})",
+      "sourceStructure": [
+        "AlertDialog trigger, title, irreversible account deletion description, Cancel/Continue; starts closed.",
+        "No X; outside pointer does not dismiss; Continue has no source backend implementation.",
+        "Source primitive is Radix portal modal. Adapter uses native HTMLDialogElement showModal/close in same React tree with alertdialog role."
+      ],
+      "props": {
+        "open": "boolean controlled; undefined releases control.",
+        "defaultOpen": "false by default.",
+        "onOpenChange": "(next, {id,previousValue,controlled,reason,event}) => void|boolean.",
+        "triggerRef": "Ref to the single actual trigger, including React19 callback-ref cleanup.",
+        "disabled": "Blocks opening and confirmation; Cancel/Escape remain reachable while open.",
+        "confirmDisabled": "Only Continue is disabled.",
+        "title": "你确定要继续吗？",
+        "description": "Faithful Chinese source irreversible account/data deletion description, with separate visible local-only disclaimer.",
+        "triggerLabel": "确认对话框",
+        "cancelLabel": "取消",
+        "confirmLabel": "继续",
+        "onConfirm": "Local callback, exact false vetoes; no deletion/network operation.",
+        "onCancel": "Local Cancel action callback, exact false vetoes. Native Escape uses open-change reason escape.",
+        "onNativeError": "Reports missing showModal/close or repeated rejected native close; no silent nonmodal fallback.",
+        "className": "Outer optional class.",
+        "onKeyDownCapture": "Native keyboard interception can be handled by caller; no custom Tab loop."
+      },
+      "nativeApi": {
+        "stateDomain": "open",
+        "default": false,
+        "closeSupported": true,
+        "closePatch": {
+          "open": false
+        },
+        "longTextProps": [
+          "triggerLabel",
+          "title",
+          "description",
+          "cancelLabel",
+          "confirmLabel"
+        ],
+        "publicStateRead": "Read controlled open or native dialog.open/trigger aria-expanded; no mutable imperative getState."
+      },
+      "focusLifecycle": [
+        "Native showModal provides modality; Cancel carries native autofocus.",
+        "Metadata updates retain the live dialog/action nodes and do not call focus again.",
+        "Native cancel prevents default while owner request resolves; no outside-pointer dismissal.",
+        "Unexpected native close can recover once after refusal; repeated refusal yields visible error rather than an unbounded focus/close cycle.",
+        "Closing/unmount closes native node. Connected trigger is restored only while focus remains owned and no other open native dialog owns the layer. Explicit current outside focus is preserved.",
+        "showModal focus callbacks may update/close/unmount/rekey; actual live operation/node identity is checked. Native focus, background business inertness and browser chrome behavior remain browser gates."
+      ],
+      "enhancements": [
+        "Single native button removes source nested-button structure.",
+        "Native dialog replaces Radix portal internals; same-tree token inheritance avoids copying Provider values into a portal.",
+        "Controlled request/ref/error callbacks are explicit adapter extensions.",
+        "Visible local-only boundary states that Continue does not delete accounts or send data. No account operation is implemented."
+      ],
+      "tests": [
+        "dialog/source-native-alert-layout-confirm-local-only",
+        "dialog/controlled-refusal-native-cancel-and-acceptance",
+        "dialog/cancel-default-prevented-and-disabled-close-reachable",
+        "dialog/metadata-focus-and-trigger-descendant-stability",
+        "dialog/confirm-veto-parent-disabled-and-outside-owner",
+        "dialog/ordinary-parent-metadata-and-owner-release",
+        "dialog/native-close-refusal-reopens-once-and-cleanup",
+        "dialog/two-instances-isolation-parent-destruction",
+        "dialog/synchronous-show-focus-metadata-close-replace-external",
+        "dialog/synchronous-action-close-reopen-invalidates-old-close",
+        "sources/three-canonical-seven-blobs-and-real-react",
+        "native-form/buttons-do-not-submit-or-reset-enclosing-form",
+        "css/token-scope-contrast-pairs-fulltext-and-reducedmotion-static",
+        "sync-owner/flushSync-disable-destroy-replace-and-show-focus"
+      ]
+    }
+  ]
+}

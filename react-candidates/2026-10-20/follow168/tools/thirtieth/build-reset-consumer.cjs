@@ -1,0 +1,1 @@
+const path=require('path'),R=path.resolve(__dirname,'../..');require(path.join(process.env.LOCAL_DEPENDENCIES,'esbuild')).buildSync({entryPoints:[R+'/qa/consumer136-c1/node_modules/@follow-ui/react-seven/index.js'],outfile:R+'/qa/reset116-package-runtime.cjs',bundle:true,platform:'node',format:'cjs',external:['react','react-dom','react/jsx-runtime']});

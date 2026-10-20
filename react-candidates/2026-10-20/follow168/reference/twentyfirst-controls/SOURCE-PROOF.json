@@ -1,0 +1,38 @@
+[
+  {
+    "source": "sources/src/data/contents/components/breadcrumb/variant-5.tsx",
+    "path": "sources/src/data/contents/components/breadcrumb/variant-5.tsx",
+    "sha256": "858918f2fd46b3bb19e0887fe35438d6afa2641b8028e44d90abddb28994aabc",
+    "gitBlob": "19170e6dacd2ed38563d14871107c0cfbab3b532"
+  },
+  {
+    "source": "sources/src/data/contents/components/textarea/variant-10.tsx",
+    "path": "sources/src/data/contents/components/textarea/variant-10.tsx",
+    "sha256": "9e41f4ff21105a1510133eb6f73daa3deea182e0b3c176e2e86ae990fd29efd8",
+    "gitBlob": "cba1ec17e516e7c2fc0c02d039f828cf63810039"
+  },
+  {
+    "source": "sources/src/components/base-ui/breadcrumb.tsx",
+    "path": "sources/src/components/base-ui/breadcrumb.tsx",
+    "sha256": "785212482c3b4702abf9bc08af0490f3734e594997e3554e5195328a7ddcd70d",
+    "gitBlob": "db9afc0c0fe2766fb722a5dc985bbb8d182e9502"
+  },
+  {
+    "source": "sources/src/components/base-ui/badge.tsx",
+    "path": "sources/src/components/base-ui/badge.tsx",
+    "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d",
+    "gitBlob": "cacff11dce8d09f7882da68c971b3a7e5be3e78a"
+  },
+  {
+    "source": "sources/src/components/ui/textarea.tsx",
+    "path": "sources/src/components/ui/textarea.tsx",
+    "sha256": "66bcb35c31a6a09447f484c261e87c4eb5b5c2504322a26f3acab169ab0b1729",
+    "gitBlob": "668fd7172ab96a481869e1b741de6f127dbb36d8"
+  },
+  {
+    "source": "sources/src/components/ui/label.tsx",
+    "path": "sources/src/components/ui/label.tsx",
+    "sha256": "8432e702e5b1af7d2af3d6c712985f5af287df680c2564a6f5aa72ff30306e27",
+    "gitBlob": "33dc07114f56a49c05a7211d733ea517e842aaab"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "ids": [
+    "breadcrumb-07",
+    "textarea-15"
+  ],
+  "originalProof": "reference/twentyfourth-controls/SOURCE-PROOF.json",
+  "breadcrumb": {
+    "source": "Home# icon-only accessible link → separate closedfolder/openfolder button with same Open section menu accessible name → static Release Notes currentpage; Updates/Changelog/Archive options, default closed, selection closes only",
+    "ownership": "open/defaultOpen exclusive; uncontrolled initialdefault only, controlled refusal/release; onOpenChange and onSelect cancel/false; native/synthetic cancellation respected after bubble",
+    "keyboard": "native Enter/Space button activation; trigger ArrowDown/Up opens first/last; menu ArrowUp/Down wraps skipsdisabled, HomeEnd, onechar typeahead, Escape closes returns trigger, Tab closes moves next/previous outside element. IME/modifiers ignored",
+    "dismiss": "outside pointer/focus close, cancelable; no focus steal from existing outside target; native reset has no disclosure state",
+    "position": "fixed in-place descendant, triggerDOMRect + viewport/visualViewport dimensions; horizontalclamp, above/below choice and maxheight, capturedscroll/resize/ResizeObserver update, cleanup onclose/unmount",
+    "semanticFix": "Sibling valid li separators; current page is separate disabled rolelink, never ancestor of trigger",
+    "adaptationLimits": "No Radix/Portal dependency; nonmodal no outside inert/focus trap; different Tab semantics and simplified flip/clamp collision policy. Transformed or clipping ancestors may constrain fixed child; no portal escape guarantee. No full multi-character Radix typeahead. Browser layout/focus not accepted."
+  },
+  "textarea": {
+    "label": "Fixed size Textarea",
+    "placeholder": "Enter your response...",
+    "defaultValue": "",
+    "defaultName": null,
+    "required": false,
+    "style": "source variant only resize:none; base primitive still field-sizing:content,min-height64px, no maxheight. Title does not imply fixed CSS height; no browser autosize claim",
+    "native": "React value/defaultValue exclusive, form/reset/refs/disabled/readonly/required; no JS autosize loop or measured-height claim"
+  },
+  "browser": 0,
+  "icons": "Original owned SVG line artwork replaces lucide assets; no exact external icon pixel identity"
+}

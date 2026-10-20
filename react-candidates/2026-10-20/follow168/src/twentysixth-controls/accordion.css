@@ -1,0 +1,82 @@
+.fr7-medical-faq {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  background: var(--ds-surface, #fff);
+  color: var(--ds-text, #151515);
+  font: inherit;
+}
+.fr7-medical-faq-item { border-bottom: 1px solid var(--ds-line, #b7b7ae); }
+.fr7-medical-faq-item[data-state="open"] { border-color: var(--follow-orange, #f4793a); }
+.fr7-medical-faq-item:last-child { border-bottom: 0; }
+.fr7-medical-faq-heading { margin: 0; font: inherit; }
+.fr7-medical-faq-trigger {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  min-height: 48px;
+  padding: 16px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.5;
+  text-align: start;
+  cursor: pointer;
+}
+.fr7-medical-faq-toggle {
+  display: inline-flex;
+  flex: 0 0 16px;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-top: 2.5px;
+  color: var(--ds-muted, #52524e);
+  transition: background-color 160ms ease, color 160ms ease;
+}
+.fr7-medical-faq-trigger[aria-expanded="true"] .fr7-medical-faq-toggle {
+  background: var(--follow-orange, #f4793a);
+  color: var(--follow-ink, #111);
+}
+.fr7-medical-faq-title { display: flex; align-items: flex-start; gap: 16px; min-width: 0; }
+.fr7-medical-faq-title > span { min-width: 0; overflow-wrap: anywhere; }
+.fr7-medical-faq-icon { flex: 0 0 16px; margin-top: 2.5px; }
+.fr7-medical-faq-trigger:hover:not(:disabled) .fr7-medical-faq-title > span { text-decoration: underline; text-underline-offset: 3px; }
+.fr7-medical-faq-trigger:focus-visible { outline: 3px solid var(--ds-focus, #151515); outline-offset: 3px; }
+.fr7-medical-faq-trigger:disabled { opacity: .45; cursor: not-allowed; }
+.fr7-medical-faq-content {
+  padding: 0 0 16px 32px;
+  padding-inline: 32px 0;
+  color: var(--ds-muted, #52524e);
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  animation: fr7-medical-faq-in 160ms ease-out;
+}
+.fr7-medical-faq-content[hidden] { display: none; }
+@keyframes fr7-medical-faq-in { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+.fr7[data-motion="off"] .fr7-medical-faq-content { animation: none; }
+.fr7[data-motion="off"] .fr7-medical-faq-toggle { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .fr7-medical-faq-content { animation: none; }
+  .fr7-medical-faq-toggle { transition: none; }
+}
+
+@media (forced-colors: active) {
+  .fr7-medical-faq-item { border-color: CanvasText; }
+  .fr7-medical-faq-trigger:focus-visible { outline-color: Highlight; }
+  .fr7-medical-faq-trigger[aria-expanded="true"] .fr7-medical-faq-toggle {
+    forced-color-adjust: none;
+    background: Highlight;
+    color: HighlightText;
+  }
+  .fr7-medical-faq-trigger:disabled { color: GrayText; opacity: 1; }
+}

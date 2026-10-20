@@ -1,0 +1,71 @@
+{
+  "radio-group-11": {
+    "initial": "1",
+    "groupLabel": "Plan level",
+    "items": [
+      {
+        "value": "1",
+        "label": "Basic",
+        "price": "Free",
+        "description": "Get 1 project with 1 teams members."
+      },
+      {
+        "value": "2",
+        "label": "Premium",
+        "price": "$5.00",
+        "description": "Get 5 projects with 5 team members."
+      }
+    ]
+  },
+  "radio-group-12": {
+    "initial": "starter",
+    "groupLabel": "Membership level",
+    "items": [
+      {
+        "value": "starter",
+        "label": "Starter",
+        "icon": "user",
+        "description": "Great for personal use and small tasks."
+      },
+      {
+        "value": "pro",
+        "label": "Pro",
+        "icon": "crown",
+        "description": "Built for teams with advanced features."
+      }
+    ]
+  },
+  "radio-group-13": {
+    "initial": "1",
+    "groupLabel": "Select Device:",
+    "legend": "Select Device:",
+    "items": [
+      {
+        "value": "1",
+        "label": "Mobile",
+        "icon": "mobile"
+      },
+      {
+        "value": "2",
+        "label": "Tablet",
+        "icon": "tablet",
+        "disabled": true
+      },
+      {
+        "value": "3",
+        "label": "Laptop",
+        "icon": "laptop"
+      },
+      {
+        "value": "4",
+        "label": "Desktop",
+        "icon": "desktop"
+      },
+      {
+        "value": "5",
+        "label": "Hybrid",
+        "icon": "hybrid"
+      }
+    ]
+  }
+}

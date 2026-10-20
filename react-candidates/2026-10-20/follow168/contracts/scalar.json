@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "slice": "react-seven-scalar",
+  "idCount": 7,
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "common": {
+    "implementation": "React19 hooks/state/ref/layout effects, native JSX and forwardRef. State rerenders coordinate refs carrying synchronous effective models. Native nodes use mount-time default properties, while committed React owner props reconcile through layout effects; no DOM controller mounting, iframe or innerHTML.",
+    "callback_order": "Ordinary text input delivers React onInput, then React onChange; onChange runs before onValueChange. Checkbox standard onClick/onChange remain native React handlers and precede onCheckedChange. preventDefault on native onChange or onNativeBeforeInput vetoes proposal; onValueChange/onCheckedChange are proposal notifications, returns/promises ignored, preventDefault there is not a model veto. Controlled refusal uses unchanged owner props. Exceptions propagate and the interrupted proposal does not commit. No input data logs/network/storage. Standard onClick cancellation (including nativeEvent.preventDefault observed by the React change handler) suppresses the internal boolean proposal while standard onChange is still forwarded. A throwing standard onChange rethrows and restores the latest accepted model. Later post-dispatch cancellation is not a rollback API.",
+    "synchronous_owner": "Committed owner value/checked/ownership/ownerRevision changes take priority over in-flight event work. Batched React updates are observed when they commit, not when setState is merely scheduled. Test runner must inject __flushSync for explicit synchronous owner/replace/destroy cases. Same-value rerender is not distinguishable from metadata and is not a command; ownerRevision is explicit.",
+    "form_reset": "Document capture observes real reset. A microtask after default action reconciles each field using its current input.form, owner revision and user intent. Dispatch-time ordinary edits precede reset. Valid edits/new composition after reset returns retire old reset, even native same-value input intent. Controlled current owner wins; unowned fields return to mount baseline. No change callbacks emitted by reset. Native defaultValue/defaultChecked mirror mount baseline or current owner to protect new nodes. Replacements can join an already-observed active same-module reset dispatch.",
+    "reset_cancel": "Only preventDefault during dispatch is supported. Independent jobs cover valid/valid, valid/cancel, cancel/valid, cancel/cancel. Deferred cancellation flag read is subject to the known late-post-dispatch preventDefault limitation: DOM may already have reset while a later canceled flag skips model reconciliation. Not globally intercepting Event.prototype or form.reset. Earlier stopImmediatePropagation preventing observation is outside guarantee.",
+    "focus": "Stable native nodes on metadata/validation renders. No automatic focus. Caret restoration only when native field remains activeElement; synchronous focus takeover/destroy stops stale work. Owner prop replacement may affect undo stack.",
+    "cleanup": "Effect cleanup unsubscribes reset/beforeinput listeners, invalidates job generations and composition tails. StrictMode setup/cleanup and detached references must be tested independently. No timeouts/intervals/network or persistent data.",
+    "styles": "Scoped .fr7; external Provider tokens accepted without context. Local explicit foreground/background/placeholder/focus pairs; system fonts; no copied commercial images/fonts. Follow target first; other seven-theme tokens are only portability, not849 acceptance.",
+    "validation": "Native validity attributes forwarded; error text associates aria-invalid/description but does not invent server validation. Native maxLength/minLength use UTF-16 units. Synthetic text proposals over maxLength rejected whole; owner/default values not truncated.",
+    "pending": "All authored tests currently unrun. Exact React runtime, controlled/reset callback boundaries, real keyboard/browser, IME, pixels, focus contrast and animations need new evidence. No native500/456 tests inherited."
+  },
+  "items": [
+    {
+      "id": "button-01",
+      "export": "Button01",
+      "source": {
+        "file": "sources/button/variant-1.tsx",
+        "source_path": "src/data/contents/components/button/variant-1.tsx",
+        "git_blob": "afe1da55120a2a8d9d0ddb27c8598d670d183aa2",
+        "sha256": "e4ac95287cff23db3483e22db7887aac13c243fc9faec085d5700c7e27995009",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-1.tsx"
+      },
+      "source_structure": [
+        "One primary button. Original handlerless Default Button."
+      ],
+      "react_structure": "Native React JSX with stable field nodes and forwarded refs; not a frozen DOM adapter wrapper.",
+      "scope": "This exact canonical ID; no native/Flutter/other849 coverage credit.",
+      "execution_status": {
+        "author": "not_run",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_IME": "not_run",
+        "formal": "pending"
+      },
+      "native_API": "ButtonHTMLAttributes plus readOnly. Default type=button safety enhancement; callers may choose submit/reset. onClick is the standard React event and is never replaced by a private action callback.",
+      "ownership": "No invented loading/save/navigation/result state. Disabled native behavior; readOnly or aria-disabled true/string true blocks activation while focusable. False/string false does not block.",
+      "form": "No field/reset model. Explicit type reset or submit delegates native HTML behavior. Default type differs from primitive which omits type.",
+      "keyboard": "Native button Enter/Space; no keyboard interception or programmatic refocus.",
+      "IME": "Not applicable.",
+      "reset": "Not a stateful field.",
+      "events": "Native onClick invoked once when active. Callback errors are not swallowed. onFocus/etc remain forwarded; no work scheduled after callback."
+    },
+    {
+      "id": "button-02",
+      "export": "Button02",
+      "source": {
+        "file": "sources/button/variant-2.tsx",
+        "source_path": "src/data/contents/components/button/variant-2.tsx",
+        "git_blob": "68be6ce589e08165fef6b270a92390e9e5fd7a5c",
+        "sha256": "5e1a77af2b5efb5005066a3866f8f70fef5f7d3b6266bee11b34782f80629152",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-2.tsx"
+      },
+      "source_structure": [
+        "Two independent outline buttons. Left arrow then Prev; Next then right arrow. Wrapping 16px group gap."
+      ],
+      "react_structure": "Native React JSX with stable field nodes and forwarded refs; not a frozen DOM adapter wrapper.",
+      "scope": "This exact canonical ID; no native/Flutter/other849 coverage credit.",
+      "execution_status": {
+        "author": "not_run",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_IME": "not_run",
+        "formal": "pending"
+      },
+      "native_API": "ButtonHTMLAttributes plus readOnly. Default type=button safety enhancement; callers may choose submit/reset. onClick is the standard React event and is never replaced by a private action callback.",
+      "ownership": "No invented loading/save/navigation/result state. Disabled native behavior; readOnly or aria-disabled true/string true blocks activation while focusable. False/string false does not block.",
+      "form": "No field/reset model. Explicit type reset or submit delegates native HTML behavior. Default type differs from primitive which omits type.",
+      "keyboard": "Native button Enter/Space; no keyboard interception or programmatic refocus.",
+      "IME": "Not applicable.",
+      "reset": "Not a stateful field.",
+      "events": "Native onClick invoked once when active. Callback errors are not swallowed. onFocus/etc remain forwarded; no work scheduled after callback.",
+      "pair_API": "Top-level native props/ref address first button. nextProps/nextRef address second independently; groupProps targets wrapping div. Top-level disabled/readOnly serve second defaults, explicitly overrideable in second props. Pair has two native controls and retains distinct hierarchy."
+    },
+    {
+      "id": "button-03",
+      "export": "Button03",
+      "source": {
+        "file": "sources/button/variant-3.tsx",
+        "source_path": "src/data/contents/components/button/variant-3.tsx",
+        "git_blob": "3abfb95f3a8a1070a514f976a2b2408506d824ed",
+        "sha256": "0cd4d57deb9e0927c8e99ef567857c5af4ff1205b7f7c2f965c91b91fa4fca2f",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-3.tsx"
+      },
+      "source_structure": [
+        "Two independent buttons. Secondary Discard followed by primary Save. No source saving behavior."
+      ],
+      "react_structure": "Native React JSX with stable field nodes and forwarded refs; not a frozen DOM adapter wrapper.",
+      "scope": "This exact canonical ID; no native/Flutter/other849 coverage credit.",
+      "execution_status": {
+        "author": "not_run",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_IME": "not_run",
+        "formal": "pending"
+      },
+      "native_API": "ButtonHTMLAttributes plus readOnly. Default type=button safety enhancement; callers may choose submit/reset. onClick is the standard React event and is never replaced by a private action callback.",
+      "ownership": "No invented loading/save/navigation/result state. Disabled native behavior; readOnly or aria-disabled true/string true blocks activation while focusable. False/string false does not block.",
+      "form": "No field/reset model. Explicit type reset or submit delegates native HTML behavior. Default type differs from primitive which omits type.",
+      "keyboard": "Native button Enter/Space; no keyboard interception or programmatic refocus.",
+      "IME": "Not applicable.",
+      "reset": "Not a stateful field.",
+      "events": "Native onClick invoked once when active. Callback errors are not swallowed. onFocus/etc remain forwarded; no work scheduled after callback.",
+      "pair_API": "Top-level native props/ref address first button. saveProps/saveRef address second independently; groupProps targets wrapping div. Top-level disabled/readOnly serve second defaults, explicitly overrideable in second props. Pair has two native controls and retains distinct hierarchy."
+    },
+    {
+      "id": "checkbox-01",
+      "export": "Checkbox01",
+      "source": {
+        "file": "sources/checkbox/variant-1.tsx",
+        "source_path": "src/data/contents/components/checkbox/variant-1.tsx",
+        "git_blob": "20f419801b38364cdde3431e144d0e17ed171207",
+        "sha256": "3821a8b08bf33fd6d06fac8e700f0d3f54b7b8bd1b4d7c94ce0735b2fd789827",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-1.tsx"
+      },
+      "source_structure": [
+        "One false-initialized controlled boolean Checkbox followed by associated Label. Source checked callback stores checked === true."
+      ],
+      "react_structure": "Native React JSX with stable field nodes and forwarded refs; not a frozen DOM adapter wrapper.",
+      "scope": "This exact canonical ID; no native/Flutter/other849 coverage credit.",
+      "execution_status": {
+        "author": "not_run",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_IME": "not_run",
+        "formal": "pending"
+      },
+      "native_API": "InputHTMLAttributes except fixed type=checkbox; checked/defaultChecked/onCheckedChange; label/help/error/ownerRevision. Forwarded ref points to actual input. Switch adds role=switch.",
+      "ownership": "Defined checked owns; undefined releases last effective state. Mount-only defaultChecked, default false. Controlled proposals do not change model unless props commit. Same-value renders are metadata; ownerRevision change is explicit new intent.",
+      "keyboard": "Native checkbox Space and Tab. Checkbox does not synthesize Enter. Switch additionally activates Enter without modifiers/repeat/composition.",
+      "form": "One real checkbox: name/value/form/required participate in HTML. Disabled omitted from FormData; readOnly extension blocks user mutation but preserves focus/submission. Shared reset contract applies.",
+      "IME": "Not applicable to checkbox input.",
+      "differences": [
+        "Native checkbox replaces Radix button plus hidden bubble input. No Radix asChild/indeterminate/polyfill event equivalence.",
+        "Source sky color/switch rounding mapped to Follow tokens and square control;44px touch target enhancement.",
+        "Cancelable deferred reset and owner revision coordination are adapter enhancements; no source runtime reset equivalence claim."
+      ]
+    },
+    {
+      "id": "switch-01",
+      "export": "Switch01",
+      "source": {
+        "file": "sources/switch/variant-1.tsx",
+        "source_path": "src/data/contents/components/switch/variant-1.tsx",
+        "git_blob": "c82d644f623f9a7b6e448b359eb1b200c564b61d",
+        "sha256": "e695dc7b87d02a6737f7681deef5fa2162383276d9a8874a04bbc7fea93dc89b",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-1.tsx"
+      },
+      "source_structure": [
+        "One unowned Switch and associated Enable Notifications label. Fixed source notifications ID replaced with useId."
+      ],
+      "react_structure": "Native React JSX with stable field nodes and forwarded refs; not a frozen DOM adapter wrapper.",
+      "scope": "This exact canonical ID; no native/Flutter/other849 coverage credit.",
+      "execution_status": {
+        "author": "not_run",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_IME": "not_run",
+        "formal": "pending"
+      },
+      "native_API": "InputHTMLAttributes except fixed type=checkbox; checked/defaultChecked/onCheckedChange; label/help/error/ownerRevision. Forwarded ref points to actual input. Switch adds role=switch.",
+      "ownership": "Defined checked owns; undefined releases last effective state. Mount-only defaultChecked, default false. Controlled proposals do not change model unless props commit. Same-value renders are metadata; ownerRevision change is explicit new intent.",
+      "keyboard": "Native checkbox Space and Tab. Checkbox does not synthesize Enter. Switch additionally activates Enter without modifiers/repeat/composition.",
+      "form": "One real checkbox: name/value/form/required participate in HTML. Disabled omitted from FormData; readOnly extension blocks user mutation but preserves focus/submission. Shared reset contract applies.",
+      "IME": "Not applicable to checkbox input.",
+      "differences": [
+        "Native checkbox replaces Radix button plus hidden bubble input. No Radix asChild/indeterminate/polyfill event equivalence.",
+        "Source sky color/switch rounding mapped to Follow tokens and square control;44px touch target enhancement.",
+        "Cancelable deferred reset and owner revision coordination are adapter enhancements; no source runtime reset equivalence claim."
+      ]
+    },
+    {
+      "id": "input-mask-01",
+      "export": "InputMask01",
+      "source": {
+        "file": "sources/input-mask/variant-1.tsx",
+        "source_path": "src/data/contents/components/input-mask/variant-1.tsx",
+        "git_blob": "6f1eb044b5cf3cbdb11f39a4b6ae807e18657a19",
+        "sha256": "a3290bdb16b6102a3e91c9ee12c5e1966ed745c95595423bb4fdcf846d29f299",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/input-mask/variant-1.tsx"
+      },
+      "source_structure": [
+        "License Code label, one text input, left decorative identification icon and helper. withMask(AA99 AAA, placeholder underscore, showMaskOnHover false)."
+      ],
+      "react_structure": "Native React JSX with stable field nodes and forwarded refs; not a frozen DOM adapter wrapper.",
+      "scope": "This exact canonical ID; no native/Flutter/other849 coverage credit.",
+      "execution_status": {
+        "author": "not_run",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_IME": "not_run",
+        "formal": "pending"
+      },
+      "native_API": "Standard input attributes/events except fixed input type/children. value/defaultValue/onValueChange, label/help/error/ownerRevision, native modern onNativeBeforeInput hook. Forwarded ref points to native field.",
+      "ownership": "Defined value owns, null is controlled empty, undefined releases last effective value. Mount-only defaultValue supplies reset baseline. Explicit ownerRevision change cancels stale composition/reset even if value unchanged. Same-value renders and metadata updates preserve drafts.",
+      "form": "Native name/form/required/pattern(minus textarea)/length constraints forwarded. No invented form or submit handler. Shared reset contract applies. Native browser validity reporting is not simulated.",
+      "IME": "Intermediate draft remains DOM-only; native React onChange/onInput callbacks still delivered. onValueChange deferred until one compositionend. Owner value/ownership/ownerRevision or disabled/readOnly changes and effective reset cancel old session. Tombstone rejects stale end/input until fresh noncomposing beforeinput/paste or compositionstart. Unchanged controlled renders do not cancel.",
+      "selection": "Stable node and unchanged .value preserve selection. Forced normalization/owner replacement restores or clamps selection only if field still owns focus; never refocuses. Textarea delegates native undo; mask has bounded100-entry local undo. Native OS undo equivalence not claimed.",
+      "limitations": [
+        "Real OS IME event ordering, native clipboard/autofill, browser reset/undo and accessibility tree remain untested.",
+        "Old canceled IME tails without a fresh beforeinput/compositionstart are blocked; browsers/input tools lacking those recovery signals may require a new composition or remount.",
+        "External direct .value writes without an input event are not model updates."
+      ],
+      "mask_contract": {
+        "format": "Seven fixed slots AA99 AAA; literal space index4; partial nonempty slots use underscores; empty remains empty. No hover mask insertion.",
+        "character_policy": "Independent bounded adapter: A permits BMP [A-Za-z\\u00c0-\\u00ff\\u0400-\\u04ff\\u00b5] only when uppercase is one UTF-16 unit. Digit slots permit one BMP Unicode Number. Supplementary codepoints and expanding uppercase are rejected. These ranges are adapter policy derived from prior authored editor, not a newly verified Inputmask token contract.",
+        "editing": "Modern cancelable beforeinput insertText/deleteContentBackward/deleteContentForward performs fixed-slot overwrite/delete, selection replacement and caret placement; paste uses same algorithm. Invalid standalone characters do not advance; invalid bulk characters consume a slot. Native fallback input reformats entire value and may differ from dependency caret/edit behavior.",
+        "history": "Local undo/redo max100 accepted formatted edits; Ctrl/Meta+Z/Y or historyUndo/Redo beforeinput. Owner/safety commands and completed reset clear history; newer accepted post-reset edit protects history. No full Inputmask/native undo equivalence.",
+        "native_events": "Custom beforeinput/paste/history edits emit onValueChange and retain the original native/React event. They do not fabricate input/change or dispatch a fake React onChange. onNativeBeforeInput can veto before internal prevention. Standard onBeforeInput remains React synthetic behavior.",
+        "length": "Serialized partial/full mask length8. Explicit maxLength<8 rejects nonempty formatted user proposals; owner/default strings are normalized without truncation.",
+        "validation": "No added mask completion error or required constraint by default; helper is instructional. Caller error/required/pattern remain explicit.",
+        "dependency_gap": "use-mask-input3.14.2 lock integrity recorded; dependency source/runtime not acquired for this slice. Full A/9 token, placeholder-on-focus, clearIncomplete, unmask, caret/IME/undo parity unknown. Package not needed by consumers."
+      },
+      "differences": [
+        "Independent React fixed-slot editor replaces use-mask-input runtime. Old native mask value:undefined reverted props.defaultValue; this React release intentionally retains last effective value.",
+        "System glyph replaces source HiIdentification icon. Source font/image assets not copied."
+      ]
+    },
+    {
+      "id": "textarea-01",
+      "export": "Textarea01",
+      "source": {
+        "file": "sources/textarea/variant-1.tsx",
+        "source_path": "src/data/contents/components/textarea/variant-1.tsx",
+        "git_blob": "b381015ce30e2225098c3d3acd65c61c6e669a98",
+        "sha256": "71b8de949aa2264ae9f3b3c75a2990ee0dc04aca51174dab71b47d785569d89b",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/textarea/variant-1.tsx"
+      },
+      "source_structure": [
+        "One native Textarea with Write something placeholder. No visible label/helper/count/toolbar/submit. Primitive field-sizing content, min-height64; variant max-width384."
+      ],
+      "react_structure": "Native React JSX with stable field nodes and forwarded refs; not a frozen DOM adapter wrapper.",
+      "scope": "This exact canonical ID; no native/Flutter/other849 coverage credit.",
+      "execution_status": {
+        "author": "not_run",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_IME": "not_run",
+        "formal": "pending"
+      },
+      "native_API": "Standard textarea attributes/events except fixed input type/children. value/defaultValue/onValueChange, label/help/error/ownerRevision, native modern onNativeBeforeInput hook. Forwarded ref points to native field.",
+      "ownership": "Defined value owns, null is controlled empty, undefined releases last effective value. Mount-only defaultValue supplies reset baseline. Explicit ownerRevision change cancels stale composition/reset even if value unchanged. Same-value renders and metadata updates preserve drafts.",
+      "form": "Native name/form/required/pattern(minus textarea)/length constraints forwarded. No invented form or submit handler. Shared reset contract applies. Native browser validity reporting is not simulated.",
+      "IME": "Intermediate draft remains DOM-only; native React onChange/onInput callbacks still delivered. onValueChange deferred until one compositionend. Owner value/ownership/ownerRevision or disabled/readOnly changes and effective reset cancel old session. Tombstone rejects stale end/input until fresh noncomposing beforeinput/paste or compositionstart. Unchanged controlled renders do not cancel.",
+      "selection": "Stable node and unchanged .value preserve selection. Forced normalization/owner replacement restores or clamps selection only if field still owns focus; never refocuses. Textarea delegates native undo; mask has bounded100-entry local undo. Native OS undo equivalence not claimed.",
+      "limitations": [
+        "Real OS IME event ordering, native clipboard/autofill, browser reset/undo and accessibility tree remain untested.",
+        "Old canceled IME tails without a fresh beforeinput/compositionstart are blocked; browsers/input tools lacking those recovery signals may require a new composition or remount.",
+        "External direct .value writes without an input event are not model updates."
+      ],
+      "differences": [
+        "Adds default accessible aria-label without visible label. Optional label/help/error are caller enhancements.",
+        "384px cap is WIDTH. No JS autosizer, height cap, character counter or Enter interception. Native field-sizing content falls back to rows/manual vertical resize if unsupported."
+      ]
+    }
+  ],
+  "testEntry": "tests/scalar-tests.cjs: async run(window, React, createRoot, assert, components); components.__flushSync required for explicit synchronous cases",
+  "fixture": "src/scalar/examples.jsx: ScalarExamples",
+  "runtimeDependencies": [
+    "react (parent provided); no use-mask-input/Radix runtime dependency"
+  ],
+  "sourceEvidence": "src/scalar/source-hashes.json; src/scalar/sources/native-reference.json",
+  "license": "Pinned upstream MIT notice at src/scalar/sources/primitives/LICENSE; independent adaptation and original geometry.",
+  "currentRevision": {
+    "batch": "React30 candidate.1",
+    "authorScenarios": 202,
+    "authorAssertions": 497,
+    "browser": "not_run",
+    "beforeFailuresPreserved": true
+  }
+}

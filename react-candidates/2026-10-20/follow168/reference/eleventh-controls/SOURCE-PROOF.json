@@ -1,0 +1,20 @@
+[
+  {
+    "id": "textarea-06",
+    "source_path": "src/data/contents/components/textarea/variant-6.tsx",
+    "evidence_copy": "sources/src/data/contents/components/textarea/variant-6.tsx",
+    "pinned_git_blob_sha": "2811307874cdfaed9c5483ada3964543032dd6e0",
+    "sha256": "9effeb0c85ad6c524883e263d4dce28a211f11e1803ad767ba7f3b065f072243",
+    "bytes": 1004,
+    "executed": false
+  },
+  {
+    "id": "dialog-04",
+    "source_path": "src/data/contents/components/dialog/variant-4.tsx",
+    "evidence_copy": "sources/src/data/contents/components/dialog/variant-4.tsx",
+    "pinned_git_blob_sha": "9db65bdd1fc788d36e92a57774dcb00413ad17b5",
+    "sha256": "80eebe071d1c569f4bdb9415bf90c145460b96b3c363f75d320b6f7f81ce7204",
+    "bytes": 6154,
+    "executed": false
+  }
+]

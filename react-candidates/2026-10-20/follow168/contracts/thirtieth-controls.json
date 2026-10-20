@@ -1,0 +1,29 @@
+{
+  "ids": [
+    "tabs-06",
+    "tabs-07",
+    "tabs-08",
+    "tabs-09"
+  ],
+  "status": "Declared implementation contract; current verification outcome is recorded in CURRENT-VERIFICATION.json",
+  "sourceProof": "reference/thirtieth-controls/SOURCE-PROOF.json",
+  "accounting": "Four fixed canonical top-level IDs only. Count badges and tooltips are constituent content and add no IDs. All12 complete panel texts and original emphasis retained. No service, subscription, security or data operation is performed by the illustrative copy.",
+  "common": {
+    "owner": "Exclusive value/defaultValue of each exact three-value union or null. Default first original tab. Invalid values rejected; source-order fixed. Controlled owner is authoritative; release retains the last committed owner. Uncontrolled default changes do not reset mounted state. onValueChange(next,details) is a cancellable proposal only when selection would change. details includes precise canonical id, previousValue, reason click/focus/keyboard, event, button and cancel().",
+    "interaction": "Native type=button triggers, tablist/tab/tabpanel associations, one available roving tab stop. Horizontal LTR/RTL arrows, vertical Up/Down, Home/End; loop defaults true. Automatic activation defaults; manual only moves focus until Space/Enter/click. Composition/modifier gestures are ignored; repeated Space/Enter do not repeatedly activate. Tab remains native. Normal key handling prevents scroll only for owned keys. Cancellation from trigger/ancestor/synthetic/native events and callbacks, synchronous owner changes, actual disabledness and explicit external focus win over deferred navigation/selection.",
+    "lifecycle": "Inactive panel content unmounts, fixed associated panel shell is hidden. Native form reset does not alter this non-field owner. Refs support React19 cleanup; unmount invalidates queued requests. External owner changes do not steal unrelated focus; hiding a focused old panel conditionally returns to an available tab only while the old panel/body still owns focus. A closing panel that reopens before the microtask cancels its prior return; internal conditional return is focus-only, even with an explicit null selection.",
+    "api": "Root div attrs/ref; triggerProps keyed exact values; label, listProps and panelProps with protected content/roles/IDs/associations. disabled root and per-trigger native disabled. orientation, dir, activationMode and loop are explicit. Fixed canonical labels/content cannot be replaced via children or HTML."
+  },
+  "tabs-06": "Conversions12 / Engagement8 / Bounce Rate24; compact count badges above labels, recessed rounded track, active card shadow; Performance Metrics subtitle and3 complete texts.",
+  "tabs-07": {
+    "content": "Home/Identity/Preferences icon-only circular tabs with actual accessible names and original3 complete panels. Local SVG icon interpretation; inactive notification marker is source scale-zero (no invented unread state).",
+    "tooltipOwner": "Independent tooltipProps value/defaultValue exact tab union or null, onValueChange(next,details), delayDuration (default0), disabled. At most one effective tooltip per instance. Owner release retains latest committed value. Root or tooltip disabled suppresses effective display and pending opens without mutating a controlled owner. Details id tabs-07, reason pointer/focus/leave/blur/escape/press, event and trigger button, previousValue/cancel.",
+    "tooltipInteraction": "Pointer hover opens after declared delay; keyboard focus opens without delay. Pointer can cross from trigger to tooltip without closing. Leave/blur closes only when neither pointer nor focus still owns the tooltip; focused enabled trigger may regain its own tooltip after another hover ends. Escape and press dismiss; same focus/hover does not immediately reopen until a fresh boundary interaction. Ancestor cancellation and synchronous owner changes win; timers cleared on leave/disable/unmount. Tooltip has roletooltip and is described from the real tab while shown, contains no focusable actions, and never changes tab selection itself. One document-capture WeakMap epoch snapshot covers the whole physical event, including later React synthesized enter/leave and document Escape. Actual per-trigger/fieldset disabledness suppresses display and cancels pending opens, including disable→reenable before delay expiry; an attribute observer covers light-DOM native mutations. Same pointerdown/focus gesture stays dismissed. Overlapping event observers use reversible leases and restore native/synthetic method descriptors.",
+    "adaptation": "Tooltip renders below its trigger within the local component, not through Radix's portal/collision engine. Pointer/focus ownership and dismissal are implemented; viewport collision, clipping ancestors and composed shadow-DOM/platform pointer geometry equivalence are not claimed. This limit is recorded perID and is not official full equivalence."
+  },
+  "tabs-08": "Illustrate/Design/Animate uppercase indigo pills in horizontal overflow wrapper; distinct italic indigo headings and all3 complete creative-tool texts.",
+  "tabs-09": "Standard/Premium/Ultimate compact pill tabs; large dashed rounded panel, prominent heading and accent-left prose; all3 original illustrative tier texts retained, no purchase/subscription operation.",
+  "backwardRepair": "contracts/delivery-name-repair136.json; existing Collapsible09 only, not counted as an extra ID",
+  "browser": 0,
+  "formalAccepted": 0
+}

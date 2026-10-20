@@ -1,0 +1,11 @@
+{
+  "ids": [
+    "breadcrumb-08",
+    "textarea-16"
+  ],
+  "originalProof": "reference/twentyfifth-controls/SOURCE-PROOF.json",
+  "breadcrumb": "Native Home icon-only # + Workspace# + static Team Library current; two slash separators; no implicit active state/navigation interception by component. Source nested li separators corrected to decorative spans inside sibling segment li. Pill source default36px minheight with safe wrapping extension for long content, px16/gap10/roundfull/shadow. Original owned home line icon, no external icon pixel equality.",
+  "textarea": "Quick note native embedded label in outer bordered6px wrapper; Write something short...; default empty/nonrequired/no name; base field-sizing content retained, variant minheight56; outer focus-within/has aria-invalid and has disabled CSS, inner border0/radius0/no inner focus ring. Native resize remains browser-defined, no artificial length cap. Source py0 and py1.5 merged as6px spacing; visual adaptation not exact browser rendering.",
+  "api": "Native nav/anchor/textarea and label props/refs; value/defaultValue exclusive; labelnull requires caller accessible name; no text replacement children. No custom event or reset code: React/native cancellation, FormData and reset semantics.",
+  "browser": 0
+}

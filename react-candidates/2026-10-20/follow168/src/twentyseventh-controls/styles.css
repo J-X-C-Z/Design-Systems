@@ -1,0 +1,129 @@
+/* The shared paper/ink treatment keeps each source variant's layout and marker. */
+.fr7-canonical-faq {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  color: var(--ds-text, #151515);
+  font: inherit;
+}
+.fr7-canonical-faq-item { min-width: 0; }
+.fr7-canonical-faq-heading { margin: 0; font: inherit; }
+.fr7-canonical-faq-trigger {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 48px;
+  padding: 16px 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.5;
+  text-align: start;
+  cursor: pointer;
+}
+.fr7-canonical-faq-label { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.fr7-canonical-faq-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.fr7-canonical-faq-title { overflow-wrap: anywhere; }
+.fr7-canonical-faq-subtitle { color: var(--ds-muted, #52524e); font-weight: 400; overflow-wrap: anywhere; }
+.fr7-canonical-faq-icon-box {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 40px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--ds-line, #b7b7ae);
+  border-radius: 6px;
+}
+.fr7-canonical-faq-icon { flex: 0 0 16px; }
+.fr7-canonical-faq-toggle {
+  display: inline-flex;
+  flex: 0 0 16px;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: var(--ds-muted, #52524e);
+  pointer-events: none;
+}
+.fr7-canonical-faq-trigger:hover:not(:disabled) .fr7-canonical-faq-title { text-decoration: underline; text-underline-offset: 3px; }
+.fr7-canonical-faq-trigger:focus-visible { outline: 3px solid var(--ds-focus, #151515); outline-offset: 3px; }
+.fr7-canonical-faq-trigger:disabled { opacity: .45; cursor: not-allowed; }
+.fr7-canonical-faq-content {
+  padding-bottom: 16px;
+  color: var(--ds-muted, #52524e);
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  animation: fr7-canonical-faq-in 160ms ease-out;
+}
+.fr7-canonical-faq-content[hidden] { display: none; }
+
+/* 08: academic icons, subtitles, dividers, and a trailing plus rotating 45deg. */
+.fr7-accordion-08 { background: var(--ds-surface, #fff); }
+.fr7-accordion-08 .fr7-canonical-faq-item:not(:last-child) { border-bottom: 1px solid var(--ds-line, #b7b7ae); }
+.fr7-accordion-08 .fr7-canonical-faq-item[data-state="open"] { border-color: var(--follow-orange, #f4793a); }
+.fr7-accordion-08 .fr7-canonical-faq-trigger[aria-expanded="true"] .fr7-canonical-faq-icon-box { border-color: var(--follow-orange, #f4793a); }
+.fr7-accordion-08 .fr7-canonical-faq-toggle svg { transition: transform 200ms ease; }
+.fr7-accordion-08 .fr7-canonical-faq-trigger[aria-expanded="true"] .fr7-canonical-faq-toggle svg { transform: rotate(45deg); }
+
+/* 09: separated cards, leading right/down chevrons, stronger expanded shadow. */
+.fr7-accordion-09 { gap: 8px; }
+.fr7-accordion-09 .fr7-canonical-faq-item {
+  border: 1px solid var(--ds-line, #b7b7ae);
+  border-radius: 6px;
+  background: var(--ds-surface, #fff);
+  box-shadow: 0 1px 3px rgb(17 17 17 / .08);
+  transition: box-shadow 200ms ease;
+}
+.fr7-accordion-09 .fr7-canonical-faq-item[data-state="open"] { border-color: var(--follow-orange, #f4793a); box-shadow: 0 4px 10px rgb(17 17 17 / .15); }
+.fr7-accordion-09 .fr7-canonical-faq-trigger { padding-inline: 20px; }
+.fr7-accordion-09 .fr7-canonical-faq-label { gap: 12px; }
+.fr7-accordion-09 .fr7-canonical-faq-content { padding-inline: 48px 20px; }
+
+/* 10: one rounded bordered group, trailing plus/minus, expanded blue title. */
+.fr7-accordion-10 { border: 1px solid var(--ds-line, #b7b7ae); border-radius: 12px; background: var(--ds-surface, #fff); }
+.fr7-accordion-10 .fr7-canonical-faq-item:not(:last-child) { border-bottom: 1px solid var(--ds-line, #b7b7ae); }
+.fr7-accordion-10 .fr7-canonical-faq-trigger { padding-inline: 20px; border-radius: 0; }
+.fr7-accordion-10 .fr7-canonical-faq-item:first-child .fr7-canonical-faq-trigger { border-start-start-radius: 11px; border-start-end-radius: 11px; }
+.fr7-accordion-10 .fr7-canonical-faq-item:last-child .fr7-canonical-faq-trigger { border-end-start-radius: 11px; border-end-end-radius: 11px; }
+.fr7-accordion-10 .fr7-canonical-faq-trigger[aria-expanded="true"] .fr7-canonical-faq-title { color: var(--fr7-travel-expanded, #2563eb); }
+.fr7-accordion-10 .fr7-canonical-faq-content { padding-inline: 20px; }
+.fr7[data-mode="dark"] .fr7-accordion-10, .fr7-accordion-10[data-mode="dark"] { --fr7-travel-expanded: #60a5fa; }
+
+/* 11: separated padded cards, trailing down/up chevrons, neutral open surface. */
+.fr7-accordion-11 { gap: 8px; }
+.fr7-accordion-11 .fr7-canonical-faq-item {
+  padding-inline: 20px;
+  border: 1px solid var(--ds-line, #b7b7ae);
+  border-radius: 6px;
+  background: var(--ds-surface, #fff);
+  transition: background-color 200ms ease;
+}
+.fr7-accordion-11 .fr7-canonical-faq-item[data-state="open"] { background: var(--fr7-hospitality-open, #f5f5f5); }
+.fr7[data-mode="dark"] .fr7-accordion-11, .fr7-accordion-11[data-mode="dark"] { --fr7-hospitality-open: color-mix(in srgb, #0a0a0a 30%, var(--ds-surface, #20211f)); }
+
+@keyframes fr7-canonical-faq-in { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+.fr7[data-motion="off"] .fr7-canonical-faq-content { animation: none; }
+.fr7[data-motion="off"] .fr7-canonical-faq-item, .fr7[data-motion="off"] .fr7-canonical-faq-toggle svg { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .fr7-canonical-faq-content { animation: none; }
+  .fr7-canonical-faq-item, .fr7-canonical-faq-toggle svg { transition: none; }
+}
+@media (forced-colors: active) {
+  .fr7-canonical-faq, .fr7-canonical-faq-item, .fr7-canonical-faq-icon-box { border-color: CanvasText !important; }
+  .fr7-canonical-faq-trigger:focus-visible { outline-color: Highlight; }
+  .fr7-canonical-faq-trigger:disabled { color: GrayText; opacity: 1; }
+  .fr7-accordion-10 .fr7-canonical-faq-trigger[aria-expanded="true"] .fr7-canonical-faq-title { color: LinkText; }
+  .fr7-accordion-09 .fr7-canonical-faq-item[data-state="open"], .fr7-accordion-11 .fr7-canonical-faq-item[data-state="open"] { outline: 1px solid Highlight; outline-offset: -1px; }
+}

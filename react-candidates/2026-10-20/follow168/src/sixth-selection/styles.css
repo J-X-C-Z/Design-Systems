@@ -1,0 +1,17 @@
+.fr7 .fr6-field{color:var(--ds-text);min-width:0;max-width:100%}.fr7 .fr6-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.fr7 .fr6-hit{display:grid;place-items:center;position:relative;flex:0 0 44px;width:44px;height:44px}
+.fr7 .fr6-hit input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;z-index:1}.fr7 .fr6-track{pointer-events:none;overflow:visible}.fr7 .fr6-track rect{fill:var(--ds-subtle);stroke:var(--ds-control-line)}.fr7 .fr6-thumb{fill:var(--ds-surface);stroke:var(--ds-control-line);stroke-width:1;transition:transform .16s cubic-bezier(.22,1,.36,1)}
+.fr7 .fr6-field[data-state=checked] .fr6-track rect{fill:var(--ds-accent-fill);stroke:var(--ds-accent)}
+.fr7 .fr6-choice{display:grid;place-items:center;min-width:44px;min-height:44px;padding:8px;background:transparent;color:var(--ds-muted);border:1px solid transparent;font-family:inherit;font-size:14px;font-weight:600;line-height:1.4;cursor:pointer;border-radius:2px}
+.fr7 .fr6-choice[aria-pressed=true]{color:var(--ds-text);border-color:var(--ds-control-line);background:var(--ds-tint)}
+.fr7 .fr6-label,.fr7 .fr6-icon-label{cursor:pointer;font-weight:600;line-height:1.4;overflow-wrap:anywhere;min-width:0}.fr7 .fr6-icon-label{display:flex;align-items:center;gap:8px;min-width:44px;min-height:44px;justify-content:center}
+.fr7 .fr6-symbol{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;flex:none}
+.fr7 .fr6-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.fr7 .fr6-description{font-size:13px;line-height:1.5;color:var(--ds-muted);margin:6px 0;overflow-wrap:anywhere}
+.fr7 .fr6-hit:has(input:focus-visible),.fr7 .fr6-choice:focus-visible{outline:3px solid var(--ds-focus);outline-offset:3px}
+.fr7 .fr6-hit input:focus-visible+svg{outline:3px solid var(--ds-focus);outline-offset:4px}.fr7 .fr6-hit:has(input:focus-visible) svg{outline:none}
+.fr7 .fr6-field:has(input:disabled){opacity:.5}.fr7 .fr6-field:has(input:disabled) label,.fr7 .fr6-field input:disabled,.fr7 .fr6-choice:disabled{cursor:not-allowed}
+.fr7 .fr6-choice[aria-disabled=true],.fr7 .fr6-field:has(input[readonly]) label{cursor:default}
+.fr7 .fr6-field:dir(rtl) .fr6-direction{transform:translateX(100%) scaleX(-1);transform-box:view-box}
+.fr7[data-motion=off] .fr6-thumb{transition:none}
+@media(prefers-reduced-motion:reduce){.fr7 .fr6-thumb{transition:none}}
+@media(forced-colors:active){.fr7 .fr6-track rect{stroke:CanvasText}.fr7 .fr6-field[data-state=checked] .fr6-track rect{fill:Highlight}.fr7 .fr6-thumb{fill:Canvas;stroke:CanvasText}}

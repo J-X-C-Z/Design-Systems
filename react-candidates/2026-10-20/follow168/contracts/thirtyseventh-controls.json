@@ -1,0 +1,118 @@
+{
+  "version": "0.37.0-candidate.1",
+  "phase": "Initial contract declared before implementation; current outcomes are recorded separately in CURRENT-VERIFICATION.json",
+  "ids": {
+    "radio-group-07": {
+      "export": "RadioGroup07",
+      "values": [
+        "beginner",
+        "Advanced"
+      ],
+      "default": "beginner",
+      "labels": [
+        "Beginner",
+        "Advanced"
+      ],
+      "identity": "Two horizontal compact low-radius bordered experience chips with soft card fill, px4/py2 padding and subtle shadow; real native inputs and full label surfaces. Preserve source capital-A Advanced value. Repair original Advanced label htmlFor=intermediate mismatch through unique matched native IDs."
+    },
+    "radio-group-08": {
+      "export": "RadioGroup08",
+      "values": [
+        "default",
+        "medium",
+        "large"
+      ],
+      "default": "default",
+      "labels": [
+        "Default",
+        "Medium",
+        "Large"
+      ],
+      "identity": "Three horizontal open radio-and-label choices with distinct16/20/24px outer diameters and8/12/14px selected dots. Preserve size demonstration, not merely labels or common-size aliases; wrap narrowly without clipping. Pinned variant uses svg-targeted larger-mark selectors while the pinned primitive renders span.size-2: 8/12/14px marks are an explicit realization of size intent, not a claim about original resulting DOM geometry."
+    },
+    "radio-group-09": {
+      "export": "RadioGroup09",
+      "values": [
+        "warning",
+        "positive",
+        "neutral"
+      ],
+      "default": "warning",
+      "labels": [
+        "Warning",
+        "Positive",
+        "Neutral"
+      ],
+      "identity": "Three horizontal open status-tone choices: amber warning, emerald positive, indigo neutral, each with its own border/filled selected state/focus color and real dark-provider palette. Text names preserve meaning independent of color; these are choices, not actual validation/error notifications. Preserve original fill hue families while using contrast-safe outlines and selected dots where source white-on-bright fill lacks3:1."
+    },
+    "radio-group-10": {
+      "export": "RadioGroup10",
+      "values": [
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "2",
+      "labels": [
+        "Starter",
+        "Growth",
+        "Scale"
+      ],
+      "prices": [
+        "Free",
+        "$19/mo",
+        "Custom"
+      ],
+      "badge": {
+        "value": "2",
+        "text": "Popular"
+      },
+      "identity": "Three separate fully rounded pill pricing cards with8px spacing, layered inset/highlight/drop shadows and selected tinted primary border/elevated stacking. Label/badge on left, price on right; checked price stronger. Popular remains visible, unlike05 mobile badge policy. Visible actual names replace generic source plan-radio-N label. Complete card is a native label surface."
+    }
+  },
+  "state": {
+    "ownership": "Per-variant exact string union|null; mutually exclusive value/defaultValue. Fixed mount reset baseline is source default unless defaultValue supplied. Controlled owner is authoritative; release retains last committed controlled selection, not a refused proposal. Later defaultValue changes do not replace mount baseline. Unknown values rejected.",
+    "ordering": "Capture epoch and action order before caller item handler. Synchronous owner/config changes and unmount invalidate queued actions. Accepted noncontrolled logical state bridges batched commits. Later canceled interactions must not erase earlier valid reset/click. Callback return false, details.cancel, event.preventDefault and ancestors/native event prevention veto pending selection. Exact event method descriptors restored after overlapping guards.",
+    "focus": "Roving tab stop; selected enabled item or latest user-focused enabled item, otherwise first enabled. Disabled/hidden/inert/closed ancestor and native disabled fieldset availability checked at action time. An ancestor or destination focus handler moving focus outside wins; no reclaiming after queued navigation. Destination synthetic focus preventDefault vetoes the subsequent click/selection; already moved DOM focus is not reversed. Noncancelable native focusin prevention retains native semantics.",
+    "tabEntry": "Post-commit availability and relevant live light-DOM mutations refresh the eligible tab-stop set. Only membership changes update local rendering; this never moves focus, changes selection, or clears pending work. Unrelated style/class changes with unchanged availability preserve input requests."
+  },
+  "keyboard": {
+    "default": "All four arrow keys rove and select by default; horizontal RTL direction reverses, vertical stays. Optional orientation restricts arrow axis. Home/End rove without selecting to match recovered Radix behavior, Space selects focused item through native click. Enter suppresses implicit submit without selecting, except IME composition. Optional loop=false stops at edge; default true.",
+    "guards": "Native Tab remains untouched. Modified/repeated/composing navigation does not synthesize action. User item/ancestor cancellation, updated owner, disconnected or unavailable destination prevent deferred action. Keyboard selection invokes actual input click once and respects both key and click handlers.",
+    "edge": "An arrow which cannot move focus (nonlooping edge or only one available item) does not activate the already focused option. Space can explicitly activate it."
+  },
+  "form": {
+    "native": "Actual input type=radio for every option with native name/form/required/disabled checkedness and FormData. Caller inputRef receives HTMLInputElement; root ref HTMLDivElement; React19 ref cleanup supported. Native input/change/focus/blur handlers preserved. Named multiple groups share native HTML semantics; use distinct names for independent groups.",
+    "reset": "Observe actual input.form owner including external form attribute. Noncontrolled native reset proposes mount default; controlled reset restores owner with no value proposal. Prevented reset restores accepted checkedness. Two-pass reconciliation sets every defaultChecked before any checked so named native group cannot erase current owner. Reset follows actual form ownership and leaves independent forms unchanged. Reset is allowed while disabled, matching native form reset. Recheck actual live ownership after dispatch, including form reassociation during onReset. A new controlled group mounted/replaced during onReset restores its owner after the later native default action without a fabricated callback.",
+    "boundary": "Native-input adaptation differs from original Radix button plus bubble-input internals; do not claim DOM/event implementation equivalence. Native trusted keyboard, validity UI, reset timing and browser FormData integration require browser acceptance beyond JSDOM."
+  },
+  "accessibility": {
+    "names": "Unique instance IDs and protected native label htmlFor. Group has meaningful default label with caller aria-label/labelledby override. Item accessible name defaults to exact visible title, explicit caller labelledby may override. Caller generic aria-label is not allowed to silently suppress visible title. Icons decorative; prices/descriptions/badge linked by aria-describedby. Source labels/prices are illustrative examples, not current pricing offers.07 original broken Advanced label link is repaired.10 generic plan-radio naming is replaced by visible Starter/Growth/Scale; prices and Popular are descriptions, not replacement names.",
+    "slots": "Fixed item text/content preserves identity. Typed itemProps and labelProps for exact keys expose native safe handlers/ref and attributes while protecting controlled value, type, name, form, checked, defaultChecked, id, tabIndex, role, aria-checked and label htmlFor/content."
+  },
+  "style": {
+    "scope": "Distinct37 styles for compact experience chips, three real input sizes, three semantic color tones and neumorphic pricing pills; common36 native engine/style primitives are reused unchanged. Real SevenThemeProvider data-mode light/dark plus existing.dark/data-theme aliases, scoped original example CSS, responsive wrapping, forced-colors and reduced motion. No remote assets or dependencies.",
+    "contrast": "Ordinary text at least4.5:1; essential radio boundary/selected indicator/focus authored opaque pairs at least3:1. Source09 bright fills may retain their hue with a darker boundary/mark adaptation. Static calculation and DOM styles are bounded checks, not rendered AT/browser acceptance."
+  },
+  "preservation": {
+    "oldSource": "All160 prior control source files including36 repaired native engine and35 provider CSS remain unchanged; only5 additive root/Studio/registry entries change. Private engine reuse does not alias any existing canonical ID: each new ID has separately pinned source identity/data/styles/contract and tests.",
+    "sourceEvidence": "Four independently pending original variants plus RadioGroup/Label/Badge primitives, checked canonical gitBlob IDs."
+  },
+  "limits": [
+    "React source candidates only; no native/Flutter.",
+    "No real theme settings, billing/subscription or external side effects.",
+    "No browser/AT/formal acceptance yet; no full official equivalence claim.",
+    "07 fixes upstream label linkage;09 contrast adaptations are explicitly documented;10 uses native labels rather than Radix overlay/bubble-input internals.",
+    "No live enrollment, device size/theme setting, warning notification or purchase service.",
+    "08 larger selected marks are an explicit intent adaptation; source svg selectors do not match its pinned span indicator."
+  ],
+  "accounting": {
+    "before": 160,
+    "after": 164,
+    "remaining": 685,
+    "newCanonicalIds": 4,
+    "nestedOptions": 11,
+    "nestedOptionsAreAdditionalCanonicalIds": false,
+    "formalAccepted": 0
+  }
+}

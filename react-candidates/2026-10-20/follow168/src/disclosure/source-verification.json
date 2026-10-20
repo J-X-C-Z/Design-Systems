@@ -1,0 +1,222 @@
+{
+  "pin": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "items": [
+    {
+      "canonical_id": "watermelon:components:accordion-01",
+      "id": "accordion-01",
+      "section": "components",
+      "category": "accordion",
+      "category_label": "Accordion",
+      "title": "Accordion 1",
+      "metadata_path": "src/data/contents/components/accordion/index.ts",
+      "metadata_sha": "04414eca457a41b26cd75ef9266bd4ff5debaf89",
+      "metadata_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/accordion/index.ts",
+      "source_path": "src/data/contents/components/accordion/variant-1.tsx",
+      "source_sha": "735bf87923f48a540a4af52276a82c112b3387ff",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/accordion/variant-1.tsx",
+      "registry_urls": [
+        "https://registry.watermelon.sh/r/accordion-1.json"
+      ],
+      "aliases": [
+        {
+          "type": "registry_id",
+          "value": "accordion-1"
+        }
+      ],
+      "catalog_url": "https://ui.watermelon.sh/components/accordion#code-btn-accordion-01",
+      "source_paths": [
+        "src/data/contents/components/accordion/variant-1.tsx"
+      ],
+      "demo_paths": [
+        "src/data/contents/components/accordion/variant-1.tsx"
+      ],
+      "mapping": "verified",
+      "implementation": "pending",
+      "behavior_tests": "not_run",
+      "visual_review": "not_run",
+      "acceptance": "pending",
+      "implementation_file": null,
+      "defining_requirements": [
+        "Tab定位，Enter/Space开合；aria-expanded与内容显隐一致",
+        "多实例ID与引用隔离；卸载后无残留事件",
+        "3项可同时打开，初始仅外层第1项打开",
+        "同组ArrowUp/Down、Home/End移动焦点，不自动改变展开状态"
+      ],
+      "requirements_provenance": "Previously recorded independent source inspection; reconfirm exact source before acceptance",
+      "acceptance_requirements": [
+        "Inspect the exact official Accordion 1 item (accordion-01) at its pinned metadata/source paths and record item-specific visual and behavioral requirements before claiming parity.",
+        "Inspect and reproduce expansion/collapse rules and single/multiple-open behavior for Accordion 1 (accordion-01); category resemblance alone is not acceptance.",
+        "Compare the adapted accordion-01 with the exact reference at desktop and narrow widths, including all source-supported states; verify keyboard/focus behavior, accessible naming, empty/error states where applicable.",
+        "Record implementation path, reference identity, test cases, actual results and remaining gaps. Advance status only after the exact item passes these checks; a category representative or similarly named item is insufficient."
+      ]
+    },
+    {
+      "canonical_id": "watermelon:components:dialog-01",
+      "id": "dialog-01",
+      "section": "components",
+      "category": "dialog",
+      "category_label": "Dialog",
+      "title": "Dialog 1",
+      "metadata_path": "src/data/contents/components/dialog/index.ts",
+      "metadata_sha": "0632c84dd35e7cdd81ee925f86a1669ef2d62c64",
+      "metadata_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/dialog/index.ts",
+      "source_path": "src/data/contents/components/dialog/variant-1.tsx",
+      "source_sha": "13f6617736089cb4939b2f93394fb050b32bf337",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/dialog/variant-1.tsx",
+      "registry_urls": [
+        "https://registry.watermelon.sh/r/dialog-1.json"
+      ],
+      "aliases": [
+        {
+          "type": "registry_id",
+          "value": "dialog-1"
+        }
+      ],
+      "catalog_url": "https://ui.watermelon.sh/components/dialog#code-btn-dialog-01",
+      "source_paths": [
+        "src/data/contents/components/dialog/variant-1.tsx"
+      ],
+      "demo_paths": [
+        "src/data/contents/components/dialog/variant-1.tsx"
+      ],
+      "mapping": "verified",
+      "implementation": "pending",
+      "behavior_tests": "not_run",
+      "visual_review": "not_run",
+      "acceptance": "pending",
+      "implementation_file": null,
+      "defining_requirements": [
+        "One native trigger; starts closed; native showModal; unique title/description references while open.",
+        "Escape closes immediately and restores a connected focus target; closed content listeners/timers are removed.",
+        "Two instances use separate IDs and state; pre-aborted render leaves existing instance untouched.",
+        "Uses shared EchoOverlayMountOwners and EchoOverlayOpenLayers; native cancel prevents default and closes only the unhandled topmost layer; cleanup restores host-owned root attributes.",
+        "Controls retain Echo colors and >=44px primary targets under actual shared CSS; close target remains 44px.",
+        "No network, external assets, persistent storage, credential submission, invitation, deletion, legal acceptance or account mutation.",
+        "role=alertdialog; Cancel autofocus; outside pointer does not dismiss; Continue closes with honest local-only feedback; no X."
+      ],
+      "requirements_provenance": "Previously recorded independent source inspection; reconfirm exact source before acceptance",
+      "acceptance_requirements": [
+        "Inspect the exact official Dialog 1 item (dialog-01) at its pinned metadata/source paths and record item-specific visual and behavioral requirements before claiming parity.",
+        "Inspect and reproduce opening, modal structure, closing, focus trap and restoration for Dialog 1 (dialog-01); category resemblance alone is not acceptance.",
+        "Compare the adapted dialog-01 with the exact reference at desktop and narrow widths, including all source-supported states; verify keyboard/focus behavior, accessible naming, empty/error states where applicable.",
+        "Record implementation path, reference identity, test cases, actual results and remaining gaps. Advance status only after the exact item passes these checks; a category representative or similarly named item is insufficient."
+      ]
+    },
+    {
+      "canonical_id": "watermelon:components:tabs-01",
+      "id": "tabs-01",
+      "section": "components",
+      "category": "tabs",
+      "category_label": "Tabs",
+      "title": "Tabs 1",
+      "metadata_path": "src/data/contents/components/tabs/index.ts",
+      "metadata_sha": "56ffa713e1d07fac06fa39b6790fd65ca205b1a6",
+      "metadata_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/tabs/index.ts",
+      "source_path": "src/data/contents/components/tabs/variant-1.tsx",
+      "source_sha": "575c6c26daa62727b04b221d1459ad6d4c359a7e",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/tabs/variant-1.tsx",
+      "registry_urls": [
+        "https://registry.watermelon.sh/r/tabs-1.json"
+      ],
+      "aliases": [
+        {
+          "type": "registry_id",
+          "value": "tabs-1"
+        }
+      ],
+      "catalog_url": "https://ui.watermelon.sh/components/tabs#code-btn-tabs-01",
+      "source_paths": [
+        "src/data/contents/components/tabs/variant-1.tsx"
+      ],
+      "demo_paths": [
+        "src/data/contents/components/tabs/variant-1.tsx"
+      ],
+      "mapping": "verified",
+      "implementation": "pending",
+      "behavior_tests": "not_run",
+      "visual_review": "not_run",
+      "acceptance": "pending",
+      "implementation_file": null,
+      "defining_requirements": [
+        "初始选中 overview；包含 3 个页签，逐项点击并返回首项。",
+        "三项文字页签位于柔和圆角轨道；选中项为纸色底、主色文字和小硬阴影。面板为带强调短语的单段文字。",
+        "验证横向 aria-orientation 与左／右／Home／End、首尾循环、自动激活。",
+        "同时只显示一个 tabpanel；每个 tab 的 aria-controls 与面板 aria-labelledby 双向解析；可见焦点与状态同步。",
+        "不同前缀与相同前缀的独立挂载均无重复 ID；中止、清理、重复挂载后旧事件不生效。",
+        "状态立即切换；可选动效只通过共享 EchoMotion，关闭动效或减少动态效果不影响交互。"
+      ],
+      "requirements_provenance": "Previously recorded independent source inspection; reconfirm exact source before acceptance",
+      "acceptance_requirements": [
+        "Inspect the exact official Tabs 1 item (tabs-01) at its pinned metadata/source paths and record item-specific visual and behavioral requirements before claiming parity.",
+        "Inspect and reproduce selected tab, associated panel, keyboard behavior and transitions for Tabs 1 (tabs-01); category resemblance alone is not acceptance.",
+        "Compare the adapted tabs-01 with the exact reference at desktop and narrow widths, including all source-supported states; verify keyboard/focus behavior, accessible naming, empty/error states where applicable.",
+        "Record implementation path, reference identity, test cases, actual results and remaining gaps. Advance status only after the exact item passes these checks; a category representative or similarly named item is insufficient."
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "src/data/contents/components/tabs/variant-1.tsx",
+      "local": "sources/src/data/contents/components/tabs/variant-1.tsx",
+      "gitBlob": "575c6c26daa62727b04b221d1459ad6d4c359a7e",
+      "sha256": "0f1026777970e459a88767b74ca42c887e4bc41275e7c9249ea0f484b317ab42",
+      "bytes": 1891,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/tabs/variant-1.tsx"
+    },
+    {
+      "path": "src/data/contents/components/dialog/variant-1.tsx",
+      "local": "sources/src/data/contents/components/dialog/variant-1.tsx",
+      "gitBlob": "13f6617736089cb4939b2f93394fb050b32bf337",
+      "sha256": "e0f7364c28cf9f8bda4c9e1084935fa3aa9b80266661843cf77307c32070cb32",
+      "bytes": 2038,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/dialog/variant-1.tsx"
+    },
+    {
+      "path": "src/data/contents/components/accordion/variant-1.tsx",
+      "local": "sources/src/data/contents/components/accordion/variant-1.tsx",
+      "gitBlob": "735bf87923f48a540a4af52276a82c112b3387ff",
+      "sha256": "5d074b267df363af2e90d69838efb679bfcf399db6466f17be512cda93a242a7",
+      "bytes": 1444,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/accordion/variant-1.tsx"
+    },
+    {
+      "path": "src/components/base-ui/button.tsx",
+      "local": "sources/src/components/base-ui/button.tsx",
+      "gitBlob": "810fdb5f0e11477738c9269fb869214bf036bbb6",
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512",
+      "bytes": 3337,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/button.tsx"
+    },
+    {
+      "path": "src/components/base-ui/accordion.tsx",
+      "local": "sources/src/components/base-ui/accordion.tsx",
+      "gitBlob": "fcfee5ca8ac86fd3d3be8d5dfbad4660d059b101",
+      "sha256": "c76de63e9713bd5b773d07d84223990654de9148cfa8ee56e0c61738ae0dcc30",
+      "bytes": 2671,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/accordion.tsx"
+    },
+    {
+      "path": "src/components/base-ui/alert-dialog.tsx",
+      "local": "sources/src/components/base-ui/alert-dialog.tsx",
+      "gitBlob": "9eb8a7ba5bc5f4af5df1511970771f422b3a7b80",
+      "sha256": "d27a6a4d639a2ff07a839fdcd1cf2ebfaa54a34b5f3a36c1c36aa94694ecf32f",
+      "bytes": 5595,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/alert-dialog.tsx"
+    },
+    {
+      "path": "src/components/base-ui/tabs.tsx",
+      "local": "sources/src/components/base-ui/tabs.tsx",
+      "gitBlob": "ea49f44ff6281ea6e5328761c668cee76cad4a9d",
+      "sha256": "7fee349ecb5e0ccf06469d30b54132e47d33b9a41d0a651e42620e1bfc240f70",
+      "bytes": 3506,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/tabs.tsx"
+    }
+  ],
+  "license": {
+    "local": "LICENSE.upstream",
+    "path": "LICENSE",
+    "gitBlob": "c76bf56983389c53194eecc9d088ac8de34debe1",
+    "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+  }
+}

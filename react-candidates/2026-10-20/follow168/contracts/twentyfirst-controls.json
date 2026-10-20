@@ -1,0 +1,34 @@
+{
+  "ids": [
+    "breadcrumb-05",
+    "textarea-10"
+  ],
+  "originalProof": "reference/twentyfirst-controls/SOURCE-PROOF.json",
+  "breadcrumb": {
+    "segments": [
+      "Workspace:#",
+      "Campaigns:#",
+      "Launch Assets:current"
+    ],
+    "badges": "3 outline badges, owned14px right-arrow icons",
+    "markupFix": "Source BreadcrumbSeparator produces li nested in li; corrected decorative aria-hidden span inside each nonlast li",
+    "api": "Native nav and linkProps workspace/campaigns refs/events/href; fixed labels, no custom select state. aria-disabled on arbitrary anchor alone does not prevent navigation, no synthetic disabled prop. Original current span nonfocusable aria-current page/aria-disabled true.",
+    "native": "No implicit submit values/state; cancel native link events using preventDefault; caller URLs retained, tests local canceled only"
+  },
+  "textarea": {
+    "primitive": "src/components/ui/textarea.tsx and ui/label.tsx, not base-ui",
+    "label": "Your message",
+    "placeholder": "Type your message here...",
+    "defaultValue": "",
+    "defaultName": null,
+    "required": false,
+    "style": "320px max-width, floating border label, small2px radius/light shadow, primary-tinted2px focus ring",
+    "native": "React native input/controlled refusal/uncontrolled/default/form/reset/readonly/disabled/required/ref; no synthetic semantic callback"
+  },
+  "limits": {
+    "browser": 0,
+    "realIME": false,
+    "layout": false,
+    "nativeValidationBubble": false
+  }
+}

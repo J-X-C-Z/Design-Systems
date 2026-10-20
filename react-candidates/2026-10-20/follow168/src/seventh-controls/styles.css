@@ -1,0 +1,35 @@
+/* Follow: paper, editorial ink, spare rules and an orange keyboard-focus signal. */
+.fr7 .fr7c-textarea-field{display:grid;gap:8px;inline-size:100%;max-inline-size:384px;min-inline-size:0;color:var(--ds-text,#151515);font-family:var(--ds-font,Arial,sans-serif)}
+.fr7 .fr7c-label{font-size:14px;font-weight:600;line-height:1.4;overflow-wrap:anywhere}
+.fr7 .fr7c-required{color:var(--ds-danger,#a0153e)}
+.fr7 .fr7c-textarea{box-sizing:border-box;display:block;field-sizing:content;inline-size:100%;min-inline-size:0;min-block-size:64px;max-inline-size:100%;resize:vertical;padding:10px 12px;border:1px solid var(--ds-control-line,#73736b);border-radius:2px;background:var(--ds-surface,#fff);color:var(--ds-text,#151515);font:inherit;font-size:16px;line-height:1.6;box-shadow:none;transition:border-color 100ms ease}
+.fr7 .fr7c-textarea::placeholder{color:var(--ds-muted,#52524e);opacity:1}
+.fr7 .fr7c-description{margin:0;color:var(--ds-muted,#52524e);font-size:12px;line-height:1.5;text-align:end;overflow-wrap:anywhere}
+.fr7 .fr7c-textarea:disabled{cursor:not-allowed;opacity:.55;background:var(--ds-subtle,#e9e7e0)}
+.fr7 .fr7c-textarea[readonly]{background:var(--ds-subtle,#e9e7e0)}
+.fr7 .fr7c-textarea[aria-invalid=true]{border-color:var(--ds-danger,#a0153e)}
+.fr7 .fr7c-textarea:focus-visible,.fr7 .fr7c-breadcrumb-link:focus-visible,.fr7 .fr7c-page-link:focus-visible{outline:3px solid var(--follow-orange,#f4793a);outline-offset:3px}
+.fr7 .fr7c-textarea:focus-visible{border-color:var(--ds-text,#151515)}
+.fr7 .fr7c-breadcrumb,.fr7 .fr7c-pagination{min-inline-size:0;color:var(--ds-text,#151515);font-family:var(--ds-font,Arial,sans-serif);font-size:14px;line-height:1.5}
+.fr7 .fr7c-breadcrumb-list,.fr7 .fr7c-pagination-list{list-style:none;margin:0;display:flex;align-items:center;flex-wrap:wrap;min-inline-size:0}
+.fr7 .fr7c-breadcrumb-list{gap:6px;padding:4px}
+.fr7 .fr7c-breadcrumb-item{display:inline-flex;align-items:center;gap:6px;min-inline-size:0;max-inline-size:100%}
+.fr7 .fr7c-breadcrumb-link{display:inline-flex;align-items:center;gap:8px;min-inline-size:0;color:var(--ds-muted,#52524e);text-decoration:none;overflow-wrap:anywhere;text-underline-offset:4px}
+.fr7 .fr7c-breadcrumb-home{font-weight:600;color:var(--ds-text,#151515)}
+.fr7 .fr7c-breadcrumb-link:hover{text-decoration:underline;color:var(--ds-text,#151515)}
+.fr7 .fr7c-breadcrumb-current{font-weight:600;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere;min-inline-size:0}
+.fr7 .fr7c-breadcrumb-separator{color:var(--ds-muted,#52524e);flex:none}
+.fr7 .fr7c-portal-symbol{inline-size:14px;block-size:14px;flex:none;fill:none;stroke:currentColor;stroke-width:1.25;stroke-linejoin:round}
+.fr7 .fr7c-pagination{display:flex;justify-content:center;inline-size:100%}
+.fr7 .fr7c-pagination-list{padding:0;gap:16px;justify-content:center}
+.fr7 .fr7c-pagination-item{display:flex}
+.fr7 .fr7c-page-link{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-inline-size:36px;block-size:36px;padding:0 8px;border:1px solid transparent;border-radius:2px;color:var(--ds-text,#151515);background:transparent;text-decoration:none;font-family:var(--ds-font-mono,monospace);font-size:14px;line-height:1;cursor:pointer;transition:background-color 100ms ease}
+.fr7 .fr7c-page-direction{background:var(--ds-subtle,#e9e7e0);color:var(--ds-muted,#52524e)}
+.fr7 .fr7c-page-link:hover{background:var(--ds-subtle,#e9e7e0)}
+.fr7 .fr7c-page-link[aria-current=page]{border-color:var(--ds-text,#151515);color:var(--ds-on-accent,#fff);background:var(--ds-accent-fill,#151515);font-weight:700}
+.fr7 .fr7c-page-link[aria-disabled=true]{opacity:.45;cursor:not-allowed}
+.fr7 .fr7c-chevron{inline-size:20px;block-size:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.fr7 .fr7c-pagination:dir(rtl) .fr7c-chevron{transform:scaleX(-1)}
+.fr7[data-motion=off] .fr7c-textarea,.fr7[data-motion=off] .fr7c-page-link{transition:none}
+@media(prefers-reduced-motion:reduce){.fr7 .fr7c-textarea,.fr7 .fr7c-page-link{transition:none}}
+@media(forced-colors:active){.fr7 .fr7c-page-link[aria-current=page]{border-color:Highlight;color:HighlightText;background:Highlight;forced-color-adjust:none}.fr7 .fr7c-textarea:focus-visible,.fr7 .fr7c-breadcrumb-link:focus-visible,.fr7 .fr7c-page-link:focus-visible{outline-color:Highlight}.fr7 .fr7c-page-link[aria-disabled=true]{color:GrayText;opacity:1}}

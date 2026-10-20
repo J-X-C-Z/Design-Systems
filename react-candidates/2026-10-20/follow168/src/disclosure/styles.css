@@ -1,0 +1,33 @@
+/* Shared theme tokens are inherited; Follow's defaults are supplied by the Provider. */
+.fr7.fr7-disclosure{box-sizing:border-box;color:var(--fr-ink,#161616);font:inherit;min-width:0;max-width:100%;width:100%}
+.fr7.fr7-disclosure *{box-sizing:border-box}
+.fr7.fr7-disclosure :is(button,input){font:inherit}
+.fr7.fr7-disclosure button{color:var(--fr-ink,#161616);background:var(--fr-surface,#fff);border:1px solid var(--fr-line,#161616);border-radius:var(--fr-control-radius,0);min-height:44px;cursor:pointer;overflow-wrap:anywhere;white-space:normal;max-width:100%}
+.fr7.fr7-disclosure button:disabled{cursor:not-allowed;opacity:.58}
+.fr7.fr7-disclosure :is(button,[tabindex]):focus-visible{outline:2px solid var(--fr-ink,#161616);outline-offset:3px;box-shadow:0 0 0 3px var(--fr-surface,#fff)}
+.fr7.fr7-disclosure [hidden]{display:none!important}
+.fr7.fr7-disclosure :is(h2,h3,p){margin:0;overflow-wrap:anywhere}
+.fr7.fr7-disclosure svg{display:block;flex:none}
+.fr7.fr7-disclosure .fr7-disclosure-note{font-size:.875rem;line-height:1.6;color:var(--fr-muted,#595959);margin-block:1rem 0}
+.fr7.fr7-disclosure .fr7-disclosure-error{color:var(--fr-danger,#a52c30);line-height:1.6;margin-top:1rem}
+.fr7.fr7-disclosure .fr7-tabs-track{display:flex;flex-wrap:wrap;gap:4px;padding:4px;max-width:100%;min-width:0;background:var(--fr-accent,#f4ad7f);color:var(--fr-accent-ink,#161616);border:1px solid var(--fr-line,#161616);border-radius:var(--fr-radius,0)}
+.fr7.fr7-disclosure .fr7-tab{padding:.75rem 1rem;flex:1 1 7rem;min-width:0;background:transparent;color:var(--fr-accent-ink,#161616);border-color:transparent}
+.fr7.fr7-disclosure .fr7-tab[aria-selected=true]{background:var(--fr-surface,#fff);color:var(--fr-ink,#161616);border-color:var(--fr-line,#161616);box-shadow:2px 2px 0 var(--fr-line,#161616)}
+.fr7.fr7-disclosure .fr7-tab-panel{padding:1.2rem .25rem;line-height:1.75;color:var(--fr-muted,#595959);min-width:0;max-width:100%;overflow-wrap:anywhere}
+.fr7.fr7-disclosure .fr7-tab-panel strong{font-weight:650;color:var(--fr-ink,#161616)}
+.fr7.fr7-disclosure .fr7-accordion-item{border-bottom:1px solid var(--fr-line,#161616);min-width:0}
+.fr7.fr7-disclosure .fr7-accordion-item:first-child{border-top:1px solid var(--fr-line,#161616)}
+.fr7.fr7-disclosure .fr7-accordion-trigger{display:flex;align-items:flex-start;gap:.75rem;width:100%;text-align:start;border:0;background:transparent;padding:.85rem .4rem;line-height:1.5}
+.fr7.fr7-disclosure .fr7-accordion-trigger svg{margin-top:.15rem}
+.fr7.fr7-disclosure .fr7-accordion-item[data-state=open]{background:var(--fr-accent,#f4ad7f);color:var(--fr-accent-ink,#161616)}
+.fr7.fr7-disclosure .fr7-accordion-item[data-state=open] .fr7-accordion-trigger{color:var(--fr-accent-ink,#161616)}
+.fr7.fr7-disclosure .fr7-accordion-content{padding:0 .75rem 1rem 2.25rem;color:inherit;line-height:1.75;overflow-wrap:anywhere}
+.fr7.fr7-disclosure .fr7-dialog-trigger,.fr7.fr7-disclosure .fr7-dialog-cancel,.fr7.fr7-disclosure .fr7-dialog-confirm{padding:.7rem 1.25rem}
+.fr7.fr7-disclosure .fr7-dialog{color:var(--fr-ink,#161616);background:var(--fr-surface,#fff);border:1px solid var(--fr-line,#161616);border-radius:var(--fr-radius,0);padding:1.5rem;width:calc(100% - 2rem);max-width:30rem;max-height:calc(100dvh - 2rem);overflow:auto;overscroll-behavior:contain;box-shadow:6px 6px 0 var(--fr-line,#161616)}
+.fr7.fr7-disclosure .fr7-dialog::backdrop{background:rgb(0 0 0 / .48)}
+.fr7.fr7-disclosure .fr7-dialog h2{font-size:1.25rem;line-height:1.4}
+.fr7.fr7-disclosure .fr7-dialog header p{color:var(--fr-muted,#595959);margin-top:.8rem;line-height:1.75}
+.fr7.fr7-disclosure .fr7-dialog footer{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.fr7.fr7-disclosure .fr7-dialog-confirm{background:var(--fr-ink,#161616);color:var(--fr-surface,#fff)}
+@media(max-width:400px){.fr7.fr7-disclosure .fr7-dialog{padding:1rem}.fr7.fr7-disclosure .fr7-dialog footer button{flex:1 1 8rem}}
+@media(prefers-reduced-motion:reduce){.fr7.fr7-disclosure *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

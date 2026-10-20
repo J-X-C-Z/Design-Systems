@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "slice": "react-fourth-selection-eight",
+  "idCount": 8,
+  "nativeFieldCount": 18,
+  "canonicalFile": "duolingo-functional-v140-20261013/src/catalog-849.json",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "implementation": "src/fourth-selection/index.jsx",
+  "styles": "src/fourth-selection/styles.css",
+  "types": "src/fourth-selection/index.d.ts",
+  "tests": "tests/fourth-selection-tests.cjs",
+  "common": {
+    "implementation": "Actual React JSX composing shared React scalar BooleanField;18 native inputs,not native-adapter mount wrappers. No iframe,innerHTML,network or storage. Exact source TSX is evidence,never executed.",
+    "ownership": "checked!==undefined owns model;undefined releases last effective state;runtime null normalizes false but is outside typed boolean API. defaultChecked is mount-only reset baseline,explicit false overrides true source default. ownerRevision is explicit owner intent even when checked unchanged;group/member revision encoding distinguishes undefined and numeric -0.",
+    "events": "Original member onClick and original React onChange are forwarded. Member onChange then group onChange unless synthetic/native canceled,then onCheckedChange proposal. onChange/onClick preventDefault vetoes;proposal callback preventDefault is too late. Callback return values ignored. onClick/onChange/proposal throws propagate,redraw latest owned model,and do not commit failed edits;later actions recover.",
+    "synchronous": "Committed synchronous parent acceptance,rejection command,takeover/release,disabled/readOnly,keyed replacement or unmount supersedes stale callbacks/reset work. Ordinary observers may finish after unmount;scalar proposals cannot commit. No claim that uncommitted batched updates already own field.",
+    "forms": "Native name/value/required/form support per input. Group form default overridden by member form including empty string. Checked enabled named fields enter FormData;unchecked/disabled omitted;readOnly checked remains successful. No synthesized aggregate field.",
+    "reset": "form.reset silently uses mount baseline for uncontrolled fields and current owner state for controlled ones. Canceled/repeated reset,dispatch edits,post-return same-model click,committed owner updates/form reassociation/replacement/unmount covered individually. Current input.form determines association.",
+    "boundaries": [
+      "Late preventDefault after event dispatch is unsupported.",
+      "stopImmediatePropagation before document reset observer can prevent reset observation.",
+      "Direct property assignment without native editing events is not an editing API.",
+      "Native click listeners later than React processing cannot retract already emitted proposal.",
+      "Native Space/Tab remain browser defaults;JSDOM does not establish trusted keyboard behavior.",
+      "Boolean source examples do not expose indeterminate;no Radix/Base UI internal event-equivalence claim.",
+      "Static CSS tests are declarations/ratios,not actual hit-testing,layout,computed color or screen-reader proof."
+    ],
+    "groups": "Fixed named members BooleanFieldProps|null plus each keyRef. Checkbox group ref div;Switch12 fieldset. No aggregate checked/defaultChecked/value/defaultValue/values/defaultValues/onCheckedChange/onValueChange/name;runtime aggregate props ignored. Group disabled/readOnly OR member safety.Switch12 disabled/form also reflect on its native fieldset root;HTML fieldset.form does not propagate ownership to descendants,so per-member form/disabled forwarding remains explicit.",
+    "accessibility": "Stable useId native labels/help/errors,role=switch,decorative SVG aria-hidden. Default accessible names only supplied without caller visible label;explicit caller aria-label respected. Native target remains usable with label:null. Group label/description/error distinct;Switch11 description is help.",
+    "visual": "Source-specific geometries and default vectors retained with translated copy,inline icon counterparts,semantic light/dark tokens and44px targets. Motion none/reduce,RTL,forced colors and long Chinese contracts declared and statically tested;no continuous animation.",
+    "remaining": [
+      "Independent final-byte review",
+      "Real browser trusted pointer/keyboard/Space/Tab/focus/reset/accessibility tree",
+      "390px/1440px layouts,RTL,forced colors,reduced motion,rendered14-mode theme review",
+      "Final package consumer build/type checks"
+    ],
+    "acceptance": "Source candidate only;formal accepted0;no native/Flutter acceptance inherited."
+  },
+  "items": [
+    {
+      "id": "checkbox-09",
+      "export": "Checkbox09",
+      "source": {
+        "id": "checkbox-09",
+        "canonical_id": "watermelon:components:checkbox-09",
+        "source_path": "src/data/contents/components/checkbox/variant-9.tsx",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-9.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/checkbox-09.tsx",
+        "sourceMapEntryPresent": true,
+        "sourceMapGap": null,
+        "file": "reference/checkbox-09.tsx",
+        "expected_git_blob": "4046a5eb3180c8eb0c0196488aab3078fd40ff0a",
+        "git_blob": "4046a5eb3180c8eb0c0196488aab3078fd40ff0a",
+        "sha256": "5e1039066633671476931d84726b6892b5a2b62bfbb5682edc5b94319c5b56d0",
+        "bytes": 2037,
+        "semantic_read": true,
+        "executed": false
+      },
+      "sourceStructure": "Focus areas heading, three vertical independent checkbox rows; FolderKanban/PenTool/Briefcase icons hidden from accessible name; 16px sky-colored checkboxes.",
+      "sourceEnglishLabels": [
+        "Planning",
+        "Design",
+        "Operations"
+      ],
+      "sourceHelp": null,
+      "adapterStructure": "Native labeled inputs, 16px squares and inline decorative folder/pen/briefcase SVG counterparts; visible Chinese 关注领域/规划/设计/运营.",
+      "explicitDifference": "Source private string-array state becomes three explicitly named independent BooleanFieldProps; icons are inline counterparts rather than imported lucide components; sky constants use semantic info pair.",
+      "api": {
+        "members": [
+          "planning",
+          "design",
+          "operations"
+        ],
+        "model": "Independent BooleanFieldProps per named member",
+        "defaultChecked": {
+          "planning": false,
+          "design": false,
+          "operations": false
+        },
+        "ref": "HTMLDivElement + member input refs",
+        "presentation": "label/description/error plus per-member label/help/error"
+      },
+      "fieldCount": 3,
+      "tests": {
+        "suite": "tests/fourth-selection-tests.cjs",
+        "authorExecution": "See author-evidence.json; do not infer from source or native tests",
+        "coverage": [
+          "exact cardinality/default vector/source icon composition",
+          "each field controlled refusal/acceptance/release and default baseline",
+          "original onClick/onChange cancellation/throw recovery",
+          "onClick/onChange/onCheckedChange synchronous owner accept/reject/release/safety/replace/unmount",
+          "native reset cancellation/repeated reset/owner command/reassociation/unmount",
+          "object/callback refs and cleanup;native name/value/required/form",
+          "visible label fallback and label:null targets",
+          "long Chinese/static semantic color/motion/RTL selectors"
+        ]
+      },
+      "status": {
+        "sourceRead": true,
+        "sourceGitBlobVerified": true,
+        "implementation": "React source candidate",
+        "independentReview": "pending",
+        "browser": "not_run",
+        "formalAcceptance": "pending"
+      }
+    },
+    {
+      "id": "checkbox-10",
+      "export": "Checkbox10",
+      "source": {
+        "id": "checkbox-10",
+        "canonical_id": "watermelon:components:checkbox-10",
+        "source_path": "src/data/contents/components/checkbox/variant-10.tsx",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-10.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/checkbox-10.tsx",
+        "sourceMapEntryPresent": false,
+        "sourceMapGap": "No entry for this exact path; read-only source file independently hashed against canonical source_sha.",
+        "file": "reference/checkbox-10.tsx",
+        "expected_git_blob": "cc3bd90c1fc2269f60ecfdce6ac90ce0011ec503",
+        "git_blob": "cc3bd90c1fc2269f60ecfdce6ac90ce0011ec503",
+        "sha256": "cdabcf4a1045901c7a87ac3a4bf75593e407c4762b78cefbb47b7448a415c2ea",
+        "bytes": 1926,
+        "semantic_read": true,
+        "executed": false
+      },
+      "sourceStructure": "Three independently controlled 20px rounded-6px checkboxes, destructive/sky/green semantic order, shallow shadow. No visible labels.",
+      "sourceEnglishLabels": [
+        "Color destructive",
+        "Color info",
+        "Color success"
+      ],
+      "sourceHelp": null,
+      "adapterStructure": "Three native inputs preserving default vector and color order, 20px rounded-6px visuals, visible check mark.",
+      "explicitDifference": "Private checkedColors record becomes independent named props; source destructive/sky/green values become semantic danger/info/success colors and corresponding contrasting backgrounds in both modes.",
+      "api": {
+        "members": [
+          "destructive",
+          "info",
+          "success"
+        ],
+        "model": "Independent BooleanFieldProps per named member",
+        "defaultChecked": {
+          "destructive": true,
+          "info": true,
+          "success": true
+        },
+        "ref": "HTMLDivElement + member input refs",
+        "presentation": "label/description/error plus per-member label/help/error"
+      },
+      "fieldCount": 3,
+      "tests": {
+        "suite": "tests/fourth-selection-tests.cjs",
+        "authorExecution": "See author-evidence.json; do not infer from source or native tests",
+        "coverage": [
+          "exact cardinality/default vector/source icon composition",
+          "each field controlled refusal/acceptance/release and default baseline",
+          "original onClick/onChange cancellation/throw recovery",
+          "onClick/onChange/onCheckedChange synchronous owner accept/reject/release/safety/replace/unmount",
+          "native reset cancellation/repeated reset/owner command/reassociation/unmount",
+          "object/callback refs and cleanup;native name/value/required/form",
+          "visible label fallback and label:null targets",
+          "long Chinese/static semantic color/motion/RTL selectors"
+        ]
+      },
+      "status": {
+        "sourceRead": true,
+        "sourceGitBlobVerified": true,
+        "implementation": "React source candidate",
+        "independentReview": "pending",
+        "browser": "not_run",
+        "formalAcceptance": "pending"
+      }
+    },
+    {
+      "id": "checkbox-11",
+      "export": "Checkbox11",
+      "source": {
+        "id": "checkbox-11",
+        "canonical_id": "watermelon:components:checkbox-11",
+        "source_path": "src/data/contents/components/checkbox/variant-11.tsx",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-11.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/checkbox-11.tsx",
+        "sourceMapEntryPresent": false,
+        "sourceMapGap": "No entry for this exact path; read-only source file independently hashed against canonical source_sha.",
+        "file": "reference/checkbox-11.tsx",
+        "expected_git_blob": "a5cb0b612b79788466ce406f7eb1be89ca43839d",
+        "git_blob": "a5cb0b612b79788466ce406f7eb1be89ca43839d",
+        "sha256": "7b26f38ed131bcc7d27111bdff5a1ae21c9216c94c8fdfb523149ac27a2eedf4",
+        "bytes": 2273,
+        "semantic_read": true,
+        "executed": false
+      },
+      "sourceStructure": "Three independent Base UI Checkbox roots wrapping Triangle/Diamond/Hexagon SVG icons; 20px stroke1; checked filled rose/cyan/violet, unchecked unfilled; hover scale1.03.",
+      "sourceEnglishLabels": [
+        "Triangle icon",
+        "Diamond icon",
+        "Hexagon icon"
+      ],
+      "sourceHelp": null,
+      "adapterStructure": "Three native input targets with distinct outlined SVG geometry overlays. Checked uses semantic fills, unchecked retains outline without generic square/check.",
+      "explicitDifference": "Base UI Root replaced by native input plus matching visible geometry; exact icon outline not claimed identical. Rose/cyan/violet replaced by danger/info/accent theme tokens. 44px target is larger than 20px source icon.",
+      "api": {
+        "members": [
+          "triangle",
+          "diamond",
+          "hexagon"
+        ],
+        "model": "Independent BooleanFieldProps per named member",
+        "defaultChecked": {
+          "triangle": true,
+          "diamond": true,
+          "hexagon": true
+        },
+        "ref": "HTMLDivElement + member input refs",
+        "presentation": "label/description/error plus per-member label/help/error"
+      },
+      "fieldCount": 3,
+      "tests": {
+        "suite": "tests/fourth-selection-tests.cjs",
+        "authorExecution": "See author-evidence.json; do not infer from source or native tests",
+        "coverage": [
+          "exact cardinality/default vector/source icon composition",
+          "each field controlled refusal/acceptance/release and default baseline",
+          "original onClick/onChange cancellation/throw recovery",
+          "onClick/onChange/onCheckedChange synchronous owner accept/reject/release/safety/replace/unmount",
+          "native reset cancellation/repeated reset/owner command/reassociation/unmount",
+          "object/callback refs and cleanup;native name/value/required/form",
+          "visible label fallback and label:null targets",
+          "long Chinese/static semantic color/motion/RTL selectors"
+        ]
+      },
+      "status": {
+        "sourceRead": true,
+        "sourceGitBlobVerified": true,
+        "implementation": "React source candidate",
+        "independentReview": "pending",
+        "browser": "not_run",
+        "formalAcceptance": "pending"
+      }
+    },
+    {
+      "id": "checkbox-12",
+      "export": "Checkbox12",
+      "source": {
+        "id": "checkbox-12",
+        "canonical_id": "watermelon:components:checkbox-12",
+        "source_path": "src/data/contents/components/checkbox/variant-12.tsx",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-12.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/checkbox-12.tsx",
+        "sourceMapEntryPresent": false,
+        "sourceMapGap": "No entry for this exact path; read-only source file independently hashed against canonical source_sha.",
+        "file": "reference/checkbox-12.tsx",
+        "expected_git_blob": "ef31ed9e389f4624e166755e76f33e72811b7c14",
+        "git_blob": "ef31ed9e389f4624e166755e76f33e72811b7c14",
+        "sha256": "1d472436e81954d882bbc8e39ceb344732e39b380b32e2525b15477d9e667767",
+        "bytes": 2453,
+        "semantic_read": true,
+        "executed": false
+      },
+      "sourceStructure": "Three Base UI Checkbox roots with 28px permanently colored circles; checked Indicator contains 20px white-filled CircleCheck SVG; off hides indicator only.",
+      "sourceEnglishLabels": [
+        "Color destructive",
+        "Color info",
+        "Color success"
+      ],
+      "sourceHelp": null,
+      "adapterStructure": "Three 28px permanently colored disks over independent native input targets; inner circle/check visibility follows actual checked field.",
+      "explicitDifference": "Base UI indicator lifecycle replaced with decorative CSS visibility; inner circle fill uses contrasting semantic background rather than fixed white so dark semantic pair remains legible. Source hover1.02 omitted; no pixel-equivalence claim.",
+      "api": {
+        "members": [
+          "destructive",
+          "info",
+          "success"
+        ],
+        "model": "Independent BooleanFieldProps per named member",
+        "defaultChecked": {
+          "destructive": true,
+          "info": true,
+          "success": true
+        },
+        "ref": "HTMLDivElement + member input refs",
+        "presentation": "label/description/error plus per-member label/help/error"
+      },
+      "fieldCount": 3,
+      "tests": {
+        "suite": "tests/fourth-selection-tests.cjs",
+        "authorExecution": "See author-evidence.json; do not infer from source or native tests",
+        "coverage": [
+          "exact cardinality/default vector/source icon composition",
+          "each field controlled refusal/acceptance/release and default baseline",
+          "original onClick/onChange cancellation/throw recovery",
+          "onClick/onChange/onCheckedChange synchronous owner accept/reject/release/safety/replace/unmount",
+          "native reset cancellation/repeated reset/owner command/reassociation/unmount",
+          "object/callback refs and cleanup;native name/value/required/form",
+          "visible label fallback and label:null targets",
+          "long Chinese/static semantic color/motion/RTL selectors"
+        ]
+      },
+      "status": {
+        "sourceRead": true,
+        "sourceGitBlobVerified": true,
+        "implementation": "React source candidate",
+        "independentReview": "pending",
+        "browser": "not_run",
+        "formalAcceptance": "pending"
+      }
+    },
+    {
+      "id": "switch-09",
+      "export": "Switch09",
+      "source": {
+        "id": "switch-09",
+        "canonical_id": "watermelon:components:switch-09",
+        "source_path": "src/data/contents/components/switch/variant-9.tsx",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-9.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/switch-09.tsx",
+        "sourceMapEntryPresent": true,
+        "sourceMapGap": null,
+        "file": "reference/switch-09.tsx",
+        "expected_git_blob": "037f1089cf6b718c814ec699cadad8df263861ab",
+        "git_blob": "037f1089cf6b718c814ec699cadad8df263861ab",
+        "sha256": "aa5cfe0d1973c5a4b1c2f12fee6045d374ec575e3ad35086286477a7616acbc6",
+        "bytes": 1764,
+        "semantic_read": true,
+        "executed": false
+      },
+      "sourceStructure": "56x28px rounded track,26px thumb,source checked true; checked left X and unchecked right check; icons mutually exclusive despite aria name permanent.300ms cubic-bezier transition.",
+      "sourceEnglishLabels": [
+        "Switch with permanent icon indicators"
+      ],
+      "sourceHelp": null,
+      "adapterStructure": "One native switch with both decorative SVG nodes and mutually exclusive visibility; true is inline-start X and false inline-end check;44px target.",
+      "explicitDifference": "Source useState/setChecked replaced by public scalar checked/defaultChecked API. SVG counterparts replace react-icons; CSS anchors art to control so custom long labels do not shift icons. Semantic accent/ink rather than source literal background tokens;control-line border improves off-state boundary instead of source transparency.",
+      "api": {
+        "members": null,
+        "model": "BooleanFieldProps",
+        "defaultChecked": true,
+        "ref": "HTMLInputElement",
+        "presentation": "label/help/error"
+      },
+      "fieldCount": 1,
+      "tests": {
+        "suite": "tests/fourth-selection-tests.cjs",
+        "authorExecution": "See author-evidence.json; do not infer from source or native tests",
+        "coverage": [
+          "exact cardinality/default vector/source icon composition",
+          "each field controlled refusal/acceptance/release and default baseline",
+          "original onClick/onChange cancellation/throw recovery",
+          "onClick/onChange/onCheckedChange synchronous owner accept/reject/release/safety/replace/unmount",
+          "native reset cancellation/repeated reset/owner command/reassociation/unmount",
+          "object/callback refs and cleanup;native name/value/required/form",
+          "visible label fallback and label:null targets",
+          "long Chinese/static semantic color/motion/RTL selectors"
+        ]
+      },
+      "status": {
+        "sourceRead": true,
+        "sourceGitBlobVerified": true,
+        "implementation": "React source candidate",
+        "independentReview": "pending",
+        "browser": "not_run",
+        "formalAcceptance": "pending"
+      }
+    },
+    {
+      "id": "switch-10",
+      "export": "Switch10",
+      "source": {
+        "id": "switch-10",
+        "canonical_id": "watermelon:components:switch-10",
+        "source_path": "src/data/contents/components/switch/variant-10.tsx",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-10.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/switch-10.tsx",
+        "sourceMapEntryPresent": false,
+        "sourceMapGap": "No entry for this exact path; read-only source file independently hashed against canonical source_sha.",
+        "file": "reference/switch-10.tsx",
+        "expected_git_blob": "cbac482f61e0738bae9392a44c5c61e1da6af54c",
+        "git_blob": "cbac482f61e0738bae9392a44c5c61e1da6af54c",
+        "sha256": "b3990435f006ccf76a28488152f842beeb7919df80a025f950b2d955f8ea7fb1",
+        "bytes": 1816,
+        "semantic_read": true,
+        "executed": false
+      },
+      "sourceStructure": "Square-rounded32px-high track,half-width rectangular thumb,checked true; checked left sun,unchecked right moon; source checked37px LTR/35px RTL translation.",
+      "sourceEnglishLabels": [
+        "Square switch with icon indicators"
+      ],
+      "sourceHelp": null,
+      "adapterStructure": "76x32px track and37x30px thumb,source-direction37/35px travel; mutually exclusive sun/moon;native44px-high target.",
+      "explicitDifference": "Width is fixed at76px from source two20px icons plus16px horizontal padding and2px side margin per cell; original grid is intrinsically sized. SVG counterparts and semantic tokens replace react-icons and Tailwind. Control-line border replaces source transparent border.No application theme mutation.",
+      "api": {
+        "members": null,
+        "model": "BooleanFieldProps",
+        "defaultChecked": true,
+        "ref": "HTMLInputElement",
+        "presentation": "label/help/error"
+      },
+      "fieldCount": 1,
+      "tests": {
+        "suite": "tests/fourth-selection-tests.cjs",
+        "authorExecution": "See author-evidence.json; do not infer from source or native tests",
+        "coverage": [
+          "exact cardinality/default vector/source icon composition",
+          "each field controlled refusal/acceptance/release and default baseline",
+          "original onClick/onChange cancellation/throw recovery",
+          "onClick/onChange/onCheckedChange synchronous owner accept/reject/release/safety/replace/unmount",
+          "native reset cancellation/repeated reset/owner command/reassociation/unmount",
+          "object/callback refs and cleanup;native name/value/required/form",
+          "visible label fallback and label:null targets",
+          "long Chinese/static semantic color/motion/RTL selectors"
+        ]
+      },
+      "status": {
+        "sourceRead": true,
+        "sourceGitBlobVerified": true,
+        "implementation": "React source candidate",
+        "independentReview": "pending",
+        "browser": "not_run",
+        "formalAcceptance": "pending"
+      }
+    },
+    {
+      "id": "switch-11",
+      "export": "Switch11",
+      "source": {
+        "id": "switch-11",
+        "canonical_id": "watermelon:components:switch-11",
+        "source_path": "src/data/contents/components/switch/variant-11.tsx",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-11.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/switch-11.tsx",
+        "sourceMapEntryPresent": false,
+        "sourceMapGap": "No entry for this exact path; read-only source file independently hashed against canonical source_sha.",
+        "file": "reference/switch-11.tsx",
+        "expected_git_blob": "77e5eafbda03179194c9c4ac6bf261621989bd4d",
+        "git_blob": "77e5eafbda03179194c9c4ac6bf261621989bd4d",
+        "sha256": "0efc6c29cb3d8de90f3a0275e0e91757caf50e4c9cfe0e1fac60c3f619864288",
+        "bytes": 1497,
+        "semantic_read": true,
+        "executed": false
+      },
+      "sourceStructure": "Full-width bordered card,compact24x16px end-positioned switch,12px thumb,10px travel,refresh icon,label and separate description. Checked border stronger and refresh rotates360deg with700ms finite transition.",
+      "sourceEnglishLabels": [
+        "Auto Sync"
+      ],
+      "sourceHelp": "Automatically sync your data across devices.",
+      "adapterStructure": "One native input covering full card; title label and help description associated through aria-describedby;refresh decorative SVG follows checked through CSS;24x16 visual remains.",
+      "explicitDifference": "Public label/help API and native whole-card input replace original positioned primitive pseudo-target. Help and label must be noninteractive under the overlay. Exact icon outline differs; finite rotation honors motion prefs. No data synchronization or networking.",
+      "api": {
+        "members": null,
+        "model": "BooleanFieldProps",
+        "defaultChecked": true,
+        "ref": "HTMLInputElement",
+        "presentation": "label/help/error"
+      },
+      "fieldCount": 1,
+      "tests": {
+        "suite": "tests/fourth-selection-tests.cjs",
+        "authorExecution": "See author-evidence.json; do not infer from source or native tests",
+        "coverage": [
+          "exact cardinality/default vector/source icon composition",
+          "each field controlled refusal/acceptance/release and default baseline",
+          "original onClick/onChange cancellation/throw recovery",
+          "onClick/onChange/onCheckedChange synchronous owner accept/reject/release/safety/replace/unmount",
+          "native reset cancellation/repeated reset/owner command/reassociation/unmount",
+          "object/callback refs and cleanup;native name/value/required/form",
+          "visible label fallback and label:null targets",
+          "long Chinese/static semantic color/motion/RTL selectors"
+        ]
+      },
+      "status": {
+        "sourceRead": true,
+        "sourceGitBlobVerified": true,
+        "implementation": "React source candidate",
+        "independentReview": "pending",
+        "browser": "not_run",
+        "formalAcceptance": "pending"
+      }
+    },
+    {
+      "id": "switch-12",
+      "export": "Switch12",
+      "source": {
+        "id": "switch-12",
+        "canonical_id": "watermelon:components:switch-12",
+        "source_path": "src/data/contents/components/switch/variant-12.tsx",
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-12.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/switch-12.tsx",
+        "sourceMapEntryPresent": false,
+        "sourceMapGap": "No entry for this exact path; read-only source file independently hashed against canonical source_sha.",
+        "file": "reference/switch-12.tsx",
+        "expected_git_blob": "4b4605deff6f3b8302dabc6be545ab82f227c808",
+        "git_blob": "4b4605deff6f3b8302dabc6be545ab82f227c808",
+        "sha256": "64685bda04d9411b0769f1231cf38d9a92ba547ae751b4e03ede0ae389b2897b",
+        "bytes": 1125,
+        "semantic_read": true,
+        "executed": false
+      },
+      "sourceStructure": "Native fieldset/legend Manage your preferences;384px max-width;ul with3 independently uncontrolled source switches,dividers,Shield/Bell/Moon icons and each entire label row clickable.",
+      "sourceEnglishLabels": [
+        "Privacy Mode",
+        "Notifications",
+        "Dark Theme"
+      ],
+      "sourceHelp": null,
+      "adapterStructure": "Native fieldset/legend/ul/li with three native switch fields,decorative inline shield/bell/moon SVG counterparts,row labels extended across padding;source false vector.",
+      "explicitDifference": "Source label nesting becomes adjacent label/input association;row pseudo-element extends activation. Native fieldset disabled/form properties reflect public root props;each field separately receives explicit control/form/ref API since fieldset.form does not associate descendants. label:null keeps native44px control but removes full-row label activation. No actual privacy/notification/theme service change.",
+      "api": {
+        "members": [
+          "privacy",
+          "notifications",
+          "darkTheme"
+        ],
+        "model": "Independent BooleanFieldProps per named member",
+        "defaultChecked": {
+          "privacy": false,
+          "notifications": false,
+          "darkTheme": false
+        },
+        "ref": "HTMLFieldSetElement + member input refs",
+        "presentation": "label/description/error plus per-member label/help/error"
+      },
+      "fieldCount": 3,
+      "tests": {
+        "suite": "tests/fourth-selection-tests.cjs",
+        "authorExecution": "See author-evidence.json; do not infer from source or native tests",
+        "coverage": [
+          "exact cardinality/default vector/source icon composition",
+          "each field controlled refusal/acceptance/release and default baseline",
+          "original onClick/onChange cancellation/throw recovery",
+          "onClick/onChange/onCheckedChange synchronous owner accept/reject/release/safety/replace/unmount",
+          "native reset cancellation/repeated reset/owner command/reassociation/unmount",
+          "object/callback refs and cleanup;native name/value/required/form",
+          "visible label fallback and label:null targets",
+          "long Chinese/static semantic color/motion/RTL selectors"
+        ]
+      },
+      "status": {
+        "sourceRead": true,
+        "sourceGitBlobVerified": true,
+        "implementation": "React source candidate",
+        "independentReview": "pending",
+        "browser": "not_run",
+        "formalAcceptance": "pending"
+      }
+    }
+  ]
+}

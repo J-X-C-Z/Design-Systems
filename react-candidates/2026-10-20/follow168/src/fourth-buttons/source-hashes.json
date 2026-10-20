@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "sources": [
+    {
+      "source_path": "src/data/contents/components/button/variant-25.tsx",
+      "file": "sources/variant-25.tsx",
+      "git_blob": "39f99b6416f9c423ef63b9bbcd8c450d605b269f",
+      "sha256": "2f08a7d52d3a859fec5fc6e4e073a4d4b86a54a74d01bf4da5f7766d4db67aa6",
+      "bytes": 1288,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-25.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-26.tsx",
+      "file": "sources/variant-26.tsx",
+      "git_blob": "86720e77e65dafee2c67a038165f38de0b51091a",
+      "sha256": "e708e6600abc83f0d29959b282a3418f4b273e12e04c48de95764942283c2fa5",
+      "bytes": 1132,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-26.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-27.tsx",
+      "file": "sources/variant-27.tsx",
+      "git_blob": "1800c5dc523d60f56ce35a91c7928e18ee16a95e",
+      "sha256": "f0ea9f6a2f5f4f7109e28bdcc09601debb899466343914e4d30e8e7030641e2c",
+      "bytes": 490,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-27.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-28.tsx",
+      "file": "sources/variant-28.tsx",
+      "git_blob": "bc7e7672d247d9f2bd12bafd16941ef5c25f48a4",
+      "sha256": "924e6c4f26599fd3de2df1585c9eb5b9392347e2cd9ae7a8dd76fabe82392e1d",
+      "bytes": 632,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-28.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-29.tsx",
+      "file": "sources/variant-29.tsx",
+      "git_blob": "cb540f4befb40835f057b98ceeee144d7fd7a3fa",
+      "sha256": "904f9ea07075299898e0aa86371c9c1be6967312b28415058f47c9046fad80b8",
+      "bytes": 634,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-29.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-30.tsx",
+      "file": "sources/variant-30.tsx",
+      "git_blob": "89b6758568eb3cf29dd7e4031ff0985ef8b69b37",
+      "sha256": "5d81f14d62995304dc0b220356abf060b461495c1846acd32fa8e5787e82a5a8",
+      "bytes": 572,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-30.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-31.tsx",
+      "file": "sources/variant-31.tsx",
+      "git_blob": "be307c7325cb676788ade34a90fb8e0b8b056e26",
+      "sha256": "5d4e9a68e384ccfcdcb17838ac249683ec79697958e96fdea3a422c2b3484ded",
+      "bytes": 324,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-31.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-32.tsx",
+      "file": "sources/variant-32.tsx",
+      "git_blob": "8c53533eb0cadaea8fef0ee34a092a7ac08cb016",
+      "sha256": "1cf6c91c3fbbd042582ce942b5b15769fce0a2e0e70f1f953bfa825e8a4084cc",
+      "bytes": 422,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-32.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-33.tsx",
+      "file": "sources/variant-33.tsx",
+      "git_blob": "6eeb88a33ecbbcce230a41956473fae7edf9e78e",
+      "sha256": "73fed423512107ec390da8eaf52c30c98b2889d54d6a1b237c37a37b56f36bba",
+      "bytes": 404,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-33.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-34.tsx",
+      "file": "sources/variant-34.tsx",
+      "git_blob": "bbcb49fe27283424a7c21573ae462fcf87abcfa3",
+      "sha256": "5f434bb9c2686add852ffdc8c1d57372b102c4b6d3032254a8bfba0528f5e097",
+      "bytes": 1256,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-34.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-35.tsx",
+      "file": "sources/variant-35.tsx",
+      "git_blob": "15f468bbe47ddb0074c8898369609a975839b59d",
+      "sha256": "d8195ae2711430574bededc849b92b7ddfd76178536ec8e02cff3524ff1912fe",
+      "bytes": 490,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-35.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-36.tsx",
+      "file": "sources/variant-36.tsx",
+      "git_blob": "b457defc56d269081031fc3dfc6342dae76eda3f",
+      "sha256": "43408e0c7d862a994b002188faed87e870644cb0e61e4ae6b67460c2295c9404",
+      "bytes": 513,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-36.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/components/base-ui/button.tsx",
+      "file": "sources/base-button.tsx",
+      "git_blob": "810fdb5f0e11477738c9269fb869214bf036bbb6",
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512",
+      "bytes": 3337,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/button.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/components/base-ui/tooltip.tsx",
+      "file": "sources/base-tooltip.tsx",
+      "git_blob": "bb1ea523427d069fd2b6947802858f15766910c5",
+      "sha256": "f26881e08ed65a973a15ac3bd509bca50c31da1d5b275bc3f9c48b5de1d1c966",
+      "bytes": 2111,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/tooltip.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/components/base-ui/badge.tsx",
+      "file": "sources/base-badge.tsx",
+      "git_blob": "cacff11dce8d09f7882da68c971b3a7e5be3e78a",
+      "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d",
+      "bytes": 1865,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/badge.tsx",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/data/contents/components/button/index.ts",
+      "file": "sources/index.ts",
+      "git_blob": "a98247456ac86882e5017b3013e30baa3da8ddc8",
+      "sha256": "c6449443bccf9ea212059f48027cd69f6826e9dab87621d2fb2af86346f9c90f",
+      "bytes": 9942,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/index.ts",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "src/lib/utils.ts",
+      "file": "sources/utils.ts",
+      "git_blob": "649b3921a8dcbefd43d3cd9182867c8bc8783e73",
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019",
+      "bytes": 196,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/lib/utils.ts",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    },
+    {
+      "source_path": "LICENSE",
+      "file": "LICENSE.upstream",
+      "git_blob": "c76bf56983389c53194eecc9d088ac8de34debe1",
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0",
+      "bytes": 1089,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE",
+      "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+    }
+  ]
+}

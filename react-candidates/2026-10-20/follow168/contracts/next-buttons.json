@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "slice": "react-seven-next-buttons",
+  "idCount": 9,
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "common": {
+    "implementation": "Direct React JSX and forwardRef; static action sources do not justify invented hook state or effects. Native node, standard events, stable render identity. No DOM controller, iframe or innerHTML.",
+    "shared_primitive": "Small private JSX NativeButton handles only ordinary native button wrapper/guard; nine exported components explicitly implement source-specific icons, sizes, fixed-disabled, dots, gradient, destructive face and pill. No inherited test credit from scalar Button01.",
+    "events": "Standard onClick once while active. Native onClick preventDefault retains default-action cancellation. Return values/promises ignored; exceptions surface through React. No post-callback work. All other native events passed through.",
+    "readOnly": "Adapter addition because HTML button lacks readOnly. Maps to aria-disabled=true and cancels click/default action, remains focusable unless independently disabled. Never forwards readonly attribute.",
+    "fixed_disabled": "Button05 and Button09 are permanently disabled exact-source samples. Runtime overwrites disabled=false; types only accept disabled=true. Button09 also fixes aria-busy=true.",
+    "form": "Default type=button is a safety change from the source primitive omitted type. Explicit submit/reset native semantics are forwarded. No form field model or reset listeners are needed.",
+    "focus_cleanup": "React owns native ref lifecycle including StrictMode. No automatic focus or asynchronous work to clean up. Host takes focus and may synchronously replace/unmount.",
+    "theme_motion": "Original seven token palettes unchanged; scoped CSS uses semantic tokens. Source sky gradient is mapped to theme accent. Reduced-motion and forced-colours rules authored but require real-browser verification.",
+    "source_license": "Watermelon MIT notice preserved in src/next-buttons/LICENSE.upstream. Raw local pinned variant and primitive source copies included. All icon SVG geometry locally authored.",
+    "pending": "Author React/JSDOM suite passed 121 scenarios/563 assertions on React 19.3.0, exit 0; see author_evidence. Independent tests, real browser keyboard/pointer/layout/reduced-motion/forced-colours, type compilation, per-theme contrast and visual acceptance are not_run. No native500/456 acceptance inheritance."
+  },
+  "items": [
+    {
+      "id": "button-04",
+      "export": "Button04",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-4.tsx",
+        "file": "sources/variant-4.tsx",
+        "git_blob": "2ed4e0bd84163793bf08fa78bc689b6d685d0b1a",
+        "sha256": "e32cccdb4e04eb575c182e3a04503488f68b98f9df5b83d6cec793dbff2f5123",
+        "bytes": 425,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-4.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Explore More",
+      "default_label": "探索更多",
+      "source_structure": [
+        "One primary button: text followed by right arrow.",
+        "Arrow moves right 4px and scales 1.1 over 200ms ease-out on hover."
+      ],
+      "react_structure": "Trailing original SVG arrow; 8px gap; hover/focus-visible CSS transform. Native button target wraps one visual face.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. disabled, readOnly, boolean/string aria-disabled=true suppress activation; false/string false remain active.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    },
+    {
+      "id": "button-05",
+      "export": "Button05",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-5.tsx",
+        "file": "sources/variant-5.tsx",
+        "git_blob": "b388ab13ae68ee588a57e2d64d87856a980239a6",
+        "sha256": "17c0a5c770d29fe132cb4e7556e3ee9f0d9167526abb5c55a6af15171cf6401b",
+        "bytes": 248,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-5.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Disabed",
+      "default_label": "已禁用",
+      "source_structure": [
+        "One permanently disabled primary button.",
+        "Leading ban icon, with original misspelled Disabed label."
+      ],
+      "react_structure": "Native disabled=true cannot be overridden by caller. Leading original SVG ban and translated label. No action state.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. Fixed disabled sample: disabled=false cannot enable.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    },
+    {
+      "id": "button-06",
+      "export": "Button06",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-6.tsx",
+        "file": "sources/variant-6.tsx",
+        "git_blob": "947ed4018457ad219a6cd28244adf12ebec1a6c8",
+        "sha256": "50bed6994faa0fa2b7ee2da69bc2045edde61f24f8adcd8a242db573664ed8cb",
+        "bytes": 155,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-6.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Small Size",
+      "default_label": "小号按钮",
+      "source_structure": [
+        "One primary button using base size=sm.",
+        "Pinned primitive sm minimum height 28px, 0.8rem label, 10px horizontal padding."
+      ],
+      "react_structure": "Distinct 28px visible face and 0.8rem label inside at-least-44px native target.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. disabled, readOnly, boolean/string aria-disabled=true suppress activation; false/string false remain active.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    },
+    {
+      "id": "button-07",
+      "export": "Button07",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-7.tsx",
+        "file": "sources/variant-7.tsx",
+        "git_blob": "20accddc662c38343492e180565670863b1697c3",
+        "sha256": "f6f7354d3bdfdeea06847fb688d439d422161b7ed74fecab439020d9f1dddf23",
+        "bytes": 155,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-7.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Size Large",
+      "default_label": "大号按钮",
+      "source_structure": [
+        "One primary button using base size=lg.",
+        "Pinned primitive lg minimum height 36px and 10px horizontal padding."
+      ],
+      "react_structure": "Distinct 36px visible face inside at-least-44px native target.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. disabled, readOnly, boolean/string aria-disabled=true suppress activation; false/string false remain active.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    },
+    {
+      "id": "button-08",
+      "export": "Button08",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-8.tsx",
+        "file": "sources/variant-8.tsx",
+        "git_blob": "64b0fa020f959fb18c26a7de754c0d4d56aa9347",
+        "sha256": "3f1cfa0e8187e7f0fe8095b971d5648df8c8abf717741a7d45e86f0aac4f49b0",
+        "bytes": 187,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-8.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Size Extra Small",
+      "default_label": "超小号按钮",
+      "source_structure": [
+        "One explicitly extra-small button.",
+        "24px height, 8px horizontal padding, 2px vertical padding, 12px text."
+      ],
+      "react_structure": "Distinct 24px visible face, 8px horizontal padding, 12px label inside at-least-44px native target.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. disabled, readOnly, boolean/string aria-disabled=true suppress activation; false/string false remain active.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    },
+    {
+      "id": "button-09",
+      "export": "Button09",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-9.tsx",
+        "file": "sources/variant-9.tsx",
+        "git_blob": "a52d90def7ca8abca267f9109f70434e0c645d31",
+        "sha256": "b64419debb5d9ffa98a3884e347a51f13cbbd4eab3e6ba40aecc23c7d7011c6a",
+        "bytes": 613,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-9.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Loading",
+      "default_label": "加载中",
+      "source_structure": [
+        "One permanently disabled Loading button.",
+        "Trailing three decorative 4px bouncing dots with 2px gap; group shifted down 4px.",
+        "Dot delays are -0.2s, -0.1s and 0s."
+      ],
+      "react_structure": "Native disabled=true and aria-busy=true fixed; label then exact three decorative CSS-animated dots. No timers, requests or promise handling.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. Fixed disabled sample: disabled=false cannot enable.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    },
+    {
+      "id": "button-10",
+      "export": "Button10",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-10.tsx",
+        "file": "sources/variant-10.tsx",
+        "git_blob": "ce13bb831f512b8a46e82e6903092d323f659501",
+        "sha256": "dfe50fbe118328155e8442fe62f6be15087d32c1c26b639921970c3603d81c8b",
+        "bytes": 610,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-10.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Upgrade",
+      "default_label": "升级",
+      "source_structure": [
+        "One primary gradient action with trailing solid lightning icon.",
+        "Horizontal repeating-colour gradient width 200%, position 0%→100% over 500ms on hover."
+      ],
+      "react_structure": "Trailing original filled bolt; real 200%-width CSS gradient with 500ms position transition. Semantic accent palette replaces fixed sky colours.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. disabled, readOnly, boolean/string aria-disabled=true suppress activation; false/string false remain active.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    },
+    {
+      "id": "button-11",
+      "export": "Button11",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-11.tsx",
+        "file": "sources/variant-11.tsx",
+        "git_blob": "60777dbf072e3abf50800f8597d9b2cf1db75030",
+        "sha256": "f286ab72ebfa9cae03832cfc7d7bcf858d010e4fe5c8f7cfca5950d7b2eba8db",
+        "bytes": 373,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-11.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Delete",
+      "default_label": "删除",
+      "source_structure": [
+        "One low-emphasis destructive action.",
+        "Leading trash icon; destructive text, border, background tint and focus ring."
+      ],
+      "react_structure": "Leading original filled trash SVG; explicit danger foreground/border/tint/focus tokens. No deletion effect is performed.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. disabled, readOnly, boolean/string aria-disabled=true suppress activation; false/string false remain active.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    },
+    {
+      "id": "button-12",
+      "export": "Button12",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-12.tsx",
+        "file": "sources/variant-12.tsx",
+        "git_blob": "6cd5002982cac7e961d5f69588a10203b0d56457",
+        "sha256": "d6cde909e684a2435122963ad7f636ba5249dfa07fd0bef66807414d240726b5",
+        "bytes": 256,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-12.tsx",
+        "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+      },
+      "source_label": "Favorite",
+      "default_label": "收藏",
+      "source_structure": [
+        "One primary action with leading outline star.",
+        "rounded-full shape; source has no pressed/checked/toggle state."
+      ],
+      "react_structure": "Leading original outline-star SVG; explicit local 999px pill shape, including square themes. No internal toggle state or invented aria-pressed.",
+      "native_API": "Native ButtonHTMLAttributes plus readOnly; standard onClick; forwarded ref targets the actual native button. No custom onAction callback.",
+      "ownership": "No stateful model; all props owned by host. No effect, timer or delayed work. disabled, readOnly, boolean/string aria-disabled=true suppress activation; false/string false remain active.",
+      "keyboard": "Native Enter/Space behavior; all key events forwarded without synthesizing click or preventDefault. Real keyboard test pending.",
+      "form": "Safe type=button default. Active variants permit explicit submit/reset and external form associations using native HTML; fixed-disabled 05/09 never activate.",
+      "focus": "Stable native node on metadata render. No automatic focus; user onClick/onFocus may transfer focus or unmount.",
+      "adaptation": [
+        "Chinese default wording; children and aria-label are independently caller controlled.",
+        "Theme colour, radius and font use original seven-theme provider variables; no new theme.",
+        "One at-least-44px native target with a source-sized visual face; text can wrap and face can grow. Visible sizes are 32px default, 28px sm, 36px lg and 24px xs; not a source-pixel-equivalence claim.",
+        "Own decorative SVG symbols represent official react-icons identities; icon-package source geometry not copied.",
+        "System/manual reduced motion suppresses animation, arrow/active transforms and gradient movement; real rendering pending."
+      ],
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-21-55-648Z-next-buttons"
+      },
+      "scope": "This exact canonical ID, no inherited earlier/native/Flutter/849-wide acceptance."
+    }
+  ],
+  "author_evidence": {
+    "path": "evidence/2026-10-15T05-21-55-648Z-next-buttons",
+    "command": "node --max-old-space-size=128 tools/test.mjs next-buttons",
+    "exit_code": 0,
+    "first_attempt": true,
+    "ids": 9,
+    "scenarios": 121,
+    "assertions": 563,
+    "react": "19.3.0",
+    "synchronous_unmount": true,
+    "jsdom_warnings": [],
+    "bundleSHA256": "05ed0c3cefbda1f824db3cd88dc7b74ee6641674c9649d4a4b9a2f23f62bb831",
+    "testSHA256": "36752c35fbb5a19618bfcf9f2d754d62242e5d2e7d6950817ec2389ce3ce2360",
+    "limitations": [
+      "not a browser",
+      "no real keyboard/pointer default action evidence",
+      "no rendered motion, layout, visual or contrast evidence",
+      "not independently reviewed",
+      "consumer types not compiled"
+    ]
+  },
+  "localCatalogSHA256": "c60cc54b67001954e991bb29fd7e8ce2580b96c32239d100a287896791cff991"
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "radio-group-11",
+    "source": "sources/src/data/contents/components/radiogroup/variant-11.tsx",
+    "path": "sources/src/data/contents/components/radiogroup/variant-11.tsx",
+    "sha256": "5c35b1b01780c11e1589e1a4ca30d8ffd3f5599198f479b36ab4f4f7deaf658f",
+    "gitBlob": "b228b6810d032ad7dc62779f0d0162f75bdc414a"
+  },
+  {
+    "id": "radio-group-12",
+    "source": "sources/src/data/contents/components/radiogroup/variant-12.tsx",
+    "path": "sources/src/data/contents/components/radiogroup/variant-12.tsx",
+    "sha256": "f515149732dc3754939f027159db9755d8f6b8da2befc10787244d29ca794e1a",
+    "gitBlob": "4795b755cca64e6ae16fbf1d57b3a81c28468e6b"
+  },
+  {
+    "id": "radio-group-13",
+    "source": "sources/src/data/contents/components/radiogroup/variant-13.tsx",
+    "path": "sources/src/data/contents/components/radiogroup/variant-13.tsx",
+    "sha256": "9b781d21557bfcb9808d730f423338046e617d067ea97a8ce83b14e1eea824a2",
+    "gitBlob": "911769cc7d2db9cb05bfc9f785ab55ccc418d5ea"
+  },
+  {
+    "id": "switch-19",
+    "source": "sources/src/data/contents/components/switch/variant-19.tsx",
+    "path": "sources/src/data/contents/components/switch/variant-19.tsx",
+    "sha256": "8c0081c0b43bd05df40372b37c436d19a4a58d44951e46e5c41d0eb2872bebe1",
+    "gitBlob": "2e5b8178770b84cba22d154eedeefd463be0e4f4"
+  },
+  {
+    "id": "radio-group",
+    "source": "sources/src/components/base-ui/radio-group.tsx",
+    "path": "sources/src/components/base-ui/radio-group.tsx",
+    "sha256": "c0a2fc2aa4329c36e871439db562273dde72240be2bd18245b7b518f0c9b13d0",
+    "gitBlob": "6bb6b5d89a332defe728db7f5c1a01caf9e4e4a7"
+  },
+  {
+    "id": "label",
+    "source": "sources/src/components/base-ui/label.tsx",
+    "path": "sources/src/components/base-ui/label.tsx",
+    "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50",
+    "gitBlob": "f752f82ba6be3cf9a1015c1d61df5de00a1eaf66"
+  },
+  {
+    "id": "switch",
+    "source": "sources/src/components/base-ui/switch.tsx",
+    "path": "sources/src/components/base-ui/switch.tsx",
+    "sha256": "f3a1ed75be07bda7e391e20631c123e066bcadaced2d6340d8e4531ecec63434",
+    "gitBlob": "9600e949febdecb39614f16ca0460ec272174c72"
+  }
+]

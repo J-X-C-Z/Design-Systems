@@ -1,0 +1,100 @@
+/* Exact source faces inside accessible 44px targets. All selectors remain local. */
+.fr7.fr7-fourth-button {
+  --fb-radius: var(--fr-control-radius, 8px); --fb-padding: 10px; --fb-height: 32px;
+  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto;
+  box-sizing: border-box; min-width: 44px; min-height: 44px; max-width: 100%;
+  padding: 0; margin: 0; border: 0; border-radius: var(--fb-radius);
+  background: transparent; color: var(--fr-ink, #252420); cursor: pointer;
+  font-family: var(--ds-font, system-ui, sans-serif); font-size: 14px;
+  font-weight: var(--ds-weight, 600); line-height: 1.4; text-align: center;
+  vertical-align: middle; touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+}
+.fr7-fourth-button > .fr7-fb-face {
+  display: inline-flex; position: relative; align-items: center; justify-content: center;
+  box-sizing: border-box; min-width: 0; min-height: var(--fb-height); max-width: 100%;
+  gap: 6px; padding: 3px var(--fb-padding); border: 1px solid var(--fr-line, #bcb4a8);
+  border-radius: var(--fb-radius); background: var(--fr-surface, #fffdf7); color: var(--fr-ink, #252420);
+  transition: background-position 200ms ease-out, transform 120ms ease-out, box-shadow 120ms ease-out;
+}
+.fr7-fourth-button .fr7-fb-label { min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+.fr7-fourth-button .fr7-fb-icon { display: block; flex: 0 0 auto; width: 16px; height: 16px; pointer-events: none; }
+.fr7-fourth-button:focus-visible { outline: 3px solid var(--ds-focus, #5c4535); outline-offset: 3px; }
+.fr7-fourth-button:active:not(:disabled):not([aria-disabled="true"]) > .fr7-fb-face { transform: translateY(1px); }
+.fr7-fourth-button:disabled, .fr7-fourth-button[aria-disabled="true"] { cursor: not-allowed; }
+.fr7-fourth-button:disabled > .fr7-fb-face, .fr7-fourth-button[aria-disabled="true"] > .fr7-fb-face { opacity: .5; }
+.fr7-fourth-button[aria-invalid="true"] > .fr7-fb-face { border-color: var(--ds-danger, #9b2642); }
+.fr7-fourth-button:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-fb-face { box-shadow: inset 0 0 0 1px currentColor; }
+.fr7-fb-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+/* 25: underlineless link face; idle / loading / source random success or rejection. */
+.fr7-fourth-button-25 > .fr7-fb-face { border-color: transparent; background: transparent; color: var(--fr-accent, #8b593b); gap: 8px; }
+.fr7-fourth-button-25:is(:hover,:focus-visible) > .fr7-fb-face { box-shadow: none !important; text-decoration: none; }
+.fr7-fourth-button-25[data-status="success"] > .fr7-fb-face { color: var(--ds-success, #386929); }
+.fr7-fourth-button-25[data-status="error"] > .fr7-fb-face { color: var(--ds-danger, #9b2642); }
+.fr7-fourth-button .fr7-fb-spinner { animation: fr7-fb-spin 1s linear infinite; }
+@keyframes fr7-fb-spin { to { transform: rotate(360deg); } }
+/* Source 32px icon faces are retained inside 44px native buttons. */
+:is(.fr7-fourth-button-26,.fr7-fourth-button-27,.fr7-fourth-button-28,.fr7-fourth-button-29,.fr7-fourth-button-30,.fr7-fourth-button-36) > .fr7-fb-face { width: 32px; height: 32px; padding: 0; }
+:is(.fr7-fourth-button-26,.fr7-fourth-button-27,.fr7-fourth-button-28,.fr7-fourth-button-29,.fr7-fourth-button-30,.fr7-fourth-button-36) .fr7-fb-icon { width: 20px; height: 20px; }
+/* 26: warm sun / cool moon, without changing the containing page theme. */
+.fr7-fourth-button-26 > .fr7-fb-face { background: var(--ds-warning-bg, #fff4ce); color: var(--ds-warning, #805300); border-color: currentColor; }
+.fr7-fourth-button-26[aria-pressed="true"] > .fr7-fb-face { background: var(--ds-info-bg, #e5edf4); color: var(--ds-info, #244b66); }
+/* 27: ghost menu/cross, no fabricated menu content. */
+.fr7-fourth-button-27 > .fr7-fb-face { border-color: transparent; background: transparent; }
+.fr7-fourth-button-27:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-fb-face { background: var(--ds-subtle, #eee9df); box-shadow: none; }
+/* 28: round secondary plus, hoverable wrapping tooltip and rotated arrow. */
+.fr7.fr7-fourth-button-28 { --fb-radius: 999px; }
+.fr7-fourth-button-28 > .fr7-fb-face { border-color: transparent; background: var(--ds-subtle, #eee9df); }
+.fr7.fr7-fourth-tooltip { display: inline-flex; position: relative; max-width: 100%; align-items: center; isolation: isolate; }
+.fr7-fourth-tooltip .fr7-fb-tooltip-content { position: absolute; z-index: 50; top: 0; left: 0; display: inline-block; width: max-content; max-width: min(320px, calc(100vw - 32px)); box-sizing: border-box; padding: 4px 8px; border-radius: 6px; background: var(--fr-ink, #252420); color: var(--fr-surface, #fffdf7); font-size: 12px; font-weight: 400; line-height: 1.5; white-space: normal; overflow-wrap: anywhere; text-align: start; }
+.fr7-fourth-tooltip .fr7-fb-tooltip-text { display: block; max-height: calc(var(--fb-tip-max-height, 100vh) - 8px); overflow: auto; }
+.fr7-fourth-tooltip .fr7-fb-tooltip-arrow { position: absolute; z-index: -1; width: 10px; height: 10px; left: var(--fb-tip-arrow-left, 17px); bottom: -3px; border-radius: 2px; transform: rotate(45deg); background: inherit; }
+.fr7-fourth-tooltip .fr7-fb-tooltip-content[data-side="bottom"] > .fr7-fb-tooltip-arrow { bottom: auto; top: -3px; }
+/* 29: outlined bookmark becomes a filled accent bookmark. */
+.fr7-fourth-button-29[aria-pressed="true"] .fr7-fb-icon { color: var(--ds-info, #244b66); }
+/* 30 and 35: same destructive moving gradient, icon-only vs labeled trash. */
+:is(.fr7-fourth-button-30,.fr7-fourth-button-35) > .fr7-fb-face {
+  border-color: transparent; color: var(--ds-surface, #fffdf7);
+  background-color: var(--ds-danger, #9b2642);
+  background-image: linear-gradient(90deg, var(--ds-danger, #9b2642), color-mix(in srgb, var(--ds-danger, #9b2642) 94%, #000), var(--ds-danger, #9b2642));
+  background-size: 200% auto; background-position: 0% center;
+}
+:is(.fr7-fourth-button-30,.fr7-fourth-button-35):is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-fb-face { background-position: 99% center; box-shadow: none; }
+/* 31: primary gradient, deliberately no glyph. */
+.fr7-fourth-button-31 > .fr7-fb-face {
+  border-color: transparent; color: var(--ds-on-accent, #fffdf7);
+  background-color: var(--ds-accent-fill, #8b593b);
+  background-image: linear-gradient(90deg, var(--ds-accent-fill, #8b593b), color-mix(in srgb, var(--ds-accent-fill, #8b593b) 94%, #fff), var(--ds-accent-fill, #8b593b));
+  background-size: 200% auto; background-position: 0% center;
+}
+.fr7-fourth-button-31:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-fb-face { background-position: 99% center; box-shadow: none; }
+/* 32: source 42px outer face, separate 28px share block, a single action. */
+.fr7.fr7-fourth-button-32 { --fb-height: 42px; --fb-padding: 8px; --fb-radius: 6px; }
+.fr7-fourth-button-32 .fr7-fb-share-block { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 6px; background: var(--ds-accent-fill, #8b593b); color: var(--ds-on-accent, #fffdf7); }
+/* 33: in-flow destructive-tint pill. 36: primary overflowing pill. */
+.fr7-fourth-button .fr7-fb-badge { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; min-height: 20px; padding: 1px 6px; border: 1px solid transparent; border-radius: 999px; background: var(--ds-danger-bg, #f8e7eb); color: var(--ds-danger, #9b2642); font-size: 12px; line-height: 1.35; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fr7-fourth-button-36 .fr7-fb-badge { position: absolute; top: -10px; right: -10px; min-width: 20px; padding: 0 4px; background: var(--ds-accent-fill, #8b593b); color: var(--ds-on-accent, #fffdf7); }
+/* 34: check reserves its in-flow space, copy overlays that slot. */
+.fr7-fourth-button-34 .fr7-fb-copy-check, .fr7-fourth-button-34 .fr7-fb-copy-original { display: inline-flex; flex: 0 0 auto; transition: transform 150ms ease, opacity 150ms ease; }
+.fr7-fourth-button-34 .fr7-fb-copy-check { color: var(--ds-success, #386929); }
+.fr7-fourth-button-34 .fr7-fb-copy-original { position: absolute; left: 10px; top: 50%; margin-top: -8px; }
+.fr7-fourth-button-34 [data-visible="false"] { transform: scale(0); opacity: 0; }
+.fr7-fourth-button-34 [data-visible="true"] { transform: scale(1); opacity: 1; }
+.fr7-fourth-button-34[data-status="copied"]:disabled > .fr7-fb-face { opacity: 1; }
+.fr7-fourth-button-34[data-status="error"] > .fr7-fb-face { color: var(--ds-danger, #9b2642); border-color: currentColor; }
+@media (prefers-reduced-motion: reduce) {
+  .fr7-fourth-button > .fr7-fb-face, .fr7-fourth-button-34 .fr7-fb-copy-check, .fr7-fourth-button-34 .fr7-fb-copy-original { transition: none; }
+  .fr7-fourth-button:active > .fr7-fb-face { transform: none !important; }
+  .fr7-fourth-button .fr7-fb-spinner { animation: none; }
+}
+:is([data-motion="off"],[data-motion="reduce"]) .fr7-fourth-button > .fr7-fb-face,
+:is([data-motion="off"],[data-motion="reduce"]) .fr7-fourth-button-34 .fr7-fb-copy-check,
+:is([data-motion="off"],[data-motion="reduce"]) .fr7-fourth-button-34 .fr7-fb-copy-original { transition: none; }
+:is([data-motion="off"],[data-motion="reduce"]) .fr7-fourth-button .fr7-fb-spinner { animation: none; }
+:is([data-motion="off"],[data-motion="reduce"]) .fr7-fourth-button:active > .fr7-fb-face { transform: none !important; }
+@media (forced-colors: active) {
+  .fr7-fourth-button > .fr7-fb-face { background: ButtonFace !important; color: ButtonText !important; border-color: ButtonText !important; }
+  .fr7-fourth-button:disabled > .fr7-fb-face, .fr7-fourth-button[aria-disabled="true"] > .fr7-fb-face { opacity: 1; color: GrayText !important; border-color: GrayText !important; }
+  .fr7-fourth-button[aria-pressed="true"] > .fr7-fb-face { outline: 2px solid Highlight; }
+  .fr7-fourth-button .fr7-fb-badge, .fr7-fourth-button .fr7-fb-share-block { background: Highlight; color: HighlightText; }
+  .fr7-fourth-tooltip .fr7-fb-tooltip-content { background: Canvas; color: CanvasText; border: 1px solid CanvasText; }
+}

@@ -1,0 +1,29 @@
+{
+  "ids": [
+    "textarea-07",
+    "pagination-06"
+  ],
+  "proof": "reference/eighteenth-controls/SOURCE-PROOF.json",
+  "textarea": {
+    "label": "Idea",
+    "placeholder": "Share your idea...",
+    "initial": "",
+    "name": "absent by default",
+    "symbol": "original SVG bulb replacement; source sr-only Idea retained",
+    "focus": "focus-within yellow symbol,200ms color; native field and explicit reduced motion"
+  },
+  "pagination": {
+    "anchors": [
+      "Prev:#",
+      "1:#1",
+      "2:#2",
+      "3:#3",
+      "Next:#"
+    ],
+    "current": 2,
+    "state": "original static marker; explicit page prop only; no uncontrolled defaultPage or change callback",
+    "extensions": "disabled/disabledLinks native inert-link adaptation, linkProps native callbacks/refs/href; parent demo owns state and boundaries",
+    "reset": "not a form control; no generated fields"
+  },
+  "browser": 0
+}

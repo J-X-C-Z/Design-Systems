@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "algorithm": "SHA-256 and Git SHA-1 blob hash over exact UTF-8 file bytes",
+  "listedFiles": 986,
+  "listedBytes": 5124735,
+  "manifestExcludes": "This index and files-NNN.json chunks themselves, to avoid recursive hashes. External upload manifest includes these too.",
+  "chunks": [
+    {
+      "path": "verification/files-001.json",
+      "files": 450,
+      "bytes": 109479,
+      "sha256": "2105c3847baa77a94baf44e13861abe661029dc86838b0b3dc36284dd7352794"
+    },
+    {
+      "path": "verification/files-002.json",
+      "files": 450,
+      "bytes": 100036,
+      "sha256": "1c001310e83bda5c237b7dabafea283d4985253606f4b1a83456db1a72e90705"
+    },
+    {
+      "path": "verification/files-003.json",
+      "files": 86,
+      "bytes": 19133,
+      "sha256": "c1cff31df04b73f015998c415259dc25977250799e2ae6f4f25981131acc579e"
+    }
+  ],
+  "allScriptsMode": "100644"
+}

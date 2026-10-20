@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "scope": "Only third-buttons owned source/contract/test files; this hash manifest excludes itself.",
+  "authorEvidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons",
+  "files": [
+    {
+      "path": "contracts/third-buttons.json",
+      "sha256": "dda0a678af72475867132a9705b8ffc27db041fc4ed180d05474b8a2cb8b082d",
+      "bytes": 36942
+    },
+    {
+      "path": "src/third-buttons/LICENSE.upstream",
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0",
+      "bytes": 1089
+    },
+    {
+      "path": "src/third-buttons/README.md",
+      "sha256": "d6faa283727574d9b9734deef25a31add6d7fce3c4d96712e4615468e19ecdc2",
+      "bytes": 5995
+    },
+    {
+      "path": "src/third-buttons/examples.jsx",
+      "sha256": "48c40f26f8be52c7638452ece4a71358d43cc11bff5c38a525229f0ff3f1e63a",
+      "bytes": 2478
+    },
+    {
+      "path": "src/third-buttons/index.d.ts",
+      "sha256": "c8b2ae1f61990e2049c50ab29756e3be9189c1cdb8c2947868bf0b69a9334993",
+      "bytes": 4512
+    },
+    {
+      "path": "src/third-buttons/index.jsx",
+      "sha256": "36884f171e6b35ff3830df85a6abf84cd7cb3162bd8b5638b42a6c0d6f829d73",
+      "bytes": 11612
+    },
+    {
+      "path": "src/third-buttons/source-hashes.json",
+      "sha256": "b02ab4818801173a95312777de7187e4eb9c207e538c6ae5c251ec31b3a03628",
+      "bytes": 10897
+    },
+    {
+      "path": "src/third-buttons/sources/base-avatar.tsx",
+      "sha256": "232a6ac077e0f98bf8fe283529a42bf4a26ca9517b34304beaa7af38000dad56",
+      "bytes": 3084
+    },
+    {
+      "path": "src/third-buttons/sources/base-badge.tsx",
+      "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d",
+      "bytes": 1865
+    },
+    {
+      "path": "src/third-buttons/sources/base-button.tsx",
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512",
+      "bytes": 3337
+    },
+    {
+      "path": "src/third-buttons/sources/index.ts",
+      "sha256": "c6449443bccf9ea212059f48027cd69f6826e9dab87621d2fb2af86346f9c90f",
+      "bytes": 9942
+    },
+    {
+      "path": "src/third-buttons/sources/utils.ts",
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019",
+      "bytes": 196
+    },
+    {
+      "path": "src/third-buttons/sources/variant-13.tsx",
+      "sha256": "4038b55d5ed31c8fe3438adbd329e15f928279025adadad5b4353905554c148e",
+      "bytes": 521
+    },
+    {
+      "path": "src/third-buttons/sources/variant-14.tsx",
+      "sha256": "8306deb788618bacad38353ee3d5f688df17700a084a5dd9f6030a90992a768d",
+      "bytes": 318
+    },
+    {
+      "path": "src/third-buttons/sources/variant-15.tsx",
+      "sha256": "3358247857914b8f790c8e84eb129a9ed53497f95496aeac6143af34ef2eb53b",
+      "bytes": 685
+    },
+    {
+      "path": "src/third-buttons/sources/variant-16.tsx",
+      "sha256": "8053f918621b26a446c0cac7c53ab3be45aadb663b1d0ac6190264a83861902c",
+      "bytes": 426
+    },
+    {
+      "path": "src/third-buttons/sources/variant-17.tsx",
+      "sha256": "5e83301a579ebf401f666523a16d9fe452be31e34ad9b5b29e578c2796bec69a",
+      "bytes": 442
+    },
+    {
+      "path": "src/third-buttons/sources/variant-18.tsx",
+      "sha256": "ea3cf6d17b88d81379ae228b57d81e4273bc23581c13ef32024f3276e6b880e5",
+      "bytes": 814
+    },
+    {
+      "path": "src/third-buttons/sources/variant-19.tsx",
+      "sha256": "feb8c07a2269ef2ae882483a7f717c7f56211736f0e3c8c343bdf3ed1536e7df",
+      "bytes": 350
+    },
+    {
+      "path": "src/third-buttons/sources/variant-20.tsx",
+      "sha256": "e0581f981daaf389b23dc8ac0a04fd27e6ee1cd4988e983f75708ad25fe286e2",
+      "bytes": 581
+    },
+    {
+      "path": "src/third-buttons/sources/variant-21.tsx",
+      "sha256": "07a17639930ef23823e59e28aede70f202530f8467d7c0cadb286abf60a52731",
+      "bytes": 932
+    },
+    {
+      "path": "src/third-buttons/sources/variant-22.tsx",
+      "sha256": "2605ffd4fd4dc9aac311f2817ac32da713a21e0ccb64ad792348cb4d8f4cadcb",
+      "bytes": 1503
+    },
+    {
+      "path": "src/third-buttons/sources/variant-23.tsx",
+      "sha256": "818b5fbb9eb1ff73064d690681a94d06ece68443aa1cf25123421341e20b9a90",
+      "bytes": 507
+    },
+    {
+      "path": "src/third-buttons/sources/variant-24.tsx",
+      "sha256": "fd997bfa7a7c9154e9dd1e7241d9d2725180b998df689fe8c54eb005702a92c6",
+      "bytes": 565
+    },
+    {
+      "path": "src/third-buttons/styles.css",
+      "sha256": "eb9202b6499be39f37ad12711dd26b5b3e1240a3837334308e2bc8cea81b3fc7",
+      "bytes": 11859
+    },
+    {
+      "path": "src/third-buttons/type-tests.tsx",
+      "sha256": "0692993e126104fa2993c03e89641c06b27e7ab31383987652c8da959cbf2885",
+      "bytes": 1825
+    },
+    {
+      "path": "tests/third-buttons-tests.cjs",
+      "sha256": "4e5348cd717a2990fedee0d2d20024f9108f8cbe0d06fdb0e8da31552dbf54b0",
+      "bytes": 19088
+    }
+  ]
+}

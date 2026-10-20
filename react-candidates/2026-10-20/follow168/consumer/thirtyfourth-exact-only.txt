@@ -1,0 +1,11 @@
+import * as React from 'react';
+import {Tabs22,Tabs23,Tabs24,Tabs25,type Tabs25Action,type Tabs25ActionDetails,type Tabs25MemberIds} from '@follow-ui/react-seven';
+const div=React.createRef<HTMLDivElement>(),button=React.createRef<HTMLButtonElement>();
+// @ts-expect-error exact native/member contract 18
+const invalid18=<Tabs22 value={undefined}/>;
+// @ts-expect-error exact native/member contract 38
+const invalid38=<Tabs23 value={undefined}/>;
+// @ts-expect-error exact native/member contract 58
+const invalid58=<Tabs24 value={undefined}/>;
+// @ts-expect-error exact native/member contract 78
+const invalid78=<Tabs25 value={undefined}/>;

@@ -1,0 +1,28 @@
+{
+  "ids": [
+    "tabs-05",
+    "alerts-10"
+  ],
+  "proof": "reference/nineteenth-controls/SOURCE-PROOF.json",
+  "tabs": {
+    "default": "profile",
+    "values": [
+      "profile",
+      "preferences",
+      "security"
+    ],
+    "content": "three exact source headings and full English paragraphs",
+    "icons": "original inline SVG replacements; explicit aria-label fixes hidden-small-screen source names",
+    "animation": "500ms CSS fade with provider/system reduced-motion off",
+    "form": "typebutton,no fields,native reset does not change tab"
+  },
+  "alert": {
+    "defaultOpen": true,
+    "title": "Confirm your email to get started",
+    "description": "A verification link has been sent to your email. Open it to activate your account.",
+    "close": "original type omitted nativebutton; default submit in form; close deferred until after bubble/default",
+    "cancel": "early native preventDefault prevents submit/close; delayed details.cancel refuses close only; cannot retroactively undo submission",
+    "service": "none, visible example disclaimer"
+  },
+  "browser": 0
+}

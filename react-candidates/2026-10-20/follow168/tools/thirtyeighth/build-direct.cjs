@@ -1,0 +1,1 @@
+const path=require('path'),esbuild=require(path.join(process.env.LOCAL_DEPENDENCIES||require('node:path').resolve('node_modules'),'esbuild'));esbuild.buildSync({entryPoints:['src/thirtyeighth-controls/index.jsx'],bundle:true,platform:'node',format:'cjs',external:['react','react-dom'],outfile:'qa/thirtyeighth-runtime.cjs'});

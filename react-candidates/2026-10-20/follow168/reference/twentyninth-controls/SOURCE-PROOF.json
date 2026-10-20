@@ -1,0 +1,93 @@
+[
+  {
+    "id": "collapsible-05",
+    "source": "sources/src/data/contents/components/collapsible/variant-5.tsx",
+    "path": "sources/src/data/contents/components/collapsible/variant-5.tsx",
+    "sha256": "f785b294dc3f8d1a0f3820612cf493bff6ffb230c78e0ee933487406f89e13e6",
+    "gitBlob": "4c0aca8ae81534d3cc9af6da908cd6d8af65f0fb"
+  },
+  {
+    "id": "collapsible-06",
+    "source": "sources/src/data/contents/components/collapsible/variant-6.tsx",
+    "path": "sources/src/data/contents/components/collapsible/variant-6.tsx",
+    "sha256": "1e671486042d364e8494f3f31974778dc88dc4ec195c9442cf43e7146872b519",
+    "gitBlob": "e0593c059c2be6ef13f318f37c26b3a97909a016"
+  },
+  {
+    "id": "collapsible-08",
+    "source": "sources/src/data/contents/components/collapsible/variant-8.tsx",
+    "path": "sources/src/data/contents/components/collapsible/variant-8.tsx",
+    "sha256": "b1c6bc9a21c053f3f484b21a9cbfe1e404cb4219274dd7556996bb6645db23f4",
+    "gitBlob": "d638d4141a3df2ba0e71d1fe62cc7f8f7acd3a64"
+  },
+  {
+    "id": "collapsible-09",
+    "source": "sources/src/data/contents/components/collapsible/variant-9.tsx",
+    "path": "sources/src/data/contents/components/collapsible/variant-9.tsx",
+    "sha256": "2dfe21ab84ff7a4edf963eb801b14737ba16d6db65cabbe0556f12adf0ef9bed",
+    "gitBlob": "e5c87f77a62dfa07a64ef197a618590f880827a2"
+  },
+  {
+    "id": "collapsible",
+    "source": "sources/src/components/base-ui/collapsible.tsx",
+    "path": "sources/src/components/base-ui/collapsible.tsx",
+    "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b",
+    "gitBlob": "2f7a4e7fc64a8874373c1584646a63f28cd63c47"
+  },
+  {
+    "id": "dropdown-menu",
+    "source": "sources/src/components/base-ui/dropdown-menu.tsx",
+    "path": "sources/src/components/base-ui/dropdown-menu.tsx",
+    "sha256": "be2f5beb08af8c089a0b8159be6f05c11c1a8607b50d84a4ec1e8cdcb2d5d67a",
+    "gitBlob": "5187856836c699d13e268a3c2b251f4bcd12b7b8"
+  },
+  {
+    "id": "button",
+    "source": "sources/src/components/base-ui/button.tsx",
+    "path": "sources/src/components/base-ui/button.tsx",
+    "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512",
+    "gitBlob": "810fdb5f0e11477738c9269fb869214bf036bbb6"
+  },
+  {
+    "id": "checkbox",
+    "source": "sources/src/components/base-ui/checkbox.tsx",
+    "path": "sources/src/components/base-ui/checkbox.tsx",
+    "sha256": "fe464e891f08d990d5ed7973f22ddd130d3da9c446de476754f32a4182ce773d",
+    "gitBlob": "cec7a77c3d5212c21f74099d8366dbfa0d77ac81"
+  },
+  {
+    "id": "input",
+    "source": "sources/src/components/base-ui/input.tsx",
+    "path": "sources/src/components/base-ui/input.tsx",
+    "sha256": "c4902a8c4967875e30d9f1198175f4f5348a0cdd17e21b5e3d7c9e81d2996ed9",
+    "gitBlob": "d763cd9ab0e151d4bd8e32b337fbf6278bcdf3fb"
+  },
+  {
+    "id": "label",
+    "source": "sources/src/components/base-ui/label.tsx",
+    "path": "sources/src/components/base-ui/label.tsx",
+    "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50",
+    "gitBlob": "f752f82ba6be3cf9a1015c1d61df5de00a1eaf66"
+  },
+  {
+    "id": "radio-group",
+    "source": "sources/src/components/base-ui/radio-group.tsx",
+    "path": "sources/src/components/base-ui/radio-group.tsx",
+    "sha256": "c0a2fc2aa4329c36e871439db562273dde72240be2bd18245b7b518f0c9b13d0",
+    "gitBlob": "6bb6b5d89a332defe728db7f5c1a01caf9e4e4a7"
+  },
+  {
+    "id": "separator",
+    "source": "sources/src/components/base-ui/separator.tsx",
+    "path": "sources/src/components/base-ui/separator.tsx",
+    "sha256": "28e6fd5832396247a84bd8a27e57e1c9aa967efca0ec27055b08b1cb3de744bf",
+    "gitBlob": "ca11501513c539f3bba6d6dd28332e9acfd6eef6"
+  },
+  {
+    "id": "textarea",
+    "source": "sources/src/components/base-ui/textarea.tsx",
+    "path": "sources/src/components/base-ui/textarea.tsx",
+    "sha256": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9",
+    "gitBlob": "04d27f7d17584cd77ba7d6f2377f5be6779f1270"
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "version": "0.33.0-candidate.1",
+  "phase": "Declared before implementation; final observed status belongs to CURRENT-VERIFICATION.json",
+  "ids": {
+    "tabs-18": {
+      "export": "Tabs18",
+      "values": [
+        "todo",
+        "in-progress",
+        "done"
+      ],
+      "default": "todo",
+      "orientation": "vertical",
+      "identity": "Exact To-Do/In Progress/Done labels and12/4/28 badges, vertical filled active tabs, count/color distinctions, Queue headings, Items badges and3 full paragraphs. Native text-link action View all {name.toLowerCase()} tasks in each active panel. Counts are illustrative original constants, no live task integration.",
+      "actions": [
+        "view-tasks"
+      ]
+    },
+    "tabs-19": {
+      "export": "Tabs19",
+      "values": [
+        "stays",
+        "flights",
+        "experiences"
+      ],
+      "default": "stays",
+      "orientation": "vertical",
+      "identity": "Amber left-rail active tabs, soft rounded travel card with blurred corner ornament, exact3 titles/full paragraphs, native Explore {name} buttons. Original unused price data retained but not invented as visible source UI.",
+      "actions": [
+        "explore"
+      ]
+    },
+    "tabs-20": {
+      "export": "Tabs20",
+      "values": [
+        "playlists",
+        "podcasts",
+        "radio"
+      ],
+      "default": "playlists",
+      "orientation": "vertical",
+      "identity": "Rose vertical left-active-rail navigation and rounded panels. Exact Now Playing: {song} headings, original artist names,3 complete paragraphs and original fixed40% illustrative progress. Semantic progressbar labelled Illustrative playback position, aria min0/max100/now40; no audio player, timer, download, subscription or invented interactive playback."
+    },
+    "tabs-21": {
+      "export": "Tabs21",
+      "values": [
+        "installation",
+        "config",
+        "deployment"
+      ],
+      "default": "installation",
+      "orientation": "vertical",
+      "identity": "Icon-only circular tabs in muted rounded vertical track; download/settings/upload local SVGs with exact accessible Installation/Configuration/Deployment names. Right-side local tooltip names. Exact3 titles with terminal period, short primary rule, full paragraphs, dashed Documentation • Last updated today footer preserved as illustrative original text, not real revision metadata.",
+      "tooltip": true
+    }
+  },
+  "shared": {
+    "state": "Exclusive exact-union|null controlled value or mount-only defaultValue. Controlled owner authoritative; release retains latest committed value. Existing fixed-value scalar owner reused without changes. No hidden fields; native form reset does not change tab selection.",
+    "keyboard": "All4 default vertical per originals; caller may override horizontal/vertical, ltr/rtl and loop. Automatic activation on focus or manual arrows-only then Enter/Space/click. Home/End all eligible items. Native Tab. Actual DOM availability/fieldset/CSS/hidden/inert/closed containers respected, modified/composition events ignored.",
+    "lifecycle": "Associated hidden panels persist; inactive contents and actions unmount. Conditional return focus only while closing panel remains hidden and no explicit external focus; reopening invalidates stale return, and internal return never reselects. React19 cleanup refs supported. Latest owner, canceled event and unmount supersede deferred work.",
+    "actions": "Only18/19 accept exact per-value per-action native actionProps and onAction(action,details). Native onClick first, notification after propagation if uncanceled/current owner/available. Snapshot before caller. Noncontrolled logical already-accepted selection invalidates old panel intent before commit; controlled rejected proposal does not. Committed disable-reenable invalidates old action. onAction return ignored, no default external operation or fake success. Root/per-action disabled applies; disabled nav tab alone does not disable active panel action. Native action keyboard only; never submit.",
+    "tooltip": "Only21 exposes separate exact-union|null tooltipProps owner/defaultValue, disabled, finite nonnegative delayDuration(default0), onValueChange with pointer/focus/leave/blur/escape/press reasons and cancel/false/event-prevention veto. Shared30 controller preserves capture owner stamps, callback key veto, overlapped method restoration, pending timers canceled on actual disabledness, harmless style/class changes retained. Pointer/focus open, blur/leave close unless still hovered/focused, click/pointerdown/Enter/Space dismiss, Escape dismisses; same press does not reopen on focus. Tooltip remains hoverable, no interactive content. Root-contained right positioning; no portal/collision/arrow-geometry equivalence. Tooltip owner does not change selection and selection owner does not force tooltip owner. Escape ownership is fixed in document capture: innermost containing tooltip root first, then active-focus root, then most recently engaged available owner, then a sole available open/pending owner. Ambiguous externally targeted Escape with multiple unengaged controlled tips has no target. Refusal/cancellation/unmount of the chosen owner never redirects that same event to another instance. This is a148 authorized backward repair for07 and new21;144 frozen artifacts remain unchanged. Pending Escape candidates must have a current epoch/ticket, uncanceled event guard and an opening pointer/focus reason. No-op press/leave/blur is not an opening. Owner handoff invalidates old pending work without erasing the first new-epoch focus request, including delayed focus. Pending opening also predicts a non-null intended value without mutating interaction refs; an Escape-blocked repeated hover or same-press no-op focus is not treated as an opener merely because of its event reason.",
+    "a11y": "Unique reciprocal tab/panel relationships, roving focus; decorative SVGs hidden.21 icon-only buttons have meaningful default accessible names even when tooltip closed, aria-describedby combines caller and shown tooltip IDs.18 visible counts remain readable.20 progress is explicitly illustrative, not fake live media. Fixed text/type/id/role protected; native attrs/ref available.",
+    "style": "Each ID retains original distinct visual grammar and full content. Scoped responsive/dark/reduced-motion/forced-color CSS, no external fonts/images. Panels, actions, tooltip and progress are constituent parts, not new IDs."
+  },
+  "limits": [
+    "Original task counts, pricing, media/Now Playing, documentation today and service claims are static examples, not live facts or recommendations",
+    "No task service, travel booking, media playback/download/subscription, package installation or deployment operation",
+    "21 tooltip is local lightDOM with right positioning, no viewport-aware collision/portal equivalence",
+    "Real browser layout/AT/trusted keys/pointer/forced-color rendering acceptance0"
+  ],
+  "accounting": {
+    "before": 144,
+    "after": 148,
+    "remaining": 701,
+    "panels": 12,
+    "formalAccepted": 0
+  },
+  "backwardRepair": {
+    "path": "src/thirtieth-controls/tooltip.jsx",
+    "scope": "Escape event ownership and related pending/owner-epoch cleanup only; includes first genuine focus after tooltip ownership handoff; no public type/API change",
+    "before": "multiple document listeners could notify the wrong tooltip instance and consume another owner’s Escape",
+    "evidence": "qa/initial-tooltip-escape-ownership.log",
+    "preservation": {
+      "unchangedOldSource": 327,
+      "changedOldSource": 6,
+      "changes": "5 integration entries plus shared30 tooltip Escape repair"
+    }
+  }
+}

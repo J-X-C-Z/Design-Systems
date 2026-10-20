@@ -1,0 +1,37 @@
+[
+  {
+    "id": "tabs-10",
+    "source": "sources/src/data/contents/components/tabs/variant-10.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-10.tsx",
+    "sha256": "89ea0826e95563cdfcfd25874f338c9514eb3f7e043541992d529f07affbf8d7",
+    "gitBlob": "f20732de535b29639e6bd12855cbd4971e865868"
+  },
+  {
+    "id": "tabs-11",
+    "source": "sources/src/data/contents/components/tabs/variant-11.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-11.tsx",
+    "sha256": "55f8fdd766476868e4fb60ee6bbd0c19a3a4e674af0c600411baaa1492dd6e88",
+    "gitBlob": "a54b6015dbbc4484f047e644a46758cd6c83d0e2"
+  },
+  {
+    "id": "tabs-12",
+    "source": "sources/src/data/contents/components/tabs/variant-12.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-12.tsx",
+    "sha256": "cb88e25ac29eed152cd163d29235c66116b754676c3176a58c46a4583cdc5db1",
+    "gitBlob": "e7d17f908445e4aea1ac8de77108f636508d2a89"
+  },
+  {
+    "id": "tabs-13",
+    "source": "sources/src/data/contents/components/tabs/variant-13.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-13.tsx",
+    "sha256": "a96f6147105e4b6e4591950bd3fbfdad793f813494620f84462813b253b51006",
+    "gitBlob": "1ac71696ba823c89765757adf356c0371e42be44"
+  },
+  {
+    "id": "tabs",
+    "source": "sources/src/components/base-ui/tabs.tsx",
+    "path": "sources/src/components/base-ui/tabs.tsx",
+    "sha256": "7fee349ecb5e0ccf06469d30b54132e47d33b9a41d0a651e42620e1bfc240f70",
+    "gitBlob": "ea49f44ff6281ea6e5328761c668cee76cad4a9d"
+  }
+]

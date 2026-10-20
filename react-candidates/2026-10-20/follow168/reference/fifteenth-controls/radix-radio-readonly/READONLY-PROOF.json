@@ -1,0 +1,28 @@
+{
+  "sourcePath": "[private-extraction-path-omitted]",
+  "executed": false,
+  "installed": false,
+  "apiRead": "Enter prevented in radio trigger lines366-367; native adaptation must preserve no Enter submit",
+  "files": [
+    {
+      "path": "package.json",
+      "sha256": "7712ab7c94fe5a5e8c81e8328c8937d2a88a975d87e5cccedf0c2b01335af924",
+      "bytes": 1996
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138",
+      "bytes": 1063
+    },
+    {
+      "path": "dist/index.mjs",
+      "sha256": "b321cd0993fa7f738fe0d293cb13958824b6f07b6a8a002597128464069aa980",
+      "bytes": 15398
+    },
+    {
+      "path": "dist/index.d.ts",
+      "sha256": "0fa6e03fb138801f6af97b485127a9717867061d4d3016bf0db21bf7b32f5d5a",
+      "bytes": 5173
+    }
+  ]
+}

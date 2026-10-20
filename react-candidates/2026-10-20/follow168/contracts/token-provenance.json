@@ -1,0 +1,16 @@
+{
+  "source": "User seven-theme Follow456 candidate",
+  "source_files": [
+    {
+      "path": "studio-seven-theme-merge-20261015/candidate/dist/echo-latest/follow-catalog-r11-seven/index.html",
+      "sha256": "ea5db1b14a45b538d4bb912d546e80738eb07cf643b96ad07a3a6029fbee2dd7"
+    },
+    {
+      "path": "studio-seven-theme-merge-20261015/candidate/dist/echo-latest/follow-catalog-r11-seven/language-assets/languages.css",
+      "sha256": "47767525a630b9f30614e259ac92c580511324d170564803ec6d8f42edf12a47"
+    }
+  ],
+  "selected_token_rules": 32,
+  "palettes": 14,
+  "scope": "Only semantic custom-property/color-scheme rules scoped to .fr7. No original DOM controller or assets executed."
+}

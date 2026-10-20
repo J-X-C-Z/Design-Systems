@@ -1,0 +1,40 @@
+{
+  "ids": [
+    "checkbox-13",
+    "checkbox-14",
+    "switch-13",
+    "switch-14"
+  ],
+  "source": "reference/fifth-selection/SOURCE-PROOF.json",
+  "defaults": {
+    "checkbox13": [
+      true,
+      false
+    ],
+    "checkbox14": [
+      false,
+      false,
+      false
+    ],
+    "switch13": false,
+    "switch14": false
+  },
+  "compositionCounts": [
+    2,
+    3,
+    1,
+    1
+  ],
+  "visualContract": "Follow independent adaptation; original semantic icon meanings via original SVG, not exact upstream pixels",
+  "switchGeometry": {
+    "track": [
+      24,
+      16
+    ],
+    "thumb": 12,
+    "travel": 10
+  },
+  "services": "local only",
+  "formalAccepted": 0,
+  "browser": "not_run"
+}

@@ -1,0 +1,26 @@
+{
+  "ids": [
+    "breadcrumb-06",
+    "textarea-14"
+  ],
+  "originalProof": "reference/twentythird-controls/SOURCE-PROOF.json",
+  "breadcrumb": {
+    "source": "Home# outlined homeicon badge, Projects# badge, current Design System menu defaultclosed; Tokens/Components/Patterns select closes only",
+    "ownership": "open/defaultOpen exclusive; uncontrolled initialdefault only, controlled refusal/release; onOpenChange and onSelect cancel/false; native/synthetic cancellation respected after bubble",
+    "keyboard": "native Enter/Space button activation; trigger ArrowDown/Up opens first/last; menu ArrowUp/Down wraps skipsdisabled, HomeEnd, onechar typeahead, Escape closes returns trigger, Tab closes moves next/previous outside element. IME/modifiers ignored",
+    "dismiss": "outside pointer/focus close, cancelable; no focus steal from existing outside target; native reset has no disclosure state",
+    "position": "fixed in-place descendant, triggerDOMRect + viewport/visualViewport dimensions; horizontalclamp, above/below choice and maxheight, capturedscroll/resize/ResizeObserver update, cleanup onclose/unmount",
+    "semanticFix": "current wrapper aria-current page but removes original aria-disabled rolelink wrapper around interactive button",
+    "adaptationLimits": "No Radix/Portal dependency; nonmodal no outside inert/focus trap; different Tab semantics and simplified flip/clamp collision policy. Transformed or clipping ancestors may constrain fixed child; no portal escape guarantee. No full multi-character Radix typeahead. Browser layout/focus not accepted."
+  },
+  "textarea": {
+    "label": "Live input",
+    "placeholder": "Start typing and it will expand...",
+    "defaultValue": "",
+    "defaultName": null,
+    "required": false,
+    "style": "field-sizing:content,max-height120px,min-height0,resize:none,smallradius/lightshadow,primaryfocus",
+    "native": "React value/defaultValue exclusive, form/reset/refs/disabled/readonly/required; no JS autosize loop or measured-height claim"
+  },
+  "browser": 0
+}

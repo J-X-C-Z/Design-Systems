@@ -1,0 +1,33 @@
+{
+  "namespace": "s7",
+  "theme": "follow",
+  "values": {
+    "mono": "ui-monospace, \"SFMono-Regular\", Menlo, Consolas, monospace",
+    "danger": "#aa243a",
+    "success": "#286523",
+    "canvas": "#f4f0e8",
+    "surface": "#f4f0e8",
+    "soft": "#e6e1d6",
+    "ink": "#242520",
+    "muted": "#65665a",
+    "line": "#9c9d8e",
+    "accent": "#f4793a",
+    "onaccent": "#242520",
+    "font": "\"Helvetica Neue\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "display": "\"Arial Narrow\", Impact, \"PingFang SC\", sans-serif",
+    "radius": "2px",
+    "border": "1px",
+    "shadow": "none",
+    "weight": "650",
+    "ease": "cubic-bezier(.22,1,.36,1)",
+    "paint-241d18": "#241d18",
+    "paint-241d1840": "#241d1840",
+    "paint-ebe6de": "#ebe6de",
+    "paint-fff": "#fff",
+    "paint-c5939d": "#c5939d",
+    "paint-f3ede3": "#f3ede3",
+    "paint-201914": "#201914"
+  },
+  "fonts": "Local/system fallback only; no font binaries bundled.",
+  "paint_note": "页面材质与渐变色集中在 paint-*；键名为原始色值指纹，具体颜色可单独修改。主语义色仍使用 ink/canvas/accent 等。"
+}

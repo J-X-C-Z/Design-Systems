@@ -1,0 +1,36 @@
+{
+  "accordion-12": [
+    {
+      "value": "item-1",
+      "title": "Why do onboarding tasks get missed so often?",
+      "content": "HR onboarding usually breaks down when training, paperwork, and access setup live in separate tools. A stronger onboarding flow helps new hires see what is pending, who owns each step, and what needs to happen next."
+    },
+    {
+      "value": "item-2",
+      "title": "How can managers keep performance reviews more consistent?",
+      "content": "Performance reviews become inconsistent when expectations, feedback notes, and historical context are scattered. Better review systems make goals visible, track feedback over time, and reduce bias introduced by missing context."
+    },
+    {
+      "value": "item-3",
+      "title": "What makes time-off coordination harder for growing teams?",
+      "content": "Time-off planning gets messy when approvals, team coverage, and policy rules are not connected. A clearer HR workflow helps employees request leave confidently while giving managers enough visibility to plan around absences."
+    }
+  ],
+  "accordion-14": [
+    {
+      "value": "item-1",
+      "title": "Why do support queues grow unexpectedly in SaaS products?",
+      "content": "Support queues usually spike when billing issues, onboarding blockers, and product questions all land in the same channel. Clearer triage and self-serve guidance help teams resolve simple requests before they become backlog."
+    },
+    {
+      "value": "item-2",
+      "title": "How can onboarding flows reduce early drop-off?",
+      "content": "Early drop-off often happens when users are asked to do too much before they see value. Simpler setup, clearer progress states, and fewer decisions in the first session help new users stay engaged longer."
+    },
+    {
+      "value": "item-3",
+      "title": "What makes feature discovery feel more natural?",
+      "content": "Feature discovery works best when guidance appears at the right moment instead of being packed into one tour. Small, contextual prompts help users learn the product without interrupting the task they came to complete."
+    }
+  ]
+}

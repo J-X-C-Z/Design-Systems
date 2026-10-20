@@ -1,0 +1,52 @@
+[
+  {
+    "id": "tabs-18",
+    "source": "sources/src/data/contents/components/tabs/variant-18.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-18.tsx",
+    "sha256": "8182eaeb41c8e6a1197137e8b7748ab92f401216dafbf3aeb01cbf1ffdfbab80",
+    "gitBlob": "785c74b0f561474695e857d50e77e9dcef4d775c"
+  },
+  {
+    "id": "tabs-19",
+    "source": "sources/src/data/contents/components/tabs/variant-19.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-19.tsx",
+    "sha256": "94905fecaab7ee0329993fbfe409c9be4416b0123e54d19353a66cd238d8fb0d",
+    "gitBlob": "dd3ed8e6eaa65ce23531673a376788e9a1e1f660"
+  },
+  {
+    "id": "tabs-20",
+    "source": "sources/src/data/contents/components/tabs/variant-20.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-20.tsx",
+    "sha256": "c82337bbd8e9cfac73f2606c665951d81b55d359e516630485c90fec3c98acea",
+    "gitBlob": "d68b4d2ac1ab3e055544014df9bcfd67af656567"
+  },
+  {
+    "id": "tabs-21",
+    "source": "sources/src/data/contents/components/tabs/variant-21.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-21.tsx",
+    "sha256": "fe090d91a47861f87ea2a5760c3654f0d2614ecef143ec28757e8d7783d17c27",
+    "gitBlob": "d53f87ed16f791a4d90af28ba388bc66ddb5a8da"
+  },
+  {
+    "id": "tabs",
+    "source": "sources/src/components/base-ui/tabs.tsx",
+    "path": "sources/src/components/base-ui/tabs.tsx",
+    "sha256": "7fee349ecb5e0ccf06469d30b54132e47d33b9a41d0a651e42620e1bfc240f70",
+    "gitBlob": "ea49f44ff6281ea6e5328761c668cee76cad4a9d",
+    "alsoIdenticalSource": "[private-extraction-path-omitted]"
+  },
+  {
+    "id": "tooltip",
+    "source": "sources/src/components/base-ui/tooltip.tsx",
+    "path": "sources/src/components/base-ui/tooltip.tsx",
+    "sha256": "f26881e08ed65a973a15ac3bd509bca50c31da1d5b275bc3f9c48b5de1d1c966",
+    "gitBlob": "bb1ea523427d069fd2b6947802858f15766910c5"
+  },
+  {
+    "id": "button",
+    "source": "sources/src/components/ui/button.tsx",
+    "path": "sources/src/components/ui/button.tsx",
+    "sha256": "b30646ff985d5b85a60a62eefb3e63e488b49a536fab66a75be1b8b2ad6969ee",
+    "gitBlob": "7205ea969a2eae9361469538faee323d37cd23a7"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "sha256": "1efc4866b758155d70c77024d4df143e6a3984d75307b02a17d9015c6505b701",
+  "bytes": 4992058,
+  "members": 2175,
+  "archiveSHARecords": 2174,
+  "sourceSHARecords": 2173,
+  "freshRebuiltPackageFilesByteEqual": 57,
+  "registry": 168,
+  "historicalZips": 0,
+  "browser": "not_run",
+  "freshChainExitCode": 0,
+  "freshInputFilesByteEqualToArchive": 1259,
+  "freshPreviewByteEqualToArchive": {
+    "index.html": {
+      "sha256": "f3992b3f1dc87fe073322ca1f29c4d9b5c3fc341fec48886b1b1d85a9ba2d6fc",
+      "bytes": 277
+    },
+    "bundle.js": {
+      "sha256": "352f6bb54866206c813610fc58f1951c25037c691c0b997d508b7cc831ac7dd4",
+      "bytes": 745804
+    },
+    "bundle.css": {
+      "sha256": "8f7c7e111c3a2d54293fe65490a83aeba9ba536cde8ee285a4afeb1d607eeb94",
+      "bytes": 293090
+    }
+  },
+  "independentReview": "PASS_SCOPED_WITH_EXPLICIT_NOT_PASSED_OBSERVER_BOUNDARIES",
+  "packageSHA256": "113694218a4a73b0a79931c01fda4c0a7e2d32ed9a582842892c0bf09d297c02",
+  "packageBytes": 185316,
+  "independentReportSHA256": "83c68547286fecfb45ac3c60fe69616d2f0af3953c6a201822b7471b148349a4",
+  "remaining": 681,
+  "formalAccepted": 0,
+  "fullNativeEquivalence": false,
+  "freshRebuiltTarball": {
+    "sha256": "37bfd6766b5e5e502ea265e5310b147552a843f326fb8e4932ca5e76c61bd541",
+    "bytes": 185358,
+    "comparison": "All57 extracted package members equal reviewed tarball byte-for-byte; tar/gzip metadata timestamps may differ."
+  },
+  "finalReproducibleEntryPoint": {
+    "path": "tools/thirtyeighth/verify-final.sh",
+    "sha256": "cb18199a79c1f5384d3acb225a07ad632d88173b685eab902b6f75a1c34e51fd"
+  },
+  "archiveName": "Follow-React168-candidate1-final-20261020.zip",
+  "recordKind": "Extract of independently frozen final archive verification, not a fresh GitHub-checkout execution.",
+  "omitted": [
+    "Private executor paths and execution session identifiers",
+    "Verbose historical/full-chain report bodies"
+  ],
+  "originalReportSha256": "a938e88829e58fe41ca14ce3cf75706f75924de970bfcd476f5ee66f18a3de41"
+}

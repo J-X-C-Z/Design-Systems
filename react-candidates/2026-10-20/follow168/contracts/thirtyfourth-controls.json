@@ -1,0 +1,97 @@
+{
+  "version": "0.34.0-candidate.1",
+  "phase": "Declared before implementation; observed final status belongs to CURRENT-VERIFICATION.json",
+  "ids": {
+    "tabs-22": {
+      "export": "Tabs22",
+      "values": [
+        "v4",
+        "v3.2",
+        "v3"
+      ],
+      "default": "v4",
+      "orientation": "vertical",
+      "identity": "Exact Version4.0/3.2/3.0 labels, git merge/commit/branch decorative icons, muted rounded vertical rail with filled active tab, Release Version headings, divider and all10 original feature bullets (4/3/3). Unused date data retained but not invented as visible metadata. These are illustrative release claims, not actual platform release facts."
+    },
+    "tabs-23": {
+      "export": "Tabs23",
+      "values": [
+        "mentions",
+        "direct",
+        "system"
+      ],
+      "default": "mentions",
+      "orientation": "vertical",
+      "identity": "Exact Mentions/Direct/System labels with3/1/2 badges, soft active border/tint in rounded rail, heading and full6 message rows. Original initials, users, times and complete quoted messages preserved along a vertical timeline. Mobile visual metadata hiding is adapted to visually-hidden text so sender/time remain accessible. Static example messages are not real incoming mail, security alerts, invoices or external service integration."
+    },
+    "tabs-24": {
+      "export": "Tabs24",
+      "values": [
+        "traffic",
+        "sales",
+        "acquisition"
+      ],
+      "default": "traffic",
+      "orientation": "vertical",
+      "identity": "Outlined centered active vertical nav, exact Metrics headings and12 original metric label/value/trend/type entries in a2-column grid. Trend type up/down/neutral preserved independently of numeric sign, including CAC -8% typed up and refunds +2% typed down. Decorative arrows plus non-color positive/negative/neutral accessible trend text, not invented live analytics or financial advice."
+    },
+    "tabs-25": {
+      "export": "Tabs25",
+      "values": [
+        "engineering",
+        "design",
+        "marketing"
+      ],
+      "default": "engineering",
+      "orientation": "horizontal",
+      "identity": "Horizontal rounded filled active pills and complete8 original member rows (3/2/3): names, roles, initial avatar, Online/Busy/Offline indicators. Original mail and vertical-dots icon buttons retained as16 native type=button actions with exact member-specific accessible names. Status has explicit non-color accessible text. Original hover reveal additionally supports focus-within and coarse/no-hover pointers.",
+      "actions": [
+        "email",
+        "more"
+      ],
+      "memberIds": {
+        "engineering": [
+          "alice-chen",
+          "bob-smith",
+          "charlie-davis"
+        ],
+        "design": [
+          "diana-prince",
+          "evan-wright"
+        ],
+        "marketing": [
+          "fiona-gallagher",
+          "george-miller",
+          "hannah-lee"
+        ]
+      }
+    }
+  },
+  "shared": {
+    "state": "Exclusive exact-union|null value/defaultValue, mount-only defaults, controlled owner authoritative, release retains last committed value. Shared30 value owner is reused unchanged. These are not form fields and native reset does not change selection.",
+    "keyboard": "22/23/24 default vertical,25 default horizontal; caller can override orientation,dir,loop and automatic/manual activation. Axis arrows/Home/End navigate eligible DOM tabs, with RTL/loop; manual Enter/Space/click activates. Native Tab. Composition/modifiers ignored; CSS/fieldset/hidden/inert/closed-container availability retained.",
+    "lifecycle": "Associated hidden panel shells persist, inactive content and actions unmount. Only still-hidden closing panels may return focus; explicit external focus/new owner/reopening supersede stale requests. Internal return only moves focus, no auto-selection. Current owner, event cancellation, unmount and availability win over deferred interaction. React19 cleanup refs and exact native/synthetic method restoration retained.",
+    "actions": "Only25 exposes actionProps[team][memberId][email|more] and onAction(action,details). Member IDs are stable slugs derived from fixed original names, exact per-team type unions. Details contain exact id/value/memberId plus a fresh string metadata snapshot name/role/status, actual event/button. Native onClick first, notification after propagation only if uncanceled/current-owner/available; snapshot before handler. Noncontrolled accepted logical selection invalidates old-panel actions before commit, while controlled rejected selection does not. Owner/unmount and committed disable-reenable invalidate old requests. Root/per-action disabled apply; disabled nav alone does not disable an active panel action. Return ignored. No external email, URL navigation, actual menu, directory lookup or fake success. More button has no aria-haspopup/expanded because no menu is invented. Native Enter/Space/Tab behavior, never duplicate synthetic click or form submission.",
+    "a11y": "Unique reciprocal tabs/panels, roving focus; decorative icons/initials/colored dots hidden from redundant naming.25 action names are protected as Email {member.name}/More options for {member.name}; runtime JS cannot replace them via aria-labelledby/aria-hidden or claim a fake popup.23 sender/time stay accessible on narrow layouts.24 textual positive/negative/neutral trend semantics and25 textual status avoid color-only meaning.",
+    "style": "Four distinct original visual identities retained with Follow scoped responsive/dark/reduced-motion/forced-colors rules. Local SVGs replace external icon package; no download. Shared148 tooltip source and all prior fixes remain byte-preserved, though these4 add no tooltip API."
+  },
+  "limits": [
+    "All release, inbox/security/billing, analytics and member data are fixed illustrative source examples, not user facts or live services.",
+    "25 actions notify local intent only; do not send email or invent an options menu.",
+    "No native/Flutter additions; content rows, metrics and actions add no canonical IDs.",
+    "Inherited07/21 local tooltip and08 nonmodal lightDOM limits remain; no full primitive equivalence claim.",
+    "Real browser layout/AT/trusted input/forced-colors acceptance0"
+  ],
+  "accounting": {
+    "before": 148,
+    "after": 152,
+    "remaining": 697,
+    "panels": 12,
+    "releaseFeatures": 10,
+    "messages": 6,
+    "metrics": 12,
+    "members": 8,
+    "memberActions": 16,
+    "formalAccepted": 0
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "kind": "final worker handoff byte inventory",
+  "files": [
+    {
+      "path": "contracts/fourth-selection.json",
+      "bytes": 31260,
+      "sha256": "1b097adfcddb00bc5043e955b2072824c610c92841d6328d0f84aa09e9dada45"
+    },
+    {
+      "path": "src/fourth-selection/LICENSE.upstream",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "src/fourth-selection/README.md",
+      "bytes": 9815,
+      "sha256": "e8863c5dea52332037f392cff3968e7381fa88d8309a7117ceb9c4b41cbafb95"
+    },
+    {
+      "path": "src/fourth-selection/author-evidence.json",
+      "bytes": 3126,
+      "sha256": "3eed33a6d159db52f35f702eeba7ebfe7f01b6a0599c7edad98538fe71e82d0d"
+    },
+    {
+      "path": "src/fourth-selection/examples.jsx",
+      "bytes": 2054,
+      "sha256": "66d54d2bda6943beb431607d968adf98a5a76595e14fa33ac150ace1ccdd97f3"
+    },
+    {
+      "path": "src/fourth-selection/index.d.ts",
+      "bytes": 4747,
+      "sha256": "10b42b415bc597420d806391b7b8aabb6dc9780d21393aad764bd0fcdd022f84"
+    },
+    {
+      "path": "src/fourth-selection/index.jsx",
+      "bytes": 11139,
+      "sha256": "e5270f65b61b68bca228c3baea2050ea77ef26cc80d5fd00607a24b636cc80ea"
+    },
+    {
+      "path": "src/fourth-selection/reference/base-checkbox.tsx",
+      "bytes": 1386,
+      "sha256": "fe464e891f08d990d5ed7973f22ddd130d3da9c446de476754f32a4182ce773d"
+    },
+    {
+      "path": "src/fourth-selection/reference/base-switch.tsx",
+      "bytes": 1748,
+      "sha256": "f3a1ed75be07bda7e391e20631c123e066bcadaced2d6340d8e4531ecec63434"
+    },
+    {
+      "path": "src/fourth-selection/reference/checkbox-09.tsx",
+      "bytes": 2037,
+      "sha256": "5e1039066633671476931d84726b6892b5a2b62bfbb5682edc5b94319c5b56d0"
+    },
+    {
+      "path": "src/fourth-selection/reference/checkbox-10.tsx",
+      "bytes": 1926,
+      "sha256": "cdabcf4a1045901c7a87ac3a4bf75593e407c4762b78cefbb47b7448a415c2ea"
+    },
+    {
+      "path": "src/fourth-selection/reference/checkbox-11.tsx",
+      "bytes": 2273,
+      "sha256": "7b26f38ed131bcc7d27111bdff5a1ae21c9216c94c8fdfb523149ac27a2eedf4"
+    },
+    {
+      "path": "src/fourth-selection/reference/checkbox-12.tsx",
+      "bytes": 2453,
+      "sha256": "1d472436e81954d882bbc8e39ceb344732e39b380b32e2525b15477d9e667767"
+    },
+    {
+      "path": "src/fourth-selection/reference/switch-09.tsx",
+      "bytes": 1764,
+      "sha256": "aa5cfe0d1973c5a4b1c2f12fee6045d374ec575e3ad35086286477a7616acbc6"
+    },
+    {
+      "path": "src/fourth-selection/reference/switch-10.tsx",
+      "bytes": 1816,
+      "sha256": "b3990435f006ccf76a28488152f842beeb7919df80a025f950b2d955f8ea7fb1"
+    },
+    {
+      "path": "src/fourth-selection/reference/switch-11.tsx",
+      "bytes": 1497,
+      "sha256": "0efc6c29cb3d8de90f3a0275e0e91757caf50e4c9cfe0e1fac60c3f619864288"
+    },
+    {
+      "path": "src/fourth-selection/reference/switch-12.tsx",
+      "bytes": 1125,
+      "sha256": "64685bda04d9411b0769f1231cf38d9a92ba547ae751b4e03ede0ae389b2897b"
+    },
+    {
+      "path": "src/fourth-selection/source-hashes.json",
+      "bytes": 9858,
+      "sha256": "7da8ff8fa89442d131e4b02eb36035d3a603b1625816b33fac4930dacdd2d089"
+    },
+    {
+      "path": "src/fourth-selection/static-color-pairs.json",
+      "bytes": 76783,
+      "sha256": "482aa7598541c023c97eb68b59ba9548354df700a53b49f0e917c1a7d9155965"
+    },
+    {
+      "path": "src/fourth-selection/styles.css",
+      "bytes": 12621,
+      "sha256": "8938d057393255f2d1411386ea99053dc796ffae1ea890b1749414a38bd46d63"
+    },
+    {
+      "path": "src/fourth-selection/type-tests.tsx",
+      "bytes": 2142,
+      "sha256": "6e2646870caae67e90eb8a1034bf64949197952b9fa69791b71ecb231f2a2424"
+    },
+    {
+      "path": "src/fourth-selection/write-contracts.py",
+      "bytes": 15482,
+      "sha256": "709c4fa28a67b806f295f66cd626d6ffcd023dbab2a08a4e8e8bfcbd49ae6d24"
+    },
+    {
+      "path": "tests/fourth-selection-tests.cjs",
+      "bytes": 30704,
+      "sha256": "e37d7d2a522d92b23faee1edba4a497f0293b0c1d95c3e96426678615f09757a"
+    }
+  ]
+}

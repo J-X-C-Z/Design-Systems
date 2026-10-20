@@ -1,0 +1,44 @@
+[
+  {
+    "source": "sources/src/data/contents/components/breadcrumb/variant-6.tsx",
+    "path": "sources/src/data/contents/components/breadcrumb/variant-6.tsx",
+    "sha256": "8b76ea59215db0757538673adcda3c2ea569c83f14dd80aa412d30064cfbc1e8",
+    "gitBlob": "b97dc24bb63ab6bf11cf64338abfa440ad16479d"
+  },
+  {
+    "source": "sources/src/data/contents/components/textarea/variant-14.tsx",
+    "path": "sources/src/data/contents/components/textarea/variant-14.tsx",
+    "sha256": "e0b0c98d7748e7dd31f39c2a1cf490ca2e245ab78a6b68b23e8ad2a0c12026a5",
+    "gitBlob": "3d32ea53d39a43062df757fa7c49c77ce55aedfe"
+  },
+  {
+    "source": "sources/src/components/base-ui/breadcrumb.tsx",
+    "path": "sources/src/components/base-ui/breadcrumb.tsx",
+    "sha256": "785212482c3b4702abf9bc08af0490f3734e594997e3554e5195328a7ddcd70d",
+    "gitBlob": "db9afc0c0fe2766fb722a5dc985bbb8d182e9502"
+  },
+  {
+    "source": "sources/src/components/base-ui/badge.tsx",
+    "path": "sources/src/components/base-ui/badge.tsx",
+    "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d",
+    "gitBlob": "cacff11dce8d09f7882da68c971b3a7e5be3e78a"
+  },
+  {
+    "source": "sources/src/components/base-ui/dropdown-menu.tsx",
+    "path": "sources/src/components/base-ui/dropdown-menu.tsx",
+    "sha256": "be2f5beb08af8c089a0b8159be6f05c11c1a8607b50d84a4ec1e8cdcb2d5d67a",
+    "gitBlob": "5187856836c699d13e268a3c2b251f4bcd12b7b8"
+  },
+  {
+    "source": "sources/src/components/base-ui/textarea.tsx",
+    "path": "sources/src/components/base-ui/textarea.tsx",
+    "sha256": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9",
+    "gitBlob": "04d27f7d17584cd77ba7d6f2377f5be6779f1270"
+  },
+  {
+    "source": "sources/src/components/base-ui/label.tsx",
+    "path": "sources/src/components/base-ui/label.tsx",
+    "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50",
+    "gitBlob": "f752f82ba6be3cf9a1015c1d61df5de00a1eaf66"
+  }
+]

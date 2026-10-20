@@ -1,0 +1,3133 @@
+{
+  "schemaVersion": 1,
+  "kind": "static sRGB color pairs and scoped CSS assertions, not computed browser/layout evidence",
+  "themes": 14,
+  "pairs": 378,
+  "failures": [],
+  "passed": true,
+  "inputs": [
+    {
+      "path": "src/third-selection/styles.css",
+      "sha256": "5c0d7788e257c16f87fa0291007b2393f82cd36fec2d2a542fb1114a61a1cc73"
+    },
+    {
+      "path": "src/palettes.json",
+      "sha256": "4a2f57e202ef88e90a041a539c2345ead94596e6b2002205b38975b29d245d0c"
+    }
+  ],
+  "staticAssertions": [
+    {
+      "name": "Switch08 local row top alignment anchors icon layer at44px target",
+      "pass": true
+    },
+    {
+      "name": "Checkbox06 native target covers badge even when label omitted",
+      "pass": true
+    },
+    {
+      "name": "Checkbox06 target min48high×44wide",
+      "pass": true
+    },
+    {
+      "name": "Switch08 fixed white thumb uses independent fixed dark active icon",
+      "pass": true
+    }
+  ],
+  "results": [
+    {
+      "themeMode": "echo/light",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#292524",
+          "background": "#f2f0e4",
+          "ratio": 13.262,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#635c52",
+          "background": "#f2f0e4",
+          "ratio": 5.768,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#a51e1e",
+          "background": "#f2f0e4",
+          "ratio": 6.547,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#873909",
+          "background": "#f2f0e4",
+          "ratio": 7.009,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#292524",
+          "background": "#fffef9",
+          "ratio": 15.022,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#635c52",
+          "background": "#fffef9",
+          "ratio": 6.533,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#a51e1e",
+          "background": "#fffef9",
+          "ratio": 7.416,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#873909",
+          "background": "#fffef9",
+          "ratio": 7.94,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#292524",
+          "background": "#e8e6d9",
+          "ratio": 12.101,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#873909",
+          "background": "#e8e6d9",
+          "ratio": 6.395,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#21180f",
+          "background": "#f07832",
+          "ratio": 6.187,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#635c52",
+          "background": "#e8e6d9",
+          "ratio": 5.263,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#292524",
+          "background": "#fffef9",
+          "ratio": 15.022,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#7d786b",
+          "background": "#fffef9",
+          "ratio": 4.359,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#a51e1e",
+          "background": "#fffef9",
+          "ratio": 7.416,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#a51e1e",
+          "background": "#fce8e5",
+          "ratio": 6.352,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#a51e1e",
+          "background": "#f2f0e4",
+          "ratio": 6.547,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#3f601d",
+          "background": "#fffef9",
+          "ratio": 7.166,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#3f601d",
+          "background": "#e6edd6",
+          "ratio": 6.012,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#3f601d",
+          "background": "#f2f0e4",
+          "ratio": 6.326,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#135b7a",
+          "background": "#fffef9",
+          "ratio": 7.414,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#135b7a",
+          "background": "#e0eef3",
+          "ratio": 6.307,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#135b7a",
+          "background": "#f2f0e4",
+          "ratio": 6.545,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#805300",
+          "background": "#fffef9",
+          "ratio": 6.591,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#805300",
+          "background": "#faf0cc",
+          "ratio": 5.832,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#805300",
+          "background": "#f2f0e4",
+          "ratio": 5.819,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "echo/dark",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#f3f0e4",
+          "background": "#191a18",
+          "ratio": 15.3,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#c1beb2",
+          "background": "#191a18",
+          "ratio": 9.379,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#ffa7a0",
+          "background": "#191a18",
+          "ratio": 9.388,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#ffb47a",
+          "background": "#191a18",
+          "ratio": 10.032,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#f3f0e4",
+          "background": "#232420",
+          "ratio": 13.68,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#c1beb2",
+          "background": "#232420",
+          "ratio": 8.385,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#ffa7a0",
+          "background": "#232420",
+          "ratio": 8.394,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#ffb47a",
+          "background": "#232420",
+          "ratio": 8.97,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#f3f0e4",
+          "background": "#2f302a",
+          "ratio": 11.664,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#ffb47a",
+          "background": "#2f302a",
+          "ratio": 7.648,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#22180e",
+          "background": "#f59c59",
+          "ratio": 8.118,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#c1beb2",
+          "background": "#2f302a",
+          "ratio": 7.15,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#f3f0e4",
+          "background": "#232420",
+          "ratio": 13.68,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#8e8f82",
+          "background": "#232420",
+          "ratio": 4.761,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#ffa7a0",
+          "background": "#232420",
+          "ratio": 8.394,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#ffa7a0",
+          "background": "#422525",
+          "ratio": 7.411,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#ffa7a0",
+          "background": "#191a18",
+          "ratio": 9.388,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#c3db92",
+          "background": "#232420",
+          "ratio": 10.313,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#c3db92",
+          "background": "#29321f",
+          "ratio": 8.831,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#c3db92",
+          "background": "#191a18",
+          "ratio": 11.535,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#a6d6e8",
+          "background": "#232420",
+          "ratio": 9.969,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#a6d6e8",
+          "background": "#20343c",
+          "ratio": 8.286,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#a6d6e8",
+          "background": "#191a18",
+          "ratio": 11.15,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#ebcf81",
+          "background": "#232420",
+          "ratio": 10.244,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#ebcf81",
+          "background": "#3a321e",
+          "ratio": 8.324,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#ebcf81",
+          "background": "#191a18",
+          "ratio": 11.457,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "bloom/light",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#303b2a",
+          "background": "#f7faf2",
+          "ratio": 11.157,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#596650",
+          "background": "#f7faf2",
+          "ratio": 5.786,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#af2139",
+          "background": "#f7faf2",
+          "ratio": 6.424,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#196095",
+          "background": "#f7faf2",
+          "ratio": 6.324,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#303b2a",
+          "background": "#ffffff",
+          "ratio": 11.767,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#596650",
+          "background": "#ffffff",
+          "ratio": 6.103,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#af2139",
+          "background": "#ffffff",
+          "ratio": 6.775,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#196095",
+          "background": "#ffffff",
+          "ratio": 6.67,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#303b2a",
+          "background": "#edf4e7",
+          "ratio": 10.475,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#196095",
+          "background": "#edf4e7",
+          "ratio": 5.938,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#173300",
+          "background": "#58cc02",
+          "ratio": 6.658,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#596650",
+          "background": "#edf4e7",
+          "ratio": 5.433,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#303b2a",
+          "background": "#ffffff",
+          "ratio": 11.767,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#7a8b6b",
+          "background": "#ffffff",
+          "ratio": 3.663,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#af2139",
+          "background": "#ffffff",
+          "ratio": 6.775,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#af2139",
+          "background": "#fff0f0",
+          "ratio": 6.122,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#af2139",
+          "background": "#f7faf2",
+          "ratio": 6.424,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#356314",
+          "background": "#ffffff",
+          "ratio": 7.128,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#356314",
+          "background": "#e9f7dd",
+          "ratio": 6.386,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#356314",
+          "background": "#f7faf2",
+          "ratio": 6.758,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#075d85",
+          "background": "#ffffff",
+          "ratio": 7.208,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#075d85",
+          "background": "#e2f4ff",
+          "ratio": 6.39,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#075d85",
+          "background": "#f7faf2",
+          "ratio": 6.834,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#805500",
+          "background": "#ffffff",
+          "ratio": 6.527,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#805500",
+          "background": "#fff4cc",
+          "ratio": 5.926,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#805500",
+          "background": "#f7faf2",
+          "ratio": 6.189,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "bloom/dark",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#edf5e8",
+          "background": "#152117",
+          "ratio": 14.921,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#b8cbb0",
+          "background": "#152117",
+          "ratio": 9.675,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#ffa6b3",
+          "background": "#152117",
+          "ratio": 9.001,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#8bd6ff",
+          "background": "#152117",
+          "ratio": 10.43,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#edf5e8",
+          "background": "#1d2b1f",
+          "ratio": 13.281,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#b8cbb0",
+          "background": "#1d2b1f",
+          "ratio": 8.611,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#ffa6b3",
+          "background": "#1d2b1f",
+          "ratio": 8.012,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#8bd6ff",
+          "background": "#1d2b1f",
+          "ratio": 9.284,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#edf5e8",
+          "background": "#293a2a",
+          "ratio": 10.864,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#8bd6ff",
+          "background": "#293a2a",
+          "ratio": 7.594,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#192d0a",
+          "background": "#82cf42",
+          "ratio": 7.708,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#b8cbb0",
+          "background": "#293a2a",
+          "ratio": 7.044,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#edf5e8",
+          "background": "#1d2b1f",
+          "ratio": 13.281,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#839d77",
+          "background": "#1d2b1f",
+          "ratio": 4.976,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#ffa6b3",
+          "background": "#1d2b1f",
+          "ratio": 8.012,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#ffa6b3",
+          "background": "#43252c",
+          "ratio": 7.377,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#ffa6b3",
+          "background": "#152117",
+          "ratio": 9.001,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#a1e58b",
+          "background": "#1d2b1f",
+          "ratio": 9.944,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#a1e58b",
+          "background": "#233c25",
+          "ratio": 8.08,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#a1e58b",
+          "background": "#152117",
+          "ratio": 11.171,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#8bd6ff",
+          "background": "#1d2b1f",
+          "ratio": 9.284,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#8bd6ff",
+          "background": "#203a46",
+          "ratio": 7.498,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#8bd6ff",
+          "background": "#152117",
+          "ratio": 10.43,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#f8d16b",
+          "background": "#1d2b1f",
+          "ratio": 10.104,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#f8d16b",
+          "background": "#40351f",
+          "ratio": 8.199,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#f8d16b",
+          "background": "#152117",
+          "ratio": 11.352,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "neuro/dark",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#e4e4e7",
+          "background": "#0a0a0c",
+          "ratio": 15.589,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#a1a1aa",
+          "background": "#0a0a0c",
+          "ratio": 7.718,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#fda4af",
+          "background": "#0a0a0c",
+          "ratio": 10.461,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#fbbf24",
+          "background": "#0a0a0c",
+          "ratio": 11.849,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#e4e4e7",
+          "background": "#111114",
+          "ratio": 14.855,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#a1a1aa",
+          "background": "#111114",
+          "ratio": 7.355,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#fda4af",
+          "background": "#111114",
+          "ratio": 9.968,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#fbbf24",
+          "background": "#111114",
+          "ratio": 11.291,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#e4e4e7",
+          "background": "#1c1c21",
+          "ratio": 13.374,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#fbbf24",
+          "background": "#1c1c21",
+          "ratio": 10.166,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#0a0a0c",
+          "background": "#f59e0b",
+          "ratio": 9.21,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#a1a1aa",
+          "background": "#1c1c21",
+          "ratio": 6.622,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#e4e4e7",
+          "background": "#111114",
+          "ratio": 14.855,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#71717d",
+          "background": "#111114",
+          "ratio": 3.914,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#fda4af",
+          "background": "#111114",
+          "ratio": 9.968,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#fda4af",
+          "background": "#342027",
+          "ratio": 8.036,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#fda4af",
+          "background": "#0a0a0c",
+          "ratio": 10.461,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#a8d79b",
+          "background": "#111114",
+          "ratio": 11.541,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#a8d79b",
+          "background": "#192a1b",
+          "ratio": 9.262,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#a8d79b",
+          "background": "#0a0a0c",
+          "ratio": 12.112,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#67e8f9",
+          "background": "#111114",
+          "ratio": 13.003,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#67e8f9",
+          "background": "#153038",
+          "ratio": 9.583,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#67e8f9",
+          "background": "#0a0a0c",
+          "ratio": 13.646,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#fbbf24",
+          "background": "#111114",
+          "ratio": 11.291,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#fbbf24",
+          "background": "#312711",
+          "ratio": 8.804,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#fbbf24",
+          "background": "#0a0a0c",
+          "ratio": 11.849,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "neuro/light",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#292720",
+          "background": "#f2eee4",
+          "ratio": 12.898,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#666051",
+          "background": "#f2eee4",
+          "ratio": 5.399,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#a32334",
+          "background": "#f2eee4",
+          "ratio": 6.366,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#805000",
+          "background": "#f2eee4",
+          "ratio": 5.913,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#292720",
+          "background": "#fffdf7",
+          "ratio": 14.69,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#666051",
+          "background": "#fffdf7",
+          "ratio": 6.15,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#a32334",
+          "background": "#fffdf7",
+          "ratio": 7.251,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#805000",
+          "background": "#fffdf7",
+          "ratio": 6.735,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#292720",
+          "background": "#e6e0d3",
+          "ratio": 11.362,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#805000",
+          "background": "#e6e0d3",
+          "ratio": 5.209,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#271b07",
+          "background": "#eeb73f",
+          "ratio": 9.213,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#666051",
+          "background": "#e6e0d3",
+          "ratio": 4.757,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#292720",
+          "background": "#fffdf7",
+          "ratio": 14.69,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#81745b",
+          "background": "#fffdf7",
+          "ratio": 4.505,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#a32334",
+          "background": "#fffdf7",
+          "ratio": 7.251,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#a32334",
+          "background": "#fbe8e8",
+          "ratio": 6.255,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#a32334",
+          "background": "#f2eee4",
+          "ratio": 6.366,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#3e601f",
+          "background": "#fffdf7",
+          "ratio": 7.125,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#3e601f",
+          "background": "#e6edd8",
+          "ratio": 6.029,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#3e601f",
+          "background": "#f2eee4",
+          "ratio": 6.255,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#155d71",
+          "background": "#fffdf7",
+          "ratio": 7.279,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#155d71",
+          "background": "#dfedf1",
+          "ratio": 6.178,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#155d71",
+          "background": "#f2eee4",
+          "ratio": 6.391,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#805400",
+          "background": "#fffdf7",
+          "ratio": 6.48,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#805400",
+          "background": "#f9edcc",
+          "ratio": 5.654,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#805400",
+          "background": "#f2eee4",
+          "ratio": 5.689,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "follow/light",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#151515",
+          "background": "#f8f6f0",
+          "ratio": 16.898,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#52524e",
+          "background": "#f8f6f0",
+          "ratio": 7.262,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#a0153e",
+          "background": "#f8f6f0",
+          "ratio": 7.274,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#151515",
+          "background": "#f8f6f0",
+          "ratio": 16.898,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#52524e",
+          "background": "#ffffff",
+          "ratio": 7.848,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#a0153e",
+          "background": "#ffffff",
+          "ratio": 7.861,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#151515",
+          "background": "#e9e7e0",
+          "ratio": 14.758,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#151515",
+          "background": "#e9e7e0",
+          "ratio": 14.758,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#ffffff",
+          "background": "#151515",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#52524e",
+          "background": "#e9e7e0",
+          "ratio": 6.343,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#73736b",
+          "background": "#ffffff",
+          "ratio": 4.78,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#a0153e",
+          "background": "#ffffff",
+          "ratio": 7.861,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#a0153e",
+          "background": "#f8e7eb",
+          "ratio": 6.596,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#a0153e",
+          "background": "#f8f6f0",
+          "ratio": 7.274,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#285336",
+          "background": "#ffffff",
+          "ratio": 8.821,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#285336",
+          "background": "#e4eee3",
+          "ratio": 7.408,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#285336",
+          "background": "#f8f6f0",
+          "ratio": 8.162,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#244b66",
+          "background": "#ffffff",
+          "ratio": 9.238,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#244b66",
+          "background": "#e5edf4",
+          "ratio": 7.809,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#244b66",
+          "background": "#f8f6f0",
+          "ratio": 8.548,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#755000",
+          "background": "#ffffff",
+          "ratio": 7.232,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#755000",
+          "background": "#f8edcf",
+          "ratio": 6.201,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#755000",
+          "background": "#f8f6f0",
+          "ratio": 6.692,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "follow/dark",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#f7f7f2",
+          "background": "#171816",
+          "ratio": 16.579,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#c6c8bf",
+          "background": "#171816",
+          "ratio": 10.533,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#ffc0d0",
+          "background": "#171816",
+          "ratio": 11.626,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#ffffff",
+          "background": "#171816",
+          "ratio": 17.817,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#f7f7f2",
+          "background": "#20211f",
+          "ratio": 15.046,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#c6c8bf",
+          "background": "#20211f",
+          "ratio": 9.559,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#ffc0d0",
+          "background": "#20211f",
+          "ratio": 10.551,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#ffffff",
+          "background": "#20211f",
+          "ratio": 16.169,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#f7f7f2",
+          "background": "#2c2e2a",
+          "ratio": 12.761,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#ffffff",
+          "background": "#2c2e2a",
+          "ratio": 13.714,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#171816",
+          "background": "#f7f7f2",
+          "ratio": 16.579,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#c6c8bf",
+          "background": "#2c2e2a",
+          "ratio": 8.107,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#f7f7f2",
+          "background": "#20211f",
+          "ratio": 15.046,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#a3a79b",
+          "background": "#20211f",
+          "ratio": 6.59,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#ffc0d0",
+          "background": "#20211f",
+          "ratio": 10.551,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#ffc0d0",
+          "background": "#3d252d",
+          "ratio": 9.129,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#ffc0d0",
+          "background": "#171816",
+          "ratio": 11.626,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#c0dfab",
+          "background": "#20211f",
+          "ratio": 11.076,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#c0dfab",
+          "background": "#253121",
+          "ratio": 9.341,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#c0dfab",
+          "background": "#171816",
+          "ratio": 12.204,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#bcd7ef",
+          "background": "#20211f",
+          "ratio": 10.86,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#bcd7ef",
+          "background": "#24313d",
+          "ratio": 8.917,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#bcd7ef",
+          "background": "#171816",
+          "ratio": 11.967,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#f4d294",
+          "background": "#20211f",
+          "ratio": 11.159,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#f4d294",
+          "background": "#3a3122",
+          "ratio": 8.825,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#f4d294",
+          "background": "#171816",
+          "ratio": 12.296,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "wix/light",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#201913",
+          "background": "#f6f2e9",
+          "ratio": 15.536,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#64544b",
+          "background": "#f6f2e9",
+          "ratio": 6.456,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#9e3431",
+          "background": "#f6f2e9",
+          "ratio": 6.288,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#201913",
+          "background": "#f6f2e9",
+          "ratio": 15.536,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#201913",
+          "background": "#fffdf7",
+          "ratio": 17.064,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#64544b",
+          "background": "#fffdf7",
+          "ratio": 7.091,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#9e3431",
+          "background": "#fffdf7",
+          "ratio": 6.906,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#201913",
+          "background": "#fffdf7",
+          "ratio": 17.064,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#201913",
+          "background": "#e8ddd1",
+          "ratio": 12.972,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#201913",
+          "background": "#e8ddd1",
+          "ratio": 12.972,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#fffdf7",
+          "background": "#694738",
+          "ratio": 8.068,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#64544b",
+          "background": "#e8ddd1",
+          "ratio": 5.39,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#201913",
+          "background": "#fffdf7",
+          "ratio": 17.064,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#827164",
+          "background": "#fffdf7",
+          "ratio": 4.593,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#9e3431",
+          "background": "#fffdf7",
+          "ratio": 6.906,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#9e3431",
+          "background": "#f8e6e1",
+          "ratio": 5.82,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#9e3431",
+          "background": "#f6f2e9",
+          "ratio": 6.288,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#376045",
+          "background": "#fffdf7",
+          "ratio": 7.067,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#376045",
+          "background": "#e4eddf",
+          "ratio": 5.982,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#376045",
+          "background": "#f6f2e9",
+          "ratio": 6.434,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#315c72",
+          "background": "#fffdf7",
+          "ratio": 7.108,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#315c72",
+          "background": "#e2edf0",
+          "ratio": 6.062,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#315c72",
+          "background": "#f6f2e9",
+          "ratio": 6.472,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#765114",
+          "background": "#fffdf7",
+          "ratio": 6.981,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#765114",
+          "background": "#f7ebcb",
+          "ratio": 5.985,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#765114",
+          "background": "#f6f2e9",
+          "ratio": 6.356,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "wix/dark",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#fff8ed",
+          "background": "#231d19",
+          "ratio": 15.779,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#cfbfb1",
+          "background": "#231d19",
+          "ratio": 9.308,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#ffbcb1",
+          "background": "#231d19",
+          "ratio": 10.371,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#f4ff8b",
+          "background": "#231d19",
+          "ratio": 15.479,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#fff8ed",
+          "background": "#302721",
+          "ratio": 13.841,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#cfbfb1",
+          "background": "#302721",
+          "ratio": 8.165,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#ffbcb1",
+          "background": "#302721",
+          "ratio": 9.097,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#f4ff8b",
+          "background": "#302721",
+          "ratio": 13.578,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#fff8ed",
+          "background": "#40342d",
+          "ratio": 11.391,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#f4ff8b",
+          "background": "#40342d",
+          "ratio": 11.175,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#231d19",
+          "background": "#e2bca4",
+          "ratio": 9.485,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#cfbfb1",
+          "background": "#40342d",
+          "ratio": 6.72,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#fff8ed",
+          "background": "#302721",
+          "ratio": 13.841,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#b19b88",
+          "background": "#302721",
+          "ratio": 5.504,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#ffbcb1",
+          "background": "#302721",
+          "ratio": 9.097,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#ffbcb1",
+          "background": "#4a2b28",
+          "ratio": 7.845,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#ffbcb1",
+          "background": "#231d19",
+          "ratio": 10.371,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#bad7b0",
+          "background": "#302721",
+          "ratio": 9.344,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#bad7b0",
+          "background": "#2d3c2d",
+          "ratio": 7.481,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#bad7b0",
+          "background": "#231d19",
+          "ratio": 10.652,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#b5d4e1",
+          "background": "#302721",
+          "ratio": 9.368,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#b5d4e1",
+          "background": "#253b45",
+          "ratio": 7.524,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#b5d4e1",
+          "background": "#231d19",
+          "ratio": 10.679,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#efd18e",
+          "background": "#302721",
+          "ratio": 9.863,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#efd18e",
+          "background": "#46391f",
+          "ratio": 7.602,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#efd18e",
+          "background": "#231d19",
+          "ratio": 11.244,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "maigawara/light",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#123c29",
+          "background": "#f5f1e8",
+          "ratio": 10.932,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#536050",
+          "background": "#f5f1e8",
+          "ratio": 5.902,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#99294b",
+          "background": "#f5f1e8",
+          "ratio": 6.718,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#9b195a",
+          "background": "#f5f1e8",
+          "ratio": 6.95,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#123c29",
+          "background": "#fffdf6",
+          "ratio": 12.108,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#536050",
+          "background": "#fffdf6",
+          "ratio": 6.536,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#99294b",
+          "background": "#fffdf6",
+          "ratio": 7.44,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#9b195a",
+          "background": "#fffdf6",
+          "ratio": 7.698,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#123c29",
+          "background": "#eae5d8",
+          "ratio": 9.799,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#9b195a",
+          "background": "#eae5d8",
+          "ratio": 6.23,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#fffdf6",
+          "background": "#075d36",
+          "ratio": 7.851,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#536050",
+          "background": "#eae5d8",
+          "ratio": 5.289,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#123c29",
+          "background": "#fffdf6",
+          "ratio": 12.108,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#69755e",
+          "background": "#fffdf6",
+          "ratio": 4.791,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#99294b",
+          "background": "#fffdf6",
+          "ratio": 7.44,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#99294b",
+          "background": "#ffe8ee",
+          "ratio": 6.501,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#99294b",
+          "background": "#f5f1e8",
+          "ratio": 6.718,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#245b2d",
+          "background": "#fffdf6",
+          "ratio": 7.907,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#245b2d",
+          "background": "#e2efd9",
+          "ratio": 6.738,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#245b2d",
+          "background": "#f5f1e8",
+          "ratio": 7.14,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#33447e",
+          "background": "#fffdf6",
+          "ratio": 9.094,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#33447e",
+          "background": "#e8ecff",
+          "ratio": 7.878,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#33447e",
+          "background": "#f5f1e8",
+          "ratio": 8.211,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#785100",
+          "background": "#fffdf6",
+          "ratio": 6.934,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#785100",
+          "background": "#fff0cb",
+          "ratio": 6.244,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#785100",
+          "background": "#f5f1e8",
+          "ratio": 6.261,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "maigawara/dark",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#f4f1df",
+          "background": "#12261c",
+          "ratio": 14.014,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#b8c6ae",
+          "background": "#12261c",
+          "ratio": 8.886,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#ffb1ca",
+          "background": "#12261c",
+          "ratio": 9.391,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#ffae80",
+          "background": "#12261c",
+          "ratio": 8.803,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#f4f1df",
+          "background": "#1a3024",
+          "ratio": 12.394,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#b8c6ae",
+          "background": "#1a3024",
+          "ratio": 7.859,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#ffb1ca",
+          "background": "#1a3024",
+          "ratio": 8.306,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#ffae80",
+          "background": "#1a3024",
+          "ratio": 7.786,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#f4f1df",
+          "background": "#233d2f",
+          "ratio": 10.39,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#ffae80",
+          "background": "#233d2f",
+          "ratio": 6.527,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#20331e",
+          "background": "#eda0e6",
+          "ratio": 6.933,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#b8c6ae",
+          "background": "#233d2f",
+          "ratio": 6.588,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#f4f1df",
+          "background": "#1a3024",
+          "ratio": 12.394,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#86977e",
+          "background": "#1a3024",
+          "ratio": 4.518,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#ffb1ca",
+          "background": "#1a3024",
+          "ratio": 8.306,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#ffb1ca",
+          "background": "#482b39",
+          "ratio": 7.376,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#ffb1ca",
+          "background": "#12261c",
+          "ratio": 9.391,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#b4e79d",
+          "background": "#1a3024",
+          "ratio": 9.957,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#b4e79d",
+          "background": "#263e2c",
+          "ratio": 8.219,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#b4e79d",
+          "background": "#12261c",
+          "ratio": 11.258,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#b7c4ff",
+          "background": "#1a3024",
+          "ratio": 8.279,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#b7c4ff",
+          "background": "#293348",
+          "ratio": 7.436,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#b7c4ff",
+          "background": "#12261c",
+          "ratio": 9.361,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#f3d18b",
+          "background": "#1a3024",
+          "ratio": 9.586,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#f3d18b",
+          "background": "#403723",
+          "ratio": 7.997,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#f3d18b",
+          "background": "#12261c",
+          "ratio": 10.839,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "goons/light",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#161923",
+          "background": "#eeeef0",
+          "ratio": 15.135,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#5a6070",
+          "background": "#eeeef0",
+          "ratio": 5.423,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#a02848",
+          "background": "#eeeef0",
+          "ratio": 6.267,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#b13c08",
+          "background": "#eeeef0",
+          "ratio": 5.15,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#161923",
+          "background": "#ffffff",
+          "ratio": 17.537,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#5a6070",
+          "background": "#ffffff",
+          "ratio": 6.284,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#a02848",
+          "background": "#ffffff",
+          "ratio": 7.262,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#b13c08",
+          "background": "#ffffff",
+          "ratio": 5.967,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#161923",
+          "background": "#e0e2e9",
+          "ratio": 13.549,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#b13c08",
+          "background": "#e0e2e9",
+          "ratio": 4.61,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#ffffff",
+          "background": "#254ce8",
+          "ratio": 6.407,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#5a6070",
+          "background": "#e0e2e9",
+          "ratio": 4.855,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#161923",
+          "background": "#ffffff",
+          "ratio": 17.537,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#737b90",
+          "background": "#ffffff",
+          "ratio": 4.23,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#a02848",
+          "background": "#ffffff",
+          "ratio": 7.262,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#a02848",
+          "background": "#ffebef",
+          "ratio": 6.356,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#a02848",
+          "background": "#eeeef0",
+          "ratio": 6.267,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#226448",
+          "background": "#ffffff",
+          "ratio": 7.036,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#226448",
+          "background": "#e3f3ec",
+          "ratio": 6.131,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#226448",
+          "background": "#eeeef0",
+          "ratio": 6.073,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#2448bd",
+          "background": "#ffffff",
+          "ratio": 7.673,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#2448bd",
+          "background": "#e7edff",
+          "ratio": 6.561,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#2448bd",
+          "background": "#eeeef0",
+          "ratio": 6.622,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#7e510d",
+          "background": "#ffffff",
+          "ratio": 6.841,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#7e510d",
+          "background": "#fff1d9",
+          "ratio": 6.136,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#7e510d",
+          "background": "#eeeef0",
+          "ratio": 5.904,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "themeMode": "goons/dark",
+      "pairs": [
+        {
+          "name": "external label / --ds-canvas",
+          "foreground": "#f4f5fc",
+          "background": "#12141b",
+          "ratio": 16.918,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-canvas",
+          "foreground": "#b9bfd1",
+          "background": "#12141b",
+          "ratio": 10.017,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-canvas",
+          "foreground": "#ffadc7",
+          "background": "#12141b",
+          "ratio": 10.559,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-canvas",
+          "foreground": "#ffb287",
+          "background": "#12141b",
+          "ratio": 10.485,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "external label / --ds-surface",
+          "foreground": "#f4f5fc",
+          "background": "#1c1f29",
+          "ratio": 15.119,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external help / --ds-surface",
+          "foreground": "#b9bfd1",
+          "background": "#1c1f29",
+          "ratio": 8.953,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "external error / --ds-surface",
+          "foreground": "#ffadc7",
+          "background": "#1c1f29",
+          "ratio": 9.437,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "focus outline / --ds-surface",
+          "foreground": "#ffb287",
+          "background": "#1c1f29",
+          "ratio": 9.371,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "snack badge label",
+          "foreground": "#f4f5fc",
+          "background": "#292d3c",
+          "ratio": 12.583,
+          "minimum": 4.5,
+          "pass": true
+        },
+        {
+          "name": "snack badge focus",
+          "foreground": "#ffb287",
+          "background": "#292d3c",
+          "ratio": 7.799,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "checkbox check / accent fill",
+          "foreground": "#152557",
+          "background": "#adc0ff",
+          "ratio": 8.201,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "active icon / fixed white thumb",
+          "foreground": "#151515",
+          "background": "#ffffff",
+          "ratio": 18.261,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "inactive icon / subtle track",
+          "foreground": "#b9bfd1",
+          "background": "#292d3c",
+          "ratio": 7.451,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "unchecked thumb / surface",
+          "foreground": "#f4f5fc",
+          "background": "#1c1f29",
+          "ratio": 15.119,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "control border / surface",
+          "foreground": "#8993af",
+          "background": "#1c1f29",
+          "ratio": 5.367,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger outline / surface",
+          "foreground": "#ffadc7",
+          "background": "#1c1f29",
+          "ratio": 9.437,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger thumb / tone track",
+          "foreground": "#ffadc7",
+          "background": "#472b3a",
+          "ratio": 7.198,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "danger focus / canvas",
+          "foreground": "#ffadc7",
+          "background": "#12141b",
+          "ratio": 10.559,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success outline / surface",
+          "foreground": "#93e3ba",
+          "background": "#1c1f29",
+          "ratio": 10.911,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success thumb / tone track",
+          "foreground": "#93e3ba",
+          "background": "#233d34",
+          "ratio": 7.793,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "success focus / canvas",
+          "foreground": "#93e3ba",
+          "background": "#12141b",
+          "ratio": 12.208,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info outline / surface",
+          "foreground": "#afc4ff",
+          "background": "#1c1f29",
+          "ratio": 9.522,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info thumb / tone track",
+          "foreground": "#afc4ff",
+          "background": "#283852",
+          "ratio": 6.842,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "info focus / canvas",
+          "foreground": "#afc4ff",
+          "background": "#12141b",
+          "ratio": 10.654,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning outline / surface",
+          "foreground": "#ffd28e",
+          "background": "#1c1f29",
+          "ratio": 11.634,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning thumb / tone track",
+          "foreground": "#ffd28e",
+          "background": "#443621",
+          "ratio": 8.277,
+          "minimum": 3,
+          "pass": true
+        },
+        {
+          "name": "warning focus / canvas",
+          "foreground": "#ffd28e",
+          "background": "#12141b",
+          "ratio": 13.018,
+          "minimum": 3,
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "limits": "No alpha compositing, forced-colors system-color measurement, rendered clipping, focus hit-testing or actual screen captures. Visual browser acceptance remains pending."
+}

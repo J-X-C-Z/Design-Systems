@@ -1,0 +1,30 @@
+[
+  {
+    "id": "alerts-07",
+    "kind": "exact_variant",
+    "source_path": "src/data/contents/components/alerts/variant-7.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/alerts/variant-7.tsx",
+    "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/alerts-one/sources/alerts-07.tsx",
+    "evidence_copy": "sources/src/data/contents/components/alerts/variant-7.tsx",
+    "pinned_git_blob_sha": "2735dbcb3238222f567e2feeeb08e4e6daa8a130",
+    "recomputed_git_blob_sha": "2735dbcb3238222f567e2feeeb08e4e6daa8a130",
+    "sha256": "9d347a8677dfd4125e8321445348d0cef339493d284d80a63bb988ae4a47c5ef",
+    "bytes": 2232,
+    "lines": 71,
+    "executed": false
+  },
+  {
+    "id": "alerts-08",
+    "kind": "exact_variant",
+    "source_path": "src/data/contents/components/alerts/variant-8.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/alerts/variant-8.tsx",
+    "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/alerts-one/sources/alerts-08.tsx",
+    "evidence_copy": "sources/src/data/contents/components/alerts/variant-8.tsx",
+    "pinned_git_blob_sha": "360b94ae4bffd8ffa6a064125edecbfb3f4e8ccb",
+    "recomputed_git_blob_sha": "360b94ae4bffd8ffa6a064125edecbfb3f4e8ccb",
+    "sha256": "a30950415edec04f51f65ed9861eb7512bcbb596a019fb43795d4b59403edf0c",
+    "bytes": 1708,
+    "lines": 56,
+    "executed": false
+  }
+]

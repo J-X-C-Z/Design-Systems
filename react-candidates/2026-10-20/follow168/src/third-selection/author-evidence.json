@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "kind": "author actual React/JSDOM test evidence; not independent review or browser acceptance",
+  "currentEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json",
+  "currentResult": {
+    "suite": "third-selection",
+    "scenarios": 921,
+    "assertions": 1958,
+    "fields": 19,
+    "canonicalIds": 8,
+    "browser": false,
+    "layout": false,
+    "trustedKeyboard": false,
+    "react": "19.3.0",
+    "jsdomWarnings": []
+  },
+  "exitCode": 0,
+  "inputs": [
+    {
+      "path": "src/scalar/index.jsx",
+      "bytes": 23683,
+      "sha256": "3681416a1ae14aae101773d4128b5c6ce55500ab01c39a55f1fad92c07b8a835"
+    },
+    {
+      "path": "src/third-selection/index.jsx",
+      "bytes": 8467,
+      "sha256": "6e99974daa127ce8debeca29484c860537511341ac280a92cef32d91423941d3"
+    }
+  ],
+  "bundleSHA256": "715992b2d2f298fa70c2531936ba2429ff94d63110be1ca26ba7b8bd40725b88",
+  "testSHA256": "472a6e0721c2440e1945a116b695968c913e59f43387bf6dbbffc4db5ec18a18",
+  "cssSHA256": "5c0d7788e257c16f87fa0291007b2393f82cd36fec2d2a542fb1114a61a1cc73",
+  "typesSHA256": "32b6b231025e38efcd6f878a42f31eb634445e340e57e7ace5b595e278f3d780",
+  "staticColors": "src/third-selection/static-color-pairs.json",
+  "sourceProvenance": "src/third-selection/source-hashes.json",
+  "history": [
+    {
+      "evidence": "evidence/2026-10-15T05-57-17-307Z-third-selection/third-selection.json",
+      "result": "failed author harness: scalar props patch kept old onChange cancellation; fixed test cleanup, no component behavior failure established"
+    },
+    {
+      "evidence": "evidence/2026-10-15T05-57-48-282Z-third-selection/third-selection.json",
+      "result": "passed902 scenarios1901 assertions before custom visible-label accessibility improvement; superseded by current evidence"
+    }
+  ],
+  "remaining": [
+    "Independent final-byte review",
+    "Real browser trusted keyboard, hit-testing, rendered contrast, layout, RTL/forced-colors/accessibility-tree checks"
+  ],
+  "formalAccepted": 0
+}

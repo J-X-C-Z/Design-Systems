@@ -1,0 +1,27 @@
+{
+  "ids": [
+    "textarea-13",
+    "textarea-17"
+  ],
+  "sourceProof": "reference/thirteenth-controls/SOURCE-PROOF.json",
+  "output": {
+    "label": "Generated output",
+    "placeholder": "Output will appear here...",
+    "defaultValue": "This content is generated and cannot be edited.",
+    "readOnly": true,
+    "disabled": false
+  },
+  "reply": {
+    "label": "Leave a reply",
+    "placeholder": "Write your reply...",
+    "buttonLabel": "Post Reply",
+    "buttonTypeAttribute": null,
+    "nativeTypeProperty": "submit",
+    "required": false,
+    "maxLength": null,
+    "sourceServiceAction": null
+  },
+  "apiDocumentation": "PACKAGE-README.md",
+  "browser": "not_run",
+  "previewReset": "real values and visible single-string output tested after native reset then parent reset"
+}

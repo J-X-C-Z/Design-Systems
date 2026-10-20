@@ -1,0 +1,26 @@
+[
+  {
+    "source": "sources/src/data/contents/components/breadcrumb/variant-8.tsx",
+    "path": "sources/src/data/contents/components/breadcrumb/variant-8.tsx",
+    "sha256": "7a4f359dae93cd09f8e4cf6701f85650bfc10ff06d7a43a3f5d30b8d0485ddd4",
+    "gitBlob": "54b7e61e55306de9f8ca5b1083e1aca263e7e3b1"
+  },
+  {
+    "source": "sources/src/data/contents/components/textarea/variant-16.tsx",
+    "path": "sources/src/data/contents/components/textarea/variant-16.tsx",
+    "sha256": "4236e3fc9f2d1f0f596f7ad577593528428448cfca01147d12ce0120546ffe37",
+    "gitBlob": "b6ea0265c4711db5dc42e937004f24cd306d682f"
+  },
+  {
+    "source": "sources/src/components/base-ui/breadcrumb.tsx",
+    "path": "sources/src/components/base-ui/breadcrumb.tsx",
+    "sha256": "785212482c3b4702abf9bc08af0490f3734e594997e3554e5195328a7ddcd70d",
+    "gitBlob": "db9afc0c0fe2766fb722a5dc985bbb8d182e9502"
+  },
+  {
+    "source": "sources/src/components/base-ui/textarea.tsx",
+    "path": "sources/src/components/base-ui/textarea.tsx",
+    "sha256": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9",
+    "gitBlob": "04d27f7d17584cd77ba7d6f2377f5be6779f1270"
+  }
+]

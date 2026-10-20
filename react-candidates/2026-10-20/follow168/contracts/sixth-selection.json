@@ -1,0 +1,31 @@
+{
+  "ids": [
+    "switch-15",
+    "switch-16",
+    "switch-17",
+    "switch-18"
+  ],
+  "source": "reference/sixth-selection/SOURCE-PROOF.json",
+  "defaults": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "switch15": "Notifications On/Off",
+  "switch16": {
+    "leftSun": false,
+    "rightMoon": true
+  },
+  "switch17": "corresponding moon/sun clickable label",
+  "switch18": {
+    "Yes": false,
+    "No": true,
+    "note": "exact source mapping, intentionally not reversed"
+  },
+  "a11yRepair": "source16/18 clickable spans replaced with type=button; source16 meaningful explicit accessible name",
+  "sideTransaction": "after bubble cancellation; latest queued side intent wins; no-op selection silent; native proposal used",
+  "services": "local only",
+  "browser": "not_run",
+  "formalAccepted": 0
+}

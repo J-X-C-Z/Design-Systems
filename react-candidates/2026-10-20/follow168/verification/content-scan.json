@@ -1,0 +1,6 @@
+{
+  "utf8Files": 986,
+  "privateExecutorPathFindings": [],
+  "recognizableSecretTokenFindings": [],
+  "scope": "UTF-8/NUL check, known private executor path patterns and recognizable credential-token/private-key signatures; not a proof of absence of every possible secret."
+}

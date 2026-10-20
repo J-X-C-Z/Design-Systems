@@ -1,0 +1,20 @@
+[
+  {
+    "id": "textarea-19",
+    "source_path": "src/data/contents/components/textarea/variant-19.tsx",
+    "evidence_copy": "sources/src/data/contents/components/textarea/variant-19.tsx",
+    "pinned_git_blob_sha": "04cabbbd8eb1295c84f051f35908fa1050f094e0",
+    "sha256": "b1718704605dd566095f5cce0f77d45535437644f48ccda57a5086af013b59ee",
+    "bytes": 782,
+    "executed": false
+  },
+  {
+    "id": "breadcrumb-03",
+    "source_path": "src/data/contents/components/breadcrumb/variant-3.tsx",
+    "evidence_copy": "sources/src/data/contents/components/breadcrumb/variant-3.tsx",
+    "pinned_git_blob_sha": "25922de8ed9eb3cc907cd0c77c859eff840c87af",
+    "sha256": "f83ca713d3a9cc918595da70a6bdd323d0e376d621cb63159d5b9d3225dab25f",
+    "bytes": 2154,
+    "executed": false
+  }
+]

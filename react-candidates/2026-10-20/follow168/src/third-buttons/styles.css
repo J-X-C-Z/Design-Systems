@@ -1,0 +1,102 @@
+/* Independently adapted compositions 13–24. Source-sized faces inside 44px
+   native targets are an intentional touch-accessibility layout change. */
+.fr7.fr7-third-button {
+  --tb-face-height: 32px; --tb-face-radius: var(--fr-control-radius, 8px);
+  --tb-face-padding: 10px; --tb-face-gap: 6px;
+  display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center;
+  box-sizing: border-box; min-width: 44px; min-height: 44px; max-width: 100%;
+  margin: 0; padding: 0; border: 0; border-radius: var(--tb-face-radius);
+  background: transparent; color: var(--fr-ink, #252420); cursor: pointer;
+  font-family: var(--ds-font, system-ui, sans-serif); font-size: 14px;
+  font-weight: var(--ds-weight, 600); line-height: 1.35; text-align: center;
+  vertical-align: middle; touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+}
+.fr7-third-button > .fr7-tb-face {
+  display: inline-flex; align-items: center; justify-content: center;
+  position: relative; box-sizing: border-box; min-height: var(--tb-face-height);
+  min-width: 0; max-width: 100%; gap: var(--tb-face-gap); padding: 3px var(--tb-face-padding);
+  border: 1px solid transparent; border-radius: var(--tb-face-radius);
+  background: var(--fr-accent, #8b593b); color: var(--fr-accent-ink, #fff);
+  transition: background-color 150ms ease-out, transform 120ms ease-out;
+}
+.fr7-third-button .fr7-tb-label { min-width: 0; overflow-wrap: anywhere; white-space: normal; }
+.fr7-third-button .fr7-tb-icon { display: block; flex: 0 0 auto; width: 16px; height: 16px; pointer-events: none; }
+.fr7-third-button:focus-visible, .fr7.fr7-third-link:focus-visible { outline: 3px solid var(--ds-focus, var(--fr-accent, #8b593b)); outline-offset: 3px; }
+.fr7-third-button:disabled, .fr7-third-button[aria-disabled="true"], .fr7-third-link[aria-disabled="true"] { cursor: not-allowed; }
+.fr7-third-button:disabled > .fr7-tb-face, .fr7-third-button[aria-disabled="true"] > .fr7-tb-face, .fr7-third-link[aria-disabled="true"] > span { opacity: .5; }
+.fr7-third-button:active:not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { transform: translateY(1px); }
+.fr7-third-button[aria-invalid="true"] > .fr7-tb-face { border-color: var(--fr-danger, #a0153e); }
+.fr7-tb-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+/* 13: leading solid copy icon, tint plus visible accent outline. */
+.fr7-third-button-13 > .fr7-tb-face { border-color: var(--ds-info, #244b66); background: var(--ds-info-bg, #e5edf4); color: var(--ds-info, #244b66); }
+.fr7-third-button-13:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face,
+.fr7-third-button-16:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { background: var(--ds-info-bg, #e5edf4); box-shadow: inset 0 0 0 1px currentColor; }
+/* 14: actual dashed source border; no hard shadow or actual download. */
+.fr7-third-button-14 > .fr7-tb-face { border: 1px dashed var(--fr-accent, #8b593b); background: var(--ds-info-bg, #e5edf4); color: var(--fr-ink, #252420); box-shadow: none; }
+/* 15: inert truncated URL in 48px shell, independent 32px square copy face. */
+.fr7.fr7-third-url { display: inline-flex; align-items: center; box-sizing: border-box; min-height: 48px; max-width: 100%; padding: 1px 4px; gap: 0; border: 1px solid var(--fr-line, #bcb4a8); border-radius: 8px; background: var(--fr-surface, #fff); }
+.fr7-third-url > .fr7-tb-url { min-width: 0; max-width: 224px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 0; padding: 0 4px; font: 14px/1.4 var(--ds-font, system-ui, sans-serif); color: var(--fr-muted, #6b6259); }
+.fr7.fr7-third-button-15 { --tb-face-radius: 8px; --tb-face-padding: 0; }
+.fr7-third-button-15 > .fr7-tb-face { width: 32px; height: 32px; }
+.fr7-third-button-15:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { background: color-mix(in srgb, var(--fr-accent, #8b593b) 90%, var(--fr-surface, #fff)); }
+/* 16: soft save action without the explicit border of 13. */
+.fr7-third-button-16 > .fr7-tb-face { background: var(--ds-info-bg, #e5edf4); color: var(--ds-info, #244b66); }
+/* 17: warning tone is distinct from accent and destructive tones. */
+.fr7-third-button-17 > .fr7-tb-face { --tb-icon-cutout: var(--ds-warning-bg, #fff4ce); background: var(--ds-warning-bg, #fff4ce); color: var(--ds-warning, #815c00); }
+.fr7-third-button-17:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { background: var(--ds-warning-bg, #fff4ce); box-shadow: inset 0 0 0 1px currentColor; }
+/* 18: two square-corner actions, 16px inter-target gap and trailing circle icons. */
+.fr7.fr7-third-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; min-width: 0; max-width: 100%; }
+.fr7.fr7-third-button-18 { --tb-face-radius: 0px; --tb-face-gap: 8px; }
+.fr7-third-button-18[data-member="cancel"] > .fr7-tb-face { --tb-icon-cutout: var(--ds-danger-bg, #f8e7eb); background: var(--ds-danger-bg, #f8e7eb); color: var(--fr-danger, #a0153e); }
+.fr7-third-button-18[data-member="confirm"] > .fr7-tb-face { --tb-icon-cutout: var(--ds-success-bg, #e8f3e5); background: var(--ds-success-bg, #e8f3e5); color: var(--ds-success, #386929); }
+.fr7-third-button-18[data-member="cancel"]:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { background: var(--ds-danger-bg, #f8e7eb); box-shadow: inset 0 0 0 1px currentColor; }
+.fr7-third-button-18[data-member="confirm"]:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { background: var(--ds-success-bg, #e8f3e5); box-shadow: inset 0 0 0 1px currentColor; }
+/* 19: source uses -translate-x-1 = 4px, with 180ms ease-in-out. */
+.fr7-third-button-19 > .fr7-tb-face { background: transparent; color: var(--fr-ink, #252420); }
+.fr7-third-button-19:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { background: var(--ds-subtle, #f5f0e8); }
+.fr7-third-button-19 .fr7-tb-back { transition: transform 180ms ease-in-out; }
+.fr7-third-button-19:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) .fr7-tb-back { transform: translateX(-4px); }
+/* 20: native link, centered 80% underline on hover and keyboard focus. */
+.fr7.fr7-third-link { display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 44px; min-width: 44px; max-width: 100%; padding: 0 10px; border-radius: var(--fr-control-radius, 8px); color: var(--ds-info, #244b66); background: transparent; text-decoration: none; font: var(--ds-weight, 600) 14px/1.4 var(--ds-font, system-ui, sans-serif); }
+.fr7-third-link > .fr7-tb-link-label { position: relative; min-width: 0; padding: 7px 0; overflow-wrap: anywhere; white-space: normal; }
+.fr7-third-link > .fr7-tb-link-label::after { content: ''; position: absolute; bottom: 6px; left: 50%; width: 80%; height: 1px; background: currentColor; transform-origin: center; transform: translateX(-50%) scaleX(0); transition: transform 300ms ease-in-out; }
+.fr7-third-link:is(:hover,:focus-visible):not([aria-disabled="true"]) > .fr7-tb-link-label::after { transform: translateX(-50%) scaleX(1); }
+/* 21 vs 22: four icon targets in a wrapping row vs four full-width labeled rows. */
+.fr7.fr7-third-social { display: flex; min-width: 0; max-width: 100%; gap: 16px; }
+.fr7.fr7-third-social-21 { flex-wrap: wrap; align-items: center; justify-content: center; }
+.fr7.fr7-third-social-22 { width: 100%; max-width: 224px; flex-direction: column; justify-content: center; }
+.fr7-third-button .fr7-tb-brand { width: 20px; height: 20px; flex: 0 0 auto; pointer-events: none; }
+.fr7-third-button-21 > .fr7-tb-face, .fr7-third-button-22 > .fr7-tb-face { border-color: var(--fr-line, #bcb4a8); background: var(--fr-surface, #fff); color: var(--fr-ink, #252420); }
+.fr7-third-button-21 > .fr7-tb-face { width: 32px; height: 32px; padding: 0; }
+.fr7.fr7-third-button-22 { width: 100%; --tb-face-gap: 8px; }
+.fr7-third-button-22 > .fr7-tb-face { width: 100%; }
+.fr7-third-button-22[data-provider="google"] > .fr7-tb-face { color: var(--ds-danger, #a0153e); border-color: var(--ds-danger, #a0153e); background: var(--ds-danger-bg, #f8e7eb); }
+.fr7-third-button-22[data-provider="facebook"] > .fr7-tb-face { color: var(--ds-info, #244b66); border-color: var(--ds-info, #244b66); background: var(--ds-info-bg, #e5edf4); }
+.fr7-third-button-22[data-provider="x"] > .fr7-tb-face, .fr7-third-button-22[data-provider="github"] > .fr7-tb-face { border-color: var(--fr-ink, #252420); background: color-mix(in srgb, var(--fr-ink, #252420) 5%, var(--fr-surface, #fff)); }
+.fr7-third-button .fr7-tb-provider-label { display: flex; justify-content: center; flex: 1 1 0%; min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+.fr7-third-button-21:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { background: var(--ds-subtle, #f5f0e8); }
+.fr7-third-button-22:is(:hover,:focus-visible):not(:disabled):not([aria-disabled="true"]) > .fr7-tb-face { box-shadow: inset 0 0 0 1px currentColor; }
+/* 23: trailing overflowing 20px pill at top/right -10px; count is host-owned. */
+.fr7-third-button-23 > .fr7-tb-face { border-color: var(--fr-line, #bcb4a8); background: var(--fr-surface, #fff); color: var(--fr-ink, #252420); }
+.fr7-third-button-23 .fr7-tb-badge { position: absolute; top: -10px; right: -10px; display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; min-width: 20px; min-height: 20px; padding: 0 4px; border-radius: 999px; background: var(--fr-danger, #a0153e); color: var(--fr-surface, #fff); font-size: 12px; line-height: 20px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* 24: 24px image/fallback before label, exactly 4px source left padding. */
+.fr7.fr7-third-button-24 { --tb-face-radius: 8px; }
+.fr7-third-button-24 > .fr7-tb-face { padding-left: 4px; }
+.fr7-third-button .fr7-tb-avatar { position: relative; width: 24px; height: 24px; flex: 0 0 auto; display: inline-flex; border-radius: 50%; }
+.fr7-tb-avatar-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
+.fr7-tb-avatar-fallback { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border-radius: 50%; color: var(--fr-ink, #252420); background: var(--ds-subtle, #f5f0e8); font-size: 12px; }
+@media (prefers-reduced-motion: reduce) {
+  .fr7-third-button > .fr7-tb-face, .fr7-third-button .fr7-tb-back, .fr7-third-link > .fr7-tb-link-label::after { transition: none; }
+  .fr7-third-button:active > .fr7-tb-face, .fr7-third-button-19:is(:hover,:focus-visible) .fr7-tb-back { transform: none !important; }
+}
+:is([data-motion="off"], [data-motion="reduce"]) .fr7-third-button > .fr7-tb-face,
+:is([data-motion="off"], [data-motion="reduce"]) .fr7-third-button .fr7-tb-back,
+:is([data-motion="off"], [data-motion="reduce"]) .fr7-third-link > .fr7-tb-link-label::after { transition: none; }
+:is([data-motion="off"], [data-motion="reduce"]) .fr7-third-button:active > .fr7-tb-face,
+:is([data-motion="off"], [data-motion="reduce"]) .fr7-third-button-19:is(:hover,:focus-visible) .fr7-tb-back { transform: none !important; }
+@media (forced-colors: active) {
+  .fr7-third-button > .fr7-tb-face { background: ButtonFace !important; color: ButtonText !important; border-color: ButtonText !important; }
+  .fr7-third-button:disabled > .fr7-tb-face, .fr7-third-button[aria-disabled="true"] > .fr7-tb-face { color: GrayText !important; border-color: GrayText !important; opacity: 1; }
+  .fr7-third-button-23 .fr7-tb-badge { background: Highlight; color: HighlightText; border: 1px solid ButtonText; }
+  .fr7.fr7-third-link { color: LinkText; }
+}

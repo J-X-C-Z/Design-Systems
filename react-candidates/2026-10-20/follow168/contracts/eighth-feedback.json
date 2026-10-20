@@ -1,0 +1,76 @@
+{
+  "ids": [
+    "dialog-02",
+    "textarea-08"
+  ],
+  "sources": [
+    {
+      "id": "textarea-08",
+      "kind": "exact_variant",
+      "source_path": "src/data/contents/components/textarea/variant-8.tsx",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/textarea/variant-8.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/textareas-one/sources/textarea-08.tsx",
+      "evidence_copy": "sources/src/data/contents/components/textarea/variant-8.tsx",
+      "pinned_git_blob_sha": "ffed6ee696c66fcdb31a8a3de5b9294f14423b06",
+      "recomputed_git_blob_sha": "ffed6ee696c66fcdb31a8a3de5b9294f14423b06",
+      "sha256": "8632ad2140a7c5afbf24bd25c4580d4014de16e680f380c5f56fb02be53e639f",
+      "bytes": 609,
+      "lines": 23,
+      "source_hash_verified": true,
+      "semantically_read_this_audit": true,
+      "executed": false,
+      "listed_in_prior_source_map": false
+    },
+    {
+      "id": "dialog-02",
+      "kind": "exact_variant",
+      "source_path": "src/data/contents/components/dialog/variant-2.tsx",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/dialog/variant-2.tsx",
+      "local_origin": "component-framework-adapters-20261014/shared/reference/dialog-02.tsx",
+      "evidence_copy": "sources/src/data/contents/components/dialog/variant-2.tsx",
+      "pinned_git_blob_sha": "99d52a2cf76dfff1478d033029358477c4289e49",
+      "recomputed_git_blob_sha": "99d52a2cf76dfff1478d033029358477c4289e49",
+      "sha256": "c58b8eedbd6f3ab640acf20e380e1683caa7007c7989e8453a346a2000c7608c",
+      "bytes": 2942,
+      "lines": 70,
+      "semantically_read_this_audit": true,
+      "executed": false
+    }
+  ],
+  "dependencies": "Exact original Radix-based AlertDialog/Label and native Textarea/Button primitive references retained; runtime independently uses React + HTMLDialogElement, no Radix/lucide installed.",
+  "dialog": {
+    "defaults": {
+      "open": false,
+      "trigger": "Alert Dialog (With Icon)",
+      "title": "Heads up!",
+      "cancel": "Cancel",
+      "confirm": "OK"
+    },
+    "description": "Full exact original prose, breaks and mailto:support@example.com retained. No mail link followed in tests.",
+    "identity": "One native button trigger, native dialog role alertdialog, real aria-labelledby/describedby; original nested button issue repaired. Original decorative Info glyph replaced by original inline SVG.",
+    "owner": "open/defaultOpen exclusive; onOpenChange(next,details) callback returns false to veto; state requests reconcile after owner commit. Callback details.id=dialog-02. Controlled owner commits authoritative, no promise to roll back consumer side effects.",
+    "action": "onConfirm/onCancel receive id,event,localOnly:true; false or event.preventDefault vetoes close. Disabled blocks opening and confirm while cancel/Escape remain reachable. No external operation is performed.",
+    "focus": "Native showModal modal semantics required; cancel autofocus; native close return focus with newer external focus preservation. Explicit Tab/ShiftTab edge wrapping supplements native within-dialog traversal. Native cancel event and unmodified Escape request dismissal, preserving controlled refusal.",
+    "keyboard": "onKeyDownCapture cancellation, composition and modifier guards honored. Native browser remains responsible for ordinary mid-list Tab and true top-layer inertness; not verified by jsdom.",
+    "lifecycle": "Unloading closes owned native dialog. Parent disable/unmount/new controlled value supersedes pending requests. Unexpected native close gets one controlled recovery, no infinite loop. Unsupported showModal/close reports visible alert and onNativeError, never silent nonmodal fallback.",
+    "callbacks": "Synchronous proposal API, not an asynchronous transaction. Request/action callback side effects are consumer-owned. Ancestor trigger preventDefault cancels pending uncontrolled opening; confirm/cancel consumer veto should be onConfirm/onCancel/onOpenChange."
+  },
+  "textarea": {
+    "defaults": {
+      "label": "Reason for request",
+      "placeholder": "Explain your request...",
+      "aria-invalid": true,
+      "description": "This field can’t be empty.",
+      "required": false
+    },
+    "meaning": "Static invalid example, no automatic validity algorithm or required inference. Typing does not clear error. Caller may explicitly override aria-invalid/description or add required.",
+    "native": "Forwarded textarea ref and native onChange/name/form/value/defaultValue/disabled/readOnly/maxLength attributes. value/defaultValue exclusive. Native reset/FormData semantics retained. onChange is observational, not custom cancel callback.",
+    "accessibility": "Generated unique id; label association; original static error associated through aria-describedby, merges caller description IDs. Decorative/error styles follow semantic danger tokens.",
+    "unsupported": "children/dangerouslySetInnerHTML and onValueChange not public APIs."
+  },
+  "visual": "Original Follow editorial tokens/local fonts, spare 2px corners, orange Info notice, ink border. Not original pixel equivalence or a Liquid/Pixel skin.",
+  "prior82": "No old component implementation edited. Native dialog reconciliation approach copied and separately namespaced from reviewed Dialog01; tests/evidence specific to new Dialog02.",
+  "tests": "React/JSDOM with explicitly documented showModal/close/focus shim; no native browser top-layer/keyboard/inertness/visual acceptance.",
+  "browserAssertions": 0,
+  "formalAccepted": 0
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "radio-group-07",
+    "source": "sources/src/data/contents/components/radiogroup/variant-7.tsx",
+    "path": "sources/src/data/contents/components/radiogroup/variant-7.tsx",
+    "sha256": "7f478b4679babfc52f57fc77130de557a73a75f2a70080f41161a709d36a7cd2",
+    "gitBlob": "3fbee0580218a61bac6e4e4f3547a3cd1f7dc63c"
+  },
+  {
+    "id": "radio-group-08",
+    "source": "sources/src/data/contents/components/radiogroup/variant-8.tsx",
+    "path": "sources/src/data/contents/components/radiogroup/variant-8.tsx",
+    "sha256": "a2fa2adb8512b247a0ff48fd7748fbfa63020090d3c6d92c3d8d7b5d9d85b684",
+    "gitBlob": "dbe68f2270dc453911c2de01552eae0b5a5e42e7"
+  },
+  {
+    "id": "radio-group-09",
+    "source": "sources/src/data/contents/components/radiogroup/variant-9.tsx",
+    "path": "sources/src/data/contents/components/radiogroup/variant-9.tsx",
+    "sha256": "9dcc2c354b8186d6f6e90f30fa79329cad17b70f13b814bf57f5f3a063b4dc28",
+    "gitBlob": "b16740676bd6ffc8140dc4495ae8f39be06f5de4"
+  },
+  {
+    "id": "radio-group-10",
+    "source": "sources/src/data/contents/components/radiogroup/variant-10.tsx",
+    "path": "sources/src/data/contents/components/radiogroup/variant-10.tsx",
+    "sha256": "0be401a40eefa3a5a0887f22539d6e0457788ce10feaec2f612a98069b2a625b",
+    "gitBlob": "bae99289f657ce5d183edac75b72032aee70dd3b"
+  },
+  {
+    "id": "radio-group",
+    "source": "sources/src/components/base-ui/radio-group.tsx",
+    "path": "sources/src/components/base-ui/radio-group.tsx",
+    "sha256": "c0a2fc2aa4329c36e871439db562273dde72240be2bd18245b7b518f0c9b13d0",
+    "gitBlob": "6bb6b5d89a332defe728db7f5c1a01caf9e4e4a7"
+  },
+  {
+    "id": "label",
+    "source": "sources/src/components/base-ui/label.tsx",
+    "path": "sources/src/components/base-ui/label.tsx",
+    "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50",
+    "gitBlob": "f752f82ba6be3cf9a1015c1d61df5de00a1eaf66"
+  },
+  {
+    "id": "badge",
+    "source": "sources/src/components/base-ui/badge.tsx",
+    "path": "sources/src/components/base-ui/badge.tsx",
+    "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d",
+    "gitBlob": "cacff11dce8d09f7882da68c971b3a7e5be3e78a"
+  }
+]

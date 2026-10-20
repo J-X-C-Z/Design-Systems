@@ -1,0 +1,21 @@
+{
+  "sourceBlobs": 7,
+  "licenseBlob": true,
+  "realReactNamedExports": [
+    "Tabs01",
+    "Accordion01",
+    "Dialog01"
+  ],
+  "authoredTestGroups": 37,
+  "mandatoryTestGroups": 34,
+  "optionalFlushSyncGroups": 3,
+  "pythonOnly": true,
+  "lexicalDelimiterCheck": "Pygments JSX/JS balanced delimiters only; not a grammar parser",
+  "JSXCompile": "not_run",
+  "Node": "not_run",
+  "JSDOM": "not_run",
+  "CSSOM": "not_run",
+  "browser": "not_run",
+  "nativeAcceptanceInherited": false,
+  "oldReactAcceptanceInherited": false
+}

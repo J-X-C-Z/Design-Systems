@@ -1,0 +1,31 @@
+{
+  "ids": [
+    "alerts-07",
+    "alerts-08"
+  ],
+  "source": "reference/fourteenth-controls/SOURCE-PROOF.json",
+  "sourceDefaults": {
+    "alerts-07": {
+      "open": true,
+      "progress": [
+        0,
+        50
+      ],
+      "delayMs": 100,
+      "cancel": "no handler",
+      "uploadAnother": "disabled",
+      "close": "hide"
+    },
+    "alerts-08": {
+      "open": true,
+      "later": "no handler",
+      "updateNow": "no handler",
+      "close": "hide"
+    }
+  },
+  "nativeButtonType": "omitted; submit in form",
+  "a11yAdjustment": "Progress primitive value omitted from original Root; explicit numeric aria-valuenow now follows display",
+  "externalServices": false,
+  "style": "Follow editorial paper/ink/accent, original SVG replacements",
+  "browser": "not_run"
+}

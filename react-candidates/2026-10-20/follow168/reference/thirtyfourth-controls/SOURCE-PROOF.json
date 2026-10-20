@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tabs-22",
+    "source": "sources/src/data/contents/components/tabs/variant-22.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-22.tsx",
+    "sha256": "5fc6b373496a0f509aee24effa71bbae1c1afac90c5267eac89997cf15087830",
+    "gitBlob": "24d67f457e86f0d3aca08f364c62390eb383e75e"
+  },
+  {
+    "id": "tabs-23",
+    "source": "sources/src/data/contents/components/tabs/variant-23.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-23.tsx",
+    "sha256": "d4c392bc3cd8f8c9299678f19134d2cc5d5872283fee368837add484b9f64cf5",
+    "gitBlob": "f549c35a079952cad04fedabd12fd2b4486d186c"
+  },
+  {
+    "id": "tabs-24",
+    "source": "sources/src/data/contents/components/tabs/variant-24.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-24.tsx",
+    "sha256": "fc781fbc21fa4429cb691d5f052ed5ee7b0ddaf3aff169441bb6803fa24ff4b9",
+    "gitBlob": "6d5765965fc6fe670247dd2ecd52b4f7f5c4a58c"
+  },
+  {
+    "id": "tabs-25",
+    "source": "sources/src/data/contents/components/tabs/variant-25.tsx",
+    "path": "sources/src/data/contents/components/tabs/variant-25.tsx",
+    "sha256": "df71bbee91fab35ca9e04eeb6aa9aacc0e759ca2381d6d3d09292661a46e5f26",
+    "gitBlob": "9e5dae2569665bdc5939433895d1d9092a88b706"
+  },
+  {
+    "id": "tabs",
+    "source": "sources/src/components/base-ui/tabs.tsx",
+    "path": "sources/src/components/base-ui/tabs.tsx",
+    "sha256": "7fee349ecb5e0ccf06469d30b54132e47d33b9a41d0a651e42620e1bfc240f70",
+    "gitBlob": "ea49f44ff6281ea6e5328761c668cee76cad4a9d"
+  },
+  {
+    "id": "badge",
+    "source": "sources/src/components/base-ui/badge.tsx",
+    "path": "sources/src/components/base-ui/badge.tsx",
+    "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d",
+    "gitBlob": "cacff11dce8d09f7882da68c971b3a7e5be3e78a"
+  }
+]

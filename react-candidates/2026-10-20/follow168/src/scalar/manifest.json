@@ -1,0 +1,221 @@
+{
+  "stage": "public-setter-reset-sync-static-awaiting-rerun",
+  "fileCount": 43,
+  "files": [
+    {
+      "file": "contracts/scalar.json",
+      "bytes": 24817,
+      "sha256": "0917483a09aa0b737cc3758bfac60916b126de11556e225ce2314203b66ac74b"
+    },
+    {
+      "file": "src/scalar/README.md",
+      "bytes": 7630,
+      "sha256": "78c4b3a4a241857f816e73f0e23fa8d9e97c7b86a7b5831e6458c785275d678d"
+    },
+    {
+      "file": "src/scalar/examples.jsx",
+      "bytes": 3439,
+      "sha256": "400000e004df5ad92afcf8ee5b033e1f359232f01be0b6a0b66b600247fa0686"
+    },
+    {
+      "file": "src/scalar/index.d.ts",
+      "bytes": 3640,
+      "sha256": "6fde30fafc893455c501b5499e8cd8cc0a02cbe6930b4a487d94c740c91e9db2"
+    },
+    {
+      "file": "src/scalar/index.jsx",
+      "bytes": 23402,
+      "sha256": "387ab61b44c368c54052a9b4ce35da753d7828bdbe5ce813944b3562eacfbae7"
+    },
+    {
+      "file": "src/scalar/revisions/before-canceled-click-repair/REVISION.json",
+      "bytes": 480,
+      "sha256": "6d169509c0982235a825a32bcc6d8ae0d8710a02d8207bc17c097add202eec5a"
+    },
+    {
+      "file": "src/scalar/revisions/before-canceled-click-repair/index.jsx",
+      "bytes": 22575,
+      "sha256": "d35928388c9c6b78481c5ff97184107140757c8c6415c32b34ef95cc36560be2"
+    },
+    {
+      "file": "src/scalar/revisions/before-canceled-click-repair/manifest.json",
+      "bytes": 6108,
+      "sha256": "4984385b74147e51568075c6790b85c8b478b66d2723f0eeb927b4fb4ccdb30e"
+    },
+    {
+      "file": "src/scalar/revisions/before-canceled-click-repair/scalar-tests.cjs",
+      "bytes": 27069,
+      "sha256": "f83ab2ca5e3411077f3374bbe1d951fe118220a1abfc839a750b75715d978e19"
+    },
+    {
+      "file": "src/scalar/revisions/before-public-setter-reset-sync/REVISION.json",
+      "bytes": 587,
+      "sha256": "8305fcf7164af2a72775e43941c0c167c927ce44784ee983655e672944a48d61"
+    },
+    {
+      "file": "src/scalar/revisions/before-public-setter-reset-sync/index.jsx",
+      "bytes": 22981,
+      "sha256": "0448b3284d7812fc9bd9b5b45003a739cdb4407f0477a5e81e0a2a55e831c7e1"
+    },
+    {
+      "file": "src/scalar/revisions/before-public-setter-reset-sync/manifest.json",
+      "bytes": 6914,
+      "sha256": "29ec90dd875a94d3165a2bd9e49af609be2926e3dcc50dcdd53d2612d68130bd"
+    },
+    {
+      "file": "src/scalar/revisions/before-public-setter-reset-sync/scalar-tests.cjs",
+      "bytes": 27069,
+      "sha256": "f83ab2ca5e3411077f3374bbe1d951fe118220a1abfc839a750b75715d978e19"
+    },
+    {
+      "file": "src/scalar/revisions/before-switch-key-guard/REVISION.json",
+      "bytes": 390,
+      "sha256": "25da646f3feb89fc3fe8c0f6d0765dffcb1476421f6f490327134b23f45ac24d"
+    },
+    {
+      "file": "src/scalar/revisions/before-switch-key-guard/index.jsx",
+      "bytes": 22494,
+      "sha256": "66141cee6a028a9d70aa3278db731666c6cb545f666b0abe3286c8033066141f"
+    },
+    {
+      "file": "src/scalar/revisions/before-switch-key-guard/manifest.json",
+      "bytes": 5336,
+      "sha256": "e14496d6e3ff993af8cae167329fc2d1a06ffbafbf01755cb660311b7e5a0bf8"
+    },
+    {
+      "file": "src/scalar/revisions/before-switch-key-guard/scalar-tests.cjs",
+      "bytes": 26607,
+      "sha256": "ebba8fe2bf5258f4370c77f655d946b2ac7e59308c60cf68a590bcf67e6cfb09"
+    },
+    {
+      "file": "src/scalar/source-hashes.json",
+      "bytes": 9327,
+      "sha256": "ca58bec19bc4715b94b5d7d3f5cd2841a456801288bce9a876c8b7a429c66832"
+    },
+    {
+      "file": "src/scalar/sources/button/index.ts",
+      "bytes": 9942,
+      "sha256": "c6449443bccf9ea212059f48027cd69f6826e9dab87621d2fb2af86346f9c90f"
+    },
+    {
+      "file": "src/scalar/sources/button/variant-1.tsx",
+      "bytes": 167,
+      "sha256": "e4ac95287cff23db3483e22db7887aac13c243fc9faec085d5700c7e27995009"
+    },
+    {
+      "file": "src/scalar/sources/button/variant-2.tsx",
+      "bytes": 563,
+      "sha256": "5e1a77af2b5efb5005066a3866f8f70fef5f7d3b6266bee11b34782f80629152"
+    },
+    {
+      "file": "src/scalar/sources/button/variant-3.tsx",
+      "bytes": 269,
+      "sha256": "0cd4d57deb9e0927c8e99ef567857c5af4ff1205b7f7c2f965c91b91fa4fca2f"
+    },
+    {
+      "file": "src/scalar/sources/checkbox/index.ts",
+      "bytes": 4394,
+      "sha256": "82a8bf4c8536fef7f828bffd7ee4ac222e790e409c84f9eede8b9b03db21c486"
+    },
+    {
+      "file": "src/scalar/sources/checkbox/variant-1.tsx",
+      "bytes": 894,
+      "sha256": "3821a8b08bf33fd6d06fac8e700f0d3f54b7b8bd1b4d7c94ce0735b2fd789827"
+    },
+    {
+      "file": "src/scalar/sources/input-mask/index.ts",
+      "bytes": 1783,
+      "sha256": "44ab71963df35fe9eb36c393eacb7f1e127c1f0cb1010e1e96b16b7b8fe9a58d"
+    },
+    {
+      "file": "src/scalar/sources/input-mask/variant-1.tsx",
+      "bytes": 1112,
+      "sha256": "a3290bdb16b6102a3e91c9ee12c5e1966ed745c95595423bb4fdcf846d29f299"
+    },
+    {
+      "file": "src/scalar/sources/native-reference.json",
+      "bytes": 1399,
+      "sha256": "6489159bbf88b05175bfc62be4b9324b696f35c5a754033341427d02698a9189"
+    },
+    {
+      "file": "src/scalar/sources/primitives/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "file": "src/scalar/sources/primitives/bun.lock",
+      "bytes": 241083,
+      "sha256": "5ccca50391892148a50c043b3af7f99be9e617802d4485f009d27a01f8ce95cd"
+    },
+    {
+      "file": "src/scalar/sources/primitives/button.tsx",
+      "bytes": 3337,
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512"
+    },
+    {
+      "file": "src/scalar/sources/primitives/checkbox.tsx",
+      "bytes": 1386,
+      "sha256": "fe464e891f08d990d5ed7973f22ddd130d3da9c446de476754f32a4182ce773d"
+    },
+    {
+      "file": "src/scalar/sources/primitives/input.tsx",
+      "bytes": 968,
+      "sha256": "c4902a8c4967875e30d9f1198175f4f5348a0cdd17e21b5e3d7c9e81d2996ed9"
+    },
+    {
+      "file": "src/scalar/sources/primitives/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "file": "src/scalar/sources/primitives/package.json",
+      "bytes": 4203,
+      "sha256": "bb874d7ca4b1b87f8957ef4c996c607656f63ba489ddb9f916a9bd65f4da474a"
+    },
+    {
+      "file": "src/scalar/sources/primitives/switch.tsx",
+      "bytes": 1748,
+      "sha256": "f3a1ed75be07bda7e391e20631c123e066bcadaced2d6340d8e4531ecec63434"
+    },
+    {
+      "file": "src/scalar/sources/primitives/textarea.tsx",
+      "bytes": 842,
+      "sha256": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9"
+    },
+    {
+      "file": "src/scalar/sources/primitives/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "file": "src/scalar/sources/switch/index.ts",
+      "bytes": 5277,
+      "sha256": "31184107cb035da0ff6d0b6155113fd0c28532cc1266705066aa8488f29c4898"
+    },
+    {
+      "file": "src/scalar/sources/switch/variant-1.tsx",
+      "bytes": 338,
+      "sha256": "e695dc7b87d02a6737f7681deef5fa2162383276d9a8874a04bbc7fea93dc89b"
+    },
+    {
+      "file": "src/scalar/sources/textarea/index.ts",
+      "bytes": 5746,
+      "sha256": "4122a117d99d95e9758939de5507a911b68dc433e38727cf1cf333d25fd735e5"
+    },
+    {
+      "file": "src/scalar/sources/textarea/variant-1.tsx",
+      "bytes": 329,
+      "sha256": "71b8de949aa2264ae9f3b3c75a2990ee0dc04aca51174dab71b47d785569d89b"
+    },
+    {
+      "file": "src/scalar/styles.css",
+      "bytes": 5792,
+      "sha256": "113e6a688f3f5c554b0c2f3dc930a6f6082f5920d45e2dc57bababa54c9453b4"
+    },
+    {
+      "file": "tests/scalar-tests.cjs",
+      "bytes": 28132,
+      "sha256": "b5e1e814a96e2adec816d91381466f32e6df3b53aa5d093e73df9bfed3462468"
+    }
+  ]
+}

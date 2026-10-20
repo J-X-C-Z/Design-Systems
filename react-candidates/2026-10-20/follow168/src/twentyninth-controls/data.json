@@ -1,0 +1,148 @@
+{
+  "collapsible-05": {
+    "priceRange": {
+      "maxPlaceholder": "1200",
+      "minPlaceholder": "50"
+    },
+    "ratings": [
+      {
+        "id": "rating-4",
+        "value": 4
+      },
+      {
+        "id": "rating-3",
+        "value": 3
+      },
+      {
+        "id": "rating-2",
+        "value": 2
+      }
+    ],
+    "brands": [
+      {
+        "id": "brand-apple",
+        "label": "Apple"
+      },
+      {
+        "id": "brand-samsung",
+        "label": "Samsung"
+      },
+      {
+        "id": "brand-google",
+        "label": "Google"
+      },
+      {
+        "id": "brand-oneplus",
+        "label": "OnePlus"
+      },
+      {
+        "id": "brand-xiaomi",
+        "label": "Xiaomi"
+      }
+    ],
+    "batterySizes": [
+      {
+        "id": "battery-3500",
+        "label": "3500mAh"
+      },
+      {
+        "id": "battery-4000",
+        "label": "4000mAh"
+      },
+      {
+        "id": "battery-5000",
+        "label": "5000mAh"
+      },
+      {
+        "id": "battery-6000",
+        "label": "6000mAh"
+      }
+    ]
+  },
+  "collapsible-06": [
+    {
+      "question": "How do I share the latest draft with my team?",
+      "answer": "Open the project, copy the review link, and send it to your team from the share panel. Everyone with access will see the latest saved version."
+    },
+    {
+      "question": "Can I pause a review and come back later?",
+      "answer": "Yes. Your comments, selected screens, and review status stay saved so you can return later without starting over."
+    }
+  ],
+  "collapsible-08": {
+    "primaryLinks": [
+      {
+        "icon": "UserIcon",
+        "label": "Profile"
+      }
+    ],
+    "sections": [
+      {
+        "icon": "SettingsIcon",
+        "label": "Settings",
+        "items": [
+          "Appearance",
+          "Notifications",
+          "Billing"
+        ]
+      },
+      {
+        "icon": "UsersIcon",
+        "label": "Workspace",
+        "items": [
+          "Members",
+          "Teams",
+          "Projects"
+        ]
+      }
+    ],
+    "footerLink": {
+      "icon": "LogOutIcon",
+      "label": "Log out"
+    }
+  },
+  "collapsible-09": {
+    "addressFields": [
+      {
+        "id": "full-name",
+        "label": "Full Name",
+        "type": "text"
+      },
+      {
+        "id": "pin-code",
+        "label": "Pin Code",
+        "type": "number"
+      },
+      {
+        "id": "city-name",
+        "label": "City",
+        "type": "text"
+      },
+      {
+        "id": "landmark",
+        "label": "Landmark",
+        "type": "text"
+      }
+    ],
+    "deliveryOptions": [
+      {
+        "value": "1",
+        "label": "Standard 3-5 Days",
+        "description": "Friday, 15 June - Tuesday, 19 June",
+        "price": "Free"
+      },
+      {
+        "value": "2",
+        "label": "Express",
+        "description": "Friday, 15 June - Sunday, 17 June",
+        "price": "$5.00"
+      },
+      {
+        "value": "3",
+        "label": "Overnight",
+        "description": "Tomorrow",
+        "price": "$10.00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+const path=require('path'),fs=require('fs'),assert=require('assert/strict');const dep=process.env.LOCAL_DEPENDENCIES,{JSDOM}=require(path.join(dep,'jsdom'));
+const dom=new JSDOM('<main></main>',{pretendToBeVisual:true,url:'https://fixture.invalid'});Object.assign(global,{window:dom.window,document:dom.window.document,IS_REACT_ACT_ENVIRONMENT:true});const React=require(path.join(dep,'react')),{act}=React,{createRoot}=require(path.join(dep,'react-dom/client')),{flushSync}=require(path.join(dep,'react-dom')),h=React.createElement,C=require('../qa/fifth-runtime.cjs'),root=createRoot(document.querySelector('main'));let seq=0,checks=[],errors=[];window.addEventListener('error',e=>{errors.push(e.error.message);e.preventDefault()});
+const ok=(v,m)=>{assert.ok(v,m);checks.push(m)},render=x=>act(()=>root.render(x)),tick=()=>act(()=>new Promise(r=>setTimeout(r,12))),click=x=>act(()=>x.click());
+const settings=['auto-start','auto-update'],skills=['frontend-engineering','business-insights','visual-branding'],keys=[...settings,...skills,'mail','cloud'];
+const component=(key,props)=>settings.includes(key)?h(C.Checkbox13,{items:{[key]:props}}):skills.includes(key)?h(C.Checkbox14,{items:{[key]:props}}):h(C[key==='mail'?'Switch13':'Switch14'],props);
+const item=key=>document.querySelectorAll('input')[settings.includes(key)?settings.indexOf(key):skills.includes(key)?skills.indexOf(key):0];
+const mount=(key,props={})=>{render(h(C.SevenThemeProvider,{theme:'follow'},h('form',{id:'f',key:++seq},component(key,props))));return item(key)};
+(async()=>{
+render(h(C.SevenThemeProvider,null,h(C.Checkbox13),h(C.Checkbox14),h(C.Switch13),h(C.Switch14)));let all=[...document.querySelectorAll('input')];ok(all.length===7,'four IDs seven native fields');ok(all.map(x=>x.checked).join(',')==='true,false,false,false,false,false,false','source defaults exact');ok(new Set(all.map(x=>x.id)).size===7,'seven unique ids');
+ok(document.querySelectorAll('ul>li').length===3,'skill list semantics');ok(document.querySelectorAll('.fr5-symbol').length===5,'three skills mail cloud original symbols');
+for(const n of all){ok(document.querySelector('label[for="'+n.id+'"]'),'every default control labelled')}
+for(const key of keys){
+ let calls=[];let n=mount(key,{defaultChecked:false,name:key,value:'yes',onCheckedChange:(v,d)=>calls.push([v,d])});n.focus();click(n);await tick();ok(n.checked&&calls.length===1,key+' one activation');ok(document.activeElement===n,key+' focus retained');ok(new window.FormData(n.form).get(key)==='yes',key+' form success');act(()=>n.form.reset());await tick();ok(!n.checked&&calls.length===1,key+' native reset no callback');
+ click(n);await tick();n.form.addEventListener('reset',e=>e.preventDefault(),{once:true});act(()=>n.form.reset());await tick();ok(n.checked,key+' canceled reset');
+ n=mount(key,{defaultChecked:false,onCheckedChange:(_,d)=>d.cancel()});click(n);await tick();ok(!n.checked,key+' details cancel');
+ n=mount(key,{defaultChecked:false,onClick:e=>e.preventDefault()});click(n);await tick();ok(!n.checked,key+' native cancel');
+ n=mount(key,{defaultChecked:false,onCheckedChange:()=>{throw Error('expected '+key)}});click(n);await tick();ok(!n.checked,key+' exception rollback');
+ n=mount(key,{checked:false,onCheckedChange:()=>{}});click(n);await tick();ok(!n.checked,key+' controlled refusal');
+ for(const blocked of [{disabled:true},{readOnly:true}]){let count=0;n=mount(key,{...blocked,defaultChecked:false,onCheckedChange:()=>count++});click(n);await tick();ok(!n.checked&&!count,key+' blocked '+JSON.stringify(blocked));}
+ function Owner(){const [v,set]=React.useState(false);return h('form',null,component(key,{checked:v,onCheckedChange:(x,d)=>{flushSync(()=>set(x));d.cancel()}}));}
+ render(h(C.SevenThemeProvider,null,h(Owner,{key:++seq})));n=item(key);click(n);await tick();ok(n.checked,key+' explicit parent wins cancel');act(()=>n.form.reset());await tick();ok(n.checked,key+' controlled survives reset');
+ n=mount(key,{defaultChecked:false});const event=new window.KeyboardEvent('keydown',{key:'Enter',bubbles:true,cancelable:true});act(()=>n.dispatchEvent(event));await tick();ok(n.checked===['mail','cloud'].includes(key),key+' Enter contract');const repeat=new window.KeyboardEvent('keydown',{key:'Enter',repeat:true,bubbles:true,cancelable:true});act(()=>n.dispatchEvent(repeat));await tick();ok(n.checked===['mail','cloud'].includes(key),key+' repeat stable');
+ const ref=React.createRef();n=mount(key,{defaultChecked:false,ref,label:'创作标签',description:'完整说明','aria-describedby':'external'});ok(n===ref.current,key+' native ref');ok(n.getAttribute('aria-describedby').startsWith('external '),key+' description merged');click(document.querySelector('label[for="'+n.id+'"]'));await tick();ok(n.checked,key+' label exactly once');
+ render(h(C.SevenThemeProvider,null,h('form',{id:'external',key:++seq}),component(key,{name:'external',form:'external',defaultChecked:false})));n=item(key);click(n);await tick();ok(new window.FormData(document.querySelector('form')).get('external')==='on',key+' external form');act(()=>document.querySelector('form').reset());await tick();ok(!n.checked,key+' external reset');
+ render(h('div',{onClick:e=>e.preventDefault()},component(key,{defaultChecked:false})));n=item(key);click(n);await tick();ok(!n.checked,key+' ancestor cancellation');
+ render(null);await tick();
+}
+for(const key of [...settings,...skills]){let n=mount(key,{defaultChecked:false,defaultIndeterminate:true});ok(n.indeterminate,key+' mixed initial');click(n);await tick();ok(n.checked&&!n.indeterminate,key+' mixed resolves');act(()=>n.form.reset());await tick();ok(!n.checked&&n.indeterminate,key+' reset restores axes');}
+act(()=>root.unmount());dom.window.close();fs.writeFileSync(path.join(__dirname,'../qa/FIFTH-MODEL.json'),JSON.stringify({kind:'React/JSDOM code model only',passed:checks.length,checks,expectedErrors:errors,browser:'not_run'},null,2));console.log(checks.length,'new controls model assertions');
+})().catch(e=>{console.error(e);process.exitCode=1});

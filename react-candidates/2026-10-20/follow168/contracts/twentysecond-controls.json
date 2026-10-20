@@ -1,0 +1,33 @@
+{
+  "ids": [
+    "pagination-07",
+    "textarea-12"
+  ],
+  "originalProof": "reference/twentysecond-controls/SOURCE-PROOF.json",
+  "pagination": {
+    "links": [
+      "First page:#",
+      "Previous:#",
+      "1:#1",
+      "2:#2",
+      "3:#3",
+      "Next:#",
+      "Last page:#"
+    ],
+    "sourceCurrent": 2,
+    "state": "source static page2, no own state/onPageChange/defaultPage; explicit page prop adapts active marker",
+    "visual": "rounded16px tray,12px links,1.05scale active,first/last shadow and owned double chevrons",
+    "extensions": "disabled/disabledLinks remove href/tabstop,aria-disabled andprevent native clicks; no implicit boundarydisable, example explicit parentclamps1..3",
+    "keyboard": "native anchor navigation, not fake buttons; native cancellation semantics"
+  },
+  "textarea": {
+    "label": "Auto-generated summary",
+    "placeholder": "This content is generated automatically",
+    "defaultValue": "",
+    "disabled": "fixed true, typed disabled?:true; JS false ignored intentionally, original variant cannot be enabled",
+    "native": "value/defaultValue exclusive, owner can programmatically update; disabled fields excluded fromFormData andvalidation even if name/required supplied; uncontrolled native reset works, controlled reset retains owner",
+    "visual": "max384px,disabledopacity.7 and notallowed cursor, normal label not floating"
+  },
+  "example": "local fixed template only, noAI/network service",
+  "browser": 0
+}

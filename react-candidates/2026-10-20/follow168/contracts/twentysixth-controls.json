@@ -1,0 +1,12 @@
+{
+  "ids": [
+    "accordion-06",
+    "textarea-20"
+  ],
+  "originalProof": "reference/twentysixth-controls/SOURCE-PROOF.json",
+  "accordion": "Multiple default item-1; three canonical complete medical FAQ strings retained, not factual product claims. Leading plus/minus and calendar-clock/shield-check/heart-pulse icons are original inline SVG replacements. Native h3/button/region, unique IDs, type=button, closed content unmounted. Native reset leaves accordion state unchanged; no successful form fields. Controlled/uncontrolled exclusive values; owner release retains last owner value. Cancellable deferred changes and orientation/RTL keyboard focus; no Radix dependency. Source Radix measured-height transition is adapted to finite fade/translate; real layout and keyboard defaults not browser verified.",
+  "textarea": "Project details label; Describe your project requirements... placeholder; Include key goals, constraints, or expectations. fixed help. Native textarea semantics; empty, unnamed, not required by default. value/defaultValue exclusive. Helper ID is added to aria-describedby and composed with external IDs, a deliberate accessibility repair to original unassociated paragraph. Native label/ref/form/disabled/readonly/required/rows/maxlength/input/reset retained. Base field-sizing content/min64/radius8/max384 wrapper and primary20 focus-ring adaptation with extra visible outline for contrast; no artificial character cap or custom height loop. Native resize is not intercepted; max-width:100% intentionally constrains the field to its wrapper for responsive layout.",
+  "scope": "120 exact React IDs of849, seven themes not multiplied; Stage1 unique6 separate. No native/Flutter additions; no external services or publication.",
+  "browser": 0,
+  "formalAcceptance": 0
+}

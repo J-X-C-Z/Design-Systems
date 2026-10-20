@@ -1,0 +1,6 @@
+{
+  "radio-group-07":{"initial":"beginner","groupLabel":"Experience level","items":[{"value":"beginner","label":"Beginner"},{"value":"Advanced","label":"Advanced"}]},
+  "radio-group-08":{"initial":"default","groupLabel":"Radio size","items":[{"value":"default","label":"Default"},{"value":"medium","label":"Medium"},{"value":"large","label":"Large"}]},
+  "radio-group-09":{"initial":"warning","groupLabel":"Status tone","items":[{"value":"warning","label":"Warning"},{"value":"positive","label":"Positive"},{"value":"neutral","label":"Neutral"}]},
+  "radio-group-10":{"initial":"2","groupLabel":"Growth plan","items":[{"value":"1","label":"Starter","price":"Free"},{"value":"2","label":"Growth","price":"$19/mo","badge":"Popular"},{"value":"3","label":"Scale","price":"Custom"}]}
+}

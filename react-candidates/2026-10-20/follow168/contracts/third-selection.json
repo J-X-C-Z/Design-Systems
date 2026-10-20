@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "slice": "react-third-selection-eight",
+  "idCount": 8,
+  "nativeFieldCount": 19,
+  "canonicalFile": "duolingo-functional-v140-20261013/src/catalog-849.json",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "implementation": "src/third-selection/index.jsx",
+  "types": "src/third-selection/index.d.ts",
+  "styles": "src/third-selection/styles.css",
+  "tests": "tests/third-selection-tests.cjs",
+  "common": {
+    "implementation": "Actual React JSX composition of the existing actual React Checkbox01/Switch01 shared core. Each of19 native inputs owns its own React scalar lifecycle. No DOM mount adapter, iframe, innerHTML, network, storage or executed upstream dependency.",
+    "ownership": "checked!==undefined owns the Boolean model; runtime null is controlled false. undefined releases last effective model. defaultChecked is mount-only reset baseline, including explicit false. ownerRevision is an explicit command even on same values. Committed value/ownership/revision or safety change wins over older proposal and reset work. Plain same-value metadata renders are not owner commands.",
+    "events": "Member onClick and native input-target click listeners may veto before proposal. onChange receives the original React event even for canceled activation. Member onChange then group onChange unless synthetic/native defaultPrevented, then onCheckedChange proposal. Return values are ignored. preventDefault in onCheckedChange is too late to veto. onChange/Click/proposal exceptions propagate, no failed proposal commits, and current model redraws. Ordinary event observers can finish after synchronous unmount, but scalar proposal cannot commit after it.",
+    "synchronousOwner": "flushSync/committed parent acceptance, same-value ownerRevision command, control takeover then release, disabled/readOnly, keyed replacement or unmount supersedes older callback work. Batched state requests take effect when committed; no claim that an uncommitted render already owns the field.",
+    "reset": "Native form.reset default actions, cancellation during reset dispatch, controlled owner state, mount baseline, multiple valid/canceled resets, same-model post-return click, dispatch-time edit, committed owner/revision changes, replacement and unmount use shared scalar observer. Reset is silent, not a proposal. Current native el.form determines association. Form transfer retires old reset. Newly mounted scalar fields can join an active same-family reset.",
+    "resetLimits": "Late preventDefault after dispatch, earlier stopImmediatePropagation blocking the observer, or direct property changes without native editing events are outside guarantee. Canceled click listeners later than React processing cannot retroactively retract an emitted proposal.",
+    "groupAPI": "Exactly the declared source member slots, each BooleanFieldProps|null and matching keyRef. Group ref is div. No aggregate checked/defaultChecked/onCheckedChange/value/defaultValue/values/defaultValues/onValueChange/name API; runtime ignored. Group disabled/readOnly OR member safety; member false cannot bypass. form defaults to group and member explicit form (including empty string) wins. ownerRevision is combined without collapsing undefined/-0.",
+    "forms": "Each member supports native name/value/required/form/ref. Unchecked/disabled omitted from FormData; readOnly checked remains successful. Same names permit repeated successful values. Group does not synthesize hidden aggregate inputs.",
+    "accessibility": "Stable native inputs with useId-prefix ids, labels/help/errors associated, role=switch on switch inputs, group heading/description/error associations. Native checkbox Space handled by browser; Enter extension for switches respects veto/repeat/modifiers/composition/safety. Group source no-label controls receive translated aria-label. A supplied visible member label becomes the native accessible name unless the caller explicitly supplies aria-label; source-only aria-label is added only when no visible label exists.",
+    "visualScope": "Source shape/cardinality/state differences preserved with Follow semantic token adaptation; other six themes are portability fixtures, not six additional849 completion claims. Static14-mode color checks distinguish external text/surface/focus from fixed-white active icon. 44px hit targets explicitly differ from source visual-only dimensions.",
+    "pending": [
+      "Independent final-byte review/test",
+      "Real browser native keyboard/labels/reset/focus/accessibility tree",
+      "Rendered desktop/narrow/RTL/forced-colors/reduced-motion14-mode visual review"
+    ],
+    "acceptance": "Candidate only; no formal accepted IDs and no Flutter/native credit."
+  },
+  "items": [
+    {
+      "id": "checkbox-05",
+      "export": "Checkbox05",
+      "source": {
+        "id": "checkbox-05",
+        "source_path": "src/data/contents/components/checkbox/variant-5.tsx",
+        "file": "sources/checkbox-05.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/checkbox-05.tsx",
+        "git_blob": "7f441160a5b7dca1692060bf22d3af28c3d697bd",
+        "sha256": "c9baaa675e895002258f61ddaa3822c9d0134c80f6fe25955f4c4c7527af4d92",
+        "bytes": 1419,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-5.tsx"
+      },
+      "sourceStructure": [
+        "Three independent source controls in standard/medium/large order, 16/20/24px squares, initially all checked; no visible source label.",
+        "44px native hit area is an adapter enhancement; source blue is Follow accent fill/on-accent pair."
+      ],
+      "api": {
+        "model": "Per-member BooleanFieldProps checked/defaultChecked/onCheckedChange, with native value only for submission.",
+        "defaultChecked": {
+          "standard": true,
+          "medium": true,
+          "large": true
+        },
+        "ref": "HTMLDivElement with separate member keyRef HTMLInputElement refs",
+        "members": [
+          "standard",
+          "medium",
+          "large"
+        ],
+        "presentation": "Group label/description/error; each member label/help/error independent."
+      },
+      "executionStatus": {
+        "sourceBytes": "rehashed_matches_pinned_catalog_and_local_map",
+        "semanticRead": true,
+        "author": "passed_current_revision_921_scenarios_1958_assertions_19_fields",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending",
+        "authorEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json"
+      }
+    },
+    {
+      "id": "checkbox-06",
+      "export": "Checkbox06",
+      "source": {
+        "id": "checkbox-06",
+        "source_path": "src/data/contents/components/checkbox/variant-6.tsx",
+        "file": "sources/checkbox-06.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/checkbox-06.tsx",
+        "git_blob": "4f1ef3805d9e8571df21513bc18bbd506b66dd43",
+        "sha256": "c7f43316dd38b140badd17560fbd27a6ebf48cf264361f0f4e6d67bc2f2e71d4",
+        "bytes": 1827,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-6.tsx"
+      },
+      "sourceStructure": [
+        "Three snack badges: Salad/Wrap/Juice localized 沙拉/卷饼/果汁; initial true/true/false.",
+        "Checked mark appears and label gains 20px start padding; unchecked mark disappears and padding collapses. Both states remain natively focusable, whole associated label badge clickable; focus ring is on badge even while mark is hidden."
+      ],
+      "api": {
+        "model": "Per-member BooleanFieldProps checked/defaultChecked/onCheckedChange, with native value only for submission.",
+        "defaultChecked": {
+          "salad": true,
+          "wrap": true,
+          "juice": false
+        },
+        "ref": "HTMLDivElement with separate member keyRef HTMLInputElement refs",
+        "members": [
+          "salad",
+          "wrap",
+          "juice"
+        ],
+        "presentation": "Group label/description/error; each member label/help/error independent."
+      },
+      "executionStatus": {
+        "sourceBytes": "rehashed_matches_pinned_catalog_and_local_map",
+        "semanticRead": true,
+        "author": "passed_current_revision_921_scenarios_1958_assertions_19_fields",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending",
+        "authorEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json"
+      }
+    },
+    {
+      "id": "checkbox-07",
+      "export": "Checkbox07",
+      "source": {
+        "id": "checkbox-07",
+        "source_path": "src/data/contents/components/checkbox/variant-7.tsx",
+        "file": "sources/checkbox-07.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/checkbox-07.tsx",
+        "git_blob": "ddf5df2e2d9616a813b23785fe7f68aad56b7633",
+        "sha256": "9187b4e75e45929061ecf9a4f8227b67f63588d626c47610ebb6c984c7364834",
+        "bytes": 1152,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-7.tsx"
+      },
+      "sourceStructure": [
+        "Single initially-checked checkbox with adjacent label and terms-and-conditions description.",
+        "Source description now has explicit aria-describedby association; generated id; independently customizable label/help/error."
+      ],
+      "api": {
+        "model": "Scalar BooleanFieldProps checked/defaultChecked/onCheckedChange; native value for submission.",
+        "defaultChecked": true,
+        "ref": "HTMLInputElement",
+        "presentation": "label/help/error independent; Checkbox07 source help defaults to terms-and-conditions description."
+      },
+      "executionStatus": {
+        "sourceBytes": "rehashed_matches_pinned_catalog_and_local_map",
+        "semanticRead": true,
+        "author": "passed_current_revision_921_scenarios_1958_assertions_19_fields",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending",
+        "authorEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json"
+      }
+    },
+    {
+      "id": "checkbox-08",
+      "export": "Checkbox08",
+      "source": {
+        "id": "checkbox-08",
+        "source_path": "src/data/contents/components/checkbox/variant-8.tsx",
+        "file": "sources/checkbox-08.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/checkbox-08.tsx",
+        "git_blob": "aa5d1897bb9015935d95f755be210fd4c53c69a1",
+        "sha256": "03385bcaed73f46368e46b4db24d80c2135606ce8e963df1afe41b722f9049fe",
+        "bytes": 1722,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-8.tsx"
+      },
+      "sourceStructure": [
+        "Team roles group heading localized 团队角色, with Design/Marketing/Product localized 设计/营销/产品.",
+        "Three independently-unchecked native checkboxes; horizontal layout wraps. Title is associated to role=group."
+      ],
+      "api": {
+        "model": "Per-member BooleanFieldProps checked/defaultChecked/onCheckedChange, with native value only for submission.",
+        "defaultChecked": {
+          "design": false,
+          "marketing": false,
+          "product": false
+        },
+        "ref": "HTMLDivElement with separate member keyRef HTMLInputElement refs",
+        "members": [
+          "design",
+          "marketing",
+          "product"
+        ],
+        "presentation": "Group label/description/error; each member label/help/error independent."
+      },
+      "executionStatus": {
+        "sourceBytes": "rehashed_matches_pinned_catalog_and_local_map",
+        "semanticRead": true,
+        "author": "passed_current_revision_921_scenarios_1958_assertions_19_fields",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending",
+        "authorEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json"
+      }
+    },
+    {
+      "id": "switch-05",
+      "export": "Switch05",
+      "source": {
+        "id": "switch-05",
+        "source_path": "src/data/contents/components/switch/variant-5.tsx",
+        "file": "sources/switch-05.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/switch-05.tsx",
+        "git_blob": "aefc3f364601d1c022687d494a7bf691191c68e1",
+        "sha256": "d7cbe9bece318d499dc6e0ac96785a8396b8caff95abdaed4e839a1613dfff82",
+        "bytes": 2300,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-5.tsx"
+      },
+      "sourceStructure": [
+        "Four independent source outline switches: destructive/success/info/warning, initially all true.",
+        "Round 32×18.4 track; semantic outline and shallow tone fill with colored thumb; source-only names localized; no invented visible labels."
+      ],
+      "api": {
+        "model": "Per-member BooleanFieldProps checked/defaultChecked/onCheckedChange, with native value only for submission.",
+        "defaultChecked": {
+          "destructive": true,
+          "success": true,
+          "info": true,
+          "warning": true
+        },
+        "ref": "HTMLDivElement with separate member keyRef HTMLInputElement refs",
+        "members": [
+          "destructive",
+          "success",
+          "info",
+          "warning"
+        ],
+        "presentation": "Group label/description/error; each member label/help/error independent."
+      },
+      "executionStatus": {
+        "sourceBytes": "rehashed_matches_pinned_catalog_and_local_map",
+        "semanticRead": true,
+        "author": "passed_current_revision_921_scenarios_1958_assertions_19_fields",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending",
+        "authorEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json"
+      }
+    },
+    {
+      "id": "switch-06",
+      "export": "Switch06",
+      "source": {
+        "id": "switch-06",
+        "source_path": "src/data/contents/components/switch/variant-6.tsx",
+        "file": "sources/switch-06.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/switch-06.tsx",
+        "git_blob": "c64ef7d1e55b89a8a8e8fb3be20027012535d57e",
+        "sha256": "aace85204cdd96b4428bc2c29e73bee99c3fdecb299c86b7d6190177749b6676",
+        "bytes": 316,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-6.tsx"
+      },
+      "sourceStructure": [
+        "Single initially-false mini switch; 32×12px borderless shallow track, 18px round bordered thumb overhanging track by 3px.",
+        "Native 44px target; role=switch; generated native id and localized accessible source name."
+      ],
+      "api": {
+        "model": "Scalar BooleanFieldProps checked/defaultChecked/onCheckedChange; native value for submission.",
+        "defaultChecked": false,
+        "ref": "HTMLInputElement",
+        "presentation": "label/help/error independent; Checkbox07 source help defaults to terms-and-conditions description."
+      },
+      "executionStatus": {
+        "sourceBytes": "rehashed_matches_pinned_catalog_and_local_map",
+        "semanticRead": true,
+        "author": "passed_current_revision_921_scenarios_1958_assertions_19_fields",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending",
+        "authorEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json"
+      }
+    },
+    {
+      "id": "switch-07",
+      "export": "Switch07",
+      "source": {
+        "id": "switch-07",
+        "source_path": "src/data/contents/components/switch/variant-7.tsx",
+        "file": "sources/switch-07.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/switch-07.tsx",
+        "git_blob": "2eba1a0a3db8e3cf313421e5663ed0ebba91caf6",
+        "sha256": "de761cc4df94ee1f882c0bd41bf232813748eae464289d8674fb2d262115d289",
+        "bytes": 768,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-7.tsx"
+      },
+      "sourceStructure": [
+        "Three independent switch sizes in small/medium/large order, initially false/false/false.",
+        "32×18.4 with16px thumb, 40×24 with20px thumb, 48×28 with24px thumb; 14/18/22px movement, mirrored RTL."
+      ],
+      "api": {
+        "model": "Per-member BooleanFieldProps checked/defaultChecked/onCheckedChange, with native value only for submission.",
+        "defaultChecked": {
+          "small": false,
+          "medium": false,
+          "large": false
+        },
+        "ref": "HTMLDivElement with separate member keyRef HTMLInputElement refs",
+        "members": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "presentation": "Group label/description/error; each member label/help/error independent."
+      },
+      "executionStatus": {
+        "sourceBytes": "rehashed_matches_pinned_catalog_and_local_map",
+        "semanticRead": true,
+        "author": "passed_current_revision_921_scenarios_1958_assertions_19_fields",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending",
+        "authorEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json"
+      }
+    },
+    {
+      "id": "switch-08",
+      "export": "Switch08",
+      "source": {
+        "id": "switch-08",
+        "source_path": "src/data/contents/components/switch/variant-8.tsx",
+        "file": "sources/switch-08.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/switch-08.tsx",
+        "git_blob": "964945931a1b002837403137b6d40d1d7dd76386",
+        "sha256": "531d7e11031987cfcd965d43748085a2942f55253c3774f33040c5393d07ff94",
+        "bytes": 1529,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-8.tsx"
+      },
+      "sourceStructure": [
+        "Single initially-true 56×28 switch with 26px white round thumb; 28px translation and300ms easing.",
+        "Both check and X inline-vector icons always present and decorative; source checked highlights right X, unchecked highlights left check. No inverted interpretation added.",
+        "Active icon uses fixed #151515 against fixed white thumb in all14 theme/modes; inactive icon uses semantic muted on subtle track. Local row top alignment keeps icons aligned with long external labels."
+      ],
+      "api": {
+        "model": "Scalar BooleanFieldProps checked/defaultChecked/onCheckedChange; native value for submission.",
+        "defaultChecked": true,
+        "ref": "HTMLInputElement",
+        "presentation": "label/help/error independent; Checkbox07 source help defaults to terms-and-conditions description."
+      },
+      "executionStatus": {
+        "sourceBytes": "rehashed_matches_pinned_catalog_and_local_map",
+        "semanticRead": true,
+        "author": "passed_current_revision_921_scenarios_1958_assertions_19_fields",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending",
+        "authorEvidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json"
+      }
+    }
+  ],
+  "authorResult": {
+    "scenarios": 921,
+    "assertions": 1958,
+    "nativeFields": 19,
+    "exitCode": 0,
+    "warnings": [],
+    "evidence": "evidence/2026-10-15T06-00-58-486Z-third-selection/third-selection.json",
+    "browser": false,
+    "trustedKeyboard": false,
+    "layout": false
+  }
+}

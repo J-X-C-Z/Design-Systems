@@ -1,0 +1,95 @@
+{
+  "version": "0.32.0-candidate.1",
+  "status": "Implemented source; full verification pending",
+  "ids": {
+    "tabs-14": {
+      "export": "Tabs14",
+      "values": [
+        "electronics",
+        "apparel",
+        "home",
+        "sports",
+        "beauty",
+        "auto",
+        "books",
+        "toys"
+      ],
+      "default": "electronics",
+      "orientation": "horizontal",
+      "identity": "All8 exact category names/icons/full paragraphs/emphasis. Uppercase filled rounded pills with active border, horizontally scrollable track, rounded border panels with matching icon headings. Native overflow replaces upstream ScrollArea geometry; no drag scrollbar equivalence claim."
+    },
+    "tabs-15": {
+      "export": "Tabs15",
+      "values": [
+        "residential",
+        "commercial",
+        "industrial"
+      ],
+      "default": "residential",
+      "orientation": "vertical",
+      "identity": "All3 exact property labels/icons/prose; vertical left rail active marker, small primary icon tile and {name} Real Estate heading; side-by-side responsive layout."
+    },
+    "tabs-16": {
+      "export": "Tabs16",
+      "values": [
+        "compute",
+        "storage",
+        "database"
+      ],
+      "default": "compute",
+      "orientation": "vertical",
+      "identity": "Muted rounded vertical track, indigo card, exact3 titles and complete plain-string descriptions. Retain one Deploy Service action per active panel as explicit native type=button.",
+      "actions": [
+        "deploy"
+      ]
+    },
+    "tabs-17": {
+      "export": "Tabs17",
+      "values": [
+        "telehealth",
+        "therapy",
+        "nutrition"
+      ],
+      "default": "telehealth",
+      "orientation": "vertical",
+      "identity": "Emerald vertical track/cards, exact3 fictional clinician names/specialties/full paragraphs; active panel retains Book Session and View Profile native type=button actions. Original unused status data retained but not invented as visible original UI.",
+      "actions": [
+        "book",
+        "profile"
+      ]
+    }
+  },
+  "shared": {
+    "state": "Exclusive exact-union|null controlled value or mount-only defaultValue. Controlled owner authoritative; release retains latest committed. No synthetic form fields; native reset does not change tab selection.",
+    "keyboard": "Default axis comes from each original:14horizontal,15–17vertical. Caller may override either axis, dir and loop. Automatic focus activation or manual arrows-only+Enter/Space activation; Home/End span all eligible items (all8 in14). Native Tab. Actual disabled/fieldset/CSS/hidden/inert/closed containers skipped, composition/modifiers ignored.",
+    "lifecycle": "Hidden associated panel shells persist, inactive content including action buttons unmounts. Conditional return from a closing focused panel/action only if still hidden and no explicit external focus. Reopened panel invalidates stale return; return focus never proposes a selection. Root/list/tab/panel/action React19 cleanup refs supported.",
+    "cancellation": "Selection trigger handlers/ancestors and onValueChange event.preventDefault/cancel/false can veto, with owner epoch captured before user handler. New owner/config/disable/unmount wins; descriptor restoration uses unchanged30 observation leases.",
+    "actionAPI": "Only16/17 expose per-value actionProps and onAction(action,details). details has exact id/value, original MouseEvent and button. Native actionProps.onClick runs synchronously; only after propagation does onAction notify an uncanceled, still-connected, still-current-owner intent. Snapshot epoch before user handler. Root disabled or per-action disabled suppresses intent. Per-tab disabled affects navigation only, not independent active-panel actions.",
+    "actionBoundary": "onAction is a local intent notification, not a default operation or owner setter. It has no boolean/cancel return contract; return values are ignored. Native handler/ancestor preventDefault can prevent notification before dispatch. Callback itself may choose whether to update an application receipt. No built-in network/deployment/booking/profile navigation, no artificial async success, no focus moved by action dispatch. Example parent shows accepted/refused local receipts.",
+    "actionKeyboard": "Actions retain native button Enter/Space/Tab semantics; no synthetic button keyboard activation layer. JSDOM action-click models are not trusted native-keyboard acceptance. Buttons never submit a host form.",
+    "a11y": "Unique reciprocal tab/panel IDs and roving tabindex, exact visible names with decorative local SVGs. Action names retained; caller attributes/ref allowed while fixed text/type/id/role protected.",
+    "style": "Distinct scoped structures,17 complete panels total, responsive overflow/layout, reduced motion and forced-color rules. Reuse unchanged thirtieth owner/availability code, no new tooltip."
+  },
+  "backwardRepair": {
+    "files": [
+      "src/fifth-selection/index.tsx",
+      "src/sixth-selection/index.tsx"
+    ],
+    "scope": "Only private optional-field type annotations to match existing explicitundefined handling; published API and runtime behavior unchanged. Prove type-erased module byte equality and all previous selection/reset/order regressions; source public entry passes strict+exactOptionalPropertyTypes in both resolutions."
+  },
+  "limits": [
+    "Source business/health/service text is static illustrative original content, not live facts, advice, services or availability",
+    "Native overflow substitutes Radix ScrollArea geometry for14; local SVGs substitute Tabler implementation",
+    "No browser layout/AT/trusted native input/scroll geometry acceptance",
+    "Constituent panels/icons/actions do not add canonical IDs"
+  ],
+  "accounting": {
+    "before": 140,
+    "after": 144,
+    "remaining": 705,
+    "panels": 17,
+    "formalAccepted": 0
+  },
+  "actionOrdering": "A preceding accepted noncontrolled selection uses logical value before React commit to invalidate old-panel action; controlled rejected proposals retain current panel. Actions notify once after native/ancestor handlers and cancellation; no synthetic keyboard action.",
+  "styleBoundary": "Follow provider dark palette, data-motion off, prefers-reduced-motion and forced-colors scoped CSS are present; browser layout/contrast/AT acceptance0."
+}

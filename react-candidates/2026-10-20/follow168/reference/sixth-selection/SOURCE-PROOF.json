@@ -1,0 +1,73 @@
+{
+  "revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "sources": [
+    {
+      "id": "switch-15",
+      "kind": "exact_variant",
+      "source_path": "src/data/contents/components/switch/variant-15.tsx",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-15.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/switch-15.tsx",
+      "evidence_copy": "sources/src/data/contents/components/switch/variant-15.tsx",
+      "pinned_git_blob_sha": "1440d0352ea28e01765f0e76af34ce48397df64a",
+      "recomputed_git_blob_sha": "1440d0352ea28e01765f0e76af34ce48397df64a",
+      "sha256": "a17f0e10a5905d38d2ac927b5ac9e5cd04cbdc1538d63642669fab2275b58014",
+      "bytes": 664,
+      "lines": 26,
+      "source_hash_verified": true,
+      "semantically_read_this_audit": true,
+      "executed": false,
+      "listed_in_prior_source_map": false
+    },
+    {
+      "id": "switch-16",
+      "kind": "exact_variant",
+      "source_path": "src/data/contents/components/switch/variant-16.tsx",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-16.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/switch-16.tsx",
+      "evidence_copy": "sources/src/data/contents/components/switch/variant-16.tsx",
+      "pinned_git_blob_sha": "b040d8df9a29163174ef3ce845ec8aa8f46da8f1",
+      "recomputed_git_blob_sha": "b040d8df9a29163174ef3ce845ec8aa8f46da8f1",
+      "sha256": "21ce131a94b168d9ecf3bfd89ac381053de56b3001d1b719c8f7fcd4466b7b46",
+      "bytes": 1273,
+      "lines": 48,
+      "source_hash_verified": true,
+      "semantically_read_this_audit": true,
+      "executed": false,
+      "listed_in_prior_source_map": false
+    },
+    {
+      "id": "switch-17",
+      "kind": "exact_variant",
+      "source_path": "src/data/contents/components/switch/variant-17.tsx",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-17.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/switch-17.tsx",
+      "evidence_copy": "sources/src/data/contents/components/switch/variant-17.tsx",
+      "pinned_git_blob_sha": "be6f9a7cdd1fab211739b98c83da4310c24fde75",
+      "recomputed_git_blob_sha": "be6f9a7cdd1fab211739b98c83da4310c24fde75",
+      "sha256": "3fcd5940259da708e932295520c06b5c1bfd27261a350cea3e810177e05f38ac",
+      "bytes": 812,
+      "lines": 33,
+      "source_hash_verified": true,
+      "semantically_read_this_audit": true,
+      "executed": false,
+      "listed_in_prior_source_map": false
+    },
+    {
+      "id": "switch-18",
+      "kind": "exact_variant",
+      "source_path": "src/data/contents/components/switch/variant-18.tsx",
+      "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-18.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-four/sources/switch-18.tsx",
+      "evidence_copy": "sources/src/data/contents/components/switch/variant-18.tsx",
+      "pinned_git_blob_sha": "21b152bc263e530a7e355e02928bd02dd7278db5",
+      "recomputed_git_blob_sha": "21b152bc263e530a7e355e02928bd02dd7278db5",
+      "sha256": "f1e8acfd63eebb53c9573e34a62932b000a41016bd028442132b862a1684d3b4",
+      "bytes": 1112,
+      "lines": 44,
+      "source_hash_verified": true,
+      "semantically_read_this_audit": true,
+      "executed": false,
+      "listed_in_prior_source_map": false
+    }
+  ]
+}

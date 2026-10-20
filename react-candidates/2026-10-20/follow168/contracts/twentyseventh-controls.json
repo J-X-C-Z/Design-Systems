@@ -1,0 +1,15 @@
+{
+  "ids": ["accordion-08", "accordion-09", "accordion-10", "accordion-11"],
+  "originalProof": "reference/twentyseventh-controls/SOURCE-PROOF.json",
+  "sharedBehavior": "Four distinct named multiple-open components, default item-1. Complete canonical fixed text per ID. value/defaultValue exclusive; normalization/source ordering; native type=button and non-form reset semantics; controlled acceptance/refusal/release; deferred false/cancel/synthetic/native/ancestor cancellation; live disabled/fieldset/firstlegend; Arrow/Home/End orientation/RTL/loop; IME/modifier guards; ref cleanup; owner updates/unmount invalidate queued work; preserve intentionally moved outside focus.",
+  "variants": {
+    "accordion-08": "Learning journey/curriculum/community titles, subtitles and full bodies. Three subject outline SVGs in 40px bordered tiles, trailing plus rotates45deg on open; open and closed both retain same plus glyph. No external icons.",
+    "accordion-09": "Property listings/inquiry handoff/visits. Separated rounded6px bordered cards with source8px gaps and expanded shadow. Leading right/down chevrons switch with expansion; content indented48px.",
+    "accordion-10": "Itinerary/support/multi-city planning. Grouped rounded12px bordered container, trailing plus/minus toggle and blue expanded title; local Follow palette adaptation with dark blue readable token. Exact original strings retained.",
+    "accordion-11": "Reservation updates/staff requests/check-in peaks. Separate rounded6px padded cards with trailing down/up chevrons; expanded neutral background and200ms finite color transition. Exact original strings retained."
+  },
+  "adaptation": "Independent React behavior rather than Radix dependency. CSS finite reveal replaces measured Radix height animation. Local line icons and Follow editorial styling, no pixel-equivalence promise. Reduced motion and forced colors paths. Native Enter/Space/default action, browser layout, touch, IME and screen-reader behavior need real browser/device verification.",
+  "scope": "124/849 exact React IDs; seven themes do not multiply coverage. Stage1 unique6 separate. No native/Flutter, service actions or external requests.",
+  "browser": 0,
+  "formalAcceptance": 0
+}

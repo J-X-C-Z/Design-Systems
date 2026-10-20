@@ -1,0 +1,155 @@
+{
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalFile": "duolingo-functional-v140-20261013/src/catalog-849.json",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "sourceMap": "reference-ui-upload-20261014-1338/follow-full-849-20261014/ledger/local-pinned-source-map.json",
+  "sources": [
+    {
+      "id": "checkbox-05",
+      "source_path": "src/data/contents/components/checkbox/variant-5.tsx",
+      "file": "sources/checkbox-05.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/checkbox-05.tsx",
+      "git_blob": "7f441160a5b7dca1692060bf22d3af28c3d697bd",
+      "sha256": "c9baaa675e895002258f61ddaa3822c9d0134c80f6fe25955f4c4c7527af4d92",
+      "bytes": 1419,
+      "semantic_read": true,
+      "executed": false,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-5.tsx"
+    },
+    {
+      "id": "checkbox-06",
+      "source_path": "src/data/contents/components/checkbox/variant-6.tsx",
+      "file": "sources/checkbox-06.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/checkbox-06.tsx",
+      "git_blob": "4f1ef3805d9e8571df21513bc18bbd506b66dd43",
+      "sha256": "c7f43316dd38b140badd17560fbd27a6ebf48cf264361f0f4e6d67bc2f2e71d4",
+      "bytes": 1827,
+      "semantic_read": true,
+      "executed": false,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-6.tsx"
+    },
+    {
+      "id": "checkbox-07",
+      "source_path": "src/data/contents/components/checkbox/variant-7.tsx",
+      "file": "sources/checkbox-07.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/checkbox-07.tsx",
+      "git_blob": "ddf5df2e2d9616a813b23785fe7f68aad56b7633",
+      "sha256": "9187b4e75e45929061ecf9a4f8227b67f63588d626c47610ebb6c984c7364834",
+      "bytes": 1152,
+      "semantic_read": true,
+      "executed": false,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-7.tsx"
+    },
+    {
+      "id": "checkbox-08",
+      "source_path": "src/data/contents/components/checkbox/variant-8.tsx",
+      "file": "sources/checkbox-08.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/checkbox-08.tsx",
+      "git_blob": "aa5d1897bb9015935d95f755be210fd4c53c69a1",
+      "sha256": "03385bcaed73f46368e46b4db24d80c2135606ce8e963df1afe41b722f9049fe",
+      "bytes": 1722,
+      "semantic_read": true,
+      "executed": false,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-8.tsx"
+    },
+    {
+      "id": "switch-05",
+      "source_path": "src/data/contents/components/switch/variant-5.tsx",
+      "file": "sources/switch-05.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/switch-05.tsx",
+      "git_blob": "aefc3f364601d1c022687d494a7bf691191c68e1",
+      "sha256": "d7cbe9bece318d499dc6e0ac96785a8396b8caff95abdaed4e839a1613dfff82",
+      "bytes": 2300,
+      "semantic_read": true,
+      "executed": false,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-5.tsx"
+    },
+    {
+      "id": "switch-06",
+      "source_path": "src/data/contents/components/switch/variant-6.tsx",
+      "file": "sources/switch-06.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/switch-06.tsx",
+      "git_blob": "c64ef7d1e55b89a8a8e8fb3be20027012535d57e",
+      "sha256": "aace85204cdd96b4428bc2c29e73bee99c3fdecb299c86b7d6190177749b6676",
+      "bytes": 316,
+      "semantic_read": true,
+      "executed": false,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-6.tsx"
+    },
+    {
+      "id": "switch-07",
+      "source_path": "src/data/contents/components/switch/variant-7.tsx",
+      "file": "sources/switch-07.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/switch-07.tsx",
+      "git_blob": "2eba1a0a3db8e3cf313421e5663ed0ebba91caf6",
+      "sha256": "de761cc4df94ee1f882c0bd41bf232813748eae464289d8674fb2d262115d289",
+      "bytes": 768,
+      "semantic_read": true,
+      "executed": false,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-7.tsx"
+    },
+    {
+      "id": "switch-08",
+      "source_path": "src/data/contents/components/switch/variant-8.tsx",
+      "file": "sources/switch-08.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-three/sources/switch-08.tsx",
+      "git_blob": "964945931a1b002837403137b6d40d1d7dd76386",
+      "sha256": "531d7e11031987cfcd965d43748085a2942f55253c3774f33040c5393d07ff94",
+      "bytes": 1529,
+      "semantic_read": true,
+      "executed": false,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-8.tsx"
+    }
+  ],
+  "primitives": [
+    {
+      "source_path": "src/components/base-ui/checkbox.tsx",
+      "file": "sources/primitive-checkbox.tsx",
+      "git_blob": "cec7a77c3d5212c21f74099d8366dbfa0d77ac81",
+      "sha256": "fe464e891f08d990d5ed7973f22ddd130d3da9c446de476754f32a4182ce773d",
+      "bytes": 1386,
+      "semantic_read": true,
+      "executed": false
+    },
+    {
+      "source_path": "src/components/base-ui/switch.tsx",
+      "file": "sources/primitive-switch.tsx",
+      "git_blob": "9600e949febdecb39614f16ca0460ec272174c72",
+      "sha256": "f3a1ed75be07bda7e391e20631c123e066bcadaced2d6340d8e4531ecec63434",
+      "bytes": 1748,
+      "semantic_read": true,
+      "executed": false
+    },
+    {
+      "source_path": "src/components/base-ui/label.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-dialog-multifield-fix-20261015/release/source-snapshot/batches/combobox-one/sources/primitives/label.tsx",
+      "file": "sources/primitive-label.tsx",
+      "git_blob": "f752f82ba6be3cf9a1015c1d61df5de00a1eaf66",
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50",
+      "bytes": 592,
+      "semantic_read": true,
+      "executed": false
+    },
+    {
+      "source_path": "src/components/base-ui/badge.tsx",
+      "local_origin": "reference-ui-upload-20261014-1338/follow-dialog-multifield-fix-20261015/release/source-snapshot/batches/combobox-one/sources/primitives/badge.tsx",
+      "file": "sources/primitive-badge.tsx",
+      "git_blob": "cacff11dce8d09f7882da68c971b3a7e5be3e78a",
+      "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d",
+      "bytes": 1865,
+      "semantic_read": true,
+      "executed": false
+    }
+  ],
+  "license": {
+    "file": "LICENSE.upstream",
+    "reusedLocalNotice": "follow-react-seven-batch03-20261015/src/disclosure/LICENSE.upstream",
+    "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0",
+    "text": "MIT; Copyright (c) 2026 Watermelon Platform Contributors",
+    "independentlyFetched": false,
+    "git_blob": "c76bf56983389c53194eecc9d088ac8de34debe1",
+    "pinned_tree_verified": true,
+    "treeEvidence": "duolingo-layered-flow-v164-staging-20261014/research/upstream-tree.json",
+    "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/LICENSE"
+  }
+}

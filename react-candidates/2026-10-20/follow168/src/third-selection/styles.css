@@ -1,0 +1,95 @@
+/* Source-specific styling. Import scalar/styles.css first. 44px targets are an explicit adapter enhancement. */
+.fr7-third-selection { min-width: 0; max-width: 100%; }
+.fr7-third-selection .fr7-selection-members { display: flex; align-items: flex-start; flex-wrap: wrap; gap: .75rem; }
+.fr7-third-selection .fr7-selection-member { min-width: 0; max-width: 100%; }
+.fr7-third-selection .fr7-selection-heading { margin-bottom: 1rem; }
+.fr7-third-selection .fr7-group-description { margin-bottom: .75rem; }
+.fr7-third-selection .fr7-group-error { margin-top: .5rem; }
+.fr7-third-selection .fr7-checkbox .fr7-check-visual { width: 16px; height: 16px; border-radius: 4px; }
+.fr7-third-selection .fr7-checkbox .fr7-check-input:checked + .fr7-check-visual::after { inset: 2px 4px 4px; }
+.fr7-checkbox-05 .fr7-selection-member-medium .fr7-check-visual { width: 20px; height: 20px; }
+.fr7-checkbox-05 .fr7-selection-member-large .fr7-check-visual { width: 24px; height: 24px; }
+.fr7-checkbox-05 .fr7-selection-member-medium .fr7-check-input:checked + .fr7-check-visual::after { inset: 3px 5px 5px; }
+.fr7-checkbox-05 .fr7-selection-member-large .fr7-check-input:checked + .fr7-check-visual::after { inset: 4px 7px 7px; }
+/* Snack badges preserve disappearing check + collapsing label indentation, without hiding the focus target. */
+.fr7-checkbox-06 .fr7-selection-members { gap: .625rem; }
+.fr7-checkbox-06 .fr7-check-row { position: relative; min-height: 48px; min-width: 44px; padding: .75rem; gap: 0; border: 1px solid transparent; border-radius: 8px; background: var(--ds-subtle, #e9e7e0); }
+.fr7-checkbox-06 .fr7-check-control { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: auto; }
+.fr7-checkbox-06 .fr7-check-visual { position: absolute; inset-inline-start: .5rem; top: 50%; transform: translateY(-50%); }
+.fr7-checkbox-06 .fr7-check-input + .fr7-check-visual { opacity: 0; }
+.fr7-checkbox-06 .fr7-check-input:checked + .fr7-check-visual { opacity: 1; }
+.fr7-checkbox-06 .fr7-label { position: static; padding-inline-start: 0; cursor: pointer; user-select: none; }
+.fr7-checkbox-06 .fr7-label::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.fr7-checkbox-06 .fr7-check-row:has(.fr7-check-input:checked) .fr7-label { padding-inline-start: 20px; }
+.fr7-checkbox-06 .fr7-check-row:has(.fr7-check-input:focus-visible) { outline: 2px solid var(--ds-focus, #151515); outline-offset: 3px; }
+.fr7-checkbox-06 .fr7-check-input:focus-visible + .fr7-check-visual { outline: none; box-shadow: none; }
+.fr7-checkbox-06 .fr7-check-row:has(.fr7-check-input:disabled) { opacity: .55; }
+.fr7-checkbox-06 .fr7-check-row:has(.fr7-check-input:disabled) .fr7-label { cursor: not-allowed; }
+.fr7-checkbox-06 .fr7-check-row:has([aria-readonly="true"]) .fr7-label { cursor: default; }
+/* Adjacent explanatory column, not a duplicate label or help row beneath the whole control. */
+.fr7-checkbox-07 { max-width: 384px; }
+.fr7-checkbox-07 > .fr7-field { display: grid; grid-template-columns: 44px minmax(0, 1fr); column-gap: .75rem; row-gap: .375rem; }
+.fr7-checkbox-07 .fr7-check-row { display: contents; }
+.fr7-checkbox-07 .fr7-check-control { grid-column: 1; grid-row: 1 / span 3; align-self: start; }
+.fr7-checkbox-07 .fr7-label { grid-column: 2; padding-top: .625rem; }
+.fr7-checkbox-07 .fr7-help, .fr7-checkbox-07 .fr7-error { grid-column: 2; }
+.fr7-checkbox-08 .fr7-selection-members { column-gap: 1.25rem; row-gap: .625rem; }
+/* Shared round track; all native fields keep an at-least-44px activation target. */
+.fr7-third-selection .fr7-switch .fr7-check-visual { width: 32px; height: 18.4px; border-radius: 999px; }
+.fr7-third-selection .fr7-switch .fr7-check-visual::after { width: 16px; height: 16px; left: 0; top: .2px; border-radius: 999px; background: var(--fr-local-ink); transform: translateX(0); }
+.fr7-third-selection .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(14px); background: var(--fr-accent-ink, #fff); }
+.fr7-third-selection:dir(rtl) .fr7-switch .fr7-check-visual::after { left: auto; right: 0; }
+.fr7-third-selection:dir(rtl) .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(-14px); }
+/* Four outline tracks retain distinct semantic colors, shallow fill, colored thumb. */
+.fr7-switch-05 .fr7-selection-member-destructive { --fr-outline-tone: var(--ds-danger, #a0153e); --fr-outline-bg: var(--ds-danger-bg, #f8e7eb); }
+.fr7-switch-05 .fr7-selection-member-success { --fr-outline-tone: var(--ds-success, #285336); --fr-outline-bg: var(--ds-success-bg, #e4eee3); }
+.fr7-switch-05 .fr7-selection-member-info { --fr-outline-tone: var(--ds-info, #244b66); --fr-outline-bg: var(--ds-info-bg, #e5edf4); }
+.fr7-switch-05 .fr7-selection-member-warning { --fr-outline-tone: var(--ds-warning, #755000); --fr-outline-bg: var(--ds-warning-bg, #f8edcf); }
+.fr7-switch-05 .fr7-switch .fr7-check-input:checked + .fr7-check-visual { border-color: var(--fr-outline-tone); background: var(--fr-outline-bg); }
+.fr7-switch-05 .fr7-switch .fr7-check-visual::after { border: 1px solid var(--fr-line, #73736b); }
+.fr7-switch-05 .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { background: var(--fr-outline-tone); border-color: var(--fr-local-surface); }
+.fr7-switch-05 .fr7-switch .fr7-check-input:focus-visible + .fr7-check-visual { outline-color: var(--fr-outline-tone); }
+/* Mini: 12px track, 18px thumb overhangs 3px above and below. */
+.fr7-switch-06 .fr7-switch .fr7-check-visual { height: 12px; border: none; background: var(--ds-subtle, #e9e7e0); }
+.fr7-switch-06 .fr7-switch .fr7-check-input:checked + .fr7-check-visual { background: var(--fr-accent, #151515); }
+.fr7-switch-06 .fr7-switch .fr7-check-visual::after { width: 18px; height: 18px; top: -3px; border: 1px solid var(--fr-line, #73736b); }
+.fr7-switch-06 .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(14px); }
+.fr7-switch-06:dir(rtl) .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(-14px); }
+/* Three source dimensions; larger switches use the source's 18px/22px thumb travel. */
+.fr7-switch-07 .fr7-selection-member-medium .fr7-check-visual { width: 40px; height: 24px; }
+.fr7-switch-07 .fr7-selection-member-medium .fr7-check-visual::after { width: 20px; height: 20px; top: 1px; }
+.fr7-switch-07 .fr7-selection-member-medium .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(18px); }
+.fr7-switch-07 .fr7-selection-member-large .fr7-check-control { width: 48px; }
+.fr7-switch-07 .fr7-selection-member-large .fr7-check-visual { width: 48px; height: 28px; }
+.fr7-switch-07 .fr7-selection-member-large .fr7-check-visual::after { width: 24px; height: 24px; top: 1px; }
+.fr7-switch-07 .fr7-selection-member-large .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(22px); }
+.fr7-switch-07:dir(rtl) .fr7-selection-member-medium .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(-18px); }
+.fr7-switch-07:dir(rtl) .fr7-selection-member-large .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(-22px); }
+/* Two persistent Feather-shaped indicators. White thumb uses fixed dark icon ink in every theme. */
+.fr7-switch-08 .fr7-icon-switch-wrap { position: relative; min-width: 0; }
+.fr7-switch-08 .fr7-check-row { align-items: flex-start; }
+.fr7-switch-08 .fr7-label { padding-top: .625rem; }
+.fr7-switch-08 .fr7-check-control { width: 56px; }
+.fr7-switch-08 .fr7-switch .fr7-check-visual, .fr7-switch-08 .fr7-switch .fr7-check-input:checked + .fr7-check-visual { width: 56px; height: 28px; background: var(--ds-subtle, #e9e7e0); border: 1px solid var(--fr-line, #73736b); }
+.fr7-switch-08 .fr7-switch .fr7-check-visual::after { width: 26px; height: 26px; top: 0; background: #fff; transition: transform 300ms cubic-bezier(.16, 1, .3, 1); }
+.fr7-switch-08 .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(28px); background: #fff; }
+.fr7-switch-08:dir(rtl) .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(-28px); }
+.fr7-switch-08 .fr7-switch-icons { position: absolute; top: 0; inset-inline-start: 0; width: 56px; height: 44px; pointer-events: none; }
+.fr7-switch-08 .fr7-switch-icon { position: absolute; top: 14px; width: 16px; height: 16px; color: var(--fr-muted, #52524e); }
+.fr7-switch-08 .fr7-switch-icon-check { inset-inline-start: 6px; }
+.fr7-switch-08 .fr7-switch-icon-x { inset-inline-start: 34px; }
+.fr7-switch-08:has(.fr7-check-input:not(:checked)) .fr7-switch-icon-check, .fr7-switch-08:has(.fr7-check-input:checked) .fr7-switch-icon-x { color: #151515; }
+.fr7-switch-08:has(.fr7-check-input:disabled) .fr7-switch-icons { opacity: .5; }
+@media (prefers-reduced-motion: reduce) { .fr7-third-selection .fr7-check-visual::after { transition: none; } }
+[data-motion="off"] .fr7-third-selection .fr7-check-visual::after, [data-motion="reduce"] .fr7-third-selection .fr7-check-visual::after { transition: none; }
+@media (forced-colors: active) {
+  .fr7-third-selection .fr7-checkbox .fr7-check-visual, .fr7-third-selection .fr7-switch .fr7-check-visual { background: Canvas; border-color: ButtonText; }
+  .fr7-third-selection .fr7-check-input:checked + .fr7-check-visual { background: Highlight; border-color: Highlight; color: HighlightText; }
+  .fr7-third-selection .fr7-switch .fr7-check-visual::after { background: ButtonText; border-color: Canvas; }
+  .fr7-third-selection .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { background: HighlightText; }
+  .fr7-checkbox-06 .fr7-check-row { background: Canvas; border-color: ButtonText; }
+  .fr7-third-selection .fr7-check-input:focus-visible + .fr7-check-visual, .fr7-checkbox-06 .fr7-check-row:has(.fr7-check-input:focus-visible) { outline-color: Highlight; }
+  .fr7-switch-08 .fr7-switch .fr7-check-visual::after, .fr7-switch-08 .fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { background: Canvas; }
+  .fr7-switch-08 .fr7-switch-icon { color: GrayText; }
+  .fr7-switch-08:has(.fr7-check-input:not(:checked)) .fr7-switch-icon-check, .fr7-switch-08:has(.fr7-check-input:checked) .fr7-switch-icon-x { color: CanvasText; }
+}

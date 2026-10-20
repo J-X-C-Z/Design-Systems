@@ -1,0 +1,10 @@
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import {Studio} from './Studio.jsx';
+import {ContractFixtures} from './ContractFixtures.jsx';
+import {SelectionFixtures} from './SelectionFixtures.jsx';
+import {ActionFixtures} from './ActionFixtures.jsx';
+import CopyNameFixtures from './CopyNameFixtures.jsx';
+import './styles.css';
+import './studio.css';
+createRoot(document.getElementById('root')).render(<React.StrictMode>{document.getElementById('root').dataset.fixture==='contracts'?<ContractFixtures/>:document.getElementById('root').dataset.fixture==='selection'?<SelectionFixtures/>:document.getElementById('root').dataset.fixture==='actions'?<ActionFixtures/>:document.getElementById('root').dataset.fixture==='copy-name'?<CopyNameFixtures/>:<Studio/>}</React.StrictMode>);

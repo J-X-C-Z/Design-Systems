@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "slice": "fourth-buttons",
+  "algorithm": "sha256",
+  "excludes": "This manifest itself",
+  "files": [
+    {
+      "path": "contracts/fourth-buttons.json",
+      "bytes": 27243,
+      "sha256": "dd035a5cd821b5bb9e4fb48bb7c13864a535808eb6cd5cced8b4669e9bf6d093"
+    },
+    {
+      "path": "src/fourth-buttons/LICENSE.upstream",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "src/fourth-buttons/README.md",
+      "bytes": 11586,
+      "sha256": "b3c93874d482084ff3d5e87146123068687393301f17b867d2af94ea94b59707"
+    },
+    {
+      "path": "src/fourth-buttons/author-evidence.json",
+      "bytes": 1855,
+      "sha256": "079862bf6993e75355a8fff963cd0eb188872de3ebd9197f3d293c277030c6bc"
+    },
+    {
+      "path": "src/fourth-buttons/examples.jsx",
+      "bytes": 1569,
+      "sha256": "79eb986212f5848c33b28a8de50b71337b1222bbcadd8e2fa8723f060849a3d0"
+    },
+    {
+      "path": "src/fourth-buttons/index.d.ts",
+      "bytes": 4125,
+      "sha256": "f2a61604a1c107142b39d6afd058436cedf74c3969037667235f0a4f14ce8cf9"
+    },
+    {
+      "path": "src/fourth-buttons/index.jsx",
+      "bytes": 20491,
+      "sha256": "ac64a48069d8652ea8fd05012c7e84f388f7fee257514afc4228e425ab500fd1"
+    },
+    {
+      "path": "src/fourth-buttons/source-hashes.json",
+      "bytes": 10416,
+      "sha256": "4267ad90e6f76679e1522248ca6fa78f1bf28ebc1aa381528a6167e8fd38ff2d"
+    },
+    {
+      "path": "src/fourth-buttons/sources/base-badge.tsx",
+      "bytes": 1865,
+      "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d"
+    },
+    {
+      "path": "src/fourth-buttons/sources/base-button.tsx",
+      "bytes": 3337,
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512"
+    },
+    {
+      "path": "src/fourth-buttons/sources/base-tooltip.tsx",
+      "bytes": 2111,
+      "sha256": "f26881e08ed65a973a15ac3bd509bca50c31da1d5b275bc3f9c48b5de1d1c966"
+    },
+    {
+      "path": "src/fourth-buttons/sources/index.ts",
+      "bytes": 9942,
+      "sha256": "c6449443bccf9ea212059f48027cd69f6826e9dab87621d2fb2af86346f9c90f"
+    },
+    {
+      "path": "src/fourth-buttons/sources/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-25.tsx",
+      "bytes": 1288,
+      "sha256": "2f08a7d52d3a859fec5fc6e4e073a4d4b86a54a74d01bf4da5f7766d4db67aa6"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-26.tsx",
+      "bytes": 1132,
+      "sha256": "e708e6600abc83f0d29959b282a3418f4b273e12e04c48de95764942283c2fa5"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-27.tsx",
+      "bytes": 490,
+      "sha256": "f0ea9f6a2f5f4f7109e28bdcc09601debb899466343914e4d30e8e7030641e2c"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-28.tsx",
+      "bytes": 632,
+      "sha256": "924e6c4f26599fd3de2df1585c9eb5b9392347e2cd9ae7a8dd76fabe82392e1d"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-29.tsx",
+      "bytes": 634,
+      "sha256": "904f9ea07075299898e0aa86371c9c1be6967312b28415058f47c9046fad80b8"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-30.tsx",
+      "bytes": 572,
+      "sha256": "5d81f14d62995304dc0b220356abf060b461495c1846acd32fa8e5787e82a5a8"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-31.tsx",
+      "bytes": 324,
+      "sha256": "5d4e9a68e384ccfcdcb17838ac249683ec79697958e96fdea3a422c2b3484ded"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-32.tsx",
+      "bytes": 422,
+      "sha256": "1cf6c91c3fbbd042582ce942b5b15769fce0a2e0e70f1f953bfa825e8a4084cc"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-33.tsx",
+      "bytes": 404,
+      "sha256": "73fed423512107ec390da8eaf52c30c98b2889d54d6a1b237c37a37b56f36bba"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-34.tsx",
+      "bytes": 1256,
+      "sha256": "5f434bb9c2686add852ffdc8c1d57372b102c4b6d3032254a8bfba0528f5e097"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-35.tsx",
+      "bytes": 490,
+      "sha256": "d8195ae2711430574bededc849b92b7ddfd76178536ec8e02cff3524ff1912fe"
+    },
+    {
+      "path": "src/fourth-buttons/sources/variant-36.tsx",
+      "bytes": 513,
+      "sha256": "43408e0c7d862a994b002188faed87e870644cb0e61e4ae6b67460c2295c9404"
+    },
+    {
+      "path": "src/fourth-buttons/static-color-pairs.json",
+      "bytes": 9647,
+      "sha256": "2eec1e4b68d824e61cf6c0b5063de98c04358087434eb38218dc0c80b9017bf6"
+    },
+    {
+      "path": "src/fourth-buttons/styles.css",
+      "bytes": 10220,
+      "sha256": "16271bbffbb9ed4a55896a65973a48287fe6c8b754ee024d696b9acf1fb7a94f"
+    },
+    {
+      "path": "src/fourth-buttons/type-tests.tsx",
+      "bytes": 1365,
+      "sha256": "99e5251667df64d64acca62a8219d00092e410d5e23ce28f5d9a1961d785c8ec"
+    },
+    {
+      "path": "tests/fourth-buttons-tests.cjs",
+      "bytes": 35245,
+      "sha256": "e75267f7c05cb3b83c4a2d6098ac9ab132745a00e135b5aac0f4f598ed3c597b"
+    }
+  ]
+}

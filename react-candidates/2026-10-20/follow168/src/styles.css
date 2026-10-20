@@ -1,0 +1,80 @@
+@import './tokens.css';
+@import './base.css';
+@import './scalar/styles.css';
+@import './disclosure/styles.css';
+@import './next-buttons/styles.css';
+@import './next-selection/styles.css';
+@import './next-disclosure/styles.css';
+
+@import './third-buttons/styles.css';
+@import './third-selection/styles.css';
+
+@import './fourth-buttons/styles.css';
+@import './fourth-selection/styles.css';
+
+@import "./fifth-selection/styles.css";
+
+@import "./sixth-selection/styles.css";
+
+@import "./seventh-controls/styles.css";
+
+@import "./eighth-feedback/styles.css";
+
+@import "./ninth-dialog/styles.css";
+@import "./ninth-summary/styles.css";
+
+@import './tenth-controls/styles.css';
+
+@import './eleventh-controls/styles.css';
+
+@import './twelfth-controls/styles.css';
+
+@import './thirteenth-controls/styles.css';
+
+@import './fourteenth-controls/styles.css';
+
+@import './fifteenth-controls/styles.css';
+
+@import './sixteenth-controls/styles.css';
+
+@import './seventeenth-controls/styles.css';
+
+@import './eighteenth-controls/styles.css';
+
+@import './nineteenth-controls/styles.css';
+
+@import './twentieth-controls/styles.css';
+
+@import './twentyfirst-controls/styles.css';
+
+@import './twentysecond-controls/styles.css';
+
+@import './twentythird-controls/styles.css';
+
+@import './twentyfourth-controls/styles.css';
+
+@import './twentyfifth-controls/styles.css';
+
+@import './twentysixth-controls/styles.css';
+
+@import './twentyseventh-controls/styles.css';
+
+@import './twentyeighth-controls/styles.css';
+
+@import './twentyninth-controls/styles.css';
+
+@import './thirtieth-controls/styles.css';
+
+@import './thirtyfirst-controls/styles.css';
+
+@import './thirtysecond-controls/styles.css';
+
+@import './thirtythird-controls/styles.css';
+
+@import './thirtyfourth-controls/styles.css';
+
+@import './thirtyfifth-controls/styles.css';
+
+@import './thirtysixth-controls/styles.css';
+@import './thirtyseventh-controls/styles.css';
+@import './thirtyeighth-controls/styles.css';

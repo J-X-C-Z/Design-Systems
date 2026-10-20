@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "slice": "react-seven-third-buttons",
+  "idCount": 12,
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "common": {
+    "implementation": "Direct React JSX/forwardRef. Private native wrapper shared only for basic event semantics. Source-specific compositions retained, including one link, two-member action group, two four-provider groups and real image lifecycle.",
+    "source_license": "18 exact fixed-commit files freshly Git-blob checked, including 12 variants, metadata, button/badge/avatar primitives, utils and MIT license. Source-hashes.json contains per-file checksums.",
+    "adaptation": [
+      "Chinese default labels; all labels are independently configurable.",
+      "Semantic colors/font/radii inherited from unchanged seven-theme tokens; no new theme or replacement of source IDs.",
+      "Native 44px touch targets enclose 32px source faces; wrappers may grow for wrapped text. URL has min-height48px, not source fixed height. Long text wraps instead of source nowrap.",
+      "Original SVG renderings preserve icon identity but do not copy source react-icons geometry; Google and other brand representations are compact adaptations.",
+      "Soft semantic surfaces retain known text/bg contrast; stronger source hover tint is adapted to an inset emphasis stroke without reducing text contrast.",
+      "Button20 underline is anchored to wrapping inner label instead of the full outer target; focus-visible also reveals it.",
+      "Button24 external personal image/name/fallback replaced with original local avatar/@Follow/FU; optional host avatarSrc uses browser image load/error.",
+      "No clipboard, real download, authentication, navigation beyond native anchor default, persistence or backend capability is fabricated."
+    ],
+    "motion": "System reduced motion and provider data-motion=off/reduce remove transitions and arrow/pressed movement; underline changes instantaneously. Forced-colors rules authored. Rendered verification pending.",
+    "acceptance": "Author React/JSDOM passed 12 IDs / 163 scenarios / 923 assertions, React 19.3.0, warnings=[], exit 0. Independent and browser validation pending. Real keyboard, pointer, screen-reader, narrow layout, rendered per-theme contrast, reduced motion, forced colors, TypeScript compilation and formal source parity not accepted."
+  },
+  "items": [
+    {
+      "id": "button-13",
+      "export": "Button13",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-13.tsx",
+        "file": "sources/variant-13.tsx",
+        "git_blob": "d78a8304ea063b04204f874d2ff7566b8522847b",
+        "sha256": "4038b55d5ed31c8fe3438adbd329e15f928279025adadad5b4353905554c148e",
+        "bytes": 521,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-13.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Copy",
+      "default_label": "复制",
+      "source_structure": [
+        "One Button with leading IoCopy filled glyph.",
+        "Blue foreground and outline over 10% blue tint; 20% hover tint."
+      ],
+      "react_structure": "One native button, leading original filled copy glyph, theme info text/outline/surface.",
+      "public_API": "ThirdButtonProps; ref=HTMLButtonElement",
+      "contract": "No clipboard action exists in source or adapter.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-14",
+      "export": "Button14",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-14.tsx",
+        "file": "sources/variant-14.tsx",
+        "git_blob": "f2f643c4f1c4618e53fc634b853a9a1d57d119a5",
+        "sha256": "8306deb788618bacad38353ee3d5f688df17700a084a5dd9f6030a90992a768d",
+        "bytes": 318,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-14.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Download",
+      "default_label": "下载",
+      "source_structure": [
+        "One Button with leading FaDownload.",
+        "Primary 10% tint and dashed border with shadow-none."
+      ],
+      "react_structure": "One native button, filled download glyph, 1px dashed border and no hard shadow.",
+      "public_API": "ThirdButtonProps; ref=HTMLButtonElement",
+      "contract": "No download, URL or request is created.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-15",
+      "export": "Button15",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-15.tsx",
+        "file": "sources/variant-15.tsx",
+        "git_blob": "c80f389cbd0cd0e70eb5aead85ebcb4871b9d9f6",
+        "sha256": "3358247857914b8f790c8e84eb129a9ed53497f95496aeac6143af34ef2eb53b",
+        "bytes": 685,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-15.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "https://watermelon-ui.com/; Copy",
+      "default_label": "https://watermelon-ui.com/; 复制网址",
+      "source_structure": [
+        "48px wrapper with border, 4px horizontal padding, truncated URL p max-width 224px.",
+        "Independent size-icon 32px copy button; sr-only Copy label."
+      ],
+      "react_structure": "Inert URL paragraph in 48px minimum shell, full URL title, distinct native button with 32px square visual face.",
+      "public_API": "Button15Props: url:string, children:ReactNode=icon accessible label, shellClassName; all native attrs/ref address copy button.",
+      "contract": "URL is display-only; click only invokes host handler; no clipboard API.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-16",
+      "export": "Button16",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-16.tsx",
+        "file": "sources/variant-16.tsx",
+        "git_blob": "330da422c543ea868c968a9bac7596f6147ab1db",
+        "sha256": "8053f918621b26a446c0cac7c53ab3be45aadb663b1d0ac6190264a83861902c",
+        "bytes": 426,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-16.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Save",
+      "default_label": "保存",
+      "source_structure": [
+        "Leading IoSaveSharp followed by Save.",
+        "Blue 10% tint and blue text; hover 20%; no explicit blue outline."
+      ],
+      "react_structure": "Native button, original filled save glyph and soft info surface without explicit outline.",
+      "public_API": "ThirdButtonProps; ref=HTMLButtonElement",
+      "contract": "No save model or completion state is invented.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-17",
+      "export": "Button17",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-17.tsx",
+        "file": "sources/variant-17.tsx",
+        "git_blob": "31fd20c19ad2e3787504a1badf51c38311199c5f",
+        "sha256": "5e83301a579ebf401f666523a16d9fe452be31e34ad9b5b29e578c2796bec69a",
+        "bytes": 442,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-17.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Warning",
+      "default_label": "警告",
+      "source_structure": [
+        "Leading solid IoWarning triangle and Warning text.",
+        "Yellow warning tint/foreground and stronger hover tint."
+      ],
+      "react_structure": "Native warning-colored button with filled warning triangle.",
+      "public_API": "ThirdButtonProps; ref=HTMLButtonElement",
+      "contract": "Semantic warning colors use existing theme tokens.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-18",
+      "export": "Button18",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-18.tsx",
+        "file": "sources/variant-18.tsx",
+        "git_blob": "3c95dcccde27fb96b281a41da75ea799334226b8",
+        "sha256": "ea3cf6d17b88d81379ae228b57d81e4273bc23581c13ef32024f3276e6b880e5",
+        "bytes": 814,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-18.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Cancel; Confirm",
+      "default_label": "取消; 确认",
+      "source_structure": [
+        "Two native Buttons in wrapping flex row with 16px gap.",
+        "Cancel text followed by HiXCircle; Confirm followed by HiCheckCircle.",
+        "Both square-corner, 8px icon gap; destructive and green soft surfaces."
+      ],
+      "react_structure": "Two independent native buttons with trailing original circle icons; square faces, wrapping 16px-gap group.",
+      "public_API": "Button18Props: cancelLabel/confirmLabel ReactNode; cancelProps/confirmProps native attrs/ref/onClick; top onClick is per-member default; group ref=HTMLDivElement.",
+      "contract": "BUTTON18_MEMBERS=[cancel,confirm]. Each member owns its action; no implicit cancellation/confirmation domain state.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-19",
+      "export": "Button19",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-19.tsx",
+        "file": "sources/variant-19.tsx",
+        "git_blob": "700c828038eac60c230b23c69c6e785feb06b8ad",
+        "sha256": "feb8c07a2269ef2ae882483a7f717c7f56211736f0e3c8c343bdf3ed1536e7df",
+        "bytes": 350,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-19.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Back",
+      "default_label": "返回",
+      "source_structure": [
+        "One ghost Button with leading FiArrowLeft then Back.",
+        "Official fixed source uses -translate-x-1 = 4px, duration-180 ease-in-out."
+      ],
+      "react_structure": "Native ghost action and original stroked arrow moving left 4px over 180ms on hover/focus-visible.",
+      "public_API": "ThirdButtonProps; ref=HTMLButtonElement",
+      "contract": "Fixed source overrides stale catalog prose if its arrow distance differs; history is never changed automatically.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-20",
+      "export": "Button20",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-20.tsx",
+        "file": "sources/variant-20.tsx",
+        "git_blob": "e82b89c87fc478bbab65f35137c7c3adb7707582",
+        "sha256": "e0581f981daaf389b23dc8ac0a04fd27e6ee1cd4988e983f75708ad25fe286e2",
+        "bytes": 581,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-20.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Message Us",
+      "default_label": "联系我们",
+      "source_structure": [
+        "Native a href=\"#\" with link button styles.",
+        "Centered 80%-width 1px underline at bottom 6px; scaleX(0→1) over 300ms on hover."
+      ],
+      "react_structure": "Native anchor preserving href/target/rel/events; wrapping text and centered underline shown on hover/focus-visible.",
+      "public_API": "Button20Props extends AnchorHTMLAttributes plus disabled/readOnly; ref=HTMLAnchorElement.",
+      "contract": "disabled/readOnly are adapter guards, not native anchor attributes. They suppress click/default navigation but retain href and focus semantics; browser context-menu navigation is not a disabled-button behavior. Host demo prevents navigation explicitly.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-21",
+      "export": "Button21",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-21.tsx",
+        "file": "sources/variant-21.tsx",
+        "git_blob": "788f189be045210e326ddb092b23052fd266f6c7",
+        "sha256": "07a17639930ef23823e59e28aede70f202530f8467d7c0cadb286abf60a52731",
+        "bytes": 932,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-21.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Continue with Google; X; Facebook; GitHub",
+      "default_label": "使用 Google / X / Facebook / GitHub 继续",
+      "source_structure": [
+        "Four outline size-icon Buttons, each 32px face, 20px brand icon.",
+        "Wrapping centered row, gap 16px; separate accessible names in source order."
+      ],
+      "react_structure": "Four independent icon-only buttons, original compact brand vectors, 32px faces inside 44px targets.",
+      "public_API": "SocialButtonProps: providerLabels Partial<Record<provider,string>>; providerProps for per-member native refs/handlers; group ref=HTMLDivElement.",
+      "contract": "Fixed BUTTON_PROVIDERS=[google,x,facebook,github]. No OAuth/login/network integration is implied.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-22",
+      "export": "Button22",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-22.tsx",
+        "file": "sources/variant-22.tsx",
+        "git_blob": "6b8a2dee5a863769f324e63e0520aa7c8dc8f6c4",
+        "sha256": "2605ffd4fd4dc9aac311f2817ac32da713a21e0ccb64ad792348cb4d8f4cadcb",
+        "bytes": 1503,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-22.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Continue with Google; X; Facebook; GitHub",
+      "default_label": "使用 Google / X / Facebook / GitHub 继续",
+      "source_structure": [
+        "Four outline labeled Buttons in 100%-width max-224px vertical flex, gap 16px.",
+        "20px brand icon leading; flex-1 centered labels; red Google, neutral X/GitHub, blue Facebook borders/tints."
+      ],
+      "react_structure": "Four full-width independent labeled buttons, fixed provider order, wrapping labels, 224px max column.",
+      "public_API": "SocialButtonProps: providerLabels changes all visible and accessible labels; providerProps changes native attributes/ref/onClick for each provider.",
+      "contract": "Google/FB colors adapt to theme danger/info text/bg pairs; neutral members follow theme ink. No OAuth.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-23",
+      "export": "Button23",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-23.tsx",
+        "file": "sources/variant-23.tsx",
+        "git_blob": "ea91e4743b79cddf354f89795c89607c9df1e08d",
+        "sha256": "818b5fbb9eb1ff73064d690681a94d06ece68443aa1cf25123421341e20b9a90",
+        "bytes": 507,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-23.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "Inbox; 8",
+      "default_label": "收件箱; 8",
+      "source_structure": [
+        "Outline Button with leading FaBell and Inbox.",
+        "Destructive pill badge 8, min-width20px height20px, top/right -10px, 4px horizontal padding."
+      ],
+      "react_structure": "Outline native button with leading bell and real overflowing host-owned count badge.",
+      "public_API": "Button23Props: count ReactNode=8; children label; native props/ref.",
+      "contract": "Count is part of accessible text unless owner supplies aria-label. No unread fetching or local unread model.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    },
+    {
+      "id": "button-24",
+      "export": "Button24",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-24.tsx",
+        "file": "sources/variant-24.tsx",
+        "git_blob": "2af2a7a8b29be5e839f2155e821692fcb44193aa",
+        "sha256": "fd997bfa7a7c9154e9dd1e7241d9d2725180b998df689fe8c54eb005702a92c6",
+        "bytes": 565,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-24.tsx",
+        "verification": "Freshly recomputed Git blob matches cached official commit tree and canonical variant source SHA; full relevant source read."
+      },
+      "source_label": "@VanshPatel; Hallie Richards image; VP fallback",
+      "default_label": "@Follow; decorative local image; FU fallback",
+      "source_structure": [
+        "Rounded-lg button with 4px left padding, 24px avatar preceding nickname.",
+        "AvatarImage external GitHub image with rounded-md, source alt Hallie Richards; AvatarFallback VP."
+      ],
+      "react_structure": "24px original local SVG avatar, keyed React load/error/fallback state and ref/effect lifetime guard; 4px left padding.",
+      "public_API": "Button24Props: avatarSrc:string|null, avatarAlt:string, avatarFallback:ReactNode, children nickname; ref=HTMLButtonElement.",
+      "contract": "Default external personal avatar replaced with original inline SVG, nickname @Follow, fallback FU and empty decorative alt. Changed src resets keyed state; detached events cannot update a newer source. No exact Radix loading lifecycle equivalence claim.",
+      "ownership": "Host owns labels, native attributes and action handlers; no async result or callback promise handling. Only Button24 owns transient image loading status.",
+      "events": "Standard native-target onClick once; preventDefault cancels native default. Callback returns ignored, errors surface through React. Per-member callback replaces shared default. No post-callback actions, including after synchronous owner render/unmount.",
+      "guards": "Native disabled is actual HTMLButtonElement.disabled. readOnly and boolean/string aria-disabled=true suppress clicks/default actions and stay focusable. Compound common locks apply to every member even if member props request false.",
+      "keyboard": "Native HTML keyboard behavior; no synthetic key activation or interception. Compound groups retain independent Tab stops. Real-browser keyboard checks pending.",
+      "form": "Default type=button for every native button, explicit submit/reset/form/name/value retained per member. Anchor remains a link. Safe default differs from source omitted type.",
+      "execution_status": {
+        "author": "passed",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending",
+        "author_evidence": "evidence/2026-10-15T05-59-36-440Z-third-buttons"
+      },
+      "scope": "Only this canonical ID; no earlier native or Flutter acceptance inherited."
+    }
+  ],
+  "author_evidence": {
+    "path": "evidence/2026-10-15T05-59-36-440Z-third-buttons",
+    "ids": 12,
+    "scenarios": 163,
+    "assertions": 923,
+    "react": "19.3.0",
+    "exitCode": 0,
+    "warnings": [],
+    "browser": false
+  }
+}

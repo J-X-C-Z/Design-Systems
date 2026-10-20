@@ -1,0 +1,68 @@
+/* Follow defaults; the external provider supplies the same variables per theme. */
+.fr7 {
+  --fr-local-surface: var(--fr-surface, #fffdf7);
+  --fr-local-ink: var(--fr-ink, #20211f);
+  color: var(--fr-local-ink);
+  font-family: var(--ds-font, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  box-sizing: border-box;
+}
+.fr7 *, .fr7 *::before, .fr7 *::after { box-sizing: border-box; }
+.fr7.fr7-button, .fr7 .fr7-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 44px; padding: .6rem 1rem; max-width: 100%;
+  border: 1px solid var(--fr-line, #20211f); border-radius: var(--fr-control-radius, 0);
+  font: inherit; font-weight: 650; line-height: 1.35; text-align: center;
+  white-space: normal; overflow-wrap: anywhere; cursor: pointer;
+  background: var(--fr-accent, #20211f); color: var(--fr-accent-ink, #fffdf7);
+  transition: transform 120ms ease;
+}
+.fr7.fr7-button-outline, .fr7 .fr7-button-outline { background: var(--fr-local-surface); color: var(--fr-local-ink); }
+.fr7.fr7-button-secondary, .fr7 .fr7-button-secondary { background: var(--fr-bg, #e9e7de); color: var(--fr-local-ink); }
+.fr7.fr7-button:active:not(:disabled):not([aria-disabled="true"]) { transform: translateY(1px); }
+.fr7.fr7-button:disabled, .fr7.fr7-button[aria-disabled="true"] { cursor: not-allowed; opacity: .55; }
+.fr7.fr7-button:focus-visible, .fr7 .fr7-text-input:focus-visible, .fr7 .fr7-textarea:focus-visible, .fr7 .fr7-check-input:focus-visible + .fr7-check-visual {
+  outline: 2px solid var(--ds-focus, #20211f); outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--fr-local-surface), 0 0 0 6px var(--fr-local-surface);
+}
+.fr7.fr7-button-pair { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; max-width: 100%; }
+.fr7.fr7-field { display: flex; flex-direction: column; gap: .5rem; min-width: 0; max-width: 100%; }
+.fr7 .fr7-label { color: var(--fr-local-ink); font-size: .875rem; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+.fr7 .fr7-help, .fr7 .fr7-error { margin: 0; font-size: .75rem; line-height: 1.5; overflow-wrap: anywhere; }
+.fr7 .fr7-help { color: var(--fr-muted, #595b55); }
+.fr7 .fr7-error { color: var(--fr-danger, #9b2642); }
+.fr7 .fr7-check-row { display: flex; align-items: center; gap: .5rem; min-height: 44px; }
+.fr7 .fr7-check-control { display: inline-flex; position: relative; flex: 0 0 auto; width: 44px; height: 44px; align-items: center; justify-content: center; }
+.fr7 .fr7-check-input { position: absolute; inset: 0; margin: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 1; }
+.fr7 .fr7-check-visual { display: block; position: relative; width: 20px; height: 20px; border: 1px solid var(--fr-line, #20211f); border-radius: var(--fr-control-radius, 0); background: var(--fr-local-surface); }
+.fr7 .fr7-check-input:checked + .fr7-check-visual { background: var(--fr-accent, #20211f); color: var(--fr-accent-ink, #fffdf7); }
+.fr7.fr7-checkbox .fr7-check-input:checked + .fr7-check-visual::after { content: ''; display: block; position: absolute; inset: 3px 5px 5px; border: solid currentColor; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.fr7 .fr7-check-input:disabled { cursor: not-allowed; }
+.fr7 .fr7-check-input:disabled + .fr7-check-visual { opacity: .5; }
+.fr7 .fr7-check-input[aria-readonly="true"] { cursor: default; }
+.fr7.fr7-switch .fr7-check-visual { width: 40px; height: 24px; }
+.fr7.fr7-switch .fr7-check-visual::after { content: ''; position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; background: var(--fr-local-ink); transition: transform 140ms ease; }
+.fr7.fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { transform: translateX(16px); background: var(--fr-accent-ink, #fffdf7); }
+.fr7 .fr7-check-input[aria-invalid="true"] + .fr7-check-visual { border-color: var(--fr-danger, #9b2642); }
+.fr7.fr7-mask { width: 100%; max-width: 320px; }
+.fr7.fr7-textarea-field { width: 100%; max-width: 384px; }
+.fr7 .fr7-mask-wrap { position: relative; display: block; }
+.fr7 .fr7-identity-icon { position: absolute; left: .75rem; top: 50%; transform: translateY(-50%); color: var(--fr-muted, #595b55); pointer-events: none; }
+.fr7 .fr7-text-input, .fr7 .fr7-textarea {
+  display: block; width: 100%; min-width: 0; margin: 0; padding: .65rem .75rem;
+  border: 1px solid var(--fr-line, #20211f); border-radius: var(--fr-control-radius, 0);
+  background: var(--fr-local-surface); color: var(--fr-local-ink); caret-color: var(--fr-local-ink);
+  font: inherit; font-size: 1rem; line-height: 1.5;
+}
+.fr7 .fr7-text-input { min-height: 44px; padding-left: 2.5rem; }
+.fr7 .fr7-textarea { min-height: 64px; field-sizing: content; resize: vertical; }
+.fr7 .fr7-text-input::placeholder, .fr7 .fr7-textarea::placeholder { color: var(--fr-muted, #595b55); opacity: 1; }
+.fr7 .fr7-text-input:disabled, .fr7 .fr7-textarea:disabled { opacity: .6; cursor: not-allowed; }
+.fr7 .fr7-text-input[aria-invalid="true"], .fr7 .fr7-textarea[aria-invalid="true"] { border-color: var(--fr-danger, #9b2642); }
+@media (prefers-reduced-motion: reduce) { .fr7.fr7-button, .fr7 .fr7-check-visual::after { transition: none; } }
+[data-motion="off"] .fr7.fr7-button, [data-motion="reduce"] .fr7.fr7-button, [data-motion="off"] .fr7 .fr7-check-visual::after, [data-motion="reduce"] .fr7 .fr7-check-visual::after { transition: none; }
+@media (forced-colors: active) {
+  .fr7 .fr7-check-visual { forced-color-adjust: none; background: Canvas; border-color: ButtonText; }
+  .fr7 .fr7-check-input:checked + .fr7-check-visual { background: Highlight; color: HighlightText; }
+  .fr7.fr7-switch .fr7-check-visual::after { background: ButtonText; }
+  .fr7.fr7-switch .fr7-check-input:checked + .fr7-check-visual::after { background: HighlightText; }
+}

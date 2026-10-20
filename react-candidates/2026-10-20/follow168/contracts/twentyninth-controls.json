@@ -1,0 +1,43 @@
+{
+  "ids": [
+    "collapsible-05",
+    "collapsible-06",
+    "collapsible-08",
+    "collapsible-09"
+  ],
+  "sourceProof": "reference/twentyninth-controls/SOURCE-PROOF.json",
+  "catalogAccounting": "Exactly4 top-level canonical IDs; constituent fields/menus add no IDs; old128 untouched.",
+  "common": "Independent React fixed-content controls. Collapsible groups accept exclusive expanded/defaultExpanded arrays, onExpandedChange(next,details), disabled, per-trigger native props/ref, native root attrs/ref. Default sets match each original. details id/sectionId/open/previousExpanded/event/button/cancel. Deferred proposals preserve cancellation, owner transition ordering, repeated gesture order, latest disabledness and React19 ref cleanup. Invalid IDs throw. Native Tab/Enter/Space only for ordinary collapsibles; no accordion arrow navigation added.",
+  "collapsible-05": {
+    "content": "All4 original sections: Price Range min/max numeric fields (placeholders50/1200),3 ratings4/3/2 & Up,5 brands Apple/Samsung/Google/OnePlus/Xiaomi,4 batteries3500/4000/5000/6000mAh.",
+    "default": "All sections closed; expanded values price/ratings/brand/battery. Fields mount only while section open. All checkboxes initially unchecked; prices empty.",
+    "fieldAPI": "inputProps keyed min-price/max-price uses native input ownership/events/form/ref. checkboxProps keyed original rating-/brand-/battery-IDs uses verifiedCheckbox01 native ownership/reset engine with fixed labels. No names by default; explicit consumer name/form joins FormData. Disabled root cascades to mounted fields and triggers.",
+    "lifecycle": "Closing section destroys uncontrolled field state. Reopen uses mount defaults. Controlled parent values can persist. Native reset changes mounted field values/checkboxes according to their native/verified field contracts, but never changes section expansion. Parent key/state reset is explicit."
+  },
+  "collapsible-06": {
+    "content": "Both exact project-review questions and full answers. Question followed by conditional answer and bottom Show answer/Hide answer control, blue closed/rose open label.",
+    "default": "faq-1 open,faq-2 closed; each independent. Native reset leaves open state unchanged."
+  },
+  "collapsible-08": {
+    "content": "Workspace menu trigger; Profile; Settings with Appearance/Notifications/Billing; Workspace with Members/Teams/Projects; Log out. Local original icons; nested section chevrons.",
+    "menuOwner": "Exclusive open/defaultOpen false default; onOpenChange with trigger/keyboard/escape/tab/outside-pointer/outside-focus/action reason. menuProps and triggerProps refs supported. sections owns expanded/defaultExpanded settings/workspace independently inside mounted menu; default both closed. Uncontrolled sections reset when menu unmounts; controlled sections supplied by parent persist. onAction is local callback only; no navigation, logout or service operation.",
+    "interaction": "Menu uses native single buttons with menuitem/group roles; Up/Down/Home/End/typeahead rove visible enabled items, Right opens a section, Left closes its section and returns to header. Escape closes and conditionally returns focus. Tab closes and moves to adjacent available document tabstop. Outside pointer/focus dismisses without stealing the new focus. Profile/Log out accepted actions close the menu; inner local actions retain it, matching original inner native buttons. Item and ancestor event cancellation, synchronous owner changes and external focus take precedence. Tab targets are available light-DOM controls, positive tabIndex ordered; excludes hidden/inert/closed containers while preserving first-legend/summary and visibility override exceptions.",
+    "adaptation": "Explicit non-modal, root-contained local menu instead of Radix modal portal: no global scroll lock or background inertness. No service side effects. This is a declared behavior boundary, not pixel/portal/modal equivalence. All original menu content and disclosure lifecycle retained. Nested button structures repaired into one native button per trigger."
+  },
+  "collapsible-09": {
+    "content": "Delivery Address: Full Name,Address,Pin Code,City,Landmark; Delivery Options: Standard3-5Days/Express/Overnight with exact original date descriptions and prices; Payment: Card details,number/expiry/CVC placeholders and provider icon.",
+    "default": "All3 sections closed; expanded address/delivery/payment. Fields empty; mounted delivery group default2 (Express). No submitted names by default, no purchase/validation/charge/request. Original prices/dates are fixed illustrative copy, not current offers.",
+    "fieldAPI": "fieldProps keyed full-name/address/pin-code/city-name/landmark/card-number/expiry/cvc; fixed native text/number/textarea types with native events/value/defaultValue/ref/form and optional names. deliveryProps owns1/2/3/null, defaultValue2, onValueChange, name/form/required/disabled, per-item refs/native events. Existing verified native radio/reset engine adapted privately; inner change detail id remainscollapsible-09 and fieldIddelivery. Section unmount destroys uncontrolled values and radio selection; controlled parent persists.",
+    "accessibility": "Unique per-instance labels/IDs replace duplicate source IDs. Payment fields get explicit associated labels, preserving original Card details title/placeholders. Number/radio descriptions associated; all toggle buttons typebutton; no nestedbuttons. Arrow radio navigation remains within its own group, distinct from disclosure controls."
+  },
+  "focus": "Closing a section whose unmounted content held focus conditionally returns to its connected trigger only if focus remains on removed element/body; explicit outside focus or whole-root unmount is preserved.",
+  "styles": "Four distinct Follow layouts, scoped CSS, finite transitions, reduced-motion and forced-colors rules; no browser layout acceptance implied.",
+  "browser": 0,
+  "formalAccepted": 0,
+  "backwardRepair": {
+    "id": "radio-group-02",
+    "file": "src/fifteenth-controls/index.jsx",
+    "change": "Complete defaultChecked baselines before checked ownership reconciliation; named native reset after uncontrolled-to-controlled migration retains owner. Existing frozen128 unchanged. Also preserves explicit source/destination outside focus during deferred keyboard navigation; no broader legacy API change.",
+    "authorRegression": "tests/radio-reset-repair132.cjs,128 cases over old/new group and internal/external forms; tests/radio-focus-repair132.cjs,58 explicit focus cases"
+  }
+}

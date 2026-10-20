@@ -1,0 +1,39 @@
+{
+  "version": "0.38.0-candidate.1",
+  "canonicalComponents": 849,
+  "candidateComponents": 168,
+  "remaining": 681,
+  "newIDs": [
+    "radio-group-11",
+    "radio-group-12",
+    "radio-group-13",
+    "switch-19"
+  ],
+  "browserRuns": 0,
+  "formalAccepted": 0,
+  "fullNativeEquivalence": false,
+  "knownNotPassedObserverBoundaries": {
+    "hiddenDirectDOMAssociationRoutes": 28,
+    "preRegisteredWindowImmediateJoinCases": 4
+  },
+  "additionalKnownIssue": "Switch19 readOnly state lacks aria-readonly in frozen168.",
+  "follow172Included": false,
+  "sourceFilesExactFrozen": 369,
+  "registryIsCandidateAccountingNotAcceptance": true,
+  "fullFrozenLedgerPublished": false,
+  "familyCoverage": {
+    "radio": {
+      "candidates": 12,
+      "canonical": 13
+    },
+    "checkbox": {
+      "candidates": 14,
+      "canonical": 16
+    },
+    "switch": {
+      "candidates": 19,
+      "canonical": 20
+    }
+  },
+  "metadataCorrection": "Switch canonical denominator is20 based on ledger category=switch. The frozen narrative19/22 counted switch-disclosure and switch-mode from other categories; unchanged original package README is historical, not authoritative for that denominator."
+}

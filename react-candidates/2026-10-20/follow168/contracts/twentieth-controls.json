@@ -1,0 +1,31 @@
+{
+  "ids": [
+    "accordion-05",
+    "textarea-09"
+  ],
+  "originalProof": "reference/twentieth-controls/SOURCE-PROOF.json",
+  "accordion": {
+    "multiple": true,
+    "defaultValue": [
+      "item-1"
+    ],
+    "values": [
+      "item-1",
+      "item-2",
+      "item-3"
+    ],
+    "sourceText": "full original English text retained; preview clearly labels it non-service example",
+    "form": "typebutton, no fields, native reset unchanged",
+    "keyboard": "arrow/Home/End focus only; Enter/Space native button click, not synthetic implementation",
+    "visual": "Original expanded blue title and non-last 2px blue border; owned up/down chevrons preserve primitive direction; Follow typography/spacing, finite 180ms content entrance instead of Radix height animation"
+  },
+  "textarea": {
+    "label": "Additional notes",
+    "placeholder": "Add any extra details...",
+    "defaultValue": "",
+    "focus": "Follow primary-tinted border/ring instead of emerald",
+    "native": "no default name; React native controlled/uncontrolled textarea, external form/reset/required/readonly/disabled",
+    "browser": 0,
+    "hint": "Optional: static original hint, caller required override does not rewrite it"
+  }
+}

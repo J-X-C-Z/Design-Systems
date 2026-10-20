@@ -1,0 +1,140 @@
+{
+  "ids": [
+    "textarea-03",
+    "textarea-04",
+    "breadcrumb-02",
+    "pagination-02"
+  ],
+  "identityCount": 4,
+  "source": "Exact recovered TSX variants and corresponding base-ui primitives, not a generic replacement of similarly named widgets.",
+  "sourceEvidence": [
+    {
+      "id": "textarea-03",
+      "sourceContractPath": "batch02-source-audit/sources/src/data/contents/components/textarea/variant-3.tsx",
+      "sha256": "462ab6f9b7eaee4b8bdb90ae247258e4f74844bdb412e5c2a32a088e4c38b6f7"
+    },
+    {
+      "id": "textarea-04",
+      "sourceContractPath": "batch02-source-audit/sources/src/data/contents/components/textarea/variant-4.tsx",
+      "sha256": "bb69b53e232fc7141e9377bb0ef33ca5a29848eecb88713b5dd47f307a224512"
+    },
+    {
+      "id": "breadcrumb-02",
+      "sourceContractPath": "batch07-source-audit/sources/src/data/contents/components/breadcrumb/variant-2.tsx",
+      "sha256": "332baa2b6a046428785779f0e74381a1c8aaa0d0128a4a58229865b220aee0da"
+    },
+    {
+      "id": "pagination-02",
+      "sourceContractPath": "batch09-source-audit/sources/src/data/contents/components/pagination/variant-2.tsx",
+      "sha256": "90e7e871e4bf0cdf7b27f4505ca4bd285d58e5f269565dc96d8dab23e02f1993"
+    },
+    {
+      "id": "textarea-primitive",
+      "sourceContractPath": "batch02-source-audit/sources/src/components/base-ui/textarea.tsx",
+      "sha256": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9"
+    },
+    {
+      "id": "breadcrumb-primitive",
+      "sourceContractPath": "batch07-source-audit/sources/src/components/base-ui/breadcrumb.tsx",
+      "sha256": "785212482c3b4702abf9bc08af0490f3734e594997e3554e5195328a7ddcd70d"
+    },
+    {
+      "id": "pagination-primitive",
+      "sourceContractPath": "batch09-source-audit/sources/src/components/base-ui/pagination.tsx",
+      "sha256": "7bfb2d3dfdeac426a3635ecbca338c9d0bbb16ff5a1ea8d1bcd7622e41cd9c6c"
+    }
+  ],
+  "defaults": {
+    "Textarea03": {
+      "label": "Add details",
+      "placeholder": "Write your response...",
+      "description": "This helps us understand your input better.",
+      "required": false,
+      "initialValue": ""
+    },
+    "Textarea04": {
+      "label": "Issue description",
+      "placeholder": "Describe the issue you're facing...",
+      "description": null,
+      "required": true,
+      "initialValue": ""
+    },
+    "Breadcrumb02": {
+      "aria-label": "breadcrumb",
+      "segments": [
+        {
+          "label": "Portal",
+          "href": "#"
+        },
+        {
+          "label": "Orders",
+          "href": "#"
+        },
+        {
+          "label": "Shipment Status",
+          "current": true
+        }
+      ]
+    },
+    "Pagination02": {
+      "aria-label": "pagination",
+      "pageCount": 3,
+      "defaultPage": 2,
+      "getPageHref": "#",
+      "previousLabel": "Previous",
+      "nextLabel": "Next",
+      "disabledEdgesAtOriginalDefault": false
+    }
+  },
+  "textarea": {
+    "element": "native textarea, forwarded HTMLTextAreaElement ref",
+    "ownership": "value/defaultValue are mutually exclusive in TypeScript and at runtime. All editing and state restoration remain React/native textarea semantics; no synthetic onValueChange API.",
+    "eventContract": "onChange receives the actual React.ChangeEvent<HTMLTextAreaElement>. It is observational: preventDefault does not undo a text edit. A controlled owner may reject an edit by keeping value unchanged.",
+    "forms": "Native name/value/defaultValue/form/required/disabled/readOnly/onInput/onChange/onInvalid attributes and handlers. Native form reset and external form association are not intercepted.",
+    "labels": "Source label by default; label/description override or null suppression supported. Explicit id retained or useId-generated. Helper ID merged and deduplicated into aria-describedby. Required star is aria-hidden; native required is the semantic source.",
+    "classes": "className applies to textarea; wrapperClassName to field group.",
+    "unsupported": "children, dangerouslySetInnerHTML and onValueChange are never props and are not forwarded.",
+    "nativeValidationEvidence": "Only required/readOnly/disabled attributes, checkValidity and FormData in JSDOM. No claim about browser validation popup, input-method behavior, or trusted keyboard interaction."
+  },
+  "breadcrumb": {
+    "element": "native nav > ol > li; link segments use real a href; current segment uses span aria-current=page.",
+    "typing": "BreadcrumbSegment discriminated union: href with current?:false OR current:true with href?:never. Link segments retain native anchor props and ref. Nav props/ref are retained. children/dangerouslySetInnerHTML unsupported.",
+    "events": "No navigation interception or custom activation handlers. Native link click cancellation, modifier clicks, target/download attributes and href semantics belong to the anchor/browser.",
+    "a11yRepairs": [
+      "The original BreadcrumbSeparator primitive renders li nested inside BreadcrumbItem li. This implementation renders an aria-hidden span separator inside each following li, eliminating invalid nested li markup.",
+      "The original current span has role=link and aria-disabled=true. This implementation uses a noninteractive native span with aria-current=page, without a fake disabled-link role.",
+      "A custom current-first segment is retained; the original fixed example only renders its first segment when it has href."
+    ],
+    "icon": "Original inline grid SVG substitutes for lucide LayoutGridIcon; decorative aria-hidden and focusable=false. No lucide dependency or pixel-equivalence claim."
+  },
+  "pagination": {
+    "element": "native nav > ul > li > a, forwarded HTMLElement nav ref.",
+    "ownership": "page/defaultPage are mutually exclusive in TypeScript and at runtime. page is authoritative. Uncontrolled initial page defaults to 2. Use stable ownership for each mounted instance.",
+    "range": "pageCount defaults to 3 and must be a positive safe integer; page/defaultPage must be safe integers and are clamped into 1..pageCount. A reduced uncontrolled range stays clamped after later expansion.",
+    "href": "getPageHref(page) defaults to #. Enabled links retain their actual href. The component never programmatically navigates, clicks a substitute anchor, or replays navigation after the browser default.",
+    "proposal": "For an uncanceled primary, unmodified click to a different page, onPageChange(next, details) runs synchronously in the anchor onClick. Details include event, previousPage, page, canceled getter, and cancel(). Current-page clicks are callback-silent but keep the href default.",
+    "cancellation": "Call details.cancel() synchronously to prevent native link default and this proposal. details.event.preventDefault() has the same cancellation effect on internal state. details.cancel() after the callback returns is intentionally inert. A throwing callback cancels the originating event and queues no state update, then rethrows to React.",
+    "ancestorCancellation": "Only uncontrolled local state waits one microtask, then checks both React and native event.defaultPrevented after bubbling. Native ancestor and React ancestor cancellation can suppress that internal commit. They cannot retroactively undo an explicit controlled-owner setState already made by the synchronous callback, or other consumer callback side effects. This is not a transactional callback API.",
+    "races": "Latest same-task ordinary intent wins (including a current-page intent). New committed controlled page/ownership, disabled or pageCount changes invalidate older queued state. Unmount discards pending commits.",
+    "nativeGestures": "Ctrl/Meta/Alt/Shift or non-primary clicks bypass page proposals and preserve the browser default. Keyboard activation uses the browser native anchor click; real-browser keyboard verification was not run.",
+    "disabledExtension": "The fixed original at page 2 has no disabled links. The stateful extension disables previous at page 1 and next at pageCount; disabled=true disables all. Disabled anchors have no href, aria-disabled=true, role=link, tabIndex=-1, and no proposal on scripted click.",
+    "controlledClientRouting": "A controlled owner may set page itself and prevent the originating link event for local routing. This explicit parent commit remains authoritative even if that event is canceled.",
+    "icons": "Original inline chevron SVGs replace @tabler/icons-react. No added packages.",
+    "unsupported": "children and dangerouslySetInnerHTML are not supported; arbitrary child slots are not promised."
+  },
+  "visualAdaptations": [
+    "Follow semantic paper/ink tokens, local editorial typography, small 2px corners, spare rules and orange focus replace original neutral utility styling and rounded-xl pagination.",
+    "Textarea original 384px max width, 64px min height, 8px field gaps and right-aligned helper are preserved in responsive logical properties.",
+    "Pagination preserves original 36px minimum item size and 16px gap; Follow current-page ink fill replaces original neutral shadow treatment.",
+    "Reduced motion and forced-colors treatments included. System font fallbacks only; no font binaries or third-party icon packages."
+  ],
+  "verification": {
+    "model": "tests/seventh-controls-model.cjs",
+    "report": "qa/SEVENTH-MODEL.json",
+    "scope": "React/JSDOM contracts only; isolated hash href defaults, no external-site navigation",
+    "browser": "not_run",
+    "formalAccepted": 0
+  },
+  "services": "Local input and navigation components only; no submissions, API service, or persistent user data.",
+  "preservation": "Existing 78 source components are untouched by this module."
+}

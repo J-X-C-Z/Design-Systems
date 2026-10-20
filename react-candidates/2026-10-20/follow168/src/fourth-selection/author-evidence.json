@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "kind": "author actual React/JSDOM execution plus static palette/CSS tests;not browser or independent acceptance",
+  "currentEvidence": "evidence/2026-10-15T06-35-10-246Z-fourth-selection/fourth-selection.json",
+  "currentResult": {
+    "suite": "fourth-selection",
+    "scenarios": 1143,
+    "assertions": 2813,
+    "fields": 18,
+    "canonicalIds": 8,
+    "browser": false,
+    "layout": false,
+    "trustedKeyboard": false,
+    "react": "19.3.0",
+    "jsdomWarnings": []
+  },
+  "exitCode": 0,
+  "stderrBytes": 0,
+  "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputs": [
+    {
+      "path": "src/fourth-selection/index.jsx",
+      "bytes": 11139,
+      "sha256": "e5270f65b61b68bca228c3baea2050ea77ef26cc80d5fd00607a24b636cc80ea"
+    },
+    {
+      "path": "src/scalar/index.jsx",
+      "bytes": 23683,
+      "sha256": "3681416a1ae14aae101773d4128b5c6ce55500ab01c39a55f1fad92c07b8a835"
+    }
+  ],
+  "bundleSHA256": "08236e8c7ab9197d9053a805091c972309e5c05deddd825bef91c4e759bd886d",
+  "testSHA256": "e37d7d2a522d92b23faee1edba4a497f0293b0c1d95c3e96426678615f09757a",
+  "cssSHA256": "8938d057393255f2d1411386ea99053dc796ffae1ea890b1749414a38bd46d63",
+  "typesSHA256": "10b42b415bc597420d806391b7b8aabb6dc9780d21393aad764bd0fcdd022f84",
+  "typeTests": "src/fourth-selection/type-tests.tsx",
+  "typeCheck": "Pending parent aggregate TypeScript check;not executed by this worker",
+  "staticColors": "src/fourth-selection/static-color-pairs.json",
+  "staticColorResult": {
+    "themes": 14,
+    "pairs": 308,
+    "failures": 0
+  },
+  "sourceProvenance": "src/fourth-selection/source-hashes.json",
+  "sourceGitBlobs": {
+    "exactIds": 8,
+    "primitives": 2,
+    "allMatchCanonicalOrPinnedMap": true,
+    "upstreamExecuted": false
+  },
+  "history": [
+    {
+      "evidence": "evidence/2026-10-15T06-24-58-028Z-fourth-selection/fourth-selection.json",
+      "result": "exit0,1142scenarios2681assertions;stderr1835bytes contains5Reactactwarnings from split-form baseline remount test outsideact. Test remount wrapped in settle;no implementation state failure found. Superseded by current cleanstderr rerun."
+    },
+    {
+      "evidence": "evidence/2026-10-15T06-28-09-549Z-fourth-selection/fourth-selection.json",
+      "result": "exit0,1142scenarios2779assertions,stderr0. Superseded only by subsequent narrow Switch12 native fieldset disabled/form property fix and added root/member association tests; existing member disabled/form behavior had passed."
+    }
+  ],
+  "remaining": [
+    "Independent final-byte review",
+    "Final aggregate TypeScript and consumer package validation",
+    "Real browser trusted input/hit-testing/layout/focus/Space/Tab/accessibility tree",
+    "Desktop/narrow/RTL/forced-colors/reduced-motion rendered14-mode review"
+  ],
+  "formalAccepted": 0,
+  "workingCopyStatus": {
+    "status": "matches final clean author rerun",
+    "change": "Switch12 root disabled/form reflects native fieldset API,while member form/disabled remains explicitly forwarded. Added root/member association,dynamic release,and cleanup tests pass."
+  }
+}

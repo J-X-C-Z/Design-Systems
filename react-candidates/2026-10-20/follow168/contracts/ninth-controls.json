@@ -1,0 +1,25 @@
+{
+  "ids": [
+    "dialog-03",
+    "textarea-18"
+  ],
+  "sourceProof": "reference/ninth-controls/SOURCE-PROOF.json",
+  "dialog": {
+    "defaultOpen": false,
+    "acknowledgmentDefault": false,
+    "acknowledgmentGatesDelete": false,
+    "actions": "local synchronous callbacks only",
+    "nativeModal": "showModal with explicit unavailable error",
+    "accessibility": "ARIA title/description, Cancel focus, Tab edge constraint, Escape and focus return; model-only"
+  },
+  "textarea": {
+    "default": "",
+    "maxLength": 200,
+    "unit": "UTF-16 code unit",
+    "overLimit": "reject whole proposed change, no truncation, no callback",
+    "composition": "same limit on every onChange, compositionend restores accepted value; no deviceIME proof",
+    "ownerOverflow": "RangeError"
+  },
+  "apiDocumentation": "PACKAGE-README.md",
+  "browser": "not_run"
+}

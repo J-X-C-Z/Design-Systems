@@ -1,0 +1,6 @@
+{
+  "radio-group-03": {"initial":"light","groupLabel":"Theme","items":[{"value":"light","label":"Light Theme","icon":"sun"},{"value":"dark","label":"Dark Theme","icon":"moon"},{"value":"system","label":"System Default","icon":"desktop"}]},
+  "radio-group-04": {"initial":"starter","groupLabel":"Productivity plan","items":[{"value":"starter","label":"Starter","price":"Free","description":"Quick setup for personal productivity","icon":"bolt"},{"value":"team","label":"Team","price":"₹799/mo","description":"Built for collaboration and shared workflows","icon":"users"},{"value":"premium","label":"Premium","price":"Custom","description":"Full power with advanced controls and support","icon":"crown"}]},
+  "radio-group-05": {"initial":"2","groupLabel":"Workspace plan","items":[{"value":"1","label":"Individual","price":"Free","icon":"user"},{"value":"2","label":"Team Workspace","price":"₹999/mo","icon":"users","badge":"Best Seller"},{"value":"3","label":"Organization","price":"Custom","icon":"building"}]},
+  "radio-group-06": {"initial":"starter","groupLabel":"Project plan","items":[{"value":"starter","label":"Starter","price":"Free","description":"Good for personal projects and basic usage."},{"value":"pro","label":"Pro","price":"$10/mo","description":"Best for teams with more features and flexibility."}]}
+}

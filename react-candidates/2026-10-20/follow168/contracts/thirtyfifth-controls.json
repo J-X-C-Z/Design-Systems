@@ -1,0 +1,54 @@
+{
+  "version": "0.35.0-candidate.1",
+  "phase": "Declared before implementation; final observed status belongs to CURRENT-VERIFICATION.json",
+  "ids": {
+    "tabs-26": {
+      "export": "Tabs26",
+      "values": [
+        "specs",
+        "dimensions",
+        "box"
+      ],
+      "default": "specs",
+      "orientation": "horizontal",
+      "identity": "Specifications / Dimensions / In the Box: all14 exact original label/value rows(5/5/4), narrow underline scroll rail, dashed separators, mobile stacked and wider right-aligned values. Semantic dl/dt/dd preserves row relationships. Original fictional product specifications are illustrative source identity, not verified hardware specifications.",
+      "state": "Exact union|null exclusive value/defaultValue; mount default specs; controlled owner authority, release retains last committed value; shared30 owner unchanged. Hidden panel shells persist, contents unmount. No form reset selection.",
+      "keyboard": "Inherited automatic/manual focus selection; horizontal/vertical override, RTL/loop, Home/End/axis arrows; native Tab, guarded Enter/Space. Owner changes, cancellation, actual availability and external focus beat deferred input. Only still-hidden panels may return focus; internal return does not auto-select."
+    },
+    "textarea-21": {
+      "export": "Textarea21",
+      "identity": "Project Notes label, exact Write a quick note about your project... placeholder; muted filled field, small corner radius, shadow and primary focus border/ring. No invented helper/counter/default text.",
+      "field": "Native textarea input/change/composition/focus/validity/form/name/reset/readOnly/disabled semantics; exclusive controlled value or defaultValue TypeScript owner union. No wrapper state or synthetic callback layer. Native React ownership switching caveats remain, unlike custom tab owner. Label and textarea use caller id or unique useId, label htmlFor protected, description attributes forwarded. Native ref and React19 cleanup supported. Optional label can localize or be suppressed with caller accessible name."
+    },
+    "button-37": {
+      "export": "Button37",
+      "identity": "Compact green-tinted double-check icon button with visually-hidden Check name, outlined focus ring; local SVG preserves double-check silhouette. No selection or success state invented."
+    },
+    "button-38": {
+      "export": "Button38",
+      "identity": "Outlined bell icon button with top-right blue bouncing decorative dot and visually-hidden Notifications name. Dot conveys no unread count or live notification status. Motion stops under reduced-motion. No fake menu, dialog or notification feed."
+    }
+  },
+  "buttons": {
+    "native": "Native button elements, default type=button; caller may explicitly choose submit/reset. Full native event handlers/ref/form/name/value/disabled/aria semantics forwarded, no deferred notification layer or duplicate keyboard activation. Icon children fixed; optional string label localizes default accessible name. Explicit caller aria-label/labelledby follows native accessible naming precedence. Native disabled behavior and parent event cancellation remain browser/React semantics.",
+    "limits": "These are action surfaces only; no network, clipboard, account setting, real confirmation, notification retrieval or external side effect."
+  },
+  "shared": {
+    "preservation": "All152 previous implementations, including shared30 owner and148 tooltip repairs, stay byte-identical except5 integration entries.",
+    "style": "Scoped responsive/dark/reduced-motion/forced-colors rules. New original page must isolate old broad follow74 selectors and check text/icon contrast. No remote assets/dependencies/downloads."
+  },
+  "limits": [
+    "React only; no native/Flutter.",
+    "Candidate identity is source adaptation, not full official primitive/layout equivalence.",
+    "Real browser layout/AT/trusted input/formal acceptance0"
+  ],
+  "accounting": {
+    "before": 152,
+    "after": 156,
+    "remaining": 693,
+    "newCanonicalIds": 4,
+    "panels": 3,
+    "specificationRows": 14,
+    "formalAccepted": 0
+  }
+}

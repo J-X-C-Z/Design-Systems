@@ -1,0 +1,17 @@
+# Follow160 RadioGroup03–06
+
+Four distinct source adaptations: compact icon theme choices; separate three-plan pricing cards; joined workspace choices with a Best Seller badge; and two larger-radio project cards. Exact titles, prices, descriptions, defaults, and local SVG icon roles are kept in `data.json`. Prices are source examples, not verified current offers.
+
+These components use actual native radio inputs, not Radix buttons with hidden bubble inputs. `value`/`defaultValue` are exclusive exact unions or null. Controlled owners remain authoritative; release keeps the last committed controlled selection. Native reset returns uncontrolled state to the mount default and restores controlled checkedness without proposing a change. Defaults and live checks are reconciled in two distinct passes. Use different native names for independent groups. Reset listeners inspect actual live `input.form` after dispatch in the same light-DOM document, including reassociation during onReset. Newly mounted/key-replaced controlled groups reconcile once more after the native default action.
+
+`onValueChange` is a cancellable proposal with `select`, `keyboard`, or `reset` details. Returning false, `details.cancel()`, or preventing its event cancels. Native input events remain available in keyed `itemProps`. Epochs are captured before caller handlers; owner/config changes and unmount defeat old pending work. Only an accepted later action supersedes earlier reset/click work. Native `preventDefault` descriptors are restored via the unchanged shared cancellation observer.
+
+Default arrow navigation supports both axes and horizontal RTL; optional orientation restricts the axis and suppresses native cross-axis selection. A nonmoving edge arrow does not activate the current item. Home/End only focus; Space selects via a real input click. Enter suppresses implicit form submission without selecting. Tab is native. Deferred navigation never reclaims externally moved focus, and destination bubble onFocus synthetic handlers may cancel or move away. Already moved focus is not reversed; preventing a noncancelable native focusin event keeps native semantics.
+
+Each visible title is the default accessible name. Prices, descriptions, and recommendation are separate descriptive references. IDs are unique per instance. The original generic plan-radio-N name on variant05 is deliberately replaced. Caller `aria-labelledby` may override, but generic `aria-label` cannot silently hide a visible item title. Icons are decorative. Native refs and React19 ref cleanup are supported.
+
+Scoped responsive, dark, forced-colors, and reduced-motion rules preserve four distinct treatments. The optional Best Seller badge is visually hidden below 640px, while its linked descriptive text remains available to accessible description computation.
+
+All earlier JavaScript implementations stay unchanged; five entry/registry integrations and one authorized old35 CSS data-mode=dark alias repair are explicit exceptions. No real billing, subscription, theme setting, or network action occurs. Browser layout, trusted input, accessibility-tree/AT, and formal acceptance are not claimed.
+
+Live tab-entry eligibility is reconciled after commits and relevant light-DOM hidden/disabled/inert/style/class/open changes. Only changed membership updates tab stops; selection, focus and pending requests are not cleared. This does not implement a full browser Tab-order engine or observe arbitrary stylesheet/CSSOM changes or cross-document moves.

@@ -1,0 +1,11 @@
+node_modules/
+.portable/
+.test-build/
+dist*/
+evidence/
+qa/*
+!qa/independent168/
+qa/independent168/*
+!qa/independent168/pages/
+qa/independent168/pages/*
+!qa/independent168/pages/audit-relay-workshop.cjs

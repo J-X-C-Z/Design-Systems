@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "slice": "React second disclosure4",
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "idCount": 4,
+  "common": {
+    "implementation": "Actual React JSX/state/ref/layout effects. Shared requested-state/focus hook copied from first10 React candidate; new per-ID semantic defaults, icons, classes and source contracts. No DOM controller mounting.",
+    "ownership": "value undefined releases control preserving last effective accepted value. defaultValue mount-only. Callback is proposal; false vetoes, promises not awaited; committed parent owner/disable/destruction wins pending action. No arbitrary same-value parent render reset command.",
+    "items": "Duplicate keys retain first; content missing/null uses structured before/emphasis/after, explicit undefined/empty string selects empty. Normalization idempotent. Invalid tab value falls back to enabled first item; empty collection has no controls.",
+    "keyboard": "Tabs: automatic focus activation by default, optional manual Enter/Space, LTR/RTL arrows wrapping enabled items,Home/End. Accordion: all enabled headers in normal Tab order, optional up/down/Home/End plus Enter/Space. Modified/composition keys ignored.",
+    "focus": "Keyed controls and SVG descendants retained on metadata updates; outside focus owner wins. Focus restoration only if a removed/disabled control still owned focus and no outside takeover.",
+    "forms": "All triggers type button, do not submit/reset ancestor forms. Collections have no native field name/FormData/reset commitment; controlled parent can change accepted value.",
+    "accessibility": "Linked unique useId trigger/panel IDs; selected/expanded/disabled; real labels remain in accessibility tree for icon-only mobile tabs. No claims about screenreader/real browser default Tab behavior.",
+    "themes": "Scoped .fr7-nd; semantic surface/ink pairs, hidden state, min-width0; Follow geometry is editorial hard edge. No commercial fonts/images.",
+    "unverified": "Real pointer/keyboard/layout/IME/screenreaders/touch/cross-browser/long-lived stability. No full Radix dependency equivalence."
+  },
+  "items": [
+    {
+      "id": "tabs-02",
+      "source_path": "src/data/contents/components/tabs/variant-2.tsx",
+      "pinned_git_blob_sha": "ade5638acb78c51e1402a2fe7ffd8268d8e99856",
+      "sha256": "66abb56988ff50be1f46134c76d17e3b8b6bf3379b3224b632150c444e7866f3",
+      "local_file": "sources/tabs/variant-2.tsx",
+      "defaultValue": "deploy",
+      "structure": "Bordered deployment pipeline tabs; three text triggers and structured emphasized panels. Follow uses a square outlined track and ink-filled selected trigger.",
+      "upstreamURL": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/tabs/variant-2.tsx",
+      "languageAdaptation": "Chinese local demonstration prose; no banking transaction or service. Original source prose retained separately.",
+      "sourceCandidate": true,
+      "authorChecks": "25 groups /196 assertions in React19.3/JSDOM",
+      "independent": "pending",
+      "browser": "not_run",
+      "formalAccepted": false
+    },
+    {
+      "id": "tabs-03",
+      "source_path": "src/data/contents/components/tabs/variant-3.tsx",
+      "pinned_git_blob_sha": "691d8f9de066a5dcf7a87d44c27090931877ab3a",
+      "sha256": "ba94173ffa35a8fdbf3f1ce94122e133fa450a6f36939bf9f3cf664e025757b3",
+      "local_file": "sources/tabs/variant-3.tsx",
+      "defaultValue": "discovery",
+      "structure": "Three discovery/trending/live icon tabs;28rem cap; mobile visually hidden but accessible labels; italic panels and reduced-motion-aware short entrance.",
+      "upstreamURL": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/tabs/variant-3.tsx",
+      "languageAdaptation": "Chinese local demonstration prose; no banking transaction or service. Original source prose retained separately.",
+      "sourceCandidate": true,
+      "authorChecks": "25 groups /196 assertions in React19.3/JSDOM",
+      "independent": "pending",
+      "browser": "not_run",
+      "formalAccepted": false
+    },
+    {
+      "id": "accordion-02",
+      "source_path": "src/data/contents/components/accordion/variant-2.tsx",
+      "pinned_git_blob_sha": "0aa2f650b0532dcbc258c44d32531298eda0df47",
+      "sha256": "57f376d9b132adb9a6c718316f501c09ee36ea7279b686caea6790441e5b6347",
+      "local_file": "sources/accordion/variant-2.tsx",
+      "defaultValue": [
+        "item-1"
+      ],
+      "structure": "Multiple expansion, first open; separate surface cards with gaps and trailing chevrons. Follow uses border emphasis rather than upstream shadow.",
+      "upstreamURL": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/accordion/variant-2.tsx",
+      "languageAdaptation": "Chinese local demonstration prose; no banking transaction or service. Original source prose retained separately.",
+      "sourceCandidate": true,
+      "authorChecks": "25 groups /196 assertions in React19.3/JSDOM",
+      "independent": "pending",
+      "browser": "not_run",
+      "formalAccepted": false
+    },
+    {
+      "id": "accordion-03",
+      "source_path": "src/data/contents/components/accordion/variant-3.tsx",
+      "pinned_git_blob_sha": "b6b1ebdfebe06296983e068aa91d0404f7d43202",
+      "sha256": "5f1a61de5854569022646f2cc8dd757ae532f09f8b31eb7e4ee10aa6ee924cba",
+      "local_file": "sources/accordion/variant-3.tsx",
+      "defaultValue": [
+        "item-1"
+      ],
+      "structure": "Multiple expansion, first open; distinct wallet/shield/warning topic icons plus trailing chevrons; separate explanatory prose.",
+      "upstreamURL": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/accordion/variant-3.tsx",
+      "languageAdaptation": "Chinese local demonstration prose; no banking transaction or service. Original source prose retained separately.",
+      "sourceCandidate": true,
+      "authorChecks": "25 groups /196 assertions in React19.3/JSDOM",
+      "independent": "pending",
+      "browser": "not_run",
+      "formalAccepted": false
+    }
+  ]
+}

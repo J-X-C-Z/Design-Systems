@@ -1,0 +1,37 @@
+{
+  "kind": "isolated accessible-name relation correction candidate",
+  "canonicalIds": ["button-25", "button-34"],
+  "runtimeFileChanged": "src/fourth-buttons/index.jsx",
+  "browserDefectEvidence": "Parent-reported Chrome v191: Button34 idle name exact match 0; Button25 idle and error exact name matches 0 while visible role=status text exists. This candidate has not yet received Chrome AX verification.",
+  "fallback": "When neither non-null aria-labelledby nor non-null aria-label is supplied, a stable React.useId ID on the original role=status text is referenced from button aria-labelledby. Its current ReactNode determines the browser name.",
+  "priority": [
+    "Non-null caller aria-labelledby is passed unchanged, including an empty string or a missing target. Existing caller aria-label is also passed unchanged. Browser native accessible-name precedence applies; no generated target is substituted.",
+    "If aria-labelledby is null or undefined and aria-label is non-null, no generated aria-labelledby is written; caller aria-label is passed unchanged, including an empty string.",
+    "If aria-labelledby and aria-label are both null or undefined (including omitted), the generated fallback relationship is used. Null and undefined mean an absent React DOM attribute, not a requested blank string.",
+    "Empty strings remain caller intent. They suppress the relevant fallback and may produce an empty browser name. Caller-supplied invalid ID references are not silently repaired. The host owns a meaningful explicit name."
+  ],
+  "content": "children and each status label remain ReactNodes rendered once in the same live span. No flattening, stringification, cloning, hidden duplicate, fixed Chinese label, or ReactNode mount replacement is added.",
+  "status": {
+    "button-25": ["idle: children", "loading: loadingLabel", "success: successLabel", "error: errorLabel"],
+    "button-34": ["idle: children", "copying: copyingLabel", "copied: copiedLabel", "error: errorLabel"],
+    "liveNotification": "Original role=status and aria-live=polite remain on the same text node. Actual AT announcement quality is unverified.",
+    "explicitNames": "Explicit caller names remain stable through status changes; the visible/live feedback changes independently."
+  },
+  "unchanged": [
+    "No public props, type declarations, CSS, business behavior or other component implementation changed.",
+    "Native disabled/readOnly/aria-disabled, forwarded refs and metadata rerender node stability remain governed by the old contract.",
+    "Button25 remains the source's fixed 1000ms Math.random() > 0.5 demonstration.",
+    "Button34 calls the same navigator.clipboard.writeText text only on uncancelled activation; duplicate pending calls remain blocked; only fulfillment changes to copied; missing API, insecure context, sync throw, invalid return or rejection remain errors.",
+    "Successful feedback stays 2000ms. Reset/text/lock/unmount cancellation, latest callbacks and callback exception behavior are unchanged. Issued OS writes cannot be undone.",
+    "Clipboard bridge discrepancy is unresolved; no API replacement or fabricated actual success is introduced."
+  ],
+  "validation": {
+    "baselineFocused": "expected red: original live label has no stable nonempty IDREF target",
+    "candidateFocused": "passed: 52 scenarios / 1204 assertions; React 19.3.0; jsdomWarnings=[]",
+    "candidateLegacy": "passed: original fourth-buttons suite, 214 scenarios / 1145 assertions; React 19.3.0; jsdomWarnings=[]",
+    "evidence": "evidence/2026-10-15T07-12-54-812Z/SUMMARY.json",
+    "computedChromeAccessibleName": "not_run",
+    "screenReaderAnnouncements": "not_run",
+    "realSystemClipboard": "not_verified"
+  }
+}

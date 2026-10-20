@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "frozenAtUTC": "2026-10-15T06:02:55.965845+00:00",
+  "scope": "Only owned third-selection files, its test, and its contract. Shared core is separately evidence-bound, not edited here.",
+  "files": [
+    {
+      "path": "contracts/third-selection.json",
+      "bytes": 20987,
+      "sha256": "e5ad5baaa3d5a6a32578e7510ffa62e918e3d510a901632359935056000a4a74"
+    },
+    {
+      "path": "src/third-selection/LICENSE.upstream",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "src/third-selection/README.md",
+      "bytes": 7589,
+      "sha256": "f6967b7ce4ce39560d2afee38eccc3f3447e2f5431513d3e3d0755ccb14897bb"
+    },
+    {
+      "path": "src/third-selection/author-evidence.json",
+      "bytes": 2031,
+      "sha256": "3eb4ebe8afa170ccc5cbfa628a50081e1819800dfda469d84cb6cc66d67f5ce1"
+    },
+    {
+      "path": "src/third-selection/examples.jsx",
+      "bytes": 3181,
+      "sha256": "bc03797884e9b9ca915713da793a05c141a9905039a3c4bf2ef0da336f2d2a8a"
+    },
+    {
+      "path": "src/third-selection/index.d.ts",
+      "bytes": 4757,
+      "sha256": "32b6b231025e38efcd6f878a42f31eb634445e340e57e7ace5b595e278f3d780"
+    },
+    {
+      "path": "src/third-selection/index.jsx",
+      "bytes": 8467,
+      "sha256": "6e99974daa127ce8debeca29484c860537511341ac280a92cef32d91423941d3"
+    },
+    {
+      "path": "src/third-selection/source-hashes.json",
+      "bytes": 8089,
+      "sha256": "c7a05aaac2fd2ae76b498a94e011babe54da1ae357fb43d634a4caf8062f749d"
+    },
+    {
+      "path": "src/third-selection/sources/checkbox-05.tsx",
+      "bytes": 1419,
+      "sha256": "c9baaa675e895002258f61ddaa3822c9d0134c80f6fe25955f4c4c7527af4d92"
+    },
+    {
+      "path": "src/third-selection/sources/checkbox-06.tsx",
+      "bytes": 1827,
+      "sha256": "c7f43316dd38b140badd17560fbd27a6ebf48cf264361f0f4e6d67bc2f2e71d4"
+    },
+    {
+      "path": "src/third-selection/sources/checkbox-07.tsx",
+      "bytes": 1152,
+      "sha256": "9187b4e75e45929061ecf9a4f8227b67f63588d626c47610ebb6c984c7364834"
+    },
+    {
+      "path": "src/third-selection/sources/checkbox-08.tsx",
+      "bytes": 1722,
+      "sha256": "03385bcaed73f46368e46b4db24d80c2135606ce8e963df1afe41b722f9049fe"
+    },
+    {
+      "path": "src/third-selection/sources/primitive-badge.tsx",
+      "bytes": 1865,
+      "sha256": "1b292cd64608eef62eab1e43621071b32f794988a8c4e40fd1086cfbf8d9ef5d"
+    },
+    {
+      "path": "src/third-selection/sources/primitive-checkbox.tsx",
+      "bytes": 1386,
+      "sha256": "fe464e891f08d990d5ed7973f22ddd130d3da9c446de476754f32a4182ce773d"
+    },
+    {
+      "path": "src/third-selection/sources/primitive-label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "src/third-selection/sources/primitive-switch.tsx",
+      "bytes": 1748,
+      "sha256": "f3a1ed75be07bda7e391e20631c123e066bcadaced2d6340d8e4531ecec63434"
+    },
+    {
+      "path": "src/third-selection/sources/switch-05.tsx",
+      "bytes": 2300,
+      "sha256": "d7cbe9bece318d499dc6e0ac96785a8396b8caff95abdaed4e839a1613dfff82"
+    },
+    {
+      "path": "src/third-selection/sources/switch-06.tsx",
+      "bytes": 316,
+      "sha256": "aace85204cdd96b4428bc2c29e73bee99c3fdecb299c86b7d6190177749b6676"
+    },
+    {
+      "path": "src/third-selection/sources/switch-07.tsx",
+      "bytes": 768,
+      "sha256": "de761cc4df94ee1f882c0bd41bf232813748eae464289d8674fb2d262115d289"
+    },
+    {
+      "path": "src/third-selection/sources/switch-08.tsx",
+      "bytes": 1529,
+      "sha256": "531d7e11031987cfcd965d43748085a2942f55253c3774f33040c5393d07ff94"
+    },
+    {
+      "path": "src/third-selection/static-color-pairs.json",
+      "bytes": 82175,
+      "sha256": "74cf2b8c81e4233509e798fd8b5d909211592040322003f8fa42c42ff620fe9d"
+    },
+    {
+      "path": "src/third-selection/styles.css",
+      "bytes": 10269,
+      "sha256": "5c0d7788e257c16f87fa0291007b2393f82cd36fec2d2a542fb1114a61a1cc73"
+    },
+    {
+      "path": "tests/third-selection-tests.cjs",
+      "bytes": 18958,
+      "sha256": "472a6e0721c2440e1945a116b695968c913e59f43387bf6dbbffc4db5ec18a18"
+    }
+  ]
+}

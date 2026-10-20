@@ -1,0 +1,34 @@
+[
+  {
+    "id": "textarea-08",
+    "kind": "exact_variant",
+    "source_path": "src/data/contents/components/textarea/variant-8.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/textarea/variant-8.tsx",
+    "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/textareas-one/sources/textarea-08.tsx",
+    "evidence_copy": "sources/src/data/contents/components/textarea/variant-8.tsx",
+    "pinned_git_blob_sha": "ffed6ee696c66fcdb31a8a3de5b9294f14423b06",
+    "recomputed_git_blob_sha": "ffed6ee696c66fcdb31a8a3de5b9294f14423b06",
+    "sha256": "8632ad2140a7c5afbf24bd25c4580d4014de16e680f380c5f56fb02be53e639f",
+    "bytes": 609,
+    "lines": 23,
+    "source_hash_verified": true,
+    "semantically_read_this_audit": true,
+    "executed": false,
+    "listed_in_prior_source_map": false
+  },
+  {
+    "id": "dialog-02",
+    "kind": "exact_variant",
+    "source_path": "src/data/contents/components/dialog/variant-2.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/dialog/variant-2.tsx",
+    "local_origin": "component-framework-adapters-20261014/shared/reference/dialog-02.tsx",
+    "evidence_copy": "sources/src/data/contents/components/dialog/variant-2.tsx",
+    "pinned_git_blob_sha": "99d52a2cf76dfff1478d033029358477c4289e49",
+    "recomputed_git_blob_sha": "99d52a2cf76dfff1478d033029358477c4289e49",
+    "sha256": "c58b8eedbd6f3ab640acf20e380e1683caa7007c7989e8453a346a2000c7608c",
+    "bytes": 2942,
+    "lines": 70,
+    "semantically_read_this_audit": true,
+    "executed": false
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "sources": [
+    {
+      "source_path": "src/data/contents/components/button/variant-4.tsx",
+      "file": "sources/variant-4.tsx",
+      "git_blob": "2ed4e0bd84163793bf08fa78bc689b6d685d0b1a",
+      "sha256": "e32cccdb4e04eb575c182e3a04503488f68b98f9df5b83d6cec793dbff2f5123",
+      "bytes": 425,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-4.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-5.tsx",
+      "file": "sources/variant-5.tsx",
+      "git_blob": "b388ab13ae68ee588a57e2d64d87856a980239a6",
+      "sha256": "17c0a5c770d29fe132cb4e7556e3ee9f0d9167526abb5c55a6af15171cf6401b",
+      "bytes": 248,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-5.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-6.tsx",
+      "file": "sources/variant-6.tsx",
+      "git_blob": "947ed4018457ad219a6cd28244adf12ebec1a6c8",
+      "sha256": "50bed6994faa0fa2b7ee2da69bc2045edde61f24f8adcd8a242db573664ed8cb",
+      "bytes": 155,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-6.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-7.tsx",
+      "file": "sources/variant-7.tsx",
+      "git_blob": "20accddc662c38343492e180565670863b1697c3",
+      "sha256": "f6f7354d3bdfdeea06847fb688d439d422161b7ed74fecab439020d9f1dddf23",
+      "bytes": 155,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-7.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-8.tsx",
+      "file": "sources/variant-8.tsx",
+      "git_blob": "64b0fa020f959fb18c26a7de754c0d4d56aa9347",
+      "sha256": "3f1cfa0e8187e7f0fe8095b971d5648df8c8abf717741a7d45e86f0aac4f49b0",
+      "bytes": 187,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-8.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-9.tsx",
+      "file": "sources/variant-9.tsx",
+      "git_blob": "a52d90def7ca8abca267f9109f70434e0c645d31",
+      "sha256": "b64419debb5d9ffa98a3884e347a51f13cbbd4eab3e6ba40aecc23c7d7011c6a",
+      "bytes": 613,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-9.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-10.tsx",
+      "file": "sources/variant-10.tsx",
+      "git_blob": "ce13bb831f512b8a46e82e6903092d323f659501",
+      "sha256": "dfe50fbe118328155e8442fe62f6be15087d32c1c26b639921970c3603d81c8b",
+      "bytes": 610,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-10.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-11.tsx",
+      "file": "sources/variant-11.tsx",
+      "git_blob": "60777dbf072e3abf50800f8597d9b2cf1db75030",
+      "sha256": "f286ab72ebfa9cae03832cfc7d7bcf858d010e4fe5c8f7cfca5950d7b2eba8db",
+      "bytes": 373,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-11.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/data/contents/components/button/variant-12.tsx",
+      "file": "sources/variant-12.tsx",
+      "git_blob": "6cd5002982cac7e961d5f69588a10203b0d56457",
+      "sha256": "d6cde909e684a2435122963ad7f636ba5249dfa07fd0bef66807414d240726b5",
+      "bytes": 256,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-12.tsx",
+      "verification": "Fresh local Git blob and SHA256 match pinned source-map record; full implementation read."
+    },
+    {
+      "source_path": "src/components/base-ui/button.tsx",
+      "file": "sources/base-button.tsx",
+      "git_blob": "810fdb5f0e11477738c9269fb869214bf036bbb6",
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512",
+      "bytes": 3337,
+      "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/components/base-ui/button.tsx",
+      "verification": "Fresh local blob match and full implementation read; documents native primitive size defaults."
+    }
+  ],
+  "localCatalogSHA256": "c60cc54b67001954e991bb29fd7e8ce2580b96c32239d100a287896791cff991"
+}

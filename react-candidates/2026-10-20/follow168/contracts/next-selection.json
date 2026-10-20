@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "slice": "react-next-selection-seven",
+  "idCount": 7,
+  "canonicalFile": "component-framework-adapters-20261014/shared/catalog-849.json",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "localCatalogFile": "src/catalog.json",
+  "localCatalogSHA256": "c60cc54b67001954e991bb29fd7e8ce2580b96c32239d100a287896791cff991",
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "common": {
+    "implementation": "Actual React19 JSX/hooks/refs. Checkbox02 owns atomic pair; remaining IDs compose existing actual scalar React fields. No DOM controller mount, source dependency execution, iframe, innerHTML, fetch or storage.",
+    "ownership": "Committed owner value/ownership/ownerRevision and safety changes win over older events and reset jobs; same-value ordinary rerenders are metadata. Explicit flushSync tests distinguish committed updates from batched setState.",
+    "reset": "Actual document capture observation with microtask reconciliation. Native reset default action then current owner or mount baseline. Unmount/generation/form transfer/new owner/new post-return intent invalidates older work. Cancellation supported during dispatch, independent valid/cancel double jobs.",
+    "resetLimit": "Late post-dispatch preventDefault or earlier stopImmediatePropagation that prevents observation outside guarantee. Replacement joining active reset only within same observer family; mixed and scalar observers are separate. Direct property writes without events not model updates.",
+    "callbackErrors": "Exception propagated; unfinished proposal not committed and current native model redrawn, including scalar BooleanField onChange correction in this candidate.",
+    "styles": "Scoped variant CSS, native source cardinality, system fonts, Follow semantic tokens and source visual differences.44px target enhancement. Seven themes are portability fixtures, not seven independent849 completion claims.",
+    "accessibility": "Label associations,useId,real native inputs,mixed aria,source-only accessible names. No invented keyboard Space simulation; browser default action required.",
+    "scope": "Only these exact seven React IDs. No credit for native,Flutter,otherIDs,formal acceptance or real-browser/IME based on author suite.",
+    "externalEffects": "No network or credential-sensitive fields. Test text nonpersonal and not logged/persisted beyond test artifacts.",
+    "pending": [
+      "Independent review/test run",
+      "Real browser native keyboard/label/default actions",
+      "OS IME,undo,autofill,clipboard",
+      "Rendered responsive/RTL/theme/contrast and accessibility tree checks"
+    ],
+    "clickCancellation": "onClick preventDefault and nativeEvent.defaultPrevented cancel internal proposal; original React onChange still forwards. Microtask reconciles native activation rollback to current pair/model."
+  },
+  "items": [
+    {
+      "id": "checkbox-02",
+      "export": "Checkbox02",
+      "source": {
+        "id": "checkbox-02",
+        "source_path": "src/data/contents/components/checkbox/variant-2.tsx",
+        "file": "sources/checkbox-02.tsx",
+        "local_origin": "component-framework-adapters-20261014/shared/reference/checkbox-02.tsx",
+        "git_blob": "bf40fcdaa0b705879a2aff16dd3a30e284a24f97",
+        "sha256": "26e0d7a2c861a6690824f8e08bfdfea6341eb165ed9996cbc3720c0b40fd6e0c",
+        "bytes": 3050,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-2.tsx"
+      },
+      "sourceStructure": [
+        "Native checkbox plus adjacent label/help column.",
+        "Unchecked + indeterminate initial source; click proposal clears indeterminate; outline check/minus."
+      ],
+      "api": {
+        "model": "Atomic value/defaultValue={checked,indeterminate}; full object required by types, missing runtime members false, null controlled false/false, undefined release last effective pair. No checked/defaultChecked/onCheckedChange alias.",
+        "proposal": "onChange original React event before onValueChange paired proposal. Proposal always indeterminate:false.",
+        "submission": "submissionValue native string defaults on; checked controls success independently from mixed.",
+        "reset": "Entire pair returns to initial defaultValue or current controlled owner; no proposal on reset."
+      },
+      "executionStatus": {
+        "sourceBytes": "independently_rehashed_against_cached_pinned_tree",
+        "semanticRead": true,
+        "author": "passed_current_revision_combined_246_scenario_534_assertion_suite",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending"
+      }
+    },
+    {
+      "id": "checkbox-03",
+      "export": "Checkbox03",
+      "source": {
+        "id": "checkbox-03",
+        "source_path": "src/data/contents/components/checkbox/variant-3.tsx",
+        "file": "sources/checkbox-03.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/checkbox-03.tsx",
+        "git_blob": "e5456b930371d4d53618d85a951280d0cff5d5cf",
+        "sha256": "60b3fd8a572acfcef706df7408c2f123544d11e7a576265facc426e3388e487c",
+        "bytes": 984,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-3.tsx"
+      },
+      "sourceStructure": [
+        "One false-initialized checkbox followed by associated label.",
+        "Dashed unchecked and checked border; checked accent color."
+      ],
+      "api": {
+        "model": "Scalar checked/defaultChecked/onCheckedChange, native value for successful-control content.",
+        "sourceDefaultChecked": false
+      },
+      "executionStatus": {
+        "sourceBytes": "independently_rehashed_against_cached_pinned_tree",
+        "semanticRead": true,
+        "author": "passed_current_revision_combined_246_scenario_534_assertion_suite",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending"
+      }
+    },
+    {
+      "id": "checkbox-04",
+      "export": "Checkbox04",
+      "source": {
+        "id": "checkbox-04",
+        "source_path": "src/data/contents/components/checkbox/variant-4.tsx",
+        "file": "sources/checkbox-04.tsx",
+        "local_origin": "component-framework-adapters-20261014/shared/reference/checkbox-04.tsx",
+        "git_blob": "c3fd8b3ff16528bc984c16a598cb755085f0aff1",
+        "sha256": "14b92c81079d0048c36a4be1657e3cb127d5f9b9ac1c4c6dc5c9aa51e976b8e1",
+        "bytes": 995,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/checkbox/variant-4.tsx"
+      },
+      "sourceStructure": [
+        "One true-initialized checkbox with associated weekly-task label.",
+        "Effective checked state causes muted strikethrough; refusal keeps previous label state."
+      ],
+      "api": {
+        "model": "Scalar checked/defaultChecked/onCheckedChange, native value.",
+        "sourceDefaultChecked": true
+      },
+      "executionStatus": {
+        "sourceBytes": "independently_rehashed_against_cached_pinned_tree",
+        "semanticRead": true,
+        "author": "passed_current_revision_combined_246_scenario_534_assertion_suite",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending"
+      }
+    },
+    {
+      "id": "switch-02",
+      "export": "Switch02",
+      "source": {
+        "id": "switch-02",
+        "source_path": "src/data/contents/components/switch/variant-2.tsx",
+        "file": "sources/switch-02.tsx",
+        "local_origin": "component-framework-adapters-20261014/shared/reference/switch-02.tsx",
+        "git_blob": "59f617e8ec8bc1d8ddeb9842bd34ca3f89fcd270",
+        "sha256": "84112c2ce57a2db29e876faaa9cfea77ea13ccf3ae7b5862128d075f122caf3d",
+        "bytes": 224,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-2.tsx"
+      },
+      "sourceStructure": [
+        "One square track/thumb switch with Square switch accessible name.",
+        "No visible label in source; source initially false."
+      ],
+      "api": {
+        "model": "Scalar checked/defaultChecked/onCheckedChange, native value.",
+        "sourceDefaultChecked": false,
+        "geometry": "32x19 track,15px thumb,2px radius,13px checked shift;44px target adapter enhancement."
+      },
+      "executionStatus": {
+        "sourceBytes": "independently_rehashed_against_cached_pinned_tree",
+        "semanticRead": true,
+        "author": "passed_current_revision_combined_246_scenario_534_assertion_suite",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending"
+      }
+    },
+    {
+      "id": "switch-03",
+      "export": "Switch03",
+      "source": {
+        "id": "switch-03",
+        "source_path": "src/data/contents/components/switch/variant-3.tsx",
+        "file": "sources/switch-03.tsx",
+        "local_origin": "component-framework-adapters-20261014/shared/reference/switch-03.tsx",
+        "git_blob": "ae53311465b1056406d33d0e4aae88aac8192097",
+        "sha256": "2df1d69044e926d35facf8b4d641ac01c452bacbdc71ba82d21ae93c62dbb510",
+        "bytes": 1376,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-3.tsx"
+      },
+      "sourceStructure": [
+        "Exactly four independently stateful switches in destructive, success, info, warning order.",
+        "All defaultChecked; four names and distinct semantic colors; no source visible labels."
+      ],
+      "api": {
+        "model": "No aggregate value/defaultValue/values/defaultValues/onValueChange. Four named BooleanFieldProps slots; missing/null slot object preserves fixed four and source defaults. Missing/undefined defaultChecked=true. Each defined checked owns only that slot.",
+        "slots": [
+          "destructive",
+          "success",
+          "info",
+          "warning"
+        ],
+        "descriptors": "SWITCH03_SLOTS frozen descriptors expose key,label,defaultChecked:true.",
+        "safety": "Overall disabled/readOnly OR per slot; member false cannot bypass. Group/member ownerRevision composed.",
+        "events": "Member onChange then noncanceled group onChange then member onCheckedChange. Same original React event.",
+        "form": "Default group form, member override; each actual input.form controls reset/FormData. No hidden aggregate field.",
+        "refs": "forwardRef group HTMLDivElement; named four input refs.",
+        "tokens": "--ds-danger/success/info/warning with --ds-surface checked thumb; no synthetic --fr-success aliases."
+      },
+      "executionStatus": {
+        "sourceBytes": "independently_rehashed_against_cached_pinned_tree",
+        "semanticRead": true,
+        "author": "passed_current_revision_combined_246_scenario_534_assertion_suite",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending"
+      }
+    },
+    {
+      "id": "switch-04",
+      "export": "Switch04",
+      "source": {
+        "id": "switch-04",
+        "source_path": "src/data/contents/components/switch/variant-4.tsx",
+        "file": "sources/switch-04.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-full-849-20261014/batches/selection-two/sources/switch-04.tsx",
+        "git_blob": "066471908aaa6f8195bdeb0f486811f7045f72b3",
+        "sha256": "42af84d1cec4dc63701a7efd0c723020ade32eaa1db5f2db596326adf863d3d3",
+        "bytes": 661,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/switch/variant-4.tsx"
+      },
+      "sourceStructure": [
+        "One initially false gradient switch with accessible Destructive Switch name.",
+        "40x24 track,20px thumb,1px/19px offsets and opposite RTL shift; no visible label."
+      ],
+      "api": {
+        "model": "Scalar checked/defaultChecked/onCheckedChange, native value.",
+        "sourceDefaultChecked": false,
+        "geometry": "Unchecked yellow to destructive gradient; checked blue to indigo. Fixed geometric distinction retained."
+      },
+      "executionStatus": {
+        "sourceBytes": "independently_rehashed_against_cached_pinned_tree",
+        "semanticRead": true,
+        "author": "passed_current_revision_combined_246_scenario_534_assertion_suite",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending"
+      }
+    },
+    {
+      "id": "textarea-02",
+      "export": "Textarea02",
+      "source": {
+        "id": "textarea-02",
+        "source_path": "src/data/contents/components/textarea/variant-2.tsx",
+        "file": "sources/textarea-02.tsx",
+        "local_origin": "reference-ui-upload-20261014-1338/follow-dialog-multifield-fix-20261015/batches/textareas-one/sources/textarea-02.tsx",
+        "git_blob": "4a94a3919974443a7284f5ec4081079dd42af02a",
+        "sha256": "56272e41e9ca2fefd6dda3d11b92963b9c591bc0844d3143dbff16029e75eef2",
+        "bytes": 552,
+        "semantic_read": true,
+        "executed": false,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/textarea/variant-2.tsx"
+      },
+      "sourceStructure": [
+        "Visible associated Your input label and Share your thoughts... placeholder.",
+        "Native textarea with small radius/shadow and primary focus ring,384px max width."
+      ],
+      "api": {
+        "model": "Scalar value/defaultValue/onValueChange and genuine native onInput/onChange/beforeinput/composition.",
+        "IME": "Intermediate draft DOM only; one compositionend proposal; controlled rejection/reset/owner/safety tombstones stale tails.",
+        "structure": "No counter,toolbar,submit or invented autosizing logic; field-sizing content uses CSS/browser fallback."
+      },
+      "executionStatus": {
+        "sourceBytes": "independently_rehashed_against_cached_pinned_tree",
+        "semanticRead": true,
+        "author": "passed_current_revision_combined_246_scenario_534_assertion_suite",
+        "independent": "not_run",
+        "browser": "not_run",
+        "formal": "pending"
+      }
+    }
+  ],
+  "testEntry": "tests/next-selection-tests.cjs: run(window,React,createRoot,assert,components); components.__flushSync required",
+  "fixture": "src/next-selection/examples.jsx: NextSelectionExamples",
+  "license": "src/next-selection/sources/primitives/LICENSE; upstream MIT notice preserved",
+  "runtimeDependencies": [
+    "react",
+    "../scalar/index.jsx"
+  ],
+  "sourceEvidence": "src/next-selection/source-hashes.json",
+  "authorExecution": {
+    "status": "passed",
+    "evidence": "src/next-selection/author-evidence.json",
+    "binding": "evidence/2026-10-15T05-31-10-162Z-all/next-selection.json",
+    "scenarios": 246,
+    "assertions": 534,
+    "react": "19.3.0",
+    "previousPass": "src/next-selection/revisions/pre-click-cancellation/author-evidence.json",
+    "browser": false,
+    "realIME": false
+  },
+  "react50Revision": {
+    "switch03AccessibleName": "Visible custom member label is not overridden by a source-default aria-label; explicit aria-label wins, source fallback only when no visible label.",
+    "authorScenarios": 250,
+    "authorAssertions": 554,
+    "browser": "not_run_for_current_runtime"
+  }
+}

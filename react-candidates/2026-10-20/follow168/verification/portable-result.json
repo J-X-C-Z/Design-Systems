@@ -1,0 +1,403 @@
+{
+  "kind": "Fresh focused portable-checkout verification; not the archived full chain",
+  "node": "v24.19.0",
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "esbuild": "0.28.2",
+    "jsdom": "30.1.2",
+    "typescript": "7.0.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
+  },
+  "checks": [
+    {
+      "label": "unchanged production build",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 311,
+      "stdoutSha256": "60675bbf6836f595e405086ebf9bb51c52b21419a246a41bdfaa0aea62e16453",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "}"
+    },
+    {
+      "label": "source thirtyeighth-source-identity",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 830,
+      "stdoutSha256": "961fc6c4edcb531656c79ee7b2905208ec59ccb86e94589fa9cbf6439c090cbf",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "84 SOURCE-IDENTITY168 checks"
+    },
+    {
+      "label": "source thirtyeighth-native-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 2146,
+      "stdoutSha256": "ec766495d63ad562e56b9c9a7167a3fd0c6971de39ae69728c07a22708c27609",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "113 RADIO168 native/state/keyboard checks"
+    },
+    {
+      "label": "source thirtyeighth-order-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 43464,
+      "stdoutSha256": "6cb8ba72d9c00d1df5c09dce790ae5ca42017f24188a48d1f949400f415bd3b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "1536 RADIO168 sequence cases; 5730 order/keyboard/cancellation checks"
+    },
+    {
+      "label": "source thirtyeighth-edge-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 3115,
+      "stdoutSha256": "99af1ad890a607701c1be176662111cc9f99f33c735975174523141b04fc7af8",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "48 RADIO168 edge cases; 336 checks"
+    },
+    {
+      "label": "source thirtyeighth-availability-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 2482,
+      "stdoutSha256": "9a4788cf8ffd44f99f0bf4e34ecb35cd138929b4e671c6fdff991c7c6145e81a",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "105 RADIO168 availability/observer/form/ref checks"
+    },
+    {
+      "label": "source thirtyeighth-focus-form-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 3610,
+      "stdoutSha256": "42feb287704165edfce905206a55893933a06b7a863fb92b146788b9dae276c6",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":72,\"checks\":339,\"failures\":0}"
+    },
+    {
+      "label": "source thirtyeighth-cancel-owner-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 5684,
+      "stdoutSha256": "48951f4a90191c3c40c2707ecb73c68eccf4e06bea4ef2b301d7b78e77ba9524",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":144,\"checks\":720,\"failed\":0}"
+    },
+    {
+      "label": "source thirtyeighth-capture-owner",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 5186,
+      "stdoutSha256": "ba704806a4e81fc0cfa66eecda7eb820ae8d2b92dc13db257d2d25c4159af4b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":264,\"checks\":1320,\"failed\":0}"
+    },
+    {
+      "label": "source thirtyeighth-stale-key-default",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1667,
+      "stdoutSha256": "82022ecdf24e9b0bc6d545acc827523b6bdaf15795b60be85675b15c4a3f3d51",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":60,\"checks\":120,\"failed\":0}"
+    },
+    {
+      "label": "source thirtyeighth-event-redispatch",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1139,
+      "stdoutSha256": "d8a9b5b18deb700ec2db36de331476be75d1945bc22cf5beabd414ae9e1b74cb",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":8,\"checks\":32,\"failed\":0}"
+    },
+    {
+      "label": "source thirtyeighth-reset-dispatch",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 9247,
+      "stdoutSha256": "e3d3bccad95186e2bd189599bafd9b86282960c6eb9185648b12426ce0756234",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":512,\"checks\":2048,\"failed\":0}"
+    },
+    {
+      "label": "source thirtyeighth-style-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1663,
+      "stdoutSha256": "c5de6cbd86a8921c076583a0c35e61b6334ac6ac427777657b2ac8456ceb61a7",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "214 RADIO/SWITCH168 actual-provider/style checks"
+    },
+    {
+      "label": "source switch168-native-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1442,
+      "stdoutSha256": "b6bcac0958e3326da5f389b009b3a47d38dae4a45928ebb3492ba748366b6262",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "SWITCH168-NATIVE: 58 cases, 532 checks"
+    },
+    {
+      "label": "source switch168-order-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 5862,
+      "stdoutSha256": "8ae40a64a7d2b084e63a9e993b4a8243df4c890da15b89c028a4ed2d39a5282a",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "SWITCH168-ORDER: 697 cases, 4865 checks"
+    },
+    {
+      "label": "package thirtyeighth-source-identity",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 676,
+      "stdoutSha256": "961fc6c4edcb531656c79ee7b2905208ec59ccb86e94589fa9cbf6439c090cbf",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "84 SOURCE-IDENTITY168 checks"
+    },
+    {
+      "label": "package thirtyeighth-native-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1681,
+      "stdoutSha256": "ec766495d63ad562e56b9c9a7167a3fd0c6971de39ae69728c07a22708c27609",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "113 RADIO168 native/state/keyboard checks"
+    },
+    {
+      "label": "package thirtyeighth-order-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 42656,
+      "stdoutSha256": "6cb8ba72d9c00d1df5c09dce790ae5ca42017f24188a48d1f949400f415bd3b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "1536 RADIO168 sequence cases; 5730 order/keyboard/cancellation checks"
+    },
+    {
+      "label": "package thirtyeighth-edge-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 2777,
+      "stdoutSha256": "99af1ad890a607701c1be176662111cc9f99f33c735975174523141b04fc7af8",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "48 RADIO168 edge cases; 336 checks"
+    },
+    {
+      "label": "package thirtyeighth-availability-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 2143,
+      "stdoutSha256": "9a4788cf8ffd44f99f0bf4e34ecb35cd138929b4e671c6fdff991c7c6145e81a",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "105 RADIO168 availability/observer/form/ref checks"
+    },
+    {
+      "label": "package thirtyeighth-focus-form-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 3189,
+      "stdoutSha256": "42feb287704165edfce905206a55893933a06b7a863fb92b146788b9dae276c6",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":72,\"checks\":339,\"failures\":0}"
+    },
+    {
+      "label": "package thirtyeighth-cancel-owner-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 5552,
+      "stdoutSha256": "48951f4a90191c3c40c2707ecb73c68eccf4e06bea4ef2b301d7b78e77ba9524",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":144,\"checks\":720,\"failed\":0}"
+    },
+    {
+      "label": "package thirtyeighth-capture-owner",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 5122,
+      "stdoutSha256": "ba704806a4e81fc0cfa66eecda7eb820ae8d2b92dc13db257d2d25c4159af4b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":264,\"checks\":1320,\"failed\":0}"
+    },
+    {
+      "label": "package thirtyeighth-stale-key-default",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1794,
+      "stdoutSha256": "82022ecdf24e9b0bc6d545acc827523b6bdaf15795b60be85675b15c4a3f3d51",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":60,\"checks\":120,\"failed\":0}"
+    },
+    {
+      "label": "package thirtyeighth-event-redispatch",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1124,
+      "stdoutSha256": "d8a9b5b18deb700ec2db36de331476be75d1945bc22cf5beabd414ae9e1b74cb",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":8,\"checks\":32,\"failed\":0}"
+    },
+    {
+      "label": "package thirtyeighth-reset-dispatch",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 10091,
+      "stdoutSha256": "e3d3bccad95186e2bd189599bafd9b86282960c6eb9185648b12426ce0756234",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"cases\":512,\"checks\":2048,\"failed\":0}"
+    },
+    {
+      "label": "package thirtyeighth-style-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1706,
+      "stdoutSha256": "c5de6cbd86a8921c076583a0c35e61b6334ac6ac427777657b2ac8456ceb61a7",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "214 RADIO/SWITCH168 actual-provider/style checks"
+    },
+    {
+      "label": "package switch168-native-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 1562,
+      "stdoutSha256": "b6bcac0958e3326da5f389b009b3a47d38dae4a45928ebb3492ba748366b6262",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "SWITCH168-NATIVE: 58 cases, 532 checks"
+    },
+    {
+      "label": "package switch168-order-model",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 6142,
+      "stdoutSha256": "8ae40a64a7d2b084e63a9e993b4a8243df4c890da15b89c028a4ed2d39a5282a",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "SWITCH168-ORDER: 697 cases, 4865 checks"
+    },
+    {
+      "label": "source Studio new controls",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 2198,
+      "stdoutSha256": "7ae62a29c21066615cc1eace3b747d5608516012ecbb852633ec76426d1c7b83",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "50 STUDIO168 checks"
+    },
+    {
+      "label": "authored-token static contrast, not rendered color",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 38,
+      "stdoutSha256": "1f28a3d0b25833d0b20df462304f9f7e93a1d19a4bb45579d90c09ea17713c35",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "36 fixed contrast pairs"
+    },
+    {
+      "label": "source strict types bundler",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 701,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": ""
+    },
+    {
+      "label": "source strict types NodeNext",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 661,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": ""
+    },
+    {
+      "label": "package strict types bundler",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 599,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": ""
+    },
+    {
+      "label": "package strict types NodeNext",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 633,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": ""
+    },
+    {
+      "label": "package Relay Workshop author page",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 9210,
+      "stdoutSha256": "266252dc7ea6699141b140ab23d8c676dee33368909896007a7de17d9e56ec48",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "59 Relay Workshop checks"
+    },
+    {
+      "label": "package Specification Room terminal page",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 3583,
+      "stdoutSha256": "a4497ec8433d406563f7495251da06b9bc9286b8a77f22ce35cff5a1d154c895",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "37 Specification Room checks"
+    },
+    {
+      "label": "independent Specification Room page",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 4236,
+      "stdoutSha256": "c82d6ae289c90f76abdff2652f0347790c5b045bcf8ae13a23ec9839be24fa7b",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "{\"lane\":\"portable\",\"assertions\":69,\"passed\":69,\"failed\":[]}"
+    },
+    {
+      "label": "independent Relay Workshop page",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 14620,
+      "stdoutSha256": "5f199a01052b751bdcc28ba8af5b5f4e7237a5701848628683c8c851999767a7",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lastOutput": "TOTAL 137 PASS"
+    }
+  ],
+  "browser": 0,
+  "formalAccepted": 0,
+  "fullNativeEquivalence": false,
+  "exactFrozenSourceFiles": 369,
+  "registry": {
+    "candidates": 168,
+    "canonical": 849,
+    "remaining": 681
+  },
+  "exactFrozenPackageMembers": 57,
+  "rebuiltPreview": {
+    "index.html": {
+      "bytes": 277,
+      "sha256": "f3992b3f1dc87fe073322ca1f29c4d9b5c3fc341fec48886b1b1d85a9ba2d6fc"
+    },
+    "bundle.js": {
+      "bytes": 745791,
+      "sha256": "a5b5f8605550c24475a656f7226eafdc0bfc5b0c7ad0c4b2fe6239c25dd9a326"
+    },
+    "bundle.css": {
+      "bytes": 293090,
+      "sha256": "8f7c7e111c3a2d54293fe65490a83aeba9ba536cde8ee285a4afeb1d607eeb94"
+    }
+  },
+  "status": "passed_focused_scope",
+  "exclusions": [
+    "Archived 1259-input full-chain replay",
+    "Clean network dependency installation",
+    "All 177 historical test files as one aggregate suite",
+    "Real browser, trusted keyboard, layout, accessibility tree/AT",
+    "Full native parity: documented 28+4 observer boundaries remain",
+    "Switch19 readOnly state lacks aria-readonly in frozen168"
+  ],
+  "dependencyInstallMethod": "Pre-existing official pinned dependencies attached for local verification; clean network install not run.",
+  "verifierSha256": "d8e036c6730841d18518a0e1ce3006e63844750dbc02c38a132ab647533ff133",
+  "executionLogSha256": "5b65dcefc1e4e09dcd8a8c534f438cbaca2b9473ff35c1db7ffaaeb45ae8e10e",
+  "currentOriginalTestsRetained": 177
+}

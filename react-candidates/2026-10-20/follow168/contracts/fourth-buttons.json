@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 1,
+  "slice": "react-seven-fourth-buttons",
+  "idCount": 12,
+  "sourceRevision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "canonicalSHA256": "5889ad208f21613a098b697ac4fd8d879068a9b2801264d9983e71a39a05fe6a",
+  "common": {
+    "implementation": "Direct React JSX, real state/ref/layout/effect hooks, native button target, no imperative controller wrapper.",
+    "source_license": "18 pinned files freshly Git-blob recomputed; full MIT and exact source identity retained.",
+    "native": "Safe type=button default; actual disabled; readOnly/aria-disabled locks; native attrs/events/form/ref forwarding.",
+    "names": "No default aria-label; explicit labels and title retained. Hidden fallback names never override supplied children/title.",
+    "events": "onClick once before internals; return ignored; synthetic/native defaultPrevented checked. Consumer exceptions never swallowed. No fabricated key activation.",
+    "ownership": "Dynamic pressed ownership. Same-value or metadata commit is not cancellation. Real owner/value/reset/text generations and live locks prevent stale continuation. Same-render release plus reset restores baseline; an explicitly controlled value stays authoritative. Stable callback refs do not reattach on metadata; changed ref identities and React 19 callback cleanup are retained.",
+    "async": "25 is fixed1000ms random simulation only.34 requires actual Clipboard Promise fulfillment,2000ms feedback, errors visible; reset invalidates results but cannot undo issued write.",
+    "reset": "Uncancelled native form reset checked in microtask after all handlers; original uncontrolled baseline; controlled parent retained.",
+    "tooltip": "Inline React tooltip measured against immediate parent/viewport; side-specific available height, inner scroll; observer/resize/capture-scroll cleanup. Not a portal: clipping/transformed ancestors remain a known candidate boundary.",
+    "theme": "Existing14 theme/mode token palettes, no new theme. Locally scoped CSS.44px target encloses original32px/42px face; Chinese wraps; original replacement glyphs.",
+    "static_contrast": "28 primary/destructive gradient pairs tested mathematically in14 modes; minimum5.719:1. Not rendered contrast evidence.",
+    "motion": "Reduced-motion/provider off/reduce and forced-colors authored; browser rendering pending.",
+    "acceptance": "Author React 19.3.0/JSDOM: 12 IDs / 214 scenarios / 1145 assertions; exit 0, warnings=[], stderr 0 bytes. Independent/browser/real keyboard/screen reader/real clipboard/rendered visual/TypeScript/formal pending."
+  },
+  "items": [
+    {
+      "id": "button-25",
+      "export": "Button25",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-25.tsx",
+        "file": "sources/variant-25.tsx",
+        "git_blob": "39f99b6416f9c423ef63b9bbcd8c450d605b269f",
+        "sha256": "2f08a7d52d3a859fec5fc6e4e073a4d4b86a54a74d01bf4da5f7766d4db67aa6",
+        "bytes": 1288,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-25.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Click me / Loading / Submitted! / Rejected!",
+      "default_label": "点击演示 / 加载中 / 演示成功 / 演示失败",
+      "source_structure": [
+        "One link-variant button, gap-2, no hover underline.",
+        "React loading disables button; spinner before text.",
+        "Fixed 1000ms delay; Math.random()>0.5 chooses submitted/rejected."
+      ],
+      "public_API": "Button25Props: children, loadingLabel, successLabel, errorLabel, resetKey; native button attrs/ref.",
+      "ownership": "Owns idle/loading/success/error only. Fixed random demonstration; never application save or API result.",
+      "event_and_cancellation_contract": "Reset/unmount/external lock cancels timer and invalidates generation; latest metadata and same resetKey do not cancel.",
+      "adaptation": "44px target; translated labels explicitly say demonstration; aria-busy and text role=status added.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-26",
+      "export": "Button26",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-26.tsx",
+        "file": "sources/variant-26.tsx",
+        "git_blob": "86720e77e65dafee2c67a038165f38de0b51091a",
+        "sha256": "e708e6600abc83f0d29959b282a3418f4b273e12e04c48de95764942283c2fa5",
+        "bytes": 1132,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-26.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Toggle dark mode",
+      "default_label": "切换明暗图标",
+      "source_structure": [
+        "One outline icon button, 32px source face, 20px sun/moon.",
+        "Sun is yellow, moon blue; state does not change page theme."
+      ],
+      "public_API": "Button26Props: pressed/defaultPressed/onPressedChange(next,event)/resetKey; native attrs/ref.",
+      "ownership": "Dynamic controlled/uncontrolled local icon toggle; false=sun, true=moon.",
+      "event_and_cancellation_contract": "Accepted owner values and takeover/release are authoritative; canceled events, true owner changes and lock/unmount stop stale proposals.",
+      "adaptation": "44px target; warm warning and cool info theme tokens; aria-pressed added; original glyphs.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-27",
+      "export": "Button27",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-27.tsx",
+        "file": "sources/variant-27.tsx",
+        "git_blob": "1800c5dc523d60f56ce35a91c7928e18ee16a95e",
+        "sha256": "f0ea9f6a2f5f4f7109e28bdcc09601debb899466343914e4d30e8e7030641e2c",
+        "bytes": 490,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-27.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Toggle menu",
+      "default_label": "切换菜单图标",
+      "source_structure": [
+        "One ghost icon button; 20px menu or X in 32px face.",
+        "Only icon state changes; no source menu."
+      ],
+      "public_API": "Button27Props: pressed/defaultPressed/onPressedChange(next,event)/resetKey; native attrs/ref.",
+      "ownership": "Dynamic controlled/uncontrolled local icon toggle; false=menu, true=close.",
+      "event_and_cancellation_contract": "Same owner/value generation checks as 26; never fabricates aria-expanded or menu content.",
+      "adaptation": "44px target; configurable Chinese hidden name; aria-pressed added; original glyphs.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-28",
+      "export": "Button28",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-28.tsx",
+        "file": "sources/variant-28.tsx",
+        "git_blob": "bc7e7672d247d9f2bd12bafd16941ef5c25f48a4",
+        "sha256": "924e6c4f26599fd3de2df1585c9eb5b9392347e2cd9ae7a8dd76fabe82392e1d",
+        "bytes": 632,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-28.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Add new item",
+      "default_label": "添加新项目",
+      "source_structure": [
+        "One round secondary 32px plus icon button with sr-only label.",
+        "Tooltip from pinned Radix wrapper: immediate provider default, portal content, text-xs px2 py1, arrow."
+      ],
+      "public_API": "Button28Props: tooltip, children, shellClassName, resetKey; native attrs/ref.",
+      "ownership": "Owns hover/focus/dismissal and measured inline placement; no add action.",
+      "event_and_cancellation_contract": "Topmost Escape; focus/hover exit; merged descriptions; canceled click prevents internal dismissal; resize/scroll/observer cleanup.",
+      "adaptation": "44px target; inline rather than portal, inherited theme; parent/viewport clamping and scrollable long text. Ancestor overflow/transform parity remains pending.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-29",
+      "export": "Button29",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-29.tsx",
+        "file": "sources/variant-29.tsx",
+        "git_blob": "cb540f4befb40835f057b98ceeee144d7fd7a3fa",
+        "sha256": "904f9ea07075299898e0aa86371c9c1be6967312b28415058f47c9046fad80b8",
+        "bytes": 634,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-29.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Bookmark",
+      "default_label": "书签",
+      "source_structure": [
+        "One outline 32px icon face with 20px bookmark.",
+        "Unselected FiBookmark outline; selected FaBookmark filled blue."
+      ],
+      "public_API": "Button29Props: pressed/defaultPressed/onPressedChange(next,event)/resetKey; native attrs/ref.",
+      "ownership": "Dynamic controlled/uncontrolled bookmark icon, no storage.",
+      "event_and_cancellation_contract": "Uncontrolled original baseline reset; controlled rejection/same-value and ownership release preserve accepted value.",
+      "adaptation": "44px target; source-blue role mapped to info token; aria-pressed; original outline/filled glyphs.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-30",
+      "export": "Button30",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-30.tsx",
+        "file": "sources/variant-30.tsx",
+        "git_blob": "89b6758568eb3cf29dd7e4031ff0985ef8b69b37",
+        "sha256": "5d81f14d62995304dc0b220356abf060b461495c1846acd32fa8e5787e82a5a8",
+        "bytes": 572,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-30.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Error",
+      "default_label": "错误",
+      "source_structure": [
+        "One 32px icon face; 20px outlined warning triangle and sr-only Error.",
+        "Destructive→60%-destructive→destructive gradient, 200% auto, hover99% center."
+      ],
+      "public_API": "Button30Props: native attrs/readOnly/ref; children configures hidden label.",
+      "ownership": "No state or domain action; host owns click.",
+      "event_and_cancellation_contract": "Native cancellation, exceptions and form defaults are retained.",
+      "adaptation": "44px target; readable token-paired 94% midpoint gradient, original outlined warning icon.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-31",
+      "export": "Button31",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-31.tsx",
+        "file": "sources/variant-31.tsx",
+        "git_blob": "be307c7325cb676788ade34a90fb8e0b8b056e26",
+        "sha256": "5d4e9a68e384ccfcdcb17838ac249683ec79697958e96fdea3a422c2b3484ded",
+        "bytes": 324,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-31.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Get Started",
+      "default_label": "开始使用",
+      "source_structure": [
+        "One text-only primary gradient button; no icon.",
+        "200% auto gradient moves to99% center on hover."
+      ],
+      "public_API": "Button31Props: native attrs/readOnly/ref; children visible label.",
+      "ownership": "No state or automatic navigation; host owns click.",
+      "event_and_cancellation_contract": "Native cancellation, exceptions and form defaults are retained.",
+      "adaptation": "Chinese wrapping text and44px target; token-paired94% primary midpoint.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-32",
+      "export": "Button32",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-32.tsx",
+        "file": "sources/variant-32.tsx",
+        "git_blob": "8c53533eb0cadaea8fef0ee34a092a7ac08cb016",
+        "sha256": "1cf6c91c3fbbd042582ce942b5b15769fce0a2e0e70f1f953bfa825e8a4084cc",
+        "bytes": 422,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-32.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Post",
+      "default_label": "发布",
+      "source_structure": [
+        "One outline42px button,6px radius,8px horizontal padding.",
+        "A28px primary-filled share-icon span precedes text, not a second button."
+      ],
+      "public_API": "Button32Props: native attrs/readOnly/ref; children visible label.",
+      "ownership": "No internal post/share operation; host owns action.",
+      "event_and_cancellation_contract": "Single real button ref and native form target.",
+      "adaptation": "44px target encloses42px face; original share outline and theme pair.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-33",
+      "export": "Button33",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-33.tsx",
+        "file": "sources/variant-33.tsx",
+        "git_blob": "6eeb88a33ecbbcce230a41956473fae7edf9e78e",
+        "sha256": "73fed423512107ec390da8eaf52c30c98b2889d54d6a1b237c37a37b56f36bba",
+        "bytes": 404,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-33.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Inbox / 99+",
+      "default_label": "收件箱 / 99+",
+      "source_structure": [
+        "Leading open-envelope outline, visible Inbox, inline99+ badge.",
+        "Badge destructive variant is tinted, with6px horizontal/1px vertical padding."
+      ],
+      "public_API": "Button33Props: native attrs/readOnly/ref; count host-owned ReactNode.",
+      "ownership": "Host owns displayed count; badge never overflows like36.",
+      "event_and_cancellation_contract": "Count updates preserve native node and focus; no message fetching.",
+      "adaptation": "44px target, translated label, original envelope outline, semantic destructive tint pair.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-34",
+      "export": "Button34",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-34.tsx",
+        "file": "sources/variant-34.tsx",
+        "git_blob": "bbcb49fe27283424a7c21573ae462fcf87abcfa3",
+        "sha256": "5f434bb9c2686add852ffdc8c1d57372b102c4b6d3032254a8bfba0528f5e097",
+        "bytes": 1256,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-34.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Copy / Copied!",
+      "default_label": "复制 / 复制中 / 已复制 / 复制失败",
+      "source_structure": [
+        "Actual navigator.clipboard.writeText of exact default source text.",
+        "Success only after Promise resolution, disabled copied state for2000ms.",
+        "Check stays in normal flow; copy is absolutely overlaid at left3."
+      ],
+      "public_API": "Button34Props: text, children, copyingLabel, copiedLabel, errorLabel, onCopy(text), onCopyError(error), resetKey; native attrs/ref.",
+      "ownership": "Owns idle/copying/copied/error feedback; never reports success from elapsed time or missing API.",
+      "event_and_cancellation_contract": "Text/reset/lock/unmount invalidate old Promise result and clear feedback timer; cannot undo an issued OS clipboard write. Latest callback used; callback exceptions surface.",
+      "adaptation": "Pending disabled/aria-busy/explicit errors are enhancements;44px target, original glyphs, role=status; same2000ms successful feedback.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_run",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-35",
+      "export": "Button35",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-35.tsx",
+        "file": "sources/variant-35.tsx",
+        "git_blob": "15f468bbe47ddb0074c8898369609a975839b59d",
+        "sha256": "d8195ae2711430574bededc849b92b7ddfd76178536ec8e02cff3524ff1912fe",
+        "bytes": 490,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-35.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Delete",
+      "default_label": "删除",
+      "source_structure": [
+        "Leading outlined trash icon and text on destructive moving gradient.",
+        "Source has no deletion implementation."
+      ],
+      "public_API": "Button35Props: native attrs/readOnly/ref; children visible label.",
+      "ownership": "No deletion or invented async operation.",
+      "event_and_cancellation_contract": "Native caller callback once; return ignored; errors surface.",
+      "adaptation": "44px target; original trash outline; readable94% token-paired destructive gradient.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    },
+    {
+      "id": "button-36",
+      "export": "Button36",
+      "source": {
+        "source_path": "src/data/contents/components/button/variant-36.tsx",
+        "file": "sources/variant-36.tsx",
+        "git_blob": "b457defc56d269081031fc3dfc6342dae76eda3f",
+        "sha256": "43408e0c7d862a994b002188faed87e870644cb0e61e4ae6b67460c2295c9404",
+        "bytes": 513,
+        "url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/button/variant-36.tsx",
+        "verification": "Fresh Git blob recomputation matches pinned source; independently inspected for this React slice."
+      },
+      "source_label": "Messages / 3",
+      "default_label": "消息 / 3",
+      "source_structure": [
+        "One32px outline icon face with20px open envelope.",
+        "Hidden Messages name, primary badge3 absolutely top/right−10px,20px minimum size."
+      ],
+      "public_API": "Button36Props: native attrs/readOnly/ref; count host-owned ReactNode; children hidden label.",
+      "ownership": "No message fetch; independent displayed count.",
+      "event_and_cancellation_contract": "Count updates preserve node/focus; no second badge action.",
+      "adaptation": "44px target; translated hidden name, original icon, exact overflow placement and theme primary pair.",
+      "implementation": "src/fourth-buttons/index.jsx",
+      "styles": "src/fourth-buttons/styles.css",
+      "author_suite": "tests/fourth-buttons-tests.cjs",
+      "execution_status": {
+        "author": "passed",
+        "author_evidence": "evidence/2026-10-15T06-39-10-336Z-fourth-buttons",
+        "independent": "not_run",
+        "browser": "not_run",
+        "real_keyboard": "not_run",
+        "visual": "not_run",
+        "real_clipboard": "not_applicable",
+        "typecheck": "not_run",
+        "formal": "pending"
+      },
+      "scope": "This exact canonical source only; no earlier native/React/Flutter acceptance inherited."
+    }
+  ]
+}

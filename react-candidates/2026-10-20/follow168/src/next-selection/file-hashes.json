@@ -1,0 +1,116 @@
+{
+  "recorded_at": "2026-10-15T06:06:23.343146+00:00",
+  "status": "current React50 copied module revision; source-provenance retained, author554 passed, current browser pending",
+  "files": [
+    {
+      "path": "contracts/next-selection.json",
+      "bytes": 15994,
+      "sha256": "9e459bf39485c0b00acc0b0ea6f1c473c2fe5348f24b02f488e0cf99ce162f2b"
+    },
+    {
+      "path": "src/next-selection/README.md",
+      "bytes": 9447,
+      "sha256": "3780e0e8e41dd9ae283a9c125e337056ff10fc5ac12b092fbf197cf4a43be440"
+    },
+    {
+      "path": "src/next-selection/author-evidence.json",
+      "bytes": 1365,
+      "sha256": "64f53d5ee3480304e800b6a530785215280c284363526590c4e87270af925aad"
+    },
+    {
+      "path": "src/next-selection/examples.jsx",
+      "bytes": 3499,
+      "sha256": "6173f9178f70c20a58982c2a9ca9c8719e135e6e2d4da3e511f6dee5ff3f0739"
+    },
+    {
+      "path": "src/next-selection/index.d.ts",
+      "bytes": 3077,
+      "sha256": "522159a87a58802d2544965bcbb237afacf207016d2316440626b4c83c3d1fcd"
+    },
+    {
+      "path": "src/next-selection/index.jsx",
+      "bytes": 12205,
+      "sha256": "a0c63741ccfa76a23dc7e730cafe42c752be59c2d24f9fce48a3c518e3391e6d"
+    },
+    {
+      "path": "src/next-selection/source-hashes.json",
+      "bytes": 7390,
+      "sha256": "5304ea51d8af69365def517de6663fa61d1982fd6361c391d5c34ff4678dca9b"
+    },
+    {
+      "path": "src/next-selection/sources/checkbox-02.tsx",
+      "bytes": 3050,
+      "sha256": "26e0d7a2c861a6690824f8e08bfdfea6341eb165ed9996cbc3720c0b40fd6e0c"
+    },
+    {
+      "path": "src/next-selection/sources/checkbox-03.tsx",
+      "bytes": 984,
+      "sha256": "60b3fd8a572acfcef706df7408c2f123544d11e7a576265facc426e3388e487c"
+    },
+    {
+      "path": "src/next-selection/sources/checkbox-04.tsx",
+      "bytes": 995,
+      "sha256": "14b92c81079d0048c36a4be1657e3cb127d5f9b9ac1c4c6dc5c9aa51e976b8e1"
+    },
+    {
+      "path": "src/next-selection/sources/primitives/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "src/next-selection/sources/primitives/checkbox.tsx",
+      "bytes": 1386,
+      "sha256": "fe464e891f08d990d5ed7973f22ddd130d3da9c446de476754f32a4182ce773d"
+    },
+    {
+      "path": "src/next-selection/sources/primitives/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "src/next-selection/sources/primitives/switch.tsx",
+      "bytes": 1748,
+      "sha256": "f3a1ed75be07bda7e391e20631c123e066bcadaced2d6340d8e4531ecec63434"
+    },
+    {
+      "path": "src/next-selection/sources/primitives/textarea.tsx",
+      "bytes": 842,
+      "sha256": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9"
+    },
+    {
+      "path": "src/next-selection/sources/switch-02.tsx",
+      "bytes": 224,
+      "sha256": "84112c2ce57a2db29e876faaa9cfea77ea13ccf3ae7b5862128d075f122caf3d"
+    },
+    {
+      "path": "src/next-selection/sources/switch-03.tsx",
+      "bytes": 1376,
+      "sha256": "2df1d69044e926d35facf8b4d641ac01c452bacbdc71ba82d21ae93c62dbb510"
+    },
+    {
+      "path": "src/next-selection/sources/switch-04.tsx",
+      "bytes": 661,
+      "sha256": "42af84d1cec4dc63701a7efd0c723020ade32eaa1db5f2db596326adf863d3d3"
+    },
+    {
+      "path": "src/next-selection/sources/textarea-02.tsx",
+      "bytes": 552,
+      "sha256": "56272e41e9ca2fefd6dda3d11b92963b9c591bc0844d3143dbff16029e75eef2"
+    },
+    {
+      "path": "src/next-selection/static-color-pairs.json",
+      "bytes": 23084,
+      "sha256": "b47824074d6b8cf35ba7fa8b79daefcf8e9f696f5a624e57ce56d7d96365f413"
+    },
+    {
+      "path": "src/next-selection/styles.css",
+      "bytes": 4669,
+      "sha256": "34b68909b3d0704e58b4422ece57d5e51b933262d8994afe716a4f3ca6fd4a2a"
+    },
+    {
+      "path": "tests/next-selection-tests.cjs",
+      "bytes": 22917,
+      "sha256": "0f9f3fe57d5df931d8fce1210b68ff9a308297976d94267d8211bd938d449e77"
+    }
+  ]
+}
