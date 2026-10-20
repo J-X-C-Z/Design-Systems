@@ -1,0 +1,172 @@
+/* Bauhaus Actions · isolated UI adaptation of the 09-bauhaus motion prompt.
+   No global reset, no legacy mg-09-bauhaus selectors, no continuous animation. */
+.bha-scope {
+  --bha-paper: #f1e9da;
+  --bha-black: #111;
+  --bha-red: #e03c31;
+  --bha-yellow: #f2b705;
+  --bha-blue: #1e4fa3;
+  --bha-surface: var(--bha-paper);
+  --bha-foreground: var(--bha-black);
+  color: var(--bha-foreground);
+  background: var(--bha-surface);
+  font-family: "Avenir Next", "Century Gothic", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color-scheme: light;
+  isolation: isolate;
+}
+.bha-scope[data-bha-theme="dark"] {
+  --bha-surface: var(--bha-black);
+  --bha-foreground: var(--bha-paper);
+  color-scheme: dark;
+}
+.bha-scope[hidden], .bha-pair[hidden], .bha-button[hidden] { display: none !important; }
+.bha-pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  max-width: 100%;
+}
+/* Repeating the owned class deliberately outranks the old .mg-09-bauhaus button
+   min-height/padding rules if a host chooses to nest this new scope there. */
+.bha-button.bha-button {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-flex;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: auto;
+  min-height: 32px;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  padding: 4px 10px;
+  border: 2px solid var(--bha-foreground, #111);
+  border-radius: 0;
+  background: var(--bha-blue, #1e4fa3);
+  color: var(--bha-paper, #f1e9da);
+  font-family: "Avenir Next", "Century Gothic", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: normal;
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  isolation: isolate;
+  transition: none;
+  transform: none;
+}
+.bha-pair--02 > .bha-button.bha-button { gap: 8px; }
+.bha-button.bha-button--outline {
+  background: var(--bha-surface, #f1e9da);
+  color: var(--bha-foreground, #111);
+}
+.bha-button.bha-button--secondary {
+  background: var(--bha-yellow, #f2b705);
+  color: var(--bha-black, #111);
+}
+.bha-button.bha-button:hover:not(:disabled):not([aria-disabled="true"]) {
+  border-color: var(--bha-red, #e03c31);
+  background: var(--bha-blue, #1e4fa3);
+  color: var(--bha-paper, #f1e9da);
+}
+.bha-button.bha-button--outline:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--bha-surface, #f1e9da);
+  color: var(--bha-foreground, #111);
+}
+.bha-button.bha-button--secondary:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--bha-yellow, #f2b705);
+  color: var(--bha-black, #111);
+}
+.bha-button.bha-button:focus-visible {
+  outline: 2px solid var(--bha-red, #e03c31);
+  outline-offset: 4px;
+}
+.bha-button.bha-button:disabled, .bha-button.bha-button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: .5;
+}
+.bha-button.bha-button:disabled:hover, .bha-button.bha-button[aria-disabled="true"]:hover {
+  border-color: var(--bha-foreground, #111);
+}
+.bha-label { min-width: 0; max-width: 100%; overflow-wrap: anywhere; white-space: normal; }
+.bha-icon { display: block; flex: 0 0 16px; width: 16px; height: 16px; pointer-events: none; }
+/* Three 4px shapes occupy a fixed 20px strip. They never affect the label flow.
+   Each accepted action advances exactly one module by one quarter-turn. */
+.bha-geometry {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 4px);
+  gap: 4px;
+  width: 20px;
+  height: 4px;
+  inset-inline-end: 2px;
+  bottom: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: -1;
+}
+.bha-module {
+  display: block;
+  box-sizing: border-box;
+  width: 4px;
+  height: 4px;
+  transform-origin: 50% 50%;
+  animation: none;
+}
+.bha-module--circle { border-radius: 50%; background: var(--bha-red, #e03c31); }
+/* A small black radius makes the circle's mechanical rotation legible. */
+.bha-module--circle::after { content: ""; display: block; width: 2px; height: 1px; margin-top: 2px; background: var(--bha-black, #111); }
+.bha-module--triangle { background: var(--bha-yellow, #f2b705); clip-path: polygon(0 100%, 0 0, 100% 100%); }
+.bha-module--rectangle { background: var(--bha-blue, #1e4fa3); border-top: 1px solid var(--bha-foreground, #111); }
+.bha-module[data-bha-pivot="corner"] { transform-origin: 0 100%; }
+.bha-button[data-bha-feedback="on"][data-bha-beat="odd"] .bha-module[data-bha-turning="true"] {
+  animation: bha-quarter-turn-odd 500ms cubic-bezier(.455, .03, .515, .955) 1 both;
+}
+.bha-button[data-bha-feedback="on"][data-bha-beat="even"] .bha-module[data-bha-turning="true"] {
+  animation: bha-quarter-turn-even 500ms cubic-bezier(.455, .03, .515, .955) 1 both;
+}
+@keyframes bha-quarter-turn-odd {
+  from { transform: rotate(var(--bha-turn-from, 0deg)); }
+  to { transform: rotate(var(--bha-turn-to, 90deg)); }
+}
+@keyframes bha-quarter-turn-even {
+  from { transform: rotate(var(--bha-turn-from, 0deg)); }
+  to { transform: rotate(var(--bha-turn-to, 90deg)); }
+}
+.bha-scope[data-bha-paused="true"] .bha-module,
+.bha-scope[data-bha-reduced-motion="true"] .bha-module,
+.bha-button[data-bha-motion="off"] .bha-module,
+.bha-button.bha-button:disabled .bha-module,
+.bha-button.bha-button[aria-disabled="true"] .bha-module {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bha-button.bha-button, .bha-button .bha-module { animation: none !important; transition: none !important; }
+}
+@media (forced-colors: active) {
+  .bha-button.bha-button,
+  .bha-button.bha-button:hover:not(:disabled):not([aria-disabled="true"]) {
+    border-color: ButtonText; background: ButtonFace; color: ButtonText;
+  }
+  .bha-button.bha-button:focus-visible { outline-color: Highlight; }
+  .bha-button.bha-button:disabled,
+  .bha-button.bha-button[aria-disabled="true"],
+  .bha-button.bha-button:disabled:hover,
+  .bha-button.bha-button[aria-disabled="true"]:hover {
+    border-color: GrayText; color: GrayText; opacity: 1;
+  }
+  .bha-geometry { display: none; }
+}

@@ -1,0 +1,10 @@
+/* Only namespace-owned tokens. No :root, body or global resets. */
+.mg-09-bauhaus {
+ --mg09-paper:#f1e9da;--mg09-paper-light:#f8f2e7;--mg09-ink:#191918;
+ --mg09-red:#c93625;--mg09-yellow:#edbf24;--mg09-blue:#2448c6;
+ --mg09-muted:#5d584f;--mg09-rule:#b4ac9d;--mg09-unit:120px;--mg09-beat:500ms;
+ --mg09-font:"Poppins","Avenir Next","Century Gothic","Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif;
+ --mg09-mono:ui-monospace,"SFMono-Regular",Consolas,monospace;
+ --mg09-ease:cubic-bezier(.2,.8,.2,1);--mg09-fast:200ms;
+ font-family:var(--mg09-font);color:var(--mg09-ink);background:var(--mg09-paper);font-size:15px;line-height:1.6;
+}

@@ -1,0 +1,13 @@
+/* Native caption sheet: 12px ruled grid, primary registration bar, 500ms beat. */
+.bauhaus-editor-textarea{color:var(--bh-ink,#111);display:grid;gap:12px;max-width:384px;font:inherit;position:relative}
+.bauhaus-editor-textarea>label{font-weight:800;font-size:14px;letter-spacing:.04em;display:flex;align-items:center;gap:12px}
+.bauhaus-editor-textarea>label:before{content:"";display:block;width:12px;height:12px;background:var(--bh-red,#e03c31);flex:none}
+.bauhaus-editor-textarea textarea{box-sizing:border-box;display:block;width:100%;min-height:96px;padding:12px 24px 12px 12px;resize:vertical;border:1px solid var(--bh-rule,#b4ac9d);border-radius:2px;background:var(--bh-paper,#f1e9da);color:inherit;font:inherit;line-height:24px;box-shadow:0 1px 2px #0001;outline:none;transition:border-color 500ms linear,box-shadow 500ms linear}
+.bauhaus-editor-textarea textarea:focus-visible{border-color:var(--bh-blue,#1e4fa3);box-shadow:0 0 0 2px #1e4fa333}
+.bauhaus-editor-textarea textarea::placeholder{color:inherit;opacity:.65}
+.bauhaus-editor-textarea textarea:disabled{opacity:.5;cursor:not-allowed}
+.bauhaus-editor-textarea textarea[aria-invalid=true]{border-color:var(--bh-red,#e03c31)}
+.bauhaus-editor-help{font-size:12px;text-align:right;margin:0;line-height:18px}
+.bauhaus-editor-error{font-size:12px;margin:0;border-left:4px solid var(--bh-red,#e03c31);padding-left:8px}
+.bauhaus-editor-textarea[data-motion=off] *,[data-motion=off] .bauhaus-editor-textarea *{transition:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.bauhaus-editor-textarea *{transition:none!important;animation:none!important}}

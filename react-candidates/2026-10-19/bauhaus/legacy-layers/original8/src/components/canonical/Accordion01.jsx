@@ -1,0 +1,7 @@
+import {React} from '../../../vendor/react-runtime.js';
+const DEFAULT_ITEMS=[{title:'网格，不是边界。',content:'画布采用 120 个设计单位的模块。它在 960 × 720 的坐标中保持恒定；屏幕缩小时整体缩放，不把 120 单位冒充为所有设备上的 120 个 CSS 像素。'}, {title:'让形状拥有时间。',content:'四拍是一组句子。默认 120 BPM，即每拍 500 ms。圆、方、三角分别有自己的轨道；关闭一拍只让那类形状停止响应，不会删除你的元素。'}, {title:'功能也参与构图。',content:'朱红强调动作，群青组织空间，明黄标记节奏，墨黑建立秩序。输入、选择和焦点由 React 持有，切换章节不会销毁编辑器。'}];
+export function Accordion01({items=DEFAULT_ITEMS}) {
+  const id=React.useId(),refs=React.useRef([]);const [opened,set]=React.useState(()=>new Set([0]));
+  const key=(e,i)=>{let to;switch(e.key){case'ArrowDown':to=(i+1)%items.length;break;case'ArrowUp':to=(i-1+items.length)%items.length;break;case'Home':to=0;break;case'End':to=items.length-1;break;default:return}e.preventDefault();refs.current[to]?.focus()};
+  return <div className="mg09-accordion" data-canonical="accordion-01">{items.map((item,i)=><div key={i} className="mg09-accordion-item"><h3><button ref={el=>refs.current[i]=el} type="button" id={`${id}-trigger-${i}`} aria-expanded={opened.has(i)} aria-controls={`${id}-panel-${i}`} onKeyDown={e=>key(e,i)} onClick={()=>set(old=>{const next=new Set(old);next.has(i)?next.delete(i):next.add(i);return next})}><span aria-hidden="true" className="mg09-expander">{opened.has(i)?'−':'+'}</span>{item.title}</button></h3><div id={`${id}-panel-${i}`} role="region" aria-labelledby={`${id}-trigger-${i}`} hidden={!opened.has(i)}><p>{item.content}</p></div></div>)}</div>;
+}

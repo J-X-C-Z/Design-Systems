@@ -1,0 +1,60 @@
+/* All rules are namespace-scoped. A 12px module and 500ms beat, no overshoot. */
+.bauhaus-selection{--bh-paper:#f1e9da;--bh-ink:#191918;--bh-red:#c93625;--bh-yellow:#edbf24;--bh-blue:#2448c6;--bh-rule:#b4ac9d;--bh-beat:500ms;--bh-module:12px;color:var(--bh-ink);background:var(--bh-paper);font-family:"Poppins","Avenir Next","Century Gothic","Noto Sans CJK SC",sans-serif;line-height:1.5;color-scheme:light}
+.bauhaus-selection[data-mode=dark]{--bh-paper:#191918;--bh-ink:#f1e9da;--bh-rule:#827b6e;color-scheme:dark}
+.bauhaus-selection .bauhaus-field{display:flex;align-items:center;gap:12px;min-width:0;--bh-accent:var(--bh-blue)}
+.bauhaus-selection .bauhaus-hit{position:relative;display:inline-grid;place-items:center;width:48px;height:48px;flex:0 0 48px}
+.bauhaus-selection .bauhaus-hit input{position:absolute;inset:0;margin:0;width:100%;height:100%;opacity:0;z-index:2;cursor:pointer}
+.bauhaus-selection .bauhaus-checkbox-art{width:48px;height:48px;overflow:visible;pointer-events:none}
+.bauhaus-selection .bauhaus-box{fill:transparent;stroke:var(--bh-ink);stroke-width:2;stroke-dasharray:4 3}
+.bauhaus-selection .bauhaus-field[data-state=checked] .bauhaus-box,.bauhaus-selection .bauhaus-field[data-state=mixed] .bauhaus-box{fill:var(--bh-blue);stroke:var(--bh-blue);stroke-dasharray:none}
+.bauhaus-selection .bauhaus-mark{fill:none;stroke:#f1e9da;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter}
+.bauhaus-selection .bauhaus-pin{fill:var(--bh-red);transform-origin:24px 24px;transition:transform var(--bh-beat) linear}
+.bauhaus-selection .bauhaus-field[data-state=checked] .bauhaus-pin{transform:rotate(90deg)}
+.bauhaus-selection .bauhaus-hit:has(input:focus-visible){outline:3px solid var(--bh-ink);outline-offset:3px}
+.bauhaus-selection .bauhaus-hit:has(input[aria-invalid=true]){outline:2px dashed var(--bh-red);outline-offset:1px}
+.bauhaus-selection .bauhaus-hit:has(input:disabled){opacity:.45}
+.bauhaus-selection .bauhaus-hit input:disabled{cursor:not-allowed}
+.bauhaus-selection .bauhaus-copy{min-width:0}.bauhaus-selection .bauhaus-label{font-size:14px;font-weight:700;cursor:pointer;overflow-wrap:anywhere}.bauhaus-selection .bauhaus-description{font-size:12px;margin:4px 0 0}
+.bauhaus-selection .bauhaus-switch03{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.bauhaus-selection .bauhaus-switch-art{position:relative;width:48px;height:24px;display:block;pointer-events:none}
+.bauhaus-selection .bauhaus-track{position:absolute;inset:0;border:2px solid var(--bh-ink);box-sizing:border-box;background:transparent;border-radius:12px}
+.bauhaus-selection .bauhaus-field[data-state=checked] .bauhaus-track{background:var(--bh-accent)}
+.bauhaus-selection .bauhaus-thumb{position:absolute;left:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#f1e9da;box-shadow:inset 0 0 0 2px #191918;transition:transform var(--bh-beat) cubic-bezier(.45,0,.55,1);display:grid;place-items:center}
+.bauhaus-selection .bauhaus-thumb>span{width:6px;height:6px;background:#191918;clip-path:polygon(0 0,100% 50%,0 100%);transition:transform var(--bh-beat) linear}
+.bauhaus-selection .bauhaus-field[data-state=checked] .bauhaus-thumb{transform:translateX(24px)}
+.bauhaus-selection .bauhaus-field[data-state=checked] .bauhaus-thumb>span{transform:rotate(90deg)}
+.bauhaus-selection .bauhaus-axis{position:absolute;left:24px;top:-6px;height:36px;border-left:1px solid var(--bh-rule);z-index:0;opacity:.45}
+.bauhaus-selection .bauhaus-track,.bauhaus-selection .bauhaus-thumb{z-index:1}
+.bauhaus-selection [data-tone=destructive]{--bh-accent:var(--bh-red)}
+/* Distinct conventional danger/warning; success/info use labelled geometry within primaries. */
+.bauhaus-selection [data-tone=success]{--bh-accent:var(--bh-blue)}
+.bauhaus-selection [data-tone=info]{--bh-accent:var(--bh-ink)}
+.bauhaus-selection [data-tone=warning]{--bh-accent:var(--bh-yellow)}
+.bauhaus-selection [data-tone=warning] .bauhaus-thumb>span{clip-path:polygon(50% 0,100% 100%,0 100%)}
+.bauhaus-selection [data-tone=success] .bauhaus-thumb>span,.bauhaus-selection [data-tone=info] .bauhaus-thumb>span{clip-path:none;background:transparent;color:#191918;width:14px;height:14px;text-align:center;font:900 12px/14px sans-serif;transform:none}
+.bauhaus-selection [data-motion=off] *{transition:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.bauhaus-selection *{transition:none!important;animation:none!important}}
+@media(forced-colors:active){.bauhaus-selection .bauhaus-box,.bauhaus-selection .bauhaus-track{stroke:ButtonText;border-color:ButtonText;fill:Canvas;background:Canvas}.bauhaus-selection .bauhaus-field[data-state=checked] .bauhaus-box{fill:Highlight;stroke:Highlight}.bauhaus-selection .bauhaus-mark{stroke:HighlightText}.bauhaus-selection .bauhaus-thumb{background:ButtonText;forced-color-adjust:auto}}
+
+/* Small retains the independent 48px hit area; geometry shrinks to 36x18 on a 6px half-module. */
+.bauhaus-selection [data-size=sm] .bauhaus-switch-art{width:36px;height:18px}
+.bauhaus-selection [data-size=sm] .bauhaus-track{border-radius:9px}
+.bauhaus-selection [data-size=sm] .bauhaus-thumb{width:12px;height:12px;left:3px;top:3px}
+.bauhaus-selection [data-size=sm][data-state=checked] .bauhaus-thumb{transform:translateX(18px)}
+.bauhaus-selection [data-size=sm] .bauhaus-axis{left:18px;top:-3px;height:24px}
+.bauhaus-selection [data-size=sm] .bauhaus-thumb>span[data-symbol=success],.bauhaus-selection [data-size=sm] .bauhaus-thumb>span[data-symbol=info]{width:10px;height:10px;font-size:9px;line-height:10px}
+
+/* New exact04/02: same modular grid, distinct completion and square identities. */
+.bauhaus-selection [data-catalog-id=checkbox-04] .bauhaus-box{stroke-dasharray:none}
+.bauhaus-selection [data-catalog-id=checkbox-04][data-state=checked] .bauhaus-box{fill:var(--bh-blue);stroke:var(--bh-blue)}
+.bauhaus-selection [data-catalog-id=checkbox-04][data-state=checked] .bauhaus-mark{stroke:var(--bh-paper)}
+.bauhaus-selection [data-catalog-id=checkbox-04][data-state=checked] .bauhaus-label{text-decoration:line-through;color:var(--bh-muted)}
+.bauhaus-selection [data-catalog-id=switch-02] .bauhaus-track,.bauhaus-selection [data-catalog-id=switch-02] .bauhaus-thumb{border-radius:2px}
+.bauhaus-selection [data-catalog-id=switch-02] .bauhaus-track{background:var(--bh-paper);border:2px solid var(--bh-ink)}
+.bauhaus-selection [data-catalog-id=switch-02][data-state=checked] .bauhaus-track{background:var(--bh-blue)}
+.bauhaus-selection [data-catalog-id=switch-02] .bauhaus-thumb{background:var(--bh-yellow);border:2px solid var(--bh-ink)}
+.bauhaus-selection .task-proof{display:grid;grid-template-columns:48px 1fr;gap:12px;border-top:2px solid var(--bh-ink);margin-top:24px;padding-top:12px}.bauhaus-selection .task-proof i{display:block;width:24px;height:24px;background:var(--bh-red)}.bauhaus-selection .task-proof[data-complete=true] i{background:var(--bh-blue)}
+
+.bauhaus-selection{--bh-muted:#625c52}.bauhaus-selection[data-mode=dark]{--bh-muted:#bbb3a6}
+
+.bauhaus-selection [data-catalog-id=switch-02] .bauhaus-thumb{box-sizing:border-box}

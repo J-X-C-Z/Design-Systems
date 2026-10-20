@@ -1,0 +1,8 @@
+import {React} from '../../vendor/react-runtime.js';
+import {TRACKS} from '../model.js';
+const LABELS={circle:['圆','重音'],rect:['方','落点'],triangle:['角','推进']};
+export function Sequencer({pattern,onChange,beat,playing}) {
+  const buttons=React.useRef([]);
+  const move=(e,row,column)=>{let next;switch(e.key){case'ArrowRight':next=row*4+(column+1)%4;break;case'ArrowLeft':next=row*4+(column+3)%4;break;case'ArrowDown':next=((row+1)%3)*4+column;break;case'ArrowUp':next=((row+2)%3)*4+column;break;case'Home':next=row*4;break;case'End':next=row*4+3;break;default:return}e.preventDefault();buttons.current[next]?.focus()};
+  return <div className="mg09-sequencer"><div className="mg09-sequence-labels"><span>三种形，四个拍。</span>{[0,1,2,3].map(i=><span key={i} className={beat===i?'is-current':''}>0{i+1}</span>)}</div>{TRACKS.map((track,row)=><div key={track} className={'mg09-track mg09-track-'+track}><div className="mg09-track-name"><span aria-hidden="true" className={'mg09-track-symbol '+track}/><div><strong>{LABELS[track][0]}</strong><small>{LABELS[track][1]}</small></div></div>{pattern[track].map((active,column)=><button key={column} ref={node=>buttons.current[row*4+column]=node} type="button" aria-label={`${LABELS[track][0]}形 · 第 ${column+1} 拍`} aria-pressed={active} className={(active?'is-on ':'')+(playing&&beat===column?'is-playing':'')} onKeyDown={e=>move(e,row,column)} onClick={()=>onChange({...pattern,[track]:pattern[track].map((v,i)=>i===column?!v:v)})}><span aria-hidden="true">{active?LABELS[track][0]:'—'}</span><small aria-hidden="true">{active?'ON':'OFF'}</small></button>)}</div>)}</div>;
+}

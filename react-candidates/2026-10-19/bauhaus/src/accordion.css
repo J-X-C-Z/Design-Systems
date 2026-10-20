@@ -1,0 +1,73 @@
+/* Accordion02: 12px modular grid, primary geometry, a finite 500ms quarter-turn.
+   Each rule is component scoped; existing Bauhaus selection selectors are untouched. */
+.bauhaus-editor-accordion {
+  --bh-editor-paper: var(--bh-paper, #f1e9da);
+  --bh-editor-ink: var(--bh-ink, #111);
+  --bh-editor-red: var(--bh-red, #e03c31);
+  --bh-editor-yellow: var(--bh-yellow, #f2b705);
+  --bh-editor-blue: var(--bh-blue, #1e4fa3);
+  --bh-editor-rule: var(--bh-rule, #b4ac9d);
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  color: var(--bh-editor-ink);
+  background: var(--bh-editor-paper);
+  font-family: "Poppins", "Avenir Next", "Century Gothic", "Noto Sans CJK SC", sans-serif;
+  line-height: 1.5;
+}
+.bauhaus-editor-accordion-card {
+  min-width: 0;
+  border: 2px solid var(--bh-editor-ink);
+  background: var(--bh-editor-paper);
+}
+.bauhaus-editor-accordion-heading { margin: 0; font: inherit; }
+.bauhaus-editor-accordion .bauhaus-editor-accordion-trigger {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 72px;
+  margin: 0;
+  padding: 12px;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.bauhaus-editor-accordion .bauhaus-editor-accordion-trigger:focus-visible {
+  outline: 3px solid var(--bh-editor-ink);
+  outline-offset: 3px;
+}
+.bauhaus-editor-accordion .bauhaus-editor-accordion-trigger:disabled { cursor: not-allowed; opacity: .5; }
+.bauhaus-editor-accordion-number { align-self: stretch; display: grid; align-items: center; border-right: 1px solid var(--bh-editor-rule); font-size: 12px; letter-spacing: .06em; }
+.bauhaus-editor-accordion-title { overflow-wrap: anywhere; }
+.bauhaus-editor-accordion-art { position: relative; display: grid; place-items: center; width: 48px; height: 48px; overflow: hidden; pointer-events: none; }
+.bauhaus-editor-accordion-axis { position: absolute; inset: 0; background: linear-gradient(to right, transparent 23px, var(--bh-editor-rule) 23px, var(--bh-editor-rule) 24px, transparent 24px), linear-gradient(to bottom, transparent 23px, var(--bh-editor-rule) 23px, var(--bh-editor-rule) 24px, transparent 24px); }
+.bauhaus-editor-accordion-shape { position: relative; width: 24px; height: 24px; background: var(--bh-editor-red); border-radius: 24px 0 0 0; transform: rotate(0deg); transform-origin: 12px 12px; transition: transform 500ms cubic-bezier(.45, 0, .55, 1); }
+.bauhaus-editor-accordion-card[data-geometry="1"] .bauhaus-editor-accordion-shape { background: var(--bh-editor-blue); border-radius: 0; clip-path: polygon(0 0, 100% 50%, 0 100%); }
+.bauhaus-editor-accordion-card[data-geometry="2"] .bauhaus-editor-accordion-shape { background: var(--bh-editor-yellow); border-radius: 0; clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 50%, 50% 100%, 0 100%); }
+.bauhaus-editor-accordion-card[data-state="open"] .bauhaus-editor-accordion-shape { transform: rotate(90deg); }
+.bauhaus-editor-accordion-panel { border-top: 1px solid var(--bh-editor-rule); padding: 12px 72px 24px 60px; overflow-wrap: anywhere; font-size: 14px; }
+.bauhaus-editor-accordion-panel[hidden] { display: none; }
+.bauhaus-editor-accordion-panel a { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
+.bauhaus-editor-accordion-panel > :first-child { margin-top: 0; }
+.bauhaus-editor-accordion-panel > :last-child { margin-bottom: 0; }
+.bauhaus-editor-accordion[data-motion="off"] *,
+[data-motion="off"] .bauhaus-editor-accordion * { animation: none !important; transition: none !important; }
+@media (prefers-reduced-motion: reduce) { .bauhaus-editor-accordion * { animation: none !important; transition: none !important; } }
+@media (max-width: 360px) {
+  .bauhaus-editor-accordion .bauhaus-editor-accordion-trigger { grid-template-columns: 24px minmax(0, 1fr) 48px; gap: 12px; }
+  .bauhaus-editor-accordion-panel { padding: 12px 12px 24px 48px; }
+}
+@media (forced-colors: active) {
+  .bauhaus-editor-accordion-card { border-color: CanvasText; }
+  .bauhaus-editor-accordion .bauhaus-editor-accordion-trigger:focus-visible { outline-color: Highlight; }
+  .bauhaus-editor-accordion-shape { background: ButtonText; }
+  .bauhaus-editor-accordion-card[data-state="open"] .bauhaus-editor-accordion-shape { background: Highlight; }
+}

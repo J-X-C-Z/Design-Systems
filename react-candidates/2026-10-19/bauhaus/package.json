@@ -1,0 +1,21 @@
+{
+  "name": "@studio/bauhaus-selection",
+  "version": "0.3.0-candidate.2",
+  "type": "module",
+  "sideEffects": [
+    "./src/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/complete.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./src/complete.css"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "license": "MIT",
+  "types": "./src/complete.d.ts"
+}

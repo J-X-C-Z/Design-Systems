@@ -1,0 +1,20 @@
+{
+  "name": "@studio/bauhaus-actions",
+  "version": "0.1.0-candidate.1",
+  "type": "module",
+  "sideEffects": [
+    "./src/styles.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./src/styles.css"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "license": "MIT"
+}
