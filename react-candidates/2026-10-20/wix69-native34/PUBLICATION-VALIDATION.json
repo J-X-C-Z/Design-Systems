@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "scope": "Exactly one standalone catalog ID: watermelon:components:select-34. Not the full cumulative Wix69 application.",
+  "catalog_ids": [
+    "watermelon:components:select-34"
+  ],
+  "package": {
+    "name": "@studio/wix-native-multiple",
+    "version": "0.1.0-candidate.2",
+    "verified_original_archive_sha256": "c28b430fd6ee0a500889e517a43b5d9976e242820b19b2aae3be53a5b853e001",
+    "portable_rebuilt_archive_sha256": "0c6ee21e52f26b571a6e9695015904dd4e738efbd717045f1c1c4284e60d08d8",
+    "archive_members": 22,
+    "portable_archive_note": "README portability changes tarball bytes. Runtime, public declarations, CSS, reference originals and examples remain byte-identical."
+  },
+  "portable_replay": {
+    "surface_mode_cases": 2532,
+    "assertions": 29896,
+    "strict_type_lanes": 8,
+    "negative_cases_per_lane": 48,
+    "native_package_consumer_assertions": 11,
+    "unfiltered": true,
+    "source_and_extracted_package": true,
+    "production_and_development_react": true,
+    "same_fixture_as_candidate1_red": true,
+    "reports": [
+      {
+        "name": "runtime",
+        "sha256": "99246ac4ec92fde321ac1815cd70e5731a2046ac9d185c605eedba22016fa25d"
+      },
+      {
+        "name": "hydration",
+        "sha256": "0e2046272ef0359746e90a540a97fa36fcbefa03500283690f9afdadf486baf1"
+      },
+      {
+        "name": "types",
+        "sha256": "c22f569d048ef7b7e6c50d6e7b7a7e792777fe79adf6c3f3476e0a60cc3c76c8"
+      },
+      {
+        "name": "ssr",
+        "sha256": "1c0aeb168d0c1e91dfda9b80f66dd17f277378e337a4dbf4015e9b73473548f0"
+      },
+      {
+        "name": "structure",
+        "sha256": "dce4f584495171de5107d6ffb7d726b5f5634596293ed0149238990bd2e8588f"
+      },
+      {
+        "name": "pack",
+        "sha256": "e66eb28bca9072bb9c3bcb9431cbeb88334584ca7e2062671d783d7ffcc01cf0"
+      },
+      {
+        "name": "package-provenance",
+        "sha256": "4bab0621d441cedcc97673c142fd58322c28344cb49546aba17917035cfe2555"
+      },
+      {
+        "name": "package-runtime",
+        "sha256": "4e4dd341c0baefdba82294eaae23d09cde3e5c9268cd27c69fad484e787db62e"
+      },
+      {
+        "name": "package-hydration",
+        "sha256": "c47665477daa23bbba8cf2b922d770b6ab7f72cf3cb81317c4ccd6ad4adac373"
+      },
+      {
+        "name": "package-type-matrix",
+        "sha256": "3e93e729e5b39862cf155340eeda2014558ab72781f8b280d2f1aa3e59df2252"
+      },
+      {
+        "name": "package-ssr",
+        "sha256": "0f8a813e48fbf2f7c0adc4a9cef4fc4967efbfc1b06453f51958aeb05cccb5e9"
+      },
+      {
+        "name": "package-structure",
+        "sha256": "7ba1e0bf44702705e4c10a79d926ddd9bd2250012e0fd499b34af0884ebd624a"
+      },
+      {
+        "name": "consumer-native",
+        "sha256": "92ef34e752f4e299c627eabfebe2bccf8a9ff6be9441214c55112818d157430b"
+      },
+      {
+        "name": "review-regressions",
+        "sha256": "c5743da874f0f3d874f68c1fc9286bcca7c3aa94604eec23875f6a608cf8ccab"
+      },
+      {
+        "name": "review-regressions-development",
+        "sha256": "19a4487229469a041ca0b9e1b087acb2bf9c0861d5fea90b33b857be0bef6d3d"
+      },
+      {
+        "name": "package-review-regressions",
+        "sha256": "b27fdb9b571dba609c014eb00bdbfd26826845fefe2752cc01141650f353987f"
+      },
+      {
+        "name": "package-review-regressions-development",
+        "sha256": "d064b86ad77b8ee6da23284f88e4d36a5a6aa96c8511f65ce925fff84d8e386b"
+      }
+    ]
+  },
+  "bounded_independent_retest": {
+    "original_fixture": {
+      "cases": 68,
+      "assertions": 229,
+      "failed": 0
+    },
+    "additional_edge_cases": {
+      "cases": 10,
+      "assertions": 27
+    },
+    "closed_findings": [
+      "R1: controlled reset inside ShadowRoot",
+      "R2: dynamic palette stale prepared CSS"
+    ],
+    "new_findings": [],
+    "summary_sha256": "e4d2c7eeac697b0d395e2b49a55ee741af0736fae4251d6ccc6fbe050712a987"
+  },
+  "publication_only_edits": [
+    {
+      "path": "README.md",
+      "source_sha256": "1c71309236b529b8c78193bf95e8f65664f1ef996c18aef8f16b5d672edf02d6",
+      "publication_sha256": "62176a0320e6d5b3360d877c4570fbac919bb8b2fd1a18d66ebc9c2b3fb3ff9b"
+    },
+    {
+      "path": "tools/verify.sh",
+      "source_sha256": "c120f596a9781ae377b84c9f418de0f487ac05492a5ea742e645bdf17e84f76d",
+      "publication_sha256": "6eb534197e33932f254dbcaf50102ca8cdec21311452859519d318449028f6fe"
+    }
+  ],
+  "privacy_scan": {
+    "credential_shaped_literals": 0,
+    "executor_private_paths": 0
+  },
+  "limits": {
+    "real_browser": false,
+    "trusted_events": false,
+    "formal_accepted": 0,
+    "note": "Surface/mode cases include repeated source/package and production/development execution; they are not a count of unique fixtures or real-browser acceptance."
+  }
+}

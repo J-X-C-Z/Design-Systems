@@ -1,0 +1,15 @@
+import * as React from 'react';
+import {renderToString} from 'react-dom/server';
+import {Select34, wixNativeMultipleIds} from '@studio/wix-native-multiple';
+import {createRequire} from 'node:module';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const require=createRequire(import.meta.url),cjs=require('@studio/wix-native-multiple');
+assert.deepEqual(wixNativeMultipleIds,['select-34']);assert.deepEqual(cjs.wixNativeMultipleIds,wixNativeMultipleIds);
+assert.equal(typeof window,'undefined');assert.equal(typeof document,'undefined');
+const a=renderToString(React.createElement(Select34,{value:['vegan','halal'],name:'prefs'})),b=renderToString(React.createElement(cjs.Select34,{value:['vegan','halal'],name:'prefs'}));
+assert.equal(a,b);assert.equal((a.match(/selected=""/g)||[]).length,2);assert.equal((a.match(/<select/g)||[]).length,1);assert.equal((a.match(/<option/g)||[]).length,6);
+const css=require.resolve('@studio/wix-native-multiple/styles.css'),meta=require('@studio/wix-native-multiple/package.json');
+assert.ok(css.endsWith('/src/styles.css'));assert.ok(fs.readFileSync(css,'utf8').includes('.wix-native-multiple'));assert.equal(meta.name,'@studio/wix-native-multiple');
+const report={status:'PASS',assertions:11,packageName:meta.name,importSpecifier:'@studio/wix-native-multiple',esmResolution:import.meta.resolve('@studio/wix-native-multiple'),cjsResolution:require.resolve('@studio/wix-native-multiple'),cssResolution:css,react:React.version,noBrowserGlobals:true,scope:'Native Node import/require and explicit CSS export resolution of actual extracted npm archive. No local source alias.'};
+fs.writeFileSync(process.env.REPORT_PATH,JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

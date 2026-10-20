@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "status": "FAIL",
+  "total": 379,
+  "failed": 247,
+  "testSha256": "a068a98d6cf1e3bf4ced2d044d9deb7fceba7201f54f67ae8657e6dee32d85b2",
+  "original_report_sha256": "f3fe75815401967c4318830e72b47819b915726ab0aa91f4157468bafb2e1d58",
+  "candidate1_archive_sha256": "6fb3a7d9f9eb476fb14a61c39963e76ae04e859bf96e23db09e5e5140db754e1",
+  "candidate2_verified_archive_sha256": "c28b430fd6ee0a500889e517a43b5d9976e242820b19b2aae3be53a5b853e001",
+  "scope": "Compact receipt from preserved candidate.1 failing run of the exact final review-regressions fixture. Historical raw failures remain separately retained; this receipt is not a new executed test."
+}

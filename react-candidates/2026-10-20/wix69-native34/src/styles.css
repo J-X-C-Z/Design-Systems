@@ -1,0 +1,12 @@
+.wix-native-multiple{--wix-nm-ink:#30231e;--wix-nm-paper:#fffaf4;--wix-nm-wash:#f4ede3;--wix-nm-edge:#9b7866;--wix-nm-muted:#6d5548;display:grid;gap:8px;width:100%;max-width:20rem;min-width:0;box-sizing:border-box;color:var(--wix-nm-ink);font:inherit;line-height:1.5;color-scheme:light}
+.wix-native-multiple .wix-nm-label{display:block;margin:0;color:var(--wix-nm-muted);font:inherit;font-size:.875rem;font-weight:650;line-height:1.5;overflow-wrap:anywhere}
+.wix-native-multiple .wix-nm-select{display:block;box-sizing:border-box;width:100%;min-width:0;height:8rem;margin:0;padding:8px 10px;border:1px solid var(--wix-nm-edge);border-radius:12px;background:var(--wix-nm-paper);color:var(--wix-nm-ink);font:inherit;font-size:.875rem;line-height:1.5;box-shadow:1px 3px 0 #30231e18;scroll-margin-block:24px;transition:background .15s ease,border-color .15s ease}
+.wix-native-multiple .wix-nm-select[size]{height:auto;min-height:4rem}
+.wix-native-multiple .wix-nm-select option{padding:4px 6px}
+.wix-native-multiple .wix-nm-select:focus-visible{outline:3px solid var(--wix-nm-ink);outline-offset:3px}
+.wix-native-multiple .wix-nm-select:hover:not(:disabled){border-color:var(--wix-nm-ink)}
+.wix-native-multiple .wix-nm-select:disabled{background:var(--wix-nm-wash);color:var(--wix-nm-muted);cursor:not-allowed;opacity:.62}
+.wix-native-multiple .wix-nm-select[aria-invalid=true]{border-color:#8c3528;border-inline-start-width:3px}
+.wix-native-multiple .wix-nm-helper{margin:0;padding-inline:4px;color:var(--wix-nm-muted);font:inherit;font-size:11px;line-height:1.65;overflow-wrap:anywhere}
+@media(prefers-reduced-motion:reduce){.wix-native-multiple .wix-nm-select{transition:none}}
+@media(forced-colors:active){.wix-native-multiple{--wix-nm-ink:CanvasText;--wix-nm-paper:Canvas;--wix-nm-wash:Canvas;--wix-nm-edge:ButtonText;--wix-nm-muted:CanvasText}.wix-native-multiple .wix-nm-select{box-shadow:none}.wix-native-multiple .wix-nm-select:focus-visible{outline-color:Highlight}.wix-native-multiple .wix-nm-select:disabled{color:GrayText;opacity:1}}

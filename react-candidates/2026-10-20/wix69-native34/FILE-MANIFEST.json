@@ -1,0 +1,200 @@
+{
+  "scope": "All published files except this self-referential manifest; generated output excluded.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 52,
+      "sha256": "9fa312fe6e93be0b186a55ce6befb648276402d249678cdc03e6450c83f4eeab"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "PUBLICATION-VALIDATION.json",
+      "bytes": 4734,
+      "sha256": "9fbae39e95d4550785cceebe1407f3ae7c92ba014d7429e3f53e632bdc4a1575"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11386,
+      "sha256": "62176a0320e6d5b3360d877c4570fbac919bb8b2fd1a18d66ebc9c2b3fb3ff9b"
+    },
+    {
+      "path": "dist/index.cjs",
+      "bytes": 8491,
+      "sha256": "06730024fd5a626652a1e1ef73a2b1cec9adb2f71cabce325daed8887504b36f"
+    },
+    {
+      "path": "dist/index.js",
+      "bytes": 6939,
+      "sha256": "c89631322524dd7d4c891368d6f8c30eb23fd6faa9e5d6b5385d93ad2d14a434"
+    },
+    {
+      "path": "evidence/candidate1-regression-provenance.json",
+      "bytes": 667,
+      "sha256": "6617e888ddca9ab2a195e855104685787b5253627aa55d36a45604c646fa7bb4"
+    },
+    {
+      "path": "examples/MealBrief.tsx",
+      "bytes": 1316,
+      "sha256": "a85dc9b6e144c8fee10f48d2e1d2acf945a26f0abc14e9085a5dc5c6dfc22013"
+    },
+    {
+      "path": "examples/PaletteNativeSheet.tsx",
+      "bytes": 2736,
+      "sha256": "33b568577177f97ebc1a1dadddeb1ae2653cbdadc90d6ab7ff9c1a9d04a219a1"
+    },
+    {
+      "path": "examples/palette-css.ts",
+      "bytes": 1331,
+      "sha256": "c04268977674b31345ec6e8b54c4f4baba915154acd94df144ef50ba8b7def0f"
+    },
+    {
+      "path": "examples/palette-native-sheet.css",
+      "bytes": 1145,
+      "sha256": "2f4db8a47326c72121ab4b3c001580ba63452c9c595262c8b231617de9981065"
+    },
+    {
+      "path": "examples/styles.d.ts",
+      "bytes": 26,
+      "sha256": "2865fb7db08734898bc38aef04174a3c1d9819d75386558f7f8b466c6949bb97"
+    },
+    {
+      "path": "package.json",
+      "bytes": 870,
+      "sha256": "4dbb0397d160ea86caae8038643f8dec57662c0a6413c8bf9e0646218c951a23"
+    },
+    {
+      "path": "reference/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "reference/SOURCE-IDENTITY.json",
+      "bytes": 2463,
+      "sha256": "7d8df13d761010a134eee23135df67dd505f151a6980ae0ffe825a78a1556494"
+    },
+    {
+      "path": "reference/package.json",
+      "bytes": 4203,
+      "sha256": "bb874d7ca4b1b87f8957ef4c996c607656f63ba489ddb9f916a9bd65f4da474a"
+    },
+    {
+      "path": "reference/src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "reference/src/components/base-ui/native-select.tsx",
+      "bytes": 1954,
+      "sha256": "07db9fa5e46bb1c4e2e8376f1518e74aa4636387b034050665bbd45399ea2a4a"
+    },
+    {
+      "path": "reference/src/data/contents/components/select/variant-34.tsx",
+      "bytes": 1863,
+      "sha256": "9f7dcb51fd037bc182b6314debd8cb864240deb6a03b2324f45d553728fb3aa1"
+    },
+    {
+      "path": "reference/src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "path": "src/index.d.ts",
+      "bytes": 306,
+      "sha256": "aec348c2bc684d292aea5fb9b3ae34a290ccb0aa529d724758bbb61fee0a8c31"
+    },
+    {
+      "path": "src/index.tsx",
+      "bytes": 7808,
+      "sha256": "64e42ea6fc3fb8a11138ea70384a4c49c81faea80bad876e16d9bcade5dbc8dc"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 2043,
+      "sha256": "e5afe9cbab794e6f44e2a82c358a2bc14a001117288419bb37c2bfc68440e706"
+    },
+    {
+      "path": "src/styles.d.ts",
+      "bytes": 99,
+      "sha256": "553674d92b432c73b6a8d39f15a43454cc5242bbe22509e7a781cdfb2f87ea94"
+    },
+    {
+      "path": "src/types.ts",
+      "bytes": 1971,
+      "sha256": "0cbf5f457455cab0058f3e5ae794dee6a54ff85c9f380a8bdb0b401a7fea6479"
+    },
+    {
+      "path": "tests/consumer-native.mjs",
+      "bytes": 1746,
+      "sha256": "c88c3cf71b380ccb227298b23a902937c7ae23b2d782a30e896e25f8287fa135"
+    },
+    {
+      "path": "tests/harness.cjs",
+      "bytes": 2694,
+      "sha256": "b1a1929dde0e96d22963e54234cd33fea937c303bb8c45d4c05e6451e34d94d1"
+    },
+    {
+      "path": "tests/hydration.cjs",
+      "bytes": 2361,
+      "sha256": "305aa8c591e34ec8440aa75dc7e54ac41613a1aa174395926f7f7e3ffdc57af5"
+    },
+    {
+      "path": "tests/report.cjs",
+      "bytes": 470,
+      "sha256": "f542a556a968b2182d93e18cad14676eeedb8bfb63648c3e82088329d85cf71f"
+    },
+    {
+      "path": "tests/review-regressions.cjs",
+      "bytes": 16244,
+      "sha256": "a068a98d6cf1e3bf4ced2d044d9deb7fceba7201f54f67ae8657e6dee32d85b2"
+    },
+    {
+      "path": "tests/runtime.cjs",
+      "bytes": 25641,
+      "sha256": "19a1e90d07982cc2679c7bea5fc2d40981b889e8b3649f273a4bff875f1cd72d"
+    },
+    {
+      "path": "tests/ssr.cjs",
+      "bytes": 5515,
+      "sha256": "fe3e4050441669a3f6ef4e4f12f5ef9728b20bf32d80bc6792917d870bcaf1a3"
+    },
+    {
+      "path": "tests/structure.cjs",
+      "bytes": 3431,
+      "sha256": "dd362d7f3b2579670f0437aedf2c117117a55db13b71970694ce5d4c46355312"
+    },
+    {
+      "path": "tests/type-matrix.cjs",
+      "bytes": 5074,
+      "sha256": "8504252b65999398661830fff0edd3f1622af1aa83790c63a8352629cdaa5332"
+    },
+    {
+      "path": "tests/types.tsx",
+      "bytes": 6558,
+      "sha256": "275b4b321fd7526dcfc0aaab567f483530bd3f09513c78cc834e0b20508dc1b3"
+    },
+    {
+      "path": "tools/build.cjs",
+      "bytes": 957,
+      "sha256": "f87f05b4cfea78d182d05c793c77279eed5239836adda1b9eadf72e492041903"
+    },
+    {
+      "path": "tools/package.py",
+      "bytes": 1126,
+      "sha256": "0282cb42cc58371657e56eccf6f0b75d37a7f6132f5407ac12a2fecf4b6d9573"
+    },
+    {
+      "path": "tools/verify-consumer.sh",
+      "bytes": 2604,
+      "sha256": "95c688c036b2a31f842cac0b3620dd545b54582a1b320cee9d10ab0fad865e38"
+    },
+    {
+      "path": "tools/verify.sh",
+      "bytes": 3150,
+      "sha256": "6eb534197e33932f254dbcaf50102ca8cdec21311452859519d318449028f6fe"
+    }
+  ]
+}

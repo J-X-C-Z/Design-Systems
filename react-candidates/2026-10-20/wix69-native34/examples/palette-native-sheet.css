@@ -1,0 +1,8 @@
+.wix-native-palette-example{display:grid;gap:12px;max-width:32rem;padding:18px;border:1px solid #9b7866;border-radius:14px;background:#fffaf4;color:#30231e;font:inherit}
+.wix-native-palette-example h3,.wix-native-palette-example p{margin:0}
+.wix-native-palette-example ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.wix-native-palette-example li{display:flex;align-items:center;gap:6px;padding:5px 8px;border:1px solid #c5ac98;border-radius:8px;font-size:.8rem}
+.wix-native-palette-example li span{display:block;width:22px;height:22px;border:1px solid #6d5548;border-radius:4px}
+.wix-native-palette-example button{min-height:40px;padding:8px 12px;border:1px solid #9b7866;border-radius:8px;background:#f4ede3;color:inherit;font:inherit;cursor:pointer}
+.wix-native-palette-example textarea{display:block;box-sizing:border-box;width:100%;margin-block-start:5px;padding:10px;border:1px solid #9b7866;border-radius:8px;background:#fff;color:#30231e;font:13px/1.5 monospace}
+.wix-native-palette-example button:focus-visible,.wix-native-palette-example textarea:focus-visible{outline:3px solid #30231e;outline-offset:3px}

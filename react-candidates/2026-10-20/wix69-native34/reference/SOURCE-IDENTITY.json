@@ -1,0 +1,53 @@
+{
+  "canonical_id": "watermelon:components:select-34",
+  "id": "select-34",
+  "component": "Select34",
+  "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-34.tsx",
+  "source_file": {
+    "source_path": "src/data/contents/components/select/variant-34.tsx",
+    "reference_file": "reference/src/data/contents/components/select/variant-34.tsx",
+    "bytes": 1863,
+    "sha256": "9f7dcb51fd037bc182b6314debd8cb864240deb6a03b2324f45d553728fb3aa1",
+    "git_blob": "d37eae67bad8a28c5e217767111feb83ae377196"
+  },
+  "support_files": [
+    {
+      "source_path": "src/components/base-ui/native-select.tsx",
+      "reference_file": "reference/src/components/base-ui/native-select.tsx",
+      "bytes": 1954,
+      "sha256": "07db9fa5e46bb1c4e2e8376f1518e74aa4636387b034050665bbd45399ea2a4a",
+      "git_blob": "1edab6a1175a3f97b2e84e98aa423f662746a8ef"
+    },
+    {
+      "source_path": "src/components/base-ui/label.tsx",
+      "reference_file": "reference/src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50",
+      "git_blob": "f752f82ba6be3cf9a1015c1d61df5de00a1eaf66"
+    },
+    {
+      "source_path": "src/lib/utils.ts",
+      "reference_file": "reference/src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019",
+      "git_blob": "649b3921a8dcbefd43d3cd9182867c8bc8783e73"
+    },
+    {
+      "source_path": "package.json",
+      "reference_file": "reference/package.json",
+      "bytes": 4203,
+      "sha256": "bb874d7ca4b1b87f8957ef4c996c607656f63ba489ddb9f916a9bd65f4da474a",
+      "git_blob": "5f0416b5f7425a8cd3374fc6f5b1e9dc7249301b"
+    },
+    {
+      "source_path": "LICENSE",
+      "reference_file": "reference/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0",
+      "git_blob": "c76bf56983389c53194eecc9d088ac8de34debe1"
+    }
+  ],
+  "license": "MIT; Copyright (c) 2026 Watermelon Platform Contributors",
+  "adaptation": "Native select multiple retained. Source label, six ordered options, empty initial selection, helper retained. Tailwind/zinc styling replaced with scoped Wix cream/Mocha CSS. No hidden select, popup, dialog, or synthesized keyboard selection."
+}
