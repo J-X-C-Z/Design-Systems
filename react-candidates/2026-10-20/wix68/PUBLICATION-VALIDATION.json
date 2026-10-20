@@ -1,0 +1,450 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-10-20T04:59:49.477765+00:00",
+  "scope": {
+    "published_component_ids": [
+      "select-10",
+      "select-11",
+      "select-12",
+      "select-13",
+      "select-14",
+      "select-15",
+      "select-16",
+      "select-17",
+      "select-18",
+      "select-19",
+      "select-20",
+      "select-21",
+      "select-22",
+      "select-23",
+      "select-24",
+      "select-25",
+      "select-26",
+      "select-27",
+      "select-28",
+      "select-29",
+      "select-32",
+      "select-33"
+    ],
+    "published_id_count": 22,
+    "new_ids_in_original_batch": [
+      "select-32",
+      "select-33"
+    ],
+    "cumulative_full_archive_wix_ids": 68,
+    "full_68_in_this_directory": false
+  },
+  "original_full_archive_sha256": "e41fac4eea81baa4f64ada5db767b6f390d85c32e597016f170c52b7b788b0f6",
+  "portable_validation": {
+    "passed_gates": 46,
+    "failed_gates": 0,
+    "source_builds": 6,
+    "lean_archives_built_and_member_verified": 6,
+    "installed_archive_consumers_ssr_readme_types_examples": 24,
+    "portable_regroup_suites": 5,
+    "palette_structure_content_suites": 4,
+    "cross_family_targeted_maintenance_suite": 1,
+    "log_receipts": [
+      {
+        "name": "wix-multi-select-build",
+        "exit_code": 0,
+        "sha256": "acf37a7a737229149130dd9b9f6c28046e366f02067766ee7674b214d50ba565"
+      },
+      {
+        "name": "wix-multi-select-pack",
+        "exit_code": 0,
+        "sha256": "1d4f166b958b600069728b763ecebe300f44f404d2e4cd15e1ed17bf56acd342"
+      },
+      {
+        "name": "wix-select-menu-reset-repair-build",
+        "exit_code": 0,
+        "sha256": "acf37a7a737229149130dd9b9f6c28046e366f02067766ee7674b214d50ba565"
+      },
+      {
+        "name": "wix-select-menu-reset-repair-pack",
+        "exit_code": 0,
+        "sha256": "e4ce3689b398fe415b38ecd11157240b34db5c404d80ee540c4b56de13400f47"
+      },
+      {
+        "name": "wix-select-composition-reset-repair-build",
+        "exit_code": 0,
+        "sha256": "acf37a7a737229149130dd9b9f6c28046e366f02067766ee7674b214d50ba565"
+      },
+      {
+        "name": "wix-select-composition-reset-repair-pack",
+        "exit_code": 0,
+        "sha256": "d94ac81a35a82518ef9a1d3c2ec9ea2cdfbe88dc4a8432f4fb13ffa650e4176b"
+      },
+      {
+        "name": "wix-select-availability-reset-repair-build",
+        "exit_code": 0,
+        "sha256": "acf37a7a737229149130dd9b9f6c28046e366f02067766ee7674b214d50ba565"
+      },
+      {
+        "name": "wix-select-availability-reset-repair-pack",
+        "exit_code": 0,
+        "sha256": "a4a96a9470fc03b7681a829758905176500eeda8390ed8938aa01c51c4254945"
+      },
+      {
+        "name": "wix-select-structure-reset-repair-build",
+        "exit_code": 0,
+        "sha256": "acf37a7a737229149130dd9b9f6c28046e366f02067766ee7674b214d50ba565"
+      },
+      {
+        "name": "wix-select-structure-reset-repair-pack",
+        "exit_code": 0,
+        "sha256": "bba1411695950e8c1353e9f336363b5c0e53713540a8a51c7eb565e2e0748dc5"
+      },
+      {
+        "name": "wix-select-content-reset-repair-build",
+        "exit_code": 0,
+        "sha256": "acf37a7a737229149130dd9b9f6c28046e366f02067766ee7674b214d50ba565"
+      },
+      {
+        "name": "wix-select-content-reset-repair-pack",
+        "exit_code": 0,
+        "sha256": "4ea261eb6c7d5fbfed52802e14137d4e7c19a6f577351c6889770e50c0a41fc5"
+      },
+      {
+        "name": "wix-multi-select-ssr",
+        "exit_code": 0,
+        "sha256": "a20b8b49e8e3a31b92e175586352e944fe5e9411a568141a889d25e3b92475fe"
+      },
+      {
+        "name": "wix-multi-select-readme",
+        "exit_code": 0,
+        "sha256": "46ba7c1c8c9b7006c7a7a0aa73f8a127265789cd958e5d7e1832a7925526852f"
+      },
+      {
+        "name": "wix-multi-select-types",
+        "exit_code": 0,
+        "sha256": "abece76d1d6d0d66ffc915dce7f1342aedab11fabb74adf7203c4b6a31d04188"
+      },
+      {
+        "name": "wix-multi-select-example",
+        "exit_code": 0,
+        "sha256": "7e7f587d8196f98e01cb6ecc673eb1323f1e3bacfe8e67019501c727f46d0b65"
+      },
+      {
+        "name": "wix-select-menu-reset-repair-ssr",
+        "exit_code": 0,
+        "sha256": "f85d18ec7ed6226491211954df3a8f7566202c7640266fff0fc25562cbf8d279"
+      },
+      {
+        "name": "wix-select-menu-reset-repair-readme",
+        "exit_code": 0,
+        "sha256": "d228e2e3546aa0efd32c9c0c3b7fd379f35456e70f90d094588b4136f32bd6e9"
+      },
+      {
+        "name": "wix-select-menu-reset-repair-types",
+        "exit_code": 0,
+        "sha256": "102ea789031900a90ce4032ddbc47a3ca32baaffecbabd9bb180197f61e1521d"
+      },
+      {
+        "name": "wix-select-menu-reset-repair-example",
+        "exit_code": 0,
+        "sha256": "a6a2fee26de51d9b0943d96fa27160fc2a097f4b1e937b268195b1fbc6a436af"
+      },
+      {
+        "name": "wix-select-menu-reset-repair-portable-regroup",
+        "exit_code": 0,
+        "sha256": "27f05c734d5a298c25b61ff410f7be5b24415dcfdef96ce271a16fd9ab5696fd"
+      },
+      {
+        "name": "wix-select-composition-reset-repair-ssr",
+        "exit_code": 0,
+        "sha256": "56b2fb6c78adb4011442bb9128d75ebc546f9e148fb0d7d61062b00d21a1fbe1"
+      },
+      {
+        "name": "wix-select-composition-reset-repair-readme",
+        "exit_code": 0,
+        "sha256": "9cfbc88d0a0f3f282bb54920a4936a576d1ed11fb7ace661441a0c6750b7f151"
+      },
+      {
+        "name": "wix-select-composition-reset-repair-types",
+        "exit_code": 0,
+        "sha256": "b0dc25119703c97436c3facffe1cd5a47423e46b30af952f37894fde0b72e456"
+      },
+      {
+        "name": "wix-select-composition-reset-repair-example",
+        "exit_code": 0,
+        "sha256": "ba11ed3290c6fd0bfc5d582339e0c6581780b835c79e1c45c3f1a19e1aeebf12"
+      },
+      {
+        "name": "wix-select-composition-reset-repair-portable-regroup",
+        "exit_code": 0,
+        "sha256": "1f94729357f2603337dca14981e353459a7b079107774d6c2d9dc35c99d0ef00"
+      },
+      {
+        "name": "wix-select-availability-reset-repair-ssr",
+        "exit_code": 0,
+        "sha256": "b9dc9889ee8e4e594ff5892dc9ab91f6bc8f61052fd28b3f5e3ddb26577cbac0"
+      },
+      {
+        "name": "wix-select-availability-reset-repair-readme",
+        "exit_code": 0,
+        "sha256": "91c0c6f73df2242a2e2b2c304d567d9ae652249e0a64e057c091cc147098f235"
+      },
+      {
+        "name": "wix-select-availability-reset-repair-types",
+        "exit_code": 0,
+        "sha256": "f704148e3a7d7907534fc458debde40bfff339cc55843a3f05a93acab8e971fa"
+      },
+      {
+        "name": "wix-select-availability-reset-repair-example",
+        "exit_code": 0,
+        "sha256": "87b69582e2315e7f25ce1390b43c86156e02f9a5162d62970b8e26a256e933b6"
+      },
+      {
+        "name": "wix-select-availability-reset-repair-portable-regroup",
+        "exit_code": 0,
+        "sha256": "8e7f1ec43f9c1988e90f0cf9d6f86671864b3f439e3d9527d5b70d478c254631"
+      },
+      {
+        "name": "wix-select-structure-reset-repair-ssr",
+        "exit_code": 0,
+        "sha256": "b9dc9889ee8e4e594ff5892dc9ab91f6bc8f61052fd28b3f5e3ddb26577cbac0"
+      },
+      {
+        "name": "wix-select-structure-reset-repair-readme",
+        "exit_code": 0,
+        "sha256": "2eab679a01178cb74a1f3c9cb84bc1baa31df411ce323ab72f923ddf5cc36baa"
+      },
+      {
+        "name": "wix-select-structure-reset-repair-types",
+        "exit_code": 0,
+        "sha256": "fe95c0b4881afba01134d2482fb06e914338e7012b745478dec579eda1381df9"
+      },
+      {
+        "name": "wix-select-structure-reset-repair-example",
+        "exit_code": 0,
+        "sha256": "a534241a563e77f3e66d1366d30cd99ea5564340345ab91778ed1acb2f5fff70"
+      },
+      {
+        "name": "wix-select-structure-reset-repair-portable-regroup",
+        "exit_code": 0,
+        "sha256": "41d6097bb200ad2809383b80488581c5409d286ba330d2fb85e63c4f71860fa5"
+      },
+      {
+        "name": "wix-select-content-reset-repair-ssr",
+        "exit_code": 0,
+        "sha256": "b9dc9889ee8e4e594ff5892dc9ab91f6bc8f61052fd28b3f5e3ddb26577cbac0"
+      },
+      {
+        "name": "wix-select-content-reset-repair-readme",
+        "exit_code": 0,
+        "sha256": "726488f267d6826589df3ed80eaa82316ca7fb1dcdebc6cb5f07ce2142a1a210"
+      },
+      {
+        "name": "wix-select-content-reset-repair-types",
+        "exit_code": 0,
+        "sha256": "060f8787aade69dc5e65261e2e20c9d83aec2dd6d32ea5eb171eb3863b9bd192"
+      },
+      {
+        "name": "wix-select-content-reset-repair-example",
+        "exit_code": 0,
+        "sha256": "6b40e9317223fc6aff56918222050e3428c318fa633c2e7a1526bfe2ff53e4c4"
+      },
+      {
+        "name": "wix-select-content-reset-repair-portable-regroup",
+        "exit_code": 0,
+        "sha256": "cd19e667c59399e265824db1ac5c61f44521ee043d08e8f9367a957a1f223025"
+      },
+      {
+        "name": "wix-multi-select-palette-packet",
+        "exit_code": 0,
+        "sha256": "bc489be53cdbdb02e7d92a34bfce6bfcb5d14a9060248bd11fca5481cd553f04"
+      },
+      {
+        "name": "wix-multi-select-structure",
+        "exit_code": 0,
+        "sha256": "ec1d82dd6ae8bcdbe37ff114d61673c5bd3756690879da342891150e025caff4"
+      },
+      {
+        "name": "wix-select-content-reset-repair-palette-capsule",
+        "exit_code": 0,
+        "sha256": "caf35836cd909881ccaabdeb90694205ad621cb537359ddd4f368c5bb091581a"
+      },
+      {
+        "name": "wix-select-content-reset-repair-content",
+        "exit_code": 0,
+        "sha256": "195d2854f243eb86601e20d536b2f16df0988708fa548b5deb30d76f2729ab01"
+      },
+      {
+        "name": "targeted-maintenance",
+        "exit_code": 0,
+        "sha256": "499f99239d7ace281b53154bbca5f5fbe542b9cc0040a088f4b488917902f04e"
+      }
+    ]
+  },
+  "packages": [
+    {
+      "directory": "wix-multi-select",
+      "name": "@studio/wix-multi-select",
+      "version": "0.1.0-candidate.1",
+      "runtime_sha256": {
+        "index.js": "5425e202f0596b8e6df7c37ebe5932d3a2587f02103bcb67fb56a52a777722cc",
+        "index.cjs": "6c29a421127cc32f9673d7b6647678539511c24f89f995f160a4746fe52e5d64"
+      },
+      "lean_package_sha256": "3ede1d7e57122b70c6f32deafe2579103b3cb4962dc040f259acd2bcd1e559bf",
+      "lean_package_files": 19
+    },
+    {
+      "directory": "wix-select-menu-reset-repair",
+      "name": "@studio/wix-select-menu",
+      "version": "0.1.0-candidate.4",
+      "runtime_sha256": {
+        "index.js": "4c4eec1f9f88b77006e69f8b807e9b5cddb5336fc0396aeb5215c76ead5f6fef",
+        "index.cjs": "0780d5b8f3510fede9c541a5aa586719723e39c9c3c878ac89ca3ed21dd1f056"
+      },
+      "lean_package_sha256": "edcf511393a725d5a9c29e6ec13d44f724f512feb75b380b3a9f246a221de90c",
+      "lean_package_files": 21
+    },
+    {
+      "directory": "wix-select-composition-reset-repair",
+      "name": "@studio/wix-select-composition",
+      "version": "0.1.0-candidate.4",
+      "runtime_sha256": {
+        "index.js": "1f2488c989e4177b40fc935e12bd16757de8d9348882824af331f505bd499206",
+        "index.cjs": "89b26b4f9c2734fb471994e16acce15cb7874c838b2b65561aaa508e69828982"
+      },
+      "lean_package_sha256": "3772a060f4119e20a461819eb9948b2a79f3524447597da59ce397acbc5cc72e",
+      "lean_package_files": 21
+    },
+    {
+      "directory": "wix-select-availability-reset-repair",
+      "name": "@studio/wix-select-availability",
+      "version": "0.1.0-candidate.3",
+      "runtime_sha256": {
+        "index.js": "7d65a1a56aee5d6e14a765931218f83defd953d181f05429c2377cf43c180f61",
+        "index.cjs": "1de9720e6f2001282ed3de42e4ffe179a0733b5c09daf5c264c674da8fbab5ad"
+      },
+      "lean_package_sha256": "080ca321b027557e8bd789e5e8a461247f27fc98c1df9f37c0ab09fba64ee2e0",
+      "lean_package_files": 21
+    },
+    {
+      "directory": "wix-select-structure-reset-repair",
+      "name": "@studio/wix-select-structure",
+      "version": "0.1.0-candidate.2",
+      "runtime_sha256": {
+        "index.js": "40dbfe524d2b7f34296d77c13e912ae5e2ae61ac0f86b3e6c3469762530ae302",
+        "index.cjs": "46e5a5378efa48d55c624ca927e9b32d445cc378fe31876d089718addadf6540"
+      },
+      "lean_package_sha256": "3f376e5e759765568d4f4fe72bd39202608d29ed25883e9285b35171a8b77361",
+      "lean_package_files": 21
+    },
+    {
+      "directory": "wix-select-content-reset-repair",
+      "name": "@studio/wix-select-content",
+      "version": "0.1.0-candidate.2",
+      "runtime_sha256": {
+        "index.js": "83c261c6886d20dd6633adc732a44bf01f7bc040b3e1389b571e45e9c55b2c67",
+        "index.cjs": "59f0cb240323d3f153a51e72f6714b70b3ba957bba28d071c4e02092bc3408a8"
+      },
+      "lean_package_sha256": "fef1eb7410ca47a84f241f3ef432c0af2379df28914e75aeeebc063b44279cdb",
+      "lean_package_files": 21
+    }
+  ],
+  "publication_only_changes": [
+    {
+      "path": "wix-select-content-reset-repair/tests/regroup-focus.cjs",
+      "frozen_sha256": "c1666d0a5af254409c20fc15672a0fc6fc4c2d88e7b02da72c56218ca8b35ec4",
+      "published_sha256": "e9bee00c7c0fc26082529a20fd6bf6737e5626d3cfe115aff297e8148328cfae",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/palette-capsule.cjs",
+      "frozen_sha256": "8b1084d0e04d5ff4e35ae88e3404eac828161ae8ab9a1c8b97561e4f5129ebcc",
+      "published_sha256": "aa0a37b9023794d7a9c33f8a67b794441c371b22a7bc01340ce3bc8d68a6a088",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/example.cjs",
+      "frozen_sha256": "8c7bdbe1be763445b4652053e5931fbab8ea5c0cf8f7c990c68dbe0eebf984df",
+      "published_sha256": "51a6c07bc3939b9b21ec1609849170efbf8ac0df5b930fae037f977b6434cea3",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/content.cjs",
+      "frozen_sha256": "cd76aa69ebb6a91eb17a437837f11cddabc14521d66965d9a59ac21219844679",
+      "published_sha256": "37799b8866c5c6c33f9b2bc5b1a08e45074835a37dd1efb76239a457961a337e",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/regroup-focus.cjs",
+      "frozen_sha256": "30d61df07f04072aaee0d43eddf5dac437c4b52b1afbeb16e7bdb43afbb24d64",
+      "published_sha256": "ded53bf1e343d60dacd03c9acf856541deb56aa9c044669879964da894e749dd",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/INDEX-TESTS.md",
+      "frozen_sha256": "aa0efddc854312afa76765e2cb370506f634755dcde04f400839a005ee732d12",
+      "published_sha256": "b3711f7dfe921d50220326b58a571330efc3905aa7e6c641fd8432449161091f",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/regroup-focus.cjs",
+      "frozen_sha256": "45100fc651b656efc9a5a161211ee733286087ab1b365883e7d4dc9440895b07",
+      "published_sha256": "648cd060451709a2de97016691fb8117a2cb296996d35dba2b87f7f4fc74ac59",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/regroup-focus.cjs",
+      "frozen_sha256": "b516a7330fbc8d2571319e9d4ac2334ebb5edd41e093f93f2625491d8cf0d81c",
+      "published_sha256": "f9ea3d1e56e0fd00bf21d00a89da30b3b97036f2be28b9ae3435d74d6c7182af",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/CONTRACT.md",
+      "frozen_sha256": "08bbd437e569dbd74ca0e176395df27d4671af549cde6763e44c26e82ecd094a",
+      "published_sha256": "44f697378bc16c0cce15ee06e676051048826c23ba6c8f99b689dfd02abef93b",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/regroup-focus.cjs",
+      "frozen_sha256": "88c596d482aef3841992e1d057f04da1e1ccf0fe09d473f218179af2c8ca9f29",
+      "published_sha256": "056d859a1ea5e1e8177d458dd954d7d9cc5d9ac86487359dc34aa23291517f5c",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/CONTRACT.md",
+      "frozen_sha256": "1ef3358e53ba11512dde7964ca139b7b4549247de78b0dbc490c718abdd637d9",
+      "published_sha256": "49b79fe109951d07db325533ef9a5ac7eb14a68e1ce1c3b2728d6238000ad307",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-multi-select/tests/palette-packet.cjs",
+      "frozen_sha256": "ae0d57a31f44013b1adc4d51868622a8e5ef54f4214c70ed51670e4adb829dcb",
+      "published_sha256": "03167c1dd9fd71789e9519446e4ad4c6846dc9b0bbaed04c4537c2167925bb90",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    },
+    {
+      "path": "wix-multi-select/reference/IDENTITY.json",
+      "frozen_sha256": "625868690cad1c463435f743ee536478d9a6edb902385c3046c69e14597beb27",
+      "published_sha256": "0c90f93dfdf5559d0fccf0064b945dbcb18db0feaf8628a8e3e4af7fa4c067d1",
+      "scope": "Publication portability only: local filesystem paths removed. Component runtime, CSS, declarations and example logic unchanged."
+    }
+  ],
+  "all_runtime_declarations_and_example_sources_match_frozen_archive": true,
+  "installed_lean_package_members_match_public_source": true,
+  "evidence_limits": {
+    "real_browser": false,
+    "formal_acceptance": 0,
+    "trusted_keyboard_touch": false,
+    "operating_system_download": false,
+    "assistive_technology": false,
+    "note": "Node, SSR, strict TypeScript and JSDOM verification only; no simulated check is counted as real-browser acceptance."
+  },
+  "original_multi_select_model_verification": {
+    "cases": 2437,
+    "assertions": 19334,
+    "suites": 7,
+    "note": "Verified in the delivered frozen full Wix68 archive, not newly rerun wholesale for publication."
+  },
+  "privacy_scan": {
+    "credential_shaped_literals": 0,
+    "executor_private_paths": 0,
+    "binary_files": 0,
+    "maximum_allowed_file_bytes": 100000
+  }
+}

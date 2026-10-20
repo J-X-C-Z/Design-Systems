@@ -1,0 +1,14 @@
+'use strict';
+const {React,api,options,check,equal,runCases}=require('./harness.cjs');const e=React.createElement,cases=[];
+const words=[''];for(let n=1;n<=3;n++){const expand=(prefix,left)=>{if(!left){words.push(prefix);return;}for(const c of 'ABCRX')expand(prefix+c,left-1);};expand('',n);}
+function step(value,action){if(action==='R')return ['a'];if(action==='X')return value;if(action==='C')return value.filter(v=>!['a','b','c'].includes(v));const item=action==='A'?'a':'b';return value.includes(item)?value.filter(v=>v!==item):[...value,item];}
+for(const variant of ['Select32','Select33'])for(const mode of ['uncontrolled','accept','reject'])for(const delivery of ['sequential','same-task'])for(const word of words)cases.push({id:[variant,mode,delivery,word||'empty'].join('/'),run:async h=>{
+ const calls=[];function Owner(){const[v,V]=React.useState(['a']);return e('form',{onReset:()=>{if(mode!=='uncontrolled')V(['a']);}},e(api[variant],{options,name:'items',open:true,onOpenChange:()=>{},clearable:true,...(mode==='uncontrolled'?{defaultValue:['a']}:{value:v}),onValueChange:(next,d)=>{calls.push({values:[...next],reason:d.reason,frozen:Object.isFrozen(next)});if(mode==='accept')V(next);}}));}
+ await h.render(e(Owner));const form=h.doc.querySelector('form');
+ const dispatch=action=>{if(action==='R'){form.reset();return;}const button=action==='C'?h.doc.querySelector('.wix-ms-clear'):h.option(action==='A'?'a':'b');check(!!button,'Action has an existing real button');if(action==='X')button.addEventListener('click',e=>e.preventDefault(),{once:true});button.focus();button.dispatchEvent(new h.w.MouseEvent('click',{bubbles:true,cancelable:true,detail:1}));};
+ let expected=['a'];const proposed=[];const model=action=>{const next=step(expected,action);if(action==='R'){expected=next;return;}if(JSON.stringify(next)===JSON.stringify(expected))return;proposed.push({values:next,reason:action==='C'?'clear':'pointer',frozen:true});if(mode!=='reject')expected=next;};
+ if(delivery==='sequential'){for(const action of word){await h.fire(()=>dispatch(action));model(action);equal(h.values(),options.filter(o=>expected.includes(o.value)).map(o=>o.value),'Sequential native collection after '+action);}}
+ else {await h.fire(()=>{for(const action of word)dispatch(action);});const lastReset=word.lastIndexOf('R');for(const action of word.slice(lastReset+1))model(action);}
+ equal(calls,proposed,'Exactly ordered immutable callback proposals');equal(h.values(),options.filter(o=>expected.includes(o.value)).map(o=>o.value),'Final bridge membership in option DOM order');equal(new h.w.FormData(form).getAll('items'),h.values(),'Repeated-name native form value order');check(!!h.popup(),'Independent controlled open survives all toggles and resets');
+ }});
+runCases('orders',cases).catch(error=>{console.error(error);process.exitCode=1;});

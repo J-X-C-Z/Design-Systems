@@ -1,0 +1,1422 @@
+{
+  "scope": "22-ID standalone publication subset only; excludes generated QA/node_modules/package archives. This manifest lists all other published files and excludes itself to avoid recursion.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 100,
+      "sha256": "b54ad44f80f00b53e6250a868932d77934eea3b63f637c0890d2a256220c9b44"
+    },
+    {
+      "path": "PUBLICATION-VALIDATION.json",
+      "bytes": 18841,
+      "sha256": "674f843be6d0a53a9b00a07a866554bf48044d557de0af80ff3084fb6d7febea"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4466,
+      "sha256": "89ca1deae9a7f71c6da6b7576d52aa439648b3fda69365c6fac60f1bec3afb25"
+    },
+    {
+      "path": "tests/wix68-maintenance/README.md",
+      "bytes": 3381,
+      "sha256": "3ad66ad4f01ee5c426283773b391e951a64529f9c22c050b3e29039a419928c0"
+    },
+    {
+      "path": "tests/wix68-maintenance/descriptor-invalid.cjs",
+      "bytes": 2298,
+      "sha256": "6ce711afe4aaf2dd85008c648bdf1d76fe055fd1ba615a9fc04ae0d633099923"
+    },
+    {
+      "path": "tests/wix68-maintenance/descriptor-update.cjs",
+      "bytes": 3122,
+      "sha256": "6a3908426c6a670d221da34f660286ee4057394eecb31c0ab85305f6200d4963"
+    },
+    {
+      "path": "tests/wix68-maintenance/descriptors.cjs",
+      "bytes": 6999,
+      "sha256": "609cca08d9abf255b0572ad4ed29898389878934129b2d387a2abbea2783dbdd"
+    },
+    {
+      "path": "tests/wix68-maintenance/extended-reset.cjs",
+      "bytes": 5466,
+      "sha256": "9ee46aa1b2215dc018b5b0e92d6d8e0c14843fcae4cc34e913f62f24c3eb2d4a"
+    },
+    {
+      "path": "tests/wix68-maintenance/focus-queue.cjs",
+      "bytes": 3449,
+      "sha256": "46a151088357a88d4b41e4bfd50e51906bccd2a23371dabe12ed9911f4462cc0"
+    },
+    {
+      "path": "tests/wix68-maintenance/harness.cjs",
+      "bytes": 3521,
+      "sha256": "ab51459b5d7281cbefe3e01cdb968c4a0c8cb5d9c10d6526f80e8a46298378d2"
+    },
+    {
+      "path": "tests/wix68-maintenance/reset-join.cjs",
+      "bytes": 3873,
+      "sha256": "7b567cdd06921bf3bdaa55b54bc374206df53d3e8603315b336752658a94dcfd"
+    },
+    {
+      "path": "tests/wix68-maintenance/reset-native-parity.cjs",
+      "bytes": 2907,
+      "sha256": "e82568a3325620cf6b76f0b82d31575fbc2407ad9b277f4e22b89343ba467b50"
+    },
+    {
+      "path": "tests/wix68-maintenance/reset-owners.cjs",
+      "bytes": 4238,
+      "sha256": "e8870ac51c4db52fd6e56bf6d45eb06e17b123b98c442263ed21713b966f38cb"
+    },
+    {
+      "path": "tests/wix68-maintenance/run.cjs",
+      "bytes": 2534,
+      "sha256": "c97c1bb314017fe5aa752a53353b3c465f12615d9ceb092d9e5f187f490fc877"
+    },
+    {
+      "path": "tests/wix68-maintenance/trigger-props.cjs",
+      "bytes": 5262,
+      "sha256": "1d4dfee7d6a4dc733217dd28608c38ea2f0ee87401883134999b18079939baf9"
+    },
+    {
+      "path": "verify.sh",
+      "bytes": 576,
+      "sha256": "3a1a4698ce1be994da1222ddfed607e2ed9b65a1f3b0576bb01ab9c20310e4f0"
+    },
+    {
+      "path": "wix-multi-select/LICENSE",
+      "bytes": 1184,
+      "sha256": "cee46b3b44ca30000b4e839b600a14ccb0d5f308179a73425a2764101b9be163"
+    },
+    {
+      "path": "wix-multi-select/README.md",
+      "bytes": 12527,
+      "sha256": "d9323374c4c6a41d2599b2bad6610b5ca2038318f610a73e4e3e2b9a0ffb57ea"
+    },
+    {
+      "path": "wix-multi-select/dist/index.cjs",
+      "bytes": 47317,
+      "sha256": "6c29a421127cc32f9673d7b6647678539511c24f89f995f160a4746fe52e5d64"
+    },
+    {
+      "path": "wix-multi-select/dist/index.js",
+      "bytes": 45545,
+      "sha256": "5425e202f0596b8e6df7c37ebe5932d3a2587f02103bcb67fb56a52a777722cc"
+    },
+    {
+      "path": "wix-multi-select/examples/PacketDesk.tsx",
+      "bytes": 7925,
+      "sha256": "e5407cdcc560f47d30c5d982086ff7b1ac5634c7c3f690ae361670a80424f800"
+    },
+    {
+      "path": "wix-multi-select/examples/palette-packet.ts",
+      "bytes": 18397,
+      "sha256": "077739401e477f9660a835c70bcea8ffff335b08fa71e17ae18dc4938cd3e8df"
+    },
+    {
+      "path": "wix-multi-select/examples/styles.d.ts",
+      "bytes": 24,
+      "sha256": "da5bf71d48cf909584a01c80b445f730507068f5b34c920f352e2bfcf0315e4c"
+    },
+    {
+      "path": "wix-multi-select/package.json",
+      "bytes": 875,
+      "sha256": "50d098696f58a50f12c81068547bf2ca330922c0c9e16243c4ce2be025acc735"
+    },
+    {
+      "path": "wix-multi-select/reference/CONTRACT.md",
+      "bytes": 8543,
+      "sha256": "92235e6e27eb3cac2d284c42ba39fe35255c790f5d96f12bf508e0f769f7ff5f"
+    },
+    {
+      "path": "wix-multi-select/reference/IDENTITY.json",
+      "bytes": 1617,
+      "sha256": "0c90f93dfdf5559d0fccf0064b945dbcb18db0feaf8628a8e3e4af7fa4c067d1"
+    },
+    {
+      "path": "wix-multi-select/reference/SOURCE-IDENTITY.json",
+      "bytes": 2869,
+      "sha256": "5c675ddb9b4dc2898565a8b42dfee3ee2676edb8b7d16eeb4eabf1799b61fca8"
+    },
+    {
+      "path": "wix-multi-select/reference/src/components/base-ui/button.tsx",
+      "bytes": 3337,
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512"
+    },
+    {
+      "path": "wix-multi-select/reference/src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "wix-multi-select/reference/src/components/base-ui/popover.tsx",
+      "bytes": 2361,
+      "sha256": "7360e38b1408819a89258aee6b2b6033b6c17faea5a2066f9ce6ce0671109fe3"
+    },
+    {
+      "path": "wix-multi-select/reference/src/data/contents/components/select/variant-32.tsx",
+      "bytes": 3083,
+      "sha256": "07186212d2a71a7d7e00790164a4f6ed5e338a6eff1ba2dee8859f9f54f81591"
+    },
+    {
+      "path": "wix-multi-select/reference/src/data/contents/components/select/variant-33.tsx",
+      "bytes": 3257,
+      "sha256": "7bc9d6b3609e4b7ab95ec534c86ce5f6b42fca89ec0e25809d39e77bee36d3ca"
+    },
+    {
+      "path": "wix-multi-select/reference/src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "path": "wix-multi-select/src/index.d.ts",
+      "bytes": 451,
+      "sha256": "e1708dda87d336cc3ab4d9d588211b1c7d9e54dddcc603816248bcb5b8e7b96a"
+    },
+    {
+      "path": "wix-multi-select/src/index.tsx",
+      "bytes": 46724,
+      "sha256": "f7341a1cff610201e87e45f25f7e476b662785cc3872364d2b91d9283c23c502"
+    },
+    {
+      "path": "wix-multi-select/src/styles.css",
+      "bytes": 10210,
+      "sha256": "fb13b3170a4c9c4b93ea0630682fb3d68f2b2d0d517269016177c7ca001fc12c"
+    },
+    {
+      "path": "wix-multi-select/src/styles.d.ts",
+      "bytes": 90,
+      "sha256": "0c7abbe2ddc97add6e6963599242cf7dab6c160282211c89d2d474fccf1fd19c"
+    },
+    {
+      "path": "wix-multi-select/src/types.ts",
+      "bytes": 3431,
+      "sha256": "4f4e1e15ddf16c5c1c27e109463cf8835b381b33102677e0e10440df3798dac3"
+    },
+    {
+      "path": "wix-multi-select/tests/behavior.cjs",
+      "bytes": 11135,
+      "sha256": "200e0739bc99636eff1605729b8684b9609d158cdc6848c41af5309123f38554"
+    },
+    {
+      "path": "wix-multi-select/tests/boundaries.cjs",
+      "bytes": 5504,
+      "sha256": "b9ab2e171c788075d91a912e0d831e41bfaabb79c76fd4b999b75d70be06a0fb"
+    },
+    {
+      "path": "wix-multi-select/tests/consumer-ssr.mjs",
+      "bytes": 25870,
+      "sha256": "13730cb7741014f71fb84afe674dd4f4f4332601faba799aae08103425baf61a"
+    },
+    {
+      "path": "wix-multi-select/tests/example.cjs",
+      "bytes": 16323,
+      "sha256": "a37f0791db296835dc01c931d2bf19c38d623178f1f0ac218336ab0e817650ef"
+    },
+    {
+      "path": "wix-multi-select/tests/forms.cjs",
+      "bytes": 5429,
+      "sha256": "65f0a2ac3ccf3b8965a41251f22df7badedaf604ba5d1c8de22df624696176b0"
+    },
+    {
+      "path": "wix-multi-select/tests/harness.cjs",
+      "bytes": 6338,
+      "sha256": "7d821557d2d4b848bbb9f512b1559f2cdc85a3cb3f87eecb327157c47c717589"
+    },
+    {
+      "path": "wix-multi-select/tests/hydration.cjs",
+      "bytes": 3308,
+      "sha256": "c9f55d0ffcf42eb022b60e87626ab6bb58535a7b3cb5856cad0169580f2e0029"
+    },
+    {
+      "path": "wix-multi-select/tests/keyboard.cjs",
+      "bytes": 9734,
+      "sha256": "5d5b3877947a56cf18b9293de5c6ba08577478418a15c99c9c6ba6a572977ec1"
+    },
+    {
+      "path": "wix-multi-select/tests/orders.cjs",
+      "bytes": 2842,
+      "sha256": "cebe3e3344858515755835f3d20997a474e464ff4cc47fa145e586cd62992797"
+    },
+    {
+      "path": "wix-multi-select/tests/palette-packet.cjs",
+      "bytes": 25893,
+      "sha256": "03167c1dd9fd71789e9519446e4ad4c6846dc9b0bbaed04c4537c2167925bb90"
+    },
+    {
+      "path": "wix-multi-select/tests/readme-consumer.cjs",
+      "bytes": 2673,
+      "sha256": "221a06f0d2ee7c8dcdd5fdffe7cce2288c72c74dce22a596908ce7ce0361e0dc"
+    },
+    {
+      "path": "wix-multi-select/tests/structure.cjs",
+      "bytes": 8848,
+      "sha256": "5ff8e15206edb202fd6f145347c92d6e478b1e19b447c8b0320511ce93c895b5"
+    },
+    {
+      "path": "wix-multi-select/tests/type-matrix.cjs",
+      "bytes": 11289,
+      "sha256": "a17554560ac72e2f907d10cd4e576ce22bc97bc88de8d6723c6bc7b5edfb351b"
+    },
+    {
+      "path": "wix-multi-select/tests/types.tsx",
+      "bytes": 31910,
+      "sha256": "812c0d0e6d953d74dcf338734d71b93ed7f25622caa14ccf0f8c0d01b2d11309"
+    },
+    {
+      "path": "wix-multi-select/tools/build.cjs",
+      "bytes": 921,
+      "sha256": "2f87e0cf69ad0e03f5462edf14837e13181bbf3b147c74a0b4ebf3f9b40a0275"
+    },
+    {
+      "path": "wix-multi-select/tools/package.py",
+      "bytes": 926,
+      "sha256": "27bd866d6e236b524f6741cfbfe7d8ee0afb27952771374212e2f849b5a0e2f0"
+    },
+    {
+      "path": "wix-multi-select/tools/verify-consumer.sh",
+      "bytes": 2501,
+      "sha256": "a81494ea27aa0290c37272d547dc74d2ca2b4a00b00187db4dbf9a52eb31174b"
+    },
+    {
+      "path": "wix-multi-select/tools/verify.sh",
+      "bytes": 717,
+      "sha256": "4efdafa101f8144b0ded2f86822135e352da3e0904f72e0d3c6fb1ab606f199e"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/LICENSE",
+      "bytes": 1184,
+      "sha256": "cee46b3b44ca30000b4e839b600a14ccb0d5f308179a73425a2764101b9be163"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/README.md",
+      "bytes": 26636,
+      "sha256": "571e35ce3838846d2fd854480cde29509cc48e320a4fa0355dedb1300ce08e89"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/dist/index.cjs",
+      "bytes": 47969,
+      "sha256": "1de9720e6f2001282ed3de42e4ffe179a0733b5c09daf5c264c674da8fbab5ad"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/dist/index.js",
+      "bytes": 46202,
+      "sha256": "7d65a1a56aee5d6e14a765931218f83defd953d181f05429c2377cf43c180f61"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/examples/ArtworkDesk.tsx",
+      "bytes": 4448,
+      "sha256": "de794678645304b2cf0e1019ad3c7dabf17e8aa3e7d918af618b8c45716bb85e"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/examples/artwork.ts",
+      "bytes": 3239,
+      "sha256": "dc30f9cc07203b6c751d378e611cdea628a90e70f7c34afa02584191c46ccbc4"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/examples/styles.d.ts",
+      "bytes": 61,
+      "sha256": "5d3f24ff894704224b46ca3656b80191ac1aa9c3ca992906fad66ea6e9a8be70"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/package.json",
+      "bytes": 865,
+      "sha256": "36d1b7759b07e080ed8d4bb1bec255b1a4a79282d874198f11fd43b9f34e607e"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/CONTRACT.md",
+      "bytes": 5403,
+      "sha256": "6f790a6c8fd8996b2a27879027a926b3332d619b6932c9b89c5dd9dd74d4aee1"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/IDENTITY.json",
+      "bytes": 3623,
+      "sha256": "566adb90bfffccd91a678192fb695fa3b0033da4244aaf2dfbab33e5dcf8c49a"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/select-18.tsx",
+      "bytes": 1464,
+      "sha256": "6a1ac078fbd4d204b13220fbc7f04f2b851a43672a519e090ed5339f996d24b7"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/select-19.tsx",
+      "bytes": 1253,
+      "sha256": "afe6ab6eb0bfb6beec9def57950b3f888c81c028bf5d8b147588c63ca7506456"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/select-20.tsx",
+      "bytes": 1471,
+      "sha256": "e488c2e4be3e408bc67df46d35d3166844d1f821592d67c5217ee7e5ac092311"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/select-21.tsx",
+      "bytes": 1539,
+      "sha256": "1a56892ee4e643ff6a58c606f07a692520d1cd20677b3575dd894ed449a354a8"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/upstream/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/upstream/package.json",
+      "bytes": 4203,
+      "sha256": "bb874d7ca4b1b87f8957ef4c996c607656f63ba489ddb9f916a9bd65f4da474a"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/upstream/src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/upstream/src/components/base-ui/select.tsx",
+      "bytes": 6679,
+      "sha256": "c1295c1404b67895549b89225885eba08198a5d6224c733fbb8964eaaa2edff4"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/reference/upstream/src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/src/index.d.ts",
+      "bytes": 754,
+      "sha256": "3f0e10cdd0ba759ead4b776a3550412c0a6c42fe884c880839e0911a921e2e49"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/src/index.tsx",
+      "bytes": 48702,
+      "sha256": "c1699a70d12e44c1508daa20e5fceac06bd533bcc4eb7f056660c7c6dc0bd858"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/src/styles.css",
+      "bytes": 12786,
+      "sha256": "dface4e6368b95c4971cbfb45b7f479516936cabe416fc9656472d88140e8932"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/src/styles.d.ts",
+      "bytes": 89,
+      "sha256": "63872a3e4fc440e9323a316f6edc6e3e630e5de5abc80f33e2f9476a8358c507"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/src/types.ts",
+      "bytes": 3205,
+      "sha256": "a3d40777e730af01fd421d810242793c135da3a52d304c7d2ce7d216c5208b3d"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/artwork.cjs",
+      "bytes": 4286,
+      "sha256": "d8ad71d64c4b0ef36adff451505ac40f211d614b6276b6ec58a6db9b05e16b2a"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/availability.cjs",
+      "bytes": 14891,
+      "sha256": "974e3fb4022df36d61246fcfc385de22fe1414594d1a874b493fb03b28282580"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/behavior.cjs",
+      "bytes": 16955,
+      "sha256": "ecb4daaa312a07e51aabd2ff48cbddfad47a8e9b3b1a2152b2d7a40ea05a49a8"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/boundaries.cjs",
+      "bytes": 11212,
+      "sha256": "cb656cee0cc17b8814249dd54e5251701b7b4754e733b28a9da46f2b557888c6"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/consumer-ssr.mjs",
+      "bytes": 8711,
+      "sha256": "e0f79112a41c387fc568c8eccb2a4ad96a194b1c7282fb1ed09bfd9d93ac82ec"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/environment.cjs",
+      "bytes": 12143,
+      "sha256": "21fb5c149c36cfafe2113a3284b2a34c0a7d2cec0cd93b8ea6d50e6a016666b8"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/example.cjs",
+      "bytes": 10300,
+      "sha256": "d5934f13a697b096255ef10d383866b95bb6a92c33dc63e84d05568ee755efec"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/fieldset-orders.cjs",
+      "bytes": 7828,
+      "sha256": "ba1b7e4148891a8eb8202b8c0c96de04c648f4f119775ace6af671548b7e6c65"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/interactive-adapters.cjs",
+      "bytes": 459,
+      "sha256": "d91339c9d2c339cb88d2f168dc73044c606218a0e76da6862b6ca69ec259e7e1"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/keyboard-orders.cjs",
+      "bytes": 10855,
+      "sha256": "7a1499734a0cb98007c92bf5196a47356e5c697fb20743fb212780385cf7491d"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/orders.cjs",
+      "bytes": 6680,
+      "sha256": "340c4e5aa81f60e83d0bfb4594e6bf40f87c3ac1c18ad82e9503e8ed0572e76d"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/readme-consumer.cjs",
+      "bytes": 2680,
+      "sha256": "85a0ad34949a251eace8a37aaaa09feb32f8a1702d987592eed8536c3a94ecde"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/regroup-focus.cjs",
+      "bytes": 27279,
+      "sha256": "648cd060451709a2de97016691fb8117a2cb296996d35dba2b87f7f4fc74ac59"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/required-state.cjs",
+      "bytes": 9205,
+      "sha256": "330c10dd0f1999ebd6c301547583c91072641541b58bd35a284c90b4737df1a9"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/style.cjs",
+      "bytes": 8796,
+      "sha256": "c78c8bedf35096b08979bd251de8dc9441d410fb7eac695896ca46b761e58407"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/type-matrix.cjs",
+      "bytes": 9447,
+      "sha256": "72772da67c5214a66942a02d54ad4376c8e9c8bc0f9fb9ba8a446a6a77aea17a"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tests/types.tsx",
+      "bytes": 19726,
+      "sha256": "c41e29b1c29108cea086feaa98a040d4320a7a35b947e56e303b09f64afd8f67"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tools/build.cjs",
+      "bytes": 868,
+      "sha256": "b6ff7bb89ea6fae071c43bdf0269e3d6917dd5ced27bcd15040a8b4f9ec48473"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tools/package.py",
+      "bytes": 933,
+      "sha256": "14784c183eadc9ebb5d6861f76299ccfda1ecf6765c9a372470a4e97cc3ae7b6"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tools/verify-consumer.sh",
+      "bytes": 2191,
+      "sha256": "f357e918ae56be8cd5f630e60d9ca33ac061cb265645225ee67675142d79d9ad"
+    },
+    {
+      "path": "wix-select-availability-reset-repair/tools/verify.sh",
+      "bytes": 617,
+      "sha256": "b5f0a712b30b8a3e7e18ffd624275e8d2333b97edb9baa8ec7dcb11416443297"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/LICENSE",
+      "bytes": 1184,
+      "sha256": "cee46b3b44ca30000b4e839b600a14ccb0d5f308179a73425a2764101b9be163"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/README.md",
+      "bytes": 31147,
+      "sha256": "c2b4dd70373afc0f6390ffdca05223084a935e6b0b51168c86128d83692f55cf"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/dist/index.cjs",
+      "bytes": 48926,
+      "sha256": "89b26b4f9c2734fb471994e16acce15cb7874c838b2b65561aaa508e69828982"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/dist/index.js",
+      "bytes": 47160,
+      "sha256": "1f2488c989e4177b40fc935e12bd16757de8d9348882824af331f505bd499206"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/examples/TypeScale.tsx",
+      "bytes": 4537,
+      "sha256": "b4e177c46c7c07a411c7d172351de8eb614fb714a3febf363329007d0f8df576"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/examples/styles.d.ts",
+      "bytes": 60,
+      "sha256": "a468cd1b7b09f5939695847956cf10d9d8f0e58f4a87729737d5fd6201c79670"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/examples/type-scale.ts",
+      "bytes": 3274,
+      "sha256": "f78e7641a8e0711381cf7785e23aeba2dbee5c0e1d28c93caca19a4084e1fe98"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/package.json",
+      "bytes": 853,
+      "sha256": "0b2e913c5cc9ba0ad957be3f1b484a5a93b9fe9274f916df027c1f62118091de"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/CONTRACT.md",
+      "bytes": 37418,
+      "sha256": "44f697378bc16c0cce15ee06e676051048826c23ba6c8f99b689dfd02abef93b"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/IDENTITY.json",
+      "bytes": 3619,
+      "sha256": "c7511576d998d60a3145a7d8347a7503c309e391dea7ad514af1576ab7b9e996"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/select-14.tsx",
+      "bytes": 1751,
+      "sha256": "681bb076db2d4719d49eee9c371ba811cc4d4c0f4917e080403d2434021f09b2"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/select-15.tsx",
+      "bytes": 3272,
+      "sha256": "e17025ae60bdd61319b1b005dbc2b0e177c1b0102256cb8e288e21791fed7036"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/select-16.tsx",
+      "bytes": 1526,
+      "sha256": "e3030e1cd4b1f822ebb7cce20a344b0784d108d01cd503109af7f28842ce7608"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/select-17.tsx",
+      "bytes": 1676,
+      "sha256": "13da94f73b6aec9ed6428c6ed5b2e038522cbdf76c458ff4c62a56cfc1ee490f"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/upstream/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/upstream/package.json",
+      "bytes": 4203,
+      "sha256": "bb874d7ca4b1b87f8957ef4c996c607656f63ba489ddb9f916a9bd65f4da474a"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/upstream/src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/upstream/src/components/base-ui/select.tsx",
+      "bytes": 6679,
+      "sha256": "c1295c1404b67895549b89225885eba08198a5d6224c733fbb8964eaaa2edff4"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/reference/upstream/src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/src/index.d.ts",
+      "bytes": 750,
+      "sha256": "034cde9b030afb2a72c6e8b14aed59508da450955d37e6f30540573bb85d83f0"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/src/index.tsx",
+      "bytes": 49759,
+      "sha256": "14f2b2c10e5ab946f511ee2f38bffe23eb0f5129964f506dee559c6b0e8809fb"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/src/styles.css",
+      "bytes": 13427,
+      "sha256": "3fd636b38856120ef0964dd1ad8c68392be0f54d0961cf9e50b2b9dccc8f586c"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/src/styles.d.ts",
+      "bytes": 89,
+      "sha256": "63872a3e4fc440e9323a316f6edc6e3e630e5de5abc80f33e2f9476a8358c507"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/src/types.ts",
+      "bytes": 4076,
+      "sha256": "fb4c454fbf9f2bd895c0b649e3246621d6f4b7c3dce6d1c579876abea2177393"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/behavior.cjs",
+      "bytes": 17608,
+      "sha256": "8fb550850d149bbcfffaca77be301075ca9c958b2b50f7a58a87c997d9a6cb61"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/boundaries.cjs",
+      "bytes": 11318,
+      "sha256": "45ad1dd17260112eb06d44fb24b43239f530dad865eaefaf20ef8d5ecb2ded44"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/component-adapters.cjs",
+      "bytes": 1130,
+      "sha256": "fbea37effaf967da4d3dd7ad2e56b6c9bf0629921ba0b1049cba615ef76b5555"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/composition.cjs",
+      "bytes": 22639,
+      "sha256": "e668963ddd391d9902a47a7f6aef8f4ff7a6d69ed7073a0cc3c30da7ca4ffeb6"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/consumer-ssr.mjs",
+      "bytes": 7880,
+      "sha256": "2081f618d0f370bb56d3bf8de6fdffbdc1df37d84af6d76f8dc10d72339eeb0b"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/environment.cjs",
+      "bytes": 12018,
+      "sha256": "0e1e3e4960607c4889139c325c7ca2158bb0ae37e8b62393e992ff3ce83548cd"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/example.cjs",
+      "bytes": 9646,
+      "sha256": "40c9a3cf22a3cd346af68cf7c9bccfa53f45143fca0f57a137d9ed3c004f4d80"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/fieldset-orders.cjs",
+      "bytes": 7950,
+      "sha256": "4231ba2dad224558206c159ced78c16174bdaf1094de7bd845badaabf381de4a"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/keyboard-orders.cjs",
+      "bytes": 11197,
+      "sha256": "19e9d3714d6469b04a5065e87b7dd3bb8e6ede4a4b498826268e1b3c1d2e0c1c"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/orders.cjs",
+      "bytes": 6802,
+      "sha256": "7c042026e18e35c0251d661c680e4cfd8c51bd580640152316001fb34835110e"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/readme-consumer.cjs",
+      "bytes": 2679,
+      "sha256": "0a523ff36f76cf90ed92d3ad6014791d958fe11652d21779accc0df18b19a37b"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/regroup-focus.cjs",
+      "bytes": 27278,
+      "sha256": "f9ea3d1e56e0fd00bf21d00a89da30b3b97036f2be28b9ae3435d74d6c7182af"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/required-state.cjs",
+      "bytes": 9247,
+      "sha256": "28d704f5e6140c43360d8becd9be0196a4bdc2cf35f9655da235251d514c47e6"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/style.cjs",
+      "bytes": 8753,
+      "sha256": "efbf8c1488da3b911ab47de3ae35e605f59e812eef7362f2759036e771a94042"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/type-matrix.cjs",
+      "bytes": 9441,
+      "sha256": "5847cf9a79dea255ae31f05cf590dee5fd9ce23f0ff66c6c8f2cd6f476ffeb3e"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/type-scale.cjs",
+      "bytes": 4010,
+      "sha256": "c907ff817f2950ba83dc42319673daccd830597fd97039b76d7b18d8757e89a8"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tests/types.tsx",
+      "bytes": 25169,
+      "sha256": "ca9d450ffe31e065603834f2d1fda663f7604b553744e62cedf1987ad37656dc"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tools/build.cjs",
+      "bytes": 868,
+      "sha256": "b6ff7bb89ea6fae071c43bdf0269e3d6917dd5ced27bcd15040a8b4f9ec48473"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tools/package.py",
+      "bytes": 932,
+      "sha256": "854492f029a46a3d87903c31fe105ea580aa63275320ef2afe5d9997a74ab898"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tools/verify-consumer.sh",
+      "bytes": 2182,
+      "sha256": "b294caa48c25b53ffb4e9b9450b79689da2bbe0ec7eb9c3ca5f65a985704e314"
+    },
+    {
+      "path": "wix-select-composition-reset-repair/tools/verify.sh",
+      "bytes": 619,
+      "sha256": "64a5312ad9d561f551f86973a464c72e4e80744591f696addf056450fbe84644"
+    },
+    {
+      "path": "wix-select-content-reset-repair/LICENSE",
+      "bytes": 1184,
+      "sha256": "cee46b3b44ca30000b4e839b600a14ccb0d5f308179a73425a2764101b9be163"
+    },
+    {
+      "path": "wix-select-content-reset-repair/README.md",
+      "bytes": 24799,
+      "sha256": "43c4c835f77234cfeb1027287fa2509ba12cd01b97f899762eb3073e28ffce97"
+    },
+    {
+      "path": "wix-select-content-reset-repair/dist/index.cjs",
+      "bytes": 53495,
+      "sha256": "59f0cb240323d3f153a51e72f6714b70b3ba957bba28d071c4e02092bc3408a8"
+    },
+    {
+      "path": "wix-select-content-reset-repair/dist/index.js",
+      "bytes": 51733,
+      "sha256": "83c261c6886d20dd6633adc732a44bf01f7bc040b3e1389b571e45e9c55b2c67"
+    },
+    {
+      "path": "wix-select-content-reset-repair/examples/CapsuleDesk.tsx",
+      "bytes": 6804,
+      "sha256": "7c4b8c72853b982ef92d1184c7d2dfabd90c348b16a559cd980e18cb14c18b75"
+    },
+    {
+      "path": "wix-select-content-reset-repair/examples/palette-capsule.ts",
+      "bytes": 12154,
+      "sha256": "b2607363a3fe89bd89b62160d9df6ac5bf6a8a64cee3b12a89d8998221e74afa"
+    },
+    {
+      "path": "wix-select-content-reset-repair/examples/styles.d.ts",
+      "bytes": 24,
+      "sha256": "da5bf71d48cf909584a01c80b445f730507068f5b34c920f352e2bfcf0315e4c"
+    },
+    {
+      "path": "wix-select-content-reset-repair/package.json",
+      "bytes": 885,
+      "sha256": "98975faf0bb923708bdab43fba0506b1a442864a1afdcdbad0a733499e835b7b"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/CONTRACT.md",
+      "bytes": 2530,
+      "sha256": "51649ae9c472a2831325baa6f200f5944499f021e6128ccbf4dfc1290d2910c2"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/IDENTITY.json",
+      "bytes": 10902,
+      "sha256": "e3197eeb4d650f36b0925580e07e0445c7a0b096df8cb90afb89f97d41320330"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/select-26.tsx",
+      "bytes": 1710,
+      "sha256": "85256c688233f692309ce33cf20f5a1c3075ae527e1a2028d629bb2f7cd34e7c"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/select-27.tsx",
+      "bytes": 2400,
+      "sha256": "c597ca5b8f9ecb228ad751fd8a286696be279bda487908f068c046f3dfb1d15c"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/select-28.tsx",
+      "bytes": 1520,
+      "sha256": "6d9a25a9254b161060433cd416a267e64e8aff513306f18a0648df202af1a1d6"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/select-29.tsx",
+      "bytes": 2314,
+      "sha256": "7d4a2ff46cc58b989fd0bd3d7ff376a42a8982b749427fe79083f744441b9052"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/upstream/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/upstream/package.json",
+      "bytes": 4203,
+      "sha256": "bb874d7ca4b1b87f8957ef4c996c607656f63ba489ddb9f916a9bd65f4da474a"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/upstream/src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/upstream/src/components/base-ui/select.tsx",
+      "bytes": 6679,
+      "sha256": "c1295c1404b67895549b89225885eba08198a5d6224c733fbb8964eaaa2edff4"
+    },
+    {
+      "path": "wix-select-content-reset-repair/reference/upstream/src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "path": "wix-select-content-reset-repair/src/index.d.ts",
+      "bytes": 749,
+      "sha256": "da602ac5ad90835dc06146e336fd2cca773f23f2c60002e921f32b0208d568e8"
+    },
+    {
+      "path": "wix-select-content-reset-repair/src/index.tsx",
+      "bytes": 53543,
+      "sha256": "833d490cf65e90a6cf7b2745013ee5f0bf45bc1400a844c91c5e95b01b25f71d"
+    },
+    {
+      "path": "wix-select-content-reset-repair/src/styles.css",
+      "bytes": 13182,
+      "sha256": "d86a33b04cb92f34efd98b5e1326c2e94541bd608ed9415a89d24c26c3085357"
+    },
+    {
+      "path": "wix-select-content-reset-repair/src/styles.d.ts",
+      "bytes": 89,
+      "sha256": "63872a3e4fc440e9323a316f6edc6e3e630e5de5abc80f33e2f9476a8358c507"
+    },
+    {
+      "path": "wix-select-content-reset-repair/src/types.ts",
+      "bytes": 4131,
+      "sha256": "07d1c407b5618d30b70b22db8755f42a6bb054bd88afc6cbca013920a47e9f6f"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/INDEX-TESTS.md",
+      "bytes": 3968,
+      "sha256": "2bdc1a42c3c463dc600c7ca8a8d168adc7cdca825a62af1e27f5f50c660da24f"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/behavior.cjs",
+      "bytes": 16933,
+      "sha256": "c569d3cf72f8d1ceb2afeab5edba8fcb34670fc9436b10dad275f5fcbe63555b"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/boundaries.cjs",
+      "bytes": 11214,
+      "sha256": "92cebde858a2dbd013af9e949174f0f1d98ebae6b6990e116365378301b8d125"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/consumer-ssr.mjs",
+      "bytes": 9143,
+      "sha256": "de050d321fc3047f860f56a4dc8d9347d0c265a5e6a80aef695b7d11aef92f8b"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/content.cjs",
+      "bytes": 29001,
+      "sha256": "37799b8866c5c6c33f9b2bc5b1a08e45074835a37dd1efb76239a457961a337e"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/environment.cjs",
+      "bytes": 12146,
+      "sha256": "335ab1ea93d90b5c14f9922be7d375a5000884442b8797becbe00ef589220164"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/example.cjs",
+      "bytes": 31049,
+      "sha256": "51a6c07bc3939b9b21ec1609849170efbf8ac0df5b930fae037f977b6434cea3"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/fieldset-orders.cjs",
+      "bytes": 7829,
+      "sha256": "417551d0779b4d82240f07f48bb23084431864662027bedbc9d16ef64f6c1dfa"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/interactive-adapters.cjs",
+      "bytes": 132,
+      "sha256": "375bd61f9903316e9c056ea31a5fe5755872518acacc5966e52608a03bfa56f3"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/keyboard-orders.cjs",
+      "bytes": 10856,
+      "sha256": "b393b3870cfc94360ae8127646c8fd1c45db5c62378bfd6e375187eea43b55b5"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/orders.cjs",
+      "bytes": 6682,
+      "sha256": "27b899e95cfdfa50bc74c8a952dd863844cf8ed4895241dc5e3d08701e3e1703"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/palette-capsule.cjs",
+      "bytes": 21377,
+      "sha256": "aa0a37b9023794d7a9c33f8a67b794441c371b22a7bc01340ce3bc8d68a6a088"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/readme-consumer.cjs",
+      "bytes": 2675,
+      "sha256": "bb2b63940a1dc65c1d4f467b6be2f838638c3456274c1e0886f1dee5fed8bea4"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/regroup-focus.cjs",
+      "bytes": 27270,
+      "sha256": "e9bee00c7c0fc26082529a20fd6bf6737e5626d3cfe115aff297e8148328cfae"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/required-state.cjs",
+      "bytes": 9214,
+      "sha256": "636bd8adfcb8c45ac9d506b4e10ec9de1f3b9962f18de3ea7991916fa194f636"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/style.cjs",
+      "bytes": 9199,
+      "sha256": "b9cb3f865bd2525ead73609c71efff1dcef48f025331e72ed8219ffa22a8fb09"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/type-matrix.cjs",
+      "bytes": 9436,
+      "sha256": "2cabd18a31e3461df7a87ee954447a76654cfed849eb073ef2f54cd2fe2635df"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tests/types.tsx",
+      "bytes": 34309,
+      "sha256": "7ef2d79e7fdeebb035f65ef34915296a2c450f04580b3bbd84cffd16687e0dee"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tools/build.cjs",
+      "bytes": 868,
+      "sha256": "b6ff7bb89ea6fae071c43bdf0269e3d6917dd5ced27bcd15040a8b4f9ec48473"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tools/package.py",
+      "bytes": 928,
+      "sha256": "9d155d54ab9a156595aa00bd1809127a0d555644a3387ea148ac79e08edf152d"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tools/verify-consumer.sh",
+      "bytes": 2252,
+      "sha256": "dc67c842d77b53805d3ec03e2fd1cde4ac96f7e75161dd88d246907b444a2da2"
+    },
+    {
+      "path": "wix-select-content-reset-repair/tools/verify.sh",
+      "bytes": 620,
+      "sha256": "be4cbc29b7fb0caf9aaba482db5c903903b75e1d1e89180ab08187314f5deb0c"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/LICENSE",
+      "bytes": 1184,
+      "sha256": "cee46b3b44ca30000b4e839b600a14ccb0d5f308179a73425a2764101b9be163"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/README.md",
+      "bytes": 23681,
+      "sha256": "a81055e5177fe3b94254b4e5326bc1e57025fc72ecdeb3006cdb022235e4c1d4"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/dist/index.cjs",
+      "bytes": 47145,
+      "sha256": "0780d5b8f3510fede9c541a5aa586719723e39c9c3c878ac89ca3ed21dd1f056"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/dist/index.js",
+      "bytes": 45386,
+      "sha256": "4c4eec1f9f88b77006e69f8b807e9b5cddb5336fc0396aeb5215c76ead5f6fef"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/examples/ProofSheet.tsx",
+      "bytes": 3386,
+      "sha256": "7426d38e25147224f6fb4b6fd5f114c687ce614647aedf6ad34f72412b32d26a"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/examples/proof.ts",
+      "bytes": 5355,
+      "sha256": "801c1f3812a6d5f67db34f343c1da7d36e6455278a5ac7e7aa9ddb0a93deee65"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/examples/styles.d.ts",
+      "bytes": 53,
+      "sha256": "45951933551aae62331c58b7c38a4123a377ecc8fa09e263b6cc7c2b746167ef"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/package.json",
+      "bytes": 810,
+      "sha256": "6bd113a4a8852c0214372b8bce5458b0c26725d198c220f4ce72185bb1d5ffdf"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/CONTRACT.md",
+      "bytes": 9470,
+      "sha256": "49b79fe109951d07db325533ef9a5ac7eb14a68e1ce1c3b2728d6238000ad307"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/IDENTITY.json",
+      "bytes": 3591,
+      "sha256": "385cb76cc7a6386af0283e1358e3bde3aca6c8b245a9228ca4b0a377edf6db58"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/select-10.tsx",
+      "bytes": 1625,
+      "sha256": "eb22f0640bee3c5547321c8713d41258b35b8adb811c6fe2ed703b6a57ea282c"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/select-11.tsx",
+      "bytes": 1707,
+      "sha256": "7c0b340156a96cc1ba5ef2f19401049c914349b3bbfc83999dc8e8d25bb7cb6e"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/select-12.tsx",
+      "bytes": 1618,
+      "sha256": "58d52fe523a7dd6105844210859f307286674cd216cdba67b8e7b10902bbabba"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/select-13.tsx",
+      "bytes": 1590,
+      "sha256": "64306737e1ec276a4d853c34cc99cb4d7f35102f75d9ffb36b5328941fe0d960"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/upstream/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/upstream/package.json",
+      "bytes": 4203,
+      "sha256": "bb874d7ca4b1b87f8957ef4c996c607656f63ba489ddb9f916a9bd65f4da474a"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/upstream/src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/upstream/src/components/base-ui/select.tsx",
+      "bytes": 6679,
+      "sha256": "c1295c1404b67895549b89225885eba08198a5d6224c733fbb8964eaaa2edff4"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/reference/upstream/src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/src/index.d.ts",
+      "bytes": 711,
+      "sha256": "d3338ca11fc3dfff1f6047ac8e6712458e6df42560cd715ba2a79ec033dcc966"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/src/index.tsx",
+      "bytes": 47349,
+      "sha256": "6237a37a3c985e9510456656b0a8889046d6a08029b2b1f916c88419f16a7e10"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/src/styles.css",
+      "bytes": 10561,
+      "sha256": "0497dead8eeefb7cc3e79725e4d293d7368586b20697298975339537a1cc8a09"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/src/styles.d.ts",
+      "bytes": 89,
+      "sha256": "63872a3e4fc440e9323a316f6edc6e3e630e5de5abc80f33e2f9476a8358c507"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/src/types.ts",
+      "bytes": 3141,
+      "sha256": "d0ef205a02e1f2eed6c4c3443b0385ebd7123bdf591c26fa0d7b245eaa4f1c81"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/behavior.cjs",
+      "bytes": 17147,
+      "sha256": "1cad3ca93a456d03913d72a1a3cfdb539c030cd3a92804b886b7cac8aa17196a"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/boundaries.cjs",
+      "bytes": 11100,
+      "sha256": "56b6a249f2449378d4bc4d5f17249275a5c639a11320072f2ba562530a94800d"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/consumer-ssr.mjs",
+      "bytes": 8511,
+      "sha256": "d13a56f1cb0e54d9713bbdfc9043a32bda997f03d0b1a663c7bae10ca3071914"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/environment.cjs",
+      "bytes": 12015,
+      "sha256": "f64008f7a90a3c5f5d2dfc9fc5a09e0031e99b9503650302b66d8a89459cf6b9"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/example.cjs",
+      "bytes": 8660,
+      "sha256": "341d83f2fc14fe767e1a782f821e0194663af6cbda2c7a661bac6303edeb5954"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/fieldset-orders.cjs",
+      "bytes": 7716,
+      "sha256": "0f600a0611f1bb352c78a58b168b0783f6975ee1a0ab4eec96bef6a8dc5de597"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/keyboard-orders.cjs",
+      "bytes": 10743,
+      "sha256": "abcda29cc80f99d2245c69531d16c00d214dec33269ce60225b5336b59dcb044"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/orders.cjs",
+      "bytes": 6568,
+      "sha256": "a1534f0417b8ba6dbee7ae1be476de5024f52310e14faff33fd5e53260e3d428"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/proof.cjs",
+      "bytes": 5443,
+      "sha256": "952ad7f87a8e7faee68c4d61ddc489159ecfc3a2c8146655a973f698311fb9cd"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/readme-consumer.cjs",
+      "bytes": 2672,
+      "sha256": "d3a3ad4eeec3a0f2846bf7fbd0c23b5427af72a08d730db918197050775c1f7c"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/regroup-focus.cjs",
+      "bytes": 27271,
+      "sha256": "056d859a1ea5e1e8177d458dd954d7d9cc5d9ac86487359dc34aa23291517f5c"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/required-state.cjs",
+      "bytes": 9205,
+      "sha256": "c5685458a22140e6ae95d8d2561fb648019ded96ce45a5e9bd3c1eea22028bac"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/style.cjs",
+      "bytes": 7979,
+      "sha256": "36aae2aee002628e42f7b656feecc5e1ecbed2499b98a39964649bf2898da52f"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/tsconfig.json",
+      "bytes": 570,
+      "sha256": "8a70f0fa3cf3405d9dd0c9ec139039aef9375b30b421dfec1fcb2058dd0d1228"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/type-matrix.cjs",
+      "bytes": 9388,
+      "sha256": "33e1c9d21d0fc13a01dfd3cf01f67bfdf37aabaad195852b7462e5796701c415"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tests/types.tsx",
+      "bytes": 19686,
+      "sha256": "f0e0a1b460f6d2fb74952f8ec9eba56547eab953f947ce72401b2c3aa3aa277d"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tools/build.cjs",
+      "bytes": 868,
+      "sha256": "b6ff7bb89ea6fae071c43bdf0269e3d6917dd5ced27bcd15040a8b4f9ec48473"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tools/package.py",
+      "bytes": 925,
+      "sha256": "18a5842b64431796340f79534363df1ffb3320b8ef36c3fecef132ae40b13c6f"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tools/verify-consumer.sh",
+      "bytes": 2118,
+      "sha256": "56df77c25042668087c0a3cac3c7e5bcca09365cda5564cf7bd826598d00abcb"
+    },
+    {
+      "path": "wix-select-menu-reset-repair/tools/verify.sh",
+      "bytes": 602,
+      "sha256": "4cfe166335254a59754a6d1159609b7ec00cae7a2c66d01e4e1fdcb4ca20fd77"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/LICENSE",
+      "bytes": 1184,
+      "sha256": "cee46b3b44ca30000b4e839b600a14ccb0d5f308179a73425a2764101b9be163"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/README.md",
+      "bytes": 22390,
+      "sha256": "5879a633800771fad9303dc2fdb1d669d05445b8547e3bd466e6beebe2ef6442"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/dist/index.cjs",
+      "bytes": 49309,
+      "sha256": "46e5a5378efa48d55c624ca927e9b32d445cc378fe31876d089718addadf6540"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/dist/index.js",
+      "bytes": 47545,
+      "sha256": "40dbfe524d2b7f34296d77c13e912ae5e2ae61ac0f86b3e6c3469762530ae302"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/examples/IndexDesk.tsx",
+      "bytes": 5478,
+      "sha256": "9212979ed36359ba183359ef68fd082b98cc06cd7b96383a82a27d06c15bfcab"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/examples/index-sheet.ts",
+      "bytes": 7341,
+      "sha256": "b59c204747691bb00f21005f297557b16873e2e96f3de5d5780d07936742a0c8"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/examples/styles.d.ts",
+      "bytes": 24,
+      "sha256": "da5bf71d48cf909584a01c80b445f730507068f5b34c920f352e2bfcf0315e4c"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/package.json",
+      "bytes": 869,
+      "sha256": "f8b529810d9aef5b471f8db8109274ec0eeeb67758010e5b80a035215b6ca875"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/CONTRACT.md",
+      "bytes": 1634,
+      "sha256": "80b3533da221a2f9cc6e7c981e07e064c95edbd600f564efde17d2b92dfaab70"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/IDENTITY.json",
+      "bytes": 3647,
+      "sha256": "2955381689bcd2dd80fa5e9dcb324029c0edbace05b39aa2b4d0cb5017027b67"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/select-22.tsx",
+      "bytes": 1792,
+      "sha256": "cbfd3453f4e6f10e2f6d400e45a7de37b9d9c67f0d284c16b932b5fc68fd2a93"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/select-23.tsx",
+      "bytes": 1789,
+      "sha256": "004da10982cee6bad85d6cac672c0002ee6a9cff2cd9e346f95949a001c56be9"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/select-24.tsx",
+      "bytes": 1580,
+      "sha256": "02a8159058475e9c25cc5523c6c4762f64f9efd7d298dbda01c892bfbc562d56"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/select-25.tsx",
+      "bytes": 1623,
+      "sha256": "ea88c126779d240fee0874c5441e978ecf727c81de089a836c4cf61944a8872a"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/upstream/LICENSE",
+      "bytes": 1089,
+      "sha256": "53acf7b74b1e84b858c3340dbc2bcb809491eea857986132873041166ffcdfe0"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/upstream/package.json",
+      "bytes": 4203,
+      "sha256": "bb874d7ca4b1b87f8957ef4c996c607656f63ba489ddb9f916a9bd65f4da474a"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/upstream/src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/upstream/src/components/base-ui/select.tsx",
+      "bytes": 6679,
+      "sha256": "c1295c1404b67895549b89225885eba08198a5d6224c733fbb8964eaaa2edff4"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/reference/upstream/src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/src/index.d.ts",
+      "bytes": 751,
+      "sha256": "46118c059d13ef79df6f6dff906bacb152a9de2c6aca7616432c5da97779e7fd"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/src/index.tsx",
+      "bytes": 50050,
+      "sha256": "77c0933a39dd58d13177d96b2acc0e3c3dc775a1f5d6265a2a1f0539d883662e"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/src/styles.css",
+      "bytes": 12903,
+      "sha256": "96f49fb58de8071663018712602b07a1ecc0aaaa82848e211b7c060ec19264d7"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/src/styles.d.ts",
+      "bytes": 89,
+      "sha256": "63872a3e4fc440e9323a316f6edc6e3e630e5de5abc80f33e2f9476a8358c507"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/src/types.ts",
+      "bytes": 3504,
+      "sha256": "dfb080992432955094d6628f72714519ed6f805b734c9488f36019497030c499"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/INDEX-TESTS.md",
+      "bytes": 3723,
+      "sha256": "b3711f7dfe921d50220326b58a571330efc3905aa7e6c641fd8432449161091f"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/behavior.cjs",
+      "bytes": 16935,
+      "sha256": "346d9c34f08e8da2504ced51ed3eac7e019161a89c66306a6bd35641f643770b"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/boundaries.cjs",
+      "bytes": 11212,
+      "sha256": "f0be52d8199369b4d2d0364d1835ad73dfb5aa10cb2847bde8feae4c24e849ba"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/consumer-ssr.mjs",
+      "bytes": 8837,
+      "sha256": "eda1d1b3662ab71e45e7e727390cdb27d903959bb260df17a30d815a8c71dcd6"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/environment.cjs",
+      "bytes": 12185,
+      "sha256": "28d2781829260c9a3b1e2fb56738fc3331a286343fd13573e51f53e0868d15db"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/example.cjs",
+      "bytes": 149,
+      "sha256": "1eb2b51fbffd7c9e46c918847d6f7d7a10f9c70060eb3a9a417cf3b219746985"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/fieldset-orders.cjs",
+      "bytes": 7828,
+      "sha256": "ca91b533e2a81ed7ce4f701eb4b74659613fa1cff50bb30d36046d11e2af8003"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/index-example.cjs",
+      "bytes": 31534,
+      "sha256": "f83e36bb3e0391c6023af1f56e8c472853754709271aa9f78c5f257e932861d3"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/index-sheet.cjs",
+      "bytes": 244,
+      "sha256": "8ff20d1585090904f0e5361dcec798adda21abc4133e3d3ff522dffba4936bdf"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/interactive-adapters.cjs",
+      "bytes": 168,
+      "sha256": "2b795d003d90067ccf1d680ac351d37d87e951b88d9823bc3542f2792e587dd7"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/keyboard-orders.cjs",
+      "bytes": 10855,
+      "sha256": "348ad9f44d439aa60ec467e9203044d7d8c950948c76d511d01af551a2a3719e"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/orders.cjs",
+      "bytes": 6680,
+      "sha256": "bd0261b8f7460615bddc0379c32792fdd63aa7e5332ed0ce0f2c77ac265c52bd"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/readme-consumer.cjs",
+      "bytes": 2677,
+      "sha256": "be82e1700b77595545aab3d691b08a75cb0d1694e87594c7d598321aca8365aa"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/regroup-focus.cjs",
+      "bytes": 27276,
+      "sha256": "ded53bf1e343d60dacd03c9acf856541deb56aa9c044669879964da894e749dd"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/required-state.cjs",
+      "bytes": 9205,
+      "sha256": "1d926b4fb1e1c751eb4661619d5a748abc7af1659d74adf44e273e762c27602d"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/structure.cjs",
+      "bytes": 9444,
+      "sha256": "766d112127fcd1a4a0275f7b1e19c621ea317b13a72ae2648f3e6d3eab6196ef"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/style.cjs",
+      "bytes": 9049,
+      "sha256": "9666078aff3d140995c0f86971475ec37f800a4400566ae8009f418f43b09c50"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/type-matrix.cjs",
+      "bytes": 9444,
+      "sha256": "b5508784253fc0207c77224812719b54966e1dc9e22d02a4084439d36b4a59ce"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tests/types.tsx",
+      "bytes": 24343,
+      "sha256": "ada0346bdafcffb5105ee88687308725ac74c20e150681305204b9260c810e42"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tools/build.cjs",
+      "bytes": 868,
+      "sha256": "b6ff7bb89ea6fae071c43bdf0269e3d6917dd5ced27bcd15040a8b4f9ec48473"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tools/package.py",
+      "bytes": 930,
+      "sha256": "098f3b17fd5eb7082569585ca3bcdaf8fb4e60ff74f15eeb6f80a1d059312990"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tools/verify-consumer.sh",
+      "bytes": 2262,
+      "sha256": "91c33241413d6c9eac92a50d466a223d53c3af3aa1c2812ab5823bf073780036"
+    },
+    {
+      "path": "wix-select-structure-reset-repair/tools/verify.sh",
+      "bytes": 618,
+      "sha256": "8f5eb76da28d7dbc2a9eec590b34008183946e09a289b626405674c2b5b0f489"
+    }
+  ],
+  "file_count_excluding_this_manifest": 283,
+  "total_bytes_excluding_this_manifest": 2677225
+}

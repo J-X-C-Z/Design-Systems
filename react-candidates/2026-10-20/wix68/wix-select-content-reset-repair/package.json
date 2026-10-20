@@ -1,0 +1,36 @@
+{
+  "name": "@studio/wix-select-content",
+  "version": "0.1.0-candidate.2",
+  "description": "Four source-audited React custom selectors with permission groups, shared decorative icon/status content and an independent fixed trigger prefix.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": {
+      "types": "./src/styles.d.ts",
+      "default": "./src/styles.css"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "reference",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./src/styles.css"
+  ],
+  "peerDependencies": {
+    "react": ">=18.2.0 <20",
+    "react-dom": ">=18.2.0 <20"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "select-18",
+    "canonical_id": "watermelon:components:select-18",
+    "git_blob": "658979ece3b2de549d7bc3481ef1cc2632d319e2",
+    "source_sha": "658979ece3b2de549d7bc3481ef1cc2632d319e2",
+    "sha256": "6a1ac078fbd4d204b13220fbc7f04f2b851a43672a519e090ed5339f996d24b7",
+    "bytes": 1464,
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_path": "src/data/contents/components/select/variant-18.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-18.tsx",
+    "reference_file": "wix-select-availability/reference/select-18.tsx",
+    "baseline_wix_status": "pending_adaptation",
+    "identity_checks": [
+      "Original Git blob matches ledger and pinned catalog",
+      "Canonical ID, URL, revision and source records are preserved"
+    ]
+  },
+  {
+    "id": "select-19",
+    "canonical_id": "watermelon:components:select-19",
+    "git_blob": "c4958480e1f0cb3321eef754334cbffd1053377c",
+    "source_sha": "c4958480e1f0cb3321eef754334cbffd1053377c",
+    "sha256": "afe6ab6eb0bfb6beec9def57950b3f888c81c028bf5d8b147588c63ca7506456",
+    "bytes": 1253,
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_path": "src/data/contents/components/select/variant-19.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-19.tsx",
+    "reference_file": "wix-select-availability/reference/select-19.tsx",
+    "baseline_wix_status": "pending_adaptation",
+    "identity_checks": [
+      "Original Git blob matches ledger and pinned catalog",
+      "Canonical ID, URL, revision and source records are preserved"
+    ]
+  },
+  {
+    "id": "select-20",
+    "canonical_id": "watermelon:components:select-20",
+    "git_blob": "e612e20b718ae8128970700397581add3640695e",
+    "source_sha": "e612e20b718ae8128970700397581add3640695e",
+    "sha256": "e488c2e4be3e408bc67df46d35d3166844d1f821592d67c5217ee7e5ac092311",
+    "bytes": 1471,
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_path": "src/data/contents/components/select/variant-20.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-20.tsx",
+    "reference_file": "wix-select-availability/reference/select-20.tsx",
+    "baseline_wix_status": "pending_adaptation",
+    "identity_checks": [
+      "Original Git blob matches ledger and pinned catalog",
+      "Canonical ID, URL, revision and source records are preserved"
+    ]
+  },
+  {
+    "id": "select-21",
+    "canonical_id": "watermelon:components:select-21",
+    "git_blob": "3a3dfeee15a6d73d70c2da7e2073420c6de987e9",
+    "source_sha": "3a3dfeee15a6d73d70c2da7e2073420c6de987e9",
+    "sha256": "1a56892ee4e643ff6a58c606f07a692520d1cd20677b3575dd894ed449a354a8",
+    "bytes": 1539,
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_path": "src/data/contents/components/select/variant-21.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-21.tsx",
+    "reference_file": "wix-select-availability/reference/select-21.tsx",
+    "baseline_wix_status": "pending_adaptation",
+    "identity_checks": [
+      "Original Git blob matches ledger and pinned catalog",
+      "Canonical ID, URL, revision and source records are preserved"
+    ]
+  }
+]

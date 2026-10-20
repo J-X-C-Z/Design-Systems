@@ -1,0 +1,70 @@
+.wix-select-availability{--wix-sa-ink:#30231e;--wix-sa-paper:#fffaf4;--wix-sa-wash:#f4ede3;--wix-sa-mocha:#a47864;--wix-sa-edge:#9b7866;--wix-sa-muted:#6d5548;display:grid;gap:8px;min-width:0;max-width:22rem;width:100%;box-sizing:border-box;color:var(--wix-sa-ink);font:inherit;line-height:1.5}
+.wix-select-availability *{box-sizing:border-box}
+.wix-select-availability .wix-sa-label{display:block;width:fit-content;max-width:100%;margin:0;font:inherit;font-size:.875rem;font-weight:650;line-height:1.5;overflow-wrap:anywhere;color:var(--wix-sa-muted)}
+.wix-select-availability .wix-sa-trigger{display:flex;align-items:center;gap:10px;width:100%;min-width:0;min-height:48px;margin:0;padding:11px 14px;border:1px solid var(--wix-sa-edge);border-radius:12px;background:var(--wix-sa-paper);color:var(--wix-sa-ink);font:inherit;font-size:.9375rem;font-weight:500;line-height:1.5;text-align:start;cursor:pointer;appearance:none;box-shadow:1px 3px 0 #30231e15;transition:border-color .15s ease,box-shadow .15s ease,background .15s ease;touch-action:manipulation;scroll-margin-block:28px}
+.wix-select-availability .wix-sa-trigger:hover:not(:disabled):not([data-readonly=true]){background:var(--wix-sa-wash);border-color:var(--wix-sa-ink)}
+.wix-select-availability .wix-sa-trigger[data-state=open]{border-color:var(--wix-sa-ink);box-shadow:2px 4px 0 #a4786433}
+.wix-select-availability .wix-sa-trigger:focus-visible{outline:3px solid var(--wix-sa-ink);outline-offset:3px}
+.wix-select-availability .wix-sa-value{display:block;flex:1;min-width:0;overflow-wrap:anywhere;text-align:start}
+.wix-select-availability .wix-sa-trigger[data-placeholder=true] .wix-sa-value{color:var(--wix-sa-muted);font-weight:400}
+.wix-select-availability .wix-sa-trigger:disabled,.wix-select-availability .wix-sa-trigger[data-disabled=true]{cursor:not-allowed;opacity:.62;background:var(--wix-sa-wash)}
+.wix-select-availability .wix-sa-trigger[data-readonly=true]{cursor:default;border-style:dashed}
+.wix-select-availability .wix-sa-trigger[aria-invalid=true],.wix-select-availability .wix-sa-trigger[aria-invalid=grammar],.wix-select-availability .wix-sa-trigger[aria-invalid=spelling]{border-color:#8c3528;border-inline-start-width:3px}
+.wix-select-availability .wix-sa-chevron{display:block;flex:none;width:16px;height:16px;margin-inline-start:2px;color:var(--wix-sa-muted);pointer-events:none;transition:transform .15s ease}
+.wix-select-availability .wix-sa-trigger[data-state=open] .wix-sa-chevron{transform:rotate(180deg)}
+.wix-select-availability .wix-sa-helper,.wix-select-availability .wix-sa-error{margin:0;font:inherit;font-size:.75rem;line-height:1.65;overflow-wrap:anywhere}
+.wix-select-availability .wix-sa-helper{color:var(--wix-sa-muted)}
+.wix-select-availability .wix-sa-error{padding:8px 11px;border-inline-start:3px solid currentColor;background:#f8e9df;color:#8c3528;font-weight:600}
+.wix-select-availability .wix-sa-native{position:absolute!important;width:1px!important;height:1px!important;min-width:0!important;min-height:0!important;padding:0!important;margin:-1px!important;border:0!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;overflow:hidden!important;white-space:nowrap!important;opacity:0!important;pointer-events:none!important}
+.wix-select-availability.wix-sa-popup{position:fixed;z-index:1000;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:0;max-width:calc(100vw - 16px);min-width:0;max-height:min(25rem,calc(100dvh - 16px));margin:0;padding:5px;border:1px solid var(--wix-sa-edge);border-radius:12px;background:var(--wix-sa-paper);color:var(--wix-sa-ink);box-shadow:0 14px 32px #30231e25,3px 5px 0 #a4786433;isolation:isolate;overflow:hidden;overscroll-behavior:contain;transform-origin:top center}
+.wix-select-availability.wix-sa-popup[data-side=top]{transform-origin:bottom center}
+.wix-select-availability .wix-sa-listbox{min-width:0;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--wix-sa-edge) var(--wix-sa-wash);outline:none;scroll-padding:5px;touch-action:pan-y}
+.wix-select-availability .wix-sa-group{margin:0;padding:0;min-width:0}
+.wix-select-availability .wix-sa-group+.wix-sa-group{margin-block-start:6px;border-block-start:1px solid #a4786440;padding-block-start:5px}
+.wix-select-availability .wix-sa-group-label{display:block;margin:0;padding:8px 10px 7px;font:inherit;font-size:.6875rem;font-weight:650;letter-spacing:.07em;text-transform:uppercase;color:var(--wix-sa-muted);line-height:1.6;overflow-wrap:anywhere}
+.wix-select-availability .wix-sa-option{position:relative;display:flex;align-items:center;gap:8px;min-width:0;min-height:44px;margin:2px 0;padding:10px 10px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--wix-sa-ink);font:inherit;font-size:.875rem;font-weight:450;line-height:1.5;text-align:start;cursor:pointer;outline:none;user-select:none;touch-action:manipulation;scroll-margin-block:4px}
+.wix-select-availability .wix-sa-option-label{flex:1;min-width:0;overflow-wrap:anywhere}
+.wix-select-availability .wix-sa-option[data-highlighted=true],.wix-select-availability .wix-sa-option:focus-visible{border-color:var(--wix-sa-ink);background:#ecddcf;outline:2px solid var(--wix-sa-ink);outline-offset:-2px}
+.wix-select-availability .wix-sa-option[data-state=checked]{background:#f2e3d5;font-weight:650}
+.wix-select-availability .wix-sa-option[data-highlighted=true][data-state=checked]{background:#e8d3bf}
+.wix-select-availability .wix-sa-option[data-disabled=true]{color:var(--wix-sa-muted);opacity:.5;cursor:not-allowed}
+.wix-select-availability .wix-sa-check{display:inline-grid;place-items:center;flex:none;width:20px;height:20px;border-radius:50%;color:var(--wix-sa-ink);background:#d9bba2;pointer-events:none}
+.wix-select-availability .wix-sa-check svg{width:13px;height:13px}
+.wix-select-availability .wix-sa-scroll-up,.wix-select-availability .wix-sa-scroll-down{display:grid;place-items:center;width:100%;min-height:32px;margin:0;padding:5px;border:0;border-radius:7px;background:var(--wix-sa-wash);color:var(--wix-sa-muted);font:inherit;cursor:pointer;touch-action:manipulation}
+.wix-select-availability .wix-sa-scroll-up svg,.wix-select-availability .wix-sa-scroll-down svg{width:15px;height:15px}
+.wix-select-availability .wix-sa-scroll-up:hover,.wix-select-availability .wix-sa-scroll-down:hover{background:#e8d7c7;color:var(--wix-sa-ink)}
+.wix-select-availability .wix-sa-scroll-up:focus-visible,.wix-select-availability .wix-sa-scroll-down:focus-visible{outline:2px solid var(--wix-sa-ink);outline-offset:-2px}
+.wix-select-availability .wix-sa-scroll-up:disabled,.wix-select-availability .wix-sa-scroll-down:disabled{opacity:.5;cursor:default}
+.wix-select-availability[data-motion=off] *,.wix-select-availability[data-motion=off]{transition:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.wix-select-availability,.wix-select-availability *{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media(forced-colors:active){.wix-select-availability{--wix-sa-ink:CanvasText;--wix-sa-paper:Canvas;--wix-sa-wash:Canvas;--wix-sa-edge:ButtonText;--wix-sa-muted:CanvasText;--wix-sa-mocha:CanvasText}.wix-select-availability .wix-sa-trigger,.wix-select-availability.wix-sa-popup,.wix-select-availability .wix-sa-option,.wix-select-availability .wix-sa-icon,.wix-select-availability .wix-sa-helper,.wix-select-availability .wix-sa-error,.wix-select-availability .wix-sa-group-label{background:Canvas;color:CanvasText;border-color:CanvasText;box-shadow:none}.wix-select-availability .wix-sa-trigger:focus-visible,.wix-select-availability .wix-sa-option:focus-visible,.wix-select-availability .wix-sa-option[data-highlighted=true]{outline-color:Highlight}.wix-select-availability .wix-sa-option[data-state=checked],.wix-select-availability .wix-sa-check{background:Highlight;color:HighlightText}.wix-select-availability .wix-sa-trigger:disabled,.wix-select-availability .wix-sa-option[data-disabled=true]{color:GrayText;opacity:1}.wix-select-availability .wix-sa-trigger[aria-invalid=true]{border-style:double;border-width:3px}}
+
+.wix-select-availability .wix-sa-scroll-up[hidden],.wix-select-availability .wix-sa-scroll-down[hidden]{display:none!important}
+.wix-select-availability .wix-sa-required{color:#8c3528;font-weight:700}
+.wix-select-availability .wix-sa-empty{padding:18px 12px;color:var(--wix-sa-muted);font-size:.875rem;line-height:1.6}
+/* Wix Mocha availability recipes preserve source behavior and distinguish structure. */
+.wix-select-availability[data-variant=select-18]>.wix-sa-label{font-weight:650;padding-inline-start:12px;letter-spacing:.025em}
+.wix-select-availability[data-variant=select-18] .wix-sa-trigger{border:0;background:transparent;box-shadow:none;border-radius:8px;padding-inline:12px;min-height:46px}
+.wix-select-availability[data-variant=select-18] .wix-sa-trigger:hover:not(:disabled):not([data-readonly=true]){background:#a4786417;box-shadow:none}
+.wix-select-availability[data-variant=select-18] .wix-sa-trigger[data-state=open]{background:#a4786422;box-shadow:none}
+.wix-select-availability[data-variant=select-18] .wix-sa-trigger:focus-visible{outline-offset:0;box-shadow:none}
+.wix-select-availability.wix-sa-popup[data-variant=select-18]{border-radius:8px;padding:7px;box-shadow:0 10px 22px #30231e20}
+.wix-select-availability[data-variant=select-19]{padding:12px;border:1px dashed var(--wix-sa-edge);border-radius:4px 12px 12px 4px;background:var(--wix-sa-wash)}
+.wix-select-availability[data-variant=select-19] .wix-sa-trigger{border-radius:4px;border-inline-start-width:4px;box-shadow:none;background:var(--wix-sa-paper)}
+.wix-select-availability[data-variant=select-19][data-disabled=true]{opacity:.6}
+.wix-select-availability[data-variant=select-19] .wix-sa-trigger:disabled{cursor:not-allowed;box-shadow:none;opacity:1}
+.wix-select-availability[data-variant=select-19]>.wix-sa-label{font-size:.75rem;letter-spacing:.02em}
+.wix-select-availability.wix-sa-popup[data-variant=select-19]{border-radius:4px;border-inline-start-width:4px}
+.wix-select-availability[data-variant=select-20]>.wix-sa-label{padding-block-end:6px;border-block-end:1px dashed var(--wix-sa-edge)}
+.wix-select-availability[data-variant=select-20] .wix-sa-trigger{border-radius:5px 12px 12px 5px;border-inline-start-width:3px;box-shadow:2px 2px 0 #a4786424}
+.wix-select-availability.wix-sa-popup[data-variant=select-20]{border-radius:5px 12px 12px 5px;border-inline-start-width:3px;padding:6px}
+.wix-select-availability[data-variant=select-20] .wix-sa-option{border-radius:4px;border-block-end:1px solid #a4786420;min-height:46px}
+.wix-select-availability[data-variant=select-20] .wix-sa-option[data-disabled=true]{opacity:.65;border-inline-start:3px double var(--wix-sa-edge);padding-inline-start:7px;background:repeating-linear-gradient(135deg,transparent 0,transparent 7px,#a4786410 7px,#a4786410 8px)}
+.wix-select-availability[data-variant=select-21]>.wix-sa-label{display:flex;align-items:center;gap:6px;font-weight:650}
+.wix-select-availability[data-variant=select-21] .wix-sa-required{display:inline-grid;place-items:center;width:18px;height:18px;border:1px solid currentColor;border-radius:50%;font-weight:800;font-size:.875rem;line-height:1}
+.wix-select-availability[data-variant=select-21] .wix-sa-trigger{border-radius:12px 12px 4px 4px;border-block-end-width:3px;box-shadow:0 3px 0 #a4786420}
+.wix-select-availability.wix-sa-popup[data-variant=select-21]{border-radius:4px 4px 12px 12px;border-block-end-width:3px}
+.wix-select-availability[data-variant=select-21] .wix-sa-trigger[aria-invalid=true]{border-color:#8c3528;border-style:double}
+.wix-select-availability:dir(rtl)[data-variant=select-19]{border-radius:12px 4px 4px 12px}
+.wix-select-availability:dir(rtl)[data-variant=select-20] .wix-sa-trigger,.wix-select-availability.wix-sa-popup:dir(rtl)[data-variant=select-20]{border-radius:12px 5px 5px 12px}
+@media(forced-colors:active){.wix-select-availability[data-variant=select-19]{background:Canvas;color:CanvasText;border-color:CanvasText}.wix-select-availability[data-variant] .wix-sa-trigger,.wix-select-availability.wix-sa-popup[data-variant]{color:CanvasText;background:Canvas;border-color:CanvasText;box-shadow:none}.wix-select-availability[data-variant=select-18] .wix-sa-trigger{background:transparent;border:0}.wix-select-availability[data-variant=select-20] .wix-sa-option[data-disabled=true]{color:GrayText;background:Canvas;border-color:GrayText}.wix-select-availability[data-variant=select-19][data-disabled=true]{opacity:1}.wix-select-availability[data-variant=select-19] .wix-sa-trigger:disabled{color:GrayText}.wix-select-availability[data-variant=select-21] .wix-sa-required{color:CanvasText;border-color:CanvasText}}

@@ -1,0 +1,61 @@
+.wix-multi-select{--wix-ms-ink:#30231e;--wix-ms-paper:#fffaf4;--wix-ms-wash:#f4ede3;--wix-ms-mocha:#a47864;--wix-ms-edge:#9b7866;--wix-ms-muted:#6d5548;display:grid;gap:8px;box-sizing:border-box;width:100%;max-width:23rem;min-width:0;color:var(--wix-ms-ink);font:inherit;line-height:1.5;color-scheme:light}
+.wix-multi-select *{box-sizing:border-box}
+.wix-multi-select .wix-ms-field{display:grid;gap:8px;min-width:0}
+.wix-multi-select .wix-ms-label{display:block;max-width:100%;width:fit-content;margin:0;color:var(--wix-ms-muted);font:inherit;font-size:.875rem;font-weight:650;line-height:1.5;overflow-wrap:anywhere}
+.wix-multi-select .wix-ms-required{color:#8c3528;font-weight:700}
+.wix-multi-select .wix-ms-trigger{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-width:0;min-height:48px;margin:0;padding:12px 15px;border:1px solid var(--wix-ms-edge);border-radius:12px;background:var(--wix-ms-paper);color:var(--wix-ms-ink);font:inherit;font-size:.9375rem;font-weight:500;line-height:1.5;text-align:start;cursor:pointer;appearance:none;box-shadow:1px 3px 0 #30231e18;touch-action:manipulation;scroll-margin-block:24px;transition:background .15s ease,border-color .15s ease,box-shadow .15s ease}
+.wix-multi-select .wix-ms-trigger:hover:not(:disabled):not([data-readonly=true]){background:var(--wix-ms-wash);border-color:var(--wix-ms-ink)}
+.wix-multi-select .wix-ms-trigger[data-state=open]{border-color:var(--wix-ms-ink);box-shadow:2px 4px 0 #a4786433}
+.wix-multi-select .wix-ms-trigger:focus-visible,.wix-multi-select .wix-ms-clear:focus-visible,.wix-multi-select .wix-ms-remove:focus-visible{outline:3px solid var(--wix-ms-ink);outline-offset:3px}
+.wix-multi-select .wix-ms-value{flex:1;min-width:0;overflow-wrap:anywhere}
+.wix-multi-select .wix-ms-trigger[data-placeholder=true] .wix-ms-value{color:var(--wix-ms-muted);font-weight:400}
+.wix-multi-select .wix-ms-trigger:disabled,.wix-multi-select .wix-ms-trigger[data-disabled=true]{cursor:not-allowed;opacity:.62;background:var(--wix-ms-wash)}
+.wix-multi-select .wix-ms-trigger[data-readonly=true]{cursor:default;border-style:dashed}
+.wix-multi-select .wix-ms-trigger[aria-invalid=true],.wix-multi-select .wix-ms-trigger[aria-invalid=grammar],.wix-multi-select .wix-ms-trigger[aria-invalid=spelling]{border-color:#8c3528;border-inline-start-width:3px}
+.wix-multi-select .wix-ms-chevron{display:block;flex:none;width:16px;height:16px;color:var(--wix-ms-muted);pointer-events:none;transition:transform .15s ease}
+.wix-multi-select .wix-ms-trigger[data-state=open] .wix-ms-chevron{transform:rotate(180deg)}
+.wix-multi-select .wix-ms-helper,.wix-multi-select .wix-ms-error{margin:0;font:inherit;font-size:.75rem;line-height:1.65;overflow-wrap:anywhere}
+.wix-multi-select .wix-ms-helper{color:var(--wix-ms-muted)}
+.wix-multi-select .wix-ms-error{padding:8px 11px;border-inline-start:3px solid currentColor;background:#f8e9df;color:#8c3528;font-weight:600}
+.wix-multi-select .wix-ms-native{position:absolute!important;width:1px!important;height:1px!important;min-width:0!important;min-height:0!important;padding:0!important;margin:-1px!important;border:0!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;overflow:hidden!important;white-space:nowrap!important;opacity:0!important;pointer-events:none!important}
+.wix-multi-select.wix-ms-popup{position:fixed;z-index:1000;gap:0;min-width:0;max-width:calc(100vw - 16px);max-height:min(25rem,calc(100dvh - 16px));margin:0;padding:6px;border:1px solid var(--wix-ms-edge);border-radius:12px;background:var(--wix-ms-paper);color:var(--wix-ms-ink);box-shadow:0 14px 32px #30231e25,3px 5px 0 #a4786433;isolation:isolate;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--wix-ms-edge) var(--wix-ms-wash);scroll-padding:6px;touch-action:pan-y;transform-origin:top center}
+.wix-multi-select.wix-ms-popup[data-side=top]{transform-origin:bottom center}
+.wix-multi-select.wix-ms-popup:focus-visible{outline:3px solid var(--wix-ms-ink);outline-offset:2px}
+.wix-multi-select .wix-ms-options{display:grid;gap:3px;min-width:0;min-height:0}
+.wix-multi-select .wix-ms-option{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-width:0;min-height:44px;margin:0;padding:10px 11px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--wix-ms-ink);font:inherit;font-size:.875rem;font-weight:450;line-height:1.5;text-align:start;cursor:pointer;appearance:none;touch-action:manipulation;scroll-margin-block:6px;transition:background .12s ease,border-color .12s ease}
+.wix-multi-select .wix-ms-option-label{flex:1;min-width:0;overflow-wrap:anywhere}
+.wix-multi-select .wix-ms-option:hover:not(:disabled){background:var(--wix-ms-wash)}
+.wix-multi-select .wix-ms-option[aria-pressed=true]{background:#f2e3d5;font-weight:650}
+.wix-multi-select .wix-ms-option:focus-visible,.wix-multi-select .wix-ms-option[data-highlighted=true]{border-color:var(--wix-ms-ink);outline:2px solid var(--wix-ms-ink);outline-offset:-2px;background:#ecddcf}
+.wix-multi-select .wix-ms-option:focus-visible[aria-pressed=true]{background:#e8d3bf}
+.wix-multi-select .wix-ms-option:disabled{color:var(--wix-ms-muted);opacity:.55;cursor:not-allowed}
+.wix-multi-select .wix-ms-check{display:inline-grid;place-items:center;flex:none;width:20px;height:20px;border-radius:50%;color:var(--wix-ms-ink);background:#d9bba2;pointer-events:none}
+.wix-multi-select .wix-ms-check svg{width:14px;height:14px}
+.wix-multi-select .wix-ms-empty{padding:18px 12px;color:var(--wix-ms-muted);font-size:.875rem;line-height:1.6}
+.wix-multi-select .wix-ms-enhancements{display:grid;gap:8px;min-width:0}
+.wix-multi-select .wix-ms-clear{justify-self:start;max-width:100%;min-height:32px;margin:0;padding:5px 9px;border:1px solid var(--wix-ms-edge);border-radius:7px;background:transparent;color:var(--wix-ms-muted);font:inherit;font-size:.75rem;line-height:1.5;text-align:start;overflow-wrap:anywhere;cursor:pointer;touch-action:manipulation}
+.wix-multi-select .wix-ms-clear:hover:not(:disabled){background:var(--wix-ms-wash);color:var(--wix-ms-ink)}
+.wix-multi-select .wix-ms-clear:disabled,.wix-multi-select .wix-ms-remove:disabled{opacity:.55;cursor:not-allowed}
+.wix-multi-select .wix-ms-chips{display:flex;flex-wrap:wrap;gap:6px;min-width:0;margin:0;padding:0;list-style:none}
+.wix-multi-select .wix-ms-chip{display:flex;align-items:center;gap:4px;max-width:100%;min-width:0;padding:2px 3px 2px 10px;border:1px solid #c2a58f;border-radius:9px;background:#f4e6d8;color:var(--wix-ms-ink);font:inherit;font-size:.75rem;line-height:1.5}
+.wix-multi-select .wix-ms-chip-label{min-width:0;overflow-wrap:anywhere}
+.wix-multi-select .wix-ms-remove{display:inline-grid;place-items:center;flex:none;min-width:32px;min-height:32px;margin:0;padding:6px;border:0;border-radius:6px;background:transparent;color:var(--wix-ms-ink);font:inherit;cursor:pointer;touch-action:manipulation}
+.wix-multi-select .wix-ms-remove:hover:not(:disabled){background:#dfc4ad}
+.wix-multi-select[data-variant=select-32] .wix-ms-trigger{padding-inline-start:18px;border-inline-start:5px solid var(--wix-ms-mocha);border-radius:4px;border-start-end-radius:15px;box-shadow:inset 0 -4px 0 #e8d7c7,2px 3px 0 #30231e18}
+.wix-multi-select[data-variant=select-32].wix-ms-popup{padding:7px;border-radius:4px;border-start-end-radius:15px;border-inline-start:4px solid var(--wix-ms-mocha)}
+.wix-multi-select[data-variant=select-32] .wix-ms-option{border-radius:3px;border-block-end-color:#e4d4c5}
+.wix-multi-select[data-variant=select-32] .wix-ms-option[aria-pressed=true]{border-inline-start:3px solid var(--wix-ms-ink);padding-inline-start:9px}
+.wix-multi-select[data-variant=select-32] .wix-ms-check{border-radius:3px;background:#d6b79e}
+.wix-multi-select[data-variant=select-33] .wix-ms-trigger{padding-inline:18px;border-radius:25px;box-shadow:inset 0 0 0 3px #fffaf4,inset 0 0 0 4px #ddc5b0,0 3px 0 #d4b49b}
+.wix-multi-select[data-variant=select-33].wix-ms-popup{padding:8px;border-radius:20px;background:#f7eee5}
+.wix-multi-select[data-variant=select-33] .wix-ms-option{padding-inline:13px;border-radius:16px;background:var(--wix-ms-paper)}
+.wix-multi-select[data-variant=select-33] .wix-ms-option[aria-pressed=true]{border-color:#b18a70;background:#ead6c2;box-shadow:inset 3px 0 0 #a47864}
+.wix-multi-select[data-variant=select-33] .wix-ms-chip{border-radius:18px}
+.wix-multi-select[data-variant=select-33] .wix-ms-helper{padding-inline:10px}
+.wix-multi-select[data-motion=off],.wix-multi-select[data-motion=off] *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){.wix-multi-select,.wix-multi-select *{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media(forced-colors:active){.wix-multi-select{--wix-ms-ink:CanvasText;--wix-ms-paper:Canvas;--wix-ms-wash:Canvas;--wix-ms-edge:ButtonText;--wix-ms-muted:CanvasText;--wix-ms-mocha:CanvasText}.wix-multi-select .wix-ms-trigger,.wix-multi-select.wix-ms-popup,.wix-multi-select .wix-ms-option,.wix-multi-select .wix-ms-chip,.wix-multi-select .wix-ms-error,.wix-multi-select .wix-ms-clear,.wix-multi-select .wix-ms-remove{background:Canvas;color:CanvasText;border-color:CanvasText;box-shadow:none}.wix-multi-select .wix-ms-option[aria-pressed=true],.wix-multi-select .wix-ms-check{background:Highlight;color:HighlightText}.wix-multi-select .wix-ms-trigger:focus-visible,.wix-multi-select .wix-ms-option:focus-visible,.wix-multi-select .wix-ms-clear:focus-visible,.wix-multi-select .wix-ms-remove:focus-visible{outline-color:Highlight}.wix-multi-select .wix-ms-trigger:disabled,.wix-multi-select .wix-ms-option:disabled,.wix-multi-select .wix-ms-clear:disabled,.wix-multi-select .wix-ms-remove:disabled{color:GrayText;opacity:1}.wix-multi-select .wix-ms-trigger[aria-invalid=true]{border-style:double;border-width:3px}}
+
+.wix-multi-select[data-variant=select-33]:dir(rtl) .wix-ms-option[aria-pressed=true]{box-shadow:inset -3px 0 0 #a47864}
+
+.wix-multi-select .wix-ms-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}

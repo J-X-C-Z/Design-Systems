@@ -1,0 +1,84 @@
+[
+  {
+    "id": "select-32",
+    "canonical_id": "watermelon:components:select-32",
+    "reference_file": "wix-multi-select/reference/src/data/contents/components/select/variant-32.tsx",
+    "source_path": "src/data/contents/components/select/variant-32.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-32.tsx",
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_sha": "36e53ce4e85cb9a7582ff0e11eba165ef9c3a34f",
+    "git_blob": "36e53ce4e85cb9a7582ff0e11eba165ef9c3a34f",
+    "sha256": "07186212d2a71a7d7e00790164a4f6ed5e338a6eff1ba2dee8859f9f54f81591",
+    "bytes": 3083,
+    "baseline_wix_status": "pending_adaptation",
+    "contract": {
+      "label": "Active Pipeline Services",
+      "defaultValue": [
+        "monitoring"
+      ],
+      "placeholder": "Select operations",
+      "pluralLabel": "operations active",
+      "helper": "",
+      "options": [
+        {
+          "value": "monitoring",
+          "label": "Real-time Monitoring"
+        },
+        {
+          "value": "logging",
+          "label": "Log Aggregation"
+        },
+        {
+          "value": "analytics",
+          "label": "Security Analytics"
+        },
+        {
+          "value": "backups",
+          "label": "Automated Backups"
+        }
+      ]
+    }
+  },
+  {
+    "id": "select-33",
+    "canonical_id": "watermelon:components:select-33",
+    "reference_file": "wix-multi-select/reference/src/data/contents/components/select/variant-33.tsx",
+    "source_path": "src/data/contents/components/select/variant-33.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-33.tsx",
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_sha": "c9ce48cee853a24a889d428bf95c342bd903c4fc",
+    "git_blob": "c9ce48cee853a24a889d428bf95c342bd903c4fc",
+    "sha256": "7bc9d6b3609e4b7ab95ec534c86ce5f6b42fca89ec0e25809d39e77bee36d3ca",
+    "bytes": 3257,
+    "baseline_wix_status": "pending_adaptation",
+    "contract": {
+      "label": "Communication Channels",
+      "defaultValue": [],
+      "placeholder": "Select notification paths",
+      "pluralLabel": "channels selected",
+      "helper": "System alerts will be delivered via all selected channels.",
+      "options": [
+        {
+          "value": "email",
+          "label": "Primary Email"
+        },
+        {
+          "value": "sms",
+          "label": "SMS Gateway"
+        },
+        {
+          "value": "push",
+          "label": "Mobile Push"
+        },
+        {
+          "value": "slack",
+          "label": "Slack Webhook"
+        },
+        {
+          "value": "discord",
+          "label": "Discord Bot"
+        }
+      ]
+    }
+  }
+]

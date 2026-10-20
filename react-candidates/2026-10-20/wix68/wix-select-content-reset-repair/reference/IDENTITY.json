@@ -1,0 +1,300 @@
+[
+  {
+    "id": "select-26",
+    "canonical_id": "watermelon:components:select-26",
+    "reference_file": "wix-select-content/reference/select-26.tsx",
+    "source_path": "src/data/contents/components/select/variant-26.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-26.tsx",
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_sha": "d9eddfebeecae29e53ba2208699b8f7ea8f6bedc",
+    "git_blob": "d9eddfebeecae29e53ba2208699b8f7ea8f6bedc",
+    "sha256": "85256c688233f692309ce33cf20f5a1c3075ae527e1a2028d629bb2f7cd34e7c",
+    "bytes": 1710,
+    "baseline_wix_status": "pending_adaptation",
+    "contract": {
+      "label": "API Permissions",
+      "placeholder": "Identify scope",
+      "defaultValue": "read-only",
+      "groups": [
+        "Read Operations",
+        "Write Access"
+      ],
+      "prefix": null,
+      "options": [
+        {
+          "value": "read-only",
+          "label": "Metadata & Stats",
+          "disabled": false,
+          "group": "Read Operations",
+          "description": null,
+          "decoration": null
+        },
+        {
+          "value": "search",
+          "label": "Search Indices",
+          "disabled": false,
+          "group": "Read Operations",
+          "description": null,
+          "decoration": null
+        },
+        {
+          "value": "editor",
+          "label": "Content Management",
+          "disabled": false,
+          "group": "Write Access",
+          "description": null,
+          "decoration": null
+        },
+        {
+          "value": "admin",
+          "label": "System Configuration",
+          "disabled": false,
+          "group": "Write Access",
+          "description": null,
+          "decoration": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "select-27",
+    "canonical_id": "watermelon:components:select-27",
+    "reference_file": "wix-select-content/reference/select-27.tsx",
+    "source_path": "src/data/contents/components/select/variant-27.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-27.tsx",
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_sha": "71d8f861b12b2dafde2a36a5a783f5aa5e8778b8",
+    "git_blob": "71d8f861b12b2dafde2a36a5a783f5aa5e8778b8",
+    "sha256": "c597ca5b8f9ecb228ad751fd8a286696be279bda487908f068c046f3dfb1d15c",
+    "bytes": 2400,
+    "baseline_wix_status": "pending_adaptation",
+    "contract": {
+      "label": "Portfolio Category",
+      "placeholder": "Identify field",
+      "defaultValue": "dev",
+      "groups": [
+        "Primary Disciplines"
+      ],
+      "prefix": null,
+      "options": [
+        {
+          "value": "dev",
+          "label": "Engineering",
+          "disabled": false,
+          "group": "Primary Disciplines",
+          "description": null,
+          "decoration": {
+            "source_icon": "IconCode",
+            "source_package": "@tabler/icons-react",
+            "location": "before text in both menu item and selected-value rich content",
+            "size_class": "size-4",
+            "color_token": "zinc-500",
+            "stroke_prop": 1.5,
+            "className": "size-4 text-zinc-500",
+            "geometry_dependency_not_locally_resolved": true
+          }
+        },
+        {
+          "value": "creative",
+          "label": "Creative Arts",
+          "disabled": false,
+          "group": "Primary Disciplines",
+          "description": null,
+          "decoration": {
+            "source_icon": "IconCamera",
+            "source_package": "@tabler/icons-react",
+            "location": "before text in both menu item and selected-value rich content",
+            "size_class": "size-4",
+            "color_token": "zinc-500",
+            "stroke_prop": 1.5,
+            "className": "size-4 text-zinc-500",
+            "geometry_dependency_not_locally_resolved": true
+          }
+        },
+        {
+          "value": "data",
+          "label": "Analytics",
+          "disabled": false,
+          "group": "Primary Disciplines",
+          "description": null,
+          "decoration": {
+            "source_icon": "IconDatabase",
+            "source_package": "@tabler/icons-react",
+            "location": "before text in both menu item and selected-value rich content",
+            "size_class": "size-4",
+            "color_token": "zinc-500",
+            "stroke_prop": 1.5,
+            "className": "size-4 text-zinc-500",
+            "geometry_dependency_not_locally_resolved": true
+          }
+        },
+        {
+          "value": "global",
+          "label": "Network Ops",
+          "disabled": false,
+          "group": "Primary Disciplines",
+          "description": null,
+          "decoration": {
+            "source_icon": "IconGlobe",
+            "source_package": "@tabler/icons-react",
+            "location": "before text in both menu item and selected-value rich content",
+            "size_class": "size-4",
+            "color_token": "zinc-500",
+            "stroke_prop": 1.5,
+            "className": "size-4 text-zinc-500",
+            "geometry_dependency_not_locally_resolved": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "select-28",
+    "canonical_id": "watermelon:components:select-28",
+    "reference_file": "wix-select-content/reference/select-28.tsx",
+    "source_path": "src/data/contents/components/select/variant-28.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-28.tsx",
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_sha": "e6f61b69bbea30be81a9e99fd29ed872069ea288",
+    "git_blob": "e6f61b69bbea30be81a9e99fd29ed872069ea288",
+    "sha256": "6d9a25a9254b161060433cd416a267e64e8aff513306f18a0648df202af1a1d6",
+    "bytes": 1520,
+    "baseline_wix_status": "pending_adaptation",
+    "contract": {
+      "label": "Primary Framework",
+      "placeholder": "Identify core tech",
+      "defaultValue": "react",
+      "groups": [],
+      "prefix": {
+        "text": "Project Stack:",
+        "className": "flex items-center gap-1.5 text-zinc-500 font-medium",
+        "location": "outer trigger span before SelectValue; not part of any option label",
+        "persistence": "Independent of selection; remains before selected value or placeholder."
+      },
+      "options": [
+        {
+          "value": "react",
+          "label": "React.js Engine",
+          "disabled": false,
+          "group": null,
+          "description": null,
+          "decoration": null
+        },
+        {
+          "value": "vue",
+          "label": "Vue.js Ecosystem",
+          "disabled": false,
+          "group": null,
+          "description": null,
+          "decoration": null
+        },
+        {
+          "value": "next",
+          "label": "Next.js Framework",
+          "disabled": false,
+          "group": null,
+          "description": null,
+          "decoration": null
+        },
+        {
+          "value": "astro",
+          "label": "Astro Static Gen",
+          "disabled": false,
+          "group": null,
+          "description": null,
+          "decoration": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "select-29",
+    "canonical_id": "watermelon:components:select-29",
+    "reference_file": "wix-select-content/reference/select-29.tsx",
+    "source_path": "src/data/contents/components/select/variant-29.tsx",
+    "source_url": "https://github.com/WatermelonCorp/watermelon-platform/blob/424fe703d19b39e86bef90c4ba0a76ef8c1fb260/src/data/contents/components/select/variant-29.tsx",
+    "source_revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+    "source_sha": "f743bfec8d21d59654c09d3713d083b88209cf98",
+    "git_blob": "f743bfec8d21d59654c09d3713d083b88209cf98",
+    "sha256": "7d4a2ff46cc58b989fd0bd3d7ff376a42a8982b749427fe79083f744441b9052",
+    "bytes": 2314,
+    "baseline_wix_status": "pending_adaptation",
+    "contract": {
+      "label": "Lifecycle Stage",
+      "placeholder": "Identify phase",
+      "defaultValue": "active",
+      "groups": [],
+      "prefix": null,
+      "options": [
+        {
+          "value": "draft",
+          "label": "Unpublished Draft",
+          "disabled": false,
+          "group": null,
+          "description": null,
+          "decoration": {
+            "source_icon": "IconCircle",
+            "source_package": "@tabler/icons-react",
+            "location": "before text in both menu item and selected-value rich content",
+            "size_class": "size-2",
+            "color_token": "zinc-400",
+            "stroke_prop": null,
+            "className": "size-2 fill-zinc-400 text-zinc-400 stroke-zinc-400",
+            "geometry_dependency_not_locally_resolved": true
+          }
+        },
+        {
+          "value": "active",
+          "label": "Live Deployment",
+          "disabled": false,
+          "group": null,
+          "description": null,
+          "decoration": {
+            "source_icon": "IconCircle",
+            "source_package": "@tabler/icons-react",
+            "location": "before text in both menu item and selected-value rich content",
+            "size_class": "size-2",
+            "color_token": "emerald-500",
+            "stroke_prop": null,
+            "className": "size-2 fill-emerald-500 text-emerald-500 stroke-emerald-500",
+            "geometry_dependency_not_locally_resolved": true
+          }
+        },
+        {
+          "value": "archived",
+          "label": "Archived Record",
+          "disabled": false,
+          "group": null,
+          "description": null,
+          "decoration": {
+            "source_icon": "IconCircle",
+            "source_package": "@tabler/icons-react",
+            "location": "before text in both menu item and selected-value rich content",
+            "size_class": "size-2",
+            "color_token": "amber-500",
+            "stroke_prop": null,
+            "className": "size-2 fill-amber-500 text-amber-500 stroke-amber-500",
+            "geometry_dependency_not_locally_resolved": true
+          }
+        },
+        {
+          "value": "deprecated",
+          "label": "Legacy System",
+          "disabled": false,
+          "group": null,
+          "description": null,
+          "decoration": {
+            "source_icon": "IconCircle",
+            "source_package": "@tabler/icons-react",
+            "location": "before text in both menu item and selected-value rich content",
+            "size_class": "size-2",
+            "color_token": "rose-500",
+            "stroke_prop": null,
+            "className": "size-2 fill-rose-500 text-rose-500 stroke-rose-500",
+            "geometry_dependency_not_locally_resolved": true
+          }
+        }
+      ]
+    }
+  }
+]

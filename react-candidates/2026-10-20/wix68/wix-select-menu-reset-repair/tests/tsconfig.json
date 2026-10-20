@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noEmit": true,
+    "skipLibCheck": false,
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "types": [
+      "react",
+      "react-dom"
+    ],
+    "paths": {
+      "@studio/wix-select-menu": [
+        "../src/index.tsx"
+      ]
+    }
+  },
+  "include": [
+    "../src/**/*.ts",
+    "../src/**/*.tsx",
+    "*.tsx",
+    "../examples/*.tsx",
+    "../examples/*.d.ts"
+  ]
+}

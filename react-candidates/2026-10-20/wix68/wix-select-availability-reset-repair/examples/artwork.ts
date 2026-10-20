@@ -1,0 +1,16 @@
+/** Full-source local SVG example; not an npm runtime export. */
+export type ArtworkScale = '80' | '100' | '125' | '150';
+export type ArtworkLayout = 'card' | 'banner';
+export type ArtworkPalette = 'mocha' | 'fern' | 'ink' | 'clay';
+export interface ArtworkSettings { readonly scale: ArtworkScale; readonly layout: ArtworkLayout; readonly palette: ArtworkPalette; readonly format: 'svg' }
+export const artworkPalettes=Object.freeze({mocha:Object.freeze({paper:'#FFF8F1',ink:'#49352B',accent:'#A47864'}),fern:Object.freeze({paper:'#F4F6EC',ink:'#354737',accent:'#7D8B65'}),ink:Object.freeze({paper:'#F2F0EB',ink:'#29323D',accent:'#69788B'}),clay:Object.freeze({paper:'#FFF3E9',ink:'#6A3D2D',accent:'#C18260'})});
+export function createArtwork(settings:ArtworkSettings){
+ if(!settings||typeof settings!=='object'||Array.isArray(settings))throw new TypeError('Artwork settings must be a record.');
+ const allowed={scale:['80','100','125','150'],layout:['card','banner'],palette:['mocha','fern','ink','clay'],format:['svg']} as const;
+ for(const key of ['scale','layout','palette','format'] as const)if(typeof settings[key]!=='string'||!(allowed[key] as readonly string[]).includes(settings[key]))throw new TypeError('Unsupported artwork '+key+'.');
+ const snapshot=Object.freeze({scale:settings.scale,layout:settings.layout,palette:settings.palette,format:settings.format}),colors=artworkPalettes[snapshot.palette];
+ const viewWidth=snapshot.layout==='card'?480:800,viewHeight=snapshot.layout==='card'?600:360,width=viewWidth*Number(snapshot.scale)/100,height=viewHeight*Number(snapshot.scale)/100;
+ const titleY=snapshot.layout==='card'?394:208,subtitleY=titleY+42,circle=Object.freeze({cx:snapshot.layout==='card'?240:642,cy:snapshot.layout==='card'?182:180,r:snapshot.layout==='card'?106:105});
+ const content=['<?xml version="1.0" encoding="UTF-8"?>',`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${viewWidth} ${viewHeight}" role="img" aria-labelledby="artwork-title artwork-description">`,'  <title id="artwork-title">Quiet study</title>',`  <desc id="artwork-description">Local ${snapshot.layout} artwork, ${snapshot.palette} palette, ${snapshot.scale} percent size.</desc>`,`  <rect width="${viewWidth}" height="${viewHeight}" rx="24" fill="${colors.paper}"/>`,`  <circle cx="${circle.cx}" cy="${circle.cy}" r="${circle.r}" fill="${colors.accent}"/>`,`  <path d="M ${circle.cx-circle.r} ${circle.cy} H ${circle.cx+circle.r} M ${circle.cx} ${circle.cy-circle.r} V ${circle.cy+circle.r}" stroke="${colors.paper}" stroke-width="2"/>`,`  <rect x="32" y="32" width="${viewWidth-64}" height="${viewHeight-64}" rx="8" fill="none" stroke="${colors.ink}" stroke-width="1"/>`,`  <text x="56" y="${titleY}" fill="${colors.ink}" font-family="Georgia, serif" font-size="40">Quiet study</text>`,`  <text x="58" y="${subtitleY}" fill="${colors.ink}" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">LOCAL ARTWORK / 2025</text>`,'</svg>',''].join('\n');
+ return Object.freeze({filename:`studio-artwork-${snapshot.layout}-${snapshot.scale}-${snapshot.palette}.svg`,mime:'image/svg+xml' as const,content,settings:snapshot,width,height,viewWidth,viewHeight,colors,circle,titleY,subtitleY});
+}

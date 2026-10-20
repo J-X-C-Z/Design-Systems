@@ -1,0 +1,46 @@
+{
+  "revision": "424fe703d19b39e86bef90c4ba0a76ef8c1fb260",
+  "newIds": [
+    "select-32",
+    "select-33"
+  ],
+  "ledgerSha256": "4d8a98d30fc5e9707614f9401859879c44350765110868c9464341a4e0663140",
+  "files": [
+    {
+      "source": "src/data/contents/components/select/variant-32.tsx",
+      "bytes": 3083,
+      "sha256": "07186212d2a71a7d7e00790164a4f6ed5e338a6eff1ba2dee8859f9f54f81591",
+      "gitBlob": "36e53ce4e85cb9a7582ff0e11eba165ef9c3a34f"
+    },
+    {
+      "source": "src/data/contents/components/select/variant-33.tsx",
+      "bytes": 3257,
+      "sha256": "7bc9d6b3609e4b7ab95ec534c86ce5f6b42fca89ec0e25809d39e77bee36d3ca",
+      "gitBlob": "c9ce48cee853a24a889d428bf95c342bd903c4fc"
+    },
+    {
+      "source": "src/components/base-ui/popover.tsx",
+      "bytes": 2361,
+      "sha256": "7360e38b1408819a89258aee6b2b6033b6c17faea5a2066f9ce6ce0671109fe3",
+      "gitBlob": "0ad11df7b66f607473c497cf0f0d42a26defa364"
+    },
+    {
+      "source": "src/components/base-ui/button.tsx",
+      "bytes": 3337,
+      "sha256": "8ce26e1867edeb6c7bf6ead440962a609607b05f716a12e69046a5333129e512",
+      "gitBlob": "810fdb5f0e11477738c9269fb869214bf036bbb6"
+    },
+    {
+      "source": "src/components/base-ui/label.tsx",
+      "bytes": 592,
+      "sha256": "a9e5ce00e4809f1f6804d0e48de09bf364bddc424947c25d2a276c2fc6514c50",
+      "gitBlob": "f752f82ba6be3cf9a1015c1d61df5de00a1eaf66"
+    },
+    {
+      "source": "src/lib/utils.ts",
+      "bytes": 196,
+      "sha256": "7dc23d640d1cd4b716abd100b4ef57279bb15406ab860c6717c742b9512db019",
+      "gitBlob": "649b3921a8dcbefd43d3cd9182867c8bc8783e73"
+    }
+  ]
+}
