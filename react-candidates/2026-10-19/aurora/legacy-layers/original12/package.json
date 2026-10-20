@@ -1,0 +1,17 @@
+{
+  "name": "mg-12-aurora-glass",
+  "version": "0.1.0-candidate",
+  "private": true,
+  "description": "Isolated offline React optical playground; only new React code",
+  "scripts": {
+    "build": "node tools/build.cjs",
+    "preview": "python3 tools/serve.py",
+    "test:model": "node tools/test-model.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "runtimeNote": "Actual preview runtime is vendored React/ReactDOM 16.0.0. It is NOT a modern React 19 validation; see dependency-lock.json."
+}

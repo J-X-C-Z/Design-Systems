@@ -1,0 +1,5 @@
+[
+ {"id":"violet","name":"紫潮","english":"Violet tide","index":"01","description":"紫罗兰缓慢沉入深蓝，青色在玻璃边缘醒来。","palette":["#7050ff","#34cff0","#c9baff"],"ior":1.46,"frost":18,"dispersion":36,"energy":68},
+ {"id":"cyan","name":"青隙","english":"Cyan interval","index":"02","description":"一线冷青，穿过安静的透明介质。","palette":["#396dff","#59e5df","#d3eaff"],"ior":1.28,"frost":9,"dispersion":52,"energy":78},
+ {"id":"blue","name":"蓝时","english":"After blue","index":"03","description":"光场退后一步，让朦胧的层次浮到前面。","palette":["#4331b5","#7789ff","#c3baff"],"ior":1.65,"frost":43,"dispersion":20,"energy":52}
+]
